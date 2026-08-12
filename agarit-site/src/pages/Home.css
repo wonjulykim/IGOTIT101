@@ -1,0 +1,80 @@
+.home-hero {
+  background: linear-gradient(135deg, var(--accent-bg), transparent);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  padding: 36px 32px;
+  margin-bottom: 32px;
+}
+.home-hero h1 { margin-bottom: 10px; }
+.home-hero p { color: var(--text-dim); margin-bottom: 20px; }
+.hero-cta { display: inline-block; text-decoration: none; }
+
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.stat-box {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+}
+.stat-num { font-size: 1.5rem; font-weight: 800; color: var(--accent-dark); }
+.stat-label { font-size: 0.78rem; color: var(--text-dim); margin-top: 2px; }
+
+@media (max-width: 640px) {
+  .home-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+.home-section-title { margin-bottom: 16px; }
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.badge-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+  background: var(--bg-panel);
+}
+.badge-card.unlocked { border-color: var(--success); background: var(--success-bg); }
+.badge-card.locked { opacity: 0.5; }
+.badge-icon { font-size: 1.6rem; margin-bottom: 6px; }
+.badge-title { font-weight: 700; font-size: 0.88rem; }
+.badge-desc { font-size: 0.76rem; color: var(--text-dim); margin-top: 4px; }
+
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.home-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+.home-card-disabled { opacity: 0.55; }
+
+.home-card-num { font-size: 0.75rem; font-weight: 700; color: var(--accent-dark); }
+.home-card-title { font-weight: 700; margin: 4px 0 10px; min-height: 2.6em; }
+
+.home-card-progress {
+  height: 5px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.home-card-progress-bar { height: 100%; background: var(--success); }
+
+.home-card-links { display: flex; gap: 14px; font-size: 0.85rem; font-weight: 600; }
+.home-card-soon { font-size: 0.8rem; color: var(--text-dim); }

@@ -1,0 +1,225 @@
+export const ch26 = {
+  'ch26-1': {
+    title: '의미상의 주어',
+    blocks: [
+      { type: 'heading', text: '의미상의 주어가 왜 필요한가' },
+      {
+        type: 'p',
+        text: '동사는 문장에서 반드시 주어와 시제를 가져야 합니다. 그런데 준동사(to부정사·동명사·분사)는 동사에서 만들어졌지만 더 이상 동사가 아니기 때문에 시제를 가질 수 없습니다. "to finish"나 "finishing"이라는 형태만 보고는 그 동작이 언제 일어났는지, 그리고 누가 그 동작을 하는지 알 수 없습니다. 시제가 없다는 문제는 문맥과 주변 동사가 어느 정도 해결해 주지만, "누가 하는가"의 문제는 별도의 장치 없이는 해결되지 않습니다. 준동사는 동사의 성격을 그대로 물려받았기 때문에 자기 자신의 주어와 목적어를 가질 수 있는데, 문제는 그 형태 자체에는 행위자를 표시할 수단이 없다는 것입니다. 그래서 문장의 주된 주어와 준동사가 나타내는 동작의 실제 행위자가 같을 때는 생략해도 의미가 통하지만, 둘이 다를 때는 준동사 앞에 별도로 행위자를 밝혀주어야 합니다. 이렇게 준동사 앞에 놓여 그 동작의 행위자를 나타내는 말을 의미상의 주어라고 부릅니다. 의미상의 주어는 문장 맨 앞에 놓이는 문장의 주어와는 별개의 대상입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'She wants to leave early.', ko: '그녀는 일찍 떠나고 싶어한다.', note: '떠나는 주체 = 문장의 주어 She → 의미상의 주어를 따로 밝힐 필요 없음' },
+          { en: 'She wants him to leave early.', ko: '그녀는 그가 일찍 떠나기를 원한다.', note: '떠나는 주체는 him, 문장의 주어 She와 다름 → him이 to leave의 의미상의 주어' },
+          { en: 'I hope to pass the exam.', ko: '나는 시험에 합격하기를 바란다.', note: '합격하는 주체 = 문장의 주어 I → 의미상의 주어 불필요' },
+          { en: 'I hope for you to pass the exam.', ko: '나는 네가 시험에 합격하기를 바란다.', note: '합격하는 주체는 you, 문장의 주어 I와 다름 → for you가 의미상의 주어' },
+          { en: 'It is important to finish the project on time.', ko: '제 시간에 프로젝트를 끝내는 것이 중요하다.', note: '누구에게 중요한지, 즉 끝내는 주체가 누구인지 나타나 있지 않음' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '준동사별 의미상의 주어 표시 방법: to부정사는 「for+목적격」 또는 「of+목적격」, 동명사는 소유격 또는 목적격, 분사는 수식받는 명사로 나타냅니다. 이 장에서는 to부정사와 동명사의 의미상의 주어를 다룹니다.',
+      },
+      { type: 'heading', text: '의미상의 주어가 생략되는 경우' },
+      {
+        type: 'p',
+        text: '의미상의 주어를 항상 밝혀야 하는 것은 아닙니다. 문장의 주어와 준동사의 행위자가 같으면 굳이 다시 쓰지 않습니다. 또한 문맥상 "일반적인 사람들"을 가리킬 때도 의미상의 주어를 생략합니다. "It is important to exercise regularly."는 특정한 누군가가 아니라 사람이라면 누구에게나 규칙적인 운동이 중요하다는 뜻을 담고 있으므로 의미상의 주어가 없어도 자연스럽습니다. 반면 "규칙적인 운동이 그 환자에게 특히 중요하다"처럼 특정 대상을 가리키고 싶을 때는 for the patient를 반드시 넣어야 합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'It is important to exercise regularly.', ko: '규칙적으로 운동하는 것이 중요하다.', note: '일반적인 사람들에게 해당하는 진술 → 의미상의 주어 생략' },
+          { en: 'It is important for the patient to exercise regularly.', ko: '규칙적으로 운동하는 것이 그 환자에게 특히 중요하다.', note: '특정 대상(그 환자)을 지정 → for the patient 필요' },
+        ],
+      },
+      { type: 'heading', text: 'to부정사의 의미상의 주어 ①: for+목적격' },
+      {
+        type: 'p',
+        text: 'to부정사의 주어가 너무 길면 가주어 It을 문장 맨 앞에 놓고 진짜 주어인 to부정사구를 문장 뒤로 보내는 가주어-진주어 구문을 씁니다. "To finish the project on time is important."는 "It is important to finish the project on time."으로 바뀝니다. 그런데 이 문장만으로는 제 시간에 끝내는 것이 "누구에게" 중요한지가 드러나지 않습니다. 즉, 일반적인 사람들에게 그렇다는 정도의 의미만 전달됩니다. 이 to부정사가 나타내는 동작을 실제로 수행하는 주체를 밝혀주려면, to부정사 바로 앞에 「for+목적격」을 붙입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'It is important to finish the project on time.', ko: '제 시간에 프로젝트를 끝내는 것이 중요하다.', note: '누구에게 중요한지 주체가 나타나 있지 않음' },
+          { en: 'It is important for us to finish the project on time.', ko: '제 시간에 프로젝트를 끝내는 것이 우리에게 중요하다.', note: 'for us가 to finish의 의미상의 주어' },
+          { en: 'It is essential to meet the deadline.', ko: '마감일을 맞추는 것이 필수적이다.', note: '주체가 표현되어 있지 않음' },
+          { en: 'It is essential for the team to meet the deadline.', ko: '마감일을 맞추는 것이 그 팀에게 필수적이다.', note: '마감일을 맞춰야 하는 주체가 팀이라는 것을 나타냄' },
+          { en: 'It is exciting to visit the zoo.', ko: '동물원을 방문하는 것이 흥미롭다.', note: '누구에게 흥미로운지 주체가 나타나 있지 않음' },
+          { en: 'It is exciting for the children to visit the zoo.', ko: '동물원을 방문하는 것이 그 아이들에게는 흥미로운 일이다.', note: '방문하는 주체가 아이들임을 밝혀줌' },
+          { en: 'It is possible to complete the project by Friday.', ko: '금요일까지 그 프로젝트를 완료하는 것이 가능하다.', note: '주체가 표현되어 있지 않음' },
+          { en: 'It is possible for us to complete the project by Friday.', ko: '금요일까지 그 프로젝트를 완료하는 것이 우리에게는 가능한 일이다.', note: '완료해야 하는 주체가 우리임을 밝혀줌' },
+          { en: 'It is difficult for beginners to understand this theory.', ko: '이 이론을 이해하는 것은 초보자들에게는 어렵다.', note: '이해하는 주체는 초보자' },
+          { en: 'It is dangerous for children to play near the river.', ko: '강 근처에서 노는 것은 아이들에게 위험하다.', note: '노는 주체는 아이들' },
+          { en: 'It is necessary for applicants to submit the form by Monday.', ko: '지원자들이 월요일까지 서류를 제출하는 것이 필요하다.', note: '제출하는 주체는 지원자들' },
+          { en: 'It is convenient for shoppers to park near the entrance.', ko: '입구 근처에 주차하는 것이 쇼핑객들에게는 편리하다.', note: '주차하는 주체는 쇼핑객들' },
+          { en: 'It is hard for a beginner to master this instrument in a year.', ko: '초보자가 일 년 안에 이 악기를 완전히 익히는 것은 어렵다.', note: '익히는 주체는 초보자 한 사람' },
+          { en: 'It is easy for native speakers to tell the two accents apart.', ko: '원어민들에게는 그 두 억양을 구별하는 것이 쉽다.', note: '구별하는 주체는 원어민들' },
+        ],
+      },
+      { type: 'heading', text: '왜 전치사 for가 쓰이는가' },
+      {
+        type: 'p',
+        text: '그런데 왜 to부정사의 의미상의 주어에는 하필 전치사 for가 쓰일까요? 이 질문에 답하려면 전치사 for가 가진 의미를 이해해야 합니다. for는 "개개인의 특성이나 입장에 따라 다를 수 있음"을 나타낼 수 있는 전치사입니다. "for the team"이라고 하면 그 팀에게는 마감일을 맞추는 것이 필수적이지만, 다른 팀에게는 그렇지 않을 수도 있다는 개인차·입장차를 함께 나타냅니다. "for the children"도 마찬가지로, 그 아이들에게는 동물원 방문이 흥미로운 일이지만 다른 사람에게는 그렇지 않을 수 있다는 뜻을 담고 있습니다. 이렇게 for는 대상마다 다를 수 있다는 개별성을 나타내면서, 동시에 to부정사가 나타내는 동작의 주체를 분명히 밝혀주는 역할을 합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'It is essential for the team to meet the deadline, though other teams may have more flexibility.', ko: '그 팀에게는 마감일을 맞추는 것이 필수적이지만, 다른 팀들은 더 여유가 있을 수도 있다.', note: 'for가 개인차·입장차를 함축하는 맥락' },
+          { en: 'Loud music is exciting for teenagers but stressful for elderly people.', ko: '시끄러운 음악은 청소년들에게는 흥미롭지만 노인들에게는 스트레스가 된다.', note: '같은 상황이 대상에 따라 다르게 받아들여짐을 for가 표시' },
+        ],
+      },
+      {
+        type: 'note',
+        text: 'for+목적격은 "그 사람 입장에서 볼 때" 정도의 느낌입니다. "It is possible for us to complete the project by Friday."는 "우리 입장에서는 가능하지만, 다른 사람 입장에서는 불가능할 수도 있다"는 개별성을 전제로 깔고 있습니다.',
+      },
+      { type: 'heading', text: 'to부정사의 의미상의 주어 ②: of+목적격' },
+      {
+        type: 'p',
+        text: 'to부정사의 의미상의 주어가 항상 「for+목적격」으로 표현되는 것은 아닙니다. to부정사 앞에 오는 형용사가 사람의 성격이나 성질(친절하다, 착하다, 어리석다, 현명하다, 무례하다 등)을 평가하는 형용사일 때는 「of+목적격」을 사용합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'It is kind of you to help me.', ko: '당신이 나를 도와주는 것은 친절하다.', note: 'of you가 to help의 의미상의 주어이자 kind한 대상' },
+          { en: 'It is nice of her to invite us.', ko: '그녀가 우리를 초대하는 것은 좋은 일이다.' },
+          { en: 'It is foolish of him to say such a thing.', ko: '그가 그런 말을 하는 것은 어리석다.' },
+          { en: 'It is wise of you to save money for the future.', ko: '당신이 미래를 위해 돈을 저축하는 것은 현명하다.' },
+          { en: 'It is rude of him to interrupt others while they are talking.', ko: '다른 사람들이 이야기하는 중에 끼어드는 것은 그에게는 무례한 일이다.' },
+          { en: 'It is careless of her to leave the door unlocked.', ko: '문을 잠그지 않고 나가는 것은 그녀답지 않게 부주의한 일이다.' },
+          { en: 'It is generous of them to donate so much money.', ko: '그렇게 많은 돈을 기부하는 것은 그들이 관대하다는 것을 보여준다.' },
+          { en: 'It was thoughtful of you to remember my birthday.', ko: '내 생일을 기억해 준 것은 당신이 사려 깊었다는 것을 보여준다.' },
+          { en: 'It was brave of the firefighter to run back into the building.', ko: '그 소방관이 건물 안으로 다시 뛰어들어간 것은 용감한 일이었다.', note: '용감함이라는 성격은 the firefighter에게 속함' },
+          { en: 'It is silly of him to argue over such a small thing.', ko: '그런 작은 일로 다투는 것은 그가 어리석다는 것을 보여준다.' },
+          { en: 'It was cruel of them to laugh at his mistake.', ko: '그의 실수를 비웃은 것은 그들이 잔인했다는 것을 보여준다.' },
+          { en: 'It is considerate of the manager to check on new employees every week.', ko: '매주 신입 직원들을 살펴보는 것은 그 관리자가 배려심이 있다는 것을 보여준다.' },
+        ],
+      },
+      { type: 'heading', text: '왜 성격을 나타내는 형용사만 of를 쓰는가' },
+      {
+        type: 'p',
+        text: 'for는 "행위 그 자체를 누가 하느냐"만을 표시하는 데 반해, kind, nice, foolish, wise, rude 같은 형용사가 나타내는 성격·성질은 애초에 문장의 주어인 It에 속하는 것이 아니라, to부정사 뒤에 감춰진 실제 행위자에게 속하는 특성입니다. "It is kind of you to help me."라는 문장에서 진짜로 kind한 대상은 It(가주어, 실질적 의미 없음)이 아니라 you입니다. 즉 kind라는 성격은 애초부터 사람 자체에 속한 고유한 특성이기 때문에, 사람을 직접 가리키는 of(~의, ~에 속한)를 써서 "그 성격이 바로 이 사람에게 속해 있다"는 것을 표시하는 것이 더 자연스럽습니다. 반면 important, possible, difficult 같은 형용사는 사람의 성격이 아니라 어떤 행위나 상황 자체의 속성을 나타내므로, 행위자를 단지 입장·처지로서 곁에 세워두는 for가 쓰입니다. 다시 말해 for 문장에서는 "행위"가 주인공이고 사람은 그 행위를 겪는 입장일 뿐이지만, of 문장에서는 "사람"이 주인공이고 to부정사는 그 사람의 성격이 드러난 구체적 사례일 뿐입니다.',
+      },
+      {
+        type: 'table',
+        caption: 'to부정사의 의미상의 주어: for+목적격 vs of+목적격',
+        headers: ['구분', '쓰이는 형용사', '형용사가 나타내는 것', '예문'],
+        rows: [
+          ['for+목적격', 'important, essential, exciting, possible, easy, hard, difficult, dangerous, necessary, convenient, natural, common, hopeless 등', '행위·상황 자체의 속성(그 사람의 성격이 아님)', 'It is important for us to finish the project.'],
+          ['of+목적격', 'kind, nice, foolish, wise, rude, cruel, silly, careless, generous, thoughtful, considerate, stupid, brave, selfish, polite, mean, sweet, clever 등', '사람 자체에 속한 성격·성질을 평가', 'It is kind of you to help me.'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '구별 방법: 형용사 자리에 「의미상의 주어+be+형용사」로 바꾸어 말이 자연스러우면 of를 씁니다. "It is kind of you to help me." → "You are kind."는 자연스러운 문장이지만, "It is important for us to finish the project." → "We are important."는 원래 문장과 뜻이 완전히 달라집니다(우리가 중요한 사람이라는 뜻이 되어버림). 이처럼 of는 사람 자체의 성격을 평가하고, for는 단지 행위의 주체·입장만을 표시합니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: 'for+목적격 vs of+목적격',
+        items: [
+          { icon: '🙂', label: 'for+목적격', sub: '행위·상황의 속성 (important, difficult, possible)' },
+          { icon: '😇', label: 'of+목적격 (좋은 성격)', sub: 'kind, nice, wise, thoughtful' },
+          { icon: '😈', label: 'of+목적격 (나쁜 성격)', sub: 'rude, foolish, careless, cruel' },
+        ],
+      },
+      { type: 'heading', text: '같은 형용사, 다른 뜻: 판단이 갈리는 경우' },
+      {
+        type: 'p',
+        text: '몇몇 형용사는 문맥에 따라 성격을 평가하는 뜻과 행위·상황의 속성을 나타내는 뜻을 둘 다 가질 수 있어서 for와 of가 모두 가능할 때도 있습니다. clever가 대표적입니다. "It was clever of him to solve the puzzle so quickly."는 그의 영리한 성격을 평가하는 것이고, 이 경우 of가 자연스럽습니다. 그런데 실제로는 이런 형용사도 대부분 사람의 성격 평가 쪽으로 굳어져 있으므로, 처음 배울 때는 "그 형용사가 곧 그 사람의 성격을 칭찬하거나 비난하는 말인가"를 기준으로 판단하는 것이 안전합니다.',
+      },
+      { type: 'heading', text: '흔히 하는 실수: 성격 형용사 뒤에 for를 쓰는 경우' },
+      {
+        type: 'p',
+        text: '학습자들이 가장 자주 저지르는 실수는 kind, nice, foolish, wise, rude처럼 사람의 성격을 나타내는 형용사 뒤에도 for를 쓰는 것입니다. "for+목적격"이 더 기본적이고 익숙하게 느껴지기 때문에 일어나는 실수입니다. 하지만 성격을 나타내는 형용사는 그 성격이 사람 자체에게 속한다는 것을 강조해야 하므로 of를 써야 합니다. 반대로 important, difficult처럼 행위·상황의 속성을 나타내는 형용사 뒤에 of를 쓰는 것도 흔한 오류입니다. 두 오류 모두 "이 형용사가 평가하는 대상이 사람의 성격인지, 행위 자체인지"를 먼저 구분하지 않고 무작정 한 전치사만 익혀서 쓰는 데서 비롯됩니다.',
+      },
+      {
+        type: 'transform',
+        from: { label: '오류', text: '*It is kind for you to help me.' },
+        to: { label: '수정', text: 'It is kind of you to help me.' },
+        note: 'kind는 사람의 성격을 평가하는 형용사이므로 for가 아니라 of를 써야 합니다.',
+      },
+      {
+        type: 'transform',
+        from: { label: '오류', text: '*It is foolish for him to say such a thing.' },
+        to: { label: '수정', text: 'It is foolish of him to say such a thing.' },
+        note: 'foolish도 성격·태도를 평가하는 형용사이므로 of를 씁니다.',
+      },
+      {
+        type: 'transform',
+        from: { label: '오류', text: '*It was rude for her to leave without saying goodbye.' },
+        to: { label: '수정', text: 'It was rude of her to leave without saying goodbye.' },
+        note: 'rude는 태도·성격을 평가하는 형용사이므로 of를 써야 합니다. "She is rude."로 바꾸어도 자연스럽다는 점으로 확인할 수 있습니다.',
+      },
+      {
+        type: 'transform',
+        from: { label: '오류', text: '*It is important of us to finish the project on time.' },
+        to: { label: '수정', text: 'It is important for us to finish the project on time.' },
+        note: 'important는 사람의 성격이 아니라 행위 자체의 속성을 나타내므로 for를 씁니다.',
+      },
+      {
+        type: 'transform',
+        from: { label: '오류', text: '*It is necessary of the applicants to submit the form by Monday.' },
+        to: { label: '수정', text: 'It is necessary for the applicants to submit the form by Monday.' },
+        note: 'necessary도 행위·상황의 속성을 나타내는 형용사이므로 for를 씁니다. "The applicants are necessary."는 원래 문장과 전혀 다른 뜻이 됩니다.',
+      },
+      { type: 'heading', text: '동명사의 의미상의 주어' },
+      {
+        type: 'p',
+        text: '동명사도 to부정사처럼 문장의 주어와 다른 행위자를 나타낼 필요가 있을 때 의미상의 주어를 씁니다. 동명사가 나타내는 동작을 수행하는 주체를 밝혀줄 때는 동명사 앞에 소유격이나 목적격을 사용합니다. 동명사는 명사처럼 쓰이는 말이기 때문에, 원래는 명사를 수식하는 방식인 소유격으로 그 주체를 표시하는 것이 전통적이고 격식 있는 표현입니다. 그런데 시간이 지나면서 목적격을 쓰는 방식이 널리 퍼졌고, 오늘날 구어체·회화에서는 목적격이 더 자주 쓰입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I appreciate your helping me.', ko: '나는 네가 나를 도와줘서 고맙다.', note: 'your가 동명사 helping의 의미상의 주어(격식체)' },
+          { en: 'I appreciate you helping me.', ko: '나는 네가 나를 도와줘서 고맙다.', note: '목적격 you로 표현(구어체)' },
+          { en: "I don't mind your using my phone.", ko: '네가 내 휴대폰을 쓰는 것은 상관없다.', note: '전화를 쓰는 주체는 you' },
+          { en: "I don't mind you using my phone.", ko: '네가 내 휴대폰을 쓰는 것은 상관없다.' },
+          { en: 'Her leaving so early surprised everyone.', ko: '그녀가 그렇게 일찍 떠난 것이 모두를 놀라게 했다.', note: '떠나는 주체는 Her, 문장 전체의 주어(생략된 동명사구 전체)와는 다름' },
+          { en: 'I remember him telling me the same story last year.', ko: '나는 그가 작년에 같은 이야기를 해준 것을 기억한다.', note: '이야기하는 주체는 him' },
+          { en: "There's no chance of him winning the race.", ko: '그가 경주에서 이길 가능성은 없다.', note: '이기는 주체는 him' },
+          { en: 'The manager was upset about John being late again.', ko: '그 관리자는 존이 또 지각한 것에 대해 화가 났다.', note: '지각하는 주체는 John, 문장의 주어인 The manager와 다름' },
+          { en: "Do you mind my opening the window?", ko: '제가 창문을 열어도 괜찮을까요?', note: '창문을 여는 주체는 my(나), 상대의 허락을 구하는 격식체 표현' },
+          { en: "It all started with Tom losing his job last spring.", ko: '모든 것은 지난봄 톰이 직장을 잃은 것에서 시작되었다.', note: '직장을 잃은 주체는 Tom' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '"I appreciate your helping me."에서 your를 "너의"라는 소유격으로 해석하면 안 됩니다. 동명사 앞의 소유격·목적격은 동명사의 의미상의 주어이므로 "네가"로 해석해야 올바른 해석이 됩니다. 즉 이 문장은 "너의 도움"이 아니라 "네가 도와준 것"에 대해 고맙다는 뜻입니다.',
+      },
+      { type: 'heading', text: '흔히 하는 실수: 동명사의 의미상의 주어를 소유격 뜻으로 오해' },
+      {
+        type: 'p',
+        text: '동명사의 의미상의 주어에서 가장 흔한 오류는 문법적인 형태 오류가 아니라 해석 오류입니다. "I remember him telling me the story."를 "나는 그의 이야기를 기억한다" 정도로 잘못 해석하는 경우가 많습니다. 여기서 him은 이야기(the story)를 꾸며주는 소유격이 아니라, telling이라는 동작을 한 행위자입니다. 즉 "나는 그가 나에게 이야기를 해준 것을 기억한다"로 해석해야 합니다.',
+      },
+      {
+        type: 'transform',
+        from: { label: '오해', text: 'I remember him telling me the story. → "나는 그의 이야기를 기억한다" (X)' },
+        to: { label: '올바른 해석', text: 'I remember him telling me the story. → "나는 그가 내게 이야기를 해준 것을 기억한다" (O)' },
+        note: 'him은 명사 story를 꾸미는 말이 아니라 동명사 telling의 의미상의 주어입니다.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'to부정사의 의미상의 주어',
+        parts: [
+          { tag: 'S', text: 'It' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'kind' },
+          { tag: 'M', text: 'of you to help me' },
+        ],
+        translation: 'It is kind of you to help me. (of you = to help의 의미상의 주어, 동시에 kind한 대상)',
+      },
+      {
+        type: 'callout',
+        title: '26장 핵심 정리',
+        items: [
+          '준동사(to부정사·동명사)는 시제를 갖지 못하며, 형태 자체에는 행위자를 표시할 수단도 없다. 그래서 문장의 주어와 준동사의 실제 행위자가 다를 때는 준동사 앞에 그 행위자, 즉 의미상의 주어를 별도로 밝혀주어야 한다. 문장의 주어와 준동사의 행위자가 같거나 일반적인 사람들을 가리킬 때는 의미상의 주어를 생략한다.',
+          'to부정사의 의미상의 주어는 일반적으로 「for+목적격」으로 표시한다. for는 "개개인의 입장·특성에 따라 다를 수 있음"을 나타내면서 동시에 행위 주체를 밝혀주며, important, difficult, possible, necessary처럼 행위·상황 자체의 속성을 나타내는 형용사와 함께 쓰인다.',
+          'to부정사 앞의 형용사가 kind, nice, foolish, wise, rude, careless, generous, thoughtful, brave, considerate처럼 사람의 성격·성질을 평가하는 말일 때는 「of+목적격」으로 표시한다. 그 성격은 가주어 It이 아니라 사람 자체에 고유하게 속한 특성이기 때문에, 사람을 직접 가리키는 of가 for보다 더 자연스럽다.',
+          '구별법: 「의미상의 주어+be+형용사」로 바꾸어 자연스러우면 of, 문장의 원래 의미와 달라지면 for를 쓴다(예: "You are kind."는 자연스럽지만 "We are important."는 뜻이 달라짐).',
+          '흔한 실수 ①: kind, foolish, rude 같은 성격 형용사 뒤에 for를 쓰는 것(*It is kind for you to help me.). 흔한 실수 ②: important, necessary 같은 속성 형용사 뒤에 of를 쓰는 것(*It is necessary of the applicants to submit the form.). 형용사가 "사람의 성격을 평가"하는지 "행위·상황의 속성을 나타내는지"를 먼저 구분해야 한다.',
+          '동명사의 의미상의 주어는 소유격(격식체) 또는 목적격(구어체)으로 나타내며, "~의"가 아니라 "~가"로 해석해야 한다. "I remember him telling me the story."를 "그의 이야기"로 오해하지 말고 "그가 이야기해준 것"으로 해석해야 한다.',
+        ],
+      },
+    ],
+  },
+}

@@ -1,0 +1,23 @@
+.prep-diagram {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 14px 12px;
+  margin: 6px 10px 6px 0;
+  width: 150px;
+  vertical-align: top;
+}
+.prep-svg { width: 100%; height: 84px; }
+.prep-diagram-label { text-align: center; margin-top: 4px; }
+.prep-word { display: block; font-weight: 800; color: var(--accent-dark); font-family: Georgia, serif; }
+.prep-desc { display: block; font-size: 0.75rem; color: var(--text-dim); margin-top: 2px; }
+
+.prep-diagram-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 16px 0;
+}

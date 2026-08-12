@@ -1,0 +1,33 @@
+.sentence-diagram {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 14px 0;
+}
+.sd-label { font-size: 0.78rem; font-weight: 700; color: var(--accent-dark); margin-bottom: 10px; }
+.sd-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+.sd-part { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.sd-tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  border-radius: 6px;
+  padding: 1px 7px;
+  color: white;
+}
+.tag-s { background: #6d4dd1; }
+.tag-v { background: #d9498a; }
+.tag-o { background: #1f9d63; }
+.tag-o2 { background: #159a8c; }
+.tag-c { background: #c78a1e; }
+.tag-m { background: #7a8494; }
+
+.sd-text {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-h);
+  border-bottom: 2px solid var(--border);
+  padding: 2px 6px;
+}
+.sd-translation { margin-top: 10px; color: var(--text-dim); font-size: 0.88rem; }

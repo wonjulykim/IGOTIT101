@@ -1,0 +1,31 @@
+.tf-diagram {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.tf-from {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.tf-box {
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: var(--bg);
+  width: 100%;
+  text-align: center;
+}
+.tf-from .tf-box { border-color: var(--warn); background: var(--warn-bg); }
+.tf-box-label { font-size: 0.7rem; font-weight: 700; color: var(--text-dim); margin-bottom: 4px; }
+.tf-box-text { font-family: Georgia, serif; font-weight: 700; font-size: 1rem; color: var(--text-h); }
+.tf-arrow { font-size: 1.4rem; color: var(--accent); margin: 2px 0; }
+.tf-diagram > .tf-box { border-color: var(--success); background: var(--success-bg); width: 100%; }
+.tf-note { margin-top: 8px; font-size: 0.82rem; color: var(--text-dim); text-align: center; }

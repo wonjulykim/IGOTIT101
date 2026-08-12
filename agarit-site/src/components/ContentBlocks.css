@@ -1,0 +1,81 @@
+.content-blocks { color: var(--text); }
+
+.block-heading {
+  margin-top: 2em;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--accent-border);
+  display: inline-block;
+}
+
+.block-p { line-height: 1.8; }
+
+.block-note {
+  display: flex;
+  gap: 10px;
+  background: var(--warn-bg);
+  border: 1px solid rgba(199, 138, 30, 0.25);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin: 16px 0;
+}
+.block-note p { margin: 0; }
+.block-note-icon { flex-shrink: 0; }
+
+.block-callout {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+.block-callout h4 { margin: 0 0 8px; color: var(--accent-dark); }
+.block-callout ul { margin: 0; padding-left: 1.2em; }
+.block-callout li { margin-bottom: 4px; }
+
+.block-example {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 16px;
+  margin: 16px 0;
+}
+.example-row {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.example-row:last-child { border-bottom: none; }
+.example-num {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent-bg);
+  color: var(--accent-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.example-text { flex: 1; }
+.example-en { font-weight: 600; color: var(--text-h); font-family: Georgia, serif; }
+.example-ko { color: var(--text-dim); font-size: 0.92rem; margin-top: 2px; }
+.example-note { color: var(--accent-dark); font-size: 0.85rem; margin-top: 4px; }
+
+.block-table-wrap { margin: 16px 0; overflow-x: auto; }
+.table-caption { font-weight: 700; margin-bottom: 8px; color: var(--text-h); }
+.block-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+.block-table th, .block-table td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+.block-table th { background: var(--accent-bg); color: var(--accent-dark); }
+.block-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }

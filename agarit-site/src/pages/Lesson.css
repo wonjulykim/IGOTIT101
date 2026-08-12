@@ -1,0 +1,43 @@
+.lesson-breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+}
+.lesson-breadcrumb a { color: var(--text-dim); }
+
+.lesson-complete-row {
+  margin: 32px 0 8px;
+  display: flex;
+}
+
+.btn-complete {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.btn-complete.done { background: var(--success); }
+
+.lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.lesson-nav-side { flex: 1; }
+.lesson-nav-right { text-align: right; }
+.lesson-nav-link {
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: inline-block;
+}
+.lesson-nav-link:hover { background: var(--accent-bg); text-decoration: none; }
+.lesson-nav-link.quiz { background: var(--accent); color: white; border-color: var(--accent); }
+.lesson-nav-link.quiz:hover { background: var(--accent-dark); }

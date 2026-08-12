@@ -1,0 +1,26 @@
+.video-embed-wrap {
+  margin: 16px 0;
+}
+.video-embed-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.video-embed-frame iframe,
+.video-embed-frame video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.video-embed-caption {
+  margin-top: 8px;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  text-align: center;
+}

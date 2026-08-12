@@ -1,0 +1,172 @@
+export const ch2Quiz = {
+  mcq: [
+    {
+      id: 'ch2-mcq-1',
+      q: '다음 중 f, fe로 끝나는 명사의 복수형 변화 규칙을 올바르게 따른 것은?',
+      options: ['wolf → wolfs', 'knife → knifes', 'wolf → wolves', 'belief → belives', 'roof → rooves'],
+      answer: 2,
+      explain: 'f, fe로 끝나는 명사는 f/fe를 -ves로 바꿉니다(wolf → wolves, knife → knives). 단, belief, roof는 예외로 -s만 붙입니다.',
+    },
+    {
+      id: 'ch2-mcq-2',
+      q: '다음 중 단수형과 복수형이 같은 명사가 아닌 것은?',
+      options: ['sheep', 'deer', 'salmon', 'moose', 'book'],
+      answer: 4,
+      explain: 'sheep, deer, salmon, moose, trout, swine 등은 단수·복수형이 같습니다. book은 books로 복수형을 만듭니다.',
+    },
+    {
+      id: 'ch2-mcq-3',
+      q: '관사 the를 사용하는 경우로 적절하지 않은 것은?',
+      options: [
+        '이미 문맥에서 언급되어 공유된 대상을 가리킬 때',
+        '유일하게 존재해 고유하게 식별 가능한 대상을 가리킬 때',
+        '특정한 대상을 지칭할 때',
+        '여러 대상 중 하나를 처음으로 소개할 때',
+        '듣는 사람도 이미 알고 있는 대상을 가리킬 때',
+      ],
+      answer: 3,
+      explain: '처음으로 소개되는, 특정하지 않은 대상에는 부정관사 a/an을 사용합니다. the는 이미 언급되었거나 특정한 대상에 사용합니다.',
+    },
+    {
+      id: 'ch2-mcq-4',
+      q: "'a piece of', 'a cup of', 'a bottle of'와 같이 셀 수 없는 명사를 셀 수 있는 형태로 표현해주는 말을 무엇이라 하는가?",
+      options: ['관사', '조수사', '접속사', '전치사', '보어'],
+      answer: 1,
+      explain: '조수사는 셀 수 없는 명사를 특정한 양이나 단위로 표현할 때 사용하는 표현입니다.',
+    },
+    {
+      id: 'ch2-mcq-5',
+      q: '다음 중 3인칭 단수 소유격 대명사가 아닌 것은?',
+      options: ['his', 'her', 'its', 'their', '위 중 정답 없음'],
+      answer: 3,
+      explain: 'their는 3인칭 복수 소유격입니다. 3인칭 단수 소유격은 his, her, its입니다.',
+    },
+    {
+      id: 'ch2-mcq-6',
+      q: "다음 문장에서 형용사 'kind'의 용법은?\nShe is a kind person.",
+      options: ['서술적 용법', '한정적 용법', '부사적 용법', '접속사적 용법', '조동사적 용법'],
+      answer: 1,
+      explain: '명사 person 앞에서 명사를 직접 꾸며주므로 한정적 용법입니다.',
+    },
+    {
+      id: 'ch2-mcq-7',
+      q: '빈도부사 always의 올바른 위치는?',
+      options: [
+        'She always is happy.',
+        'She is always happy.',
+        'Always she is happy.',
+        'She happy always is.',
+        'Is she always happy always.',
+      ],
+      answer: 1,
+      explain: '빈도부사는 be동사·조동사 뒤, 일반동사 앞에 위치합니다.',
+    },
+    {
+      id: 'ch2-mcq-8',
+      q: '다음 중 목적어를 반드시 필요로 하는 동사(타동사)가 쓰인 문장은?',
+      options: ['The baby sleeps.', 'Birds fly south in the winter.', 'She likes apples.', 'He arrived.', 'They laughed.'],
+      answer: 2,
+      explain: 'likes는 타동사로 apples라는 목적어를 반드시 필요로 합니다.',
+    },
+    {
+      id: 'ch2-mcq-9',
+      q: "전치사 'between'이 나타내는 이미지로 가장 적절한 것은?",
+      options: ['물체 위에 접해 있음', '물체 안쪽에 있음', '물체 사이에 있음', '물체 아래에 있음', '물체 뒤에 있음'],
+      answer: 2,
+      explain: "between은 '어떠한 물체 사이에 있다'는 이미지를 나타내는 전치사입니다.",
+    },
+    {
+      id: 'ch2-mcq-10',
+      q: '다음 접속사 중 원인·이유를 나타내는 것은?',
+      options: ['and', 'but', 'or', 'because', 'that'],
+      answer: 3,
+      explain: 'because는 원인이나 이유를 나타내는 접속사입니다.',
+    },
+    {
+      id: 'ch2-mcq-11',
+      q: "'She has become a real Einstein in physics.'에서 Einstein이라는 고유명사가 사용된 방식으로 가장 적절한 설명은?",
+      options: [
+        '고유명사가 그대로 특정 인물만을 가리킨다.',
+        '고유명사가 문맥상 보통명사처럼 쓰여 뛰어난 능력을 가진 사람을 뜻한다.',
+        '고유명사는 절대 관사와 함께 쓰일 수 없다.',
+        '고유명사가 추상명사로 바뀌었다.',
+        '문법적으로 잘못된 표현이다.',
+      ],
+      answer: 1,
+      explain: '고유명사도 문맥에 따라 보통명사처럼 쓰여 아인슈타인 같은 능력을 가진 사람이라는 뜻으로 사용될 수 있습니다.',
+    },
+  ],
+  short: [
+    {
+      id: 'ch2-short-1',
+      q: "'city'의 복수형을 쓰시오.",
+      answers: ['cities'],
+      explain: "자음+y로 끝나는 명사는 y를 i로 바꾸고 -es를 붙입니다. city → cities",
+    },
+    {
+      id: 'ch2-short-2',
+      q: "'child'의 불규칙 복수형을 쓰시오.",
+      answers: ['children'],
+      explain: 'child의 불규칙 복수형은 children입니다.',
+    },
+    {
+      id: 'ch2-short-3',
+      q: '고유명사, 추상명사, 물질명사, 집합명사처럼 원칙적으로 셀 수 없는 명사를 셀 수 있는 형태로 표현할 때 사용하는 말을 무엇이라 하는가?',
+      answers: ['조수사'],
+      explain: '조수사(a piece of, a cup of 등)를 사용합니다.',
+    },
+    {
+      id: 'ch2-short-4',
+      q: "1인칭 복수 대명사의 주격, 소유격, 목적격을 순서대로 쓰시오. (예: X, Y, Z)",
+      answers: ['we, our, us', 'we,our,us'],
+      explain: '1인칭 복수: 주격 we, 소유격 our, 목적격 us',
+    },
+    {
+      id: 'ch2-short-5',
+      q: "'He is a busy man.'과 'He is busy right now.' 중, 형용사가 서술적 용법으로 쓰인 문장의 번호나 문장을 그대로 쓰시오.",
+      answers: ['he is busy right now.', 'he is busy right now'],
+      explain: "be동사 뒤에서 주어의 상태를 설명하는 'He is busy right now.'가 서술적 용법입니다.",
+    },
+    {
+      id: 'ch2-short-6',
+      q: '동작이 얼마나 자주 일어나는지 나타내는 부사를 무엇이라 하는가?',
+      answers: ['빈도부사'],
+      explain: 'always, often, sometimes, never 등이 빈도부사입니다.',
+    },
+    {
+      id: 'ch2-short-7',
+      q: '주어와 주어를 설명해주는 단어를 연결해주는 동사로, am/is/are가 대표적인 동사는 무엇인가?',
+      answers: ['be동사', 'be 동사', 'be'],
+      explain: 'be동사는 주어와 보어를 연결해주는 역할을 합니다.',
+    },
+    {
+      id: 'ch2-short-8',
+      q: "'Preposition'이라는 단어에서 'Pre-'가 뜻하는 것은 무엇인가?",
+      answers: ['앞에', '앞'],
+      explain: "Pre-는 '앞에', position은 '위치'를 뜻하여 전치사는 명사 앞에 놓이는 단어라는 의미가 됩니다.",
+    },
+  ],
+  essay: [
+    {
+      id: 'ch2-essay-1',
+      q: '형용사의 서술적 용법과 한정적 용법의 차이를 예문을 들어 설명하시오.',
+      model:
+        '서술적 용법은 형용사가 be동사 등의 뒤에 위치하여 주어의 상태를 설명하는 용법으로, 예를 들어 “I am busy right now.”에서 busy는 지금 이 순간의 상태를 서술한다. 한정적 용법은 형용사가 명사 앞에 위치해 명사의 고정적이고 일반적인 성질을 직접 꾸며주는 용법으로, “I am a busy person.”에서 busy person은 평소에도 바쁜 사람이라는 일반적 특성을 나타낸다. 즉 서술적 용법은 일시적 상태, 한정적 용법은 고정적 특성을 나타내는 경향이 있다.',
+      keywords: ['서술적', '한정적', 'be동사', '명사 앞', '상태', '특성'],
+    },
+    {
+      id: 'ch2-essay-2',
+      q: '명사가 셀 수 있는 명사와 셀 수 없는 명사로 나뉘는 기준과, 문맥에 따라 이 분류가 달라질 수 있는 예를 설명하시오.',
+      model:
+        '영어에서는 명사를 셀 수 있는 명사(보통명사 등)와 셀 수 없는 명사(고유명사, 추상명사, 물질명사, 집합명사)로 구분하며, 셀 수 있는 명사에는 a/an을 붙이거나 -(e)s를 붙여 복수를 표시한다. 그러나 이 구분은 절대적이지 않다. 예를 들어 물질명사 water는 원래 셀 수 없지만 “Please pass me a water.”처럼 물 한 잔이라는 구체적 단위를 의미할 때는 셀 수 있는 명사처럼 쓰인다. 이처럼 명사의 종류는 문맥과 상황에 따라 달라질 수 있다.',
+      keywords: ['셀 수 있는', '셀 수 없는', '문맥', 'water', 'a/an'],
+    },
+    {
+      id: 'ch2-essay-3',
+      q: '빈도부사의 위치가 동사의 종류(be동사·조동사 / 일반동사)에 따라 달라지는 이유와 예를 설명하시오.',
+      model:
+        '빈도부사는 be동사나 조동사 뒤, 일반동사 앞에 위치한다. 예를 들어 “She is always happy.”에서는 always가 be동사 is 뒤, 형용사 happy 앞에 놓여 지속적인 상태를 강조한다. 반면 “They often visit their grandparents.”에서는 often이 일반동사 visit 앞에 놓여 그 행동이 얼마나 자주 일어나는지를 나타낸다. 이는 영어가 의미적으로 관련이 깊은 단어를 서로 가깝게 배치하는 경향이 있기 때문이다.',
+      keywords: ['빈도부사', 'be동사', '조동사', '일반동사', '앞', '뒤'],
+    },
+  ],
+}

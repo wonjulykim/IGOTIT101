@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdftotext -layout \"아가릿+본문+출력용 \\(1\\).pdf\" main.txt)",
+      "Bash(pdftotext -layout \"아가릿+표1234+출력용 \\(1\\).pdf\" tables.txt)",
+      "Bash(pdftotext -layout -enc UTF-8 \"아가릿+본문+출력용 \\(1\\).pdf\" main2.txt)",
+      "Bash(xxd)",
+      "Bash(pdftotext -layout -enc UTF-8 \"아가릿+표1234+출력용 \\(1\\).pdf\" tables2.txt)",
+      "Bash(npm -v)",
+      "Bash(npm create *)"
+    ]
+  }
+}

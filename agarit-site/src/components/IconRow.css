@@ -1,0 +1,24 @@
+.icon-row-wrap {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 16px 0;
+}
+.icon-row-caption { font-size: 0.78rem; font-weight: 700; color: var(--accent-dark); margin-bottom: 12px; }
+.icon-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 84px;
+  padding: 12px 10px;
+  border-radius: 12px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  text-align: center;
+}
+.icon-card-emoji { font-size: 1.8rem; line-height: 1; }
+.icon-card-label { font-weight: 700; font-size: 0.82rem; color: var(--text-h); }
+.icon-card-sub { font-size: 0.7rem; color: var(--text-dim); }

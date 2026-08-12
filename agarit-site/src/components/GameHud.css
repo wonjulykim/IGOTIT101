@@ -1,0 +1,56 @@
+.game-hud {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  background: var(--accent-bg);
+  border-radius: 12px;
+  margin: 4px 8px 14px;
+}
+
+.game-hud-level {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.game-hud-badge {
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: var(--accent-dark);
+  flex-shrink: 0;
+}
+
+.game-hud-bar {
+  flex: 1;
+  height: 7px;
+  background: rgba(0,0,0,0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.game-hud-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.4s ease;
+}
+
+.game-hud-xp {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+
+.game-hud-streak {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #d97b1f;
+}
+
+.game-hud.compact {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 6px 12px;
+}
+.game-hud.compact .game-hud-level { flex: 1; }
