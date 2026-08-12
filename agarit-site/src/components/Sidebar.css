@@ -114,6 +114,24 @@
 .lesson-link.active { background: var(--accent-bg); color: var(--accent-dark); font-weight: 700; }
 .quiz-link { color: var(--accent-dark); }
 
+.sidebar-admin {
+  padding: 10px 12px 20px;
+  border-top: 1px solid var(--border);
+}
+.sidebar-admin-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.sidebar-admin-link:hover { background: var(--accent-bg); color: var(--text); text-decoration: none; }
+
 .sidebar-overlay { display: none; }
 
 @media (max-width: 900px) {

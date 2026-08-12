@@ -106,6 +106,13 @@ function Block({ block }) {
       return <IconRow caption={block.caption} items={block.items} />
     case 'video':
       return <VideoEmbed youtubeId={block.youtubeId} src={block.src} caption={block.caption} />
+    case 'image':
+      return (
+        <figure className="block-image">
+          <img src={block.src} alt={block.alt || ''} loading="lazy" />
+          {block.caption && <figcaption>{block.caption}</figcaption>}
+        </figure>
+      )
     default:
       return null
   }

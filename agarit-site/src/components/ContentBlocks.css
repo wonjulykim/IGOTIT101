@@ -79,3 +79,7 @@
 }
 .block-table th { background: var(--accent-bg); color: var(--accent-dark); }
 .block-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+
+.block-image { margin: 20px 0; text-align: center; }
+.block-image img { max-width: 100%; border-radius: var(--radius); }
+.block-image figcaption { margin-top: 8px; font-size: 0.85rem; color: var(--text-dim); }

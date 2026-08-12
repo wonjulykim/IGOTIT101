@@ -1,0 +1,85 @@
+.admin-edit-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.admin-edit-breadcrumb { font-size: 0.85rem; color: var(--text-dim); margin-bottom: 6px; }
+.admin-edit-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin-left: -8px;
+  min-width: 320px;
+}
+.admin-edit-title:hover, .admin-edit-title:focus { border-color: var(--border); }
+.admin-edit-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.admin-edit-message { color: var(--success); font-size: 0.9rem; }
+.admin-edit-error { color: var(--danger); font-size: 0.9rem; }
+.admin-edit-empty { color: var(--text-dim); }
+
+.admin-edit-blocks { display: flex; flex-direction: column; gap: 14px; margin: 20px 0; }
+
+.admin-block-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  background: var(--bg-panel);
+}
+.admin-block-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.admin-block-type { font-weight: 700; font-size: 0.85rem; color: var(--accent-dark); }
+.admin-block-tools { display: flex; gap: 6px; }
+.admin-block-tools button {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+}
+.admin-block-delete { color: var(--danger); }
+
+.admin-block-card input,
+.admin-block-card textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+  margin-bottom: 8px;
+}
+.admin-block-card input:last-child,
+.admin-block-card textarea:last-child { margin-bottom: 0; }
+
+.admin-image-preview {
+  max-width: 100%;
+  max-height: 260px;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 10px;
+}
+.admin-image-controls { display: flex; gap: 8px; margin-bottom: 8px; }
+.admin-image-controls input { margin-bottom: 0; flex: 1; }
+.admin-file-label { flex-shrink: 0; display: inline-flex; align-items: center; }
+
+.admin-advanced-hint { font-size: 0.8rem; color: var(--text-dim); margin: 0 0 8px; }
+.admin-advanced-body textarea { font-family: monospace; font-size: 0.82rem; }
+
+.admin-edit-add-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.admin-edit-add-row span { color: var(--text-dim); font-size: 0.85rem; }

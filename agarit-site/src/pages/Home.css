@@ -9,46 +9,7 @@
 .home-hero p { color: var(--text-dim); margin-bottom: 20px; }
 .hero-cta { display: inline-block; text-decoration: none; }
 
-.home-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-bottom: 32px;
-}
-.stat-box {
-  background: var(--bg-panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px;
-  text-align: center;
-}
-.stat-num { font-size: 1.5rem; font-weight: 800; color: var(--accent-dark); }
-.stat-label { font-size: 0.78rem; color: var(--text-dim); margin-top: 2px; }
-
-@media (max-width: 640px) {
-  .home-stats { grid-template-columns: repeat(2, 1fr); }
-}
-
 .home-section-title { margin-bottom: 16px; }
-
-.badge-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 12px;
-  margin-bottom: 32px;
-}
-.badge-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px;
-  text-align: center;
-  background: var(--bg-panel);
-}
-.badge-card.unlocked { border-color: var(--success); background: var(--success-bg); }
-.badge-card.locked { opacity: 0.5; }
-.badge-icon { font-size: 1.6rem; margin-bottom: 6px; }
-.badge-title { font-weight: 700; font-size: 0.88rem; }
-.badge-desc { font-size: 0.76rem; color: var(--text-dim); margin-top: 4px; }
 
 .chapter-grid {
   display: grid;

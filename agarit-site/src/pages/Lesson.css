@@ -4,6 +4,11 @@
   margin-bottom: 10px;
 }
 .lesson-breadcrumb a { color: var(--text-dim); }
+.lesson-edit-link {
+  margin-left: 10px;
+  color: var(--accent-dark) !important;
+  font-weight: 600;
+}
 
 .lesson-complete-row {
   margin: 32px 0 8px;

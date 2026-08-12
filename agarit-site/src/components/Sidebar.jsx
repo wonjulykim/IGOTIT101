@@ -1,7 +1,8 @@
-import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import { chapters } from '../data/chapters'
 import { getChapterCompletionRatio } from '../utils/progress'
+import { getSession, logout } from '../utils/adminApi'
 import GameHud from './GameHud'
 import './Sidebar.css'
 
@@ -13,6 +14,21 @@ export default function Sidebar({ open, onClose }) {
     })
     return initial
   })
+  const [isAdmin, setIsAdmin] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    getSession()
+      .then((data) => setIsAdmin(!!data?.loggedIn))
+      .catch(() => setIsAdmin(false))
+  }, [location.pathname])
+
+  async function handleLogout() {
+    await logout().catch(() => {})
+    setIsAdmin(false)
+    navigate('/')
+  }
 
   function toggle(id) {
     setExpanded((prev) => ({ ...prev, [id]: !prev[id] }))
@@ -86,6 +102,16 @@ export default function Sidebar({ open, onClose }) {
             })}
           </ul>
         </nav>
+
+        <div className="sidebar-admin">
+          {isAdmin ? (
+            <button className="sidebar-admin-link" onClick={handleLogout}>🔓 관리자 로그아웃</button>
+          ) : (
+            <NavLink to="/admin/login" className="sidebar-admin-link" onClick={onClose}>
+              🔒 관리자 로그인
+            </NavLink>
+          )}
+        </div>
       </aside>
     </>
   )
