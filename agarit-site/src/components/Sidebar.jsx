@@ -1,9 +1,7 @@
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { chapters } from '../data/chapters'
-import { getChapterCompletionRatio } from '../utils/progress'
 import { getSession, logout } from '../utils/adminApi'
-import GameHud from './GameHud'
 import './Sidebar.css'
 
 export default function Sidebar({ open, onClose }) {
@@ -45,13 +43,10 @@ export default function Sidebar({ open, onClose }) {
           <span className="sidebar-sub">중학교 영어 문법</span>
         </div>
 
-        <GameHud />
-
         <nav className="sidebar-nav">
           <div className="sidebar-toc-title">차례</div>
           <ul className="chapter-list">
             {chapters.map((ch) => {
-              const ratio = ch.ready ? getChapterCompletionRatio(ch.id, ch.lessons) : 0
               const isExpanded = !!expanded[ch.id]
               return (
                 <li key={ch.id} className={`chapter-item ${!ch.ready ? 'chapter-disabled' : ''}`}>
@@ -68,11 +63,6 @@ export default function Sidebar({ open, onClose }) {
                       <span className="chapter-soon">준비중</span>
                     )}
                   </button>
-                  {ch.ready && ratio > 0 && (
-                    <div className="chapter-progress">
-                      <div className="chapter-progress-bar" style={{ width: `${ratio * 100}%` }} />
-                    </div>
-                  )}
                   {ch.ready && isExpanded && (
                     <ul className="lesson-list">
                       {ch.lessons.map((lesson) => (

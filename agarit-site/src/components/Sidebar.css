@@ -86,15 +86,6 @@
   flex-shrink: 0;
 }
 
-.chapter-progress {
-  height: 3px;
-  background: var(--border);
-  border-radius: 2px;
-  margin: 0 10px 4px;
-  overflow: hidden;
-}
-.chapter-progress-bar { height: 100%; background: var(--success); }
-
 .lesson-list {
   list-style: none;
   margin: 2px 0 8px;

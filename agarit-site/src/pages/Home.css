@@ -28,14 +28,5 @@
 .home-card-num { font-size: 0.75rem; font-weight: 700; color: var(--accent-dark); }
 .home-card-title { font-weight: 700; margin: 4px 0 10px; min-height: 2.6em; }
 
-.home-card-progress {
-  height: 5px;
-  background: var(--border);
-  border-radius: 3px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-.home-card-progress-bar { height: 100%; background: var(--success); }
-
-.home-card-links { display: flex; gap: 14px; font-size: 0.85rem; font-weight: 600; }
+.home-card-links { display: flex; gap: 14px; font-size: 0.85rem; font-weight: 600; margin-top: 10px; }
 .home-card-soon { font-size: 0.8rem; color: var(--text-dim); }

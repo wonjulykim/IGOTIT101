@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { chapters } from '../data/chapters'
-import { getChapterCompletionRatio } from '../utils/progress'
 import './Home.css'
 
 export default function Home() {
@@ -14,28 +13,20 @@ export default function Home() {
 
       <h2 className="home-section-title">차례</h2>
       <div className="chapter-grid">
-        {chapters.map((ch) => {
-          const ratio = ch.ready ? getChapterCompletionRatio(ch.id, ch.lessons) : 0
-          return (
-            <div key={ch.id} className={`home-card ${!ch.ready ? 'home-card-disabled' : ''}`}>
-              <div className="home-card-num">{ch.num}장</div>
-              <div className="home-card-title">{ch.title}</div>
-              {ch.ready ? (
-                <>
-                  <div className="home-card-progress">
-                    <div className="home-card-progress-bar" style={{ width: `${ratio * 100}%` }} />
-                  </div>
-                  <div className="home-card-links">
-                    <Link to={`/chapter/${ch.id}/lesson/${ch.lessons[0].id}`}>학습하기</Link>
-                    <Link to={`/chapter/${ch.id}/quiz`}>퀴즈</Link>
-                  </div>
-                </>
-              ) : (
-                <span className="home-card-soon">준비중</span>
-              )}
-            </div>
-          )
-        })}
+        {chapters.map((ch) => (
+          <div key={ch.id} className={`home-card ${!ch.ready ? 'home-card-disabled' : ''}`}>
+            <div className="home-card-num">{ch.num}장</div>
+            <div className="home-card-title">{ch.title}</div>
+            {ch.ready ? (
+              <div className="home-card-links">
+                <Link to={`/chapter/${ch.id}/lesson/${ch.lessons[0].id}`}>학습하기</Link>
+                <Link to={`/chapter/${ch.id}/quiz`}>퀴즈</Link>
+              </div>
+            ) : (
+              <span className="home-card-soon">준비중</span>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   )

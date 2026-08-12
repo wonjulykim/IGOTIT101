@@ -16,13 +16,17 @@ const BLOCK_LABELS = {
   table: '표',
   'sentence-diagram': '문장 다이어그램',
   'preposition-diagram-row': '전치사 다이어그램',
-  'word-order': '어순',
+  'word-order': '어순 비교',
   timeline: '타임라인',
   transform: '변형',
   'icon-row': '아이콘 목록',
 }
 
-const SIMPLE_TYPES = ['heading', 'p', 'note', 'image', 'video']
+const ADD_TYPES = [
+  'heading', 'p', 'note', 'image', 'video',
+  'callout', 'example', 'table', 'icon-row',
+  'sentence-diagram', 'preposition-diagram-row', 'word-order', 'timeline', 'transform',
+]
 
 function makeId() {
   return crypto.randomUUID()
@@ -41,6 +45,24 @@ function defaultBlock(type) {
       return { ...base, type: 'image', src: '', alt: '', caption: '' }
     case 'video':
       return { ...base, type: 'video', youtubeId: '', src: '', caption: '' }
+    case 'callout':
+      return { ...base, type: 'callout', title: '', items: [''] }
+    case 'example':
+      return { ...base, type: 'example', items: [{ en: '', ko: '', note: '' }] }
+    case 'table':
+      return { ...base, type: 'table', caption: '', headers: ['', ''], rows: [['', '']] }
+    case 'icon-row':
+      return { ...base, type: 'icon-row', caption: '', items: [{ icon: '✨', label: '', sub: '' }] }
+    case 'sentence-diagram':
+      return { ...base, type: 'sentence-diagram', label: '', parts: [{ tag: 'S', text: '' }], translation: '' }
+    case 'preposition-diagram-row':
+      return { ...base, type: 'preposition-diagram-row', items: [{ prep: '', caption: '' }] }
+    case 'word-order':
+      return { ...base, type: 'word-order', korean: [{ text: '', tag: '' }], english: [{ text: '', tag: '' }] }
+    case 'timeline':
+      return { ...base, type: 'timeline', label: '', now: 100, points: [{ at: 50, text: '' }], range: null, translation: '' }
+    case 'transform':
+      return { ...base, type: 'transform', from: [{ label: '', text: '' }], to: { label: '', text: '' }, note: '' }
     default:
       return { ...base, type }
   }
@@ -204,7 +226,7 @@ export default function AdminEdit() {
 
       <div className="admin-edit-add-row">
         <span>블록 추가:</span>
-        {SIMPLE_TYPES.map((type) => (
+        {ADD_TYPES.map((type) => (
           <button key={type} className="btn-secondary" onClick={() => addBlock(type)}>
             + {BLOCK_LABELS[type]}
           </button>
@@ -256,10 +278,62 @@ function BlockBody({ block, onChange }) {
       return <ImageBlockBody block={block} onChange={onChange} />
     case 'video':
       return <VideoBlockBody block={block} onChange={onChange} />
+    case 'callout':
+      return <CalloutBlockBody block={block} onChange={onChange} />
+    case 'example':
+      return <ExampleBlockBody block={block} onChange={onChange} />
+    case 'table':
+      return <TableBlockBody block={block} onChange={onChange} />
+    case 'icon-row':
+      return <IconRowBlockBody block={block} onChange={onChange} />
+    case 'sentence-diagram':
+      return <SentenceDiagramBlockBody block={block} onChange={onChange} />
+    case 'preposition-diagram-row':
+      return <PrepositionRowBlockBody block={block} onChange={onChange} />
+    case 'word-order':
+      return <WordOrderBlockBody block={block} onChange={onChange} />
+    case 'timeline':
+      return <TimelineBlockBody block={block} onChange={onChange} />
+    case 'transform':
+      return <TransformBlockBody block={block} onChange={onChange} />
     default:
       return <AdvancedBlockBody block={block} onChange={onChange} />
   }
 }
+
+// ---- 반복 목록(리스트) 편집을 위한 공용 헬퍼 ----
+
+function useListHelpers(list, onChangeList) {
+  function update(i, patch) {
+    onChangeList(list.map((it, idx) => (idx === i ? { ...it, ...patch } : it)))
+  }
+  function remove(i) {
+    onChangeList(list.filter((_, idx) => idx !== i))
+  }
+  function add(item) {
+    onChangeList([...list, item])
+  }
+  function move(i, dir) {
+    const target = i + dir
+    if (target < 0 || target >= list.length) return
+    const next = [...list]
+    ;[next[i], next[target]] = [next[target], next[i]]
+    onChangeList(next)
+  }
+  return { update, remove, add, move }
+}
+
+function ListRowTools({ onMoveUp, onMoveDown, onDelete }) {
+  return (
+    <div className="admin-list-row-tools">
+      <button type="button" onClick={onMoveUp} title="위로">↑</button>
+      <button type="button" onClick={onMoveDown} title="아래로">↓</button>
+      <button type="button" onClick={onDelete} title="삭제" className="admin-block-delete">✕</button>
+    </div>
+  )
+}
+
+// ---- 블록별 전용 편집 UI ----
 
 function ImageBlockBody({ block, onChange }) {
   const [uploading, setUploading] = useState(false)
@@ -327,6 +401,351 @@ function VideoBlockBody({ block, onChange }) {
         onChange={(e) => onChange({ caption: e.target.value })}
         placeholder="캡션 (선택)"
       />
+    </div>
+  )
+}
+
+function CalloutBlockBody({ block, onChange }) {
+  const items = block.items || []
+  function setItem(i, value) {
+    onChange({ items: items.map((it, idx) => (idx === i ? value : it)) })
+  }
+  function removeItem(i) {
+    onChange({ items: items.filter((_, idx) => idx !== i) })
+  }
+  function move(i, dir) {
+    const target = i + dir
+    if (target < 0 || target >= items.length) return
+    const next = [...items]
+    ;[next[i], next[target]] = [next[target], next[i]]
+    onChange({ items: next })
+  }
+  return (
+    <div className="admin-callout-body">
+      <input value={block.title || ''} onChange={(e) => onChange({ title: e.target.value })} placeholder="콜아웃 제목" />
+      <div className="admin-list-editor">
+        {items.map((it, i) => (
+          <div className="admin-list-row" key={i}>
+            <div className="admin-list-row-fields">
+              <input value={it} onChange={(e) => setItem(i, e.target.value)} placeholder={`항목 ${i + 1}`} />
+            </div>
+            <ListRowTools onMoveUp={() => move(i, -1)} onMoveDown={() => move(i, 1)} onDelete={() => removeItem(i)} />
+          </div>
+        ))}
+        <button type="button" className="btn-secondary admin-list-add" onClick={() => onChange({ items: [...items, ''] })}>
+          + 항목 추가
+        </button>
+      </div>
+    </div>
+  )
+}
+
+function ExampleBlockBody({ block, onChange }) {
+  const items = block.items || []
+  const { update, remove, move } = useListHelpers(items, (next) => onChange({ items: next }))
+  return (
+    <div className="admin-list-editor">
+      {items.map((it, i) => (
+        <div className="admin-list-row" key={i}>
+          <div className="admin-list-row-fields">
+            <input value={it.en || ''} onChange={(e) => update(i, { en: e.target.value })} placeholder="영어 문장" />
+            <input value={it.ko || ''} onChange={(e) => update(i, { ko: e.target.value })} placeholder="한글 해석" />
+            <input value={it.note || ''} onChange={(e) => update(i, { note: e.target.value })} placeholder="설명 (선택)" />
+          </div>
+          <ListRowTools onMoveUp={() => move(i, -1)} onMoveDown={() => move(i, 1)} onDelete={() => remove(i)} />
+        </div>
+      ))}
+      <button
+        type="button"
+        className="btn-secondary admin-list-add"
+        onClick={() => onChange({ items: [...items, { en: '', ko: '', note: '' }] })}
+      >
+        + 예문 추가
+      </button>
+    </div>
+  )
+}
+
+function IconRowBlockBody({ block, onChange }) {
+  const items = block.items || []
+  const { update, remove, move } = useListHelpers(items, (next) => onChange({ items: next }))
+  return (
+    <div>
+      <input
+        value={block.caption || ''}
+        onChange={(e) => onChange({ caption: e.target.value })}
+        placeholder="캡션 (선택)"
+      />
+      <div className="admin-list-editor">
+        {items.map((it, i) => (
+          <div className="admin-list-row" key={i}>
+            <div className="admin-list-row-fields admin-list-row-fields-icon">
+              <input className="admin-icon-input" value={it.icon || ''} onChange={(e) => update(i, { icon: e.target.value })} placeholder="🔤" />
+              <input value={it.label || ''} onChange={(e) => update(i, { label: e.target.value })} placeholder="라벨" />
+              <input value={it.sub || ''} onChange={(e) => update(i, { sub: e.target.value })} placeholder="부제 (선택)" />
+            </div>
+            <ListRowTools onMoveUp={() => move(i, -1)} onMoveDown={() => move(i, 1)} onDelete={() => remove(i)} />
+          </div>
+        ))}
+        <button
+          type="button"
+          className="btn-secondary admin-list-add"
+          onClick={() => onChange({ items: [...items, { icon: '✨', label: '', sub: '' }] })}
+        >
+          + 아이콘 추가
+        </button>
+      </div>
+    </div>
+  )
+}
+
+function PrepositionRowBlockBody({ block, onChange }) {
+  const items = block.items || []
+  const { update, remove, move } = useListHelpers(items, (next) => onChange({ items: next }))
+  return (
+    <div className="admin-list-editor">
+      {items.map((it, i) => (
+        <div className="admin-list-row" key={i}>
+          <div className="admin-list-row-fields">
+            <input value={it.prep || ''} onChange={(e) => update(i, { prep: e.target.value })} placeholder="전치사 (예: on, under)" />
+            <input value={it.caption || ''} onChange={(e) => update(i, { caption: e.target.value })} placeholder="설명 (선택)" />
+          </div>
+          <ListRowTools onMoveUp={() => move(i, -1)} onMoveDown={() => move(i, 1)} onDelete={() => remove(i)} />
+        </div>
+      ))}
+      <button
+        type="button"
+        className="btn-secondary admin-list-add"
+        onClick={() => onChange({ items: [...items, { prep: '', caption: '' }] })}
+      >
+        + 전치사 추가
+      </button>
+    </div>
+  )
+}
+
+function SentenceDiagramBlockBody({ block, onChange }) {
+  const parts = block.parts || []
+  const { update, remove, move } = useListHelpers(parts, (next) => onChange({ parts: next }))
+  return (
+    <div>
+      <input value={block.label || ''} onChange={(e) => onChange({ label: e.target.value })} placeholder="라벨 (선택)" />
+      <div className="admin-list-editor">
+        {parts.map((p, i) => (
+          <div className="admin-list-row" key={i}>
+            <div className="admin-list-row-fields admin-list-row-fields-icon">
+              <input className="admin-icon-input" value={p.tag || ''} onChange={(e) => update(i, { tag: e.target.value })} placeholder="S/V/O/C" />
+              <input value={p.text || ''} onChange={(e) => update(i, { text: e.target.value })} placeholder="단어/구" />
+            </div>
+            <ListRowTools onMoveUp={() => move(i, -1)} onMoveDown={() => move(i, 1)} onDelete={() => remove(i)} />
+          </div>
+        ))}
+        <button
+          type="button"
+          className="btn-secondary admin-list-add"
+          onClick={() => onChange({ parts: [...parts, { tag: 'S', text: '' }] })}
+        >
+          + 조각 추가
+        </button>
+      </div>
+      <input value={block.translation || ''} onChange={(e) => onChange({ translation: e.target.value })} placeholder="번역 (선택)" />
+    </div>
+  )
+}
+
+function WordOrderBlockBody({ block, onChange }) {
+  const korean = block.korean || []
+  const english = block.english || []
+  const kr = useListHelpers(korean, (next) => onChange({ korean: next }))
+  const en = useListHelpers(english, (next) => onChange({ english: next }))
+  return (
+    <div className="admin-word-order-body">
+      <div className="admin-word-order-col">
+        <div className="admin-sublabel">🇰🇷 한국어</div>
+        <div className="admin-list-editor">
+          {korean.map((it, i) => (
+            <div className="admin-list-row" key={i}>
+              <div className="admin-list-row-fields admin-list-row-fields-icon">
+                <input value={it.text || ''} onChange={(e) => kr.update(i, { text: e.target.value })} placeholder="단어" />
+                <input className="admin-icon-input" value={it.tag || ''} onChange={(e) => kr.update(i, { tag: e.target.value })} placeholder="태그" />
+              </div>
+              <ListRowTools onMoveUp={() => kr.move(i, -1)} onMoveDown={() => kr.move(i, 1)} onDelete={() => kr.remove(i)} />
+            </div>
+          ))}
+          <button type="button" className="btn-secondary admin-list-add" onClick={() => kr.add({ text: '', tag: '' })}>+ 단어 추가</button>
+        </div>
+      </div>
+      <div className="admin-word-order-col">
+        <div className="admin-sublabel">🇺🇸 English</div>
+        <div className="admin-list-editor">
+          {english.map((it, i) => (
+            <div className="admin-list-row" key={i}>
+              <div className="admin-list-row-fields admin-list-row-fields-icon">
+                <input value={it.text || ''} onChange={(e) => en.update(i, { text: e.target.value })} placeholder="word" />
+                <input className="admin-icon-input" value={it.tag || ''} onChange={(e) => en.update(i, { tag: e.target.value })} placeholder="tag" />
+              </div>
+              <ListRowTools onMoveUp={() => en.move(i, -1)} onMoveDown={() => en.move(i, 1)} onDelete={() => en.remove(i)} />
+            </div>
+          ))}
+          <button type="button" className="btn-secondary admin-list-add" onClick={() => en.add({ text: '', tag: '' })}>+ word 추가</button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function TimelineBlockBody({ block, onChange }) {
+  const points = block.points || []
+  const { update, remove, move } = useListHelpers(points, (next) => onChange({ points: next }))
+  const hasRange = !!block.range
+  return (
+    <div>
+      <input value={block.label || ''} onChange={(e) => onChange({ label: e.target.value })} placeholder="라벨 (선택)" />
+      <label className="admin-inline-label">
+        지금 위치 (0~100)
+        <input
+          type="number" min="0" max="100"
+          value={block.now ?? 100}
+          onChange={(e) => onChange({ now: Number(e.target.value) })}
+        />
+      </label>
+
+      <div className="admin-list-editor">
+        <div className="admin-sublabel">시점(포인트)</div>
+        {points.map((p, i) => (
+          <div className="admin-list-row" key={i}>
+            <div className="admin-list-row-fields admin-list-row-fields-icon">
+              <input type="number" min="0" max="100" className="admin-icon-input" value={p.at ?? 0} onChange={(e) => update(i, { at: Number(e.target.value) })} placeholder="위치" />
+              <input value={p.text || ''} onChange={(e) => update(i, { text: e.target.value })} placeholder="텍스트" />
+              <input value={p.sub || ''} onChange={(e) => update(i, { sub: e.target.value })} placeholder="부가 설명 (선택)" />
+            </div>
+            <ListRowTools onMoveUp={() => move(i, -1)} onMoveDown={() => move(i, 1)} onDelete={() => remove(i)} />
+          </div>
+        ))}
+        <button type="button" className="btn-secondary admin-list-add" onClick={() => onChange({ points: [...points, { at: 50, text: '' }] })}>
+          + 시점 추가
+        </button>
+      </div>
+
+      <div className="admin-sublabel">구간 (선택)</div>
+      {hasRange ? (
+        <div className="admin-list-row-fields admin-list-row-fields-icon">
+          <input type="number" min="0" max="100" className="admin-icon-input" value={block.range.from ?? 0} onChange={(e) => onChange({ range: { ...block.range, from: Number(e.target.value) } })} placeholder="시작" />
+          <input type="number" min="0" max="100" className="admin-icon-input" value={block.range.to ?? 0} onChange={(e) => onChange({ range: { ...block.range, to: Number(e.target.value) } })} placeholder="끝" />
+          <input value={block.range.text || ''} onChange={(e) => onChange({ range: { ...block.range, text: e.target.value } })} placeholder="구간 텍스트" />
+          <button type="button" className="admin-block-delete" onClick={() => onChange({ range: null })}>구간 삭제</button>
+        </div>
+      ) : (
+        <button type="button" className="btn-secondary" onClick={() => onChange({ range: { from: 0, to: 50, text: '' } })}>+ 구간 추가</button>
+      )}
+
+      <input value={block.translation || ''} onChange={(e) => onChange({ translation: e.target.value })} placeholder="번역 (선택)" />
+    </div>
+  )
+}
+
+function TransformBlockBody({ block, onChange }) {
+  const fromItems = Array.isArray(block.from) ? block.from : block.from ? [block.from] : []
+  const { update, remove, move } = useListHelpers(fromItems, (next) => onChange({ from: next }))
+  const to = block.to || { label: '', text: '' }
+  return (
+    <div>
+      <div className="admin-sublabel">이전 (from)</div>
+      <div className="admin-list-editor">
+        {fromItems.map((f, i) => (
+          <div className="admin-list-row" key={i}>
+            <div className="admin-list-row-fields admin-list-row-fields-icon">
+              <input className="admin-icon-input" value={f.label || ''} onChange={(e) => update(i, { label: e.target.value })} placeholder="라벨 (선택)" />
+              <input value={f.text || ''} onChange={(e) => update(i, { text: e.target.value })} placeholder="문장/텍스트" />
+            </div>
+            <ListRowTools onMoveUp={() => move(i, -1)} onMoveDown={() => move(i, 1)} onDelete={() => remove(i)} />
+          </div>
+        ))}
+        <button type="button" className="btn-secondary admin-list-add" onClick={() => onChange({ from: [...fromItems, { label: '', text: '' }] })}>
+          + from 추가
+        </button>
+      </div>
+      <div className="admin-sublabel">이후 (to)</div>
+      <div className="admin-list-row-fields admin-list-row-fields-icon">
+        <input className="admin-icon-input" value={to.label || ''} onChange={(e) => onChange({ to: { ...to, label: e.target.value } })} placeholder="라벨 (선택)" />
+        <input value={to.text || ''} onChange={(e) => onChange({ to: { ...to, text: e.target.value } })} placeholder="문장/텍스트" />
+      </div>
+      <input value={block.note || ''} onChange={(e) => onChange({ note: e.target.value })} placeholder="설명 노트 (선택)" />
+    </div>
+  )
+}
+
+function TableBlockBody({ block, onChange }) {
+  const headers = block.headers || []
+  const rows = block.rows || []
+
+  function setHeader(i, value) {
+    const next = [...headers]
+    next[i] = value
+    onChange({ headers: next })
+  }
+  function addColumn() {
+    onChange({ headers: [...headers, ''], rows: rows.map((r) => [...r, '']) })
+  }
+  function removeColumn(i) {
+    onChange({ headers: headers.filter((_, idx) => idx !== i), rows: rows.map((r) => r.filter((_, idx) => idx !== i)) })
+  }
+  function setCell(r, c, value) {
+    const next = rows.map((row) => [...row])
+    next[r][c] = value
+    onChange({ rows: next })
+  }
+  function addRow() {
+    onChange({ rows: [...rows, headers.map(() => '')] })
+  }
+  function removeRow(i) {
+    onChange({ rows: rows.filter((_, idx) => idx !== i) })
+  }
+  function moveRow(i, dir) {
+    const target = i + dir
+    if (target < 0 || target >= rows.length) return
+    const next = [...rows]
+    ;[next[i], next[target]] = [next[target], next[i]]
+    onChange({ rows: next })
+  }
+
+  return (
+    <div className="admin-table-body">
+      <input value={block.caption || ''} onChange={(e) => onChange({ caption: e.target.value })} placeholder="표 캡션 (선택)" />
+      <div className="admin-table-grid-wrap">
+        <table className="admin-table-grid">
+          <thead>
+            <tr>
+              {headers.map((h, i) => (
+                <th key={i}>
+                  <input value={h} onChange={(e) => setHeader(i, e.target.value)} placeholder={`열 ${i + 1}`} />
+                  <button type="button" className="admin-block-delete" onClick={() => removeColumn(i)}>✕</button>
+                </th>
+              ))}
+              <th className="admin-table-add-col">
+                <button type="button" className="btn-secondary" onClick={addColumn}>+ 열</button>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, r) => (
+              <tr key={r}>
+                {headers.map((_, c) => (
+                  <td key={c}>
+                    <input value={row[c] || ''} onChange={(e) => setCell(r, c, e.target.value)} />
+                  </td>
+                ))}
+                <td className="admin-table-row-tools">
+                  <button type="button" onClick={() => moveRow(r, -1)} title="위로">↑</button>
+                  <button type="button" onClick={() => moveRow(r, 1)} title="아래로">↓</button>
+                  <button type="button" className="admin-block-delete" onClick={() => removeRow(r)} title="삭제">✕</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <button type="button" className="btn-secondary admin-list-add" onClick={addRow}>+ 행 추가</button>
     </div>
   )
 }

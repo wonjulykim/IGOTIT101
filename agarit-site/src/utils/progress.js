@@ -28,13 +28,6 @@ export function isLessonComplete(chapterId, lessonId) {
   return !!data.completedLessons[`${chapterId}/${lessonId}`]
 }
 
-export function getChapterCompletionRatio(chapterId, lessons) {
-  if (!lessons || lessons.length === 0) return 0
-  const data = load()
-  const done = lessons.filter((l) => data.completedLessons[`${chapterId}/${l.id}`]).length
-  return done / lessons.length
-}
-
 export function saveQuizScore(chapterId, quizType, score, total) {
   const data = load()
   if (!data.quizScores[chapterId]) data.quizScores[chapterId] = {}
