@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   }
 
   if (req.method === 'GET') {
-    res.status(200).json({ override: getOverride(chapterId, lessonId) })
+    res.status(200).json({ override: await getOverride(chapterId, lessonId) })
     return
   }
 
@@ -25,13 +25,13 @@ export default async function handler(req, res) {
       res.status(400).json({ error: 'blocks 배열이 필요합니다.' })
       return
     }
-    setOverride(chapterId, lessonId, { title: title || null, blocks })
+    await setOverride(chapterId, lessonId, { title: title || null, blocks })
     res.status(200).json({ ok: true })
     return
   }
 
   if (req.method === 'DELETE') {
-    deleteOverride(chapterId, lessonId)
+    await deleteOverride(chapterId, lessonId)
     res.status(200).json({ ok: true })
     return
   }

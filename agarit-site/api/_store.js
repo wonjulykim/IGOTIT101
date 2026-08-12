@@ -1,53 +1,56 @@
-// 로컬 개발용 저장소 — JSON 파일에 관리자 수정 내용을 저장한다.
-// 주의: Vercel 등 서버리스 배포 환경에서는 파일시스템이 읽기 전용이라 이 구현은 동작하지 않는다.
-// 배포 시에는 이 파일의 함수 시그니처(getOverride/setOverride/deleteOverride/listOverrideKeys)를
-// 그대로 유지한 채 내부 구현만 Supabase 등 실제 DB 호출로 교체하면 된다.
+// Supabase 기반 저장소 — 관리자 수정 내용(lesson override)을 DB에 저장한다.
+// 함수 시그니처(getOverride/setOverride/deleteOverride/listOverrideKeys)는 이전 파일 기반 구현과 동일하게 유지.
 
-import fs from 'node:fs'
-import path from 'node:path'
+import { createClient } from '@supabase/supabase-js'
 
-const DATA_DIR = path.join(process.cwd(), 'data')
-const FILE = path.join(DATA_DIR, 'lesson-overrides.json')
+const TABLE = 'lesson_overrides'
 
-function readAll() {
-  try {
-    return JSON.parse(fs.readFileSync(FILE, 'utf8'))
-  } catch {
-    return {}
+let client = null
+function db() {
+  if (!client) {
+    client = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY, {
+      auth: { persistSession: false },
+    })
   }
+  return client
 }
 
-function writeAll(obj) {
-  fs.mkdirSync(DATA_DIR, { recursive: true })
-  fs.writeFileSync(FILE, JSON.stringify(obj, null, 2), 'utf8')
+export async function getOverride(chapterId, lessonId) {
+  const { data, error } = await db()
+    .from(TABLE)
+    .select('title, blocks, updated_at')
+    .eq('chapter_id', chapterId)
+    .eq('lesson_id', lessonId)
+    .maybeSingle()
+  if (error) throw error
+  if (!data) return null
+  return { title: data.title, blocks: data.blocks, updatedAt: data.updated_at }
 }
 
-export function getOverride(chapterId, lessonId) {
-  const all = readAll()
-  return all?.[chapterId]?.[lessonId] || null
+export async function setOverride(chapterId, lessonId, data) {
+  const { error } = await db()
+    .from(TABLE)
+    .upsert({
+      chapter_id: chapterId,
+      lesson_id: lessonId,
+      title: data.title ?? null,
+      blocks: data.blocks,
+      updated_at: new Date().toISOString(),
+    })
+  if (error) throw error
 }
 
-export function setOverride(chapterId, lessonId, data) {
-  const all = readAll()
-  if (!all[chapterId]) all[chapterId] = {}
-  all[chapterId][lessonId] = { ...data, updatedAt: new Date().toISOString() }
-  writeAll(all)
+export async function deleteOverride(chapterId, lessonId) {
+  const { error } = await db()
+    .from(TABLE)
+    .delete()
+    .eq('chapter_id', chapterId)
+    .eq('lesson_id', lessonId)
+  if (error) throw error
 }
 
-export function deleteOverride(chapterId, lessonId) {
-  const all = readAll()
-  if (all[chapterId]) {
-    delete all[chapterId][lessonId]
-    if (Object.keys(all[chapterId]).length === 0) delete all[chapterId]
-  }
-  writeAll(all)
-}
-
-export function listOverrideKeys() {
-  const all = readAll()
-  const out = []
-  for (const ch of Object.keys(all)) {
-    for (const ls of Object.keys(all[ch])) out.push(`${ch}/${ls}`)
-  }
-  return out
+export async function listOverrideKeys() {
+  const { data, error } = await db().from(TABLE).select('chapter_id, lesson_id')
+  if (error) throw error
+  return (data || []).map((row) => `${row.chapter_id}/${row.lesson_id}`)
 }
