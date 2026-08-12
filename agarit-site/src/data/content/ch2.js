@@ -330,7 +330,7 @@ export const ch2 = {
       },
       {
         type: 'p',
-        text: '고유명사(John, Paris)나 추상명사·물질명사(love, water), 집합명사(furniture)는 원칙적으로 셀 수 없으므로 a/an을 쓰지 않습니다. 반면 보통명사(dog, book)는 a/an을 써서 하나임을 표시할 수 있습니다. 다만 문맥에 따라 이 원칙은 얼마든지 깨질 수 있다는 것, 즉 셀 수 없는 명사도 문맥상 보통명사처럼 쓰이면 a/an이 붙을 수 있다는 점을 꼭 기억하세요.',
+        text: '고유명사(John, Paris)는 고유하게 식별 가능하며 하나밖에 존재하지 않는 대상이고 복수형을 만들 수 없기 때문에 셀 수 없는 명사로 간주되어 a/an을 쓰지 않습니다. 추상명사·물질명사(love, water)는 본질적으로 형태가 정해져 있지 않아 셀 수 없으므로 부정관사를 쓰지 않고, 집합명사(furniture)는 개별 구성 요소 하나하나를 가리키는 말이 아니라서 역시 셀 수 없는 명사로 취급됩니다. 반면 보통명사(dog, book)는 a/an을 써서 하나임을 표시할 수 있습니다. 다만 문맥에 따라 이 원칙은 얼마든지 깨질 수 있다는 것, 즉 셀 수 없는 명사도 문맥상 보통명사처럼 쓰이면 a/an이 붙을 수 있다는 점을 꼭 기억하세요.',
       },
       {
         type: 'callout',
@@ -385,7 +385,7 @@ export const ch2 = {
         caption: '자주 쓰이는 조수사',
         headers: ['조수사', '의미', '예시'],
         rows: [
-          ['a piece of', '한 조각의, 약간의', 'a piece of cake, a piece of advice'],
+          ['a piece of', '한 조각의, 약간의', 'a piece of cake, a piece of information, a piece of advice'],
           ['a slice of', '한 조각의', 'a slice of bread, a slice of pizza'],
           ['a cup of', '한 컵의', 'a cup of coffee, a cup of tea'],
           ['a bottle of', '한 병의', 'a bottle of water, a bottle of wine'],
@@ -607,6 +607,10 @@ export const ch2 = {
           { en: 'Our teacher is present in the classroom.', ko: '우리 선생님은 교실에 계십니다.', note: 'present(서술적) — 참석한' },
           { en: 'The book was written by the late Professor Smith.', ko: '이 책은 고(故) 스미스 교수님이 쓰신 것입니다.', note: 'late(한정적) — 고인의' },
           { en: 'He is always late for soccer practice.', ko: '그는 항상 축구 연습에 늦습니다.', note: 'late(서술적) — 늦은' },
+          { en: 'She always sits in the right corner of the library.', ko: '그녀는 항상 도서관의 오른쪽 구석에 앉습니다.', note: 'right(한정적) — 오른쪽의' },
+          { en: 'It is right to tell the truth.', ko: '진실을 말하는 것이 옳습니다.', note: 'right(서술적) — 옳은' },
+          { en: 'She has a certain charm about her.', ko: '그녀에게는 어떤 매력이 있습니다.', note: 'certain(한정적) — 어떤' },
+          { en: 'It is certain that we will have a test next week.', ko: '다음 주에 시험이 있을 것이 확실합니다.', note: 'certain(서술적) — 확실한' },
         ],
       },
       { type: 'heading', text: '형용사가 여러 개 겹칠 때의 순서' },
@@ -661,7 +665,13 @@ export const ch2 = {
           { en: 'She wore a lovely dress to the party.', ko: '그녀는 파티에 사랑스러운 드레스를 입었다.' },
           { en: 'Our new teacher is very friendly.', ko: '우리 새 선생님은 매우 친근하다.' },
           { en: 'His arrival was quite timely since we needed extra help.', ko: '우리가 추가 도움이 필요할 때 그가 도착한 것은 매우 시기적절했다.' },
+          { en: 'The elderly man walks in the park every morning.', ko: '그 노인은 매일 아침 공원에서 걷는다.' },
+          { en: 'He showed a manly way of dealing with difficulties.', ko: '그는 어려움을 대처하는 남자다운 방식을 보여주었다.' },
+          { en: 'She has a very womanly grace.', ko: '그녀는 매우 여성다운 우아함을 가지고 있다.' },
+          { en: 'Buying a new car can be very costly.', ko: '새 차를 사는 것은 매우 비쌀 수 있다.' },
+          { en: 'He takes his dog for a daily walk.', ko: '그는 매일 그의 개를 산책시킨다.' },
           { en: 'We have a weekly meeting on Mondays.', ko: '우리는 월요일에 매주 회의를 한다.' },
+          { en: 'The monthly magazine subscription is very popular.', ko: '이 월간지 구독은 매우 인기가 있다.' },
         ],
       },
       {
@@ -688,7 +698,7 @@ export const ch2 = {
     blocks: [
       {
         type: 'p',
-        text: '부사는 동사, 형용사, 다른 부사, 문장 전체를 꾸며주며 어떻게(방법), 언제(시간), 어디서(장소), 왜(이유), 얼마나(정도)에 대한 정보를 더해줍니다.',
+        text: '부사는 부가적인 단어, 즉 도와주는 말을 의미합니다. 부사는 동사, 형용사, 다른 부사, 문장 전체를 꾸며주며 어떻게(방법), 언제(시간), 어디서(장소), 왜(이유), 얼마나(정도)에 대한 정보를 더해 동작이나 상태를 더 구체적으로 설명합니다.',
       },
       {
         type: 'icon-row',
@@ -696,6 +706,17 @@ export const ch2 = {
         items: [
           { icon: '🎨', label: '형용사', sub: '명사의 모습을 묘사' },
           { icon: '🏃💨', label: '부사', sub: '동작·상태를 꾸밈' },
+        ],
+      },
+      {
+        type: 'table',
+        caption: '부사의 대표적인 종류',
+        headers: ['종류', '예시'],
+        rows: [
+          ['방식을 나타내는 부사', 'quickly, slowly, carefully, easily 등'],
+          ['장소를 나타내는 부사', 'here, there, everywhere 등'],
+          ['빈도를 나타내는 부사', 'always, never, often 등'],
+          ['정도를 나타내는 부사', 'very, quite 등'],
         ],
       },
       {
@@ -734,8 +755,10 @@ export const ch2 = {
         items: [
           { en: 'She always finishes her homework before dinner.', ko: '그녀는 저녁 식사 전에 항상 숙제를 마칩니다.' },
           { en: 'He usually takes the bus to school.', ko: '그는 보통 학교에 버스를 타고 갑니다.' },
+          { en: 'Students generally receive homework every day.', ko: '학생들은 일반적으로 매일 숙제를 받습니다.' },
           { en: 'They often play basketball after school.', ko: '그들은 학교 후에 자주 농구를 합니다.' },
           { en: 'She sometimes helps her mom in the kitchen.', ko: '그녀는 가끔 부엌에서 엄마를 돕습니다.' },
+          { en: 'He occasionally visits his grandparents on the weekend.', ko: '그는 주말에 간혹 할아버지 할머니 댁을 방문합니다.' },
           { en: 'I seldom go to bed after midnight.', ko: '저는 자정 후에 잠자리에 드는 일이 드뭅니다.' },
           { en: 'We rarely watch TV on weekdays.', ko: '우리는 평일에 거의 TV를 보지 않습니다.' },
           { en: 'He never forgets to brush his teeth.', ko: '그는 이를 닦는 것을 절대 잊지 않습니다.' },
@@ -791,10 +814,26 @@ export const ch2 = {
         items: [
           { en: 'She runs fast to catch the bus.', ko: '그녀는 버스를 잡기 위해 빠르게 달린다.', note: 'fast(부사) — 빠르게' },
           { en: 'He drives a fast car.', ko: '그는 빠른 차를 운전한다.', note: 'fast(형용사) — 빠른' },
+          { en: 'He works hard every day.', ko: '그는 매일 열심히 일한다.', note: 'hard(부사) — 열심히, 어렵게' },
+          { en: 'This is a hard exam.', ko: '이것은 어려운 시험이다.', note: 'hard(형용사) — 열심히 하는, 어려운' },
+          { en: 'We arrived early at the theater.', ko: '우리는 극장에 일찍 도착했다.', note: 'early(부사) — 이른 시각에' },
+          { en: 'He has an early appointment.', ko: '그는 일찍 예약이 있다.', note: 'early(형용사) — 이른' },
+          { en: 'She often stays up late.', ko: '그녀는 자주 늦게까지 깨어 있다.', note: 'late(부사) — 늦게' },
+          { en: "It's too late to call him now.", ko: '지금 그에게 전화하기에는 너무 늦었다.', note: 'late(형용사) — 늦은' },
+          { en: 'The bird flew high above the trees.', ko: '그 새는 나무 위로 높게 날았다.', note: 'high(부사) — 높게' },
+          { en: 'He has a high fever.', ko: '그는 열이 높다.', note: 'high(형용사) — 높은' },
+          { en: 'Turn right at the corner.', ko: '모퉁이에서 오른쪽으로 돌아라.', note: 'right(부사) — 곧바로, 오른쪽으로' },
+          { en: 'It is the right answer.', ko: '그것은 옳은 답이다.', note: 'right(형용사) — 옳은' },
           { en: 'She reads the most in our class.', ko: '그녀는 우리 반에서 가장 많이 읽는다.', note: 'most(부사) — 가장 많이' },
           { en: 'He is the most talented player on the team.', ko: '그는 팀에서 가장 재능 있는 선수다.', note: 'most(형용사) — 가장 많은' },
+          { en: 'She waited long enough.', ko: '그녀는 충분히 오래 기다렸다.', note: 'long(부사) — 오래, 길게' },
+          { en: 'He has a long list of chores.', ko: '그는 해야 할 일이 긴 목록을 가지고 있다.', note: 'long(형용사) — 오랜, 긴' },
           { en: 'I saw him last.', ko: '나는 그를 마지막으로 봤다.', note: 'last(부사) — 마지막으로' },
           { en: 'She was the last person to leave.', ko: '그녀는 떠난 사람 중 마지막이었다.', note: 'last(형용사) — 마지막의' },
+          { en: "She didn't study enough for the test.", ko: '그녀는 시험을 위해 충분히 공부하지 않았다.', note: 'enough(부사) — 충분히' },
+          { en: 'We have enough food for everyone.', ko: '우리는 모두를 위한 충분한 음식을 가지고 있다.', note: 'enough(형용사) — 충분한' },
+          { en: 'He performed well on his exams.', ko: '그는 시험에서 잘 했다.', note: 'well(부사) — 잘' },
+          { en: 'He is not feeling well today.', ko: '그는 오늘 기분이 좋지 않다.', note: 'well(형용사) — 건강한, 좋은' },
         ],
       },
       { type: 'heading', text: '흔한 실수: 형용사를 부사 자리에 쓰기' },

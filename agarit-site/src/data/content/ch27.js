@@ -287,7 +287,7 @@ export const ch27 = {
         items: [
           { en: 'Were I you, I would apologize first.', ko: '내가 너라면, 먼저 사과할 텐데.', note: '= If I were you, I would apologize first.' },
           { en: 'Had I known the truth, I would have acted differently.', ko: '내가 진실을 알았더라면, 다르게 행동했을 텐데.', note: '= If I had known the truth, I would have acted differently.' },
-          { en: 'Were it not for your help, I would have failed the project.', ko: '너의 도움이 없었다면, 나는 그 프로젝트에서 실패했을 것이다.', note: '가정법 과거 형태의 관용 표현 — 현재 시점에서 도움이 없다고 상상' },
+          { en: 'Had it not been for your help, I would have failed the project.', ko: '너의 도움이 없었다면, 나는 그 프로젝트에서 실패했을 것이다.', note: '= If it had not been for your help, I would have failed the project. (가정법 과거완료 도치 관용 표현)' },
         ],
       },
       {

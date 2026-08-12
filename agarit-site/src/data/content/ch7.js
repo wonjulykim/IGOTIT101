@@ -104,6 +104,35 @@ export const ch7 = {
         ],
         translation: 'I am busy. (나는 바쁘다.) — am이 I와 busy를 연결, "바쁨이다"가 아니라 "바쁜 상태로 이어줌"',
       },
+      { type: 'heading', text: 'be동사의 의문문과 부정문' },
+      {
+        type: 'p',
+        text: '영어 문장은 기본적으로 주어와 동사로 문장을 시작합니다. 말하는 사람이 듣는 사람에게 무언가를 물어보고 싶을 때는 이 의도를 전달하기 위해 "주어-동사"로 시작하는 문장을 "동사-주어"의 순서로 바꿉니다. be동사는 스스로 문장 맨 앞으로 이동할 수 있기 때문에, 주어와 be동사의 자리만 바꾸면 의문문이 됩니다. 부정문을 만들 때도 be동사 뒤에 not만 붙이면 됩니다.',
+      },
+      {
+        type: 'transform',
+        from: 'You are in the house.',
+        to: 'Are you in the house?',
+        note: '주어와 be동사의 자리를 바꾸어 의문문 완성',
+      },
+      {
+        type: 'transform',
+        from: 'He is in the house.',
+        to: 'He is not in the house.',
+        note: 'be동사 뒤에 not만 붙여 부정문 완성',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Is he in the house?', ko: '그는 집 안에 있니?', note: 'he is → is he로 자리를 바꾸어 의문문' },
+          { en: 'Are they in the house?', ko: '그들은 집 안에 있니?', note: 'they are → are they로 자리를 바꾸어 의문문' },
+          { en: 'They are not in the house.', ko: '그들은 집 안에 있지 않다.', note: 'are 뒤에 not을 붙여 부정문' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '일반동사는 be동사처럼 스스로 자리를 바꾸어 의문문·부정문을 만들지 못하기 때문에 Do/Does의 도움이 필요합니다. 자세한 내용은 다음 레슨(일반동사)에서 다룹니다.',
+      },
       {
         type: 'callout',
         title: '핵심 정리 - be동사',
@@ -112,6 +141,7 @@ export const ch7 = {
           '보어는 be동사 뒤에서 주어의 장소, 신분, 상태 등을 보충 설명해준다.',
           '문장 구조는 항상 S(주어) + V(be동사) + C(보어)의 형태를 이룬다.',
           '한국어 형용사문(바쁘다)은 동사 없이도 서술어가 되지만, 영어 형용사문은 반드시 be동사가 있어야 하므로 be동사를 빠뜨리지 않도록 주의한다.',
+          'be동사는 스스로 문장 앞으로 이동해 의문문을 만들고, 뒤에 not을 붙여 부정문을 만든다.',
         ],
       },
     ],
@@ -198,6 +228,24 @@ export const ch7 = {
           { en: 'Does he want something?', ko: '(정답) 그는 무엇을 원하니?', note: 'Does가 앞으로 나가 의문문을 만듦' },
         ],
       },
+      { type: 'heading', text: '왜 일반동사는 Do의 도움이 필요할까?' },
+      {
+        type: 'p',
+        text: 'be동사는 He is in the house.를 Is he in the house?로 바꾸듯 스스로 주어 앞으로 이동해 의문문을 만들 수 있습니다. 하지만 일반동사 want는 스스로 앞으로 나가 의문문을 만들지 못하기 때문에, 대신 조동사 Do/Does가 문장 맨 앞에 위치하여 의문문을 만듭니다. 시제가 현재이고 주어가 3인칭 단수일 경우에는 조동사 Do와 주어의 수를 일치시켜 Does로 써주어야 합니다.',
+      },
+      {
+        type: 'p',
+        text: '부정문도 마찬가지입니다. be동사는 뒤에 not만 붙이면 되지만(He is not in the house.), 일반동사는 스스로 부정문을 만들지 못하기 때문에 do 또는 does가 부정 요소 not과 함께 쓰여야 합니다(He does not want something.).',
+      },
+      { type: 'heading', text: '역사 속의 do - 셰익스피어 《햄릿》' },
+      {
+        type: 'p',
+        text: '언어학자 Anthony Warner는 그의 저서에서 do의 사용이 어떻게 발전했는지를 설명합니다. 처음에는 특정한 의미 없이 사용되던 do가 점차 강조, 부정, 질문 등에 사용되는 보조동사로 자리 잡게 되었다고 합니다. 윌리엄 셰익스피어의 《햄릿》(1600년경)에 나오는 "He doth protest too much."라는 문장에서 doth는 does의 고어 형태입니다. 이 문장의 주어와 동사 자리를 바꾸면 "Doth(Does) he protest too much?"가 되는데, 이는 오늘날 일반동사의 의문문을 만드는 방식과 다르지 않습니다. 즉 일반동사의 의문문도 be동사의 의문문처럼 원래는 주어와 동사의 자리를 바꾸는 방식이었고, 현대 영어로 오면서 특별한 의미 없이 쓰이던 do, does가 문장에서 사라진 것으로 볼 수 있습니다.',
+      },
+      {
+        type: 'note',
+        text: '부정문에도 비슷한 역사가 있습니다. 고대 영어에서는 일반동사 바로 뒤에 not을 붙여 "I want not something."처럼 쉽게 부정문을 만들었습니다. 그런데 중세 영어로 넘어오면서 "I do not want something."과 같이 do가 추가되었습니다.',
+      },
       {
         type: 'callout',
         title: '핵심 정리 - 일반동사',
@@ -206,6 +254,7 @@ export const ch7 = {
           'be동사가 주어와 보어를 연결하는 것과 달리, 일반동사는 의미 그 자체가 문장의 핵심이 된다.',
           '상태를 나타내는 일반동사(like, know, belong 등)는 특별한 이유가 없다면 진행형으로 잘 쓰지 않는다.',
           '일반동사는 스스로 의문문·부정문을 만들지 못해 do/does의 도움이 필요하다.',
+          '일반동사에 do/does가 필요한 것은, 원래 특정한 의미 없이 쓰이던 do가 강조·부정·질문에 쓰이는 보조동사로 자리 잡은 역사적 흐름과 관련이 있다.',
         ],
       },
     ],
@@ -289,20 +338,6 @@ export const ch7 = {
           { en: 'I think it will rain later in the day.', ko: '내가 생각하기에 나중에 비가 올 것 같다.', note: '가능성 높은 추측' },
         ],
       },
-      { type: 'heading', text: '의무·필요를 나타내는 조동사 - must, should, have to' },
-      {
-        type: 'p',
-        text: 'must, should, have to도 같은 원리로 이해할 수 있습니다. must는 화자가 "반드시 그래야 한다"고 강하게 확신하는 정도를, should는 "그렇게 하는 것이 바람직하다"는 약한 정도를, have to는 외부 규칙 때문에 "그럴 수밖에 없다"는 정도를 나타냅니다. 즉 이들 역시 의무의 종류가 다른 것이 아니라, 화자가 느끼는 "그래야 할 가능성·필요성의 정도"가 다른 것입니다.',
-      },
-      {
-        type: 'example',
-        items: [
-          { en: 'You must be quiet in the library.', ko: '도서관에서는 반드시 조용히 해야 한다.', note: '화자 스스로의 강한 확신 → 강한 의무' },
-          { en: 'You should get some rest before the exam.', ko: '시험 전에 좀 쉬는 게 좋겠다.', note: '바람직하다는 약한 정도 → 조언' },
-          { en: 'I have to submit the report by Friday.', ko: '나는 금요일까지 보고서를 제출해야 한다.', note: '외부 규칙·기한에 의한 필요 → 의무' },
-          { en: 'He must be at home now.', ko: '그는 지금 집에 있는 게 틀림없다.', note: '강한 확신에 가까운 추측' },
-        ],
-      },
       {
         type: 'table',
         caption: '대표적인 조동사가 나타내는 의미',
@@ -311,14 +346,7 @@ export const ch7 = {
           ['will', '실현 가능성이 높음', '미래, 의지, 확신에 가까운 추측'],
           ['can', '실현 가능성이 있는 정도', '능력, 허락, 부탁, (not과 함께) 강한 부정 추측'],
           ['may', '불확실한 가능성 (강제성 없는 선택)', '허락, 부탁, 불확실한 추측'],
-          ['should', '그렇게 하는 것이 바람직한 정도', '의무·조언 (~하는 것이 좋다)'],
-          ['must', '반드시 그래야 하는 강한 확신', '강한 의무, 강한 확신에 가까운 추측 (~임에 틀림없다)'],
-          ['have to', 'must와 비슷하나 외부 상황에 의한 의무', '의무·필요 (~해야 한다)'],
         ],
-      },
-      {
-        type: 'note',
-        text: 'must는 화자 스스로의 강한 판단에서 나온 의무를, have to는 규칙이나 외부 상황 때문에 생기는 의무를 나타내는 경향이 있습니다. 예) You must be quiet in the library.(도서관에서는 반드시 조용해야 한다는 화자의 강한 요구) / I have to submit the report by Friday.(외부에서 정해진 기한 때문에 생긴 의무)',
       },
       { type: 'heading', text: '흔히 하는 실수 - 조동사의 형태' },
       {
@@ -346,7 +374,6 @@ export const ch7 = {
           '조동사는 be동사·일반동사가 나타내지 못하는 가능성, 능력, 허락, 의무 등을 표현한다.',
           '조동사의 핵심은 "일이 발생할 가능성의 정도"이며, will > can > may 순으로 실현 가능성이 낮아진다고 이해하면 편하다.',
           '같은 상황이라도 화자의 확신 정도에 따라 can·may·will 중 다른 조동사가 선택된다.',
-          'should는 바람직함, must는 강한 의무·확신, have to는 외부 상황에 의한 의무를 나타낸다.',
           '조동사는 인칭·수에 따라 형태가 변하지 않고, 두 조동사를 나란히 겹쳐 쓸 수 없다.',
         ],
       },

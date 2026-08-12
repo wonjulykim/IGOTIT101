@@ -157,7 +157,7 @@ export const ch3 = {
       { type: 'heading', text: '1형식: 주어 + 동사' },
       {
         type: 'p',
-        text: '「주어+동사」로만 이루어진 가장 기본적인 구조입니다. 이 형식이 성립하려면 동사 하나만으로도 의미가 완결되어야 합니다. 즉, 동사가 "누구에게 무엇을" 같은 추가 정보 없이도 그 자체로 완전한 동작·상태를 나타낼 수 있어야 1형식이 가능합니다.',
+        text: '「주어+동사」로만 이루어진 가장 기본적인 구조입니다. 이 형식이 성립하려면 동사 하나만으로도 의미가 완결되어야 합니다. 즉, 동사가 "누구에게 무엇을" 같은 추가 정보 없이도 그 자체로 완전한 동작·상태를 나타낼 수 있어야 1형식이 가능합니다. 다만 「주어+동사」로만 이루어진 문장은 그만큼 단순한 의미밖에 전달할 수 없다는 한계도 있습니다.',
       },
       {
         type: 'example',
@@ -353,7 +353,7 @@ export const ch3 = {
           { en: 'We call him Tom.', ko: '우리는 그를 Tom이라고 부른다.', note: 'Tom이 him을 보충 설명(명사)' },
           { en: 'This news makes me happy.', ko: '이 소식은 나를 행복하게 만든다.', note: 'happy가 me를 보충 설명(형용사)' },
           { en: 'He made her study English.', ko: '그는 그녀가 영어공부를 하도록 했다.', note: 'study가 her를 보충 설명(동사원형)' },
-          { en: 'I thought him to be a genius.', ko: '나는 그가 천재라고 생각한다.', note: 'to be a genius가 him을 보충 설명(to부정사)' },
+          { en: 'I thought him to be a dumb.', ko: '나는 그가 바보라고 생각한다.', note: 'to be a dumb이 him을 보충 설명(to부정사)' },
           { en: 'I saw him crossing the street.', ko: '나는 그가 길을 건너는 것을 보았다.', note: 'crossing이 him을 보충 설명(분사)' },
         ],
       },

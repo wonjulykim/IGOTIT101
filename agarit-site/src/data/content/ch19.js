@@ -42,8 +42,8 @@ export const ch19 = {
       {
         type: 'example',
         items: [
-          { en: 'The weather in this summer is as bad as last year.', ko: '이번 여름 날씨는 지난여름 날씨만큼 나쁘다.' },
-          { en: 'The weather in this summer is as bad as last year was bad.', ko: '이번 연도의 여름 날씨는 작년 여름 날씨가 안 좋았던 것만큼 별로다.', note: '위 문장에서 중복되는 was bad를 생략한 것' },
+          { en: 'The weather in this summer is as bad as last year.', ko: '이번 여름 날씨는 지난여름 날씨만큼 나쁘다.', note: '이번 여름 날씨와 작년 여름 날씨가 모두 좋지 않았음을 동등하게 표현 — 아래 문장에서 중복되는 was bad가 생략된 형태' },
+          { en: 'The weather in this summer is as bad as last year was bad.', ko: '이번 연도의 여름 날씨는 작년 여름 날씨가 안 좋았던 것만큼 별로다.' },
           { en: 'This coffee is as hot as the one I burned my tongue on yesterday.', ko: '이 커피는 어제 내가 혓바닥을 데었던 그 커피만큼 뜨겁다.', note: '두 대상(오늘 커피/어제 커피)이 같은 정도로 뜨겁다는 대등 비교' },
           { en: 'Seoul in August is as hot as Busan in August.', ko: '8월의 서울은 8월의 부산만큼 덥다.', note: '두 도시를 같은 조건(8월)에서 대등하게 비교' },
           { en: 'My phone battery lasts as long as yours does.', ko: '내 폰 배터리는 네 것만큼 오래 간다.', note: '두 기기의 배터리 지속 시간을 대등하게 비교' },
@@ -233,11 +233,11 @@ export const ch19 = {
       {
         type: 'example',
         items: [
-          { en: 'This book is much better than the one I read last week.', ko: '이 책은 내가 지난주에 읽은 책보다 훨씬 더 좋다.' },
-          { en: 'He is far more experienced than his colleagues.', ko: '그는 그의 동료들보다 훨씬 더 경험이 많다.' },
-          { en: 'This movie is a lot more interesting than the one we watched yesterday.', ko: '이 영화는 우리가 어제 본 영화보다 훨씬 더 흥미롭다.' },
-          { en: 'She is even more talented than we thought.', ko: '그녀는 우리가 생각했던 것보다 훨씬 더 재능이 있다.' },
-          { en: 'This model is still better than the newer version.', ko: '이 모델은 여전히 최신 버전보다 더 좋다.' },
+          { en: 'This book is much better than the one I read last week.', ko: '이 책은 내가 지난주에 읽은 책보다 훨씬 더 좋다.', note: 'much가 better를 강조하여 두 책 사이의 큰 차이를 나타냄' },
+          { en: 'He is far more experienced than his colleagues.', ko: '그는 그의 동료들보다 훨씬 더 경험이 많다.', note: 'far가 more experienced를 강조하여 경험의 큰 차이를 나타냄' },
+          { en: 'This movie is a lot more interesting than the one we watched yesterday.', ko: '이 영화는 우리가 어제 본 영화보다 훨씬 더 흥미롭다.', note: 'a lot이 more interesting을 강조하여 두 영화의 큰 차이를 나타냄' },
+          { en: 'She is even more talented than we thought.', ko: '그녀는 우리가 생각했던 것보다 훨씬 더 재능이 있다.', note: 'even이 more talented를 강조하여 예상치 못한 재능의 차이를 나타냄' },
+          { en: 'This model is still better than the newer version.', ko: '이 모델은 여전히 최신 버전보다 더 좋다.', note: 'still이 better를 강조하여 시간이 지나도 여전히 더 나음을 나타냄' },
         ],
       },
       { type: 'heading', text: '자주 하는 실수 — 이중 비교급' },
@@ -408,11 +408,11 @@ export const ch19 = {
         type: 'example',
         items: [
           { en: 'If you study more, you will learn more.', ko: '더 많이 공부하면, 더 많이 배울 것이다.' },
-          { en: 'The more you study, the more you learn.', ko: '공부를 하면 할수록 더 많이 배운다.', note: '위 If절 문장을 the 비교급 구문으로 바꾸어 인과 관계를 강조' },
+          { en: 'The more you study, the more you learn.', ko: '공부를 하면 할수록 더 많이 배운다.', note: 'study라는 행동이 증가할수록 learn이라는 결과가 증가하는 인과관계를 나타내며, the more가 각 절의 시작 부분에 위치해 두 절을 연결함' },
           { en: 'If you work harder, you will be more successful.', ko: '더 열심히 일하면, 더 성공할 것이다.' },
-          { en: 'The harder you work, the more successful you will be.', ko: '열심히 일할수록 더 성공할 것이다.' },
+          { en: 'The harder you work, the more successful you will be.', ko: '열심히 일할수록 더 성공할 것이다.', note: 'work의 강도가 증가할수록 successful의 정도가 증가하는 인과관계를 나타내며, the harder와 the more successful이 각각 절의 시작 부분에 위치해 두 절을 연결함' },
           { en: 'If we leave earlier, we will arrive sooner.', ko: '더 일찍 출발하면, 더 빨리 도착할 것이다.' },
-          { en: 'The earlier we leave, the sooner we will arrive.', ko: '우리가 더 일찍 출발할수록 더 빨리 도착할 것이다.' },
+          { en: 'The earlier we leave, the sooner we will arrive.', ko: '우리가 더 일찍 출발할수록 더 빨리 도착할 것이다.', note: 'leave의 시간이 일찍일수록 arrive의 시간이 빨라지는 인과관계를 나타내며, the earlier와 the sooner가 각각 절의 시작 부분에 위치해 두 절을 연결함' },
           { en: 'The more crowded the subway gets, the more irritated people become.', ko: '지하철이 붐빌수록 사람들은 더 짜증이 난다.', note: '지하철의 혼잡도 증가와 사람들의 짜증 증가가 함께 움직이는 인과 관계' },
         ],
       },

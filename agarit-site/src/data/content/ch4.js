@@ -137,6 +137,15 @@ export const ch4 = {
       {
         type: 'transform',
         from: [
+          { label: '원래 주어(진주어, 명사절)', text: 'That he likes her' },
+          { label: '나머지 문장', text: 'is certain.' },
+        ],
+        to: { label: '가주어-진주어 문장', text: 'It is certain that he likes her.' },
+        note: '명사절 진주어 that he likes her를 문장 끝으로 보내고, 가주어 It이 그 빈자리를 채운다.',
+      },
+      {
+        type: 'transform',
+        from: [
           { label: '원래 주어(진주어, 명사절)', text: 'That the Earth revolves around the Sun' },
           { label: '나머지 문장', text: 'was proven centuries ago.' },
         ],
@@ -195,7 +204,7 @@ export const ch4 = {
       { type: 'heading', text: '가주어 it' },
       {
         type: 'p',
-        text: '가주어 it은 그 자체로 아무 의미가 없으며, 뒤에 있는 to부정사나 명사절(진주어)을 대신해 주어 자리를 형태상으로만 채우는 역할을 합니다. 영어 문장에서 가주어를 사용하는 이유는 문장의 주어를 가볍게 만들어 읽는 사람에게 의미 전달을 효율적으로 하기 위해서입니다. 영어는 전달하고자 하는 의미를 문장 앞에 두는 언어임을 기억하세요.',
+        text: '가주어 it은 그 자체로 아무 의미가 없으며, 뒤에 있는 to부정사나 명사절(진주어)을 대신해 주어 자리를 형태상으로만 채우는 역할을 합니다. 영어 문장에서 가주어를 사용하는 이유는 문장의 주어를 가볍게 만들어 읽는 사람에게 의미 전달을 효율적으로 하기 위해서입니다. 만약 문장의 주어가 to부정사로 시작되었다면 주어가 너무 길어 이해하기가 힘들 것입니다. 영어는 전달하고자 하는 의미를 문장 앞에 두는 언어임을 기억하세요.',
       },
       {
         type: 'example',

@@ -76,7 +76,7 @@ export const ch26 = {
       { type: 'heading', text: 'to부정사의 의미상의 주어 ②: of+목적격' },
       {
         type: 'p',
-        text: 'to부정사의 의미상의 주어가 항상 「for+목적격」으로 표현되는 것은 아닙니다. to부정사 앞에 오는 형용사가 사람의 성격이나 성질(친절하다, 착하다, 어리석다, 현명하다, 무례하다 등)을 평가하는 형용사일 때는 「of+목적격」을 사용합니다.',
+        text: 'to부정사의 의미상의 주어가 항상 「for+목적격」으로 표현되는 것은 아닙니다. 「of+목적격」은 kind, nice, foolish처럼 감정·성질·상태 등을 나타내는 특정 형용사와 함께 나타납니다. 이런 형용사가 to부정사 앞에 놓이면, 특정 대상이 그런 상태나 감정을 가지고 있음을 전치사 of가 표현해 줍니다.',
       },
       {
         type: 'example',
@@ -85,8 +85,8 @@ export const ch26 = {
           { en: 'It is nice of her to invite us.', ko: '그녀가 우리를 초대하는 것은 좋은 일이다.' },
           { en: 'It is foolish of him to say such a thing.', ko: '그가 그런 말을 하는 것은 어리석다.' },
           { en: 'It is wise of you to save money for the future.', ko: '당신이 미래를 위해 돈을 저축하는 것은 현명하다.' },
-          { en: 'It is rude of him to interrupt others while they are talking.', ko: '다른 사람들이 이야기하는 중에 끼어드는 것은 그에게는 무례한 일이다.' },
-          { en: 'It is careless of her to leave the door unlocked.', ko: '문을 잠그지 않고 나가는 것은 그녀답지 않게 부주의한 일이다.' },
+          { en: 'It is rude of him to interrupt others while they are talking.', ko: '다른 사람들이 이야기하는 중에 끼어드는 것은 그가 무례하다는 것을 보여준다.' },
+          { en: 'It is careless of her to leave the door unlocked.', ko: '문을 잠그지 않고 나가는 것은 그녀가 부주의하다는 것을 보여준다.' },
           { en: 'It is generous of them to donate so much money.', ko: '그렇게 많은 돈을 기부하는 것은 그들이 관대하다는 것을 보여준다.' },
           { en: 'It was thoughtful of you to remember my birthday.', ko: '내 생일을 기억해 준 것은 당신이 사려 깊었다는 것을 보여준다.' },
           { en: 'It was brave of the firefighter to run back into the building.', ko: '그 소방관이 건물 안으로 다시 뛰어들어간 것은 용감한 일이었다.', note: '용감함이라는 성격은 the firefighter에게 속함' },
@@ -98,7 +98,7 @@ export const ch26 = {
       { type: 'heading', text: '왜 성격을 나타내는 형용사만 of를 쓰는가' },
       {
         type: 'p',
-        text: 'for는 "행위 그 자체를 누가 하느냐"만을 표시하는 데 반해, kind, nice, foolish, wise, rude 같은 형용사가 나타내는 성격·성질은 애초에 문장의 주어인 It에 속하는 것이 아니라, to부정사 뒤에 감춰진 실제 행위자에게 속하는 특성입니다. "It is kind of you to help me."라는 문장에서 진짜로 kind한 대상은 It(가주어, 실질적 의미 없음)이 아니라 you입니다. 즉 kind라는 성격은 애초부터 사람 자체에 속한 고유한 특성이기 때문에, 사람을 직접 가리키는 of(~의, ~에 속한)를 써서 "그 성격이 바로 이 사람에게 속해 있다"는 것을 표시하는 것이 더 자연스럽습니다. 반면 important, possible, difficult 같은 형용사는 사람의 성격이 아니라 어떤 행위나 상황 자체의 속성을 나타내므로, 행위자를 단지 입장·처지로서 곁에 세워두는 for가 쓰입니다. 다시 말해 for 문장에서는 "행위"가 주인공이고 사람은 그 행위를 겪는 입장일 뿐이지만, of 문장에서는 "사람"이 주인공이고 to부정사는 그 사람의 성격이 드러난 구체적 사례일 뿐입니다.',
+        text: 'for는 "행위 그 자체를 누가 하느냐"만을 표시하는 데 반해, kind, nice, foolish, wise, rude 같은 형용사가 나타내는 감정·성격·성질은 애초에 문장의 주어인 It에 속하는 것이 아니라, to부정사 뒤에 감춰진 실제 행위자에게 속하는 특성입니다. "It is kind of you to help me."라는 문장에서 진짜로 kind한 대상은 It(가주어, 실질적 의미 없음)이 아니라 you입니다. 즉 kind라는 성격은 애초부터 사람 자체에 속한 고유한 특성이기 때문에, 사람을 직접 가리키는 of(~의, ~에 속한)를 써서 "그 성격이 바로 이 사람에게 속해 있다"는 것을 표시하는 것이 더 자연스럽습니다. 반면 important, possible, difficult 같은 형용사는 사람의 성격이 아니라 어떤 행위나 상황 자체의 속성을 나타내므로, 행위자를 단지 입장·처지로서 곁에 세워두는 for가 쓰입니다. 다시 말해 for 문장에서는 "행위"가 주인공이고 사람은 그 행위를 겪는 입장일 뿐이지만, of 문장에서는 "사람"이 주인공이고 to부정사는 그 사람의 성격이 드러난 구체적 사례일 뿐입니다.',
       },
       {
         type: 'table',
@@ -106,7 +106,7 @@ export const ch26 = {
         headers: ['구분', '쓰이는 형용사', '형용사가 나타내는 것', '예문'],
         rows: [
           ['for+목적격', 'important, essential, exciting, possible, easy, hard, difficult, dangerous, necessary, convenient, natural, common, hopeless 등', '행위·상황 자체의 속성(그 사람의 성격이 아님)', 'It is important for us to finish the project.'],
-          ['of+목적격', 'kind, nice, foolish, wise, rude, cruel, silly, careless, generous, thoughtful, considerate, stupid, brave, selfish, polite, mean, sweet, clever 등', '사람 자체에 속한 성격·성질을 평가', 'It is kind of you to help me.'],
+          ['of+목적격', 'kind, nice, foolish, wise, rude, cruel, silly, careless, generous, thoughtful, considerate, stupid, brave, selfish, polite, mean, sweet, clever 등', '사람 자체에 속한 감정·성격·성질을 평가', 'It is kind of you to help me.'],
         ],
       },
       {
@@ -214,7 +214,7 @@ export const ch26 = {
         items: [
           '준동사(to부정사·동명사)는 시제를 갖지 못하며, 형태 자체에는 행위자를 표시할 수단도 없다. 그래서 문장의 주어와 준동사의 실제 행위자가 다를 때는 준동사 앞에 그 행위자, 즉 의미상의 주어를 별도로 밝혀주어야 한다. 문장의 주어와 준동사의 행위자가 같거나 일반적인 사람들을 가리킬 때는 의미상의 주어를 생략한다.',
           'to부정사의 의미상의 주어는 일반적으로 「for+목적격」으로 표시한다. for는 "개개인의 입장·특성에 따라 다를 수 있음"을 나타내면서 동시에 행위 주체를 밝혀주며, important, difficult, possible, necessary처럼 행위·상황 자체의 속성을 나타내는 형용사와 함께 쓰인다.',
-          'to부정사 앞의 형용사가 kind, nice, foolish, wise, rude, careless, generous, thoughtful, brave, considerate처럼 사람의 성격·성질을 평가하는 말일 때는 「of+목적격」으로 표시한다. 그 성격은 가주어 It이 아니라 사람 자체에 고유하게 속한 특성이기 때문에, 사람을 직접 가리키는 of가 for보다 더 자연스럽다.',
+          'to부정사 앞의 형용사가 kind, nice, foolish, wise, rude, careless, generous, thoughtful, brave, considerate처럼 사람의 감정·성격·성질을 평가하는 말일 때는 「of+목적격」으로 표시한다. 그 감정·성격은 가주어 It이 아니라 사람 자체에 고유하게 속한 특성이기 때문에, 사람을 직접 가리키는 of가 for보다 더 자연스럽다.',
           '구별법: 「의미상의 주어+be+형용사」로 바꾸어 자연스러우면 of, 문장의 원래 의미와 달라지면 for를 쓴다(예: "You are kind."는 자연스럽지만 "We are important."는 뜻이 달라짐).',
           '흔한 실수 ①: kind, foolish, rude 같은 성격 형용사 뒤에 for를 쓰는 것(*It is kind for you to help me.). 흔한 실수 ②: important, necessary 같은 속성 형용사 뒤에 of를 쓰는 것(*It is necessary of the applicants to submit the form.). 형용사가 "사람의 성격을 평가"하는지 "행위·상황의 속성을 나타내는지"를 먼저 구분해야 한다.',
           '동명사의 의미상의 주어는 소유격(격식체) 또는 목적격(구어체)으로 나타내며, "~의"가 아니라 "~가"로 해석해야 한다. "I remember him telling me the story."를 "그의 이야기"로 오해하지 말고 "그가 이야기해준 것"으로 해석해야 한다.',

@@ -53,6 +53,21 @@ export const ch17 = {
           { en: 'I had my lawyer check the case.', ko: '나는 내 변호사에게 그 사건을 검토해달라고 했다.' },
         ],
       },
+      {
+        type: 'p',
+        text: '그런데 목적어 뒤에 항상 동사원형이 오는 것은 아닙니다. 위 문장들과 똑같이 목적어 + 목적격 보어 구조를 가지지만, want나 think 같은 동사는 목적격 보어로 to부정사를 취합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I want you to have a good time.', ko: '나는 네가 좋은 시간을 보내길 바라.', note: 'want + 목적어 + to have' },
+          { en: 'I think him to be a good singer.', ko: '나는 그가 좋은 가수라고 생각해.', note: 'think + 목적어 + to be' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '앞의 improve, check는 동사원형인데, 방금 본 to have, to be는 to부정사입니다. 우리가 알아야 할 것은 바로 이 지점, ‘왜 사역동사가 쓰인 문장에는 목적어 뒤에 동사원형이 오는가’입니다. 이 답을 찾으려면 먼저 명령문에서 동사원형이 쓰이는 이유를 다시 떠올려야 합니다.',
+      },
       { type: 'heading', text: '왜 목적격 보어에 동사원형이 오는가: 명령문과 같은 원리' },
       {
         type: 'p',
@@ -67,11 +82,11 @@ export const ch17 = {
         label: '거리감 비교',
         parts: [
           { tag: 'S', text: 'I' },
-          { tag: 'V', text: 'told' },
-          { tag: 'O', text: 'him' },
-          { tag: 'OC', text: 'to leave' },
+          { tag: 'V', text: 'want' },
+          { tag: 'O', text: 'you' },
+          { tag: 'OC', text: 'to have a good time' },
         ],
-        translation: 'told + to leave: ‘말한 것’과 ‘떠나는 것’ 사이에 시간적 거리감이 있음(나중에 떠날 수도)',
+        translation: 'want + to have: 말하는 시점과 좋은 시간을 보내는 시점 사이에 시간적 거리감이 있음(지금 당장이 아니어도 됨)',
       },
       {
         type: 'sentence-diagram',
@@ -79,10 +94,10 @@ export const ch17 = {
         parts: [
           { tag: 'S', text: 'I' },
           { tag: 'V', text: 'had' },
-          { tag: 'O', text: 'him' },
-          { tag: 'OC', text: 'leave' },
+          { tag: 'O', text: 'my wife' },
+          { tag: 'OC', text: 'cut my hair' },
         ],
-        translation: 'had + leave: 시킨 것과 떠나는 것이 거의 동시에 일어난다는 느낌(to의 거리감이 없음)',
+        translation: 'had + cut: 시킨 시점과 자르는 행위가 거의 동시에 일어나길 바라는 느낌이라 to 없이 동사원형만 씀',
       },
       {
         type: 'note',

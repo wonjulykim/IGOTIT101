@@ -204,7 +204,7 @@ export const ch28 = {
     blocks: [
       {
         type: 'p',
-        text: '두 가지 이상의 대상을 나열하거나 대조할 때 쓰는 구문들을 병렬 구조라고 합니다. 병렬 구조에서는 비교되는 A와 B가 품사(명사, 형용사, 부사, 전치사 등)나 문장에서의 역할(주어, 목적어, 보어 등)이 서로 같아야 한다는 공통 원칙이 있습니다. 이는 A와 B가 같은 문법적 슬롯을 채우는 대등한 항목이기 때문입니다 — 형태가 다르면 독자는 두 항목이 정말 대등한 것인지 판단하기 어려워집니다.',
+        text: '두 가지 이상의 대상을 나열하거나 대조할 때 쓰는 구문들을 병렬 구조라고 합니다. 병렬 구조에서는 비교되는 A와 B가 품사(명사, 형용사, 부사, 전치사 등)나 문장에서의 역할(주어, 목적어, 보어 등)이 서로 같아야 한다는 공통 원칙이 있습니다. 이는 A와 B가 같은 문법적 슬롯을 채우는 대등한 항목이기 때문입니다 — 형태가 다르면 독자는 두 항목이 정말 대등한 것인지 판단하기 어려워집니다. 이 원칙은 not only A but also B 같은 구문뿐만 아니라, 원급·비교급·최상급으로 두 대상을 비교할 때도 똑같이 적용됩니다.',
       },
       { type: 'heading', text: 'not only A but also B: A뿐만 아니라 B도' },
       {
@@ -309,6 +309,7 @@ export const ch28 = {
           { en: 'I found something interesting in the book.', ko: '나는 그 책에서 흥미로운 무언가를 발견했다.' },
           { en: 'There is nothing new under the sun.', ko: '태양 아래 새로운 것은 아무것도 없다.' },
           { en: 'She is looking for someone special to share her life with.', ko: '그녀는 삶을 함께 나눌 특별한 누군가를 찾고 있다.' },
+          { en: 'He wants to meet somebody famous.', ko: '그는 유명한 누군가를 만나고 싶어 한다.' },
           { en: 'There was nobody important at the meeting.', ko: '그 회의에는 중요한 사람이 아무도 없었다.' },
           { en: 'Is there anything possible we can do to help?', ko: '우리가 도울 수 있는 가능한 어떤 것이 있나요?' },
           { en: 'We need anyone capable of solving this problem.', ko: '우리는 이 문제를 해결할 수 있는 유능한 누구든지 필요하다.' },
@@ -403,10 +404,10 @@ export const ch28 = {
       {
         type: 'example',
         items: [
-          { en: 'John did finish this project by himself.', ko: 'John이 스스로 프로젝트를 끝내긴 했다.' },
-          { en: 'I don\'t like reading books, but do like watching movies.', ko: '나는 책 읽기를 좋아하지 않지만, 영화 보는 것은 좋아한다.' },
-          { en: 'She can\'t spend much time at home, but does enjoy playing board games with her family.', ko: '그녀는 집에서 많은 시간을 보내지 못하지만 가족들과 보드 게임 하는 것은 좋아한다.' },
-          { en: 'Now, I don\'t speak Chinese, but I do speak a little Polish, a little Korean.', ko: '나는 중국어는 못하지만, 폴란드어와 한국어는 정말로 조금 할 줄 안다.' },
+          { en: 'John did finish this project by himself.', ko: 'John이 스스로 프로젝트를 끝내긴 했다.', note: '팀원들이 다른 업무로 바빠 도와주지 못했지만, John이 책임감을 갖고 혼자 끝냈다는 사실을 강조' },
+          { en: 'I don\'t like reading books, but do like watching movies.', ko: '나는 책 읽기를 좋아하지 않지만, 영화 보는 것은 좋아한다.', note: '독서 모임 초대를 사양하면서, 대신 영화는 확실히 좋아한다는 점을 강조' },
+          { en: 'She can\'t spend much time at home, but does enjoy playing board games with her family.', ko: '그녀는 집에서 많은 시간을 보내지 못하지만 가족들과 보드 게임 하는 것은 좋아한다.', note: '바쁘더라도 가족과 보드게임 하는 시간만큼은 확실히 즐긴다는 점을 강조' },
+          { en: 'Now, I don\'t speak Chinese, but I do speak a little Polish, a little Korean.', ko: '나는 중국어는 못하지만, 폴란드어와 한국어는 정말로 조금 할 줄 안다.', note: '중국어는 못하지만 폴란드어·한국어는 조금이라도 확실히 할 수 있다는 점을 강조' },
         ],
       },
       {

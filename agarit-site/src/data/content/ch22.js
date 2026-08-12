@@ -11,7 +11,9 @@ export const ch22 = {
         items: [
           { en: 'Are you in the house?', ko: '너는 집 안에 있니?' },
           { en: 'Is he in the house?', ko: '그는 집 안에 있니?' },
+          { en: 'Are they in the house?', ko: '그들은 집 안에 있니?' },
           { en: 'Does he want something?', ko: '그는 무엇을 원하니?' },
+          { en: 'Do they want something?', ko: '그들은 무엇을 원하니?' },
         ],
       },
       { type: 'heading', text: '간접의문문은 언제, 왜 쓰일까' },

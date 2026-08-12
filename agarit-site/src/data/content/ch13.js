@@ -98,7 +98,7 @@ export const ch13 = {
         rows: [
           ['동사', 'I play the piano.', '주어 뒤 서술어'],
           ['to부정사(명사)', 'I like to play the piano.', 'like의 목적어'],
-          ['to부정사(형용사/부사)', 'It is easy to play the piano.', '가주어 It의 진주어(명사) / easy를 보충'],
+          ['to부정사(명사)', 'It is easy to play the piano.', '가주어 It의 진주어 — 주어 역할'],
           ['to부정사(부사)', 'To play the piano, I go to the shop.', '목적을 나타내는 부사'],
         ],
       },
@@ -121,12 +121,15 @@ export const ch13 = {
       },
       {
         type: 'table',
-        caption: '같은 동사구가 만들어내는 세 가지 품사 (to dance with children / to dance alone)',
+        caption: '같은 동사구가 만들어내는 세 가지 품사 (to dance with children / to dance on the stage / to dance alone)',
         headers: ['용법', '예문', '의미'],
         rows: [
           ['명사적 용법', 'I love to dance with children.', '아이들과 춤추기 / 춤추는 것'],
           ['형용사적 용법', "I don't have time to dance with children.", '아이들과 춤출 (시간)'],
           ['부사적 용법', 'I go there to dance with children.', '아이들과 춤추기 위해'],
+          ['명사적 용법', 'She loves to dance on the stage.', '무대에서 춤추기 / 춤추는 것'],
+          ['형용사적 용법', 'This is the stage to dance on.', '무대에서 춤출 (무대)'],
+          ['부사적 용법', 'She practiced every day to dance on the stage.', '무대에서 춤추기 위해'],
           ['명사적 용법', 'She prefers to dance alone.', '혼자 춤추는 것'],
           ['형용사적 용법', 'This is the only place to dance alone.', '혼자 춤출 (유일한 장소)'],
           ['부사적 용법', 'He turned off the lights to dance alone.', '혼자 춤추기 위해'],
@@ -445,7 +448,7 @@ export const ch13 = {
     blocks: [
       {
         type: 'p',
-        text: 'to부정사가 나타내는 추상적 개념은 동사나 형용사, 문장 전체를 꾸며 목적, 결과, 감정의 원인, 판단의 근거, 조건 등의 의미를 더해줄 수도 있습니다. 이렇게 to부정사가 부사처럼 쓰이면 부사적 용법이라고 합니다. 명사적·형용사적 용법과 달리 부사적 용법은 문장의 필수 성분이 아니라 문장 전체에 부가 정보를 더해주는 수식어(M)이므로, 문장에서 빼도 나머지 부분은 문법적으로 온전합니다. 부사적 용법은 의미가 다양하므로 하나씩 나누어 살펴보겠습니다.',
+        text: 'to부정사가 나타내는 추상적 개념은 동사나 형용사, 문장 전체를 꾸며 목적, 결과, 감정의 원인, 판단의 근거 등의 의미를 더해줄 수도 있습니다. 이렇게 to부정사가 부사처럼 쓰이면 부사적 용법이라고 합니다. 명사적·형용사적 용법과 달리 부사적 용법은 문장의 필수 성분이 아니라 문장 전체에 부가 정보를 더해주는 수식어(M)이므로, 문장에서 빼도 나머지 부분은 문법적으로 온전합니다. 부사적 용법은 의미가 다양하므로 하나씩 나누어 살펴보겠습니다.',
       },
       {
         type: 'icon-row',
@@ -454,7 +457,8 @@ export const ch13 = {
           { icon: '🎯', label: '목적', sub: '~하기 위해' },
           { icon: '➡️', label: '결과', sub: '~하게 되다' },
           { icon: '😊', label: '감정의 원인', sub: '~해서' },
-          { icon: '❓', label: '조건', sub: '~한다면' },
+          { icon: '⚖️', label: '판단의 근거', sub: '~하는 것을 보니' },
+          { icon: '🔥', label: '원인과 결과', sub: 'too ~ to / enough to' },
         ],
       },
       { type: 'heading', text: '① 목적: ~하기 위해' },
@@ -496,7 +500,7 @@ export const ch13 = {
       {
         type: 'example',
         items: [
-          { en: 'The little boy grew up to be a teacher.', ko: '그 소년은 자라서 선생님이 되었다.' },
+          { en: 'The little boy grew up to be a teacher.', ko: '그 작은 소년은 자라서 선생님이 되었다.' },
           { en: 'She worked hard, only to fail the exam.', ko: '그녀는 열심히 공부했지만, 결국 시험에 떨어졌다.' },
           { en: 'He lived to be ninety years old.', ko: '그는 아흔 살까지 살았다.' },
           { en: 'I opened the box to find it empty.', ko: '나는 상자를 열었는데, 결국 그것이 비어 있는 것을 발견했다.' },
@@ -536,19 +540,7 @@ export const ch13 = {
           { en: 'He must be rich to own three houses.', ko: '집을 세 채나 소유한 걸 보니 그는 부자인 게 틀림없다.' },
         ],
       },
-      { type: 'heading', text: '⑤ 조건: ~한다면' },
-      {
-        type: 'p',
-        text: '문장 맨앞에서, 어떤 결과가 성립하기 위한 가정된 조건을 나타내기도 합니다. if절로 바꾸어 표현할 수 있는 경우가 많습니다.',
-      },
-      {
-        type: 'example',
-        items: [
-          { en: 'To hear him talk, you would think he was a doctor.', ko: '그가 말하는 것을 들어보면, 너는 그를 의사라고 생각할 것이다.' },
-          { en: 'To see her smile, no one would guess she was in pain.', ko: '그녀가 웃는 것을 본다면, 아무도 그녀가 아팠다고 짐작하지 못할 것이다.' },
-        ],
-      },
-      { type: 'heading', text: '⑥ 원인과 결과: too ~ to / enough to' },
+      { type: 'heading', text: '⑤ 원인과 결과: too ~ to / enough to' },
       {
         type: 'p',
         text: '「too + 형용사/부사 + to부정사」는 ‘너무 ~해서 …할 수 없다’는 뜻이며, 「형용사/부사 + enough + to부정사」는 ‘…할 만큼 충분히 ~하다’는 뜻입니다. 두 구문 모두 원인(정도)과 그로 인한 결과(가능·불가능)를 연결합니다.',
@@ -574,15 +566,14 @@ export const ch13 = {
       },
       {
         type: 'table',
-        caption: 'to부정사 부사적 용법 여섯 갈래 한눈에 보기',
+        caption: 'to부정사 부사적 용법 다섯 갈래 한눈에 보기',
         headers: ['의미', '대표 신호', '예문'],
         rows: [
           ['① 목적', '동사 뒤, 문장 맨앞', 'To watch a movie, I closed the curtains.'],
           ['② 결과', 'grow up to, live to, only to', 'The little boy grew up to be a teacher.'],
           ['③ 감정의 원인', 'glad/happy/sad + to', 'I am glad to see you here.'],
           ['④ 판단의 근거', 'must be/형용사 + to', 'You must be upset to talk to her like that.'],
-          ['⑤ 조건', '문장 맨앞, 가정된 상황', 'To hear him talk, you would think he was a doctor.'],
-          ['⑥ 원인과 결과', 'too ~ to / enough to', 'It is too cold to go outside.'],
+          ['⑤ 원인과 결과', 'too ~ to / enough to', 'It is too cold to go outside.'],
         ],
       },
       { type: 'heading', text: 'to부정사의 의미상의 주어' },
@@ -682,7 +673,7 @@ export const ch13 = {
         type: 'callout',
         title: '13장 핵심 정리 (4) — 부사적 용법 · 의미상의 주어 · 부정형',
         items: [
-          'to부정사의 부사적 용법은 목적, 결과, 감정의 원인, 판단의 근거, 조건, 원인과 결과(too~to/enough to)의 의미를 나타낸다.',
+          'to부정사의 부사적 용법은 목적, 결과, 감정의 원인, 판단의 근거, 원인과 결과(too~to/enough to)의 의미를 나타낸다.',
           '목적과 결과는 형태가 비슷해 보이지만, 목적은 아직 이루지 못한 의도이고 결과는 이미 일어난 마무리라는 점에서 다르다.',
           'to부정사의 행동 주체가 문장의 주어와 다르면 to부정사구 바로 앞에 「for/of + 목적격」으로 의미상의 주어를 밝혀준다.',
           '사람의 성격·성질을 나타내는 형용사(kind, foolish 등) 뒤에는 of를, 일 자체의 성질을 나타내는 형용사(important, necessary 등) 뒤에는 for를 쓴다.',

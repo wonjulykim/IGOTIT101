@@ -77,8 +77,8 @@ export const ch21 = {
       {
         type: 'example',
         items: [
-          { en: 'I lost my key.', ko: '나는 열쥴 잃어버렸다.', note: '과거의 사실만 진술. 지금 열쥴 찾았는지 아닌지는 이 문장만으로는 알 수 없다 — 문맥에 따라 이미 찾았을 수도 있다' },
-          { en: 'I have lost my key.', ko: '나는 열쥴 잃어버린 상태이다.', note: '지금도 열쥴 없다는 뜻을 강하게 함축한다. 그래서 이 문장 다음에 "그런데 지금은 찾았어"라고 이어 붙이면 어색하다' },
+          { en: 'I lost my key.', ko: '나는 열쇠를 잃어버렸다.', note: '과거의 사실만 진술. 지금 열쇠를 찾았는지 아닌지는 이 문장만으로는 알 수 없다 — 문맥에 따라 이미 찾았을 수도 있다' },
+          { en: 'I have lost my key.', ko: '나는 열쇠를 잃어버린 상태이다.', note: '지금도 열쇠가 없다는 뜻을 강하게 함축한다. 그래서 이 문장 다음에 "그런데 지금은 찾았어"라고 이어 붙이면 어색하다' },
           { en: 'He liked the girl three years ago.', ko: '그는 3년 전에 그녀를 좋아했다.', note: '현재도 좋아하는지는 알 수 없다' },
           { en: 'He has liked the girl for three years.', ko: '그는 3년 동안 그녀를 좋아했다.', note: '= He started to like the girl three years ago, and he still likes her. (지금도 좋아함)' },
           { en: 'I turned off the computer.', ko: '나는 컴퓨터를 껐다.', note: '지금 컴퓨터가 꺼져 있는지는 알 수 없다 — 누군가 다시 켰을 수도 있다' },
@@ -261,7 +261,7 @@ export const ch21 = {
         title: '21장 핵심 정리 (1) — 현재완료',
         items: [
           '현재완료(have/has + p.p.)는 과거의 일이 현재까지 영향을 미치고 있음을 나타낸다. 과거시제는 사건을 현재와 단절된 하나의 점으로 그리지만, 현재완료는 그 점에서 지금까지 뻗어 나온 화살표로 그린다.',
-          '"I lost my key."는 지금 상태를 알려주지 않지만, "I have lost my key."는 지금도 열쥴 없는 상태임을 함축한다.',
+          '"I lost my key."는 지금 상태를 알려주지 않지만, "I have lost my key."는 지금도 열쇠가 없는 상태임을 함축한다.',
           '현재완료는 계속(for/since), 경험(ever/never/before), 완료(just/already/yet), 결과(부사 없이, "그래서 지금 ~하다") 네 가지 의미로 쓰인다.',
           'yesterday, last year, ~ago, in+과거연도처럼 구체적인 과거 시점을 못 박는 부사(구)는 현재완료와 함께 쓸 수 없다 — 이때는 반드시 과거시제를 쓴다.',
           '의문문은 Have/Has를 주어 앞으로, 부정문은 have/has 뒤에 not을 붙인다.',
@@ -288,8 +288,10 @@ export const ch21 = {
         rows: [
           ['현재완료', '주어 + have/has + p.p.', 'I have read the book.', '나는 그 책을 읽었다 (현재 다 읽은 상태)'],
           ['현재완료', '주어 + have/has + p.p.', 'She has worked here for five years.', '그녀는 여기서 5년 동안 일했다 (근무 이력, 현재도 근무 중)'],
+          ['현재완료', '주어 + have/has + p.p.', 'I have lived in this city since 2010.', '나는 2010년부터 이 도시에 살고 있다 (현재도 거주 중)'],
           ['현재완료진행', '주어 + have/has + been + Ving', 'I have been reading the book.', '나는 그 책을 계속 읽고 있다 (아직 읽는 중)'],
           ['현재완료진행', '주어 + have/has + been + Ving', 'She has been working here for five years.', '그녀는 여기서 5년 동안 계속 일하고 있다 (일하는 과정·지속성 강조)'],
+          ['현재완료진행', '주어 + have/has + been + Ving', 'I have been living in this city since 2010.', '나는 2010년부터 이 도시에 계속 살고 있다 (거주하는 과정과 지속성을 강조)'],
         ],
       },
       {
@@ -410,7 +412,7 @@ export const ch21 = {
       {
         type: 'example',
         items: [
-          { en: 'When I got to the station, the train left.', ko: '내가 역에 도착했을 때, 기차는 떠났다.', note: '두 사건이 매우 가깝게 일어났음을 암시할 뿐, 어느 쪽이 먼저인지 명확하지 않음 — 도착과 거의 동시에 떠났을 수도 있음' },
+          { en: 'When I got to the station, the train left.', ko: '내가 역에 도착했을 때, 기차는 떠났다.', note: '단순 과거만 쓰면 "도착 → 출발" 순서로 일어난 것처럼 이해되며, 도착과 거의 동시에 또는 도착 직후 기차가 떠났음을 암시할 뿐 — 기차가 내가 도착하기도 전에 이미 떠나 있었다는 것(=내가 기차를 놓쳤다는 것)을 분명히 나타내지는 못함' },
           { en: 'When I got to the station, the train had left.', ko: '내가 역에 도착했을 때, 기차는 이미 떠나 있었다.', note: '과거완료(had left)로 기차가 떠난 사건이 먼저 일어났음을 명확히 함' },
         ],
       },
@@ -420,10 +422,13 @@ export const ch21 = {
       },
       {
         type: 'timeline',
-        label: '단순 과거만 쓴 경우 — 순서가 불분명함',
+        label: '단순 과거만 쓴 경우 — 도착과 거의 동시에 벌어진 일처럼 보임',
         now: 95,
-        points: [{ at: 55, text: 'got to the station / the train left', sub: '두 사건이 거의 동시로 보임 — 어느 쪽이 먼저인지 불명확' }],
-        translation: 'When I got to the station, the train left. — 두 사건이 시간축 위 거의 같은 지점에 뭉쳐 있어서, 도착과 출발 중 어느 쪽이 먼저인지 그림만으로는 구별되지 않습니다.',
+        points: [
+          { at: 50, text: 'I got to the station', sub: '사건 A — 문장 순서상 먼저 나옴' },
+          { at: 58, text: 'the train left', sub: '사건 B — 도착과 동시에, 또는 도착 직후에 떠남' },
+        ],
+        translation: 'When I got to the station, the train left. — 단순 과거로만 쓰면 도착한 후 기차가 떠난 것으로 이해되며, 두 사건이 매우 가깝게 붙어 일어난 것처럼 보입니다. 하지만 이 문장은 기차가 내가 도착하기 전에 이미 떠나 있었다는 것을 명확히 하지는 못합니다.',
       },
       {
         type: 'timeline',
@@ -452,6 +457,14 @@ export const ch21 = {
           { en: 'The meeting started after she had left the office.', ko: '그녀가 사무실을 떠난 후에 회의가 시작되었다.', note: 'after 뒤의 과거완료가 더 앞선 사건' },
           { en: 'By the time the police arrived, the thief had already escaped.', ko: '경찰이 도착했을 때쯔음, 도둑은 이미 도망친 뒤였다.', note: '경찰 도착(기준 과거)보다 도둑의 도주(과거완료)가 더 앞섬' },
           { en: 'I didn’t recognize him because he had changed so much.', ko: '나는 그가 너무 많이 변해서 그를 알아보지 못했다.', note: '변화(had changed)가 알아보지 못한 사건(didn’t recognize)보다 먼저 일어남' },
+        ],
+      },
+      {
+        type: 'callout',
+        title: '왜 before/after가 필요한가?',
+        items: [
+          '1. 시간적 순서 명확화 — 과거완료 시제는 두 사건 중 하나가 다른 하나보다 먼저 일어났음을 나타내지만, before/after 같은 시간 부사절은 그 관계를 더욱 분명하게 해준다.',
+          '2. 사건들 사이의 혼동 방지 — 과거완료만 사용할 경우 독자가 두 사건의 시간적 관계를 명확히 이해하지 못할 수 있는데, before/after는 이런 혼동을 막고 사건의 순서를 정확하게 전달한다.',
         ],
       },
       {
