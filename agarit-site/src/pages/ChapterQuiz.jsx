@@ -7,6 +7,7 @@ import { saveQuizScore, getQuizScore } from '../utils/progress'
 import { XP_RULES } from '../utils/gamification'
 import { useGame } from '../context/GameContext'
 import QuestionCard from '../components/QuestionCard'
+import GameQuiz from '../components/GameQuiz'
 import './ChapterQuiz.css'
 
 const TABS = [
@@ -20,8 +21,21 @@ export default function ChapterQuiz() {
   const chapter = getChapter(chapterId)
   const quiz = getChapterQuiz(chapterId)
   const [tab, setTab] = useState('mcq')
+  const [gameMode, setGameMode] = useState(false)
 
   if (!chapter || !quiz) return <Navigate to="/" replace />
+
+  if (gameMode) {
+    return (
+      <div className="chapter-quiz-page">
+        <div className="lesson-breadcrumb">
+          <Link to="/">차례</Link> <span>›</span> <span>{chapter.num}장 {chapter.title}</span>
+        </div>
+        <h1>{chapter.num}장 퀴즈 · 게임 모드</h1>
+        <GameQuiz questions={quiz.mcq} onExit={() => setGameMode(false)} />
+      </div>
+    )
+  }
 
   return (
     <div className="chapter-quiz-page">
@@ -30,6 +44,10 @@ export default function ChapterQuiz() {
       </div>
       <h1>{chapter.num}장 퀴즈</h1>
       <p className="quiz-intro">배운 내용을 세 가지 유형의 문제로 점검해보세요.</p>
+
+      <button className="btn-primary quiz-game-cta" onClick={() => setGameMode(true)}>
+        🎮 게임 모드로 도전하기
+      </button>
 
       <div className="quiz-tabs">
         {TABS.map((t) => (
