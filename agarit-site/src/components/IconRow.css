@@ -2,23 +2,29 @@
   background: var(--bg-panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 16px 18px;
-  margin: 16px 0;
+  padding: 20px 22px;
+  margin: 20px 0;
 }
-.icon-row-caption { font-size: 0.78rem; font-weight: 700; color: var(--accent-dark); margin-bottom: 12px; }
-.icon-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.icon-row-caption { font-size: 0.85rem; font-weight: 700; color: var(--accent-dark); margin-bottom: 14px; }
+.icon-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
 .icon-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  min-width: 84px;
-  padding: 12px 10px;
-  border-radius: 12px;
+  justify-content: center;
+  gap: 8px;
+  padding: 22px 16px;
+  border-radius: 14px;
   background: var(--accent-bg);
   border: 1px solid var(--accent-border);
   text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.icon-card-emoji { font-size: 1.8rem; line-height: 1; }
-.icon-card-label { font-weight: 700; font-size: 0.82rem; color: var(--text-h); }
-.icon-card-sub { font-size: 0.7rem; color: var(--text-dim); }
+.icon-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.icon-card-emoji { font-size: 2.6rem; line-height: 1; }
+.icon-card-label { font-weight: 700; font-size: 1rem; color: var(--text-h); }
+.icon-card-sub { font-size: 0.85rem; color: var(--text-dim); }

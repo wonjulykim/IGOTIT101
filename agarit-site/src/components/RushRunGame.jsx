@@ -33,9 +33,13 @@ export default function RushRunGame({ questions, onExit }) {
   const [picked, setPicked] = useState(null)
   const [resultKind, setResultKind] = useState(null) // 'correct' | 'wrong' | 'missed'
   const [muted, setMutedState] = useState(() => isMuted())
+  const [burst, setBurst] = useState(false)
+  const [speedUpFlash, setSpeedUpFlash] = useState(false)
   const missTimerRef = useRef(null)
   const advanceRef = useRef(null)
   const answeredRef = useRef(false)
+  const speedUpTimerRef = useRef(null)
+  const burstTimerRef = useRef(null)
 
   const current = order[index]
   const runMs = Math.max(MIN_RUN_MS, START_RUN_MS - round * RUN_MS_STEP)
@@ -43,6 +47,8 @@ export default function RushRunGame({ questions, onExit }) {
   useEffect(() => () => {
     clearTimeout(missTimerRef.current)
     clearTimeout(advanceRef.current)
+    clearTimeout(speedUpTimerRef.current)
+    clearTimeout(burstTimerRef.current)
   }, [])
 
   function toggleMute() {
@@ -96,7 +102,18 @@ export default function RushRunGame({ questions, onExit }) {
     if (correct) {
       playCorrect()
       setScore((s) => s + 1)
-      setRound((r) => r + 1)
+      setBurst(true)
+      clearTimeout(burstTimerRef.current)
+      burstTimerRef.current = setTimeout(() => setBurst(false), 700)
+      setRound((r) => {
+        const nr = r + 1
+        if (nr >= 1 && nr % 2 === 0 && START_RUN_MS - nr * RUN_MS_STEP > MIN_RUN_MS) {
+          setSpeedUpFlash(true)
+          clearTimeout(speedUpTimerRef.current)
+          speedUpTimerRef.current = setTimeout(() => setSpeedUpFlash(false), 1100)
+        }
+        return nr
+      })
       setCombo((c) => {
         const nc = c + 1
         setBestCombo((b) => Math.max(b, nc))
@@ -204,8 +221,12 @@ export default function RushRunGame({ questions, onExit }) {
 
       <p className="rrg-question">{current.q}</p>
 
+      {speedUpFlash && <div className="rrg-speedup-banner">🚀 스피드 업!</div>}
+
       <div className="rrg-road">
         <div className="rrg-road-lines" style={{ animationDuration: `${Math.max(400, runMs / 6)}ms` }} />
+        <div className="rrg-edge rrg-edge-left" style={{ animationDuration: `${Math.max(220, runMs / 14)}ms` }} />
+        <div className="rrg-edge rrg-edge-right" style={{ animationDuration: `${Math.max(220, runMs / 14)}ms` }} />
         <div className="rrg-lanes">
           {current.options.map((opt, i) => {
             const isPickedWrong = isAnswered && picked === i && i !== current.answer
@@ -230,8 +251,18 @@ export default function RushRunGame({ questions, onExit }) {
             )
           })}
         </div>
-        <div className={`rrg-runner ${phase === 'running' ? 'rrg-runner-move' : ''} ${isAnswered && resultKind === 'wrong' ? 'rrg-runner-hit' : ''}`}>
-          🏃
+        <div className="rrg-runner-wrap">
+          {phase === 'running' && <span className="rrg-dust">💨</span>}
+          <div className={`rrg-runner ${phase === 'running' ? 'rrg-runner-move' : ''} ${isAnswered && resultKind === 'wrong' ? 'rrg-runner-hit' : ''}`}>
+            🏃
+          </div>
+          {burst && (
+            <div className="rrg-burst">
+              {['✨', '⭐', '✨', '⭐', '✨'].map((s, i) => (
+                <span key={i} className={`rrg-burst-star rrg-burst-star-${i}`}>{s}</span>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
