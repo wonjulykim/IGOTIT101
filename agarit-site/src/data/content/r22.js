@@ -1,0 +1,30 @@
+export const r22 = {
+  'r22-1': {
+    title: '뭄바이의 도시락 배달, 다바왈라',
+    blocks: [
+      { type: 'note', text: '고등학교 지필평가(중) 서술형 자료를 바탕으로 재구성했습니다 · 중3~고1 수준.' },
+      { type: 'heading', text: "Mumbai's Dabbawala Service" },
+      {
+        type: 'p',
+        text: 'Why do Mumbai workers not take their lunch boxes with them in the morning when they leave for the office? Instead, many of them rely on a unique lunch delivery system called the dabbawala service.',
+      },
+      {
+        type: 'p',
+        text: "Those who use the dabbawala service are mostly middle-class office workers who live in one of Mumbai's suburbs. They have to leave for the office early in the morning, riding on a packed train, so it would be difficult for them to carry their own lunch box, or dabba. In addition, many workers have dietary restrictions depending on their religion — Hindus do not eat beef, Muslims do not eat pork, and Jains do not eat onions or potatoes. As a result, it is not easy for these workers to find suitable food at restaurants near their office. To meet their specific dietary needs, Indian workers often prefer home-cooked meals made especially for them, and the dabbawala service delivers these meals fresh every day.",
+      },
+      {
+        type: 'callout',
+        title: '📎 핵심 문법: 「it is 형용사 + for 목적어 + to부정사」 (가주어-진주어)',
+        items: [
+          '"it would be difficult for them to carry their own dabba" → it은 가주어, to carry 이하가 진주어, for them은 to부정사의 의미상 주어예요.',
+          '이 구문은 "(누구)가 ~하는 것은 …하다"라는 뜻으로, 긴 to부정사구를 문장 뒤로 보내고 그 자리에 it을 대신 쓴 형태입니다.',
+        ],
+      },
+      {
+        type: 'callout',
+        title: '어휘 노트',
+        items: ['suburb: 교외, 근교', 'packed: 꽉 들어찬', 'dietary restriction: 식단 제한', 'suitable: 적합한'],
+      },
+    ],
+  },
+}

@@ -47,9 +47,17 @@ export default function AiEssayGrader({ q, studentAnswer, unitId }) {
       )}
 
       {!result && (
-        <button className="btn-primary ai-grade-btn" onClick={handleGrade} disabled={loading}>
-          {loading ? 'AI가 채점 중...' : '🤖 AI 채점 받기'}
-        </button>
+        <>
+          <button className="btn-primary ai-grade-btn" onClick={handleGrade} disabled={loading}>
+            {loading ? 'AI가 채점 중...' : '🤖 AI 채점 받기'}
+          </button>
+          {q.model && (
+            <div className="essay-model">
+              <strong>📖 모범답안 예시</strong>
+              <p>{q.model}</p>
+            </div>
+          )}
+        </>
       )}
 
       {error && <div className="ai-grader-error">{error}</div>}

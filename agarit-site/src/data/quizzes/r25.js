@@ -1,0 +1,67 @@
+export const r25Quiz = {
+  mcq: [
+    {
+      id: 'r25-mcq-1',
+      q: '"early bird"가 의미하는 것으로 가장 적절한 것은?',
+      options: [
+        '아침 일찍 일어나는 새',
+        '아침에 활동하기를 좋아하는 사람',
+        '밤늦게까지 일하는 사람',
+        '항상 늦잠을 자는 사람',
+        '새를 좋아하는 사람',
+      ],
+      answer: 1,
+      explain: 'early bird는 아침에 일하는 것을 좋아하는 사람을 뜻하는 은유적 표현입니다.',
+    },
+  ],
+  short: [
+    {
+      id: 'r25-short-1',
+      subtype: '완성형',
+      q: '다음 빈칸에 들어갈 단어를 지문에서 찾아 쓰시오.\n"A ________ is a figure of speech in which a comparison is made between two different things."',
+      answers: ['metaphor'],
+      explain: '은유(metaphor)는 서로 다른 두 대상을 비교하는 비유적 표현입니다.',
+    },
+    {
+      id: 'r25-short-2',
+      subtype: '단답형',
+      q: '"Life is a roller coaster"라는 은유가 의미하는 바를 영어로 한 문장으로 쓰시오.',
+      answers: ['Life has lots of ups and downs', 'life also has lots of ups and downs'],
+      explain: '롤러코스터처럼 인생에도 오르내림(기쁨과 어려움)이 있다는 뜻입니다.',
+    },
+  ],
+  essay: [
+    {
+      id: 'r25-essay-1',
+      subtype: '서술형',
+      q: '자신만의 은유(metaphor) 표현을 하나 만들고, 그것이 무엇을 비교하며 어떤 의미를 나타내는지 서술하시오.',
+      standard: '[10영04-04] 주변의 대상이나 상황을 묘사하는 글을 쓸 수 있다.',
+      difficulty: '중',
+      score: 10,
+      conditions: ['"A is B" 형태의 은유 문장을 포함할 것', '그 은유가 의미하는 바를 설명할 것'],
+      model:
+        '"My mind is a garden." This metaphor compares the mind to a garden. Just as a garden needs regular care — watering, weeding, and sunlight — to grow beautiful flowers, the mind needs good habits like reading, rest, and positive thoughts to grow healthy ideas. If we neglect our mind, like an uncared-for garden, it can become filled with negative thoughts instead.',
+      totalScore: 10,
+      rubric: [
+        {
+          criterion: '은유 문장 및 의미 설명',
+          maxScore: 6,
+          levels: [
+            { score: 6, desc: '"A is B" 형태의 은유를 만들고 그 의미를 창의적이고 명확하게 설명함' },
+            { score: 3, desc: '은유는 만들었으나 의미 설명이 부족함' },
+            { score: 1, desc: '은유나 의미 설명을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '언어 사용의 정확성',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '문법과 어휘 사용이 정확함' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 지장 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+  ],
+}

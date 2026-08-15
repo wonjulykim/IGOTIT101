@@ -74,6 +74,10 @@
 }
 .chapter-head:hover:not(:disabled) { background: var(--accent-bg); }
 .chapter-head:disabled { cursor: default; color: var(--text-dim); }
+.chapter-head-link { color: var(--text); }
+.chapter-head-link:hover { text-decoration: none; }
+.chapter-head-link.active { background: var(--accent-bg); }
+.chapter-head-link.active .chapter-title { color: var(--accent-dark); font-weight: 700; }
 
 .chapter-num { font-weight: 700; color: var(--accent); font-size: 0.78rem; flex-shrink: 0; }
 .chapter-disabled .chapter-num { color: var(--text-dim); }
@@ -102,6 +106,9 @@
   border-radius: 6px;
   font-size: 0.85rem;
   color: var(--text-dim);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .lesson-link:hover { background: var(--accent-bg); text-decoration: none; color: var(--text); }
 .lesson-link.active { background: var(--accent-bg); color: var(--accent-dark); font-weight: 700; }

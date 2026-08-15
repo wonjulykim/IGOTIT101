@@ -68,33 +68,50 @@ export default function Lesson() {
       </div>
       <h1>{effectiveTitle}</h1>
 
-      {effectiveBlocks ? (
-        <ContentBlocks blocks={effectiveBlocks} />
-      ) : (
-        <p>이 레슨의 콘텐츠는 아직 준비 중입니다.</p>
-      )}
+      {isReading ? (
+        <div className="reading-split">
+          <div className="reading-passage-col">
+            {effectiveBlocks ? (
+              <ContentBlocks blocks={effectiveBlocks} />
+            ) : (
+              <p>이 레슨의 콘텐츠는 아직 준비 중입니다.</p>
+            )}
+            <div className="lesson-complete-row">
+              <button className={`btn-complete ${done ? 'done' : ''}`} onClick={handleComplete}>
+                {done ? '✅ 학습 완료' : '학습 완료로 표시하기'}
+              </button>
+            </div>
+          </div>
 
-      <div className="lesson-complete-row">
-        <button className={`btn-complete ${done ? 'done' : ''}`} onClick={handleComplete}>
-          {done ? '✅ 학습 완료' : '학습 완료로 표시하기'}
-        </button>
-      </div>
-
-      {isReading && quiz && (
-        <div className="reading-quiz-block">
-          <hr className="reading-quiz-divider" />
-          <h2>문제 풀기</h2>
-          <p className="quiz-intro">지문을 다시 살펴보며 아래 문제를 풀어보세요.</p>
-          {['mcq', 'short', 'essay'].map(
-            (type) =>
-              quiz[type]?.length > 0 && (
-                <section key={type} className="reading-quiz-section">
-                  <h3>{QUIZ_LABELS[type]}</h3>
-                  <QuizSection chapterId={chapterId} type={type} questions={quiz[type]} />
-                </section>
-              )
+          {quiz && (
+            <div className="reading-quiz-col">
+              <h2>문제 풀기</h2>
+              <p className="quiz-intro">지문을 왼쪽에 두고 문제를 풀어보세요.</p>
+              {['mcq', 'short', 'essay'].map(
+                (type) =>
+                  quiz[type]?.length > 0 && (
+                    <section key={type} className="reading-quiz-section">
+                      <h3>{QUIZ_LABELS[type]}</h3>
+                      <QuizSection chapterId={chapterId} type={type} questions={quiz[type]} />
+                    </section>
+                  )
+              )}
+            </div>
           )}
         </div>
+      ) : (
+        <>
+          {effectiveBlocks ? (
+            <ContentBlocks blocks={effectiveBlocks} />
+          ) : (
+            <p>이 레슨의 콘텐츠는 아직 준비 중입니다.</p>
+          )}
+          <div className="lesson-complete-row">
+            <button className={`btn-complete ${done ? 'done' : ''}`} onClick={handleComplete}>
+              {done ? '✅ 학습 완료' : '학습 완료로 표시하기'}
+            </button>
+          </div>
+        </>
       )}
 
       {!isReading && (

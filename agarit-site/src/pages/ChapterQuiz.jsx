@@ -3,11 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { getChapter } from '../data/chapters'
 import { getChapterQuiz } from '../data/quizzes'
 import QuizSection from '../components/QuizSection'
-import GameQuiz from '../components/GameQuiz'
-import GameModeSelect from '../components/GameModeSelect'
-import TypingRaceGame from '../components/TypingRaceGame'
-import FallingDefenseGame from '../components/FallingDefenseGame'
-import MemoryMatchGame from '../components/MemoryMatchGame'
+import RushRunGame from '../components/RushRunGame'
 import './ChapterQuiz.css'
 
 const TABS = [
@@ -16,13 +12,6 @@ const TABS = [
   { key: 'essay', label: '서술형' },
 ]
 
-const GAME_TITLES = {
-  heart: '하트런',
-  falling: '낙하 방어전',
-  typing: '스피드 타자전',
-  match: '짝맞추기 메모리',
-}
-
 export default function ChapterQuiz() {
   const { chapterId } = useParams()
   const chapter = getChapter(chapterId)
@@ -30,7 +19,6 @@ export default function ChapterQuiz() {
   const visibleTabs = TABS.filter((t) => quiz?.[t.key]?.length)
   const [tab, setTab] = useState(visibleTabs[0]?.key || 'mcq')
   const [gameMode, setGameMode] = useState(false)
-  const [gameType, setGameType] = useState(null)
   const isReading = chapter?.kind === 'reading'
 
   if (!chapter || !quiz) return <Navigate to="/" replace />
@@ -41,26 +29,8 @@ export default function ChapterQuiz() {
         <div className="lesson-breadcrumb">
           <Link to="/">차례</Link> <span>›</span> <span>{chapter.num}장 {chapter.title}</span>
         </div>
-        <h1>{chapter.num}장 퀴즈 · 게임 모드{gameType ? ` · ${GAME_TITLES[gameType]}` : ''}</h1>
-        {!gameType && (
-          <GameModeSelect
-            quiz={quiz}
-            onSelect={setGameType}
-            onExit={() => { setGameMode(false); setGameType(null) }}
-          />
-        )}
-        {gameType === 'heart' && (
-          <GameQuiz questions={quiz.mcq} onExit={() => setGameType(null)} />
-        )}
-        {gameType === 'falling' && (
-          <FallingDefenseGame questions={quiz.mcq} onExit={() => setGameType(null)} />
-        )}
-        {gameType === 'typing' && (
-          <TypingRaceGame questions={quiz.short} onExit={() => setGameType(null)} />
-        )}
-        {gameType === 'match' && (
-          <MemoryMatchGame questions={quiz.mcq} onExit={() => setGameType(null)} />
-        )}
+        <h1>{chapter.num}장 퀴즈 · 러시 앤 대시</h1>
+        <RushRunGame questions={quiz.mcq} onExit={() => setGameMode(false)} />
       </div>
     )
   }
@@ -75,9 +45,9 @@ export default function ChapterQuiz() {
         {isReading ? '지문을 바탕으로 다양한 서답형 문제를 풀어보세요.' : '배운 내용을 세 가지 유형의 문제로 점검해보세요.'}
       </p>
 
-      {!isReading && (
-        <button className="btn-primary quiz-game-cta" onClick={() => { setGameType(null); setGameMode(true) }}>
-          🎮 게임 모드로 도전하기
+      {!isReading && quiz.mcq.length >= 3 && (
+        <button className="btn-primary quiz-game-cta" onClick={() => setGameMode(true)}>
+          🎮 러시 앤 대시로 도전하기
         </button>
       )}
 

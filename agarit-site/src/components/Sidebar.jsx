@@ -70,6 +70,31 @@ function UnitList({ units, unitLabel, expanded, toggle, onClose }) {
   return (
     <ul className="chapter-list">
       {units.map((u) => {
+        // 독해 유닛은 레슨이 항상 1개뿐이고 제목도 유닛명과 같으므로,
+        // 펼치기 없이 바로 지문(+문제) 페이지로 연결한다.
+        if (u.kind === 'reading') {
+          return (
+            <li key={u.id} className={`chapter-item ${!u.ready ? 'chapter-disabled' : ''}`}>
+              {u.ready ? (
+                <NavLink
+                  to={`/chapter/${u.id}/lesson/${u.lessons[0].id}`}
+                  className={({ isActive }) => `chapter-head chapter-head-link ${isActive ? 'active' : ''}`}
+                  onClick={onClose}
+                >
+                  <span className="chapter-num">{u.num}{unitLabel}</span>
+                  <span className="chapter-title">{u.title}</span>
+                </NavLink>
+              ) : (
+                <button className="chapter-head" disabled>
+                  <span className="chapter-num">{u.num}{unitLabel}</span>
+                  <span className="chapter-title">{u.title}</span>
+                  <span className="chapter-soon">준비중</span>
+                </button>
+              )}
+            </li>
+          )
+        }
+
         const isExpanded = !!expanded[u.id]
         return (
           <li key={u.id} className={`chapter-item ${!u.ready ? 'chapter-disabled' : ''}`}>
@@ -99,17 +124,15 @@ function UnitList({ units, unitLabel, expanded, toggle, onClose }) {
                     </NavLink>
                   </li>
                 ))}
-                {u.kind !== 'reading' && (
-                  <li>
-                    <NavLink
-                      to={`/chapter/${u.id}/quiz`}
-                      className={({ isActive }) => (isActive ? 'lesson-link quiz-link active' : 'lesson-link quiz-link')}
-                      onClick={onClose}
-                    >
-                      ✏️ {u.num}{unitLabel} 퀴즈
-                    </NavLink>
-                  </li>
-                )}
+                <li>
+                  <NavLink
+                    to={`/chapter/${u.id}/quiz`}
+                    className={({ isActive }) => (isActive ? 'lesson-link quiz-link active' : 'lesson-link quiz-link')}
+                    onClick={onClose}
+                  >
+                    ✏️ {u.num}{unitLabel} 퀴즈
+                  </NavLink>
+                </li>
               </ul>
             )}
           </li>
