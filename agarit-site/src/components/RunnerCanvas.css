@@ -1,0 +1,8 @@
+.rrc-wrap {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fffaf0;
+}
+.rrc-wrap canvas { display: block; cursor: pointer; }

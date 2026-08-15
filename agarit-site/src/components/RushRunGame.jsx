@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useGame } from '../context/GameContext'
 import { XP_RULES } from '../utils/gamification'
 import { isMuted, playClear, playCombo, playCorrect, playOver, playWrong, setMuted } from '../utils/sound'
+import RunnerCanvas from './RunnerCanvas'
 import './RushRunGame.css'
 
 const START_LIVES = 3
@@ -33,13 +34,12 @@ export default function RushRunGame({ questions, onExit }) {
   const [picked, setPicked] = useState(null)
   const [resultKind, setResultKind] = useState(null) // 'correct' | 'wrong' | 'missed'
   const [muted, setMutedState] = useState(() => isMuted())
-  const [burst, setBurst] = useState(false)
+  const [burstTick, setBurstTick] = useState(0)
   const [speedUpFlash, setSpeedUpFlash] = useState(false)
   const missTimerRef = useRef(null)
   const advanceRef = useRef(null)
   const answeredRef = useRef(false)
   const speedUpTimerRef = useRef(null)
-  const burstTimerRef = useRef(null)
 
   const current = order[index]
   const runMs = Math.max(MIN_RUN_MS, START_RUN_MS - round * RUN_MS_STEP)
@@ -48,7 +48,6 @@ export default function RushRunGame({ questions, onExit }) {
     clearTimeout(missTimerRef.current)
     clearTimeout(advanceRef.current)
     clearTimeout(speedUpTimerRef.current)
-    clearTimeout(burstTimerRef.current)
   }, [])
 
   function toggleMute() {
@@ -102,9 +101,7 @@ export default function RushRunGame({ questions, onExit }) {
     if (correct) {
       playCorrect()
       setScore((s) => s + 1)
-      setBurst(true)
-      clearTimeout(burstTimerRef.current)
-      burstTimerRef.current = setTimeout(() => setBurst(false), 700)
+      setBurstTick((b) => b + 1)
       setRound((r) => {
         const nr = r + 1
         if (nr >= 1 && nr % 2 === 0 && START_RUN_MS - nr * RUN_MS_STEP > MIN_RUN_MS) {
@@ -223,48 +220,17 @@ export default function RushRunGame({ questions, onExit }) {
 
       {speedUpFlash && <div className="rrg-speedup-banner">🚀 스피드 업!</div>}
 
-      <div className="rrg-road">
-        <div className="rrg-road-lines" style={{ animationDuration: `${Math.max(400, runMs / 6)}ms` }} />
-        <div className="rrg-edge rrg-edge-left" style={{ animationDuration: `${Math.max(220, runMs / 14)}ms` }} />
-        <div className="rrg-edge rrg-edge-right" style={{ animationDuration: `${Math.max(220, runMs / 14)}ms` }} />
-        <div className="rrg-lanes">
-          {current.options.map((opt, i) => {
-            const isPickedWrong = isAnswered && picked === i && i !== current.answer
-            const isCorrectReveal = isAnswered && i === current.answer
-            let cls = 'rrg-gate'
-            if (isPickedWrong) cls += ' rrg-gate-wrong'
-            if (isCorrectReveal) cls += ' rrg-gate-correct'
-            return (
-              <div className="rrg-lane" key={`${index}-${i}`}>
-                <button
-                  className={cls}
-                  style={{
-                    animationDuration: `${runMs}ms`,
-                    animationPlayState: isAnswered ? 'paused' : 'running',
-                  }}
-                  disabled={isAnswered}
-                  onClick={() => handleGateClick(i)}
-                >
-                  {opt}
-                </button>
-              </div>
-            )
-          })}
-        </div>
-        <div className="rrg-runner-wrap">
-          {phase === 'running' && <span className="rrg-dust">💨</span>}
-          <div className={`rrg-runner ${phase === 'running' ? 'rrg-runner-move' : ''} ${isAnswered && resultKind === 'wrong' ? 'rrg-runner-hit' : ''}`}>
-            🏃
-          </div>
-          {burst && (
-            <div className="rrg-burst">
-              {['✨', '⭐', '✨', '⭐', '✨'].map((s, i) => (
-                <span key={i} className={`rrg-burst-star rrg-burst-star-${i}`}>{s}</span>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
+      <RunnerCanvas
+        key={index}
+        options={current.options}
+        answerIndex={current.answer}
+        picked={picked}
+        isAnswered={isAnswered}
+        resultKind={resultKind}
+        runMs={runMs}
+        onPick={handleGateClick}
+        burstTick={burstTick}
+      />
 
       {isAnswered && (
         <div className="rrg-feedback">
