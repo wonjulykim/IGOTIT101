@@ -17,14 +17,23 @@ export const r8Quiz = {
   short: [
     {
       id: 'r8-short-1',
+      subtype: '완성형',
       q: '다음 빈칸에 들어갈 단어를 지문에서 찾아 쓰시오.\n"Food in Mexico is also part of family life — families often eat together and ________ food during special days."',
       answers: ['share'],
       explain: '가족들이 특별한 날에 음식을 "함께 나눈다(share)"고 설명합니다.',
+    },
+    {
+      id: 'r8-short-2',
+      subtype: '문법',
+      q: '다음 문장의 빈칸에 이유를 나타내는 접속사를 쓰시오.\n"Mexican food is often spicy ________ the weather is hot."',
+      answers: ['because'],
+      explain: 'because는 "왜냐하면 ~ 때문에"라는 뜻으로 이유를 나타내는 절을 이끕니다.',
     },
   ],
   essay: [
     {
       id: 'r8-essay-1',
+      subtype: '서술형',
       q: "'세계 문화 이해' 주간을 맞아 세계 여러 나라의 음식을 통해 문화의 다양성을 경험했다고 가정하고, 아래 조건에 맞게 체험 보고서·블로그 글·일기 중 하나의 형식을 선택하여 영어로 작성하시오.",
       standard: '[9영02-04] 친숙한 주제에 관해 경험이나 계획을 설명한다. / [9영02-06] 친숙한 주제에 관해 자신의 의견을 주장한다.',
       difficulty: '중',

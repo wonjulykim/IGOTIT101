@@ -14,6 +14,14 @@ export const r2 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: 동명사(-ing)의 목적어 역할',
+        items: [
+          '"This method involves students writing down their feelings" → writing은 동사 involves의 목적어로 쓰인 동명사예요.',
+          '"help students understand their feelings"처럼 help는 목적격보어로 동사원형(understand)을 취할 수 있어요 (help + 목적어 + 동사원형/to부정사).',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'stress-relief journaling: 스트레스 해소 저널링(글쓰기)',

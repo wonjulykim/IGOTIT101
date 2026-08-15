@@ -17,14 +17,23 @@ export const r1Quiz = {
   short: [
     {
       id: 'r1-short-1',
+      subtype: '완성형',
       q: "다음 빈칸에 들어갈 단어를 지문에서 찾아 쓰시오.\n\"________ uses fake emails or text messages to trick people into giving away their personal details.\"",
       answers: ['phishing', 'Phishing'],
       explain: '피싱(phishing)은 가짜 이메일이나 문자로 개인정보를 빼내는 수법입니다.',
+    },
+    {
+      id: 'r1-short-2',
+      subtype: '문법',
+      q: '다음 문장의 빈칸에 들어갈 관계대명사로 가장 적절한 것을 쓰시오.\n"Malware is harmful software ________ quietly installs itself on a device."',
+      answers: ['that', 'which'],
+      explain: '선행사가 사물(software)이므로 주격 관계대명사 that 또는 which가 들어갑니다.',
     },
   ],
   essay: [
     {
       id: 'r1-essay-1',
+      subtype: '논술형',
       q: '최근 온라인 신분 도용(Identity Theft)으로 인한 피해가 늘고 있다. 학교 신문에 이 문제의 위험성을 경고하고 예방법을 알리는 기고문을 아래 조건에 맞게 영어로 작성하시오.',
       standard: '[10공영1-02-02] 사실적 정보나 지식을 말이나 글로 전달한다. / [10공영1-02-04] 자신의 생각이나 의견을 표현한다.',
       difficulty: '상',

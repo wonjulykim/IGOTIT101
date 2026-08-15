@@ -17,14 +17,23 @@ export const r6Quiz = {
   short: [
     {
       id: 'r6-short-1',
+      subtype: '완성형',
       q: '다음 빈칸에 들어갈 단어를 지문에서 찾아 쓰시오.\n"Sea animals such as whales are found with their bodies full of plastic bags, bottles, and other trash they ________ for food."',
       answers: ['mistook', 'mistake'],
       explain: '"mistake A for B(A를 B로 착각하다)"의 과거형 mistook이 정답입니다.',
+    },
+    {
+      id: 'r6-short-2',
+      subtype: '문법',
+      q: '다음 문장에서 생략된 목적격 관계대명사를 넣어 문장을 다시 쓸 때, 빈칸에 들어갈 한 단어를 쓰시오.\n"...other trash they mistook for food." → "...other trash ________ they mistook for food."',
+      answers: ['that', 'which'],
+      explain: 'trash와 they 사이에는 목적격 관계대명사 that(또는 which)이 생략되어 있습니다.',
     },
   ],
   essay: [
     {
       id: 'r6-essay-1',
+      subtype: '논술형',
       q: '위 글을 참고하여, 환경 문제의 심각성을 알리고 작은 실천이 변화를 만들 수 있다는 메시지를 전하는 글을 아래 조건에 맞게 영어로 작성하시오.',
       standard: '[9영02-04] 친숙한 주제에 관해 경험이나 계획을 설명한다. / [9영02-05] 친숙한 주제에 관해 일이나 사건의 논리적 관계를 설명한다.',
       difficulty: '중',

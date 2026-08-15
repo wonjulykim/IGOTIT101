@@ -17,14 +17,23 @@ export const r3Quiz = {
   short: [
     {
       id: 'r3-short-1',
+      subtype: '단답형',
       q: '글쓴이가 무대 위에서 얼어붙었을 때 느낀 감정을 나타내는 단어를 지문에서 찾아 쓰시오. (예: p로 시작하는 단어)',
       answers: ['panic'],
       explain: '"panic rising in my chest"라는 표현에서 확인할 수 있습니다.',
+    },
+    {
+      id: 'r3-short-2',
+      subtype: '문법',
+      q: '다음 문장에서 밑줄 친 것과 같은 역할(부대상황을 나타내는 분사)을 하도록 괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n"I repeated it, voice (shake) ________."',
+      answers: ['shaking'],
+      explain: '"목소리가 떨리면서"라는 부대상황을 나타내려면 현재분사 shaking을 씁니다.',
     },
   ],
   essay: [
     {
       id: 'r3-essay-1',
+      subtype: '서술형',
       q: '위 글을 참고하여, 자신이 겪은 어려운 순간을 극복하며 성장한 경험에 대한 글을 아래 조건에 맞게 영어로 작성하시오.',
       standard: '[10공영1-02-03] 경험이나 계획 등을 말하거나 기술한다. / [10공영1-02-06] 어휘나 표현을 점검하여 내용을 명확하게 전달한다.',
       difficulty: '상',

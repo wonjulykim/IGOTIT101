@@ -99,15 +99,17 @@ function UnitList({ units, unitLabel, expanded, toggle, onClose }) {
                     </NavLink>
                   </li>
                 ))}
-                <li>
-                  <NavLink
-                    to={`/chapter/${u.id}/quiz`}
-                    className={({ isActive }) => (isActive ? 'lesson-link quiz-link active' : 'lesson-link quiz-link')}
-                    onClick={onClose}
-                  >
-                    ✏️ {u.num}{unitLabel} 퀴즈
-                  </NavLink>
-                </li>
+                {u.kind !== 'reading' && (
+                  <li>
+                    <NavLink
+                      to={`/chapter/${u.id}/quiz`}
+                      className={({ isActive }) => (isActive ? 'lesson-link quiz-link active' : 'lesson-link quiz-link')}
+                      onClick={onClose}
+                    >
+                      ✏️ {u.num}{unitLabel} 퀴즈
+                    </NavLink>
+                  </li>
+                )}
               </ul>
             )}
           </li>

@@ -18,6 +18,14 @@ export const r8 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: 이유를 나타내는 접속사 because',
+        items: [
+          '"Mexican food is often spicy because the weather is hot" → because는 "왜냐하면 ~ 때문에"라는 뜻으로 이유를 나타내는 절을 이끌어요.',
+          'because 뒤에는 완전한 절(주어+동사)이 오고, because of 뒤에는 명사(구)가 온다는 점에 유의하세요.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'cultural diversity: 문화적 다양성',

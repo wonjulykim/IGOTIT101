@@ -14,6 +14,14 @@ export const r4 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: 복합관계대명사 whoever',
+        items: [
+          '"the rights usually go to whoever set up the AI" → whoever는 "~하는 누구든지"라는 뜻으로, 명사절(the person who set up the AI)을 대신하는 복합관계대명사예요.',
+          '복합관계대명사(whoever, whatever, whichever)는 문장에서 주어·목적어 역할을 하는 명사절을 이끕니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'authorship: 저작자 자격, 원작자임',

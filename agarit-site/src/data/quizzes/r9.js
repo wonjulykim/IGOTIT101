@@ -17,20 +17,30 @@ export const r9Quiz = {
   short: [
     {
       id: 'r9-short-1',
+      subtype: '완성형',
       q: '다음 요약문의 빈칸에 들어갈 표현을 지문에서 찾아 쓰시오.\n"AI programs become more intelligent through machine learning. One way is ________ — by observing patterns in data, they learn by themselves."',
       answers: ['pattern recognition'],
       explain: '패턴 인식(pattern recognition)을 통해 데이터 속의 패턴을 관찰함으로써 스스로 학습합니다.',
     },
     {
       id: 'r9-short-2',
+      subtype: '단답형',
       q: '인간 뇌에서 정보를 뇌 안팎으로 계속 이동시키는 연결망을 이루는 신경세포를 가리키는 단어를 지문에서 찾아 쓰시오.',
       answers: ['neurons', 'neuron'],
       explain: '인간 뇌에는 약 1,000억 개의 뉴런(neuron)이 있으며, 이들이 연결되어 신경망을 이룹니다.',
+    },
+    {
+      id: 'r9-short-3',
+      subtype: '문법',
+      q: '다음 문장을 수동태 문장으로 완성할 때 빈칸에 들어갈 형태를 쓰시오.\n"AI programs are ________ (design) to teach themselves in various ways."',
+      answers: ['designed'],
+      explain: '수동태는 「be동사 + 과거분사」 형태이므로 designed가 알맞습니다.',
     },
   ],
   essay: [
     {
       id: 'r9-essay-1',
+      subtype: '서술형',
       q: '위 글을 읽고, AI가 스스로 학습하는 원리를 패턴 인식과 데이터 학습을 포함하여 자신의 말로 요약하여 서술하시오.',
       standard: '[10영03-01] 친숙한 일반적 주제에 관한 글을 읽고 세부 정보를 파악할 수 있다.',
       difficulty: '중',

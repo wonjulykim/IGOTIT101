@@ -17,14 +17,23 @@ export const r2Quiz = {
   short: [
     {
       id: 'r2-short-1',
+      subtype: '단답형',
       q: '지문에서 소개한, 시험 스트레스를 줄이기 위한 방법의 이름을 영어로 쓰시오.',
       answers: ['stress-relief journaling', 'stress relief journaling'],
       explain: '지문은 "stress-relief journaling"이라는 방법을 소개하고 있습니다.',
+    },
+    {
+      id: 'r2-short-2',
+      subtype: '문법',
+      q: '다음 문장의 빈칸에 들어갈 형태로 가장 적절한 것을 쓰시오. (동사원형으로 쓸 것)\n"This practice helps students ________ their feelings and reduce anxiety."',
+      answers: ['understand'],
+      explain: 'help는 목적격보어로 동사원형을 취할 수 있으므로 understand가 적절합니다. (help + 목적어 + 동사원형)',
     },
   ],
   essay: [
     {
       id: 'r2-essay-1',
+      subtype: '논술형',
       q: '고등학생들이 겪는 스트레스의 원인을 한 가지 정하고, 이를 해소할 수 있는 실천 가능한 방안을 제안하는 글을 아래 조건에 맞게 영어로 작성하시오.',
       standard: '[10공영1-02-02] 사실적 정보나 지식을 말이나 글로 전달한다. / [10공영1-02-04] 자신의 생각이나 의견을 표현한다.',
       difficulty: '중',

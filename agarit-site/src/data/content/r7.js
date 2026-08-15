@@ -25,6 +25,14 @@ export const r7 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: to부정사의 명사적 용법',
+        items: [
+          '"I would like to propose a Cooking Club." → to propose는 동사 like의 목적어로 쓰인 to부정사(명사적 용법)예요.',
+          'to부정사는 "~하는 것"이라는 뜻으로 문장에서 주어, 목적어, 보어 역할을 할 수 있습니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'propose: 제안하다',

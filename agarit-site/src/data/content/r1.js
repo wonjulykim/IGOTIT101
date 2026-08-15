@@ -17,6 +17,14 @@ export const r1 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: 주격 관계대명사 that',
+        items: [
+          '"malware is harmful software that quietly installs itself" → that는 앞의 명사(software)를 꾸며주는 주격 관계대명사예요.',
+          '관계대명사절(that quietly installs itself) 안에서 that가 주어 역할을 하며, "설치되는 소프트웨어"처럼 명사를 뒤에서 수식합니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'identity theft: 신분 도용',

@@ -18,6 +18,14 @@ export const r3 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: 분사구문(부대상황)',
+        items: [
+          '"I repeated it, voice shaking" → 「명사(voice) + 현재분사(shaking)」 형태로, "목소리가 떨리면서"라는 부대상황(동시동작)을 나타내요.',
+          '"I stood frozen, unable to speak"에서 frozen은 과거분사로 상태를, unable to speak는 형용사구로 이유를 덧붙여 설명합니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'go blank: (머릿속이) 하얘지다',

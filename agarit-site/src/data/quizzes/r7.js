@@ -17,14 +17,23 @@ export const r7Quiz = {
   short: [
     {
       id: 'r7-short-1',
+      subtype: '단답형',
       q: '이 제안서의 5개 항목 중, 동아리 활동의 "기대 효과"를 설명하는 항목의 이름을 영어로 쓰시오.',
       answers: ['expected results', 'Expected Results'],
       explain: 'Expected Results 항목에서 동아리 활동의 기대 효과를 설명합니다.',
+    },
+    {
+      id: 'r7-short-2',
+      subtype: '문법',
+      q: '다음 문장의 빈칸에 들어갈 말을 쓰시오. (to부정사 형태로)\n"I would like ________ a Cooking Club." (propose)',
+      answers: ['to propose'],
+      explain: 'would like는 to부정사를 목적어로 취하므로 to propose가 알맞습니다.',
     },
   ],
   essay: [
     {
       id: 'r7-essay-1',
+      subtype: '서술형',
       q: '위 제안서의 형식을 참고하여, 친구들의 흥미와 재능을 키울 수 있는 새로운 동아리를 하나 정하고 개설을 제안하는 글을 아래 조건에 맞게 영어로 작성하시오.',
       standard: '[9영02-06] 친숙한 주제에 관해 자신의 의견을 주장한다. / [9영02-08] 간단한 일기, 편지, 이메일 등의 글을 쓴다.',
       difficulty: '중',

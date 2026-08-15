@@ -30,8 +30,10 @@ function UnitGrid({ units, unitLabel }) {
           <div className="home-card-title">{u.title}</div>
           {u.ready ? (
             <div className="home-card-links">
-              <Link to={`/chapter/${u.id}/lesson/${u.lessons[0].id}`}>학습하기</Link>
-              <Link to={`/chapter/${u.id}/quiz`}>퀴즈</Link>
+              <Link to={`/chapter/${u.id}/lesson/${u.lessons[0].id}`}>
+                {u.kind === 'reading' ? '읽고 문제 풀기' : '학습하기'}
+              </Link>
+              {u.kind !== 'reading' && <Link to={`/chapter/${u.id}/quiz`}>퀴즈</Link>}
             </div>
           ) : (
             <span className="home-card-soon">준비중</span>

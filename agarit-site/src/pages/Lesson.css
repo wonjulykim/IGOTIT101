@@ -46,3 +46,8 @@
 .lesson-nav-link:hover { background: var(--accent-bg); text-decoration: none; }
 .lesson-nav-link.quiz { background: var(--accent); color: white; border-color: var(--accent); }
 .lesson-nav-link.quiz:hover { background: var(--accent-dark); }
+
+.reading-quiz-block { margin-top: 20px; }
+.reading-quiz-divider { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+.reading-quiz-section { margin-top: 28px; }
+.reading-quiz-section h3 { margin-bottom: 12px; }

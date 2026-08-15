@@ -17,6 +17,7 @@ export const r10Quiz = {
   short: [
     {
       id: 'r10-short-1',
+      subtype: '문장완성',
       q: '다음 글을 읽고, 7단어 이내로 (반드시 safety라는 단어를 포함하여) 이 글에 어울리는 제목을 영어로 쓰시오.',
       answers: [
         'The Safety Rules of Bushwalking',
@@ -25,10 +26,18 @@ export const r10Quiz = {
       ],
       explain: '글 전체가 부시워킹의 안전 수칙을 안내하는 내용이므로, safety를 포함한 제목이 적절합니다. (유사 표현도 정답으로 인정)',
     },
+    {
+      id: 'r10-short-2',
+      subtype: '문법',
+      q: '다음 문장을 명령문으로 바꿀 때 빈칸에 들어갈 단어를 쓰시오. (동사원형 한 단어)\n"You should check the weather and park conditions." → "________ the weather and park conditions."',
+      answers: ['Check', 'check'],
+      explain: '명령문은 주어 없이 동사원형(Check)으로 시작합니다.',
+    },
   ],
   essay: [
     {
       id: 'r10-essay-1',
+      subtype: '서술형',
       q: '부시워킹(또는 등산이나 캠핑 등 자연 활동)을 떠나기 전 지켜야 할 안전 수칙을 아래 조건에 맞게 서술하시오.',
       standard: '[10영03-04] 친숙한 일반적 주제에 관한 글을 읽고 필자의 의도나 글의 목적을 파악할 수 있다.',
       difficulty: '중',

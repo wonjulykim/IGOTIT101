@@ -1,0 +1,69 @@
+export const r16Quiz = {
+  mcq: [
+    {
+      id: 'r16-mcq-1',
+      q: 'Minsu가 교복에 대해 가지고 있는 생각으로 가장 적절한 것은?',
+      options: [
+        '교복은 불편하므로 입지 말아야 한다.',
+        '교복을 입으면 아침마다 옷을 고민할 필요가 없어서 좋다.',
+        '교복은 학생의 개성을 완전히 없앤다.',
+        '교복은 반드시 값비싼 브랜드여야 한다.',
+        '교복은 학교 성적에 영향을 준다.',
+      ],
+      answer: 1,
+      explain: 'Minsu는 "We don\'t need to decide what to wear every morning"이라며 교복의 장점을 이야기합니다.',
+    },
+  ],
+  short: [
+    {
+      id: 'r16-short-1',
+      subtype: '단답형',
+      q: 'Sujin과 Minsu의 교복에 대한 의견과 그 이유를 각각 우리말로 한 문장씩 쓰시오.',
+      answers: [
+        'Sujin은 교복이 불편해서 반대하고, Minsu는 아침에 옷을 고민할 필요가 없어서 찬성한다',
+      ],
+      explain: 'Sujin은 불편함을 이유로 반대하고, Minsu는 편리함을 이유로 찬성 의견을 보입니다.',
+    },
+    {
+      id: 'r16-short-2',
+      subtype: '문법',
+      q: '다음 문장의 빈칸에 들어갈 것을 쓰시오. (do/does 중 알맞은 것)\n"Why ________ you think so?"',
+      answers: ['do'],
+      explain: '주어가 you이고 일반동사(think)를 쓰는 의문문이므로 do가 알맞습니다.',
+    },
+  ],
+  essay: [
+    {
+      id: 'r16-essay-1',
+      subtype: '논술형',
+      q: '교복 착용에 대한 자신의 입장(찬성/반대)을 정하고, 위 대화에 나온 근거 이외의 근거를 들어 의견을 서술하시오.',
+      standard: '[10영04-03] 일상생활이나 친숙한 일반적 주제에 관해 자신의 의견이나 감정을 쓸 수 있다.',
+      difficulty: '중',
+      score: 12,
+      conditions: ['찬성 또는 반대 입장을 분명히 밝힐 것', '대화에 나오지 않은 새로운 근거를 최소 한 가지 포함할 것', '80단어 이상으로 쓸 것'],
+      model:
+        "I think school uniforms are a good idea. Uniforms create a sense of equality among students, since no one is judged by how expensive or fashionable their clothes are. This can reduce bullying related to appearance and help students focus more on their studies instead of worrying about what to wear. For these reasons, I support wearing school uniforms.",
+      totalScore: 12,
+      rubric: [
+        {
+          criterion: '입장 및 새로운 근거 제시',
+          maxScore: 6,
+          levels: [
+            { score: 6, desc: '입장을 분명히 밝히고 대화에 없던 새로운 근거를 설득력 있게 제시함' },
+            { score: 3, desc: '입장은 밝혔으나 근거가 대화 내용과 중복되거나 빈약함' },
+            { score: 1, desc: '입장이나 근거가 불분명함' },
+          ],
+        },
+        {
+          criterion: '언어 사용의 정확성',
+          maxScore: 6,
+          levels: [
+            { score: 6, desc: '문법과 어휘 사용이 정확하며 의사소통에 지장이 없음' },
+            { score: 3, desc: '오류가 있으나 의미 전달에 큰 지장은 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+  ],
+}

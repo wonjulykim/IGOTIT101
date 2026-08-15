@@ -17,14 +17,23 @@ export const r4Quiz = {
   short: [
     {
       id: 'r4-short-1',
+      subtype: '완성형',
       q: '다음 빈칸에 들어갈 단어를 지문에서 찾아 쓰시오.\n"Under current law, only humans can hold ________, so the rights usually go to whoever set up the AI."',
       answers: ['copyright'],
       explain: '현재 법으로는 인간만이 저작권(copyright)을 가질 수 있다고 설명합니다.',
+    },
+    {
+      id: 'r4-short-2',
+      subtype: '문법',
+      q: '다음 빈칸에 들어갈 복합관계대명사를 쓰시오.\n"The rights usually go to ________ set up the AI — the developer, the founder, or the person who wrote the prompt."',
+      answers: ['whoever'],
+      explain: '"~하는 누구든지"라는 뜻의 복합관계대명사 whoever가 들어갑니다.',
     },
   ],
   essay: [
     {
       id: 'r4-essay-1',
+      subtype: '논술형',
       q: '위 글을 읽고 AI가 생성한 예술 작품의 저작권을 누가 가져야 하는지에 대한 의견을 아래 조건에 맞게 영어로 작성하시오.',
       standard: '[10공영1-02-04] 자신의 생각이나 의견을 표현한다. / [10공영1-02-06] 어휘나 표현을 점검하여 내용을 명확하게 전달한다.',
       difficulty: '상',

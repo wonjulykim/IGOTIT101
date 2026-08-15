@@ -17,16 +17,21 @@
   --warn: #c78a1e;
   --warn-bg: rgba(199, 138, 30, 0.12);
   --shadow: rgba(30, 20, 60, 0.06) 0 4px 16px, rgba(30, 20, 60, 0.04) 0 1px 3px;
-  --sans: 'Pretendard', 'Apple SD Gothic Neo', 'Segoe UI', system-ui, Roboto, sans-serif;
-  --radius: 14px;
+  --sans: 'Pretendard Variable', 'Pretendard', 'Apple SD Gothic Neo', 'Segoe UI', system-ui, Roboto, sans-serif;
+  --display: 'Gaegu', var(--sans);
+  --radius: 20px;
 }
 
 * { box-sizing: border-box; }
 
 html, body { margin: 0; }
 
+html {
+  font-size: 18px;
+}
+
 body {
-  font: 17px/1.75 var(--sans);
+  font: 1rem/1.85 var(--sans);
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
@@ -43,11 +48,15 @@ h1, h2, h3, h4 {
   margin: 0 0 0.7em;
 }
 
-h1 { font-size: 2.05rem; letter-spacing: -0.02em; }
-h2 { font-size: 1.45rem; }
-h3 { font-size: 1.2rem; }
+h1 {
+  font-family: var(--display);
+  font-size: 2.3rem;
+  letter-spacing: -0.01em;
+}
+h2 { font-family: var(--display); font-size: 1.6rem; }
+h3 { font-size: 1.28rem; }
 
-p { margin: 0 0 1.1em; }
+p { margin: 0 0 1.3em; }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -66,15 +75,20 @@ ul, ol { padding-left: 1.3em; }
   color: white;
   border: none;
   border-radius: 999px;
-  padding: 11px 28px;
+  padding: 12px 30px;
   font-weight: 700;
+  box-shadow: 0 3px 0 var(--accent-dark);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.15s ease;
 }
-.btn-primary:hover { background: var(--accent-dark); }
+.btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 5px 0 var(--accent-dark); }
+.btn-primary:active { transform: translateY(1px); box-shadow: 0 1px 0 var(--accent-dark); }
 
 .btn-secondary {
   background: var(--bg-panel);
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 10px 22px;
+  padding: 11px 24px;
   font-weight: 600;
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.15s ease;
 }
+.btn-secondary:hover { border-color: var(--accent-border); background: var(--accent-bg); transform: translateY(-2px); }

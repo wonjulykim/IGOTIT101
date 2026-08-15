@@ -15,7 +15,8 @@
 }
 
 .sidebar-brand a {
-  font-size: 1.15rem;
+  font-family: var(--display);
+  font-size: 1.35rem;
   font-weight: 800;
   color: var(--text-h);
 }

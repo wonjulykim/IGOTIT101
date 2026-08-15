@@ -36,6 +36,16 @@ import { r7Quiz } from './r7'
 import { r8Quiz } from './r8'
 import { r9Quiz } from './r9'
 import { r10Quiz } from './r10'
+import { r11Quiz } from './r11'
+import { r12Quiz } from './r12'
+import { r13Quiz } from './r13'
+import { r14Quiz } from './r14'
+import { r15Quiz } from './r15'
+import { r16Quiz } from './r16'
+import { r17Quiz } from './r17'
+import { r18Quiz } from './r18'
+import { r19Quiz } from './r19'
+import { r20Quiz } from './r20'
 
 export const quizzesByChapter = {
   ch1: ch1Quiz,
@@ -76,6 +86,16 @@ export const quizzesByChapter = {
   r8: r8Quiz,
   r9: r9Quiz,
   r10: r10Quiz,
+  r11: r11Quiz,
+  r12: r12Quiz,
+  r13: r13Quiz,
+  r14: r14Quiz,
+  r15: r15Quiz,
+  r16: r16Quiz,
+  r17: r17Quiz,
+  r18: r18Quiz,
+  r19: r19Quiz,
+  r20: r20Quiz,
 }
 
 export function getChapterQuiz(chapterId) {

@@ -2,11 +2,19 @@ import { useEffect, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { getLesson } from '../data/chapters'
 import { getLessonContent } from '../data/content'
+import { getChapterQuiz } from '../data/quizzes'
 import ContentBlocks from '../components/ContentBlocks'
+import QuizSection from '../components/QuizSection'
 import { isLessonComplete, markLessonComplete } from '../utils/progress'
 import { useGame } from '../context/GameContext'
 import { getOverride, getSession } from '../utils/adminApi'
 import './Lesson.css'
+
+const QUIZ_LABELS = {
+  mcq: '📌 확인 문제 (객관식)',
+  short: '✍️ 빈칸·단답 문제',
+  essay: '📝 서술형·논술형 문제',
+}
 
 export default function Lesson() {
   const { chapterId, lessonId } = useParams()
@@ -37,7 +45,9 @@ export default function Lesson() {
   const { chapter, lesson, prev, next } = info
   const effectiveBlocks = override?.blocks || content?.blocks
   const effectiveTitle = override?.title || lesson.title
-  const unitLabel = chapter.kind === 'reading' ? '편' : '장'
+  const isReading = chapter.kind === 'reading'
+  const unitLabel = isReading ? '편' : '장'
+  const quiz = isReading ? getChapterQuiz(chapterId) : null
 
   function handleComplete() {
     const wasAlreadyDone = isLessonComplete(chapterId, lessonId)
@@ -70,26 +80,45 @@ export default function Lesson() {
         </button>
       </div>
 
-      <nav className="lesson-nav">
-        <div className="lesson-nav-side">
-          {prev ? (
-            <Link to={`/chapter/${chapterId}/lesson/${prev.id}`} className="lesson-nav-link">
-              ← {prev.title}
-            </Link>
-          ) : <span />}
-        </div>
-        <div className="lesson-nav-side lesson-nav-right">
-          {next ? (
-            <Link to={`/chapter/${chapterId}/lesson/${next.id}`} className="lesson-nav-link">
-              {next.title} →
-            </Link>
-          ) : (
-            <Link to={`/chapter/${chapterId}/quiz`} className="lesson-nav-link quiz">
-              {chapter.num}{unitLabel} 퀴즈 풀기 →
-            </Link>
+      {isReading && quiz && (
+        <div className="reading-quiz-block">
+          <hr className="reading-quiz-divider" />
+          <h2>문제 풀기</h2>
+          <p className="quiz-intro">지문을 다시 살펴보며 아래 문제를 풀어보세요.</p>
+          {['mcq', 'short', 'essay'].map(
+            (type) =>
+              quiz[type]?.length > 0 && (
+                <section key={type} className="reading-quiz-section">
+                  <h3>{QUIZ_LABELS[type]}</h3>
+                  <QuizSection chapterId={chapterId} type={type} questions={quiz[type]} />
+                </section>
+              )
           )}
         </div>
-      </nav>
+      )}
+
+      {!isReading && (
+        <nav className="lesson-nav">
+          <div className="lesson-nav-side">
+            {prev ? (
+              <Link to={`/chapter/${chapterId}/lesson/${prev.id}`} className="lesson-nav-link">
+                ← {prev.title}
+              </Link>
+            ) : <span />}
+          </div>
+          <div className="lesson-nav-side lesson-nav-right">
+            {next ? (
+              <Link to={`/chapter/${chapterId}/lesson/${next.id}`} className="lesson-nav-link">
+                {next.title} →
+              </Link>
+            ) : (
+              <Link to={`/chapter/${chapterId}/quiz`} className="lesson-nav-link quiz">
+                {chapter.num}{unitLabel} 퀴즈 풀기 →
+              </Link>
+            )}
+          </div>
+        </nav>
+      )}
     </article>
   )
 }

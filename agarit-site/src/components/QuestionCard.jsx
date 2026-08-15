@@ -12,7 +12,7 @@ export default function QuestionCard({ q, index, value, onChange, submitted, sho
         <span className="qcard-num">Q{index + 1}</span>
         {chapter && <span className="qcard-tag">{chapter.num}장</span>}
         <span className={`qcard-type qtype-${q.type}`}>
-          {q.type === 'mcq' ? '객관식' : q.type === 'short' ? '단답형' : q.rubric ? '서술형/논술형' : '서술형'}
+          {q.subtype || (q.type === 'mcq' ? '객관식' : q.type === 'short' ? '단답형' : q.rubric ? '서술형/논술형' : '서술형')}
         </span>
         {q.difficulty && <span className="qcard-badge">난이도 {q.difficulty}</span>}
         {q.score && <span className="qcard-badge">배점 {q.score}점</span>}

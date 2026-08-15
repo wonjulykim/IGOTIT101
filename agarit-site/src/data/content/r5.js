@@ -29,6 +29,14 @@ export const r5 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: 동명사 주어',
+        items: [
+          '"Respect is very important. It means being nice to others." → being는 means의 목적어로 쓰인 동명사예요.',
+          '동명사(-ing)는 문장에서 주어, 목적어, 보어 자리에 모두 쓰일 수 있는 "동사의 명사형"입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'value: 가치',

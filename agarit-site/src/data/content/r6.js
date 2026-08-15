@@ -14,6 +14,14 @@ export const r6 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: 목적격 관계대명사 생략',
+        items: [
+          '"other trash they mistook for food" → trash와 they 사이에 목적격 관계대명사 that(또는 which)이 생략되어 있어요. (= trash which they mistook for food)',
+          '목적격 관계대명사는 문장에서 흔히 생략되며, 명사 뒤에 「주어+동사」가 바로 이어지는 형태로 나타납니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'pollution: 오염',

@@ -11,14 +11,23 @@ export const r5Quiz = {
   short: [
     {
       id: 'r5-short-1',
+      subtype: '단답형',
       q: '"어려움을 참고 견디며 끝까지 노력하는 자세"를 뜻하는 영어 단어를 표에서 찾아 쓰시오.',
       answers: ['perseverance', 'Perseverance'],
       explain: 'Perseverance(인내)가 이 의미에 해당합니다.',
+    },
+    {
+      id: 'r5-short-2',
+      subtype: '문법',
+      q: '다음 문장의 빈칸에 들어갈 형태로 알맞은 것을 쓰시오. (be동사를 -ing 형태로 바꿀 것)\n"________ nice to others is one way to show respect."',
+      answers: ['being', 'Being'],
+      explain: '문장의 주어 자리에는 동명사(Being)가 와서 "친절한 것"이라는 뜻을 나타냅니다.',
     },
   ],
   essay: [
     {
       id: 'r5-essay-1',
+      subtype: '논술형',
       q: '위 표에 제시된 가치 중(또는 그 외의 가치 중) 자신이 중요하게 여기는 가치를 하나 선택하여, 그 가치에 대한 글을 아래 조건에 맞게 영어로 작성하시오.',
       standard: '[9영02-04] 친숙한 주제에 관해 경험이나 계획을 설명한다. / [9영02-06] 친숙한 주제에 관해 자신의 의견을 주장한다.',
       difficulty: '중',

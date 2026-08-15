@@ -1,0 +1,76 @@
+export const r12Quiz = {
+  mcq: [
+    {
+      id: 'r12-mcq-1',
+      q: '위 대화에서 도서관의 위치로 가장 적절한 것은?',
+      options: [
+        '강의실 옆',
+        '등록 사무실 옆',
+        '기숙사 옆',
+        '학생회관 안',
+        '주차장 옆',
+      ],
+      answer: 1,
+      explain: '"The library? It\'s next to the registration office."라고 말합니다.',
+    },
+  ],
+  short: [
+    {
+      id: 'r12-short-1',
+      subtype: '순서배열',
+      q: "다음 <보기> 이후로 이어질 대화를 흐름에 맞게 순서대로 배열하여 번호만 쓰시오.\n\n<보기>\nA: Hi. Excuse me.\nB: Yes? How can I help you?\nA: Where's the library?\n\n[1]: Oh... sorry, I'm new here. Where's the post office?\n[2]: Yes, I see it.\n[3]: The library? It's next to the post office.\n[4]: That's the city hall. The post office is on the right, and the library is right next to it.\n[5]: I see. Thanks!\n[6]: See that big building over there?",
+      answers: ['3-1-6-2-4-5', '[3]-[1]-[6]-[2]-[4]-[5]'],
+      explain: '"library → post office가 어디인지 되물음 → 큰 건물을 보라고 안내 → 보인다고 답함 → 시청과 우체국·도서관 위치 설명 → 감사 인사"의 순서가 자연스럽습니다.',
+    },
+    {
+      id: 'r12-short-2',
+      subtype: '문법',
+      q: '다음 문장의 빈칸에 들어갈 축약형을 쓰시오.\n"________ the library?" (= Where is the library?)',
+      answers: ["Where's", "where's"],
+      explain: 'Where is의 축약형은 Where\'s입니다.',
+    },
+  ],
+  essay: [
+    {
+      id: 'r12-essay-1',
+      subtype: '서술형',
+      q: '위 대화를 참고하여, 학교(또는 낯선 장소)에서 새로 온 사람에게 특정 장소로 가는 길을 안내하는 대화문을 아래 조건에 맞게 영어로 작성하시오.',
+      standard: '[9영01-04] 친숙한 주제에 관한 담화나 글에서 일이나 사건의 논리적 관계를 파악한다.',
+      difficulty: '중',
+      score: 10,
+      conditions: ['적어도 두 번의 질문과 답이 오갈 것', '건물의 상대적 위치(next to, on the right 등)를 표현하는 문장을 포함할 것'],
+      model:
+        "A: Excuse me, where's the gym?\nB: The gym? It's next to the cafeteria.\nA: Sorry, I'm new here. Where's the cafeteria?\nB: See that tall building? The cafeteria is on the left of it, and the gym is right next to it.\nA: I see. Thank you!",
+      totalScore: 10,
+      rubric: [
+        {
+          criterion: '대화의 논리적 흐름',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '질문과 답이 자연스럽게 이어지며 논리적으로 완결됨' },
+            { score: 2, desc: '흐름이 다소 어색함' },
+            { score: 1, desc: '대화가 논리적으로 이어지지 않음' },
+          ],
+        },
+        {
+          criterion: '위치 표현 사용',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: 'next to, on the right 등 위치 표현을 정확히 사용함' },
+            { score: 2, desc: '위치 표현을 사용했으나 정확성이 떨어짐' },
+            { score: 1, desc: '위치 표현을 사용하지 않음' },
+          ],
+        },
+        {
+          criterion: '어휘 및 언어 형식',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '어휘와 언어 형식을 정확하게 사용함' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 지장 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+  ],
+}

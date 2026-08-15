@@ -14,6 +14,14 @@ export const r10 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: 명령문(동사원형으로 시작)',
+        items: [
+          '"Check the latest information...", "Don\'t forget to bring insect spray" → 명령문은 주어 없이 동사원형으로 시작해서 "~해라/~하지 마라"라는 뜻을 나타내요.',
+          '부정 명령문은 「Don\'t + 동사원형」의 형태로 만듭니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'bushwalking: 부시워킹(호주식 자연 속 걷기)',

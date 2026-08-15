@@ -2,9 +2,11 @@
   background: var(--bg-panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 20px 22px;
-  margin-bottom: 18px;
+  padding: 22px 24px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
 }
+.qcard:hover { border-color: var(--accent-border); box-shadow: var(--shadow); }
 
 .qcard-head {
   display: flex;
@@ -67,7 +69,8 @@
   padding: 10px 14px;
   font-size: 0.94rem;
 }
-.mcq-option:hover:not(:disabled) { border-color: var(--accent-border); background: var(--accent-bg); }
+.mcq-option { transition: transform 0.1s ease, border-color 0.1s ease, background 0.1s ease; }
+.mcq-option:hover:not(:disabled) { border-color: var(--accent-border); background: var(--accent-bg); transform: translateX(2px); }
 .mcq-option.selected { border-color: var(--accent); background: var(--accent-bg); }
 .mcq-option.correct { border-color: var(--success); background: var(--success-bg); }
 .mcq-option.wrong { border-color: var(--danger); background: var(--danger-bg); }

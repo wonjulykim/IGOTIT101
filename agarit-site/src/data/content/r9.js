@@ -18,6 +18,14 @@ export const r9 = {
       },
       {
         type: 'callout',
+        title: '📎 핵심 문법: 수동태(be동사 + p.p.) + to부정사',
+        items: [
+          '"AI programs are designed to teach themselves" → are designed는 수동태(be + p.p.)로 "설계되다"라는 뜻이고, 뒤의 to teach는 목적을 나타내는 to부정사예요.',
+          '수동태는 「be동사 + 과거분사」 형태로, 행위의 대상(주어)이 어떤 동작을 "당하는" 것을 표현할 때 씁니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'artificial intelligence (AI): 인공지능',
