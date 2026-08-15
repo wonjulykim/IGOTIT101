@@ -18,6 +18,17 @@ export const ch26 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '5형식 - to부정사가 목적격 보어',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'wants' },
+          { tag: 'O', text: 'him' },
+          { tag: 'OC', text: 'to leave early' },
+        ],
+        translation: 'She wants him to leave early. (him이 to leave의 의미상의 주어이자 wants의 목적어)',
+      },
+      {
         type: 'note',
         text: '준동사별 의미상의 주어 표시 방법: to부정사는 「for+목적격」 또는 「of+목적격」, 동명사는 소유격 또는 목적격, 분사는 수식받는 명사로 나타냅니다. 이 장에서는 to부정사와 동명사의 의미상의 주어를 다룹니다.',
       },
@@ -56,6 +67,17 @@ export const ch26 = {
           { en: 'It is hard for a beginner to master this instrument in a year.', ko: '초보자가 일 년 안에 이 악기를 완전히 익히는 것은 어렵다.', note: '익히는 주체는 초보자 한 사람' },
           { en: 'It is easy for native speakers to tell the two accents apart.', ko: '원어민들에게는 그 두 억양을 구별하는 것이 쉽다.', note: '구별하는 주체는 원어민들' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '가주어-진주어 + to부정사의 의미상의 주어',
+        parts: [
+          { tag: 'S', text: 'It' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'important' },
+          { tag: 'M', text: 'for us to finish the project on time' },
+        ],
+        translation: 'It is important for us to finish the project on time. (It=가주어, for us to finish~=진주어, us=to finish의 의미상의 주어)',
       },
       { type: 'heading', text: '왜 전치사 for가 쓰이는가' },
       {
@@ -181,6 +203,27 @@ export const ch26 = {
           { en: "Do you mind my opening the window?", ko: '제가 창문을 열어도 괜찮을까요?', note: '창문을 여는 주체는 my(나), 상대의 허락을 구하는 격식체 표현' },
           { en: "It all started with Tom losing his job last spring.", ko: '모든 것은 지난봄 톰이 직장을 잃은 것에서 시작되었다.', note: '직장을 잃은 주체는 Tom' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '동명사의 의미상의 주어 (소유격)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'appreciate' },
+          { tag: 'O', text: 'your helping me' },
+        ],
+        translation: 'I appreciate your helping me. (your=동명사 helping의 의미상의 주어, "네가 도와준 것")',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '동명사의 의미상의 주어 (목적격)',
+        parts: [
+          { tag: 'S', text: 'The manager' },
+          { tag: 'V', text: 'was' },
+          { tag: 'C', text: 'upset' },
+          { tag: 'M', text: 'about John being late again' },
+        ],
+        translation: 'The manager was upset about John being late again. (John=동명사 being의 의미상의 주어)',
       },
       {
         type: 'note',

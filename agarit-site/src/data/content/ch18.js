@@ -50,6 +50,17 @@ export const ch18 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '5형식 (지각동사 + 목적어 + 동사원형)',
+        parts: [
+          { tag: 'S', text: 'They' },
+          { tag: 'V', text: 'watched' },
+          { tag: 'O', text: 'the plane' },
+          { tag: 'OC', text: 'take off' },
+        ],
+        translation: '그들은 비행기가 이륙하는 것을 지켜보았다. (take off가 the plane을 보충 설명)',
+      },
+      {
         type: 'icon-row',
         caption: '지각동사가 다루는 감각',
         items: [
@@ -72,6 +83,17 @@ export const ch18 = {
           { en: 'We heard him shout.', ko: '우리는 그가 소리치는 것을 들었다.', note: '올바른 표현 (동사원형)' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '5형식 (지각동사 + 동사원형, to부정사 아님)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'saw' },
+          { tag: 'O', text: 'him' },
+          { tag: 'OC', text: 'cross the street' },
+        ],
+        translation: '나는 그가 길을 건너는 것을 보았다. (to cross가 아니라 동사원형 cross)',
+      },
       { type: 'heading', text: '지각동사와 감각동사의 차이' },
       {
         type: 'p',
@@ -87,6 +109,16 @@ export const ch18 = {
           { en: 'He looks happy.', ko: '그는 행복해 보인다.', note: '감각동사 + 형용사' },
           { en: 'I felt something touch my back.', ko: '나는 뭔가가 내 등을 만지는 것을 느꼈다.', note: '지각동사 + 목적어 + 동사원형 (외부 대상의 동작을 인식)' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '2형식 (감각동사 + 형용사)',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'feels' },
+          { tag: 'C', text: 'tired' },
+        ],
+        translation: '그녀는 피곤함을 느낀다. (감각동사 feel + 형용사 보어, 주어 자신의 상태)',
       },
       {
         type: 'p',

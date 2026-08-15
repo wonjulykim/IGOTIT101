@@ -179,6 +179,17 @@ export const ch24 = {
           { en: '1966 was the year when England won the World Cup.', ko: '1966년은 영국이 월드컵에서 우승한 해였다.', note: '주어를 보충 설명하는 관계부사절' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '관계부사 when이 이끄는 절',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'still remember' },
+          { tag: 'O', text: 'the day' },
+          { tag: 'M', text: 'when we first met' },
+        ],
+        translation: 'I still remember the day when we first met. (선행사 the day를 when절이 수식)',
+      },
       { type: 'heading', text: 'why: 이유를 나타내는 선행사' },
       {
         type: 'p',
@@ -191,6 +202,18 @@ export const ch24 = {
           { en: 'Tell me the reason why you were late this morning.', ko: '오늘 아침에 왜 늦었는지 이유를 말해줘.', note: '이유(the reason)를 설명하는 관계부사절' },
           { en: 'Nobody knows the reason why the machine suddenly stopped.', ko: '그 기계가 갑자기 멈춘 이유를 아무도 모른다.', note: '이유를 설명하는 관계부사절' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '관계부사 why가 이끄는 절',
+        parts: [
+          { tag: 'V', text: 'Do' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'know' },
+          { tag: 'O', text: 'the reason' },
+          { tag: 'M', text: 'why he was upset' },
+        ],
+        translation: 'Do you know the reason why he was upset? (선행사 the reason을 why절이 수식)',
       },
       { type: 'heading', text: 'how: 방법을 나타내는 선행사와 특별한 규칙' },
       {
@@ -207,6 +230,18 @@ export const ch24 = {
           { en: 'Can you explain how the volcano formed?', ko: '그 화산이 어떻게 형성되었는지 설명해줄 수 있니?', note: '방법을 나타내는 how (선행사 the way 없이 사용)' },
           { en: 'Nobody knew how she solved the puzzle so quickly.', ko: '그녀가 어떻게 그 퍼즐을 그렇게 빨리 풀었는지 아무도 몰랐다.', note: '방법을 나타내는 how' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'how절 - 4형식 문장의 직접목적어',
+        parts: [
+          { tag: 'V', text: 'Can' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'show' },
+          { tag: 'O2', text: 'me' },
+          { tag: 'O1', text: 'how you solve the problem' },
+        ],
+        translation: 'Can you show me how you solve the problem? (me=간접목적어, how you solve the problem=직접목적어절)',
       },
       {
         type: 'sentence-diagram',
@@ -285,6 +320,17 @@ export const ch24 = {
           { en: 'This is the restaurant where I had the best pasta.', ko: '이곳은 내가 가장 맛있는 파스타를 먹었던 식당이다.', note: '수정 ②: had the best pasta로 목적어를 채워 완전한 문장으로 만들고 where를 쓴다.' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '관계부사 뒤에는 완전한 문장',
+        parts: [
+          { tag: 'S', text: 'This' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'the restaurant' },
+          { tag: 'M', text: 'where I had the best pasta' },
+        ],
+        translation: 'This is the restaurant where I had the best pasta. (where 뒤에 주어·목적어가 모두 있는 완전한 문장)',
+      },
       { type: 'heading', text: '흔히 하는 실수 ② 관계대명사 자리에 관계부사를 잘못 쓰는 경우' },
       {
         type: 'p',
@@ -297,6 +343,17 @@ export const ch24 = {
           { en: 'He is the person whom I met at the party.', ko: '그는 내가 파티에서 만난 사람이다.', note: '수정: met의 목적어 자리를 관계대명사 whom(또는 who, that)으로 채운다.' },
           { en: 'The company where I met him has grown fast.', ko: '내가 그를 만났던 그 회사는 빠르게 성장했다.', note: '참고: 선행사가 장소(the company)이고 뒤 문장이 완전하면(I met him) where를 쓸 수 있다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '관계대명사 뒤에는 불완전한 문장',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'the person' },
+          { tag: 'M', text: 'whom I met ___ at the party' },
+        ],
+        translation: 'He is the person whom I met at the party. (whom이 met의 목적어 자리를 비워두고 앞으로 나감)',
       },
       { type: 'heading', text: '관계부사 선행사의 생략 ① 생략이 가능한 경우' },
       {
@@ -325,6 +382,17 @@ export const ch24 = {
           { en: 'She returned to the village where she was born.', ko: '그녀는 태어난 마을로 돌아갔다.', note: 'the village 생략 불가 (where she was born만으로는 어떤 장소인지 알 수 없음)' },
           { en: 'He can never remember the day of the week when he was married.', ko: '그는 결혼한 요일을 도무지 기억하지 못한다.', note: 'the day of the week 생략 불가' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '생략 불가능한 선행사 + 관계부사',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'returned' },
+          { tag: 'M', text: 'to the village' },
+          { tag: 'M', text: 'where she was born' },
+        ],
+        translation: 'She returned to the village where she was born. (the village를 생략하면 장소를 알 수 없어 생략 불가)',
       },
       {
         type: 'sentence-diagram',

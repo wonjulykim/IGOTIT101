@@ -18,6 +18,26 @@ export const ch8 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '현재시제 — 반복되는 습관',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'play' },
+          { tag: 'O', text: 'the piano.' },
+        ],
+        translation: 'I play the piano. (나는 (자주) 피아노를 연주한다 — 특정 순간이 아니라 반복되는 습관을 나타내는 현재시제)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '과거시제 — 이미 끝난 사건',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'played' },
+          { tag: 'O', text: 'the piano.' },
+        ],
+        translation: 'I played the piano. (나는 (과거에) 피아노를 연주했다 — 이미 끝난 하나의 사건을 점으로 나타냄)',
+      },
+      {
         type: 'p',
         text: '1번 문장은 지금 이 순간 피아노를 연주하고 있다는 뜻이 아닙니다. 예를 들어 지금 이 문장을 말하고 있는 화자는 소파에 앉아 커피를 마시고 있을 수도 있습니다. 그런데도 이 문장은 문법적으로 "현재 시제"입니다. 왜냐하면 이 문장이 말하려는 것은 "지금 벌어지는 사건"이 아니라 "평소에 반복되는 습관"이기 때문입니다. 이처럼 현재 시제라는 이름이 붙어 있다고 해서 그것이 항상 실제 "지금"이라는 시간을 뜻하지는 않습니다.',
       },
@@ -41,6 +61,18 @@ export const ch8 = {
           { en: 'I played the piano at the concert last night.', ko: '나는 어젯밤 콘서트에서 피아노를 연주했다.', note: '단 한 번의 사건 – played만으로는 반복인지 단발인지 알 수 없다' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '과거시제 + 빈도 부사구',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'played' },
+          { tag: 'O', text: 'the piano' },
+          { tag: 'M', text: 'every weekend' },
+          { tag: 'M', text: 'when I was young.' },
+        ],
+        translation: 'I played the piano every weekend when I was young. (과거시제만으로는 반복인지 알 수 없어, 빈도 부사구 every weekend가 반복의 의미를 더해줌)',
+      },
       { type: 'heading', text: '한국어 시제와 영어 시제, 세분화의 정도가 다르다' },
       {
         type: 'p',
@@ -59,6 +91,17 @@ export const ch8 = {
           { en: 'I have gone there (many times).', ko: '(여러 번) 그곳에 가 본 적이 있다 — 현재까지 이어지는 경험' },
           { en: 'I had gone there (before he called me).', ko: '(그가 전화하기 전에) 이미 그곳에 가고 없었다 — 그 과거보다 더 앞선 시점' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '현재완료 — 과거~현재까지 이어지는 경험',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'have gone' },
+          { tag: 'M', text: 'there' },
+          { tag: 'M', text: 'many times.' },
+        ],
+        translation: 'I have gone there many times. (여러 번 그곳에 가 본 적이 있다 — 과거의 경험이 현재까지 이어짐)',
       },
       {
         type: 'note',

@@ -272,6 +272,18 @@ export const ch17 = {
       },
       {
         type: 'sentence-diagram',
+        label: '5형식 (get + 수동 관계 → p.p.)',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'got' },
+          { tag: 'O', text: 'her essay' },
+          { tag: 'OC', text: 'checked' },
+          { tag: 'M', text: 'by her teacher' },
+        ],
+        translation: '그녀는 자신의 에세이가 선생님께 검토되도록 했다. (her essay가 checked를 당하는 수동 관계)',
+      },
+      {
+        type: 'sentence-diagram',
         label: '5형식 (능동 관계 → 동사원형)',
         parts: [
           { tag: 'S', text: 'I' },

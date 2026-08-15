@@ -17,6 +17,17 @@ export const ch9 = {
           { en: 'He practiced the piano yesterday.', ko: '그는 어제 피아노를 연습했다.' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '규칙 동사의 과거형 (기본 규칙)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'worked' },
+          { tag: 'M', text: 'at a bank' },
+          { tag: 'M', text: 'last year.' },
+        ],
+        translation: 'I worked at a bank last year. (work → worked, 동사원형 끝에 -ed를 붙인 기본 규칙)',
+      },
       { type: 'heading', text: '발음의 편의를 위한 추가 규칙' },
       {
         type: 'p',
@@ -95,6 +106,17 @@ export const ch9 = {
           { en: 'Everyone helped, and we finished quickly.', ko: '모두가 도왔고, 우리는 빨리 끝냈다.' },
           { en: 'We watched the sunset and decided to come back next year.', ko: '우리는 일몰을 보았고 내년에 다시 오기로 결정했다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '종속절과 함께 쓰인 과거형',
+        parts: [
+          { tag: 'M', text: 'When the train arrived,' },
+          { tag: 'S', text: 'we' },
+          { tag: 'V', text: 'hurried' },
+          { tag: 'M', text: 'inside.' },
+        ],
+        translation: 'When the train arrived, we hurried inside. (arrive → arrived, hurry → hurried, 종속절과 주절 모두 과거시제로 통일)',
       },
       {
         type: 'sentence-diagram',
@@ -298,6 +320,28 @@ export const ch9 = {
           { en: 'When I got home, I made dinner and sat down to rest.', ko: '집에 도착했을 때, 나는 저녁을 만들고 앉아서 쉬었다.' },
           { en: 'It was a long day, but it became a good story to tell.', ko: '긴 하루였지만, 그것은 말할 만한 좋은 이야기가 되었다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '불규칙 동사의 과거형 (ABB 유형)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'caught' },
+          { tag: 'O', text: 'the last bus' },
+          { tag: 'M', text: 'just in time.' },
+        ],
+        translation: 'I caught the last bus just in time. (catch → caught → caught, ABB 유형의 불규칙 동사)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '수여동사(4형식) + 불규칙 동사 과거형',
+        parts: [
+          { tag: 'S', text: 'My boss' },
+          { tag: 'V', text: 'gave' },
+          { tag: 'O2', text: 'me' },
+          { tag: 'O1', text: 'an important project.' },
+        ],
+        translation: 'My boss gave me an important project. (give → gave → given, 간접목적어 me(O2) 뒤에 직접목적어 an important project(O1)가 온다)',
       },
       {
         type: 'sentence-diagram',

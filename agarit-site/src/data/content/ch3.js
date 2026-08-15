@@ -86,6 +86,16 @@ export const ch3 = {
           { en: 'The river runs through the valley.', ko: '강은 계곡을 흐른다.', note: 'run = (강이) 흐르다 — 같은 동사, 주어에 따라 뜻이 달라짐' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '주어-동사의 의미 어울림 (선택 제약)',
+        parts: [
+          { tag: 'S', text: 'The wind' },
+          { tag: 'V', text: 'blows' },
+          { tag: 'M', text: 'steadily' },
+        ],
+        translation: '바람이 꾸준히 분다. (wind는 blow를 실현시킬 수 있는 주어)',
+      },
       { type: 'heading', text: '문장은 반드시 주어로 시작한다' },
       {
         type: 'p',

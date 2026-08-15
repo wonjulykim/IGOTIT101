@@ -163,6 +163,16 @@ export const ch7 = {
           { en: 'They built a small house last summer.', ko: '그들은 지난여름 작은 집을 지었다.', note: '동작 - 몸을 써서 만들어내는 구체적 행동' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '일반동사 — 동작',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'played' },
+          { tag: 'O', text: 'the piano' },
+        ],
+        translation: '그는 피아노를 연주했다.',
+      },
       { type: 'heading', text: '상태를 나타내는 일반동사' },
       {
         type: 'example',
@@ -172,6 +182,16 @@ export const ch7 = {
           { en: 'This bike belongs to my brother.', ko: '이 자전거는 내 형의 것이다.', note: '상태 - 지속되는 소유 관계' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '일반동사 — 상태',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'know' },
+          { tag: 'O', text: 'the answer' },
+        ],
+        translation: '나는 답을 알고 있다.',
+      },
       { type: 'heading', text: '발생을 나타내는 일반동사' },
       {
         type: 'example',
@@ -180,6 +200,16 @@ export const ch7 = {
           { en: 'A strange noise occurred in the basement.', ko: '지하실에서 이상한 소리가 발생했다.', note: '발생 - 사건이 생김' },
           { en: 'A big fire broke out near the market.', ko: '시장 근처에서 큰 불이 났다.', note: '발생 - 사건이 생김' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '일반동사 — 발생',
+        parts: [
+          { tag: 'S', text: 'The accident' },
+          { tag: 'V', text: 'happened' },
+          { tag: 'M', text: 'suddenly' },
+        ],
+        translation: '그 사고는 갑자기 일어났다.',
       },
       {
         type: 'p',
@@ -311,6 +341,17 @@ export const ch7 = {
           { en: 'Can I open the window?', ko: '창문을 열어도 될까요?', note: '허락을 구하는 상황' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '조동사 can — 능력',
+        parts: [
+          { tag: 'S', text: 'You' },
+          { tag: 'V', text: 'can play' },
+          { tag: 'O', text: 'the trumpet' },
+          { tag: 'M', text: 'very well' },
+        ],
+        translation: '너는 트럼펫을 매우 잘 연주할 수 있다.',
+      },
       { type: 'heading', text: 'may - 강제성 없이 선택할 수 있는 상황' },
       {
         type: 'p',
@@ -325,6 +366,16 @@ export const ch7 = {
           { en: 'It may rain tomorrow.', ko: '내일 비가 올지도 모른다.', note: '불확실한 가능성 → 추측' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '조동사 may — 불확실한 추측',
+        parts: [
+          { tag: 'S', text: 'It' },
+          { tag: 'V', text: 'may rain' },
+          { tag: 'M', text: 'tomorrow' },
+        ],
+        translation: '내일 비가 올지도 모른다.',
+      },
       { type: 'heading', text: 'will - 실현 가능성이 높은 상황' },
       {
         type: 'p',
@@ -337,6 +388,16 @@ export const ch7 = {
           { en: 'Don’t worry, I will help you with your homework.', ko: '걱정마, 내가 숙제 도와줄게.', note: '주어의 의지' },
           { en: 'I think it will rain later in the day.', ko: '내가 생각하기에 나중에 비가 올 것 같다.', note: '가능성 높은 추측' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '조동사 will — 높은 확신',
+        parts: [
+          { tag: 'S', text: 'Mina' },
+          { tag: 'V', text: 'will come' },
+          { tag: 'M', text: 'to the party' },
+        ],
+        translation: '미나는 파티에 올 것이다.',
       },
       {
         type: 'table',

@@ -39,6 +39,26 @@ export const ch5 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '일반동사 — 동작 자체를 서술',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'works' },
+          { tag: 'M', text: 'at a hospital' },
+        ],
+        translation: '그녀는 병원에서 일한다.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '조동사 + 일반동사',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'must work' },
+          { tag: 'M', text: 'tomorrow' },
+        ],
+        translation: '그녀는 내일 근무해야 한다. (must가 work에 "의무"라는 의미를 더함)',
+      },
+      {
         type: 'p',
         text: '세 문장을 비교하면 역할이 뚜렷이 드러납니다. is는 She와 a doctor라는 두 명사(정보)를 이어 붙이는 다리 역할만 합니다. works는 그 자체로 "일한다"는 동작의 의미를 담고 있습니다. must는 동작의 의미를 전혀 갖고 있지 않으며, 대신 work라는 동사에 "해야 한다"는 태도를 얹어 줄 뿐입니다. 하나의 동사가 이 세 가지 일을 동시에 하지 않기 때문에, 영어는 이 일을 세 부류의 동사에 나누어 맡긴 것입니다.',
       },

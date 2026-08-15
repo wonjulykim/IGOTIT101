@@ -82,6 +82,16 @@ export const ch19 = {
           { en: 'This town has as many cafés as that one.', ko: '이 마을은 저 마을만큼 많은 카페가 있다.', note: '셀 수 있는 명사 cafés의 수를 비교' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '원급비교 (부사)',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'can run' },
+          { tag: 'M', text: 'as fast as me' },
+        ],
+        translation: '그는 나만큼 빨리 달릴 수 있다. (부사 fast의 원급비교)',
+      },
       { type: 'heading', text: '원급비교의 부정 — 의미가 뒤집힌다는 것' },
       {
         type: 'p',
@@ -95,6 +105,16 @@ export const ch19 = {
           { en: 'This café is not as crowded as the one near the station.', ko: '이 카페는 역 근처의 카페만큼 붐비지 않는다.', note: '= 역 근처 카페가 이 카페보다 더 붐빈다' },
           { en: 'My old phone was not as fast as this new one.', ko: '내 예전 폰은 이 새 폰만큼 빠르지 않았다.', note: '= 새 폰이 예전 폰보다 더 빠르다' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '원급비교의 부정',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'not as diligent as his brother' },
+        ],
+        translation: '그는 동생만큼 부지런하지 못하다. (= 동생이 그보다 부지런하다)',
       },
       { type: 'heading', text: '자주 하는 실수' },
       {
@@ -152,6 +172,17 @@ export const ch19 = {
           { en: 'The second exam felt easier than the first one.', ko: '두 번째 시험이 첫 번째 시험보다 더 쉽게 느껴졌다.', note: 'y로 끝나는 형용사 easy의 비교급' },
           { en: 'This neighborhood is quieter than the one we used to live in.', ko: '이 동네는 우리가 예전에 살던 동네보다 더 조용하다.', note: '두 동네(현재/과거)를 놓고 우열을 비교' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '비교급',
+        parts: [
+          { tag: 'S', text: 'My house' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'larger' },
+          { tag: 'M', text: 'than hers' },
+        ],
+        translation: '내 집은 그녀의 집보다 더 크다.',
       },
       {
         type: 'p',
@@ -240,6 +271,17 @@ export const ch19 = {
           { en: 'This model is still better than the newer version.', ko: '이 모델은 여전히 최신 버전보다 더 좋다.', note: 'still이 better를 강조하여 시간이 지나도 여전히 더 나음을 나타냄' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '비교급 강조부사',
+        parts: [
+          { tag: 'S', text: 'This book' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'much better' },
+          { tag: 'M', text: 'than the one I read last week' },
+        ],
+        translation: '이 책은 내가 지난주에 읽은 책보다 훨씬 더 좋다. (much가 비교급 better를 강조)',
+      },
       { type: 'heading', text: '자주 하는 실수 — 이중 비교급' },
       {
         type: 'p',
@@ -302,6 +344,17 @@ export const ch19 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '최상급 (of + 복수명사)',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'the youngest' },
+          { tag: 'M', text: 'of the four sisters' },
+        ],
+        translation: '그녀는 네 자매 중 막내이다.',
+      },
+      {
         type: 'note',
         text: '최상급 앞에는 일반적으로 정관사 the를 붙여 사용합니다. the는 최상급의 대상이 되는 그룹을 명확히 지정해주는 역할을 합니다. 또한 최상급 문장에는 보통 in our neighborhood, I’ve ever seen, in the race처럼 비교 대상이나 범위가 함께 나타나는데, 문맥으로 충분히 유추할 수 있다면 생략되기도 합니다. 단, 부사의 최상급에는 the를 생략하는 경우가 많습니다.',
       },
@@ -346,6 +399,17 @@ export const ch19 = {
           { en: 'Among the three candidates, he is the most reliable.', ko: '세 후보 중에서 그가 가장 신뢰할 만하다.', note: 'among + 셋(the three candidates)' },
           { en: 'Of all the seasons, I like autumn the most.', ko: '모든 계절 중에서 나는 가을을 가장 좋아한다.', note: '동사를 수식하는 부사적 최상급으로, the를 붙이는 경우' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '최상급 (관계절로 비교 범위 표현)',
+        parts: [
+          { tag: 'S', text: 'This' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'the most beautiful place' },
+          { tag: 'M', text: 'I have ever visited' },
+        ],
+        translation: '이곳은 내가 지금까지 방문한 곳 중 가장 아름다운 곳이다.',
       },
       {
         type: 'sentence-diagram',
@@ -417,6 +481,19 @@ export const ch19 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: 'the 비교급 구문',
+        parts: [
+          { tag: 'M', text: 'The more' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'study' },
+          { tag: 'M', text: 'the more' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'learn' },
+        ],
+        translation: '공부를 하면 할수록 더 많이 배운다. (The more가 각 절 맨 앞에서 절을 이끎)',
+      },
+      {
         type: 'note',
         text: 'If 조건문과 the 비교급 문장은 의미가 비슷해 보이지만 미묘하게 다릅니다. If절은 하나의 조건이 충족되었을 때 결과가 발생함을 설명하며, 주로 미래의 가능성이나 가정적 상황을 나타냅니다. 반면 the 비교급 문장은 두 개의 비교급을 나란히 두어 하나의 증가·감소가 다른 하나에 직접적인 영향을 미친다는 인과 관계를 더 함축적이고 강하게 표현합니다. 또한 같은 문장구조를 반복하여 리듬감을 주기 때문에 연설, 글쓰기, 광고 등에서 효과적으로 쓰입니다.',
       },
@@ -439,6 +516,19 @@ export const ch19 = {
           { en: 'The better we are at something, the more careful we should be when doing it.', ko: '어떤 것에 능숙해질수록 그것을 할 때 더 조심해야 한다.', note: 'We are good at something. + We should be careful.을 인과 관계로 재구성한 문장' },
           { en: 'The longer the meeting lasted, the more bored the audience looked.', ko: '회의가 길어질수록 청중은 더 지루해 보였다.', note: 'the longer(부사적 비교급)와 the more bored(형용사 비교급)가 짝을 이룸' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'the 비교급 구문',
+        parts: [
+          { tag: 'M', text: 'The harder' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'work' },
+          { tag: 'M', text: 'the more successful' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'will be' },
+        ],
+        translation: '열심히 일할수록 더 성공할 것이다.',
       },
       {
         type: 'note',

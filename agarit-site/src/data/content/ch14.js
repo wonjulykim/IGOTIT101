@@ -79,6 +79,16 @@ export const ch14 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '동명사 — 주어 역할',
+        parts: [
+          { tag: 'S', text: 'Learning a new language' },
+          { tag: 'V', text: 'takes' },
+          { tag: 'O', text: 'time.' },
+        ],
+        translation: 'Learning a new language takes time. (동명사구 전체가 문장의 주어 자리에 놓임)',
+      },
+      {
         type: 'p',
         text: '이 문장에서 Swimming, Learning a new language는 주어로 사용되어 각각 "수영"과 "언어를 배우는 것"이라는 동작을 명사화하면서 문장의 주제로 제시합니다.',
       },
@@ -93,6 +103,16 @@ export const ch14 = {
           { en: 'She enjoys reading books.', ko: '그녀는 책 읽는 것을 즐긴다.' },
           { en: 'He avoided answering the question.', ko: '그는 그 질문에 답하는 것을 피했다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '동명사 — 목적어 역할',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'enjoys' },
+          { tag: 'O', text: 'reading books.' },
+        ],
+        translation: 'She enjoys reading books. (동명사구 reading books가 동사 enjoys의 목적어 자리에 놓임)',
       },
       {
         type: 'p',
@@ -242,6 +262,28 @@ export const ch14 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: 'remember + to부정사 — 앞으로 할 일을 기억',
+        parts: [
+          { tag: '(S)', text: '(You)' },
+          { tag: 'V', text: 'Remember' },
+          { tag: 'O', text: 'to lock the door' },
+          { tag: 'M', text: 'before you leave.' },
+        ],
+        translation: 'Remember to lock the door before you leave. (아직 잠그지 않았음 — 앞으로 해야 할 일을 상기시키는 to부정사 목적어)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'remember + 동명사 — 이미 했던 일을 기억',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'remember' },
+          { tag: 'O', text: 'locking the door' },
+          { tag: 'M', text: 'this morning.' },
+        ],
+        translation: 'I remember locking the door this morning. (이미 잠갔음 — 과거에 했던 행동에 대한 기억을 나타내는 동명사 목적어)',
+      },
+      {
         type: 'p',
         text: 'forget도 같은 원리로 작동합니다. 아직 하지 않은 일을 잊으면 안 된다는 뜻일 때는 to부정사를, 이미 했던 일을 잊었다는 뜻일 때는 동명사를 씁니다.',
       },
@@ -273,6 +315,28 @@ export const ch14 = {
           { en: 'I stopped to smoke on my way to the meeting.', ko: '나는 회의에 가는 길에 담배를 피우기 위해 (걸음을) 멈췄다.', note: '멈춘 목적이 흡연 (걷기를 멈추고 담배를 피움)' },
           { en: 'I stopped smoking two years ago.', ko: '나는 2년 전에 담배를 끊었다.', note: '흡연이라는 행동 자체를 중단함 (금연)' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'stop + to부정사 — 멈추는 목적',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'stopped' },
+          { tag: 'M', text: 'to smoke' },
+          { tag: 'M', text: 'on my way to the meeting.' },
+        ],
+        translation: 'I stopped to smoke on my way to the meeting. (걷기를 멈춘 목적이 흡연 — to부정사가 멈춘 목적을 나타냄)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'stop + 동명사 — 행동 자체를 중단',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'stopped' },
+          { tag: 'O', text: 'smoking' },
+          { tag: 'M', text: 'two years ago.' },
+        ],
+        translation: 'I stopped smoking two years ago. (흡연이라는 행동 자체를 중단 — 동명사가 멈춰지는 행동을 나타냄)',
       },
       {
         type: 'note',

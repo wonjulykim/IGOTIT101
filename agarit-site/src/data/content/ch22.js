@@ -202,6 +202,27 @@ export const ch22 = {
           { en: "I'm not sure whether he finished the work.", ko: '그가 그 일을 끝냈는지 확실하지 않다.', note: '간접의문문 (whether 사용)' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '간접의문문 - if 명사절',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'wonder' },
+          { tag: 'O', text: 'if she is coming to the party' },
+        ],
+        translation: 'I wonder if she is coming to the party. (if 이하 전체가 wonder의 목적어절)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '간접의문문 - whether 명사절',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: "'m" },
+          { tag: 'C', text: 'not sure' },
+          { tag: 'M', text: 'whether he finished the work' },
+        ],
+        translation: "I'm not sure whether he finished the work. (whether 이하가 sure를 보충 설명)",
+      },
       { type: 'heading', text: 'if 와 whether, 무엇이 다른가' },
       {
         type: 'p',
@@ -247,6 +268,18 @@ export const ch22 = {
           { en: 'Could you tell me how much this ticket costs?', ko: '이 표가 얼마인지 알려주시겠어요?', note: '간접의문문 · 가격 확인' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '간접의문문 - 4형식 (tell + 간접목적어 + 명사절)',
+        parts: [
+          { tag: 'V', text: 'Could' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'tell' },
+          { tag: 'O2', text: 'me' },
+          { tag: 'O1', text: 'how much this ticket costs' },
+        ],
+        translation: 'Could you tell me how much this ticket costs? (me=간접목적어, how much this ticket costs=직접목적어절)',
+      },
       { type: 'heading', text: '간접의문문과 함께 자주 쓰이는 표현' },
       {
         type: 'p',
@@ -277,6 +310,17 @@ export const ch22 = {
           { en: 'Would it be possible to let me know when the results will be announced?', ko: '결과가 언제 발표되는지 알려주실 수 있을까요?' },
           { en: "I'm not sure who is in charge of this project.", ko: '이 프로젝트를 누가 담당하는지 잘 모르겠어요.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '간접의문문 - 의문사 명사절',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: "'m" },
+          { tag: 'C', text: 'not sure' },
+          { tag: 'M', text: 'who is in charge of this project' },
+        ],
+        translation: '이 프로젝트를 누가 담당하는지 잘 모르겠어요.',
       },
       {
         type: 'callout',

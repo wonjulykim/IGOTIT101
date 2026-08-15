@@ -94,6 +94,16 @@ export const ch6 = {
         ],
         translation: 'He eats ramen. (3인칭 단수 주어 He → 동사 eat에 -s)',
       },
+      {
+        type: 'sentence-diagram',
+        label: '3인칭 복수 현재 - 동사에 -s 없음',
+        parts: [
+          { tag: 'S', text: 'Tom and Jackson' },
+          { tag: 'V', text: 'sing' },
+          { tag: 'M', text: 'well' },
+        ],
+        translation: 'Tom과 Jackson은 노래를 잘 부른다. (3인칭 복수 주어 → -s 없음)',
+      },
       { type: 'heading', text: '언어사적 배경: -s는 어디서 왔을까' },
       {
         type: 'note',
@@ -164,6 +174,16 @@ export const ch6 = {
           { en: 'Each of the players wears a number.', ko: '선수들 각각은 번호를 달고 있다.', note: 'each → 단수 동사 wears' },
           { en: 'The team practices every morning.', ko: '그 팀은 매일 아침 연습한다.', note: '팀을 하나의 단위로 볼 때 → 단수 동사' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '단수로 취급되는 주어 - everyone',
+        parts: [
+          { tag: 'S', text: 'Everyone in the class' },
+          { tag: 'V', text: 'likes' },
+          { tag: 'O', text: 'the new teacher' },
+        ],
+        translation: '반의 모든 사람이 새 선생님을 좋아한다. (everyone은 형태와 관계없이 단수)',
       },
       {
         type: 'note',

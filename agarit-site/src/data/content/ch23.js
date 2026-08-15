@@ -28,6 +28,17 @@ export const ch23 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '관계대명사절이 목적어를 수식',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'have' },
+          { tag: 'O', text: 'a friend' },
+          { tag: 'M', text: 'who lives in Seoul' },
+        ],
+        translation: 'I have a friend who lives in Seoul. (who절이 목적어 a friend를 뒤에서 수식)',
+      },
+      {
         type: 'note',
         text: '관계대명사 앞에서 꾸밈을 받는 명사를 "선행사(antecedent)"라고 부릅니다. "선행(先行)"이라는 한자 뜻 그대로 "관계대명사보다 먼저 나온 명사"라는 뜻입니다. 관계대명사절은 선행사 뒤에서 선행사를 구체적으로 설명해줍니다.',
       },
@@ -258,6 +269,17 @@ export const ch23 = {
           { en: 'She is the woman to whom I talked yesterday.', ko: '그녀는 내가 어제 말을 걸었던 여자이다.', note: '격식체: 전치사 to가 whom과 함께 앞으로 이동 (이때는 that 대신 whom만 가능)' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '전치사+관계대명사 - 격식체',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'the woman' },
+          { tag: 'M', text: 'to whom I talked yesterday' },
+        ],
+        translation: 'She is the woman to whom I talked yesterday. (전치사 to가 whom과 함께 관계사절 맨 앞으로 이동)',
+      },
       { type: 'heading', text: '③ 소유격 관계대명사 whose - 선행사가 절 안에서 소유격일 때' },
       {
         type: 'p',
@@ -337,6 +359,17 @@ export const ch23 = {
           { en: 'I saw the singer and the dog that were on stage together.', ko: '나는 무대에 함께 있던 가수와 개를 보았다.', note: '선행사가 사람(the singer)과 동물(the dog)을 함께 가리킬 때는 who/which 대신 that을 씀' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: 'that절이 주어를 수식',
+        parts: [
+          { tag: 'S', text: 'The book' },
+          { tag: 'M', text: 'that you need' },
+          { tag: 'V', text: 'is' },
+          { tag: 'M', text: 'on the shelf' },
+        ],
+        translation: 'The book that you need is on the shelf. (that절이 주어 The book을 뒤에서 수식)',
+      },
       { type: 'heading', text: '관계대명사 what - 선행사를 포함하는 관계대명사' },
       {
         type: 'p',
@@ -415,6 +448,26 @@ export const ch23 = {
           { en: 'Tell me what else you found.', ko: '더 찾은 것이 무엇인지 말해봐.', note: '친구가 조사한 결과물에 대해 더 알고 싶어 묻는 상황' },
           { en: 'I’ll do what’s necessary.', ko: '필요한 일은 무엇이든 할게요.', note: '구체적으로 정해지지 않은, 필요한 모든 일을 가리키는 상황' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'what절 - 4형식 문장의 직접목적어',
+        parts: [
+          { tag: 'V', text: 'Tell' },
+          { tag: 'O2', text: 'me' },
+          { tag: 'O1', text: 'what you need' },
+        ],
+        translation: 'Tell me what you need. (me=간접목적어, what you need=직접목적어절 "네가 필요로 하는 것")',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'what절이 이끄는 목적어',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'like' },
+          { tag: 'O', text: 'what you did with the room' },
+        ],
+        translation: 'I like what you did with the room. (what절 전체가 like의 목적어)',
       },
       {
         type: 'table',
@@ -535,6 +588,17 @@ export const ch23 = {
           { en: 'He was pulling her legs, which made her upset.', ko: '그는 그녀를 놀렸는데, 그것이 그녀를 화나게 했다.', note: 'which가 앞 문장 전체(He was pulling her legs)를 선행사로 받음' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '계속적 용법 - which가 앞 문장 전체를 선행사로 받음',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'was pulling' },
+          { tag: 'O', text: 'her legs' },
+          { tag: 'M', text: ', which made her upset' },
+        ],
+        translation: 'He was pulling her legs, which made her upset. (which = He was pulling her legs라는 상황 전체)',
+      },
       { type: 'heading', text: '계속적 용법에서는 that을 쓸 수 없다' },
       {
         type: 'p',
@@ -546,6 +610,17 @@ export const ch23 = {
           { en: '(X) The Eiffel Tower, that is located in Paris, is a famous landmark.', ko: '파리에 위치한 에펠타워는 유명한 랜드마크이다.', note: '계속적 용법에는 that을 쓸 수 없어 문법적으로 틀린 문장' },
           { en: '(O) The Eiffel Tower, which is located in Paris, is a famous landmark.', ko: '파리에 위치한 에펠타워는 유명한 랜드마크이다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '계속적 용법 - comma 뒤는 삽입된 부가 설명',
+        parts: [
+          { tag: 'S', text: 'The Eiffel Tower' },
+          { tag: 'M', text: ', which is located in Paris,' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'a famous landmark' },
+        ],
+        translation: 'The Eiffel Tower, which is located in Paris, is a famous landmark.',
       },
       { type: 'heading', text: '흔히 하는 실수 - 계속적 용법에서도 대명사 중복' },
       {

@@ -15,6 +15,26 @@ export const ch13 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: 'to부정사 — 동사의 목적어(명사적 용법)',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'decided' },
+          { tag: 'O', text: 'to live in France.' },
+        ],
+        translation: 'He decided to live in France. (시제 없는 to live in France가 decided의 목적어 자리에서 명사처럼 쓰임)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'to부정사 — 보어(명사적 용법)',
+        parts: [
+          { tag: 'S', text: 'My plan' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'to climb up the mountain next Saturday.' },
+        ],
+        translation: 'My plan is to climb up the mountain next Saturday. (to climb up ~가 주어 My plan을 보충 설명하는 보어)',
+      },
+      {
         type: 'p',
         text: '각 문장의 동사 want, decided, is는 주어(you, He, My plan)와 시제(현재, 과거, 현재)를 가지고 있어 동사의 역할을 제대로 하고 있습니다. 그런데 to try, to live, to climb up은 동사처럼 생겼지만 시제를 갖고 있지 않기 때문에 동사가 아닙니다. 이렇게 「to + 동사원형」의 형태로 시제를 버리고 쓰이는 단어를 to부정사라고 부릅니다.',
       },
@@ -398,6 +418,17 @@ export const ch13 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '형용사적 용법 — 전치사가 남는 경우',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'needed' },
+          { tag: 'O', text: 'someone' },
+          { tag: 'M', text: 'to talk with.' },
+        ],
+        translation: 'He needed someone to talk with. (talk with someone에서 someone이 앞으로 나가며 전치사 with가 남음)',
+      },
+      {
         type: 'p',
         text: 'sit, talk, write, live, play 같은 동사는 원래 문장에서 전치사와 함께 쓰여야 의미가 완성됩니다(sit on a chair, talk with someone, write with a pencil, live in a house, play with friends). 이 동사들이 to부정사가 되어 앞의 명사를 수식할 때도 전치사는 그대로 남아 있어야, ‘의자에 앉다’, ‘누군가와 이야기하다’와 같은 원래 의미가 유지됩니다. to부정사가 만들어질 때 명사는 원래 문장에서 전치사의 목적어 자리에 있던 것이 앞으로 튀어나온 것이므로, 그 자리를 표시해주던 전치사는 사라지지 않고 반드시 남습니다.',
       },
@@ -508,6 +539,16 @@ export const ch13 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '결과를 나타내는 부사적 용법',
+        parts: [
+          { tag: 'S', text: 'The little boy' },
+          { tag: 'V', text: 'grew up' },
+          { tag: 'M', text: 'to be a teacher.' },
+        ],
+        translation: 'The little boy grew up to be a teacher. (자란 후에야 알 수 있는 결말을 나타내는 to부정사)',
+      },
+      {
         type: 'note',
         text: '“He went to the store to buy milk.”(목적: 우유를 사려는 의도)와 “He grew up to be a singer.”(결과: 자란 뒤의 결말)을 비교해보면, 목적의 to부정사는 앞 동작이 일어나기 전부터 품고 있던 의도를 나타내고, 결과의 to부정사는 앞 동작이 끝난 뒤에야 알 수 있는 결말을 나타냅니다.',
       },
@@ -554,6 +595,17 @@ export const ch13 = {
           { en: 'She spoke slowly enough for us to understand.', ko: '그녀는 우리가 이해할 만큼 충분히 느리게 말했다.' },
           { en: 'The coffee was too hot to drink right away.', ko: '커피가 너무 뜨거워서 바로 마실 수 없었다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'too ~ to 구문 — 원인과 결과',
+        parts: [
+          { tag: 'S', text: 'It' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'too cold' },
+          { tag: 'M', text: 'to go outside.' },
+        ],
+        translation: 'It is too cold to go outside. (too cold라는 원인이 to go outside라는 결과(불가능)로 이어짐)',
       },
       {
         type: 'table',

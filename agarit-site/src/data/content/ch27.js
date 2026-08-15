@@ -41,6 +41,17 @@ export const ch27 = {
           { en: 'If prices rise, demand usually falls.', ko: '가격이 오르면 대개 수요가 떨어진다.', note: '경제학의 일반 법칙처럼 다루어지는 사실' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '항상 성립하는 사실 (현재형 + 현재형)',
+        parts: [
+          { tag: 'IF', text: 'If it rains' },
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'take' },
+          { tag: 'O', text: 'an umbrella' },
+        ],
+        translation: 'If it rains, I take an umbrella. (조건절·결과절 모두 현재형 — 항상 그렇게 하는 습관)',
+      },
       { type: 'heading', text: '② 발생 가능성이 아주 높은 미래의 일' },
       {
         type: 'p',
@@ -82,6 +93,17 @@ export const ch27 = {
           { en: 'If you are not sure, ask your teacher.', ko: '확실하지 않다면 선생님께 물어보아라.', note: '결과절이 명령문' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '결과절에 허락(can)이 오는 조건문',
+        parts: [
+          { tag: 'IF', text: 'If you finish your homework' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'can watch' },
+          { tag: 'O', text: 'TV' },
+        ],
+        translation: 'If you finish your homework, you can watch TV. (조건절: 현재형 / 결과절: can+동사원형 — 허락)',
+      },
       { type: 'heading', text: '흔히 하는 실수 — 조건절에 will을 또 쓰는 경우' },
       {
         type: 'note',
@@ -98,6 +120,17 @@ export const ch27 = {
           { en: 'Unless you hurry, you will miss the bus.', ko: '서두르지 않으면 버스를 놓칠 것이다.', note: '= If you do not hurry, you will miss the bus.' },
           { en: 'You cannot enter unless you have a ticket.', ko: '표가 없으면 들어갈 수 없다.', note: 'unless 뒤에는 이미 부정의 의미가 있으므로 don\'t have를 다시 쓰지 않음' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'unless = if...not',
+        parts: [
+          { tag: 'IF', text: 'Unless you hurry' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'will miss' },
+          { tag: 'O', text: 'the bus' },
+        ],
+        translation: 'Unless you hurry, you will miss the bus. (= If you do not hurry, you will miss the bus.)',
       },
       {
         type: 'p',
@@ -207,6 +240,17 @@ export const ch27 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '가정법 과거 - 현재 사실과 반대되는 상상',
+        parts: [
+          { tag: 'IF', text: 'If I were rich' },
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'would travel' },
+          { tag: 'M', text: 'around the world' },
+        ],
+        translation: 'If I were rich, I would travel around the world. (실제로는 부자가 아님 — 현재 사실과 반대되는 상상)',
+      },
+      {
         type: 'note',
         text: '가정법 과거에서는 주어가 무엇이든 be동사는 항상 were를 씁니다(was는 쓰지 않습니다). "If I were you"처럼 일부러 문법적으로 틀린 것처럼 보이는 형태를 씀으로써 "이것은 현실이 아니다"라는 신호를 더 강하게 주는 것이라고 생각하면 기억하기 쉽습니다. 다만 일상 회화체 영어에서는 was를 쓰는 경우도 실제로 존재하지만, 격식을 지키는 글쓰기나 시험에서는 were가 원칙입니다.',
       },
@@ -232,6 +276,16 @@ export const ch27 = {
           { en: 'I wish I had studied harder in college.', ko: '대학 때 더 열심히 공부했더라면 좋았을 텐데.', note: '과거에 하지 않은 일에 대한 후회 — wish 뒤에 과거완료' },
           { en: 'He talks as if he knew everything.', ko: '그는 마치 모든 것을 아는 것처럼 말한다.', note: '실제로는 다 알지 못하면서 그런 것처럼 말함' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'I wish + 가정법 과거',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'wish' },
+          { tag: 'O', text: 'I were taller' },
+        ],
+        translation: 'I wish I were taller. (지금 키가 크지 않은 것에 대한 소망 — wish절도 be동사는 were)',
       },
       { type: 'heading', text: '가정법 과거완료 — 과거 사실과 반대되는 상상' },
       {
@@ -276,6 +330,18 @@ export const ch27 = {
           { en: 'If she had taken that job offer, she would be living in New York now.', ko: '그녀가 그 일자리 제안을 받았더라면, 지금 뉴욕에 살고 있을 텐데.' },
           { en: 'If he had saved money when he was young, he would not be struggling financially today.', ko: '그가 젊었을 때 돈을 모아두었더라면, 오늘날 재정적으로 어려움을 겪지 않을 텐데.', note: '과거의 선택이 현재까지 이어지는 대표적인 혼합 가정법' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '혼합 가정법 - 조건절(과거완료) + 결과절(현재 반대)',
+        parts: [
+          { tag: 'IF', text: 'If I had studied medicine' },
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'would be' },
+          { tag: 'C', text: 'a doctor' },
+          { tag: 'M', text: 'now' },
+        ],
+        translation: 'If I had studied medicine, I would be a doctor now. (과거의 선택이 달랐다면 지금 어떤 상태일지 상상)',
       },
       { type: 'heading', text: 'if를 생략하고 도치하는 경우' },
       {

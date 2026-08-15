@@ -94,6 +94,16 @@ export const ch1 = {
         translation: '나는 그녀를 사랑해.',
       },
       {
+        type: 'sentence-diagram',
+        label: 'He knows me. 의 자리 구조',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'knows' },
+          { tag: 'O', text: 'me' },
+        ],
+        translation: '그는 나를 알아.',
+      },
+      {
         type: 'word-order',
         korean: [
           { text: '나는', tag: '주어+조사' },
@@ -141,6 +151,28 @@ export const ch1 = {
           { en: '*I really him love.', note: '부사 really를 한국어처럼 목적어 앞에 둔 비문' },
           { en: 'I really love him.', ko: '나는 그를 정말 사랑해.', note: '빈도·강조 부사는 주로 동사 앞' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '시간 부사어는 문장 뒤로',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'ate' },
+          { tag: 'O', text: 'an apple' },
+          { tag: 'M', text: 'yesterday' },
+        ],
+        translation: '나는 어제 사과를 먹었어.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '강조 부사는 동사 앞으로',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'M', text: 'really' },
+          { tag: 'V', text: 'love' },
+          { tag: 'O', text: 'him' },
+        ],
+        translation: '나는 그를 정말 사랑해.',
       },
       {
         type: 'transform',
@@ -210,6 +242,17 @@ export const ch1 = {
           { en: '*Because of what you said yesterday, I am angry, I want to say.', note: '이유를 앞세우며 늘어놓은 한국어식 배치' },
           { en: 'I am angry because of what you said yesterday.', ko: '나는 네가 어제 한 말 때문에 화났어.', note: '핵심(I am angry)을 먼저 말하고 이유는 뒤에' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '핵심(S+V+C)을 먼저, 이유는 뒤에',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'am' },
+          { tag: 'C', text: 'angry' },
+          { tag: 'M', text: 'because of what you said yesterday' },
+        ],
+        translation: '나는 네가 어제 한 말 때문에 화났어.',
       },
       {
         type: 'callout',

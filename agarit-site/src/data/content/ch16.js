@@ -14,6 +14,17 @@ export const ch16 = {
           { en: 'David showed us his photos.', ko: 'David는 우리에게 그의 사진을 보여 주었다.' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '4형식',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'made' },
+          { tag: 'O1', text: 'the children' },
+          { tag: 'O2', text: 'dinner' },
+        ],
+        translation: '그는 그 아이들에게 저녁 식사를 만들어 주었다.',
+      },
       { type: 'heading', text: '수여동사의 두 목적어: 간접목적어와 직접목적어' },
       {
         type: 'p',
@@ -155,6 +166,17 @@ export const ch16 = {
           { en: '*He gave her it.', ko: '(어색한 표현)', note: '대명사 it이 직접목적어인 4형식 — 원어민이 거의 쓰지 않는 어색한 배열' },
           { en: 'He gave it to her.', ko: '그는 그것을 그녀에게 주었다.', note: '대명사 it은 동사 뒤에, 사람은 to와 함께 뒤로 — 올바른 표현' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '3형식 (직접목적어가 대명사일 때)',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'gave' },
+          { tag: 'O', text: 'it' },
+          { tag: 'M', text: 'to her' },
+        ],
+        translation: '그는 그것을 그녀에게 주었다. (대명사 it은 동사 바로 뒤, 사람은 전치사와 함께 뒤로)',
       },
       {
         type: 'note',

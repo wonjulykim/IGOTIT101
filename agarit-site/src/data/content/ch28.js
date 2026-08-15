@@ -18,6 +18,17 @@ export const ch28 = {
           { en: 'He spoke too quickly for me to understand.', ko: '그는 너무 빠르게 말해서 내가 이해할 수 없었다.', note: 'to부정사의 행위자가 문장 주어와 다르면 for + 목적격으로 표시' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: 'too ~ to - 부정적 결과',
+        parts: [
+          { tag: 'S', text: 'The shirt' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'too large' },
+          { tag: 'M', text: 'to wear' },
+        ],
+        translation: 'The shirt is too large to wear. (너무 커서 입을 수 없다 — too는 기준 초과를 뜻해 결과가 부정적)',
+      },
       { type: 'heading', text: 'so ~ that: 왜 중립적이거나 긍정적인 결과도 가능한가' },
       {
         type: 'p',
@@ -32,6 +43,28 @@ export const ch28 = {
           { en: 'It was so lovely that he took a walk.', ko: '날이 너무 좋아 그는 산책을 했다.', note: '결과가 부정적이지 않은데도 so ~ that을 사용 — too로는 바꿀 수 없음' },
           { en: 'The concert was so amazing that the audience gave a standing ovation.', ko: '그 콘서트는 너무 놀라워서 관객들이 기립 박수를 보냈다.', note: '긍정적 결과 — too는 이 문맥에 어울리지 않음' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'so ~ that - 부정적 결과',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'was' },
+          { tag: 'C', text: 'so angry' },
+          { tag: 'M', text: 'that her face turned red' },
+        ],
+        translation: 'She was so angry that her face turned red. (so는 부정적 함의가 없지만 결과절이 우연히 부정적)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'so ~ that - 긍정적 결과 (too로 바꿀 수 없음)',
+        parts: [
+          { tag: 'S', text: 'It' },
+          { tag: 'V', text: 'was' },
+          { tag: 'C', text: 'so lovely' },
+          { tag: 'M', text: 'that he took a walk' },
+        ],
+        translation: 'It was so lovely that he took a walk. (결과가 긍정적 — too ~ to로는 바꿀 수 없음)',
       },
       {
         type: 'note',
@@ -117,6 +150,17 @@ export const ch28 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '형용사 + enough + to부정사',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'honest enough' },
+          { tag: 'M', text: 'to tell the truth' },
+        ],
+        translation: 'He is honest enough to tell the truth. (enough가 형용사 honest 뒤에 위치)',
+      },
+      {
         type: 'note',
         text: '「형용사/부사 + enough + to부정사」는 「so + 형용사/부사 + that + 주어 + can(could) + 동사원형」으로 바꾸어 쓸 수 있습니다. 다만 enough는 필요조건을 충족했다는 점을, so는 정도가 심해서 그 결과가 나타났다는 점을 강조하므로 뉘앙스가 다릅니다.',
       },
@@ -140,6 +184,17 @@ export const ch28 = {
           { en: 'She left early so that she might catch the train.', ko: '그녀는 기차를 탈 수 있도록 일찍 떠났다.' },
           { en: 'We moved to the city so that our children could go to better schools.', ko: '우리는 아이들이 더 좋은 학교에 다닐 수 있도록 도시로 이사했다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'so that - 목적을 나타내는 절',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'worked' },
+          { tag: 'M', text: 'hard' },
+          { tag: 'M', text: 'so that he could pass the exam' },
+        ],
+        translation: 'He worked hard so that he could pass the exam. (so that절 = 목적: ~할 수 있도록)',
       },
       {
         type: 'p',
@@ -168,6 +223,16 @@ export const ch28 = {
           { en: 'I\'m not sure who to ask for help.', ko: '나는 누구에게 도움을 청해야 할지 확실하지 않다.' },
           { en: 'He explained how to solve the problem.', ko: '그는 그 문제를 어떻게 해결할지 설명했다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '의문사 + to부정사 - 목적어 역할',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: "don't know" },
+          { tag: 'O', text: 'what to do' },
+        ],
+        translation: "I don't know what to do. (what to do 전체가 know의 목적어)",
       },
       {
         type: 'note',
@@ -217,6 +282,16 @@ export const ch28 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: 'not only A but also B - 병렬 보어',
+        parts: [
+          { tag: 'S', text: 'Amy' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'not only smart but also friendly' },
+        ],
+        translation: 'Amy is not only smart but also friendly. (smart와 friendly 모두 형용사로 형태가 같음)',
+      },
+      {
         type: 'note',
         text: 'also는 생략할 수 있습니다. 예를 들어 "Jihyo is good at not only singing but she is also good at dancing."에서 의미상 불필요한 부분(she is also good at)을 지우면 "Jihyo is good at not only singing but dancing."처럼 간결해집니다.',
       },
@@ -239,6 +314,17 @@ export const ch28 = {
           { en: 'The movie was entertaining as well as educational.', ko: '그 영화는 재미있을 뿐만 아니라 교육적이었다.' },
           { en: 'The report was thorough as well as concise.', ko: '그 보고서는 꼼꼼할 뿐만 아니라 간결했다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'A as well as B - 병렬 목적어',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'speaks' },
+          { tag: 'O', text: 'Spanish' },
+          { tag: 'M', text: 'as well as English' },
+        ],
+        translation: 'She speaks Spanish as well as English. (Spanish와 English 모두 명사로 형태가 같음)',
       },
       {
         type: 'note',
@@ -265,6 +351,16 @@ export const ch28 = {
           { en: 'Either stay here or go home.', ko: '여기 머물거나 집에 가라.' },
           { en: 'The book is either interesting or boring.', ko: '그 책은 흥미롭거나 지루하다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'both A and B - 병렬 주어',
+        parts: [
+          { tag: 'S', text: 'Both apples and oranges' },
+          { tag: 'V', text: 'are' },
+          { tag: 'C', text: 'delicious' },
+        ],
+        translation: 'Both apples and oranges are delicious. (apples와 oranges 모두 명사로 형태가 같고, 복수 취급하여 are)',
       },
       {
         type: 'icon-row',
@@ -318,6 +414,17 @@ export const ch28 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '불특정 대명사 + 형용사 (형용사가 뒤로)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'found' },
+          { tag: 'O', text: 'something interesting' },
+          { tag: 'M', text: 'in the book' },
+        ],
+        translation: 'I found something interesting in the book. (interesting이 something 뒤에 위치)',
+      },
+      {
         type: 'note',
         text: 'something은 some+thing, anything은 any+thing, nothing은 no+thing의 결합입니다. some, any, no와 같은 한정사는 명사와 의미적으로 매우 가까워 명사 바로 앞에 붙습니다. 그 결과 형용사는 한정사에게 자리를 내주고 명사(-thing/-one/-body) 뒤로 밀려나게 됩니다. 예: something new(새로운 무언가), someone kind(친절한 누군가)',
       },
@@ -333,6 +440,17 @@ export const ch28 = {
           { en: 'He was very surprised to hear the news.', ko: '그는 그 뉴스를 들어서 매우 놀랐었다.', note: '= He was very surprised because he heard the news.' },
           { en: 'We were relieved to find the lost dog safe.', ko: '우리는 잃어버린 개가 안전한 것을 발견해서 안심했다.', note: '= We were relieved because we found the lost dog safe.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '감정 형용사 + to부정사 (이유)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'am' },
+          { tag: 'C', text: 'happy' },
+          { tag: 'M', text: 'to meet you here' },
+        ],
+        translation: 'I am happy to meet you here. (to meet you here = happy의 이유)',
       },
       { type: 'heading', text: '성질·평가 형용사 + to부정사: 난이도·평가를 나타내는 to부정사' },
       {
@@ -360,6 +478,16 @@ export const ch28 = {
           { en: 'Joe is worth talking to.', ko: 'Joe는 대화할 가치가 있다.' },
           { en: 'This museum is worth visiting at least once.', ko: '이 박물관은 적어도 한 번은 방문할 가치가 있다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'worth + 동명사 (to부정사 아님)',
+        parts: [
+          { tag: 'S', text: 'The car' },
+          { tag: 'V', text: "isn't" },
+          { tag: 'C', text: 'worth repairing' },
+        ],
+        translation: "The car isn't worth repairing. (worth 뒤에는 동명사 — to repair가 아님)",
       },
       {
         type: 'transform',
@@ -409,6 +537,17 @@ export const ch28 = {
           { en: 'She can\'t spend much time at home, but does enjoy playing board games with her family.', ko: '그녀는 집에서 많은 시간을 보내지 못하지만 가족들과 보드 게임 하는 것은 좋아한다.', note: '바쁘더라도 가족과 보드게임 하는 시간만큼은 확실히 즐긴다는 점을 강조' },
           { en: 'Now, I don\'t speak Chinese, but I do speak a little Polish, a little Korean.', ko: '나는 중국어는 못하지만, 폴란드어와 한국어는 정말로 조금 할 줄 안다.', note: '중국어는 못하지만 폴란드어·한국어는 조금이라도 확실히 할 수 있다는 점을 강조' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '동사 강조 - did + 동사원형',
+        parts: [
+          { tag: 'S', text: 'John' },
+          { tag: 'V', text: 'did finish' },
+          { tag: 'O', text: 'this project' },
+          { tag: 'M', text: 'by himself' },
+        ],
+        translation: 'John did finish this project by himself. (did가 finish를 강조 — 정말로 끝냈다)',
       },
       {
         type: 'note',
@@ -484,6 +623,16 @@ export const ch28 = {
           { en: 'What we\'ve painted the kitchen is dark green.', ko: '우리가 부엌을 칠한 색은 바로 짙은 녹색이다.', note: '원문: We\'ve painted the kitchen dark green. — 형용사 강조' },
           { en: 'What they do every night is study hard.', ko: '그들이 매일 밤 하는 것은 바로 열심히 공부하는 것이다.', note: '원문: They study hard every night. — 동사 강조' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'What 유사분열문 - 동사 강조',
+        parts: [
+          { tag: 'S', text: 'What they do every night' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'study hard' },
+        ],
+        translation: 'What they do every night is study hard. (동사구 study hard를 강조 — It~that로는 불가능)',
       },
       {
         type: 'icon-row',

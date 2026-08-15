@@ -17,6 +17,16 @@ export const ch10 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '현재시제 — 변하지 않는 사실',
+        parts: [
+          { tag: 'S', text: 'The earth' },
+          { tag: 'V', text: 'goes' },
+          { tag: 'M', text: 'around the sun.' },
+        ],
+        translation: 'The earth goes around the sun. (특정 시점이 아니라 언제나 성립하는 과학적 사실을 나타내는 현재시제)',
+      },
+      {
         type: 'timeline',
         label: '현재시제 — 반복되는 습관·변하지 않는 사실',
         now: 50,
@@ -46,6 +56,16 @@ export const ch10 = {
           { en: 'They are playing soccer.', ko: '그들은 (지금) 축구를 하고 있다.', note: '창밖을 보며 실시간으로 말하는 상황' },
           { en: 'Look! It is raining.', ko: '봐! 비가 오고 있어.', note: '지금 목격하고 있는 순간적 사건' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '현재진행형 — 지금 진행 중인 동작',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'am doing' },
+          { tag: 'O', text: 'my homework.' },
+        ],
+        translation: 'I am doing my homework. (be동사 + 일반동사ing = 말하는 바로 그 순간에 진행되고 있는 동작)',
       },
       {
         type: 'timeline',
@@ -88,6 +108,27 @@ export const ch10 = {
           { en: 'I study English.', ko: '나는 영어를 공부한다.', note: '현재시제 — 꾸준히 이어지는 학습 습관' },
           { en: 'I am studying English for the exam this week.', ko: '나는 이번 주에 시험 때문에 영어를 공부하고 있다.', note: '현재진행형 — 이번 주에 한정된 특정 사건' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '현재시제 — 지속적 사실',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'live' },
+          { tag: 'M', text: 'in Seoul.' },
+        ],
+        translation: 'I live in Seoul. (변하지 않는 거주지를 나타내는 현재시제)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '현재진행형 — 일시적 상황',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'am living' },
+          { tag: 'M', text: 'in Seoul' },
+          { tag: 'M', text: 'this month.' },
+        ],
+        translation: 'I am living in Seoul this month. (같은 동사라도 진행형을 쓰면 곧 끝날 수 있는 임시적 상황이라는 뉘앙스가 더해짐)',
       },
       {
         type: 'note',

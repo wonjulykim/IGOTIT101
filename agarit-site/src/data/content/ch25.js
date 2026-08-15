@@ -63,6 +63,17 @@ export const ch25 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '현재분사구가 주어를 뒤에서 수식',
+        parts: [
+          { tag: 'S', text: 'The man' },
+          { tag: 'M', text: 'standing by the door' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'my uncle' },
+        ],
+        translation: 'The man standing by the door is my uncle. (standing by the door가 주어 the man을 뒤에서 수식)',
+      },
+      {
         type: 'note',
         text: '관계절(who is, which is 등)에서 "관계대명사 + be동사"를 지우면 남는 것이 현재분사(-ing)나 과거분사(p.p.)입니다. 이렇게 현재분사는 문장을 간결하게 만들고 정보 전달을 효율적으로 할 수 있게 해줍니다. 이런 용법은 글을 쓰거나 말을 할 때 명확하고 간결하게 표현하고자 할 때 유용합니다. 문장의 흐름을 자연스럽게 이어주면서도 중요한 정보를 빠뜨리지 않고 전달할 수 있기 때문입니다.',
       },
@@ -167,6 +178,27 @@ export const ch25 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '감정 유발(현재분사) vs 감정을 느낌(과거분사)',
+        parts: [
+          { tag: 'S', text: 'This documentary' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'really interesting' },
+        ],
+        translation: 'This documentary is really interesting. (다큐멘터리가 흥미를 일으키는 원인 → 현재분사)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '감정 유발(현재분사) vs 감정을 느낌(과거분사)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'am' },
+          { tag: 'C', text: 'interested' },
+          { tag: 'M', text: 'in this documentary' },
+        ],
+        translation: 'I am interested in this documentary. (나는 흥미를 느끼게 된 대상 → 과거분사)',
+      },
+      {
         type: 'note',
         text: '가장 흔한 실수: 자신이 느끼는 감정을 말하면서 현재분사를 쓰는 것입니다. "*I am boring."이라고 말하면 "나는 (다른 사람들을) 지루하게 만드는 사람이다"라는 뜻이 되어, 화자가 자신을 지루한 사람으로 깎아내리는 이상한 문장이 됩니다. "나는 지루함을 느낀다"라고 말하려면 반드시 과거분사를 써서 "I am bored."라고 해야 합니다. 마찬가지로 "*I am confusing."은 "내가 다른 사람을 혼란스럽게 만드는 존재"라는 뜻이 되므로, "나는 혼란스럽다"는 "I am confused."로 써야 합니다.',
       },
@@ -242,6 +274,17 @@ export const ch25 = {
           { en: 'He felt tired, so he decided to skip the gym.', ko: '그는 피곤함을 느꼈고, 그래서 헬스장을 거르기로 했다.', note: '구어체: 접속사 so를 그대로 살려 명확하게 표현' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '분사구문 - 부사절이 압축된 형태',
+        parts: [
+          { tag: 'M', text: 'Feeling tired,' },
+          { tag: 'S', text: 'he' },
+          { tag: 'V', text: 'decided' },
+          { tag: 'O', text: 'to skip the gym' },
+        ],
+        translation: 'Feeling tired, he decided to skip the gym. (Because he felt tired가 분사구문으로 압축됨)',
+      },
       { type: 'heading', text: '분사구문을 만드는 과정' },
       {
         type: 'p',
@@ -316,6 +359,17 @@ export const ch25 = {
           { en: 'Having studied the case for months, the lawyer finally presented her argument.', ko: '몇 달 동안 그 사건을 연구한 끝에, 그 변호사는 마침내 자신의 주장을 펼쳤다.', note: '연구한 것이 주장을 펼친 것보다 먼저 끝난 일' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '완료분사구문 - Having + p.p.',
+        parts: [
+          { tag: 'M', text: 'Having finished his work,' },
+          { tag: 'S', text: 'he' },
+          { tag: 'V', text: 'went' },
+          { tag: 'M', text: 'home' },
+        ],
+        translation: 'Having finished his work, he went home. (일을 끝낸 것이 집에 간 것보다 먼저 일어난 일)',
+      },
       { type: 'heading', text: '단순분사(Ving) vs 완료분사(Having p.p.) 판별' },
       {
         type: 'note',
@@ -343,6 +397,17 @@ export const ch25 = {
           { en: 'Written in plain language, the manual is easy for beginners to follow.', ko: '평이한 언어로 쓰인 그 설명서는 초보자가 따라 하기 쉽다.', note: '기술 문서 — 과거분사구문으로 설명서가 쓰인 방식을 간결하게 덧붙임' },
           { en: 'Facing growing criticism, the company decided to recall the product.', ko: '커져가는 비판에 직면하면서, 그 회사는 제품을 회수하기로 결정했다.', note: '비즈니스 기사 — 현재분사구문으로 결정을 내리게 된 배경 상황을 간결하게 제시' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '완료분사구문 - 보고서·공지문에서의 쓰임',
+        parts: [
+          { tag: 'M', text: 'Having reviewed all the applications,' },
+          { tag: 'S', text: 'the committee' },
+          { tag: 'V', text: 'selected' },
+          { tag: 'O', text: 'three finalists' },
+        ],
+        translation: 'Having reviewed all the applications, the committee selected three finalists. (검토가 선정보다 먼저 끝났음을 보여줌)',
       },
       {
         type: 'callout',

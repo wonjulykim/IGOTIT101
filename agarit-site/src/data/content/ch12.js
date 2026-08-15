@@ -133,6 +133,26 @@ export const ch12 = {
           { en: 'How well she sings!', ko: '(공연을 보고 나서) 그녀는 노래를 정말 잘하는구나!' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: 'What 감탄문 — 완전형',
+        parts: [
+          { tag: 'Exc', text: 'What a beautiful day' },
+          { tag: 'S', text: 'it' },
+          { tag: 'V', text: 'is' },
+        ],
+        translation: 'What a beautiful day it is! (감탄의 대상인 명사구 a beautiful day가 What과 함께 문장 맨 앞으로 이동)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'How 감탄문 — 일반동사와 함께',
+        parts: [
+          { tag: 'Exc', text: 'How fast' },
+          { tag: 'S', text: 'he' },
+          { tag: 'V', text: 'runs' },
+        ],
+        translation: 'How fast he runs! (be동사가 아닌 일반동사 runs 앞에서도 형용사·부사만 How와 함께 이동)',
+      },
 
       { type: 'heading', text: '주어-동사가 통째로 사라지는 구어체 표현' },
       {

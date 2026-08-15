@@ -55,6 +55,16 @@ export const ch4 = {
           { en: 'To finish this project by Friday seems impossible now.', ko: '이 프로젝트를 금요일까지 끝내는 것은 지금 불가능해 보인다.' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: 'to부정사 주어 (진주어 이동 전)',
+        parts: [
+          { tag: 'S', text: 'To study English' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'hard' },
+        ],
+        translation: '영어를 공부하는 것은 어렵다.',
+      },
       { type: 'heading', text: '가주어-진주어: to부정사의 이동' },
       {
         type: 'p',
@@ -97,6 +107,16 @@ export const ch4 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '동명사 주어',
+        parts: [
+          { tag: 'S', text: 'Studying English' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'hard' },
+        ],
+        translation: '영어를 공부하는 것은 어렵다.',
+      },
+      {
         type: 'p',
         text: '이유는 단어의 길이에 있습니다. to부정사는 "to+동사원형"으로 이루어져 기본이 이미 두 단어이고, 그 뒤에 목적어나 수식어가 붙으면 세 단어, 네 단어로 더 길어집니다. 반면 동명사는 동사원형에 -ing만 붙인 형태로, 일반 명사와 마찬가지로 대부분 한 단어로 끝납니다. 즉, "To study"는 이미 2단어이지만 "Studying"은 1단어입니다. 주어 자리를 가볍게 만들기 위해 가주어-진주어 구문을 쓰는 것인데, 동명사 주어는 애초에 한 단어로 이미 충분히 가볍기 때문에 굳이 문장을 다시 쓸 필요가 없는 것입니다.',
       },
@@ -128,6 +148,16 @@ export const ch4 = {
           { en: 'Whether he will accept the offer is still unknown.', ko: '그가 제안을 받아들일지는 아직 알 수 없다.' },
           { en: 'How they escaped the fire remains a mystery.', ko: '그들이 어떻게 화재에서 빠져나왔는지는 여전히 수수께끼이다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '명사절 주어',
+        parts: [
+          { tag: 'S', text: 'What I want' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'to study English' },
+        ],
+        translation: '내가 원하는 것은 영어를 공부하는 것이다.',
       },
       { type: 'heading', text: '가주어-진주어: 명사절의 이동' },
       {
@@ -232,6 +262,16 @@ export const ch4 = {
           { en: 'It gets dark early in winter.', ko: '겨울에는 일찍 어두워진다.', note: '계절/밝기' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '비인칭 주어 it (날씨)',
+        parts: [
+          { tag: 'S', text: 'It' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'hot' },
+        ],
+        translation: '날씨가 덥다. (it은 "그것"이라는 뜻을 갖지 않음)',
+      },
       { type: 'heading', text: '가주어 it, 비인칭 주어 it, 인칭대명사 it 비교' },
       {
         type: 'p',
@@ -255,6 +295,17 @@ export const ch4 = {
           { en: 'It is necessary to be careful on icy roads.', ko: '빙판길에서는 조심하는 것이 필요하다.', note: '가주어 it: 진주어 to be careful on icy roads' },
           { en: 'The movie was three hours long, but it didn’t feel boring at all.', ko: '그 영화는 세 시간이나 길었지만, 그것은 전혀 지루하게 느껴지지 않았다.', note: '인칭대명사 it: the movie를 가리킴' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '가주어 it',
+        parts: [
+          { tag: 'S', text: 'It' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'necessary' },
+          { tag: 'M', text: 'to be careful on icy roads' },
+        ],
+        translation: '빙판길에서는 조심하는 것이 필요하다. (진주어: to be careful on icy roads)',
       },
       {
         type: 'note',

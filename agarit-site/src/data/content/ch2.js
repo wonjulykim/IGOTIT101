@@ -250,6 +250,16 @@ export const ch2 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '정관사 the — 유일하게 식별 가능한 대상',
+        parts: [
+          { tag: 'S', text: 'The sun' },
+          { tag: 'V', text: 'rises' },
+          { tag: 'M', text: 'in the east' },
+        ],
+        translation: '태양은 동쪽에서 뜬다.',
+      },
+      {
         type: 'example',
         items: [
           { en: 'I bought a bike yesterday.', ko: '나 어제 자전거 하나 샀어.', note: 'a bike — 처음 소개되는 대상' },
@@ -257,6 +267,17 @@ export const ch2 = {
           { en: 'I found a wallet on the street.', ko: '길에서 지갑 하나를 발견했어.', note: 'a wallet — 처음 소개되는 대상' },
           { en: 'Did you open the wallet to see whose it is?', ko: '그 지갑을 열어서 누구 건지 확인했어?', note: 'the wallet — 이미 언급된 특정한 지갑' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '부정관사 a — 처음 소개되는 대상',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'bought' },
+          { tag: 'O', text: 'a bike' },
+          { tag: 'M', text: 'yesterday' },
+        ],
+        translation: '나 어제 자전거 하나 샀어.',
       },
       { type: 'heading', text: '부정관사 a / an — 처음 등장하는 대상' },
       {
@@ -430,6 +451,17 @@ export const ch2 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '조수사로 셀 수 없는 명사를 4형식으로',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'gave' },
+          { tag: 'O2', text: 'me' },
+          { tag: 'O1', text: 'a piece of advice' },
+        ],
+        translation: '그녀는 나에게 조언 하나를 해주었다.',
+      },
+      {
         type: 'callout',
         title: '조수사 핵심 정리',
         items: [
@@ -516,6 +548,27 @@ export const ch2 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '소유격 대명사',
+        parts: [
+          { tag: 'S', text: 'My favorite book' },
+          { tag: 'V', text: 'is' },
+          { tag: 'M', text: 'on the table' },
+        ],
+        translation: '내가 가장 좋아하는 책이 테이블 위에 있다.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '목적격 대명사',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'called' },
+          { tag: 'O', text: 'me' },
+          { tag: 'M', text: 'yesterday' },
+        ],
+        translation: '그녀는 어제 나에게 전화했다.',
+      },
+      {
         type: 'p',
         text: '인칭은 ‘누구의 관점에서 말하는가’를 뜻합니다. 1인칭은 화자 자신, 2인칭은 화자가 말을 거는 상대, 3인칭은 대화에 참여하지 않는 사람이나 사물입니다. 수는 하나면 단수, 둘 이상이면 복수입니다. 인칭과 수는 뒤에서 배울 주어-동사의 일치에서 매우 중요한 개념이니 꼭 기억해두세요.',
       },
@@ -529,6 +582,21 @@ export const ch2 = {
         items: [
           { en: '*Me and him went to the store.', ko: '나와 그는 가게에 갔다. (오류)', note: '문장의 주어 자리이므로 목적격 me/him이 아니라 주격이 필요' },
           { en: 'He and I went to the store.', ko: '그와 나는 가게에 갔다. (올바른 표현)' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '두 개의 주어도 각각 주격으로',
+        parts: [
+          { tag: 'S', text: 'He and I' },
+          { tag: 'V', text: 'went' },
+          { tag: 'M', text: 'to the store' },
+        ],
+        translation: '그와 나는 가게에 갔다.',
+      },
+      {
+        type: 'example',
+        items: [
           { en: '*Give the book to I.', ko: '나에게 그 책을 줘. (오류)', note: '전치사 to의 목적어 자리이므로 목적격이 필요' },
           { en: 'Give the book to me.', ko: '나에게 그 책을 줘. (올바른 표현)' },
           { en: '*Between you and I, this plan will fail.', ko: '너와 나만 아는 건데, 이 계획은 실패할 거야. (오류)', note: '전치사 between의 목적어이므로 I가 아니라 목적격 me' },
@@ -579,6 +647,27 @@ export const ch2 = {
           { en: 'She has a happy disposition.', ko: '그녀는 긍정적 성향을 지니고 있다.', note: '한정적 용법 — 기본 성향을 한정' },
           { en: 'He is a hungry-looking stray cat.', ko: '그는 배고파 보이는 길고양이다.', note: '한정적 용법 — 고양이의 일반적 인상을 한정' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '서술적 용법',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'kind' },
+          { tag: 'M', text: 'to behave like that' },
+        ],
+        translation: '그렇게 행동하는 걸 보니 그녀는 참 친절해.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '한정적 용법',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'a kind person' },
+        ],
+        translation: '그녀는 친절한 사람이야.',
       },
       {
         type: 'p',
@@ -653,6 +742,16 @@ export const ch2 = {
           { en: '*a Korean old temple', ko: '오래된 한국 사원 (오류)', note: '출신(Korean)이 연령(old)보다 앞에 옴' },
           { en: 'an old Korean temple', ko: '오래된 한국 사원 (올바른 표현)' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '형용사 나열 순서 (의견 → 재료)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'bought' },
+          { tag: 'O', text: 'a beautiful wooden table' },
+        ],
+        translation: '나는 아름다운 나무 탁자를 샀다.',
       },
       { type: 'heading', text: '-ly로 끝나는 형용사' },
       {
@@ -731,6 +830,17 @@ export const ch2 = {
           { en: 'Fortunately, no one was hurt in the accident.', ko: '다행히, 그 사고에서 아무도 다치지 않았다.', note: '문장 전체 수식' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '동사를 꾸미는 부사',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'speaks' },
+          { tag: 'O', text: 'English' },
+          { tag: 'M', text: 'fluently' },
+        ],
+        translation: '그녀는 영어를 유창하게 말한다.',
+      },
       { type: 'heading', text: '부사의 위치는 뜻을 바꾼다' },
       {
         type: 'note',
@@ -744,6 +854,26 @@ export const ch2 = {
           { en: 'Clearly, she made a mistake.', ko: '분명히, 그녀는 실수를 했다.', note: '문장 전체를 수식 — 화자의 확신을 나타냄' },
           { en: 'She explained the plan clearly.', ko: '그녀는 계획을 명확하게 설명했다.', note: '동사만 수식 — 설명하는 방식이 명확했다는 뜻' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '문장 전체를 꾸미는 부사',
+        parts: [
+          { tag: 'M', text: 'Happily' },
+          { tag: 'S', text: 'he' },
+          { tag: 'V', text: 'died' },
+        ],
+        translation: '다행히도, 그는 죽었다. (그가 죽은 것이 다행이라는 뜻)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '동사만 꾸미는 부사',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'died' },
+          { tag: 'M', text: 'happily' },
+        ],
+        translation: '그는 행복하게 죽었다. (죽는 순간이 행복했다는 뜻)',
       },
       { type: 'heading', text: '빈도부사' },
       {
@@ -763,6 +893,18 @@ export const ch2 = {
           { en: 'We rarely watch TV on weekdays.', ko: '우리는 평일에 거의 TV를 보지 않습니다.' },
           { en: 'He never forgets to brush his teeth.', ko: '그는 이를 닦는 것을 절대 잊지 않습니다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '빈도부사의 위치 (일반동사 앞)',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'M', text: 'always' },
+          { tag: 'V', text: 'finishes' },
+          { tag: 'O', text: 'her homework' },
+          { tag: 'M', text: 'before dinner' },
+        ],
+        translation: '그녀는 저녁 식사 전에 항상 숙제를 마칩니다.',
       },
       {
         type: 'p',
@@ -1030,6 +1172,16 @@ export const ch2 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '전치사 + 동사(자동사)',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'depends' },
+          { tag: 'M', text: 'on his parents' },
+        ],
+        translation: '그는 부모님에게 의존한다.',
+      },
+      {
         type: 'note',
         text: '전치사는 문장에서 명사를 꾸며주는 형용사 역할을 하기도 하고, 부가 정보를 더하는 부사 역할을 하기도 합니다.',
       },
@@ -1080,6 +1232,16 @@ export const ch2 = {
           { en: 'The dog is under the bed.', ko: '개가 침대 아래에 있다.' },
           { en: 'The umbrella is under the chair.', ko: '우산이 의자 아래에 있다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '위치 전치사 on',
+        parts: [
+          { tag: 'S', text: 'The cat' },
+          { tag: 'V', text: 'is' },
+          { tag: 'M', text: 'on the roof' },
+        ],
+        translation: '고양이가 지붕 위에 있다.',
       },
       { type: 'heading', text: '전치사 이미지 다시보기 — 이동과 공간' },
       {
@@ -1229,9 +1391,36 @@ export const ch2 = {
         items: [
           { en: 'Because it was raining, I stayed home.', ko: '비가 왔기 때문에, 나는 집에 있었다.', note: '종속절이 문장 앞에 위치' },
           { en: 'I stayed home because it was raining.', ko: '나는 집에 있었다, 비가 왔기 때문에.', note: '같은 뜻이지만 종속절이 문장 뒤에 위치' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '종속접속사 because (종속절이 뒤에)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'stayed' },
+          { tag: 'M', text: 'home' },
+          { tag: 'M', text: 'because it was raining' },
+        ],
+        translation: '나는 집에 있었다, 비가 왔기 때문에.',
+      },
+      {
+        type: 'example',
+        items: [
           { en: 'If you finish your homework, you can watch TV.', ko: '숙제를 끝내면, TV를 볼 수 있어.', note: '조건을 나타내는 if절' },
           { en: 'When the bell rang, all the students stood up.', ko: '벨이 울렸을 때, 모든 학생들이 일어섰다.', note: '시간을 나타내는 when절' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '종속접속사 if (조건절이 앞에)',
+        parts: [
+          { tag: 'M', text: 'If you finish your homework' },
+          { tag: 'S', text: 'you' },
+          { tag: 'V', text: 'can watch' },
+          { tag: 'O', text: 'TV' },
+        ],
+        translation: '숙제를 끝내면, TV를 볼 수 있어.',
       },
       { type: 'heading', text: '명사절 접속사 that' },
       {
@@ -1241,6 +1430,16 @@ export const ch2 = {
           { en: 'It is true that he made a mistake.', ko: '그가 실수했다는 것은 사실이다.', note: 'that절이 진짜 주어 역할을 하는 명사절' },
           { en: 'The fact that she apologized surprised everyone.', ko: '그녀가 사과했다는 사실이 모두를 놀라게 했다.', note: 'that절이 fact를 보충 설명하는 명사절' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '명사절 접속사 that (목적어 역할)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'believe' },
+          { tag: 'O', text: 'that she will succeed' },
+        ],
+        translation: '나는 그녀가 성공할 것이라고 믿는다.',
       },
       {
         type: 'note',

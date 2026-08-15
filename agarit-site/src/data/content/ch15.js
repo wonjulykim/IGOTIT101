@@ -14,6 +14,17 @@ export const ch15 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '부가의문문 구조 (부정문 → 긍정 태그)',
+        parts: [
+          { tag: 'S', text: 'They' },
+          { tag: 'V', text: "aren't" },
+          { tag: 'M', text: 'from Mexico' },
+          { tag: 'Tag', text: 'are they?' },
+        ],
+        translation: "They aren't from Mexico, are they? (부정문 + 긍정 부가의문문)",
+      },
+      {
         type: 'note',
         text: '부가의문문은 긍정문 뒤에는 부정 부가의문문을, 부정문 뒤에는 긍정 부가의문문을 붙여, 내가 모르는 정보를 확인하거나 알고 있는 정보를 강조해서 확인하고자 하는 의도를 나타냅니다.',
       },
@@ -44,6 +55,17 @@ export const ch15 = {
             note: '부정문(잊지 않았다) 뒤에 긍정 태그를 붙여, 정말 잊지 않았는지 확인을 요청합니다.',
           },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '부가의문문 구조 (긍정문 → 부정 태그)',
+        parts: [
+          { tag: 'S', text: 'The movie' },
+          { tag: 'V', text: 'was' },
+          { tag: 'C', text: 'great' },
+          { tag: 'Tag', text: "wasn't it?" },
+        ],
+        translation: "The movie was great, wasn't it? (긍정문 + 부정 부가의문문)",
       },
       { type: 'heading', text: '부가의문문 만드는 방법' },
       {
@@ -176,6 +198,17 @@ export const ch15 = {
           },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '부가의문문 구조 (일반동사 → do/does 사용)',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'works' },
+          { tag: 'M', text: 'late every night' },
+          { tag: 'Tag', text: "doesn't she?" },
+        ],
+        translation: "She works late every night, doesn't she? (일반동사 문장이므로 does로 부가의문문)",
+      },
       { type: 'heading', text: '흔히 틀리는 지점' },
       {
         type: 'p',
@@ -232,6 +265,17 @@ export const ch15 = {
           { en: "Let's take a break, shall we?", ko: '우리 잠깐 쉬자, 그럴까?' },
           { en: "Nothing went wrong, did it?", ko: '아무것도 잘못되지 않았지, 그렇지?' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '부가의문문 구조 (불규칙 — 부정 의미의 주어)',
+        parts: [
+          { tag: 'S', text: 'Nothing' },
+          { tag: 'V', text: 'went' },
+          { tag: 'C', text: 'wrong' },
+          { tag: 'Tag', text: 'did it?' },
+        ],
+        translation: 'Nothing went wrong, did it? (nothing은 부정 의미이므로 긍정 부가의문문 did it을 사용)',
       },
       { type: 'heading', text: '부가의문문의 역할' },
       {

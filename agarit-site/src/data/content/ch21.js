@@ -45,6 +45,17 @@ export const ch21 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '현재완료 (과거의 일이 현재까지 이어짐)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'have lost' },
+          { tag: 'O', text: 'my wallet' },
+          { tag: 'M', text: 'since yesterday' },
+        ],
+        translation: '나는 어제부터 지갑을 잃어버린 상태이다.',
+      },
+      {
         type: 'note',
         text: '현재완료 구조 : 주어 + have(has) + p.p.(과거분사). 3인칭 단수 주어에는 has를 씁니다.',
       },
@@ -68,6 +79,15 @@ export const ch21 = {
           { en: 'He has gone out.', ko: '그는 외출했다.', note: '= He went out, and now he is not here.' },
           { en: 'I have gotten up.', ko: '나는 일어났다.', note: '= I got up, and now I am awake.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '현재완료 (결과)',
+        parts: [
+          { tag: 'S', text: 'The train' },
+          { tag: 'V', text: 'has arrived' },
+        ],
+        translation: '기차가 도착했다. (도착해서 지금 여기 있음)',
       },
       { type: 'heading', text: '현재완료가 필요한 이유: 과거시제와의 근본적인 차이' },
       {
@@ -180,6 +200,16 @@ export const ch21 = {
           { en: 'She has read that novel before.', ko: '그녀는 그 소설을 전에 읽어본 적이 있다.', note: '경험' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '현재완료 (경험)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'have been' },
+          { tag: 'M', text: 'to Paris twice' },
+        ],
+        translation: '나는 파리에 두 번 가본 적이 있다.',
+      },
       { type: 'heading', text: '(3) 완료 — 방금 막 끝난 일' },
       {
         type: 'p',
@@ -201,6 +231,16 @@ export const ch21 = {
           { en: 'I haven’t finished my dinner yet.', ko: '나는 아직 저녁을 끝내지 않았다.', note: '완료의 부정 — yet' },
           { en: 'The bus has just left.', ko: '버스가 막 떠났다.', note: '완료 — just' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '현재완료 (완료)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'have just finished' },
+          { tag: 'O', text: 'my homework' },
+        ],
+        translation: '나는 방금 숙제를 끝냈다.',
       },
       { type: 'heading', text: '(4) 결과 — 과거의 동작이 남긴 지금의 상태' },
       {
@@ -320,6 +360,28 @@ export const ch21 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '현재완료진행 (진행 과정 강조)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'have been studying' },
+          { tag: 'O', text: 'English' },
+          { tag: 'M', text: 'for 20 years' },
+        ],
+        translation: '나는 20년째 영어를 계속 공부하고 있다.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '현재완료 (결과·경험 강조)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'have studied' },
+          { tag: 'O', text: 'English' },
+          { tag: 'M', text: 'for 20 years' },
+        ],
+        translation: '나는 20년 동안 영어를 공부해왔다.',
+      },
+      {
         type: 'icon-row',
         caption: '현재완료 vs 현재완료진행, 초점의 차이',
         items: [
@@ -369,6 +431,17 @@ export const ch21 = {
           { en: 'I have been believing that he is right.', ko: '(오류) 나는 그가 맞다고 계속 믿어왔다.', note: '틀린 문장 — believe는 상태 동사' },
           { en: 'I have believed that he is right since the beginning.', ko: '나는 처음부터 그가 맞다고 믿어왔다.', note: '올바른 문장' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '상태 동사 + 현재완료 (진행형 불가)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'have known' },
+          { tag: 'O', text: 'her' },
+          { tag: 'M', text: 'for ten years' },
+        ],
+        translation: '나는 그녀를 10년 동안 알아왔다. (know는 상태 동사라 진행형으로 쓰지 않음)',
       },
       {
         type: 'note',
@@ -460,6 +533,17 @@ export const ch21 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '과거완료 + before',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'had finished' },
+          { tag: 'O', text: 'my homework' },
+          { tag: 'M', text: 'before I went out' },
+        ],
+        translation: '나는 외출하기 전에 숙제를 끝냈다. (숙제를 끝낸 일이 외출보다 먼저)',
+      },
+      {
         type: 'callout',
         title: '왜 before/after가 필요한가?',
         items: [
@@ -514,6 +598,28 @@ export const ch21 = {
           { en: 'She will have lived in Seoul for ten years next month.', ko: '그녀는 다음 달이면 서울에 산 지 10년이 될 것이다.', note: '미래 시점까지 이어지는 계속의 의미' },
           { en: 'By 2030, he will have graduated from college.', ko: '2030년쯔면 그는 대학을 졸업해 있을 것이다.', note: '2030년(미래 시점)을 기준으로 완료' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '미래완료',
+        parts: [
+          { tag: 'M', text: 'By tomorrow,' },
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'will have finished' },
+          { tag: 'O', text: 'this report' },
+        ],
+        translation: '나는 내일까지는 이 보고서를 끝내 놓을 것이다.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '미래완료 (계속)',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'will have lived' },
+          { tag: 'M', text: 'in Seoul for ten years' },
+          { tag: 'M', text: 'next month' },
+        ],
+        translation: '그녀는 다음 달이면 서울에 산 지 10년이 될 것이다.',
       },
       {
         type: 'icon-row',

@@ -88,6 +88,17 @@ export const ch11 = {
           { en: 'Take out the trash.', ko: '쓰레기 좀 내놔.' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '명령문 — 생략된 주어 (You)',
+        parts: [
+          { tag: '(S)', text: '(You)' },
+          { tag: 'V', text: 'Clean' },
+          { tag: 'O', text: 'your room' },
+          { tag: 'M', text: 'before dinner.' },
+        ],
+        translation: '(You) Clean your room before dinner. (문맥상 뻔한 주어 You가 생략되고 동사원형 Clean으로 시작)',
+      },
       { type: 'heading', text: '상황 속의 명령문 ③: 공공장소에서' },
       {
         type: 'p',
@@ -124,6 +135,16 @@ export const ch11 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '부정 명령문 — Don\'t + 동사원형',
+        parts: [
+          { tag: '(S)', text: '(You)' },
+          { tag: 'V', text: "Don't touch" },
+          { tag: 'O', text: 'this.' },
+        ],
+        translation: "(You) Don't touch this. (동사원형 touch 앞에 Don't를 붙여 '~하지 마라'를 나타냄)",
+      },
+      {
         type: 'note',
         text: 'be동사도 명령문에서는 동사원형인 be를 그대로 씁니다. 그래서 부정 명령문은 Don\'t be ~ 형태로 씁니다. (예: Don\'t be late. / Don\'t be shy.)',
       },
@@ -152,6 +173,17 @@ export const ch11 = {
           { en: "Let's not go there.", ko: '우리 거기 가지 말자.', note: 'Let\'s 부정문은 Let\'s 뒤에 not을 붙인다.' },
           { en: "Let's not waste time.", ko: '우리 시간 낭비하지 말자.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: "청유문 — Let's + 동사원형",
+        parts: [
+          { tag: '(S)', text: '(We)' },
+          { tag: 'V', text: "Let's clean" },
+          { tag: 'O', text: 'the classroom' },
+          { tag: 'M', text: 'together.' },
+        ],
+        translation: "Let's clean the classroom together. (Let's = Let us, 말하는 사람 자신까지 포함해 함께 하자고 제안)",
       },
       {
         type: 'note',
