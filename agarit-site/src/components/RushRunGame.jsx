@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useGame } from '../context/GameContext'
 import { XP_RULES } from '../utils/gamification'
 import { isMuted, playClear, playCombo, playCorrect, playOver, playWrong, setMuted } from '../utils/sound'
-import RunnerCanvas from './RunnerCanvas'
+import FruitSliceCanvas from './FruitSliceCanvas'
 import './RushRunGame.css'
 
 const START_LIVES = 3
@@ -159,16 +159,16 @@ export default function RushRunGame({ questions, onExit }) {
     return (
       <div className="rrg rrg-center">
         {muteButton}
-        <div className="rrg-icon">🏃</div>
-        <h2>러시 앤 대시</h2>
+        <div className="rrg-icon">🍉</div>
+        <h2>정답 베기</h2>
         <ul className="rrg-rules">
-          <li>🛣️ 문제를 보고, 정답이 적힌 게이트를 향해 달려가세요!</li>
-          <li>🎯 게이트가 가까워지기 전에 정답 게이트를 클릭(탭)하세요.</li>
-          <li>💥 오답 게이트를 클릭하거나 시간 안에 고르지 못하면 목숨이 하나 줄어요.</li>
-          <li>🚀 정답을 맞힐수록 점점 더 빠르게 달려요.</li>
+          <li>🍇 문제를 보고, 보기들이 과일처럼 화면 위로 튀어 올라요!</li>
+          <li>🔪 마우스(또는 손가락)로 정답 과일을 그어서 베세요.</li>
+          <li>💥 오답 과일을 베거나 정답을 놓치면 목숨이 하나 줄어요.</li>
+          <li>🚀 정답을 맞힐수록 과일이 점점 더 빠르게 튀어 올라요.</li>
           <li>목숨은 {START_LIVES}개! 모두 잃으면 게임 오버.</li>
         </ul>
-        <button className="btn-primary" onClick={start}>달리기 시작</button>
+        <button className="btn-primary" onClick={start}>베기 시작</button>
         <button className="btn-secondary" onClick={onExit}>나가기</button>
       </div>
     )
@@ -181,7 +181,7 @@ export default function RushRunGame({ questions, onExit }) {
         <div className="rrg-icon rrg-shake">💥</div>
         <h2>게임 오버</h2>
         <p className="rrg-result-line">
-          {index + 1} / {order.length}문제까지 달렸어요, <strong>{score}</strong>개 정답!
+          {index + 1} / {order.length}문제까지 베었어요, <strong>{score}</strong>개 정답!
           {bestCombo >= COMBO_MILESTONE_EVERY && <> 최고 콤보 🔥{bestCombo}</>}
         </p>
         <button className="btn-primary" onClick={start}>다시 도전</button>
@@ -194,8 +194,8 @@ export default function RushRunGame({ questions, onExit }) {
     return (
       <div className="rrg rrg-center">
         {muteButton}
-        <div className="rrg-icon rrg-bounce">🏁</div>
-        <h2>완주 성공!</h2>
+        <div className="rrg-icon rrg-bounce">🏆</div>
+        <h2>클리어!</h2>
         <div className="rrg-stars">{'⭐'.repeat(lives)}{'☆'.repeat(START_LIVES - lives)}</div>
         <p className="rrg-result-line">{order.length}문제 중 <strong>{score}</strong>개 정답 · 최고 콤보 🔥{bestCombo}</p>
         <button className="btn-primary" onClick={start}>다시 도전</button>
@@ -220,23 +220,23 @@ export default function RushRunGame({ questions, onExit }) {
 
       {speedUpFlash && <div className="rrg-speedup-banner">🚀 스피드 업!</div>}
 
-      <RunnerCanvas
+      <FruitSliceCanvas
         key={index}
         options={current.options}
         answerIndex={current.answer}
         picked={picked}
         isAnswered={isAnswered}
         resultKind={resultKind}
-        runMs={runMs}
-        onPick={handleGateClick}
+        flightMs={runMs}
+        onSlice={handleGateClick}
         burstTick={burstTick}
       />
 
       {isAnswered && (
         <div className="rrg-feedback">
-          {resultKind === 'correct' && '✅ 정답 게이트 통과!'}
-          {resultKind === 'missed' && '⏱️ 시간 안에 고르지 못했어요!'}
-          {resultKind === 'wrong' && '❌ 오답 게이트에 부딪혔어요!'}
+          {resultKind === 'correct' && '✅ 정답 과일을 베었어요!'}
+          {resultKind === 'missed' && '⏱️ 정답 과일을 놓쳤어요!'}
+          {resultKind === 'wrong' && '❌ 오답 과일을 베었어요!'}
           {current.explain && <p className="rrg-explain">{current.explain}</p>}
         </div>
       )}

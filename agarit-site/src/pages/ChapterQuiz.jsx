@@ -29,7 +29,7 @@ export default function ChapterQuiz() {
         <div className="lesson-breadcrumb">
           <Link to="/">차례</Link> <span>›</span> <span>{chapter.num}장 {chapter.title}</span>
         </div>
-        <h1>{chapter.num}장 퀴즈 · 러시 앤 대시</h1>
+        <h1>{chapter.num}장 퀴즈 · 정답 베기</h1>
         <RushRunGame questions={quiz.mcq} onExit={() => setGameMode(false)} />
       </div>
     )
@@ -47,7 +47,7 @@ export default function ChapterQuiz() {
 
       {!isReading && quiz.mcq.length >= 3 && (
         <button className="btn-primary quiz-game-cta" onClick={() => setGameMode(true)}>
-          🎮 러시 앤 대시로 도전하기
+          🍉 정답 베기로 도전하기
         </button>
       )}
 
