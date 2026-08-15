@@ -1,0 +1,79 @@
+export const r7Quiz = {
+  mcq: [
+    {
+      id: 'r7-mcq-1',
+      q: '이 제안서에서 "Why We Need This Club" 항목이 하는 역할로 가장 적절한 것은?',
+      options: [
+        '동아리 활동 일정을 안내한다',
+        '동아리가 필요한 이유를 설명한다',
+        '동아리 회비를 안내한다',
+        '동아리 회원 명단을 제시한다',
+        '동아리 로고를 소개한다',
+      ],
+      answer: 1,
+      explain: '"Why We Need This Club"은 동아리가 왜 필요한지, 어떤 학생들의 요구를 충족하는지를 설명하는 항목입니다.',
+    },
+  ],
+  short: [
+    {
+      id: 'r7-short-1',
+      q: '이 제안서의 5개 항목 중, 동아리 활동의 "기대 효과"를 설명하는 항목의 이름을 영어로 쓰시오.',
+      answers: ['expected results', 'Expected Results'],
+      explain: 'Expected Results 항목에서 동아리 활동의 기대 효과를 설명합니다.',
+    },
+  ],
+  essay: [
+    {
+      id: 'r7-essay-1',
+      q: '위 제안서의 형식을 참고하여, 친구들의 흥미와 재능을 키울 수 있는 새로운 동아리를 하나 정하고 개설을 제안하는 글을 아래 조건에 맞게 영어로 작성하시오.',
+      standard: '[9영02-06] 친숙한 주제에 관해 자신의 의견을 주장한다. / [9영02-08] 간단한 일기, 편지, 이메일 등의 글을 쓴다.',
+      difficulty: '중',
+      score: 16,
+      conditions: [
+        'Introduction, Why We Need This Club, What We Will Do, Expected Results, Conclusion 다섯 항목을 모두 작성할 것',
+        '동아리명을 명확히 제시할 것',
+        '100~150 단어로 쓸 것',
+      ],
+      model:
+        'Proposal for a New Photography Club\n\n1. Introduction: I would like to propose a Photography Club.\n2. Why We Need This Club: Many students enjoy taking pictures but do not have a place to learn photography skills or share their work.\n3. What We Will Do: In this club, we will learn basic camera and phone photography skills and go on short photo walks around the school every Thursday.\n4. Expected Results: This club will help students express their creativity and build a portfolio of photos for future use.\n5. Conclusion: The Photography Club will give students a fun and creative way to spend their free time, and I hope the school will support this proposal.',
+      totalScore: 16,
+      rubric: [
+        {
+          criterion: '동아리명 제시',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '개설할 동아리명을 적절하게 제시함' },
+            { score: 1, desc: '동아리명을 제시하지 못함' },
+          ],
+        },
+        {
+          criterion: '5개 항목 구성',
+          maxScore: 6,
+          levels: [
+            { score: 6, desc: '5개 항목을 모두 명확하게 작성함' },
+            { score: 3, desc: '일부 항목이 빠지거나 불명확함' },
+            { score: 1, desc: '대부분의 항목을 작성하지 않음' },
+          ],
+        },
+        {
+          criterion: '내용의 주제 적합성',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '각 항목의 내용이 주제와 목적에 맞게 구체적으로 작성됨' },
+            { score: 2, desc: '내용이 다소 형식적이거나 구체성이 부족함' },
+            { score: 1, desc: '내용이 주제와 맞지 않음' },
+          ],
+        },
+        {
+          criterion: '적절한 어휘 및 언어 형식',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '다양한 어휘와 언어 형식을 정확하게 사용함' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 큰 지장은 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+  ],
+}

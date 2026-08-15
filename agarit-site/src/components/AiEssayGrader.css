@@ -1,0 +1,60 @@
+.ai-grader { margin-top: 14px; }
+
+.ai-conditions-check { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.ai-condition-chip {
+  font-size: 0.8rem;
+  border-radius: 999px;
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+}
+.ai-condition-chip.met { border-color: var(--success); background: var(--success-bg); color: var(--success); }
+.ai-condition-chip.unmet { border-color: var(--danger); background: var(--danger-bg); color: var(--danger); }
+
+.ai-grade-btn, .ai-regrade-btn { margin-top: 4px; }
+
+.ai-grader-error {
+  margin-top: 10px;
+  color: var(--danger);
+  font-size: 0.88rem;
+}
+
+.ai-grader-result { margin-top: 10px; }
+
+.ai-grader-total {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+.ai-grader-total strong { color: var(--accent-dark); }
+
+.ai-criterion { margin-bottom: 12px; }
+.ai-criterion-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.ai-criterion-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+.ai-criterion-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+}
+.ai-criterion-reason {
+  margin: 6px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.ai-grader-feedback {
+  background: var(--accent-bg);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 12px 0;
+}
+.ai-grader-feedback p { margin: 6px 0 0; white-space: pre-line; }

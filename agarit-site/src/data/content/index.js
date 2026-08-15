@@ -26,11 +26,22 @@ import { ch25 } from './ch25'
 import { ch26 } from './ch26'
 import { ch27 } from './ch27'
 import { ch28 } from './ch28'
+import { r1 } from './r1'
+import { r2 } from './r2'
+import { r3 } from './r3'
+import { r4 } from './r4'
+import { r5 } from './r5'
+import { r6 } from './r6'
+import { r7 } from './r7'
+import { r8 } from './r8'
+import { r9 } from './r9'
+import { r10 } from './r10'
 
 const contentByChapter = {
   ch1, ch2, ch3, ch4, ch5, ch6, ch7, ch8, ch9, ch10,
   ch11, ch12, ch13, ch14, ch15, ch16, ch17, ch18, ch19, ch20,
   ch21, ch22, ch23, ch24, ch25, ch26, ch27, ch28,
+  r1, r2, r3, r4, r5, r6, r7, r8, r9, r10,
 }
 
 export function getLessonContent(chapterId, lessonId) {

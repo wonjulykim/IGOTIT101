@@ -1,5 +1,7 @@
 // 아가릿(I GOT IT) 101 - 챕터/레슨 목차 메타데이터
 
+import { readings } from './readings'
+
 export const chapters = [
   {
     id: 'ch1',
@@ -289,8 +291,10 @@ export const chapters = [
   },
 ]
 
+const allUnits = [...chapters, ...readings]
+
 export function getChapter(chapterId) {
-  return chapters.find((c) => c.id === chapterId)
+  return allUnits.find((c) => c.id === chapterId)
 }
 
 export function getLesson(chapterId, lessonId) {

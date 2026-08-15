@@ -1,0 +1,86 @@
+// 아가릿(I GOT IT) 101 - 독해 지문 목차 메타데이터
+
+export const readings = [
+  {
+    id: 'r1',
+    num: 1,
+    kind: 'reading',
+    title: '온라인 신분 도용 예방하기',
+    ready: true,
+    lessons: [{ id: 'r1-1', title: '온라인 신분 도용 예방하기' }],
+  },
+  {
+    id: 'r2',
+    num: 2,
+    kind: 'reading',
+    title: '스트레스를 이기는 나만의 방법',
+    ready: true,
+    lessons: [{ id: 'r2-1', title: '스트레스를 이기는 나만의 방법' }],
+  },
+  {
+    id: 'r3',
+    num: 3,
+    kind: 'reading',
+    title: '어려움을 이겨낸 순간',
+    ready: true,
+    lessons: [{ id: 'r3-1', title: '어려움을 이겨낸 순간' }],
+  },
+  {
+    id: 'r4',
+    num: 4,
+    kind: 'reading',
+    title: 'AI가 그린 그림은 누구의 것일까?',
+    ready: true,
+    lessons: [{ id: 'r4-1', title: 'AI가 그린 그림은 누구의 것일까?' }],
+  },
+  {
+    id: 'r5',
+    num: 5,
+    kind: 'reading',
+    title: '나를 움직이는 가치의 힘',
+    ready: true,
+    lessons: [{ id: 'r5-1', title: '나를 움직이는 가치의 힘' }],
+  },
+  {
+    id: 'r6',
+    num: 6,
+    kind: 'reading',
+    title: '환경 보호 캠페인 만들기',
+    ready: true,
+    lessons: [{ id: 'r6-1', title: '환경 보호 캠페인 만들기' }],
+  },
+  {
+    id: 'r7',
+    num: 7,
+    kind: 'reading',
+    title: '우리 동아리를 소개합니다',
+    ready: true,
+    lessons: [{ id: 'r7-1', title: '우리 동아리를 소개합니다' }],
+  },
+  {
+    id: 'r8',
+    num: 8,
+    kind: 'reading',
+    title: '세계 음식으로 만나는 문화',
+    ready: true,
+    lessons: [{ id: 'r8-1', title: '세계 음식으로 만나는 문화' }],
+  },
+  {
+    id: 'r9',
+    num: 9,
+    kind: 'reading',
+    title: '인공지능은 어떻게 배울까?',
+    ready: true,
+    lessons: [{ id: 'r9-1', title: '인공지능은 어떻게 배울까?' }],
+  },
+  {
+    id: 'r10',
+    num: 10,
+    kind: 'reading',
+    title: '안전한 자연 속 걷기, 부시워킹',
+    ready: true,
+    lessons: [{ id: 'r10-1', title: '안전한 자연 속 걷기, 부시워킹' }],
+  },
+]
+
+export const readyReadings = readings.filter((r) => r.ready)

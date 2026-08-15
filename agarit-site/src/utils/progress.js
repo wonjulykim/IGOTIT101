@@ -3,9 +3,10 @@ const STORAGE_KEY = 'agarit-progress-v1'
 function load() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    return raw ? JSON.parse(raw) : { completedLessons: {}, quizScores: {} }
+    const data = raw ? JSON.parse(raw) : {}
+    return { completedLessons: {}, quizScores: {}, writingScores: {}, ...data }
   } catch {
-    return { completedLessons: {}, quizScores: {} }
+    return { completedLessons: {}, quizScores: {}, writingScores: {} }
   }
 }
 
@@ -38,6 +39,18 @@ export function saveQuizScore(chapterId, quizType, score, total) {
 export function getQuizScore(chapterId, quizType) {
   const data = load()
   return data.quizScores?.[chapterId]?.[quizType] || null
+}
+
+export function saveWritingResult(unitId, questionId, result) {
+  const data = load()
+  if (!data.writingScores[unitId]) data.writingScores[unitId] = {}
+  data.writingScores[unitId][questionId] = { ...result, at: Date.now() }
+  save(data)
+}
+
+export function getWritingResult(unitId, questionId) {
+  const data = load()
+  return data.writingScores?.[unitId]?.[questionId] || null
 }
 
 export function resetProgress() {

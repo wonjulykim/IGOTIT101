@@ -1,9 +1,10 @@
 import { isShortAnswerCorrect, essayKeywordHits } from '../utils/grading'
 import { XP_RULES } from '../utils/gamification'
 import { getChapter } from '../data/chapters'
+import AiEssayGrader from './AiEssayGrader'
 import './QuestionCard.css'
 
-export default function QuestionCard({ q, index, value, onChange, submitted, showChapterTag }) {
+export default function QuestionCard({ q, index, value, onChange, submitted, showChapterTag, unitId }) {
   const chapter = showChapterTag ? getChapter(q.chapterId) : null
   return (
     <div className="qcard">
@@ -11,14 +12,28 @@ export default function QuestionCard({ q, index, value, onChange, submitted, sho
         <span className="qcard-num">Q{index + 1}</span>
         {chapter && <span className="qcard-tag">{chapter.num}장</span>}
         <span className={`qcard-type qtype-${q.type}`}>
-          {q.type === 'mcq' ? '객관식' : q.type === 'short' ? '단답형' : '서술형'}
+          {q.type === 'mcq' ? '객관식' : q.type === 'short' ? '단답형' : q.rubric ? '서술형/논술형' : '서술형'}
         </span>
+        {q.difficulty && <span className="qcard-badge">난이도 {q.difficulty}</span>}
+        {q.score && <span className="qcard-badge">배점 {q.score}점</span>}
       </div>
       <p className="qcard-question">{q.q}</p>
+      {q.conditions?.length > 0 && (
+        <div className="qcard-conditions">
+          <strong>조건</strong>
+          <ul>
+            {q.conditions.map((c, i) => (
+              <li key={i}>{c}</li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {q.type === 'mcq' && <MCQBody q={q} value={value} onChange={onChange} submitted={submitted} />}
       {q.type === 'short' && <ShortBody q={q} value={value} onChange={onChange} submitted={submitted} />}
-      {q.type === 'essay' && <EssayBody q={q} value={value} onChange={onChange} submitted={submitted} />}
+      {q.type === 'essay' && (
+        <EssayBody q={q} value={value} onChange={onChange} submitted={submitted} unitId={unitId} />
+      )}
     </div>
   )
 }
@@ -83,19 +98,22 @@ function ShortBody({ q, value, onChange, submitted }) {
   )
 }
 
-function EssayBody({ q, value, onChange, submitted }) {
-  const result = submitted ? essayKeywordHits(value, q.keywords) : null
+function EssayBody({ q, value, onChange, submitted, unitId }) {
+  const result = submitted && q.keywords ? essayKeywordHits(value, q.keywords) : null
   return (
     <div>
       <textarea
         className="essay-input"
-        rows={5}
+        rows={q.rubric ? 8 : 5}
         placeholder="자신의 생각을 문장으로 서술해보세요."
         value={value || ''}
         disabled={submitted}
         onChange={(e) => onChange(e.target.value)}
       />
-      {submitted && (
+      {submitted && q.rubric && (
+        <AiEssayGrader q={q} studentAnswer={value} unitId={unitId} />
+      )}
+      {submitted && !q.rubric && (
         <div className="essay-feedback">
           <div className="essay-model">
             <strong>📖 모범답안</strong>

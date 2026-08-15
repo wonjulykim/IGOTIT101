@@ -10,6 +10,7 @@
 .hero-cta { display: inline-block; text-decoration: none; }
 
 .home-section-title { margin-bottom: 16px; }
+.home-section-gap { margin-top: 40px; }
 
 .chapter-grid {
   display: grid;

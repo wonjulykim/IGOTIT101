@@ -37,6 +37,7 @@ export default function Lesson() {
   const { chapter, lesson, prev, next } = info
   const effectiveBlocks = override?.blocks || content?.blocks
   const effectiveTitle = override?.title || lesson.title
+  const unitLabel = chapter.kind === 'reading' ? '편' : '장'
 
   function handleComplete() {
     const wasAlreadyDone = isLessonComplete(chapterId, lessonId)
@@ -48,7 +49,7 @@ export default function Lesson() {
   return (
     <article className="lesson-page">
       <div className="lesson-breadcrumb">
-        <Link to="/">차례</Link> <span>›</span> <span>{chapter.num}장 {chapter.title}</span>
+        <Link to="/">차례</Link> <span>›</span> <span>{chapter.num}{unitLabel} {chapter.title}</span>
         {isAdmin && (
           <Link to={`/admin/edit/${chapterId}/${lessonId}`} className="lesson-edit-link">
             ✏️ 이 레슨 편집
@@ -84,7 +85,7 @@ export default function Lesson() {
             </Link>
           ) : (
             <Link to={`/chapter/${chapterId}/quiz`} className="lesson-nav-link quiz">
-              {chapter.num}장 퀴즈 풀기 →
+              {chapter.num}{unitLabel} 퀴즈 풀기 →
             </Link>
           )}
         </div>

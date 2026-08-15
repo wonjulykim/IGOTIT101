@@ -51,3 +51,87 @@ export async function askTutor(messages, { maxTokens = 500, temperature = 0.5 } 
   }
   return reply
 }
+
+const GRADER_SYSTEM_PROMPT = `너는 한국 중·고등학교 영어과 서술형/논술형 쓰기 평가를 채점하는 전문 교사야.
+학생이 작성한 영어 답안을 아래에 주어지는 채점 루브릭에 따라 엄격하고 공정하게 채점한다.
+- 각 루브릭 항목(criterion)마다 해당 항목의 만점(maxScore) 이하의 정수 점수를 부여하고, 왜 그 점수를 줬는지 한국어로 간결하게 근거(reason)를 설명한다.
+- 조건(conditions)이 주어졌다면 학생 답안이 각 조건을 충족했는지 true/false로 판정한다.
+- 총점(totalScore)은 각 항목 점수의 합이며 만점(maxScore)을 넘을 수 없다.
+- feedback에는 학생에게 도움이 되는 한국어 피드백(잘한 점 1가지 이상, 개선할 점 1가지 이상)을 3~5문장으로 작성한다.
+- 반드시 아래 JSON 형식으로만 응답하고 다른 텍스트는 절대 포함하지 않는다:
+{"criteria":[{"name":"...", "score":0, "maxScore":0, "reason":"..."}],"conditionsCheck":[{"condition":"...", "met":true}],"totalScore":0,"maxScore":0,"feedback":"..."}`
+
+export async function gradeWriting({ prompt, conditions, model, similarAnswers, rubric, totalScore, studentAnswer }) {
+  const apiKey = process.env.OPENROUTER_API_KEY
+  if (!apiKey) {
+    throw new Error('OPENROUTER_API_KEY가 설정되지 않았습니다.')
+  }
+  if (!studentAnswer || !String(studentAnswer).trim()) {
+    throw new Error('채점할 답안이 비어있습니다.')
+  }
+
+  const context = [
+    `[문제] ${prompt || ''}`,
+    conditions?.length ? `[조건]\n${conditions.map((c) => `- ${c}`).join('\n')}` : null,
+    model ? `[모범답안 예시]\n${model}` : null,
+    similarAnswers?.length ? `[유사답안 예시]\n${similarAnswers.join('\n')}` : null,
+    rubric?.length
+      ? `[채점 루브릭]\n${rubric
+          .map(
+            (r) =>
+              `- ${r.criterion} (만점 ${r.maxScore}점): ${r.levels?.map((l) => `${l.score}점=${l.desc}`).join(' / ') || ''}`
+          )
+          .join('\n')}`
+      : null,
+    totalScore ? `[전체 만점] ${totalScore}점` : null,
+    `[학생 답안]\n${studentAnswer}`,
+  ]
+    .filter(Boolean)
+    .join('\n\n')
+
+  const res = await fetch(OPENROUTER_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${apiKey}`,
+      'HTTP-Referer': process.env.SITE_URL || 'https://agarit-101.local',
+      'X-Title': 'Agarit 101 AI Grader',
+    },
+    body: JSON.stringify({
+      model: process.env.OPENROUTER_MODEL || DEFAULT_MODEL,
+      messages: [
+        { role: 'system', content: GRADER_SYSTEM_PROMPT },
+        { role: 'user', content: context },
+      ],
+      max_tokens: 700,
+      temperature: 0.2,
+      response_format: { type: 'json_object' },
+    }),
+    signal: AbortSignal.timeout(30000),
+  })
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => '')
+    throw new Error(`OpenRouter 오류 (${res.status}): ${text.slice(0, 300)}`)
+  }
+
+  const data = await res.json()
+  const raw = data?.choices?.[0]?.message?.content
+  if (!raw) {
+    throw new Error('AI 채점 응답을 받지 못했습니다.')
+  }
+
+  try {
+    return JSON.parse(raw)
+  } catch {
+    const match = raw.match(/\{[\s\S]*\}/)
+    if (match) {
+      try {
+        return JSON.parse(match[0])
+      } catch {
+        // fall through to error below
+      }
+    }
+    throw new Error('AI 채점 결과를 해석하지 못했습니다. 다시 시도해주세요.')
+  }
+}
