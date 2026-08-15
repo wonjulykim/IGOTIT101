@@ -36,6 +36,37 @@ export const r10Quiz = {
   ],
   essay: [
     {
+      id: 'r10-essay-short',
+      subtype: '단문 서술형',
+      q: '부시워킹(또는 자연 활동)을 떠나기 전 지켜야 할 안전 수칙 중 한 가지를 골라, 그것이 왜 중요한지와 함께 3~5문장으로 서술하시오.',
+      standard: '[10영03-04] 친숙한 일반적 주제에 관한 글을 읽고 필자의 의도나 글의 목적을 파악할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '지문에 언급된 안전 수칙을 최소 한 가지 포함할 것'],
+      model:
+        'One important safety rule before going on a nature walk is to check the weather and park conditions in advance. This matters because conditions in natural areas can change very quickly, sometimes turning a safe trail into a dangerous one. For example, sudden rain can make a path slippery or cause a river to rise. Because of this, I think checking the weather is one of the simplest but most useful things a walker can do before setting out.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '안전 수칙 제시 및 이유 설명',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '지문의 안전 수칙 한 가지를 정확히 제시하고 그 이유를 구체적으로 설명함' },
+            { score: 2, desc: '안전 수칙은 제시했으나 이유 설명이 부족함' },
+            { score: 1, desc: '안전 수칙이나 이유를 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 개수 및 형식 준수',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장의 완전한 문장으로 서술함' },
+            { score: 1, desc: '문장 개수 조건을 지키지 않았거나 문장이 불완전함' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r10-essay-1',
       subtype: '서술형',
       q: '부시워킹(또는 등산이나 캠핑 등 자연 활동)을 떠나기 전 지켜야 할 안전 수칙을 아래 조건에 맞게 서술하시오.',

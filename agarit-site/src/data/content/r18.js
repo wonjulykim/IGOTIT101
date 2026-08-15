@@ -23,6 +23,22 @@ export const r18 = {
         ],
       },
       {
+        type: 'p',
+        text: 'Beyond wallets and artwork, upcycling has spread into many other areas of daily life. Old tires are turned into playground equipment or planters, worn-out jeans become sturdy bags, and broken furniture is repainted and reassembled into something entirely new. Because upcycling reuses materials that already exist, it requires less energy and fewer raw resources than making brand-new products from scratch. This makes it an appealing option not only for creative individuals like Tom and Marie, but also for anyone who wants to reduce waste in a simple, practical way.',
+      },
+      {
+        type: 'p',
+        text: 'Of course, upcycling is not always easy. Finding the right materials can take time, and turning something old into something both useful and attractive requires skill and patience. Still, more and more people are giving it a try, sharing their ideas and tutorials online so that others can learn from their successes and mistakes. As interest in sustainability continues to grow, upcycling seems likely to become an even more common part of how people think about the things they no longer need.',
+      },
+      {
+        type: 'p',
+        text: 'Schools and communities have also started to embrace upcycling as a hands-on way to teach students about sustainability. Some classrooms hold workshops where students turn old newspapers into notebooks or transform plastic bottles into pencil holders and planters. These small projects help students understand that everyday trash can still have value if people are willing to look at it differently. By practicing upcycling early, students may grow into adults who naturally think twice before throwing something away, choosing instead to imagine what it could become.',
+      },
+      {
+        type: 'p',
+        text: 'In the end, whether upcycling is viewed mainly as a business opportunity, an artistic outlet, or an educational activity, its core idea stays the same: something old does not have to become worthless. It simply needs someone willing to look at it in a new way.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 분사(현재분사/과거분사)의 형용사 역할',
         items: [

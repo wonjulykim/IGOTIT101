@@ -32,6 +32,37 @@ export const r29Quiz = {
   ],
   essay: [
     {
+      id: 'r29-essay-short',
+      subtype: '단문 서술형',
+      q: '지문에 나온 제스처(gesture)의 예시 중 하나를 골라, 문화마다 그 의미가 어떻게 다른지를 3~5문장으로 쓰시오.',
+      standard: '[10영04-01] 일상생활이나 친숙한 일반적 주제에 관하여 듣거나 읽고 세부 정보를 기록할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '지문에 나온 제스처 예시 한 가지와 문화별 의미 차이를 포함할 것'],
+      model:
+        'A head nod means "yes" in most cultures, but in Turkey, Greece, and Bulgaria, it actually means "no." This shows that the same gesture can carry completely opposite meanings depending on where you are. I think this is important to know before traveling, because misunderstanding a simple gesture could easily cause confusion or even offend someone without meaning to.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '제스처 예시 및 의미 차이',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '지문의 제스처 예시를 정확히 언급하고 문화별 의미 차이를 명확히 설명함' },
+            { score: 2, desc: '예시나 의미 차이 설명 중 하나가 미흡함' },
+            { score: 1, desc: '예시와 의미 차이를 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 사용',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장을 지켰으며 문법과 어휘 사용이 정확함' },
+            { score: 1, desc: '문장 수를 지키지 않았거나 오류가 다소 있음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r29-essay-1',
       subtype: '서술형',
       q: '이 글의 내용을 접속사(While 또는 but 등)를 활용하여 한 문장으로 요약하고, 제스처를 사용할 때 주의해야 할 점을 서술하시오.',

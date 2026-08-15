@@ -13,6 +13,14 @@ export const r29 = {
         text: 'For instance, nodding your head means "yes" in most cultures — but you should be careful, because this is not universal. In Turkey, Greece, and Bulgaria, a head nod actually means "no." In Japan, it carries a different meaning altogether: a nod from a Japanese person often signals that they are listening and want you to keep speaking, even if they do not necessarily agree with your opinion. The movements themselves are not the only thing that can vary across cultures — how often a person uses gestures at all is also shaped by their culture.',
       },
       {
+        type: 'p',
+        text: 'The "thumbs up" gesture is another example that can cause confusion across cultures. While it commonly signals approval or agreement in many Western countries, in parts of the Middle East and West Africa, the same gesture can be seen as rude or offensive. Similarly, the "OK" sign, made by touching the thumb and index finger together in a circle, means agreement in the United States, but in some other countries it can carry an entirely different, sometimes insulting meaning.',
+      },
+      {
+        type: 'p',
+        text: 'Even a gesture as simple as beckoning someone to come closer varies from place to place. In many Western countries, people wave others over with the palm facing up. However, in several Asian countries, waving someone toward you with the palm facing up is considered impolite or is reserved for calling animals, so people instead use a gesture with the palm facing down. Because gestures can carry such different meanings depending on where you are, it is always a good idea to observe how local people communicate nonverbally before relying on your own hand movements in an unfamiliar culture.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 양보의 접속사 while / 대조의 but',
         items: [

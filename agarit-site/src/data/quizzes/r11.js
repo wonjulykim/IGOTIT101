@@ -32,6 +32,37 @@ export const r11Quiz = {
   ],
   essay: [
     {
+      id: 'r11-essay-short',
+      subtype: '단문 서술형',
+      q: '고대 그리스 사회와 오늘날 우리 사회의 공통점 중 한 가지를 골라 3~5문장으로 서술하시오.',
+      standard: '[9영01-03] 친숙한 주제에 관한 담화나 글의 중심 내용을 파악한다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '지문에 언급된 근거를 한 가지 이상 포함할 것'],
+      model:
+        'One similarity between ancient Greek society and ours today is that both value education and organized government. Just like students today, young Greeks attended different kinds of schools to learn various subjects. Their cities were also run by governments centered around the polis, similar to how modern cities have city halls and local governments. This shows that even though thousands of years have passed, some basic parts of society have stayed the same.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '공통점 근거 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '지문의 근거를 활용해 공통점 한 가지를 명확히 제시함' },
+            { score: 2, desc: '공통점을 제시했으나 근거가 다소 막연함' },
+            { score: 1, desc: '공통점을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 개수 및 형식 준수',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장의 완전한 문장으로 서술함' },
+            { score: 1, desc: '문장 개수 조건을 지키지 않았거나 문장이 불완전함' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r11-essay-1',
       subtype: '서술형',
       q: '위 글을 읽고, 고대 그리스 사회와 오늘날 우리 사회의 공통점을 두 가지 이상 들어 요약하여 서술하시오.',

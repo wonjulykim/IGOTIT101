@@ -32,6 +32,41 @@ export const r2Quiz = {
   ],
   essay: [
     {
+      id: 'r2-essay-short',
+      subtype: '단문 서술형',
+      q: '스트레스 해소 저널링(stress-relief journaling)이 자신에게 도움이 될 것 같은지에 대한 생각을 3~5문장으로 쓰시오.',
+      standard: '[10공영1-02-02] 사실적 정보나 지식을 말이나 글로 전달한다. / [10공영1-02-04] 자신의 생각이나 의견을 표현한다.',
+      difficulty: '하',
+      score: 7,
+      conditions: [
+        '3~5문장으로 쓸 것',
+        '저널링 방법이 자신에게 도움이 될지 여부와 그 이유를 포함할 것',
+      ],
+      model:
+        'I think stress-relief journaling could help me manage my exam stress. Writing down my worries for just five minutes might make my mind feel less crowded before I start studying. I especially like the idea of writing a positive thought afterward, because I usually forget to think about solutions when I am anxious. I plan to try this method during my next exam period to see if it really works for me.',
+      totalScore: 7,
+      rubric: [
+        {
+          criterion: '자신의 생각과 이유 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '저널링이 도움이 될지에 대한 생각과 구체적인 이유를 명확히 제시함' },
+            { score: 2, desc: '생각만 제시하고 이유가 부족함' },
+            { score: 1, desc: '생각과 이유를 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 형식',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '3~5문장을 지키고 언어 형식이 정확함' },
+            { score: 2, desc: '문장 수는 지켰으나 오류가 다소 있음' },
+            { score: 1, desc: '문장 수를 지키지 않거나 오류가 많음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r2-essay-1',
       subtype: '논술형',
       q: '고등학생들이 겪는 스트레스의 원인을 한 가지 정하고, 이를 해소할 수 있는 실천 가능한 방안을 제안하는 글을 아래 조건에 맞게 영어로 작성하시오.',

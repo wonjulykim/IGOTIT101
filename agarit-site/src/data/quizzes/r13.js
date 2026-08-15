@@ -32,6 +32,37 @@ export const r13Quiz = {
   ],
   essay: [
     {
+      id: 'r13-essay-short',
+      subtype: '단문 서술형',
+      q: '위 글에서 설명한 화산 예측 방법(나뭇잎 색 변화 관찰)에 대한 자신의 생각을 3~5문장으로 쓰시오.',
+      standard: '[9영01-03] 친숙한 주제에 관한 담화나 글의 중심 내용을 파악한다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', 'carbon dioxide 또는 absorb 중 하나를 반드시 포함할 것'],
+      model:
+        'I think it is fascinating that scientists can predict volcanic eruptions just by studying the color of tree leaves. It makes sense that trees absorb the carbon dioxide released by rising magma and turn a brighter green as a result. This method seems especially helpful for volcanoes located in remote areas that are hard to monitor directly. I hope researchers continue improving this technique so that more communities can be warned before a dangerous eruption happens.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '내용 이해 및 필수 어휘 포함',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '나뭇잎 색 변화를 이용한 예측 원리를 정확히 이해하고 필수 단어를 포함함' },
+            { score: 2, desc: '이해가 다소 부정확하거나 필수 단어를 포함하지 않음' },
+            { score: 1, desc: '내용을 거의 이해하지 못함' },
+          ],
+        },
+        {
+          criterion: '문장 개수 및 형식 준수',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장의 완전한 문장으로 서술함' },
+            { score: 1, desc: '문장 개수 조건을 지키지 않았거나 문장이 불완전함' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r13-essay-1',
       subtype: '서술형',
       q: '아래 글을 읽고 요약하시오.',

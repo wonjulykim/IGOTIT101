@@ -32,6 +32,37 @@ export const r26Quiz = {
   ],
   essay: [
     {
+      id: 'r26-essay-short',
+      subtype: '단문 서술형',
+      q: '가상 합창단(virtual choir)이 만들어진 과정을 한 가지 이상 언급하며, 이에 대한 자신의 생각을 3~5문장으로 쓰시오.',
+      standard: '[10영03-01] 친숙한 일반적 주제에 관한 글을 읽고 세부 정보를 파악할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '가상 합창단이 만들어진 과정을 한 가지 이상 언급할 것'],
+      model:
+        'Whitacre asked singers around the world to record videos of themselves singing their parts and upload them online. Then, one participant helped combine all of the videos into a single performance. I think this is a wonderful way to create music, because it lets people who have never met work together on something beautiful. It also shows how much technology can help people share their talents with the world.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '제작 과정 언급 및 생각 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '가상 합창단 제작 과정을 정확히 언급하고 자신의 생각을 명확히 제시함' },
+            { score: 2, desc: '과정 언급이나 생각 제시 중 하나가 미흡함' },
+            { score: 1, desc: '과정과 생각을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 사용',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장을 지켰으며 문법과 어휘 사용이 정확함' },
+            { score: 1, desc: '문장 수를 지키지 않았거나 오류가 다소 있음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r26-essay-1',
       subtype: '서술형',
       q: '온라인 기술이 사람들의 협업(collaboration) 방식을 어떻게 바꾸었는지, 이 글의 사례를 활용하여 서술하시오.',

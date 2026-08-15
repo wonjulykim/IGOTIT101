@@ -17,6 +17,18 @@ export const r9 = {
         text: 'Another key feature of AI is machine learning. Just as children learn more as they grow, AI programs are designed to teach themselves in various ways. One common way is pattern recognition: by observing patterns in large amounts of data, AI programs can learn by themselves, becoming more capable as they process more and more information.',
       },
       {
+        type: 'p',
+        text: 'This structure inspired what scientists now call artificial neural networks. In a neural network, layers of artificial "neurons" pass information from one to the next, adjusting their connections whenever the network makes a mistake. Over time, and after seeing enough examples, the network becomes better at recognizing what it is looking for, whether that is a face in a photo, a spoken word, or a pattern in numbers.',
+      },
+      {
+        type: 'p',
+        text: "Today, this kind of learning powers many tools we use without even noticing. When a phone unlocks by recognizing your face, when a website suggests a song you might like, or when a translation app instantly changes one language into another, machine learning is usually working behind the scenes. Because these systems keep learning from new data, they tend to improve the more people use them.",
+      },
+      {
+        type: 'p',
+        text: 'Of course, AI is not perfect. Because it learns from data created by humans, it can sometimes repeat the same mistakes or biases found in that data. Researchers are therefore working hard to make AI systems more fair, more transparent, and easier for people to trust as they become a bigger part of daily life.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 수동태(be동사 + p.p.) + to부정사',
         items: [

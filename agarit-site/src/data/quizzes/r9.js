@@ -39,6 +39,37 @@ export const r9Quiz = {
   ],
   essay: [
     {
+      id: 'r9-essay-short',
+      subtype: '단문 서술형',
+      q: '위 글에서 설명한 AI의 학습 방식(패턴 인식 등)에 대한 자신의 생각을 3~5문장으로 쓰시오.',
+      standard: '[10영03-01] 친숙한 일반적 주제에 관한 글을 읽고 세부 정보를 파악할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', 'pattern recognition 또는 neuron 중 하나를 반드시 포함할 것'],
+      model:
+        'I found it interesting that AI learns in a way similar to how the human brain works. The idea of pattern recognition surprised me the most, because it means AI can improve just by looking at large amounts of data. I still wonder, though, how AI decides which patterns are actually important. Overall, I think machine learning is a powerful tool, but it still has a lot in common with how humans naturally learn.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '핵심 개념 이해 및 필수 어휘 포함',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '패턴 인식(또는 뉴런) 개념을 정확히 이해하고 필수 단어를 포함하여 서술함' },
+            { score: 2, desc: '개념 이해가 다소 부정확하거나 필수 단어를 포함하지 않음' },
+            { score: 1, desc: '개념을 거의 이해하지 못함' },
+          ],
+        },
+        {
+          criterion: '문장 개수 및 형식 준수',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장의 완전한 문장으로 서술함' },
+            { score: 1, desc: '문장 개수 조건을 지키지 않았거나 문장이 불완전함' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r9-essay-1',
       subtype: '서술형',
       q: '위 글을 읽고, AI가 스스로 학습하는 원리를 패턴 인식과 데이터 학습을 포함하여 자신의 말로 요약하여 서술하시오.',

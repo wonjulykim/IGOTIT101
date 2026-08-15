@@ -24,6 +24,14 @@ export const r7 = {
         text: 'A good club proposal clearly states the club\'s name, explains why it is needed, describes planned activities, and ends with a hopeful, persuasive conclusion.',
       },
       {
+        type: 'p',
+        text: "Before writing a proposal, it also helps to think about the reader's perspective. Teachers and school administrators usually want to know that a new club will not require too many extra resources, and that enough students are genuinely interested in joining. For this reason, many successful proposals include a rough estimate of how many students might join, along with a simple plan for where and how often the club will meet, so that the school can imagine exactly how the club would work in practice.",
+      },
+      {
+        type: 'p',
+        text: 'It is also useful to anticipate questions the reader might ask. For example, a proposal for a cooking club might need to explain how the group will pay for ingredients, and where students will be allowed to cook safely. Addressing these practical details in advance, rather than waiting to be asked, shows that the proposer has thought carefully about the idea and makes the proposal much more convincing.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: to부정사의 명사적 용법',
         items: [

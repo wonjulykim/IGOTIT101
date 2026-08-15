@@ -30,6 +30,38 @@ export const r20Quiz = {
   ],
   essay: [
     {
+      id: 'r20-essay-short',
+      subtype: '단문 서술형',
+      q: '글쓴이의 고민글을 읽고, 자신이라면 어떤 한 문장으로 위로해줄지 3~5문장으로 간단히 쓰시오.',
+      standard: '[10영04-03] 일상생활이나 친숙한 일반적 주제에 관해 자신의 의견이나 감정을 쓸 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '실제 위로의 말을 한 문장 이상 포함할 것'],
+      model:
+        'I would tell the writer, "It just takes time to find the right friends." Making close friends after only three months is hard for almost everyone. I would remind them that being kind to themselves matters just as much as making new friends. Things usually get better with a little more time.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '위로의 말 및 내용 완성도',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '실제 위로의 말을 포함하여 3~5문장 분량으로 자연스럽게 서술함' },
+            { score: 2, desc: '위로의 말은 있으나 문장 수나 내용 전개가 다소 부족함' },
+            { score: 1, desc: '위로의 말이 없거나 문장 수를 지키지 않음' },
+          ],
+        },
+        {
+          criterion: '언어 사용의 정확성',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '문법과 어휘 사용이 정확함' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 지장 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r20-essay-1',
       subtype: '서술형',
       q: '친구가 힘든 일을 겪고 있을 때 힘이 되어준 경험이 있다면(또는 앞으로 그렇게 하고 싶다면), 어떤 말이나 행동으로 위로했는지(또는 위로하고 싶은지) 서술하시오.',

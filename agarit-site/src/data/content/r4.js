@@ -13,6 +13,18 @@ export const r4 = {
         text: 'Looking ahead, if AI systems gain enough autonomy to make their own creative choices and develop a unique style, society may need entirely new legal frameworks to decide who — or what — should be recognized as the author, especially in projects where humans and AI collaborate closely.',
       },
       {
+        type: 'p',
+        text: 'Supporters of granting authorship to the prompt writer argue that using an AI art generator is similar to using a camera or a paintbrush — a tool that still requires human vision, decision-making, and effort to produce a meaningful result. From this view, the person who imagines the concept, chooses the style, and repeatedly adjusts the prompt until the image matches their intention deserves to be called the creator, even though a machine actually produced the final pixels.',
+      },
+      {
+        type: 'p',
+        text: "Critics disagree, pointing out that AI art generators are trained on enormous collections of images made by real human artists, often without those artists' permission. They argue that when an AI system produces a picture in the style of a particular painter, it may be borrowing more from that original artist's creativity than from the person typing the prompt. This raises a difficult question: should the artists whose work trained the AI also receive some form of credit or compensation, even if they had no direct role in creating the final image?",
+      },
+      {
+        type: 'p',
+        text: 'Governments and courts in different countries are only beginning to address these questions, and their approaches often differ. Some legal systems focus mainly on how much creative control a human exercised over the final result, while others are still deciding whether AI-assisted works can be protected at all. Because the technology is changing so quickly, many experts believe that any rule written today may need to be revised again within just a few years.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 복합관계대명사 whoever',
         items: [

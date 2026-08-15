@@ -17,6 +17,14 @@ export const r28 = {
         text: 'How can it be that we feel more positively toward people for whom we do favors? Psychologists call this "cognitive dissonance." When we do something we do not really want to do — like helping someone we dislike — a conflict arises between our thoughts and our actions, and we feel unhappy. To relieve this conflict, we often change one side or the other: since Franklin\'s enemy could not easily undo the favor he had done, his mind adjusted his feelings instead, deciding that he must not dislike Franklin as much as he thought.',
       },
       {
+        type: 'p',
+        text: 'This pattern of behavior is often called the "Ben Franklin effect" in his honor, and psychologists suggest it works because our minds strongly dislike inconsistency between what we believe and how we act. If you dislike someone but still find yourself helping them, your brain searches for a way to make sense of the situation. Since changing your past action is impossible, it becomes easier to change your opinion of the person instead, even without realizing that this shift in feeling has happened.',
+      },
+      {
+        type: 'p',
+        text: 'The same principle can appear in ordinary situations that have nothing to do with rivals or enemies. For instance, someone who reluctantly signs up for a difficult exercise class may start telling themselves that they actually enjoy exercising, simply because it feels uncomfortable to admit they are wasting their time and effort on something they dislike. In this way, cognitive dissonance is not just a clever trick for winning over an opponent — it is a natural part of how the human mind tries to stay consistent with itself.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 전치사 + 관계대명사 (for whom)',
         items: [

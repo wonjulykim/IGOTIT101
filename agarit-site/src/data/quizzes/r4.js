@@ -32,6 +32,41 @@ export const r4Quiz = {
   ],
   essay: [
     {
+      id: 'r4-essay-short',
+      subtype: '단문 서술형',
+      q: 'AI가 생성한 예술 작품의 저작권을 인간(개발자 또는 프롬프트 작성자)과 AI 중 누가 가져야 한다고 생각하는지 자신의 의견과 이유를 3~5문장으로 쓰시오.',
+      standard: '[10공영1-02-04] 자신의 생각이나 의견을 표현한다. / [10공영1-02-06] 어휘나 표현을 점검하여 내용을 명확하게 전달한다.',
+      difficulty: '하',
+      score: 7,
+      conditions: [
+        '3~5문장으로 쓸 것',
+        '저작권을 누가 가져야 하는지에 대한 자신의 입장과 이유를 포함할 것',
+      ],
+      model:
+        'In my opinion, the person who writes the prompt should hold the copyright for AI-generated art. Even though the AI produces the final image, the human still has to imagine the idea and choose the right words to describe it. Without a clear and creative prompt, the AI cannot create anything meaningful on its own. For this reason, I believe the prompt writer deserves to be treated as the true creator, similar to how a photographer is credited for a photo taken with a camera.',
+      totalScore: 7,
+      rubric: [
+        {
+          criterion: '입장과 이유 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '저작권을 누가 가져야 하는지에 대한 입장과 구체적인 이유를 명확히 제시함' },
+            { score: 2, desc: '입장만 제시하고 이유가 부족함' },
+            { score: 1, desc: '입장과 이유를 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 형식',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '3~5문장을 지키고 언어 형식이 정확함' },
+            { score: 2, desc: '문장 수는 지켰으나 오류가 다소 있음' },
+            { score: 1, desc: '문장 수를 지키지 않거나 오류가 많음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r4-essay-1',
       subtype: '논술형',
       q: '위 글을 읽고 AI가 생성한 예술 작품의 저작권을 누가 가져야 하는지에 대한 의견을 아래 조건에 맞게 영어로 작성하시오.',

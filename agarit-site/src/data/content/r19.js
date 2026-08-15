@@ -14,7 +14,15 @@ export const r19 = {
       },
       {
         type: 'p',
+        text: 'In addition to the numbers on the label, it helps to pay attention to the serving size listed at the top. All the information below it — calories, nutrients, and percent daily values — is based on that single serving, not the entire package. This matters because many packages that look like a single portion actually contain two or three servings. If you eat the whole bag of chips without checking the serving size, you might end up consuming far more calories and sodium than you realize.',
+      },
+      {
+        type: 'p',
         text: 'Imagine you are comparing two kinds of cake at a bakery: a cheesecake and a chestnut cake. The chestnut cake has more dietary fiber, vitamin D, and minerals than the cheesecake, but it has less cholesterol, saturated fat, and sodium. From a health point of view, which cake would you choose, and why?',
+      },
+      {
+        type: 'p',
+        text: 'Learning to read nutrition labels is a skill that becomes easier with practice. Over time, comparing labels before you buy food can help you build healthier habits, such as choosing snacks with more fiber and less added sugar. It will not turn every meal into a perfectly healthy one, but knowing what you are eating gives you the power to make more informed choices.',
       },
       {
         type: 'callout',

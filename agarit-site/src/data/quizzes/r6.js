@@ -32,6 +32,41 @@ export const r6Quiz = {
   ],
   essay: [
     {
+      id: 'r6-essay-short',
+      subtype: '단문 서술형',
+      q: '해양 플라스틱 오염을 줄이기 위해 자신이 오늘부터 실천할 수 있는 행동 한 가지와 그 이유를 3~5문장으로 쓰시오.',
+      standard: '[9영02-04] 친숙한 주제에 관해 경험이나 계획을 설명한다. / [9영02-05] 친숙한 주제에 관해 일이나 사건의 논리적 관계를 설명한다.',
+      difficulty: '하',
+      score: 7,
+      conditions: [
+        '3~5문장으로 쓸 것',
+        '실천 가능한 행동 한 가지와 그 이유를 포함할 것',
+      ],
+      model:
+        "Starting today, I will carry a reusable water bottle instead of buying plastic bottles every day. This small change can reduce the amount of plastic waste that might end up in the ocean. I used to buy a new bottle almost every day without thinking about where it would go afterward. Now that I understand how harmful plastic can be to sea animals, I want to make better choices whenever I can.",
+      totalScore: 7,
+      rubric: [
+        {
+          criterion: '실천 행동과 이유 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '실천 가능한 행동과 그 이유를 구체적으로 제시함' },
+            { score: 2, desc: '행동이나 이유 중 하나만 제시함' },
+            { score: 1, desc: '행동과 이유를 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 형식',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '3~5문장을 지키고 언어 형식이 정확함' },
+            { score: 2, desc: '문장 수는 지켰으나 오류가 다소 있음' },
+            { score: 1, desc: '문장 수를 지키지 않거나 오류가 많음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r6-essay-1',
       subtype: '논술형',
       q: '위 글을 참고하여, 환경 문제의 심각성을 알리고 작은 실천이 변화를 만들 수 있다는 메시지를 전하는 글을 아래 조건에 맞게 영어로 작성하시오.',

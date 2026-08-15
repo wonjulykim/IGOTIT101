@@ -32,6 +32,41 @@ export const r1Quiz = {
   ],
   essay: [
     {
+      id: 'r1-essay-short',
+      subtype: '단문 서술형',
+      q: '지문에서 소개된 예방 방법 중 하나를 골라, 그것이 왜 효과적인지에 대한 자신의 생각을 3~5문장으로 쓰시오.',
+      standard: '[10공영1-02-02] 사실적 정보나 지식을 말이나 글로 전달한다. / [10공영1-02-04] 자신의 생각이나 의견을 표현한다.',
+      difficulty: '하',
+      score: 8,
+      conditions: [
+        '3~5문장으로 쓸 것',
+        '지문에 언급된 예방 방법(발신자 확인, 보안 소프트웨어 사용, 이중 인증 등) 중 최소 한 가지를 구체적으로 언급할 것',
+      ],
+      model:
+        "One simple way to prevent identity theft is checking the sender's email address before clicking any link. Many phishing emails look real, but they often come from strange addresses that do not match the company they claim to be from. If people take just a few seconds to look carefully, they can avoid giving away their passwords or bank details. I think this habit is effective because it costs nothing and can be done by anyone, even without special technical knowledge.",
+      totalScore: 8,
+      rubric: [
+        {
+          criterion: '예방 방법 제시 및 설명',
+          maxScore: 5,
+          levels: [
+            { score: 5, desc: '예방 방법을 구체적으로 언급하고 그것이 효과적인 이유를 논리적으로 설명함' },
+            { score: 3, desc: '예방 방법은 언급했으나 이유 설명이 부족함' },
+            { score: 1, desc: '예방 방법을 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 형식',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '3~5문장을 지키고 언어 형식이 정확함' },
+            { score: 2, desc: '문장 수는 지켰으나 오류가 다소 있음' },
+            { score: 1, desc: '문장 수를 지키지 않거나 오류가 많음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r1-essay-1',
       subtype: '논술형',
       q: '최근 온라인 신분 도용(Identity Theft)으로 인한 피해가 늘고 있다. 학교 신문에 이 문제의 위험성을 경고하고 예방법을 알리는 기고문을 아래 조건에 맞게 영어로 작성하시오.',

@@ -32,6 +32,37 @@ export const r14Quiz = {
   ],
   essay: [
     {
+      id: 'r14-essay-short',
+      subtype: '단문 서술형',
+      q: '동물원이 동물에게 도움이 되는지 해가 되는지에 대한 자신의 생각을 3~5문장으로 짧게 쓰시오.',
+      standard: '[9영02-06] 친숙한 주제에 관해 자신의 의견을 주장한다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '자신의 입장을 분명히 밝힐 것'],
+      model:
+        "I believe zoos can be helpful for animals if they are run responsibly. Many zoos today protect endangered species and give injured animals medical care they could not get in the wild. At the same time, I understand why some people worry that zoos take away an animal's freedom and natural behavior. Overall, I think the key is making sure zoos focus on the animals' well-being rather than just entertaining visitors.",
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '입장 제시 및 근거',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '자신의 입장을 분명히 밝히고 타당한 근거를 제시함' },
+            { score: 2, desc: '입장은 밝혔으나 근거가 부족함' },
+            { score: 1, desc: '입장이나 근거가 불분명함' },
+          ],
+        },
+        {
+          criterion: '문장 개수 및 형식 준수',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장의 완전한 문장으로 서술함' },
+            { score: 1, desc: '문장 개수 조건을 지키지 않았거나 문장이 불완전함' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r14-essay-1',
       subtype: '논술형',
       q: '아래 주장에 대해 위 글의 자료를 참고하여 조건에 맞게 찬성 또는 반대 의견을 쓰시오.\n"Do zoos help or harm animals?"',

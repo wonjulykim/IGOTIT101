@@ -34,6 +34,38 @@ export const r16Quiz = {
   ],
   essay: [
     {
+      id: 'r16-essay-short',
+      subtype: '단문 서술형',
+      q: '교복 착용에 대한 자신의 생각을 3~5문장으로 간단히 쓰시오.',
+      standard: '[10영04-03] 일상생활이나 친숙한 일반적 주제에 관해 자신의 의견이나 감정을 쓸 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '찬성 또는 반대 입장을 한 문장으로 밝힐 것'],
+      model:
+        "I think school uniforms are helpful for students. They save time in the morning because I don't have to choose what to wear. Uniforms also make it harder for students to judge each other based on clothing brands. For these reasons, I support wearing school uniforms.",
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '입장 제시 및 내용 완성도',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '입장을 분명히 밝히고 3~5문장 분량으로 내용을 자연스럽게 전개함' },
+            { score: 2, desc: '입장은 밝혔으나 문장 수나 내용 전개가 다소 부족함' },
+            { score: 1, desc: '입장이 불분명하거나 문장 수를 지키지 않음' },
+          ],
+        },
+        {
+          criterion: '언어 사용의 정확성',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '문법과 어휘 사용이 정확하며 의사소통에 지장이 없음' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 큰 지장은 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r16-essay-1',
       subtype: '논술형',
       q: '교복 착용에 대한 자신의 입장(찬성/반대)을 정하고, 위 대화에 나온 근거 이외의 근거를 들어 의견을 서술하시오.',

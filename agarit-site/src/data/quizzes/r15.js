@@ -35,6 +35,37 @@ export const r15Quiz = {
   ],
   essay: [
     {
+      id: 'r15-essay-short',
+      subtype: '단문 서술형',
+      q: '위 글에서 제시한 창의적 사고 방법 중 하나를 골라 3~5문장으로 짧게 서술하시오.',
+      standard: '[10영03-01] 친숙한 일반적 주제에 관한 글을 읽고 세부 정보를 파악할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '지문에 언급된 세 가지 방법 중 하나를 명시할 것'],
+      model:
+        'One way to think more creatively is to keep asking, "What if...?" instead of accepting the first answer that comes to mind. Gutenberg used this kind of thinking when he wondered what would happen if he combined a wine press with coin punches. I try to do something similar when I\'m stuck on a school project, asking myself odd questions to see if they lead anywhere useful. Even if most of these questions don\'t work, I think the habit itself makes it easier to notice good ideas when they appear.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '방법 제시의 명확성',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '지문의 방법을 정확히 명시하고 관련 내용을 구체적으로 서술함' },
+            { score: 2, desc: '방법을 언급했으나 설명이 다소 막연함' },
+            { score: 1, desc: '방법을 거의 명시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 개수 및 형식 준수',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장의 완전한 문장으로 서술함' },
+            { score: 1, desc: '문장 개수 조건을 지키지 않았거나 문장이 불완전함' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r15-essay-1',
       subtype: '서술형',
       q: '위 글에서 제시한 창의적 사고 방법 중 한 가지를 골라, 자신의 경험에 비추어 그 방법을 어떻게 실천할 수 있을지 서술하시오.',

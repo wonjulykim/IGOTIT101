@@ -32,6 +32,37 @@ export const r12Quiz = {
   ],
   essay: [
     {
+      id: 'r12-essay-short',
+      subtype: '단문 서술형',
+      q: '위 대화를 참고하여, 자신이 낯선 장소에서 길을 물어봤던 경험(또는 상상)을 3~5문장으로 짧게 서술하시오.',
+      standard: '[9영01-04] 친숙한 주제에 관한 담화나 글에서 일이나 사건의 논리적 관계를 파악한다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', 'next to, on the right 등 위치를 나타내는 표현을 최소 한 개 포함할 것'],
+      model:
+        "Last year, I got lost on the first day at my new school and had to ask a teacher for directions to the gym. She kindly told me that the gym was next to the cafeteria, right across from the main entrance. I was nervous about asking a stranger, but she was very friendly and made me feel comfortable. Since then, I always try to remember the names of a few big buildings so I can ask for directions more easily.",
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '경험 서술 및 위치 표현 사용',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '구체적인 경험을 서술하고 위치 표현을 정확히 포함함' },
+            { score: 2, desc: '경험 서술이 막연하거나 위치 표현이 부정확함' },
+            { score: 1, desc: '경험이나 위치 표현을 거의 포함하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 개수 및 형식 준수',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장의 완전한 문장으로 서술함' },
+            { score: 1, desc: '문장 개수 조건을 지키지 않았거나 문장이 불완전함' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r12-essay-1',
       subtype: '서술형',
       q: '위 대화를 참고하여, 학교(또는 낯선 장소)에서 새로 온 사람에게 특정 장소로 가는 길을 안내하는 대화문을 아래 조건에 맞게 영어로 작성하시오.',

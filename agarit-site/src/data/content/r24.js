@@ -25,6 +25,14 @@ export const r24 = {
         text: 'The gap between the highest emitter, China, and the lowest emitter, Canada, was about 10.2 billion tons — a striking difference that shows how unevenly CO2 emissions are distributed among these five countries. Because China\'s emissions are so much larger than the others, many experts believe that it is urgent for the Chinese government to take action to reduce CO2 emissions.',
       },
       {
+        type: 'p',
+        text: 'Several factors explain why some countries emit far more CO2 than others. Countries with large populations and heavy industries, such as factories, power plants, and steel mills, tend to release more carbon dioxide simply because they produce and consume so much energy. Many of these countries also rely heavily on coal and oil to generate electricity, and burning these fuels releases far more CO2 than cleaner sources like solar, wind, or hydroelectric power do.',
+      },
+      {
+        type: 'p',
+        text: 'The consequences of high CO2 emissions extend far beyond the countries that produce them, since greenhouse gases spread through the atmosphere and affect the entire planet. Rising global temperatures caused by these emissions have been linked to more frequent heat waves, melting glaciers, and extreme weather patterns around the world. For this reason, international cooperation is just as important as action within a single country. Governments can work together to set emission targets, invest in clean energy technology, and support developing nations in adopting greener practices, while ordinary citizens can also contribute by conserving electricity and choosing public transportation over private cars whenever possible.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 「it is 형용사 + for 목적어 + to부정사」',
         items: [

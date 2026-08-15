@@ -13,6 +13,14 @@ export const r11 = {
         text: 'Greek society was full of a rich culture, which meant ancient Greeks could enjoy exotic foods, good music, and literature, just as we do today. Greek cities were governed much like ours are today, too. Most early cities were called city-states, and each had its own government. The head of the government, called the polis, was located in the center of the city, which usually surrounded the acropolis — a high area that held a temple and religious shrines.',
       },
       {
+        type: 'p',
+        text: 'Education played an important role in the life of a young ancient Greek, especially for boys from wealthy families. They often attended schools where they studied reading, writing, mathematics, and music, and many also trained their bodies at a gymnasium, since the Greeks believed a strong mind needed a strong body as well. Girls, on the other hand, were usually educated at home, where they learned skills that would help them manage a household one day.',
+      },
+      {
+        type: 'p',
+        text: 'Food and family life were also central to daily routines. Families typically ate simple meals of bread, olives, cheese, and fish, often grown or caught nearby, and larger feasts were reserved for religious festivals or special celebrations. Every few years, city-states would even set aside their conflicts to gather for athletic competitions such as the Olympic Games, showing that shared traditions could unite the Greek world despite its many independent city-states.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 관계대명사의 계속적 용법(콤마 + which)',
         items: [

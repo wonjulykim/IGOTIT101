@@ -32,6 +32,37 @@ export const r25Quiz = {
   ],
   essay: [
     {
+      id: 'r25-essay-short',
+      subtype: '단문 서술형',
+      q: '지문에 나온 은유(metaphor) 예시 중 하나를 골라, 그것이 무엇을 비교하고 있는지를 3~5문장으로 쓰시오.',
+      standard: '[10영04-04] 주변의 대상이나 상황을 묘사하는 글을 쓸 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '지문에 나온 은유 표현 중 하나를 언급할 것'],
+      model:
+        '"Life is a roller coaster" is a metaphor from the passage. It compares life to a roller coaster, which goes up and down again and again. This means that life also has many ups and downs, such as happy moments and hard moments. Understanding this metaphor helps me accept difficult times as just one part of a much bigger ride.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '은유 언급 및 비교 설명',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '지문의 은유 표현을 정확히 언급하고 비교 대상을 명확히 설명함' },
+            { score: 2, desc: '은유 언급이나 비교 설명 중 하나가 다소 부족함' },
+            { score: 1, desc: '은유와 비교 설명을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 사용',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장을 지켰으며 문법과 어휘 사용이 정확함' },
+            { score: 1, desc: '문장 수를 지키지 않았거나 오류가 다소 있음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r25-essay-1',
       subtype: '서술형',
       q: '자신만의 은유(metaphor) 표현을 하나 만들고, 그것이 무엇을 비교하며 어떤 의미를 나타내는지 서술하시오.',

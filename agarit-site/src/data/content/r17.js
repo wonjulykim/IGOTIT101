@@ -17,6 +17,14 @@ export const r17 = {
         text: 'Four days after her arrest, a boycott of the Montgomery bus system began. The boycott lasted 381 days and ended on December 20, 1956, when the U.S. Supreme Court ruled that the segregation law was unconstitutional. That ruling sparked many successful non-violent civil rights protests across the country — and it all began with Rosa Parks\' small decision on a bus.',
       },
       {
+        type: 'p',
+        text: "News of Rosa Parks' arrest spread quickly through Montgomery's Black community, and local leaders decided that the moment called for a coordinated response rather than isolated anger. Community leaders, including local pastors, organized carpools and encouraged people to walk to work rather than ride the bus, even when the weather turned cold. Many people who depended on the bus system for their daily commute chose to walk for miles instead, showing that ordinary citizens were willing to make real sacrifices for a cause they believed in.",
+      },
+      {
+        type: 'p',
+        text: "Today, Rosa Parks is often remembered as \"the mother of the civil rights movement,\" and her story is taught in schools around the world as an example of how a single peaceful act of courage can inspire lasting change. Her decision reminds us that standing up for what is right does not always require loud protests — sometimes, quietly refusing to accept an unfair rule can be just as powerful.",
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 동명사(-ing)로 시작하는 명사구',
         items: [

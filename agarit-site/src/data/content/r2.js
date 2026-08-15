@@ -13,6 +13,14 @@ export const r2 = {
         text: 'This method asks students to write down their feelings and worries about exams for just five minutes each day, and then to write a few positive thoughts or possible solutions. Research from psychology studies shows that this kind of expressive writing can lower stress and improve mental health. The practice helps students understand their feelings, reduce anxiety, and build a more positive mindset. It also encourages self-reflection, which can lead to better study habits and more confidence over time.',
       },
       {
+        type: 'p',
+        text: 'Getting started with stress-relief journaling does not require any special tools. All a student needs is a notebook, or even a blank page on a phone, and a few quiet minutes before or after studying. Some students prefer to write in the morning, so that they begin the day with a clear mind, while others find it more helpful to write at night, when they can look back over everything that happened and let go of small worries before sleeping. There is no single correct time to journal — the most important thing is choosing a moment that fits naturally into the daily routine, so the habit is more likely to continue.',
+      },
+      {
+        type: 'p',
+        text: 'Teachers who have tried this method in their classrooms report that students often need a week or two before they feel comfortable writing honestly about their feelings. At first, some students only write short, simple sentences, but over time many begin to notice patterns in what causes their stress, such as a particular subject or an upcoming test. Recognizing these patterns can be just as useful as the writing itself, because it allows students to plan ahead and prepare for stressful moments instead of being surprised by them.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 동명사(-ing)의 목적어 역할',
         items: [

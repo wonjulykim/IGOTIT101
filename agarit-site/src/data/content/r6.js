@@ -13,6 +13,14 @@ export const r6 = {
         text: 'Much of this plastic comes from everyday habits — throwing away plastic bottles, bags, and packaging without thinking about where they end up. Once plastic reaches the ocean, it can stay there for hundreds of years, harming fish, birds, and other sea life. Scientists say that even small daily choices, like using a reusable water bottle or picking up litter, can help reduce this pollution over time.',
       },
       {
+        type: 'p',
+        text: 'Over time, ocean plastic does not simply disappear — sunlight and waves slowly break it into smaller and smaller pieces called microplastics. These tiny fragments are often too small to see easily, but fish and other small sea creatures still swallow them along with their food. Because larger animals eat smaller ones, these microplastics can move up the food chain, eventually ending up in seafood that people eat. Scientists are still studying exactly how this affects human health, but many researchers agree that reducing plastic pollution at its source is safer than waiting to find out.',
+      },
+      {
+        type: 'p',
+        text: 'Individual habits matter, but many experts also point to bigger changes that could make a real difference, such as companies using less plastic packaging and cities improving how they collect and recycle waste. Some coastal communities have started organizing regular beach clean-up events, where volunteers gather to collect trash before it can wash back out to sea. Combining these larger community efforts with everyday personal choices, like carrying a reusable bag or avoiding single-use straws, gives ocean life a better chance to recover.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 목적격 관계대명사 생략',
         items: [

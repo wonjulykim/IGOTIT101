@@ -35,6 +35,37 @@ export const r27Quiz = {
   ],
   essay: [
     {
+      id: 'r27-essay-short',
+      subtype: '단문 서술형',
+      q: '아버지가 탄 빵을 좋아한다고 말한 진짜 이유를 언급하고, 그에 대한 자신의 생각을 3~5문장으로 쓰시오.',
+      standard: '[10영04-03] 일상생활이나 친숙한 일반적 주제에 관해 자신의 의견이나 감정을 쓸 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '아버지가 탄 빵을 좋아한다고 말한 진짜 이유를 언급할 것'],
+      model:
+        "The father said he loved burnt bread because he understood how tired his wife was, and he did not want to hurt her feelings with harsh words. I think this shows a very kind and thoughtful way of loving someone. Small lies like this, told to protect someone's feelings, can sometimes be more important than being completely honest. This story reminds me to be more patient with the people I live with.",
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '이유 언급 및 생각 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '아버지의 진짜 이유를 정확히 언급하고 자신의 생각을 명확히 제시함' },
+            { score: 2, desc: '이유 언급이나 생각 제시 중 하나가 미흡함' },
+            { score: 1, desc: '이유와 생각을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 사용',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장을 지켰으며 문법과 어휘 사용이 정확함' },
+            { score: 1, desc: '문장 수를 지키지 않았거나 오류가 다소 있음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r27-essay-1',
       subtype: '서술형',
       q: '이 글의 아버지처럼, 상대방을 배려하기 위해 솔직한 말 대신 다른 말이나 행동을 했던 경험(또는 앞으로 그렇게 하고 싶은 상황)을 서술하시오.',

@@ -32,6 +32,37 @@ export const r30Quiz = {
   ],
   essay: [
     {
+      id: 'r30-essay-short',
+      subtype: '단문 서술형',
+      q: 'Kumari가 한국어를 배운 이유를 언급하고, 그 이야기를 읽고 느낀 점을 3~5문장으로 쓰시오.',
+      standard: '[10영04-03] 일상생활이나 친숙한 일반적 주제에 관해 자신의 의견이나 감정을 쓸 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', 'Kumari가 한국어를 배운 이유를 언급할 것'],
+      model:
+        'Kumari learned Korean so that she could read books to her son one day. I think this shows how much a parent can want to give something meaningful to their child, even if it takes a lot of effort. Her thank-you note also shows that small acts of help, like teaching someone to read, can mean a great deal to another person. This story made me want to volunteer and help others whenever I have the chance.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '이유 언급 및 느낀 점',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: 'Kumari가 한국어를 배운 이유를 정확히 언급하고 느낀 점을 명확히 서술함' },
+            { score: 2, desc: '이유 언급이나 느낀 점 중 하나가 미흡함' },
+            { score: 1, desc: '이유와 느낀 점을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 사용',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장을 지켰으며 문법과 어휘 사용이 정확함' },
+            { score: 1, desc: '문장 수를 지키지 않았거나 오류가 다소 있음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r30-essay-1',
       subtype: '서술형',
       q: '이 글의 민지처럼, 누군가를 돕거나 봉사한 경험(또는 앞으로 하고 싶은 봉사활동)에 대해 서술하시오.',

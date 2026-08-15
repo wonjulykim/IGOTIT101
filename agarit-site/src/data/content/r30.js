@@ -17,6 +17,14 @@ export const r30 = {
         text: 'When vacation ended, I could not continue volunteering any longer. On the last day, Kumari gave me a box of Himalayan black tea along with a thank-you note written in Korean, thanking me for helping her learn to read books to her son and for helping her feel that her dream was finally within reach.',
       },
       {
+        type: 'p',
+        text: 'That night, I read Kumari\'s note over and over again in my room. Her handwriting was still a little uneven, since she had only been learning Korean letters for a few months, but every word had clearly been chosen with care. I realized that teaching her to read had given her something far more valuable than just new vocabulary — it had given her the confidence to write her own feelings down in a language that was not her own.',
+      },
+      {
+        type: 'p',
+        text: 'After that summer ended, Kumari and I kept in touch through occasional messages, and she told me that she practiced reading with her son almost every night. Whenever I felt unsure about continuing to volunteer somewhere new, I would think back to her bright smile on the last day of class, and I understood that the time I had given up was returned to me many times over, in the form of a genuine friendship and a memory I would carry with me for a long time.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 「so + 형용사 + that」 구문',
         items: [

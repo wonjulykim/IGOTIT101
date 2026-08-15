@@ -16,6 +16,14 @@ export const r1 = {
         text: 'These threats are getting more serious every year. Recent reports show that phishing attacks have risen by almost half since 2021, and more than a third of all attacks now target individuals rather than companies. The financial damage caused by malware around the world has also grown from millions of dollars to tens of billions of dollars in just a few years.',
       },
       {
+        type: 'p',
+        text: 'Once someone\'s identity has been stolen, the effects can last far longer than the crime itself. Victims often discover the problem only after strange charges appear on their bank statements or debt collectors start contacting them about loans they never took out. Fixing the damage can take months, since victims must contact banks, credit agencies, and sometimes the police to prove that they did not make the purchases themselves. Meanwhile, the stress of not knowing how much personal information has been exposed can affect a person\'s daily life, making them anxious about using the internet at all.',
+      },
+      {
+        type: 'p',
+        text: 'Experts agree that a few simple habits can lower the risk significantly. Using a different, strong password for each online account makes it harder for thieves to break into multiple accounts at once, even if one password is leaked. Turning on two-factor authentication, which requires a second code sent to a phone or email, adds an extra layer of protection that a stolen password alone cannot bypass. Regularly checking bank and credit card statements also helps people spot suspicious activity early, before the damage grows larger. None of these steps guarantees complete safety, but together they make identity theft much less likely to succeed.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 주격 관계대명사 that',
         items: [

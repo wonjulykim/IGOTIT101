@@ -17,6 +17,14 @@ export const r26 = {
         text: 'To make his idea a reality, Whitacre went through several steps. First, he asked fans to download his musical work. Then, he posted a video of himself conducting along with piano music, and the singers watched it to learn their parts on their own. Soon, 185 singers from 12 countries uploaded their videos. Thanks to the help of a participant who offered to edit the recordings, all of the individual videos were combined into a single, unified performance.',
       },
       {
+        type: 'p',
+        text: 'The success of this first virtual choir encouraged Whitacre to continue the project on an even bigger scale in the following years. Singers who once felt isolated, especially those living in small towns without a local choir to join, suddenly found a way to perform alongside people from completely different countries and cultures. Many participants said that being part of the virtual choir gave them a sense of belonging they had never experienced before, since music no longer depended on being in the right place at the right time.',
+      },
+      {
+        type: 'p',
+        text: 'The virtual choir project also changed the way many people thought about technology and art. Instead of viewing computers and the internet as things that separate people from real human connection, Whitacre\'s project showed that technology could actually bring people together in a deeply emotional and creative way. Today, similar online collaborations exist not only in music but in other art forms as well, as more and more artists look for creative ways to connect with audiences and collaborators around the world.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 가정법 If (조건을 나타내는 if절)',
         items: [

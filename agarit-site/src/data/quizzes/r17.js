@@ -32,6 +32,38 @@ export const r17Quiz = {
   ],
   essay: [
     {
+      id: 'r17-essay-short',
+      subtype: '단문 서술형',
+      q: 'Rosa Parks의 결심에서 가장 인상 깊은 점이 무엇인지 3~5문장으로 간단히 쓰시오.',
+      standard: '[10영04-01] 일상생활이나 친숙한 일반적 주제에 관하여 듣거나 읽고 세부 정보를 기록할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '인상 깊은 점 한 가지를 구체적으로 밝힐 것'],
+      model:
+        "The most impressive part of the story is that Rosa Parks stayed calm and quiet when she refused to give up her seat. She did not shout or fight; she simply chose not to move. Her small, peaceful action ended up leading to a huge change in the law. This shows that one person's quiet courage can inspire many others.",
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '인상 깊은 점 제시 및 내용 완성도',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '인상 깊은 점을 구체적으로 밝히고 3~5문장 분량으로 자연스럽게 서술함' },
+            { score: 2, desc: '인상 깊은 점은 밝혔으나 문장 수나 내용 전개가 다소 부족함' },
+            { score: 1, desc: '인상 깊은 점이 불분명하거나 문장 수를 지키지 않음' },
+          ],
+        },
+        {
+          criterion: '언어 사용의 정확성',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '문법과 어휘 사용이 정확함' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 지장 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r17-essay-1',
       subtype: '서술형',
       q: 'Rosa Parks의 작은 결심이 어떻게 큰 사회적 변화로 이어졌는지, 사건의 순서에 따라 서술하시오.',

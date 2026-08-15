@@ -35,6 +35,37 @@ export const r28Quiz = {
   ],
   essay: [
     {
+      id: 'r28-essay-short',
+      subtype: '단문 서술형',
+      q: 'Franklin이 자신을 비판한 사람에게 어떤 행동을 했는지 언급하고, 그 행동이 왜 효과가 있었는지를 3~5문장으로 쓰시오.',
+      standard: '[10영03-02] 친숙한 일반적 주제에 관한 글을 읽고 주제 및 요지를 파악할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', 'Franklin의 행동과 그것이 효과가 있었던 이유를 포함할 것'],
+      model:
+        "Franklin asked his enemy to lend him a rare book, even though the man had criticized him harshly before. This worked because once the man had done Franklin a favor, it became uncomfortable for his mind to still see Franklin as an enemy. To reduce this discomfort, he started to feel more positively toward Franklin instead. This shows that helping someone can sometimes change our feelings about them more than words ever could.",
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '행동 및 이유 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: 'Franklin의 행동과 그것이 효과가 있었던 이유를 정확히 제시함' },
+            { score: 2, desc: '행동이나 이유 중 하나가 미흡함' },
+            { score: 1, desc: '행동과 이유를 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 사용',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장을 지켰으며 문법과 어휘 사용이 정확함' },
+            { score: 1, desc: '문장 수를 지키지 않았거나 오류가 다소 있음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r28-essay-1',
       subtype: '서술형',
       q: '인지부조화(cognitive dissonance) 이론을 자신의 경험이나 주변에서 본 사례에 적용하여 설명하시오.',

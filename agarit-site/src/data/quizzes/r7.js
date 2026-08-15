@@ -32,6 +32,41 @@ export const r7Quiz = {
   ],
   essay: [
     {
+      id: 'r7-essay-short',
+      subtype: '단문 서술형',
+      q: '자신이 만들고 싶은 동아리 이름과 그 동아리가 필요한 이유를 3~5문장으로 쓰시오.',
+      standard: '[9영02-06] 친숙한 주제에 관해 자신의 의견을 주장한다. / [9영02-08] 간단한 일기, 편지, 이메일 등의 글을 쓴다.',
+      difficulty: '하',
+      score: 6,
+      conditions: [
+        '3~5문장으로 쓸 것',
+        '동아리명과 그 동아리가 필요한 이유를 포함할 것',
+      ],
+      model:
+        'I would like to start a Board Game Club at our school. Many students enjoy playing board games, but there is no regular time or place for them to do so together. This club would give students a fun way to relax and make new friends after class. It could also help students practice skills like problem-solving and teamwork while playing games with others.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '동아리명과 필요성 제시',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '동아리명과 그것이 필요한 이유를 구체적으로 제시함' },
+            { score: 2, desc: '동아리명이나 이유 중 하나만 제시함' },
+            { score: 1, desc: '동아리명과 이유를 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 형식',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '3~5문장을 지키고 언어 형식이 정확함' },
+            { score: 2, desc: '문장 수는 지켰으나 오류가 다소 있음' },
+            { score: 1, desc: '문장 수를 지키지 않거나 오류가 많음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r7-essay-1',
       subtype: '서술형',
       q: '위 제안서의 형식을 참고하여, 친구들의 흥미와 재능을 키울 수 있는 새로운 동아리를 하나 정하고 개설을 제안하는 글을 아래 조건에 맞게 영어로 작성하시오.',

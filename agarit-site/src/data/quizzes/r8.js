@@ -32,6 +32,41 @@ export const r8Quiz = {
   ],
   essay: [
     {
+      id: 'r8-essay-short',
+      subtype: '단문 서술형',
+      q: '지문에서 소개된 멕시코 음식 외에, 자신이 먹어보고 싶은 다른 나라의 음식과 그 이유를 3~5문장으로 쓰시오.',
+      standard: '[9영02-04] 친숙한 주제에 관해 경험이나 계획을 설명한다. / [9영02-06] 친숙한 주제에 관해 자신의 의견을 주장한다.',
+      difficulty: '하',
+      score: 6,
+      conditions: [
+        '3~5문장으로 쓸 것',
+        '먹어보고 싶은 나라의 음식과 그 이유를 포함할 것',
+      ],
+      model:
+        'I would like to try Vietnamese food, especially a noodle soup called pho. I have seen pictures of it online, and it looks fresh and delicious with lots of herbs on top. I am curious about how the broth is made, since I heard it takes a long time to prepare properly. Trying this dish would help me learn more about Vietnamese culture, just like tasting Mexican food taught me about Mexico.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '음식과 이유 제시',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '먹어보고 싶은 음식과 그 이유를 구체적으로 제시함' },
+            { score: 2, desc: '음식이나 이유 중 하나만 제시함' },
+            { score: 1, desc: '음식과 이유를 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 형식',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '3~5문장을 지키고 언어 형식이 정확함' },
+            { score: 2, desc: '문장 수는 지켰으나 오류가 다소 있음' },
+            { score: 1, desc: '문장 수를 지키지 않거나 오류가 많음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r8-essay-1',
       subtype: '서술형',
       q: "'세계 문화 이해' 주간을 맞아 세계 여러 나라의 음식을 통해 문화의 다양성을 경험했다고 가정하고, 아래 조건에 맞게 체험 보고서·블로그 글·일기 중 하나의 형식을 선택하여 영어로 작성하시오.",

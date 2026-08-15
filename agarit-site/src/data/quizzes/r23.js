@@ -34,6 +34,37 @@ export const r23Quiz = {
   ],
   essay: [
     {
+      id: 'r23-essay-short',
+      subtype: '단문 서술형',
+      q: '탄산음료 속 산이 몸에 미치는 부정적 영향 중 한 가지를 골라, 그것이 무엇인지와 이를 줄이기 위한 간단한 방법을 3~5문장으로 쓰시오.',
+      standard: '[10영03-01] 친숙한 일반적 주제에 관한 글을 읽고 세부 정보를 파악할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '지문에 언급된 부정적 영향 한 가지와 이를 줄이는 방법을 포함할 것'],
+      model:
+        'One negative effect of the acid in soda is that it can damage tooth enamel over time. This can make it much easier for tooth decay to happen if soda is drunk often. To reduce this risk, I try to drink water right after having soda. I also try not to brush my teeth immediately after drinking soda, since that can spread the acid instead of removing it.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '부정적 영향 및 방법 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '지문의 부정적 영향 한 가지와 이를 줄이는 방법을 정확히 제시함' },
+            { score: 2, desc: '영향이나 방법 중 하나가 다소 막연하거나 부정확함' },
+            { score: 1, desc: '영향과 방법을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 사용',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장을 지켰으며 문법과 어휘 사용이 정확함' },
+            { score: 1, desc: '문장 수를 지키지 않았거나 오류가 다소 있음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r23-essay-1',
       subtype: '서술형',
       q: '이 글의 내용을 바탕으로, 탄산음료를 건강하게 즐기기 위한 자신만의 습관이나 규칙을 서술하시오.',

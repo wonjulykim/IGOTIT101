@@ -36,6 +36,38 @@ export const r19Quiz = {
   ],
   essay: [
     {
+      id: 'r19-essay-short',
+      subtype: '단문 서술형',
+      q: '자신이 좋아하는 간식 하나를 정하고, 그 간식의 영양성분표에서 어떤 점을 가장 눈여겨볼 것인지 3~5문장으로 간단히 쓰시오.',
+      standard: '[10영04-06] 일상생활이나 친숙한 일반적 주제에 관한 그림, 도표 등을 설명하는 글을 쓸 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '간식 이름과 살펴볼 항목을 한 가지 이상 포함할 것'],
+      model:
+        'My favorite snack is a chocolate cookie. When I check its nutrition facts label, I always look at the sugar and saturated fat first. These snacks often have a high percent daily value for both. Even though I enjoy eating them, checking the label helps me eat them in smaller amounts.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '간식 및 확인 항목 제시',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '간식과 살펴볼 항목을 구체적으로 밝히고 3~5문장 분량으로 자연스럽게 서술함' },
+            { score: 2, desc: '간식이나 항목 중 하나가 다소 막연함' },
+            { score: 1, desc: '간식이나 항목을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '언어 사용의 정확성',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '문법과 어휘 사용이 정확함' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 지장 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r19-essay-1',
       subtype: '서술형',
       q: '평소 자신이 즐겨 먹는 간식이나 음식 두 가지를 골라, 영양성분표를 참고한다고 가정하고 어떤 것이 더 건강한 선택인지 비교하여 서술하시오.',

@@ -26,6 +26,37 @@ export const r24Quiz = {
   ],
   essay: [
     {
+      id: 'r24-essay-short',
+      subtype: '단문 서술형',
+      q: '표에서 이산화탄소를 가장 많이 배출한 국가를 언급하고, 이산화탄소 배출을 줄이기 위해 개인이 할 수 있는 노력 한 가지를 3~5문장으로 쓰시오.',
+      standard: '[10영04-06] 일상생활이나 친숙한 일반적 주제에 관한 그림, 도표 등을 설명하는 글을 쓸 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '표에서 배출량 1위 국가명을 언급할 것'],
+      model:
+        "According to the table, China was ranked highest in CO2 emissions among the five countries. This shows how much impact one country's energy use can have on the environment. As an individual, I can help reduce CO2 emissions by using public transportation instead of asking my parents to drive me everywhere. Turning off lights and unplugging devices when they are not in use is another small but helpful habit.",
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '국가명 언급 및 노력 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '표의 1위 국가를 정확히 언급하고 구체적인 개인 노력을 제시함' },
+            { score: 2, desc: '국가명 언급이나 노력 제시 중 하나가 미흡함' },
+            { score: 1, desc: '국가명과 노력을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 사용',
+          maxScore: 2,
+          levels: [
+            { score: 2, desc: '3~5문장을 지켰으며 문법과 어휘 사용이 정확함' },
+            { score: 1, desc: '문장 수를 지키지 않았거나 오류가 다소 있음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r24-essay-1',
       subtype: '서술형',
       q: '위 표를 참고하여, 이산화탄소 배출량을 줄이기 위해 국가 또는 개인이 할 수 있는 노력을 한 가지 이상 서술하시오.',

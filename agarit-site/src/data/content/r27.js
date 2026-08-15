@@ -17,6 +17,14 @@ export const r27 = {
         text: 'Later that night, before I went to bed, I asked my father if he had really liked the burnt bread. He wrapped me in his arms and replied, "Son, your mother put in a long, hard day at work, and she was exhausted. Sometimes we forget that, don\'t we? Besides, burnt bread never hurts anyone, but harsh words do." I have never forgotten what he said that night.',
       },
       {
+        type: 'p',
+        text: 'Now that I am older, I often think back to that night whenever I feel annoyed by a small mistake someone close to me has made. It is easy to point out flaws, especially in the people we live with every day, but my father\'s words taught me that criticizing every little thing rarely makes a relationship better. Instead, choosing to overlook small imperfections, or even finding something kind to say about them, can protect the other person\'s feelings without costing us anything at all.',
+      },
+      {
+        type: 'p',
+        text: 'I have also come to realize that my father\'s lesson was not really about bread at all. It was about learning to accept the imperfect people around us, understanding that everyone has hard days, and choosing patience over criticism. Whenever I catch myself about to complain over something small and unimportant, I try to remember my father wrapping me in his arms that night, and I ask myself whether the words I am about to say will help or hurt.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 「A, but B」 대조를 나타내는 등위접속사',
         items: [

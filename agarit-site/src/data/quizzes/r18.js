@@ -26,6 +26,38 @@ export const r18Quiz = {
   ],
   essay: [
     {
+      id: 'r18-essay-short',
+      subtype: '단문 서술형',
+      q: 'Tom과 Marie 중 자신의 생각과 더 가까운 사람을 고르고, 그 이유를 3~5문장으로 간단히 쓰시오.',
+      standard: '[10영03-01] 친숙한 일반적 주제에 관한 글을 읽고 세부 정보를 파악할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', 'Tom 또는 Marie 중 한 명을 명확히 선택할 것'],
+      model:
+        "I agree more with Marie's view of upcycling. I think turning old, unwanted items into art is a beautiful idea. It shows that even something people throw away can still have value. Marie's passion for giving old objects a new life inspires me to look at trash differently.",
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '입장 선택 및 내용 완성도',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '한 명을 명확히 선택하고 3~5문장 분량으로 이유를 자연스럽게 서술함' },
+            { score: 2, desc: '선택은 했으나 문장 수나 이유 전개가 다소 부족함' },
+            { score: 1, desc: '선택이 불분명하거나 문장 수를 지키지 않음' },
+          ],
+        },
+        {
+          criterion: '언어 사용의 정확성',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '문법과 어휘 사용이 정확함' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 지장 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r18-essay-1',
       subtype: '논술형',
       q: 'Tom과 Marie 중 자신의 생각과 더 가까운 사람을 고르고, 업사이클링의 가치에 대한 자신의 의견을 조건에 맞게 서술하시오.',

@@ -17,6 +17,14 @@ export const r25 = {
         text: '"Life is a roller coaster" is another good example. If you know that a roller coaster goes up and down, you can guess that this metaphor means life also has lots of ups and downs — moments of joy and moments of difficulty, one after another.',
       },
       {
+        type: 'p',
+        text: 'Metaphors are especially important to understand when you are learning a new language, because many everyday expressions cannot be understood by looking up each word separately in a dictionary. For example, native English speakers often say "time is money," meaning that time is valuable and should not be wasted, just like money. If you translated this phrase word for word without recognizing it as a metaphor, you might be confused about why anyone would compare time to money at all.',
+      },
+      {
+        type: 'p',
+        text: 'Metaphors also shape the way we think about abstract ideas, not just the way we talk about them. When people say "the world is a stage," they are suggesting that life is like a performance, with each person playing a role in front of an audience. Because metaphors connect something abstract, like time or life, to something concrete and familiar, like money or a stage, they make difficult ideas much easier to picture and remember. This is exactly why metaphors show up so often in advertising, political speeches, and even scientific explanations — a good metaphor can make a complicated idea suddenly feel simple and clear.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 「관계대명사 + be동사」의 생략',
         items: [

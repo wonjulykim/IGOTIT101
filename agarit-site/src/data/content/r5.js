@@ -28,6 +28,14 @@ export const r5 = {
         text: 'Here is one example of how a value can be described in writing: "Respect is very important. It means being nice to others. I show respect by listening when people talk, and I say \'please\' and \'thank you.\' When we respect each other, we are happy and safe, and the world becomes a better place."',
       },
       {
+        type: 'p',
+        text: '"Perseverance is important to me because it helps me keep trying even when something is hard. Last year, I was terrible at basketball, but I practiced every day after school for three months. At first, I couldn\'t make a single shot, but I kept practicing anyway. Slowly, I got a little better each week, and by the end of the season, I could finally make baskets during real games. Perseverance taught me that improvement often comes slowly, and giving up too early means missing the progress that was about to happen."',
+      },
+      {
+        type: 'p',
+        text: 'These values rarely work alone. A student who wants to show responsibility, for example, often also needs courage to admit a mistake, and consideration to think about how that mistake affected other people. Likewise, cooperation becomes much stronger when it is built on honesty and respect, since teammates trust each other more when they know everyone is being truthful and considerate. Thinking about how different values support one another can help us decide which ones to practice first in our daily lives.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 동명사 주어',
         items: [

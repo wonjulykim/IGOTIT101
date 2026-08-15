@@ -32,6 +32,38 @@ export const r22Quiz = {
   ],
   essay: [
     {
+      id: 'r22-essay-short',
+      subtype: '단문 서술형',
+      q: '다바왈라 서비스가 해결해 주는 어려움 중 한 가지만 골라 3~5문장으로 간단히 쓰시오.',
+      standard: '[10영03-01] 친숙한 일반적 주제에 관한 글을 읽고 세부 정보를 파악할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '본문에 나온 어려움 한 가지를 명확히 밝힐 것'],
+      model:
+        "The dabbawala service solves the problem of carrying lunch on a packed train. Many Mumbai workers commute early in the morning, and the trains are extremely crowded. Carrying a heavy dabba in such conditions would be inconvenient and difficult. Thanks to the dabbawala service, workers can travel with just their hands free.",
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '어려움 제시 및 내용 완성도',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '본문에 나온 어려움 한 가지를 명확히 밝히고 3~5문장 분량으로 자연스럽게 서술함' },
+            { score: 2, desc: '어려움은 밝혔으나 문장 수나 내용 전개가 다소 부족함' },
+            { score: 1, desc: '어려움이 불분명하거나 문장 수를 지키지 않음' },
+          ],
+        },
+        {
+          criterion: '언어 사용의 정확성',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '문법과 어휘 사용이 정확함' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 지장 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r22-essay-1',
       subtype: '서술형',
       q: '다바왈라 서비스가 뭄바이 노동자들의 어떤 어려움을 해결해 주는지, 본문의 내용을 바탕으로 두 가지를 들어 서술하시오.',

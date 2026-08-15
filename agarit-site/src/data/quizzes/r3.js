@@ -32,6 +32,41 @@ export const r3Quiz = {
   ],
   essay: [
     {
+      id: 'r3-essay-short',
+      subtype: '단문 서술형',
+      q: '자신도 긴장해서 얼어붙었던 경험이 있는지, 있다면 어떻게 극복했는지(또는 없다면 어떻게 극복할 것 같은지)를 3~5문장으로 쓰시오.',
+      standard: '[10공영1-02-03] 경험이나 계획 등을 말하거나 기술한다. / [10공영1-02-06] 어휘나 표현을 점검하여 내용을 명확하게 전달한다.',
+      difficulty: '하',
+      score: 7,
+      conditions: [
+        '3~5문장으로 쓸 것',
+        '긴장했던 순간과 그것을 극복하는 방법(또는 극복하고 싶은 방법)을 포함할 것',
+      ],
+      model:
+        'I once forgot my lines during a class presentation and felt my face turn red in front of everyone. My heart was beating fast, and I could not remember what to say next. Like the writer in the passage, I took a deep breath and looked at my notes instead of giving up completely. Slowly, I found my place again and finished the presentation, even though it was not perfect. That experience taught me that staying calm is more helpful than trying to be perfect.',
+      totalScore: 7,
+      rubric: [
+        {
+          criterion: '경험과 극복 방법 제시',
+          maxScore: 4,
+          levels: [
+            { score: 4, desc: '긴장했던 경험과 극복 방법(또는 극복하고 싶은 방법)을 구체적으로 제시함' },
+            { score: 2, desc: '경험이나 극복 방법 중 하나만 제시함' },
+            { score: 1, desc: '경험과 극복 방법을 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 형식',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '3~5문장을 지키고 언어 형식이 정확함' },
+            { score: 2, desc: '문장 수는 지켰으나 오류가 다소 있음' },
+            { score: 1, desc: '문장 수를 지키지 않거나 오류가 많음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r3-essay-1',
       subtype: '서술형',
       q: '위 글을 참고하여, 자신이 겪은 어려운 순간을 극복하며 성장한 경험에 대한 글을 아래 조건에 맞게 영어로 작성하시오.',

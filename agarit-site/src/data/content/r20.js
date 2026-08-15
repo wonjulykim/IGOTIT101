@@ -28,6 +28,22 @@ export const r20 = {
         text: 'Comments like these show how a few kind words can help someone feel less alone. Writing an encouraging reply is a simple way to support a friend who is going through a hard time — and it often means more to them than we realize.',
       },
       {
+        type: 'p',
+        text: 'Online communities can be especially helpful for students who feel too shy or embarrassed to talk about their struggles face to face. Behind a screen, it can feel safer to admit that you are having a hard time, and reading supportive replies from people who do not even know you in person can still make a real difference. Many students say that a single kind comment from a stranger helped them get through a difficult week.',
+      },
+      {
+        type: 'p',
+        text: 'Of course, online support cannot replace real friendships built over time, and it is still important to reach out to teachers, school counselors, or family members when things feel especially hard. Still, small acts of kindness — whether typed in a comment section or spoken in person — remind us that we are rarely as alone as we feel. Sometimes, all a struggling friend needs is to know that someone is listening.',
+      },
+      {
+        type: 'p',
+        text: "Teachers and counselors often encourage students to reply to posts like this one, because a caring response, even a short one, can change how someone feels about their whole day. Some schools have even started peer-support programs, where trained students learn how to listen and respond kindly to classmates who are struggling. These programs show that support does not always need to come from an adult — sometimes a peer's understanding words feel more relatable and comforting.",
+      },
+      {
+        type: 'p',
+        text: "In the end, replying to a friend's difficult post does not require perfect words. What matters most is showing that you noticed, that you care, and that the person is not facing their struggle alone.",
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 명령문 Stop -ing / Start -ing',
         items: [

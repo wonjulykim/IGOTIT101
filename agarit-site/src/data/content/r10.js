@@ -13,6 +13,14 @@ export const r10 = {
         text: "Before you go, check the latest information about the area you plan to visit, and plan your trip carefully to reduce the risk of injuries or other problems. First, research the route in advance and make sure everyone in the group feels comfortable with the plan, going at the pace of the slowest walker. Second, check the weather and park conditions, and remember that conditions can change quickly. Don't forget to bring insect spray and a light. Finally, it is important to tell a friend or the local authorities where you are going and when you expect to be back.",
       },
       {
+        type: 'p',
+        text: 'Bushwalkers should also be prepared for the wildlife they might meet along the way. Australia is home to a number of snakes and spiders, and while most will avoid people if given the chance, walkers should still watch where they step and where they place their hands, especially near logs, rocks, and tall grass. Wearing sturdy boots and long pants can reduce the risk of bites and scratches, and it is wise to know the location of the nearest hospital or ranger station in case of an emergency.',
+      },
+      {
+        type: 'p',
+        text: 'Packing the right gear matters just as much as planning the route. A paper map and compass are useful even if you carry a phone, since batteries can die and mobile signal often disappears once you are deep in the bush. Carrying enough water, sun protection, and a basic first-aid kit can turn a difficult situation into a manageable one. Taking regular breaks, especially in hot weather, also helps prevent exhaustion and keeps the whole group moving safely together.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 명령문(동사원형으로 시작)',
         items: [

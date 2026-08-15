@@ -26,6 +26,41 @@ export const r5Quiz = {
   ],
   essay: [
     {
+      id: 'r5-essay-short',
+      subtype: '단문 서술형',
+      q: '표에 제시된 가치(Value) 중 하나를 골라, 그 가치가 왜 중요한지에 대한 자신의 생각을 3~5문장으로 쓰시오.',
+      standard: '[9영02-04] 친숙한 주제에 관해 경험이나 계획을 설명한다. / [9영02-06] 친숙한 주제에 관해 자신의 의견을 주장한다.',
+      difficulty: '하',
+      score: 6,
+      conditions: [
+        '3~5문장으로 쓸 것',
+        '표에 제시된 가치 중 하나를 선택하여 그것이 중요한 이유를 포함할 것',
+      ],
+      model:
+        'I think honesty is the most important value. When people tell the truth, others can trust them and feel safe around them. If someone lies even one time, it becomes harder for people to believe them again in the future. That is why I always try to tell the truth, even when it is difficult or embarrassing.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '가치 선택 및 이유 제시',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '가치를 선택하고 그것이 중요한 이유를 구체적으로 제시함' },
+            { score: 2, desc: '가치는 선택했으나 이유가 부족함' },
+            { score: 1, desc: '가치와 이유를 거의 제시하지 않음' },
+          ],
+        },
+        {
+          criterion: '문장 수 및 언어 형식',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '3~5문장을 지키고 언어 형식이 정확함' },
+            { score: 2, desc: '문장 수는 지켰으나 오류가 다소 있음' },
+            { score: 1, desc: '문장 수를 지키지 않거나 오류가 많음' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r5-essay-1',
       subtype: '논술형',
       q: '위 표에 제시된 가치 중(또는 그 외의 가치 중) 자신이 중요하게 여기는 가치를 하나 선택하여, 그 가치에 대한 글을 아래 조건에 맞게 영어로 작성하시오.',

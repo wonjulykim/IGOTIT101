@@ -32,6 +32,38 @@ export const r21Quiz = {
   ],
   essay: [
     {
+      id: 'r21-essay-short',
+      subtype: '단문 서술형',
+      q: '오늘 자신이 한 일 중 하나를 골라 어느 범주(긴급/중요 여부)에 속하는지 3~5문장으로 간단히 쓰시오.',
+      standard: '[10영03-01] 친숙한 일반적 주제에 관한 글을 읽고 세부 정보를 파악할 수 있다.',
+      difficulty: '하',
+      score: 6,
+      conditions: ['3~5문장으로 쓸 것', '오늘 한 일과 해당하는 범주를 명확히 밝힐 것'],
+      model:
+        'Today I studied for a math quiz that is scheduled for tomorrow. This task belongs to the "urgent and important" category, since the quiz was close and my score really matters. Because of this, I decided to study before doing anything else. Sorting it this way helped me use my time more wisely.',
+      totalScore: 6,
+      rubric: [
+        {
+          criterion: '범주 제시 및 내용 완성도',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '오늘 한 일과 범주를 명확히 밝히고 3~5문장 분량으로 자연스럽게 서술함' },
+            { score: 2, desc: '범주는 밝혔으나 문장 수나 내용 전개가 다소 부족함' },
+            { score: 1, desc: '범주가 불분명하거나 문장 수를 지키지 않음' },
+          ],
+        },
+        {
+          criterion: '언어 사용의 정확성',
+          maxScore: 3,
+          levels: [
+            { score: 3, desc: '문법과 어휘 사용이 정확함' },
+            { score: 2, desc: '오류가 있으나 의미 전달에 지장 없음' },
+            { score: 1, desc: '오류가 많아 의미 전달이 어려움' },
+          ],
+        },
+      ],
+    },
+    {
       id: 'r21-essay-1',
       subtype: '서술형',
       q: '이 글에서 소개한 네 가지 범주(긴급하고 중요함 / 긴급하지만 중요하지 않음 / 중요하지만 긴급하지 않음 / 둘 다 아님) 중 자신이 가장 소홀히 하는 범주를 고르고, 앞으로 어떻게 시간을 관리할지 서술하시오.',

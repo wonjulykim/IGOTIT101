@@ -17,6 +17,14 @@ export const r3 = {
         text: "Then my partner quietly whispered the first line. I repeated it, voice shaking, and slowly my memory returned. I wasn't perfect, but I didn't give up. Afterward, my teacher said, \"You didn't give up, and that's what matters.\" That moment changed how I saw confidence. I realized it isn't about being flawless — it's about how you respond when things go wrong.",
       },
       {
+        type: 'p',
+        text: 'In the weeks that followed, I kept thinking about what had happened on stage. Instead of avoiding public speaking, I decided to join a public speaking club at school, hoping to face my fear directly rather than let it grow stronger. The first few meetings were still nerve-wracking, but each time I spoke in front of the group, the panic felt a little less overwhelming than before.',
+      },
+      {
+        type: 'p',
+        text: "By the end of the semester, I volunteered to give a short speech at our class assembly — something I never would have imagined doing before the play. My hands were still a little shaky as I walked up to the microphone, but this time I remembered my teacher's words and reminded myself that a small mistake would not ruin everything. When I finished, my classmates clapped, and for the first time, I felt proud not because I had been perfect, but because I had tried despite being afraid.",
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 분사구문(부대상황)',
         items: [

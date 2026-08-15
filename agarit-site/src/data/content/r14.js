@@ -17,6 +17,14 @@ export const r14 = {
         text: 'However, people who are against zoos argue that animals in zoos do not have enough space and may feel stressed. They may behave in strange ways because they are not free, and some animals are taken from their families in the wild. Animals like dolphins or whales are sometimes forced to perform tricks, which is not natural for them. So, are zoos a good place for animals, or should we find better ways to help them?',
       },
       {
+        type: 'p',
+        text: "Supporters of zoos also point out that many modern zoos have changed a great deal in recent decades. Instead of keeping animals in small cages, some zoos now build large enclosures that copy the animals' natural habitats, giving them more room to move, hide, and behave naturally. These zoos often work together with conservation organizations, sharing information about endangered species and even releasing animals back into the wild when it is safe to do so.",
+      },
+      {
+        type: 'p',
+        text: 'Because of these disagreements, some people suggest a middle path: wildlife sanctuaries and nature reserves, which try to protect animals in areas that are much closer to their natural environment than a typical zoo. These places usually do not allow visitors to get very close to the animals, focusing instead on protection and rehabilitation rather than entertainment. Whether the goal is education, entertainment, or conservation, the debate over the best way to care for animals is likely to continue for years to come.',
+      },
+      {
         type: 'callout',
         title: '📎 핵심 문법: 주격 관계대명사 who',
         items: [
