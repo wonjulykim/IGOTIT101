@@ -1,12 +1,5 @@
 .quiz-intro { color: var(--text-dim); }
 
-.quiz-game-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin: 12px 0 4px;
-}
-
 .quiz-tabs {
   display: flex;
   gap: 8px;
