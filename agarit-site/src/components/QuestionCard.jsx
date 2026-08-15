@@ -20,12 +20,12 @@ export default function QuestionCard({ q, index, value, onChange, submitted, sho
       <p className="qcard-question">{q.q}</p>
       {q.conditions?.length > 0 && (
         <div className="qcard-conditions">
-          <strong>조건</strong>
-          <ul>
+          <strong>✍️ 이렇게 써보세요 (반드시 지킬 것)</strong>
+          <ol>
             {q.conditions.map((c, i) => (
               <li key={i}>{c}</li>
             ))}
-          </ul>
+          </ol>
         </div>
       )}
 
@@ -100,8 +100,13 @@ function ShortBody({ q, value, onChange, submitted }) {
   )
 }
 
+function countWords(text) {
+  return String(text || '').trim().split(/\s+/).filter(Boolean).length
+}
+
 function EssayBody({ q, value, onChange, submitted, unitId }) {
   const result = submitted && q.keywords ? essayKeywordHits(value, q.keywords) : null
+  const wordCount = countWords(value)
   return (
     <div>
       <textarea
@@ -112,6 +117,7 @@ function EssayBody({ q, value, onChange, submitted, unitId }) {
         disabled={submitted}
         onChange={(e) => onChange(e.target.value)}
       />
+      <div className="essay-word-count">✏️ {wordCount}단어</div>
       {submitted && q.rubric && (
         <AiEssayGrader q={q} studentAnswer={value} unitId={unitId} />
       )}

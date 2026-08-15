@@ -13,7 +13,6 @@ import './Lesson.css'
 const QUIZ_LABELS = {
   mcq: '📌 확인 문제 (객관식)',
   short: '✍️ 빈칸·단답 문제',
-  essay: '📝 서술형·논술형 문제',
 }
 
 export default function Lesson() {
@@ -83,21 +82,37 @@ export default function Lesson() {
             </div>
           </div>
 
-          {quiz && (
-            <div className="reading-quiz-col">
-              <h2>문제 풀기</h2>
-              <p className="quiz-intro">지문을 왼쪽에 두고 문제를 풀어보세요.</p>
-              {['mcq', 'short', 'essay'].map(
-                (type) =>
-                  quiz[type]?.length > 0 && (
-                    <section key={type} className="reading-quiz-section">
-                      <h3>{QUIZ_LABELS[type]}</h3>
-                      <QuizSection chapterId={chapterId} type={type} questions={quiz[type]} />
-                    </section>
-                  )
-              )}
-            </div>
-          )}
+          {quiz && (() => {
+            const descriptiveItems = (quiz.essay || []).filter((q) => q.subtype !== '논술형')
+            const argumentativeItems = (quiz.essay || []).filter((q) => q.subtype === '논술형')
+            return (
+              <div className="reading-quiz-col">
+                <h2>문제 풀기</h2>
+                <p className="quiz-intro">지문을 왼쪽에 두고 문제를 풀어보세요.</p>
+                {['mcq', 'short'].map(
+                  (type) =>
+                    quiz[type]?.length > 0 && (
+                      <section key={type} className="reading-quiz-section">
+                        <h3>{QUIZ_LABELS[type]}</h3>
+                        <QuizSection chapterId={chapterId} type={type} questions={quiz[type]} />
+                      </section>
+                    )
+                )}
+                {descriptiveItems.length > 0 && (
+                  <section className="reading-quiz-section">
+                    <h3>📝 서술형 문제 <span className="reading-quiz-subhead">짧고 명확하게 쓰는 연습부터</span></h3>
+                    <QuizSection key="essay-desc" chapterId={chapterId} type="essay" questions={descriptiveItems} />
+                  </section>
+                )}
+                {argumentativeItems.length > 0 && (
+                  <section className="reading-quiz-section">
+                    <h3>🖋️ 논술형 문제 <span className="reading-quiz-subhead">서술형이 익숙해졌다면 도전</span></h3>
+                    <QuizSection key="essay-arg" chapterId={chapterId} type="essay" questions={argumentativeItems} />
+                  </section>
+                )}
+              </div>
+            )
+          })()}
         </div>
       ) : (
         <>
