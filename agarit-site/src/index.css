@@ -2,23 +2,25 @@
   --text: #3f3a45;
   --text-dim: #6b6575;
   --text-h: #1c1a22;
-  --bg: #faf9fc;
+  --bg: #fffdf7;
   --bg-panel: #ffffff;
-  --bg-sidebar: #ffffff;
-  --border: #e6e3ee;
-  --accent: #6d4dd1;
-  --accent-dark: #5637b0;
-  --accent-bg: rgba(109, 77, 209, 0.08);
-  --accent-border: rgba(109, 77, 209, 0.35);
+  --bg-sidebar: #fffaf0;
+  --border: #efe5d8;
+  --accent: #ff8a3d;
+  --accent-dark: #e56d1d;
+  --accent-bg: rgba(255, 138, 61, 0.12);
+  --accent-border: rgba(255, 138, 61, 0.4);
+  --accent2: #6d4dd1;
+  --accent2-bg: rgba(109, 77, 209, 0.1);
   --success: #1f9d63;
-  --success-bg: rgba(31, 157, 99, 0.1);
+  --success-bg: rgba(31, 157, 99, 0.12);
   --danger: #e2493d;
-  --danger-bg: rgba(226, 73, 61, 0.1);
+  --danger-bg: rgba(226, 73, 61, 0.12);
   --warn: #c78a1e;
-  --warn-bg: rgba(199, 138, 30, 0.12);
-  --shadow: rgba(30, 20, 60, 0.06) 0 4px 16px, rgba(30, 20, 60, 0.04) 0 1px 3px;
+  --warn-bg: rgba(199, 138, 30, 0.14);
+  --shadow: rgba(60, 40, 10, 0.08) 0 4px 16px, rgba(60, 40, 10, 0.05) 0 1px 3px;
   --sans: 'Pretendard Variable', 'Pretendard', 'Apple SD Gothic Neo', 'Segoe UI', system-ui, Roboto, sans-serif;
-  --display: 'Gaegu', var(--sans);
+  --display: 'Do Hyeon', var(--sans);
   --radius: 20px;
 }
 
@@ -27,13 +29,17 @@
 html, body { margin: 0; }
 
 html {
-  font-size: 18px;
+  font-size: 18.5px;
 }
 
 body {
   font: 1rem/1.85 var(--sans);
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(1100px 500px at 8% -8%, rgba(255, 210, 120, 0.25), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(109, 77, 209, 0.12), transparent 55%),
+    var(--bg);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -44,16 +50,17 @@ body {
 h1, h2, h3, h4 {
   color: var(--text-h);
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.45;
   margin: 0 0 0.7em;
 }
 
 h1 {
   font-family: var(--display);
-  font-size: 2.3rem;
-  letter-spacing: -0.01em;
+  font-weight: 400;
+  font-size: 2.15rem;
+  letter-spacing: 0;
 }
-h2 { font-family: var(--display); font-size: 1.6rem; }
+h2 { font-family: var(--display); font-weight: 400; font-size: 1.55rem; }
 h3 { font-size: 1.28rem; }
 
 p { margin: 0 0 1.3em; }

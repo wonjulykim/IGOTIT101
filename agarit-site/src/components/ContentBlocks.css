@@ -1,4 +1,4 @@
-.content-blocks { color: var(--text); font-size: 1.12rem; }
+.content-blocks { color: var(--text); font-size: 1.12rem; max-width: 780px; }
 
 .block-heading {
   margin-top: 2.2em;

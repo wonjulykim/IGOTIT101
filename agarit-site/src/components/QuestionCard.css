@@ -69,18 +69,41 @@
   padding: 10px 14px;
   font-size: 0.94rem;
 }
-.mcq-option { transition: transform 0.1s ease, border-color 0.1s ease, background 0.1s ease; }
+.mcq-option { transition: transform 0.1s ease, border-color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease; }
 .mcq-option:hover:not(:disabled) { border-color: var(--accent-border); background: var(--accent-bg); transform: translateX(2px); }
-.mcq-option.selected { border-color: var(--accent); background: var(--accent-bg); }
-.mcq-option.correct { border-color: var(--success); background: var(--success-bg); }
-.mcq-option.wrong { border-color: var(--danger); background: var(--danger-bg); }
+.mcq-option.selected {
+  border: 2px solid var(--accent2);
+  background: var(--accent2-bg);
+  font-weight: 700;
+  box-shadow: 0 0 0 3px rgba(109, 77, 209, 0.15);
+}
+.mcq-option.selected .mcq-index { background: var(--accent2); color: white; }
+.mcq-option.correct {
+  border: 2px solid var(--success);
+  background: rgba(31, 157, 99, 0.18);
+  font-weight: 700;
+  box-shadow: 0 0 0 3px rgba(31, 157, 99, 0.15);
+}
+.mcq-option.correct .mcq-index { background: var(--success); color: white; }
+.mcq-option.wrong {
+  border: 2px solid var(--danger);
+  background: rgba(226, 73, 61, 0.18);
+  font-weight: 700;
+  box-shadow: 0 0 0 3px rgba(226, 73, 61, 0.15);
+}
+.mcq-option.wrong .mcq-index { background: var(--danger); color: white; }
+.mcq-mark { margin-left: auto; font-weight: 800; font-size: 1rem; flex-shrink: 0; }
+.mcq-option.correct .mcq-mark { color: var(--success); }
+.mcq-option.wrong .mcq-mark { color: var(--danger); }
 .mcq-index {
-  width: 20px; height: 20px;
+  width: 22px; height: 22px;
   border-radius: 50%;
   background: var(--border);
   font-size: 0.72rem;
+  font-weight: 700;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
+  transition: background 0.1s ease, color 0.1s ease;
 }
 
 .qcard-explain {
@@ -111,8 +134,8 @@
   font-size: 0.94rem;
   font-family: inherit;
 }
-.short-input.correct { border-color: var(--success); background: var(--success-bg); }
-.short-input.wrong { border-color: var(--danger); background: var(--danger-bg); }
+.short-input.correct { border: 2px solid var(--success); background: rgba(31, 157, 99, 0.16); font-weight: 700; }
+.short-input.wrong { border: 2px solid var(--danger); background: rgba(226, 73, 61, 0.16); font-weight: 700; }
 
 .essay-input { resize: vertical; }
 

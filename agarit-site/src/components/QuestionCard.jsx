@@ -59,6 +59,8 @@ function MCQBody({ q, value, onChange, submitted }) {
           >
             <span className="mcq-index">{i + 1}</span>
             <span>{opt}</span>
+            {submitted && i === q.answer && <span className="mcq-mark">✓</span>}
+            {submitted && i === value && i !== q.answer && <span className="mcq-mark">✗</span>}
           </button>
         )
       })}
