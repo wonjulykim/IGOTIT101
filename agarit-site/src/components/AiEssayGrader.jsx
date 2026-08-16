@@ -7,6 +7,8 @@ export default function AiEssayGrader({ q, studentAnswer, unitId }) {
   const [result, setResult] = useState(() => (unitId ? getWritingResult(unitId, q.id) : null))
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const hasAnswer = !!studentAnswer && !!studentAnswer.trim()
+  const showResult = hasAnswer && result
 
   async function handleGrade() {
     if (!studentAnswer || !studentAnswer.trim()) {
@@ -36,9 +38,9 @@ export default function AiEssayGrader({ q, studentAnswer, unitId }) {
 
   return (
     <div className="ai-grader">
-      {q.conditions?.length > 0 && result?.conditionsCheck?.length > 0 && (
+      {q.conditions?.length > 0 && showResult?.conditionsCheck?.length > 0 && (
         <div className="ai-conditions-check">
-          {result.conditionsCheck.map((c, i) => (
+          {showResult.conditionsCheck.map((c, i) => (
             <span key={i} className={`ai-condition-chip ${c.met ? 'met' : 'unmet'}`}>
               {c.met ? '✅' : '❌'} {c.condition}
             </span>
@@ -46,11 +48,14 @@ export default function AiEssayGrader({ q, studentAnswer, unitId }) {
         </div>
       )}
 
-      {!result && (
+      {!showResult && (
         <>
           <button className="btn-primary ai-grade-btn" onClick={handleGrade} disabled={loading}>
             {loading ? 'AI가 채점 중...' : '🤖 AI 채점 받기'}
           </button>
+          {!hasAnswer && result && (
+            <p className="ai-grader-hint">이전에 채점받은 답안이 지워졌어요. 답안을 다시 작성한 뒤 채점해보세요.</p>
+          )}
           {q.model && (
             <div className="essay-model">
               <strong>📖 모범답안 예시</strong>
@@ -62,7 +67,7 @@ export default function AiEssayGrader({ q, studentAnswer, unitId }) {
 
       {error && <div className="ai-grader-error">{error}</div>}
 
-      {result && (
+      {showResult && (
         <div className="ai-grader-result">
           <div className="ai-grader-total">
             AI 채점 결과: <strong>{result.totalScore} / {result.maxScore ?? q.totalScore}</strong>점

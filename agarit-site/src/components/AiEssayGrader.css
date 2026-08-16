@@ -18,6 +18,12 @@
   font-size: 0.88rem;
 }
 
+.ai-grader-hint {
+  margin-top: 8px;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
 .ai-grader-result { margin-top: 10px; }
 
 .ai-grader-total {
