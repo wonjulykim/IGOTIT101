@@ -5,7 +5,18 @@ import TimelineDiagram from './TimelineDiagram'
 import TransformDiagram from './TransformDiagram'
 import IconRow from './IconRow'
 import VideoEmbed from './VideoEmbed'
+import { renderEmphasis as splitEmphasis } from '../utils/emphasis'
 import './ContentBlocks.css'
+
+function renderEmphasis(text) {
+  return splitEmphasis(text).map((part, i) =>
+    typeof part === 'object' ? (
+      <strong key={i} className="text-emphasis">{part.text}</strong>
+    ) : (
+      part
+    )
+  )
+}
 
 export default function ContentBlocks({ blocks }) {
   return (
@@ -20,12 +31,12 @@ function Block({ block, index }) {
     case 'heading':
       return <h3 className="block-heading" id={`heading-${index}`}>{block.text}</h3>
     case 'p':
-      return <p className="block-p">{block.text}</p>
+      return <p className="block-p">{renderEmphasis(block.text)}</p>
     case 'note':
       return (
         <div className="block-note">
           <span className="block-note-icon">💡</span>
-          <p>{block.text}</p>
+          <p>{renderEmphasis(block.text)}</p>
         </div>
       )
     case 'callout':
@@ -34,7 +45,7 @@ function Block({ block, index }) {
           <h4>{block.title}</h4>
           <ul>
             {block.items.map((item, i) => (
-              <li key={i}>{item}</li>
+              <li key={i}>{renderEmphasis(item)}</li>
             ))}
           </ul>
         </div>

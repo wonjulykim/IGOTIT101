@@ -1,4 +1,4 @@
-.content-blocks { color: var(--text); font-size: 1.12rem; max-width: 780px; }
+.content-blocks { color: var(--text); font-size: 1.12rem; max-width: 920px; }
 
 .block-heading {
   margin-top: 2.2em;
@@ -10,6 +10,8 @@
 }
 
 .block-p { line-height: 1.9; }
+
+.text-emphasis { color: var(--accent-dark); font-weight: 700; }
 
 .block-note {
   display: flex;
