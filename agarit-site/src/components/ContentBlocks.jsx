@@ -10,15 +10,15 @@ import './ContentBlocks.css'
 export default function ContentBlocks({ blocks }) {
   return (
     <div className="content-blocks">
-      {blocks.map((block, i) => <Block key={i} block={block} />)}
+      {blocks.map((block, i) => <Block key={i} block={block} index={i} />)}
     </div>
   )
 }
 
-function Block({ block }) {
+function Block({ block, index }) {
   switch (block.type) {
     case 'heading':
-      return <h3 className="block-heading">{block.text}</h3>
+      return <h3 className="block-heading" id={`heading-${index}`}>{block.text}</h3>
     case 'p':
       return <p className="block-p">{block.text}</p>
     case 'note':

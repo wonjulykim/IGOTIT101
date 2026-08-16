@@ -7,9 +7,33 @@
 }
 .home-hero h1 { margin-bottom: 10px; }
 .home-hero p { color: var(--text-dim); margin-bottom: 20px; }
+
+.home-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .hero-cta { display: inline-block; text-decoration: none; }
 
-.home-section-title { margin-bottom: 16px; }
+.home-hero-jump { display: flex; gap: 14px; }
+.home-hero-jump a { font-size: 0.85rem; font-weight: 600; color: var(--text-dim); }
+.home-hero-jump a:hover { color: var(--accent-dark); }
+
+.home-hero-stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-top: 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-dim);
+}
+.home-hero-stats > span + span::before { content: '· '; opacity: 0.5; }
+
+.home-section-title { margin-bottom: 16px; scroll-margin-top: 76px; }
 .home-section-gap { margin-top: 40px; }
 
 .chapter-grid {
@@ -31,6 +55,20 @@
   border-color: var(--accent-border);
 }
 .home-card-disabled { opacity: 0.55; }
+.home-card-next {
+  border-color: var(--accent);
+  box-shadow: rgba(255, 138, 61, 0.24) 0 8px 20px, rgba(255, 138, 61, 0.16) 0 2px 6px;
+}
+.home-card-next:not(.home-card-disabled):hover {
+  box-shadow: rgba(255, 138, 61, 0.3) 0 10px 24px, rgba(255, 138, 61, 0.18) 0 2px 6px;
+}
+
+.home-card-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
 .home-card-num {
   display: inline-block;
@@ -44,5 +82,33 @@
 }
 .home-card-title { font-weight: 700; margin: 8px 0 10px; min-height: 2.6em; }
 
+.home-card-done {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--success-bg);
+  color: var(--success);
+  border-radius: 999px;
+  padding: 2px 9px;
+  white-space: nowrap;
+}
+.home-card-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: var(--accent);
+  color: white;
+  border-radius: 999px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+
 .home-card-links { display: flex; gap: 14px; font-size: 0.85rem; font-weight: 600; margin-top: 10px; }
 .home-card-soon { font-size: 0.8rem; color: var(--text-dim); }
+
+@media (max-width: 900px) {
+  .home-hero { padding: 24px 20px; }
+}
+
+@media (max-width: 480px) {
+  .home-hero-actions { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .home-card { padding: 16px 18px; }
+}

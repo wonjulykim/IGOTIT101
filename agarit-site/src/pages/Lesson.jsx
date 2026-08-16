@@ -6,6 +6,7 @@ import { getChapterQuiz } from '../data/quizzes'
 import ContentBlocks from '../components/ContentBlocks'
 import QuizSection from '../components/QuizSection'
 import { isLessonComplete, markLessonComplete } from '../utils/progress'
+import { getHeadingOutline } from '../utils/outline'
 import { useGame } from '../context/GameContext'
 import { getOverride, getSession } from '../utils/adminApi'
 import './Lesson.css'
@@ -47,6 +48,8 @@ export default function Lesson() {
   const isReading = chapter.kind === 'reading'
   const unitLabel = isReading ? '편' : '장'
   const quiz = isReading ? getChapterQuiz(chapterId) : null
+  const outline = !isReading && effectiveBlocks ? getHeadingOutline(effectiveBlocks) : []
+  const hasRail = outline.length > 0 || chapter.lessons.length > 1
 
   function handleComplete() {
     const wasAlreadyDone = isLessonComplete(chapterId, lessonId)
@@ -115,41 +118,80 @@ export default function Lesson() {
           })()}
         </div>
       ) : (
-        <>
-          {effectiveBlocks ? (
-            <ContentBlocks blocks={effectiveBlocks} />
-          ) : (
-            <p>이 레슨의 콘텐츠는 아직 준비 중입니다.</p>
-          )}
-          <div className="lesson-complete-row">
-            <button className={`btn-complete ${done ? 'done' : ''}`} onClick={handleComplete}>
-              {done ? '✅ 학습 완료' : '학습 완료로 표시하기'}
-            </button>
-          </div>
-        </>
-      )}
-
-      {!isReading && (
-        <nav className="lesson-nav">
-          <div className="lesson-nav-side">
-            {prev ? (
-              <Link to={`/chapter/${chapterId}/lesson/${prev.id}`} className="lesson-nav-link">
-                ← {prev.title}
-              </Link>
-            ) : <span />}
-          </div>
-          <div className="lesson-nav-side lesson-nav-right">
-            {next ? (
-              <Link to={`/chapter/${chapterId}/lesson/${next.id}`} className="lesson-nav-link">
-                {next.title} →
-              </Link>
+        <div className={hasRail ? 'lesson-layout' : 'lesson-layout lesson-layout-solo'}>
+          <div className="lesson-main">
+            {effectiveBlocks ? (
+              <ContentBlocks blocks={effectiveBlocks} />
             ) : (
-              <Link to={`/chapter/${chapterId}/quiz`} className="lesson-nav-link quiz">
-                {chapter.num}{unitLabel} 퀴즈 풀기 →
-              </Link>
+              <p>이 레슨의 콘텐츠는 아직 준비 중입니다.</p>
             )}
+            <div className="lesson-complete-row">
+              <button className={`btn-complete ${done ? 'done' : ''}`} onClick={handleComplete}>
+                {done ? '✅ 학습 완료' : '학습 완료로 표시하기'}
+              </button>
+            </div>
+
+            <nav className="lesson-nav">
+              <div className="lesson-nav-side">
+                {prev ? (
+                  <Link to={`/chapter/${chapterId}/lesson/${prev.id}`} className="lesson-nav-link">
+                    ← {prev.title}
+                  </Link>
+                ) : <span />}
+              </div>
+              <div className="lesson-nav-side lesson-nav-right">
+                {next ? (
+                  <Link to={`/chapter/${chapterId}/lesson/${next.id}`} className="lesson-nav-link">
+                    {next.title} →
+                  </Link>
+                ) : (
+                  <Link to={`/chapter/${chapterId}/quiz`} className="lesson-nav-link quiz">
+                    {chapter.num}{unitLabel} 퀴즈 풀기 →
+                  </Link>
+                )}
+              </div>
+            </nav>
           </div>
-        </nav>
+
+          {hasRail && (
+            <aside className="lesson-rail">
+              {outline.length > 0 && (
+                <div className="lesson-rail-card">
+                  <div className="lesson-rail-title">이 레슨의 목차</div>
+                  <ul className="lesson-outline">
+                    {outline.map((h) => (
+                      <li key={h.id}>
+                        <a href={`#${h.id}`}>{h.text}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {chapter.lessons.length > 1 && (
+                <div className="lesson-rail-card">
+                  <div className="lesson-rail-title">{chapter.num}{unitLabel} {chapter.title}</div>
+                  <ul className="lesson-rail-list">
+                    {chapter.lessons.map((l) => (
+                      <li key={l.id}>
+                        <Link
+                          to={`/chapter/${chapterId}/lesson/${l.id}`}
+                          className={`lesson-rail-link ${l.id === lessonId ? 'active' : ''}`}
+                        >
+                          {isLessonComplete(chapterId, l.id) && <span className="lesson-rail-done">✅</span>}
+                          {l.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link to={`/chapter/${chapterId}/quiz`} className="lesson-rail-quiz-link">
+                    ✏️ {chapter.num}{unitLabel} 퀴즈 풀기
+                  </Link>
+                </div>
+              )}
+            </aside>
+          )}
+        </div>
       )}
     </article>
   )

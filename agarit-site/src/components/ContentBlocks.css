@@ -6,6 +6,7 @@
   border-bottom: 2px solid var(--accent-border);
   display: inline-block;
   font-size: 1.25rem;
+  scroll-margin-top: 76px;
 }
 
 .block-p { line-height: 1.9; }
