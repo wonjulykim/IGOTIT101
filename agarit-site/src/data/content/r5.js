@@ -2,7 +2,7 @@ export const r5 = {
   'r5-1': {
     title: '나를 움직이는 가치의 힘',
     blocks: [
-      { type: 'note', text: '중학교 1학년 수준 · 표현 영역 · 경기도교육청 논술형 평가 자료를 바탕으로 재구성했습니다.' },
+      { type: 'note', text: '중학교 3학년 수준 · 표현 영역 · 경기도교육청 논술형 평가 자료를 바탕으로 재구성했습니다.' },
       { type: 'heading', text: 'Values That Move Us' },
       {
         type: 'p',
@@ -29,11 +29,7 @@ export const r5 = {
       },
       {
         type: 'p',
-        text: '"Perseverance is important to me because it helps me keep trying even when something is hard. Last year, I was terrible at basketball, but I practiced every day after school for three months. At first, I couldn\'t make a single shot, but I kept practicing anyway. Slowly, I got a little better each week, and by the end of the season, I could finally make baskets during real games. Perseverance taught me that improvement often comes slowly, and giving up too early means missing the progress that was about to happen."',
-      },
-      {
-        type: 'p',
-        text: 'These values rarely work alone. A student who wants to show responsibility, for example, often also needs courage to admit a mistake, and consideration to think about how that mistake affected other people. Likewise, cooperation becomes much stronger when it is built on honesty and respect, since teammates trust each other more when they know everyone is being truthful and considerate. Thinking about how different values support one another can help us decide which ones to practice first in our daily lives.',
+        text: '"Perseverance is important to me because it helps me keep trying even when something is hard. Last year, I was terrible at basketball, but I practiced every day after school for three months. At first, I couldn\'t make a single shot, but I kept practicing anyway. Slowly, I got better each week, and I finally started making baskets during real games. Perseverance taught me that improvement often comes slowly, and giving up too early means missing the progress that was about to happen."',
       },
       {
         type: 'callout',

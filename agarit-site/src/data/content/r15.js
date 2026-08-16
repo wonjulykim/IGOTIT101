@@ -2,11 +2,11 @@ export const r15 = {
   'r15-1': {
     title: '창의적으로 생각하는 법',
     blocks: [
-      { type: 'note', text: '고등학교 지필평가(하) 서술형 자료를 바탕으로 재구성했습니다 · 중3~고1 수준.' },
+      { type: 'note', text: '고등학교 지필평가(하) 서술형 자료를 바탕으로 재구성했습니다 · 중학교 3학년 수준.' },
       { type: 'heading', text: 'How to Think More Creatively' },
       {
         type: 'p',
-        text: 'Every day we face a lot of questions, and we often try to find just one correct answer. But in reality, there can be many different answers. Throughout history, many people have shaped human progress by looking at things differently and developing ideas that were unique and useful.',
+        text: 'Every day we face a lot of questions, and we often try to find just one correct answer. But in reality, there can be many different answers. Throughout history, many people changed the world by looking at things differently and coming up with ideas that were new and useful.',
       },
       {
         type: 'p',
@@ -14,11 +14,7 @@ export const r15 = {
       },
       {
         type: 'p',
-        text: 'Can we learn to think differently or more creatively, like Gutenberg and other famous inventors? Luckily, the answer is yes — creative thinking is a skill, and we can improve it. To think more creatively, look for many possible answers, not just one. Ask yourself, "What if...?" or say to yourself, "Imagine...." Also, do not be afraid of making mistakes; when you do make them, try to learn from them, since anyone who has never made a mistake has never tried anything new. Most importantly, remember that creativity is based on knowledge and experience, so keep learning new things — that way, you will always have the tools for creativity.',
-      },
-      {
-        type: 'p',
-        text: "Many workplaces and schools try to build this kind of thinking into group activities such as brainstorming, where people are encouraged to share as many ideas as possible without immediately judging whether each one is good or bad. Even ideas that sound silly at first can spark a completely different, more useful idea in someone else's mind. This is very similar to what happened with Gutenberg: neither the wine press nor the coin punch was a new invention on its own, but combining them in an unexpected way created something the world had never seen before.",
+        text: 'Can we learn to think like Gutenberg and other famous inventors? Luckily, the answer is yes — creative thinking is a skill, and we can improve it. To think more creatively, try to find many possible answers, not just one. Ask yourself, "What if...?" or say to yourself, "Imagine...." Also, do not be afraid of making mistakes. When you make one, try to learn from it, because people who never make mistakes never try anything new. Most importantly, remember that creativity comes from knowledge and experience, so keep learning new things — that way, you will always have the tools for creativity.',
       },
       {
         type: 'callout',

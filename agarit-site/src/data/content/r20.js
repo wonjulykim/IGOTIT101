@@ -2,7 +2,7 @@ export const r20 = {
   'r20-1': {
     title: '친구에게 힘이 되는 한마디',
     blocks: [
-      { type: 'note', text: '고등학교 지필평가(하) 서술형 자료를 바탕으로 재구성했습니다 · 중3~고1 수준.' },
+      { type: 'note', text: '고등학교 지필평가(하) 서술형 자료를 바탕으로 재구성했습니다 · 중학교 3학년 수준.' },
       { type: 'heading', text: 'A Message for a Struggling Friend' },
       {
         type: 'p',
@@ -25,23 +25,11 @@ export const r20 = {
       },
       {
         type: 'p',
-        text: 'Comments like these show how a few kind words can help someone feel less alone. Writing an encouraging reply is a simple way to support a friend who is going through a hard time — and it often means more to them than we realize.',
+        text: "Comments like these show how a few kind words can help someone feel less alone. Writing an encouraging reply is a simple way to support a friend who is going through a hard time, and it often means more than we realize. Online communities can feel like a safe place to admit that things are hard, especially for students who feel too shy to talk face to face.",
       },
       {
         type: 'p',
-        text: 'Online communities can be especially helpful for students who feel too shy or embarrassed to talk about their struggles face to face. Behind a screen, it can feel safer to admit that you are having a hard time, and reading supportive replies from people who do not even know you in person can still make a real difference. Many students say that a single kind comment from a stranger helped them get through a difficult week.',
-      },
-      {
-        type: 'p',
-        text: 'Of course, online support cannot replace real friendships built over time, and it is still important to reach out to teachers, school counselors, or family members when things feel especially hard. Still, small acts of kindness — whether typed in a comment section or spoken in person — remind us that we are rarely as alone as we feel. Sometimes, all a struggling friend needs is to know that someone is listening.',
-      },
-      {
-        type: 'p',
-        text: "Teachers and counselors often encourage students to reply to posts like this one, because a caring response, even a short one, can change how someone feels about their whole day. Some schools have even started peer-support programs, where trained students learn how to listen and respond kindly to classmates who are struggling. These programs show that support does not always need to come from an adult — sometimes a peer's understanding words feel more relatable and comforting.",
-      },
-      {
-        type: 'p',
-        text: "In the end, replying to a friend's difficult post does not require perfect words. What matters most is showing that you noticed, that you care, and that the person is not facing their struggle alone.",
+        text: "Of course, online support cannot replace real friendships, and it is still important to talk to teachers, school counselors, or family members when things feel especially hard. Still, small kind words remind us that we are rarely as alone as we feel. Replying to a friend's difficult post does not require perfect words — what matters most is showing that you care.",
       },
       {
         type: 'callout',

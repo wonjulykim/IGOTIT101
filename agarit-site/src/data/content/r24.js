@@ -2,7 +2,7 @@ export const r24 = {
   'r24-1': {
     title: '국가별 이산화탄소 배출량',
     blocks: [
-      { type: 'note', text: '고등학교 지필평가(중) 서술형 자료를 바탕으로 재구성했습니다 · 중3~고1 수준.' },
+      { type: 'note', text: '고등학교 지필평가(중) 서술형 자료를 바탕으로 재구성했습니다 · 중학교 3학년 수준.' },
       { type: 'heading', text: 'CO2 Emissions Around the World' },
       {
         type: 'p',
@@ -22,15 +22,11 @@ export const r24 = {
       },
       {
         type: 'p',
-        text: 'The gap between the highest emitter, China, and the lowest emitter, Canada, was about 10.2 billion tons — a striking difference that shows how unevenly CO2 emissions are distributed among these five countries. Because China\'s emissions are so much larger than the others, many experts believe that it is urgent for the Chinese government to take action to reduce CO2 emissions.',
+        text: "The gap between the highest emitter, China, and the lowest emitter, Canada, was about 10.2 billion tons, showing how unevenly CO2 emissions are distributed among these five countries. Because China's emissions are so much larger than the others, many experts believe that it is urgent for the Chinese government to take action to reduce CO2 emissions.",
       },
       {
         type: 'p',
-        text: 'Several factors explain why some countries emit far more CO2 than others. Countries with large populations and heavy industries, such as factories, power plants, and steel mills, tend to release more carbon dioxide simply because they produce and consume so much energy. Many of these countries also rely heavily on coal and oil to generate electricity, and burning these fuels releases far more CO2 than cleaner sources like solar, wind, or hydroelectric power do.',
-      },
-      {
-        type: 'p',
-        text: 'The consequences of high CO2 emissions extend far beyond the countries that produce them, since greenhouse gases spread through the atmosphere and affect the entire planet. Rising global temperatures caused by these emissions have been linked to more frequent heat waves, melting glaciers, and extreme weather patterns around the world. For this reason, international cooperation is just as important as action within a single country. Governments can work together to set emission targets, invest in clean energy technology, and support developing nations in adopting greener practices, while ordinary citizens can also contribute by conserving electricity and choosing public transportation over private cars whenever possible.',
+        text: 'High CO2 emissions affect the whole planet, since greenhouse gases spread through the atmosphere. Rising global temperatures caused by these emissions have been linked to more heat waves and melting glaciers around the world. Governments can help by setting emission targets and investing in clean energy, while ordinary citizens can contribute by conserving electricity and choosing public transportation over private cars.',
       },
       {
         type: 'callout',

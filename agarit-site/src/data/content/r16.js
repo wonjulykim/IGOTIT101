@@ -2,7 +2,7 @@ export const r16 = {
   'r16-1': {
     title: '교복, 입어야 할까 말아야 할까?',
     blocks: [
-      { type: 'note', text: '고등학교 지필평가(하) 서술형 자료를 바탕으로 재구성했습니다 · 중3~고1 수준.' },
+      { type: 'note', text: '고등학교 지필평가(하) 서술형 자료를 바탕으로 재구성했습니다 · 중학교 3학년 수준.' },
       { type: 'heading', text: 'Sujin and Minsu Talk About School Uniforms' },
       {
         type: 'p',
@@ -22,15 +22,7 @@ export const r16 = {
       },
       {
         type: 'p',
-        text: 'The debate over school uniforms is not limited to Korea. In many countries, schools have adopted different policies — some require uniforms every day, some allow casual clothes on Fridays, and others let students choose their own clothes entirely. Supporters often argue that uniforms create a sense of belonging and remove the pressure to compete over brand-name clothing, which can be especially stressful for students whose families cannot afford expensive items. Critics, however, point out that strict uniform rules can feel like they ignore students\' individuality and comfort, especially during hot summer months when thick fabrics can be unpleasant to wear.',
-      },
-      {
-        type: 'p',
-        text: "Parents and teachers often join this conversation as well. Many parents appreciate that uniforms can lower the overall cost of school clothing, since students do not need to buy a new outfit for every season or trend. Teachers, meanwhile, sometimes note that uniforms make it easier to tell whether a student belongs to the school, which can be helpful for safety reasons. Even so, both groups tend to agree that students' comfort and opinions should not be ignored when schools set their uniform policies.",
-      },
-      {
-        type: 'p',
-        text: 'Some schools have tried to find a middle ground between these two views. For example, a few schools now offer more comfortable uniform options, such as looser pants or breathable fabrics, while still keeping a shared school look. Other schools allow students to wear their uniforms with small personal touches, like a favorite pin or a particular way of tying a scarf. These compromises suggest that the uniform debate does not have to be an all-or-nothing choice — schools can listen to student concerns while still keeping some of the benefits that uniforms provide.',
+        text: 'The debate over school uniforms is not limited to Korea. Supporters often argue that uniforms create a sense of belonging and remove the pressure to compete over brand-name clothing. Critics, however, point out that strict uniform rules can ignore students\' individuality and comfort, especially during hot summer months. Some schools try to find a middle ground by offering more comfortable uniform options, such as looser pants or breathable fabrics, while still keeping a shared school look.',
       },
       {
         type: 'callout',

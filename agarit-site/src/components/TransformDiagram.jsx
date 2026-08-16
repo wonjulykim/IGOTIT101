@@ -9,8 +9,13 @@ function Box({ label, text }) {
   )
 }
 
+function normalize(item) {
+  return typeof item === 'string' ? { text: item } : item
+}
+
 export default function TransformDiagram({ from, to, note }) {
-  const fromItems = Array.isArray(from) ? from : [from]
+  const fromItems = (Array.isArray(from) ? from : [from]).map(normalize)
+  const toItem = normalize(to)
   return (
     <div className="tf-diagram">
       <div className="tf-from">
@@ -19,7 +24,7 @@ export default function TransformDiagram({ from, to, note }) {
         ))}
       </div>
       <div className="tf-arrow">↓</div>
-      <Box label={to.label} text={to.text} />
+      <Box label={toItem.label} text={toItem.text} />
       {note && <div className="tf-note">{note}</div>}
     </div>
   )

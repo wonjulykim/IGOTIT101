@@ -17,14 +17,6 @@ export const r8 = {
         text: 'This activity helped me learn about Mexican culture. I learned that food can help us understand other cultures, and I feel more curious about trying food from other countries now.',
       },
       {
-        type: 'p',
-        text: 'During the same week, our class also watched a short video about how Mexican families prepare a big meal called mole, which uses many different spices and even chocolate in the sauce. I was surprised to learn that some traditional recipes take hours, or even a whole day, to prepare properly, because the flavors need time to blend together. It made me realize that food is not just something people eat quickly between classes — in many cultures, cooking and eating together is treated as an important, shared activity that brings families closer.',
-      },
-      {
-        type: 'p',
-        text: 'Next month, our class is planning another Cultural Diversity Week, and I already signed up to help introduce food from Vietnam. I am excited to research the ingredients and history behind the dishes, and I hope other students will feel the same curiosity I felt when I tried tacos for the first time. Learning about food from different countries is a fun and easy way to start understanding cultures that might otherwise feel distant or unfamiliar.',
-      },
-      {
         type: 'callout',
         title: '📎 핵심 문법: 이유를 나타내는 접속사 because',
         items: [

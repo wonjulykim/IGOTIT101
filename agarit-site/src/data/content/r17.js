@@ -2,27 +2,19 @@ export const r17 = {
   'r17-1': {
     title: '로자 파크스의 작은 결심',
     blocks: [
-      { type: 'note', text: '고등학교 지필평가(하) 서술형 자료를 바탕으로 재구성했습니다 · 중3~고1 수준.' },
+      { type: 'note', text: '고등학교 지필평가(하) 서술형 자료를 바탕으로 재구성했습니다 · 중학교 3학년 수준.' },
       { type: 'heading', text: "Rosa Parks' Small Decision" },
       {
         type: 'p',
-        text: 'It was a cold December evening in 1955. Rosa Parks, a 42-year-old African American woman, boarded a bus in Montgomery, Alabama, to go home after a long day at work. She sat just behind the ten seats reserved for white passengers. At that time, the law separated people of color from white people in schools, housing, jobs, and even on buses.',
+        text: 'It was a cold December evening in 1955. Rosa Parks, a 42-year-old African American woman, boarded a bus in Montgomery, Alabama, on her way home from work. At that time, the law separated Black people from white people in schools, jobs, and even on buses. Rosa Parks sat just behind the seats reserved for white passengers, but when all those seats were filled, the driver told her to give up her seat. She quietly refused. Refusing to give up her seat was a small, calm act, but it was also a way of standing up to injustice. Because she did not move, she was arrested that day.',
       },
       {
         type: 'p',
-        text: 'When all the seats reserved for white passengers were filled, the driver insisted that Black passengers give up their seats. Ms. Parks had two choices: she could either stand up to give up her seat, or stand up to injustice by staying seated. She quietly refused to give up her seat, and she was arrested for her action.',
+        text: 'Four days later, a boycott of the Montgomery bus system began. Thousands of people stopped riding the bus to protest her arrest. The boycott lasted 381 days and ended on December 20, 1956, when the U.S. Supreme Court ruled that the segregation law was unconstitutional. That ruling led to many peaceful civil rights protests across the country — and it all began with Rosa Parks\' small decision on a bus.',
       },
       {
         type: 'p',
-        text: 'Four days after her arrest, a boycott of the Montgomery bus system began. The boycott lasted 381 days and ended on December 20, 1956, when the U.S. Supreme Court ruled that the segregation law was unconstitutional. That ruling sparked many successful non-violent civil rights protests across the country — and it all began with Rosa Parks\' small decision on a bus.',
-      },
-      {
-        type: 'p',
-        text: "News of Rosa Parks' arrest spread quickly through Montgomery's Black community, and local leaders decided that the moment called for a coordinated response rather than isolated anger. Community leaders, including local pastors, organized carpools and encouraged people to walk to work rather than ride the bus, even when the weather turned cold. Many people who depended on the bus system for their daily commute chose to walk for miles instead, showing that ordinary citizens were willing to make real sacrifices for a cause they believed in.",
-      },
-      {
-        type: 'p',
-        text: "Today, Rosa Parks is often remembered as \"the mother of the civil rights movement,\" and her story is taught in schools around the world as an example of how a single peaceful act of courage can inspire lasting change. Her decision reminds us that standing up for what is right does not always require loud protests — sometimes, quietly refusing to accept an unfair rule can be just as powerful.",
+        text: "Today, Rosa Parks is often remembered as \"the mother of the civil rights movement.\" Her story teaches us that standing up for what is right does not always require loud protests. Sometimes, quietly refusing to accept an unfair rule can be just as powerful.",
       },
       {
         type: 'callout',

@@ -2,27 +2,19 @@ export const r30 = {
   'r30-1': {
     title: '쿠마리의 감사 편지',
     blocks: [
-      { type: 'note', text: '고등학교 지필평가(중) 서술형 자료를 바탕으로 재구성했습니다 · 중3~고1 수준.' },
+      { type: 'note', text: '고등학교 지필평가(중) 서술형 자료를 바탕으로 재구성했습니다 · 중학교 3학년 수준.' },
       { type: 'heading', text: "Kumari's Thank-You Note" },
       {
         type: 'p',
-        text: 'At the beginning of summer vacation, my brother asked me to volunteer at a community welfare center. He introduced me to a class there and asked me to help a student named Kumari, who had come from Nepal. She bowed to me and said, "Namaste," with her palms held together.',
+        text: 'At the beginning of summer vacation, my brother asked me to volunteer at a community welfare center. He introduced me to a class there and asked me to help a student named Kumari, who had come from Nepal. She bowed to me and said, "Namaste," with her palms held together. When I helped her write down Korean words, her eyes lit up with joy. She was so enthusiastic about learning Korean that I felt great joy in teaching her, and this feeling kept bringing me back to class every week.',
       },
       {
         type: 'p',
-        text: 'When I helped her write down Korean words, her eyes lit up with joy. She was so enthusiastic about learning Korean that I felt great joy in teaching her, and this feeling kept bringing me back to class every week. Soon we became close friends and learned more about each other. She told me she was learning Korean so that she could read books to her son one day, and I was glad that I could help make her dream come true.',
+        text: 'Soon we became close friends. She told me she was learning Korean so that she could read books to her son, Jinsu, one day, and I was glad that I could help make her dream come true. When vacation ended, I could not continue volunteering any longer. On the last day, Kumari gave me a box of Himalayan black tea along with a thank-you note written in Korean, thanking me for helping her feel that her dream was finally within reach.',
       },
       {
         type: 'p',
-        text: 'When vacation ended, I could not continue volunteering any longer. On the last day, Kumari gave me a box of Himalayan black tea along with a thank-you note written in Korean, thanking me for helping her learn to read books to her son and for helping her feel that her dream was finally within reach.',
-      },
-      {
-        type: 'p',
-        text: 'That night, I read Kumari\'s note over and over again in my room. Her handwriting was still a little uneven, since she had only been learning Korean letters for a few months, but every word had clearly been chosen with care. I realized that teaching her to read had given her something far more valuable than just new vocabulary — it had given her the confidence to write her own feelings down in a language that was not her own.',
-      },
-      {
-        type: 'p',
-        text: 'After that summer ended, Kumari and I kept in touch through occasional messages, and she told me that she practiced reading with her son almost every night. Whenever I felt unsure about continuing to volunteer somewhere new, I would think back to her bright smile on the last day of class, and I understood that the time I had given up was returned to me many times over, in the form of a genuine friendship and a memory I would carry with me for a long time.',
+        text: 'That night, I read Kumari\'s note over and over again in my room. Her handwriting was still a little uneven, since she had only been learning Korean letters for a few months, but every word had clearly been chosen with care. I realized that teaching her to read had given her something more valuable than just new vocabulary — it had given her the confidence to write down her own feelings in a language that was not her own.',
       },
       {
         type: 'callout',

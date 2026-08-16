@@ -4,7 +4,7 @@ export const r1 = {
     blocks: [
       {
         type: 'note',
-        text: '고등학교 1학년 수준 · 표현 영역 · 경기도교육청 논술형 평가 자료를 바탕으로 재구성했습니다.',
+        text: '중학교 3학년 수준 · 표현 영역 · 경기도교육청 논술형 평가 자료를 바탕으로 재구성했습니다.',
       },
       { type: 'heading', text: 'Identity Theft: A Growing Online Danger' },
       {
@@ -13,15 +13,11 @@ export const r1 = {
       },
       {
         type: 'p',
-        text: 'These threats are getting more serious every year. Recent reports show that phishing attacks have risen by almost half since 2021, and more than a third of all attacks now target individuals rather than companies. The financial damage caused by malware around the world has also grown from millions of dollars to tens of billions of dollars in just a few years.',
+        text: 'Once someone\'s identity has been stolen, the effects can last far longer than the crime itself. Victims often discover the problem only after strange charges appear on their bank statements. Fixing the damage can take months, since victims must contact banks and sometimes the police to prove that they did not make the purchases themselves.',
       },
       {
         type: 'p',
-        text: 'Once someone\'s identity has been stolen, the effects can last far longer than the crime itself. Victims often discover the problem only after strange charges appear on their bank statements or debt collectors start contacting them about loans they never took out. Fixing the damage can take months, since victims must contact banks, credit agencies, and sometimes the police to prove that they did not make the purchases themselves. Meanwhile, the stress of not knowing how much personal information has been exposed can affect a person\'s daily life, making them anxious about using the internet at all.',
-      },
-      {
-        type: 'p',
-        text: 'Experts agree that a few simple habits can lower the risk significantly. Using a different, strong password for each online account makes it harder for thieves to break into multiple accounts at once, even if one password is leaked. Turning on two-factor authentication, which requires a second code sent to a phone or email, adds an extra layer of protection that a stolen password alone cannot bypass. Regularly checking bank and credit card statements also helps people spot suspicious activity early, before the damage grows larger. None of these steps guarantees complete safety, but together they make identity theft much less likely to succeed.',
+        text: 'Luckily, a few simple habits can lower the risk. Using a different, strong password for each account makes it harder for thieves to break in, even if one password is leaked. Turning on two-factor authentication adds an extra layer of protection, and checking bank statements regularly helps people spot suspicious activity early.',
       },
       {
         type: 'callout',

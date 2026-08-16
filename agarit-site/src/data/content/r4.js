@@ -2,7 +2,7 @@ export const r4 = {
   'r4-1': {
     title: 'AI가 그린 그림은 누구의 것일까?',
     blocks: [
-      { type: 'note', text: '고등학교 1학년 수준 · 표현 영역 · 경기도교육청 논술형 평가 자료를 바탕으로 재구성했습니다.' },
+      { type: 'note', text: '중학교 3학년 수준 · 표현 영역 · 경기도교육청 논술형 평가 자료를 바탕으로 재구성했습니다.' },
       { type: 'heading', text: 'Who Is the Author of AI-generated Art?' },
       {
         type: 'p',
@@ -10,19 +10,11 @@ export const r4 = {
       },
       {
         type: 'p',
-        text: 'Looking ahead, if AI systems gain enough autonomy to make their own creative choices and develop a unique style, society may need entirely new legal frameworks to decide who — or what — should be recognized as the author, especially in projects where humans and AI collaborate closely.',
+        text: 'Some people believe the person who writes the prompt should be the author. They compare using an AI art generator to using a camera or a paintbrush — it is still just a tool, and a human needs vision and effort to create something meaningful with it. Critics disagree. They point out that AI art generators are trained on huge collections of images made by real human artists, often without permission. When an AI creates a picture in the style of a certain painter, it may be borrowing more from that artist\'s creativity than from the person typing the prompt.',
       },
       {
         type: 'p',
-        text: 'Supporters of granting authorship to the prompt writer argue that using an AI art generator is similar to using a camera or a paintbrush — a tool that still requires human vision, decision-making, and effort to produce a meaningful result. From this view, the person who imagines the concept, chooses the style, and repeatedly adjusts the prompt until the image matches their intention deserves to be called the creator, even though a machine actually produced the final pixels.',
-      },
-      {
-        type: 'p',
-        text: "Critics disagree, pointing out that AI art generators are trained on enormous collections of images made by real human artists, often without those artists' permission. They argue that when an AI system produces a picture in the style of a particular painter, it may be borrowing more from that original artist's creativity than from the person typing the prompt. This raises a difficult question: should the artists whose work trained the AI also receive some form of credit or compensation, even if they had no direct role in creating the final image?",
-      },
-      {
-        type: 'p',
-        text: 'Governments and courts in different countries are only beginning to address these questions, and their approaches often differ. Some legal systems focus mainly on how much creative control a human exercised over the final result, while others are still deciding whether AI-assisted works can be protected at all. Because the technology is changing so quickly, many experts believe that any rule written today may need to be revised again within just a few years.',
+        text: 'Looking ahead, if AI systems gain more autonomy and develop their own creative style, society may need new legal frameworks to decide who should be recognized as the author. Governments and courts around the world are only beginning to answer this question, and their approaches often differ from country to country.',
       },
       {
         type: 'callout',

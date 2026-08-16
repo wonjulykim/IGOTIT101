@@ -2,7 +2,7 @@ export const r6 = {
   'r6-1': {
     title: '환경 보호 캠페인 만들기',
     blocks: [
-      { type: 'note', text: '중학교 2학년 수준 · 표현 영역 · 경기도교육청 논술형 평가 자료를 바탕으로 재구성했습니다.' },
+      { type: 'note', text: '중학교 3학년 수준 · 표현 영역 · 경기도교육청 논술형 평가 자료를 바탕으로 재구성했습니다.' },
       { type: 'heading', text: 'Our Ocean Is Drowning in Plastic' },
       {
         type: 'p',
@@ -14,11 +14,7 @@ export const r6 = {
       },
       {
         type: 'p',
-        text: 'Over time, ocean plastic does not simply disappear — sunlight and waves slowly break it into smaller and smaller pieces called microplastics. These tiny fragments are often too small to see easily, but fish and other small sea creatures still swallow them along with their food. Because larger animals eat smaller ones, these microplastics can move up the food chain, eventually ending up in seafood that people eat. Scientists are still studying exactly how this affects human health, but many researchers agree that reducing plastic pollution at its source is safer than waiting to find out.',
-      },
-      {
-        type: 'p',
-        text: 'Individual habits matter, but many experts also point to bigger changes that could make a real difference, such as companies using less plastic packaging and cities improving how they collect and recycle waste. Some coastal communities have started organizing regular beach clean-up events, where volunteers gather to collect trash before it can wash back out to sea. Combining these larger community efforts with everyday personal choices, like carrying a reusable bag or avoiding single-use straws, gives ocean life a better chance to recover.',
+        text: 'Individual habits matter, but bigger changes can help too. Companies can use less plastic packaging, and cities can improve how they collect and recycle waste. Some coastal communities have started organizing beach clean-up events, where volunteers collect trash before it can wash back into the sea. When personal choices and community efforts work together, ocean life has a better chance to recover.',
       },
       {
         type: 'callout',
