@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rel-nest-title rel-nest-desc">
+<svg viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rel-nest-title rel-nest-desc">
       <title id="rel-nest-title">관계대명사절의 내포 구조</title>
       <desc id="rel-nest-desc">전체 문장 상자 안에 선행사인 명사 상자가 있고, 그 명사 상자 안에 그것을 뒤에서 꾸며주는 관계대명사절 상자가 겹겹이 들어있는 구조를 The man who lives next door is a doctor 예문으로 보여준다.</desc>
       <defs>
@@ -12,33 +12,33 @@
       <rect width="100%" height="100%" fill="#fffdf7"/>
 
       <!-- Level 1: whole sentence — outermost -->
-      <rect x="40" y="60" width="920" height="380" rx="8" fill="rgba(63,58,69,0.015)" stroke="rgba(63,58,69,0.30)" stroke-width="1"/>
+      <rect x="40" y="72" width="920" height="380" rx="8" fill="rgba(63,58,69,0.015)" stroke="rgba(63,58,69,0.30)" stroke-width="1"/>
       <!-- Level 2: antecedent (noun) -->
-      <rect x="72" y="96" width="856" height="308" rx="8" fill="rgba(63,58,69,0.025)" stroke="rgba(63,58,69,0.45)" stroke-width="1"/>
+      <rect x="72" y="108" width="856" height="308" rx="8" fill="rgba(63,58,69,0.025)" stroke="rgba(63,58,69,0.45)" stroke-width="1"/>
       <!-- Level 3: relative clause — innermost, focal -->
-      <rect x="104" y="132" width="792" height="236" rx="8" fill="rgba(255,138,61,0.08)" stroke="#ff8a3d" stroke-width="1.2"/>
+      <rect x="104" y="144" width="792" height="236" rx="8" fill="rgba(255,138,61,0.08)" stroke="#ff8a3d" stroke-width="1.2"/>
 
       <!-- Level labels on paper-colored masks, sitting on each ring's top border -->
-      <rect x="56" y="52" width="176" height="16" fill="#fffdf7"/>
-      <text x="64" y="64" fill="#6b6575" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.12em">전체 문장 · SENTENCE</text>
+      <rect x="56" y="60" width="220" height="24" fill="#fffdf7"/>
+      <text x="64" y="76" fill="#6b6575" font-size="13" font-family="'Geist Mono', monospace" letter-spacing="0.06em">전체 문장 · SENTENCE</text>
 
-      <rect x="88" y="88" width="204" height="16" fill="#fffdf7"/>
-      <text x="96" y="100" fill="#6b6575" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.12em">선행사(명사) · ANTECEDENT</text>
+      <rect x="88" y="96" width="252" height="24" fill="#fffdf7"/>
+      <text x="96" y="112" fill="#6b6575" font-size="13" font-family="'Geist Mono', monospace" letter-spacing="0.06em">선행사(명사) · ANTECEDENT</text>
 
-      <rect x="120" y="124" width="228" height="16" fill="#fffdf7"/>
-      <text x="128" y="136" fill="#ff8a3d" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.12em" font-weight="600">관계대명사절 · 형용사 역할</text>
+      <rect x="120" y="132" width="272" height="24" fill="#fffdf7"/>
+      <text x="128" y="148" fill="#ff8a3d" font-size="13" font-family="'Geist Mono', monospace" letter-spacing="0.06em" font-weight="600">관계대명사절 · 형용사 역할</text>
 
       <!-- "the man" — sits in the gap between level 2 and level 3, just above the inner ring -->
-      <text x="500" y="120" fill="#3f3a45" font-size="13" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">the man</text>
+      <text x="500" y="132" fill="#3f3a45" font-size="17" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">the man</text>
 
       <!-- Innermost content: the relative clause itself -->
-      <text x="500" y="248" fill="#3f3a45" font-size="18" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">who lives next door</text>
-      <text x="500" y="270" fill="#6b6575" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">the man을 뒤에서 수식 (형용사절)</text>
+      <text x="500" y="264" fill="#3f3a45" font-size="24" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">who lives next door</text>
+      <text x="500" y="288" fill="#6b6575" font-size="13" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.04em">the man을 뒤에서 수식 (형용사절)</text>
 
       <!-- "is a doctor." — sits in the gap between level 1 and level 2, below the noun-phrase ring -->
-      <text x="500" y="428" fill="#3f3a45" font-size="14" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">is a doctor.</text>
+      <text x="500" y="440" fill="#3f3a45" font-size="18" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">is a doctor.</text>
 
       <!-- Editorial callouts (max 2) -->
-      <text x="904" y="36" fill="#3f3a45" font-size="14" font-style="italic" font-family="'Instrument Serif', serif" text-anchor="end">The man who lives next door is a doctor.</text>
-      <text x="40" y="484" fill="#6b6575" font-size="14" font-style="italic" font-family="'Instrument Serif', serif">관계대명사절 = 명사를 꾸미는 긴 형용사</text>
+      <text x="920" y="40" fill="#3f3a45" font-size="17" font-style="italic" font-family="'Instrument Serif', serif" text-anchor="end">The man who lives next door is a doctor.</text>
+      <text x="40" y="496" fill="#6b6575" font-size="17" font-style="italic" font-family="'Instrument Serif', serif">관계대명사절 = 명사를 꾸미는 긴 형용사</text>
     </svg>

@@ -56,7 +56,7 @@ export default function Lesson() {
   }
 
   return (
-    <article className="lesson-page">
+    <article className={`lesson-page${isReading ? ' lesson-page--reading' : ''}`}>
       <div className="lesson-breadcrumb">
         <Link to="/">차례</Link> <span>›</span> <span>{chapter.num}{unitLabel} {chapter.title}</span>
         {isAdmin && (

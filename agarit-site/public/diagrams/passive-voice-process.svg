@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 1000 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="passive-process-title passive-process-desc">
+<svg viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="passive-process-title passive-process-desc">
       <title id="passive-process-title">능동태에서 수동태로 바뀌는 3단계 과정</title>
       <desc id="passive-process-desc">Tom wrote the letter가 The letter was written by Tom으로 바뀌는 과정을 목적어의 주어화, 동사의 be+과거분사화, 원래 주어의 by 이동이라는 3단계로 보여준다.</desc>
       <defs>
@@ -12,68 +12,68 @@
       <rect width="100%" height="100%" fill="#fffdf7"/>
 
       <!-- Top caption: BEFORE -->
-      <rect x="40" y="8" width="56" height="14" fill="#fffdf7"/>
-      <text x="40" y="19" fill="#8b8593" font-size="7" font-family="'Geist Mono', monospace" letter-spacing="0.16em">능동태</text>
-      <text x="40" y="38" fill="#3f3a45" font-size="16" font-weight="600" font-family="'Geist', sans-serif">Tom wrote the letter.</text>
+      <rect x="40" y="8" width="72" height="20" fill="#fffdf7"/>
+      <text x="40" y="23" fill="#8b8593" font-size="12" font-family="'Geist Mono', monospace" letter-spacing="0.12em">능동태</text>
+      <text x="40" y="48" fill="#3f3a45" font-size="20" font-weight="600" font-family="'Geist', sans-serif">Tom wrote the letter.</text>
 
       <!-- Arrows drawn before boxes -->
-      <line x1="320" y1="182" x2="360" y2="182" stroke="#6b6575" stroke-width="1" marker-end="url(#arrow)"/>
-      <line x1="640" y1="182" x2="680" y2="182" stroke="#ff8a3d" stroke-width="1.2" marker-end="url(#arrow-accent)"/>
+      <line x1="320" y1="192" x2="360" y2="192" stroke="#6b6575" stroke-width="1" marker-end="url(#arrow)"/>
+      <line x1="640" y1="192" x2="680" y2="192" stroke="#ff8a3d" stroke-width="1.2" marker-end="url(#arrow-accent)"/>
 
       <!-- Step header chips -->
-      <circle cx="180" cy="76" r="10" fill="rgba(63,58,69,0.12)"/>
-      <text x="180" y="80" fill="#3f3a45" font-size="10" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">1</text>
-      <text x="180" y="100" fill="#6b6575" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.1em">목적어 이동</text>
+      <circle cx="180" cy="84" r="14" fill="rgba(63,58,69,0.12)"/>
+      <text x="180" y="89" fill="#3f3a45" font-size="14" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">1</text>
+      <text x="180" y="112" fill="#6b6575" font-size="12" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">목적어 이동</text>
 
-      <circle cx="500" cy="76" r="10" fill="rgba(255,138,61,0.20)"/>
-      <text x="500" y="80" fill="#ff8a3d" font-size="10" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">2</text>
-      <text x="500" y="100" fill="#ff8a3d" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.1em" font-weight="600">동사 형태 변경</text>
+      <circle cx="500" cy="84" r="14" fill="rgba(255,138,61,0.20)"/>
+      <text x="500" y="89" fill="#ff8a3d" font-size="14" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">2</text>
+      <text x="500" y="112" fill="#ff8a3d" font-size="12" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em" font-weight="600">동사 형태 변경</text>
 
-      <circle cx="820" cy="76" r="10" fill="rgba(63,58,69,0.12)"/>
-      <text x="820" y="80" fill="#3f3a45" font-size="10" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">3</text>
-      <text x="820" y="100" fill="#6b6575" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.1em">행위자 이동</text>
+      <circle cx="820" cy="84" r="14" fill="rgba(63,58,69,0.12)"/>
+      <text x="820" y="89" fill="#3f3a45" font-size="14" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">3</text>
+      <text x="820" y="112" fill="#6b6575" font-size="12" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">행위자 이동</text>
 
       <!-- Step 1 box -->
-      <rect x="40" y="112" width="280" height="140" rx="6" fill="#ffffff" stroke="#3f3a45" stroke-width="1"/>
-      <rect x="56" y="124" width="20" height="14" rx="2" fill="rgba(63,58,69,0.12)"/>
-      <text x="66" y="134" fill="#3f3a45" font-size="7" font-weight="600" text-anchor="middle" font-family="'Geist Mono', monospace">O</text>
-      <text x="180" y="160" fill="#6b6575" font-size="13" font-family="'Geist Mono', monospace" text-anchor="middle">the letter</text>
-      <line x1="180" y1="172" x2="180" y2="192" stroke="#6b6575" stroke-width="1" marker-end="url(#arrow)"/>
-      <rect x="128" y="200" width="104" height="24" rx="4" fill="rgba(63,58,69,0.05)" stroke="#6b6575" stroke-width="1"/>
-      <text x="180" y="216" fill="#3f3a45" font-size="13" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">The letter</text>
-      <text x="180" y="240" fill="#8b8593" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">목적어 → 문장 맨 앞 주어로</text>
+      <rect x="40" y="128" width="280" height="156" rx="6" fill="#ffffff" stroke="#3f3a45" stroke-width="1"/>
+      <rect x="56" y="140" width="24" height="18" rx="2" fill="rgba(63,58,69,0.12)"/>
+      <text x="68" y="153" fill="#3f3a45" font-size="10" font-weight="600" text-anchor="middle" font-family="'Geist Mono', monospace">O</text>
+      <text x="180" y="180" fill="#6b6575" font-size="16" font-family="'Geist Mono', monospace" text-anchor="middle">the letter</text>
+      <line x1="180" y1="192" x2="180" y2="212" stroke="#6b6575" stroke-width="1" marker-end="url(#arrow)"/>
+      <rect x="120" y="220" width="120" height="28" rx="4" fill="rgba(63,58,69,0.05)" stroke="#6b6575" stroke-width="1"/>
+      <text x="180" y="239" fill="#3f3a45" font-size="16" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">The letter</text>
+      <text x="180" y="268" fill="#8b8593" font-size="12" font-family="'Geist Mono', monospace" text-anchor="middle">목적어 → 문장 맨 앞 주어로</text>
 
       <!-- Step 2 box (focal) -->
-      <rect x="360" y="112" width="280" height="140" rx="6" fill="rgba(255,138,61,0.06)" stroke="#ff8a3d" stroke-width="1.2"/>
-      <rect x="376" y="124" width="20" height="14" rx="2" fill="rgba(255,138,61,0.18)"/>
-      <text x="386" y="134" fill="#ff8a3d" font-size="7" font-weight="600" text-anchor="middle" font-family="'Geist Mono', monospace">V</text>
-      <text x="500" y="160" fill="#6b6575" font-size="13" font-family="'Geist Mono', monospace" text-anchor="middle" text-decoration="line-through">wrote</text>
-      <line x1="500" y1="172" x2="500" y2="192" stroke="#ff8a3d" stroke-width="1.2" marker-end="url(#arrow-accent)"/>
-      <rect x="428" y="200" width="144" height="24" rx="4" fill="rgba(255,138,61,0.12)" stroke="#ff8a3d" stroke-width="1"/>
-      <text x="500" y="216" fill="#3f3a45" font-size="13" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">was written</text>
-      <text x="500" y="240" fill="#8b8593" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">be동사 + 과거분사(p.p.)</text>
+      <rect x="360" y="128" width="280" height="156" rx="6" fill="rgba(255,138,61,0.06)" stroke="#ff8a3d" stroke-width="1.2"/>
+      <rect x="376" y="140" width="24" height="18" rx="2" fill="rgba(255,138,61,0.18)"/>
+      <text x="388" y="153" fill="#ff8a3d" font-size="10" font-weight="600" text-anchor="middle" font-family="'Geist Mono', monospace">V</text>
+      <text x="500" y="180" fill="#6b6575" font-size="16" font-family="'Geist Mono', monospace" text-anchor="middle" text-decoration="line-through">wrote</text>
+      <line x1="500" y1="192" x2="500" y2="212" stroke="#ff8a3d" stroke-width="1.2" marker-end="url(#arrow-accent)"/>
+      <rect x="420" y="220" width="160" height="28" rx="4" fill="rgba(255,138,61,0.12)" stroke="#ff8a3d" stroke-width="1"/>
+      <text x="500" y="239" fill="#3f3a45" font-size="16" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">was written</text>
+      <text x="500" y="268" fill="#8b8593" font-size="12" font-family="'Geist Mono', monospace" text-anchor="middle">be동사 + 과거분사(p.p.)</text>
 
       <!-- Step 3 box -->
-      <rect x="680" y="112" width="280" height="140" rx="6" fill="#ffffff" stroke="#3f3a45" stroke-width="1"/>
-      <rect x="696" y="124" width="20" height="14" rx="2" fill="rgba(63,58,69,0.12)"/>
-      <text x="706" y="134" fill="#3f3a45" font-size="7" font-weight="600" text-anchor="middle" font-family="'Geist Mono', monospace">S</text>
-      <text x="820" y="160" fill="#6b6575" font-size="13" font-family="'Geist Mono', monospace" text-anchor="middle">Tom</text>
-      <line x1="820" y1="172" x2="820" y2="192" stroke="#6b6575" stroke-width="1" marker-end="url(#arrow)"/>
-      <rect x="768" y="200" width="104" height="24" rx="4" fill="rgba(63,58,69,0.02)" stroke="rgba(63,58,69,0.20)" stroke-width="1" stroke-dasharray="4,3"/>
-      <text x="820" y="216" fill="#3f3a45" font-size="13" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">by Tom</text>
-      <text x="820" y="240" fill="#8b8593" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">문장 끝으로, 생략 가능</text>
+      <rect x="680" y="128" width="280" height="156" rx="6" fill="#ffffff" stroke="#3f3a45" stroke-width="1"/>
+      <rect x="696" y="140" width="24" height="18" rx="2" fill="rgba(63,58,69,0.12)"/>
+      <text x="708" y="153" fill="#3f3a45" font-size="10" font-weight="600" text-anchor="middle" font-family="'Geist Mono', monospace">S</text>
+      <text x="820" y="180" fill="#6b6575" font-size="16" font-family="'Geist Mono', monospace" text-anchor="middle">Tom</text>
+      <line x1="820" y1="192" x2="820" y2="212" stroke="#6b6575" stroke-width="1" marker-end="url(#arrow)"/>
+      <rect x="760" y="220" width="120" height="28" rx="4" fill="rgba(63,58,69,0.02)" stroke="rgba(63,58,69,0.20)" stroke-width="1" stroke-dasharray="4,3"/>
+      <text x="820" y="239" fill="#3f3a45" font-size="16" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">by Tom</text>
+      <text x="820" y="268" fill="#8b8593" font-size="12" font-family="'Geist Mono', monospace" text-anchor="middle">문장 끝으로, 생략 가능</text>
 
       <!-- Bottom caption: AFTER -->
-      <rect x="40" y="264" width="56" height="14" fill="#fffdf7"/>
-      <text x="40" y="275" fill="#ff8a3d" font-size="7" font-family="'Geist Mono', monospace" letter-spacing="0.16em" font-weight="600">수동태</text>
-      <text x="40" y="294" fill="#3f3a45" font-size="16" font-weight="600" font-family="'Geist', sans-serif">The letter was written by Tom.</text>
+      <rect x="40" y="300" width="72" height="20" fill="#fffdf7"/>
+      <text x="40" y="315" fill="#ff8a3d" font-size="12" font-family="'Geist Mono', monospace" letter-spacing="0.12em" font-weight="600">수동태</text>
+      <text x="40" y="340" fill="#3f3a45" font-size="20" font-weight="600" font-family="'Geist', sans-serif">The letter was written by Tom.</text>
 
       <!-- Legend strip -->
-      <line x1="40" y1="322" x2="960" y2="322" stroke="#efe5d8" stroke-width="0.8"/>
-      <text x="40" y="342" fill="#6b6575" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">LEGEND</text>
-      <rect x="140" y="334" width="14" height="10" rx="2" fill="rgba(255,138,61,0.06)" stroke="#ff8a3d" stroke-width="1.2"/>
-      <text x="162" y="343" fill="#6b6575" font-size="9" font-family="'Geist Mono', monospace">핵심 단계 (동사 변화)</text>
-      <rect x="360" y="334" width="14" height="10" rx="2" fill="rgba(63,58,69,0.02)" stroke="rgba(63,58,69,0.20)" stroke-width="1" stroke-dasharray="4,3"/>
-      <text x="382" y="343" fill="#6b6575" font-size="9" font-family="'Geist Mono', monospace">점선 = 생략 가능한 요소</text>
-      <text x="640" y="343" fill="#6b6575" font-size="9" font-family="'Geist Mono', monospace">↓ 화살표 = 문장 성분의 자리 이동</text>
+      <line x1="40" y1="368" x2="960" y2="368" stroke="#efe5d8" stroke-width="0.8"/>
+      <text x="40" y="392" fill="#6b6575" font-size="11" font-family="'Geist Mono', monospace" letter-spacing="0.1em">LEGEND</text>
+      <rect x="140" y="382" width="18" height="14" rx="2" fill="rgba(255,138,61,0.06)" stroke="#ff8a3d" stroke-width="1.2"/>
+      <text x="166" y="393" fill="#6b6575" font-size="13" font-family="'Geist Mono', monospace">핵심 단계 (동사 변화)</text>
+      <rect x="400" y="382" width="18" height="14" rx="2" fill="rgba(63,58,69,0.02)" stroke="rgba(63,58,69,0.20)" stroke-width="1" stroke-dasharray="4,3"/>
+      <text x="426" y="393" fill="#6b6575" font-size="13" font-family="'Geist Mono', monospace">점선 = 생략 가능한 요소</text>
+      <text x="680" y="393" fill="#6b6575" font-size="13" font-family="'Geist Mono', monospace">↓ 화살표 = 문장 성분의 자리 이동</text>
     </svg>
