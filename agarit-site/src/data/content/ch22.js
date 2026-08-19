@@ -140,6 +140,14 @@ export const ch22 = {
         text: '조동사가 있는 경우도 마찬가지입니다. "Is she coming?" → "whether she is coming"처럼 is 자체가 주어 뒤로 이동할 뿐이고, "Would this plan work?" → "whether this plan would work"처럼 would도 그대로 옮겨갈 뿐 새로운 일치가 필요하지는 않습니다. **인칭·시제 일치가 눈에 띄게 다시 나타나는 쪽은 오직 do/does/did가 쓰인 일반동사 의문문뿐입니다.**',
       },
       {
+        type: 'icon-row',
+        caption: 'do/does/did는 사라지고, be동사·조동사는 자리만 이동',
+        items: [
+          { icon: '🫥', label: 'do/does/did', sub: '통째로 사라짐 → 시제가 본동사로' },
+          { icon: '↔️', label: 'be동사·조동사', sub: '사라지지 않고 주어 뒤로만 이동' },
+        ],
+      },
+      {
         type: 'table',
         caption: '직접의문문 → 간접의문문 (의문사가 있는 경우)',
         headers: ['직접의문문 (의문사+동사+주어)', '간접의문문 (의문사+주어+동사)'],

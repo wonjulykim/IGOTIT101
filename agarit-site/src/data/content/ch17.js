@@ -103,6 +103,14 @@ export const ch17 = {
         type: 'note',
         text: '즉, 영어의 동사원형은 ‘말하는 행위와 일어나야 하는 행위가 거의 동시에 이루어지길 바라는 상황’에서 쓰인다는 공통된 느낌을 가지고 있습니다. 이러한 동사원형의 느낌은 다음 장의 지각동사에서도 다시 확인할 수 있습니다.',
       },
+      {
+        type: 'icon-row',
+        caption: '동사원형 vs to부정사 — 시킨 순간과 행위 사이의 거리감',
+        items: [
+          { icon: '⚡', label: '동사원형', sub: '시킨 순간 = 행위 순간 (거리 없음)' },
+          { icon: '🕰️', label: 'to부정사', sub: '시킨 순간 ≠ 행위 순간 (거리 있음)' },
+        ],
+      },
       { type: 'heading', text: '같은 상황, 다른 동사: make / have / let의 어감 차이' },
       {
         type: 'p',
@@ -117,6 +125,28 @@ export const ch17 = {
           ['have', '아이가 해줄 것이라 기대하며 부탁·요청한다.', 'I had my son clean his room. (해줄 것으로 기대하고 부탁했다)'],
           ['let', '아이가 치우고 싶어 해서 허락해준다.', 'I let my son clean his room. (치우고 싶어 해서 허락해주었다)'],
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '5형식 (make)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'made' },
+          { tag: 'O', text: 'my son' },
+          { tag: 'OC', text: 'clean his room' },
+        ],
+        translation: '나는 아들에게 방을 치우게 시켰다. (강제 — my son이 직접 치우는 능동 관계)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '5형식 (let)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'let' },
+          { tag: 'O', text: 'my son' },
+          { tag: 'OC', text: 'clean his room' },
+        ],
+        translation: '나는 아들이 방을 치우도록 허락했다. (허락 — my son이 직접 치우는 능동 관계)',
       },
       {
         type: 'example',
@@ -251,6 +281,15 @@ export const ch17 = {
           ['help', '동사원형 또는 to부정사', 'I helped him (to) fix the printer.'],
         ],
       },
+      {
+        type: 'icon-row',
+        caption: '목적격 보어 형태로 보는 세 그룹',
+        items: [
+          { icon: '⚡', label: 'make · have · let', sub: '동사원형만' },
+          { icon: '🕰️', label: 'get', sub: 'to부정사만' },
+          { icon: '🤝', label: 'help', sub: '동사원형 · to부정사 둘 다' },
+        ],
+      },
       { type: 'heading', text: '확장: to부정사를 쓰는 유사 의미 동사 — allow, force, permit, cause' },
       {
         type: 'p',
@@ -341,6 +380,14 @@ export const ch17 = {
       {
         type: 'p',
         text: '**능동인지 수동인지 헷갈릴 때는 ‘목적어가 그 행위를 스스로 할 수 있는가’를 따져보면 됩니다.** my wife는 머리를 자를 수 있는 주체이므로 능동(cut), my hair는 스스로 잘릴 수 없는 대상이므로 수동(cut = p.p.)입니다. 마찬가지로 my car는 스스로 수리할 수 없으므로 repaired, this problem은 스스로 해결될 수 없으므로 solved가 쓰입니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: '목적어가 행위를 하는가, 당하는가 — 목적격 보어의 형태',
+        items: [
+          { icon: '🙋', label: '능동', sub: '목적어가 직접 함 → 동사원형' },
+          { icon: '📦', label: '수동', sub: '목적어가 당함 → 과거분사(p.p.)' },
+        ],
       },
       {
         type: 'note',

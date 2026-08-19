@@ -18,6 +18,15 @@ export const ch20 = {
         type: 'p',
         text: '이처럼 어순이 달라지면 의미도 달라진다는 것을 기억하면서, 「주어 + 동사 + 목적어」의 순서를 바꾸는 대표적인 방식인 수동태를 살펴보겠습니다. **수동태는 능동태 문장을 기계적으로 바꾸는 문법 규칙이 아니라, 화자가 어떤 문맥과 의도를 가지고 「목적어를 주어로」 끌어올리는 선택입니다.** 즉, 같은 사건이라도 화자가 능동태와 수동태 중 무엇을 고르느냐에 따라 듣는 사람이 받는 인상이 완전히 달라집니다.',
       },
+      {
+        type: 'icon-row',
+        caption: '능동태 ↔ 수동태 — 초점이 이동한다',
+        items: [
+          { icon: '🏃', label: '행위자', sub: '능동태의 주어' },
+          { icon: '🔄', label: '주어 ↔ 목적어 교체' },
+          { icon: '🎯', label: '행위의 대상', sub: '수동태의 주어' },
+        ],
+      },
       { type: 'heading', text: '능동태와 수동태의 의미' },
       {
         type: 'example',
@@ -471,6 +480,14 @@ export const ch20 = {
           ['현재완료 (has/have + p.p.)', 'has/have + been + p.p.', 'She has fed the cats. → The cats have been fed.'],
           ['과거완료 (had + p.p.)', 'had + been + p.p.', 'The organizer had canceled the party. → The party had been canceled.'],
           ['미래완료 (will have + p.p.)', 'will have + been + p.p.', 'The mechanic will have fixed the car. → The car will have been fixed by 5pm.'],
+        ],
+      },
+      {
+        type: 'icon-row',
+        caption: 'being vs been — 진행 중인가, 이미 끝났는가',
+        items: [
+          { icon: '⏳', label: 'being + p.p.', sub: '~되고 있는 중 (진행)' },
+          { icon: '✅', label: 'been + p.p.', sub: '~된 상태 (완료)' },
         ],
       },
       {

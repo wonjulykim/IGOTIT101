@@ -134,6 +134,15 @@ export const ch7 = {
         text: '일반동사는 be동사처럼 스스로 자리를 바꾸어 의문문·부정문을 만들지 못하기 때문에 **Do/Does의 도움이 필요**합니다. 자세한 내용은 다음 레슨(일반동사)에서 다룹니다.',
       },
       {
+        type: 'icon-row',
+        caption: 'be동사 vs 일반동사 — 의문문·부정문을 만드는 힘',
+        items: [
+          { icon: '🚶', label: 'be동사', sub: '스스로 앞으로 이동' },
+          { icon: '🙅', label: '일반동사', sub: '스스로 이동 불가' },
+          { icon: '🆘', label: 'Do/Does', sub: '일반동사를 도와줌' },
+        ],
+      },
+      {
         type: 'callout',
         title: '핵심 정리 - be동사',
         items: [
@@ -275,6 +284,15 @@ export const ch7 = {
       {
         type: 'note',
         text: '부정문에도 비슷한 역사가 있습니다. 고대 영어에서는 일반동사 바로 뒤에 not을 붙여 "I want not something."처럼 쉽게 부정문을 만들었습니다. 그런데 중세 영어로 넘어오면서 "I do not want something."과 같이 do가 추가되었습니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: 'do의 역사적 발전 — 의문·부정의 도우미로 자리 잡기까지',
+        items: [
+          { icon: '📜', label: '고대 영어', sub: '동사가 스스로 이동·not 결합' },
+          { icon: '🔨', label: '중세 영어', sub: 'do가 서서히 끼어들기 시작' },
+          { icon: '✅', label: '현대 영어', sub: '의문문·부정문엔 do 필수' },
+        ],
       },
       {
         type: 'callout',
@@ -448,6 +466,14 @@ export const ch7 = {
         type: 'note',
         text: '실생활에서는 이 구분이 점점 흐려져서 have to가 must의 자리를 대신하는 경우도 많습니다. 다만 시험이나 문법 문제에서는 "누가 정한 의무인가"라는 기준으로 must/have to를 구별하는 문제가 자주 나오므로 원리를 정확히 기억해두는 것이 좋습니다.',
       },
+      {
+        type: 'icon-row',
+        caption: 'must vs have to — 의무는 어디에서 왔는가',
+        items: [
+          { icon: '🙋', label: 'must', sub: '화자 자신의 판단·의지' },
+          { icon: '📋', label: 'have to', sub: '규칙·법·상황 (외부 요인)' },
+        ],
+      },
       { type: 'heading', text: 'must not vs don’t have to - 반대말이 아니다' },
       {
         type: 'p',
@@ -469,6 +495,14 @@ export const ch7 = {
           { en: 'You don’t have to bring your own lunch. It’s provided.', ko: '점심을 직접 가져올 필요는 없다. 제공되니까.', note: '불필요 - 가져오지 않아도 문제없음' },
         ],
       },
+      {
+        type: 'icon-row',
+        caption: 'must not vs don\'t have to — 반대 방향으로 갈라지는 부정',
+        items: [
+          { icon: '🚫', label: 'must not', sub: '강한 금지 - 절대 안 됨' },
+          { icon: '🙆', label: "don't have to", sub: '불필요 - 안 해도 됨' },
+        ],
+      },
       { type: 'heading', text: 'should와 ought to - 조언·제안' },
       {
         type: 'p',
@@ -484,6 +518,17 @@ export const ch7 = {
       {
         type: 'note',
         text: 'have to와 ought to는 다른 조동사(can, may, will, must)와 달리 뒤에 to가 붙는 예외적인 형태입니다. 그럼에도 뒤에 동사원형이 온다는 점, 주어의 인칭에 따라 형태가 바뀌지 않는다는 점(ought to)은 다른 조동사와 동일합니다.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '조동사 should — 조언·제안',
+        parts: [
+          { tag: 'S', text: 'You' },
+          { tag: 'V', text: 'should see' },
+          { tag: 'O', text: 'a doctor' },
+          { tag: 'M', text: 'about that cough.' },
+        ],
+        translation: '그 기침 때문에 병원에 가보는 게 좋겠다. (must보다 약하고 can보다 강한 조언의 정도)',
       },
       { type: 'heading', text: '추측을 나타내는 조동사 - 확신도의 스펙트럼' },
       {

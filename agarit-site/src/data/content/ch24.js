@@ -19,6 +19,14 @@ export const ch24 = {
         type: 'note',
         text: '관계부사(when, where, why, how)는 결국 **"전치사 + 관계대명사"를 한 단어로 줄인 표현**입니다. 매번 전치사를 옮기고 관계대명사를 붙이는 수고를 덜기 위해 만들어진 압축 장치라고 이해하면 됩니다.',
       },
+      {
+        type: 'icon-row',
+        caption: '압축의 원리 - 전치사+관계대명사 = 관계부사 한 단어',
+        items: [
+          { icon: '🧩', label: '전치사 + 관계대명사', sub: 'in which / on which / for which' },
+          { icon: '🔗', label: '관계부사 한 단어', sub: 'where / when / why' },
+        ],
+      },
       { type: 'heading', text: '압축 과정 ① 장소: where' },
       {
         type: 'p',
@@ -324,6 +332,14 @@ export const ch24 = {
           ['관계부사 (when, where, why, how)', '부사 역할', '완전한 문장', 'This is the store where I bought the book yesterday.'],
         ],
       },
+      {
+        type: 'icon-row',
+        caption: '관계사 뒤 문장 - 완전한가, 불완전한가',
+        items: [
+          { icon: '🕳️', label: '관계대명사', sub: '명사 하나 빠진 불완전한 문장' },
+          { icon: '✅', label: '관계부사', sub: '빠진 것 없는 완전한 문장' },
+        ],
+      },
       { type: 'heading', text: '흔히 하는 실수 ① 관계부사 뒤에 불완전한 문장을 쓰는 경우' },
       {
         type: 'p',
@@ -387,6 +403,14 @@ export const ch24 = {
         ],
       },
       { type: 'heading', text: '관계부사 선행사의 생략 ① 생략이 가능한 경우' },
+      {
+        type: 'icon-row',
+        caption: '관계부사 선행사 생략',
+        items: [
+          { icon: '✂️', label: '생략 가능', sub: '문맥상 뜻이 명확할 때' },
+          { icon: '🔒', label: '생략 불가', sub: '생략하면 의미가 불분명할 때' },
+        ],
+      },
       {
         type: 'p',
         text: '관계부사 앞의 선행사(the place, the time, the reason, the way)는 **생략된 선행사의 의미가 문맥상 명확하게 유추될 수 있을 때 생략할 수 있습니다.** 선행사를 생략하면 문장이 더 간결하고 자연스러워집니다.',

@@ -16,6 +16,15 @@ export const ch18 = {
         text: '지각동사 뒤에는 분사(-ing)가 오는 구조도 있지만, 여기에서는 「지각동사 + 목적어 + 동사원형」 구조를 중심으로 다룹니다.',
       },
       {
+        type: 'icon-row',
+        caption: '목적격 보어 자리에 올 수 있는 세 가지 형태 — 무엇을 보았느냐에 따라 형태가 달라진다',
+        items: [
+          { icon: '🎬', label: '동사원형', sub: '시작~끝, 완결된 동작 전체' },
+          { icon: '🔄', label: '현재분사(-ing)', sub: '진행 중인 한 순간' },
+          { icon: '📦', label: '과거분사(p.p.)', sub: '목적어가 동작을 당하는 상황' },
+        ],
+      },
+      {
         type: 'example',
         items: [
           { en: 'I saw you sing.', ko: '나 네가 노래하는 거 봤어.' },

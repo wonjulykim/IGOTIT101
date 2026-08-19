@@ -166,6 +166,14 @@ export const ch9 = {
         type: 'p',
         text: '일반 동사 중에는 앞서 배운 -ed 규칙을 따르지 않고 불규칙적으로 과거형이 되는 동사들이 있습니다. 이런 동사를 "불규칙 동사"라고 하며, **규칙이 없기 때문에 하나씩 외워야 합니다.**',
       },
+      {
+        type: 'icon-row',
+        caption: '규칙 동사 vs 불규칙 동사',
+        items: [
+          { icon: '📏', label: '규칙 동사', sub: '-ed 규칙을 적용' },
+          { icon: '🎲', label: '불규칙 동사', sub: '형태를 하나씩 암기' },
+        ],
+      },
       { type: 'heading', text: '불규칙 동사는 왜 존재할까' },
       {
         type: 'p',
@@ -201,6 +209,17 @@ export const ch9 = {
           ['spread', 'spread', 'spread', '펼치다'],
           ['read', 'read', 'read', '읽다'],
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '불규칙 동사의 과거형 (AAA 유형)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'cut' },
+          { tag: 'O', text: 'the paper' },
+          { tag: 'M', text: 'yesterday.' },
+        ],
+        translation: 'I cut the paper yesterday. (cut-cut-cut, 원형·과거·과거분사가 모두 같은 AAA 유형)',
       },
       {
         type: 'note',

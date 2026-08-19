@@ -92,6 +92,15 @@ export const ch4 = {
         type: 'note',
         text: '**길고 복잡한 문장은 뒤로 배치하여 듣는 사람의 이해를 돕는 것이 영어의 중요한 원칙 중 하나입니다.** to부정사 주어는 최소 두 단어(to+동사원형) 이상으로 이루어져 있고, 뒤에 목적어나 수식어가 붙으면 더 길어지기 쉽습니다. 그래서 이렇게 무거워진 주어를 문장 뒤로 보내고, 가벼운 It으로 그 자리를 채워 문장을 시작하는 것입니다.',
       },
+      {
+        type: 'icon-row',
+        caption: '가주어-진주어 이동 원리 — 무거운 것은 뒤로, 가벼운 것은 앞으로',
+        items: [
+          { icon: '🐘', label: '무거운 진주어', sub: 'to부정사·명사절 (2단어 이상)' },
+          { icon: '➡️', label: '뒤로 이동' },
+          { icon: '🎈', label: '가벼운 가주어 It', sub: '문장 앞자리를 채움' },
+        ],
+      },
       { type: 'heading', text: '동명사 주어와 길이의 문제' },
       {
         type: 'p',
@@ -268,10 +277,33 @@ export const ch4 = {
         type: 'note',
         text: '형용사에 따라 뒤에 to부정사가 오는지, that절이 오는지가 정해져 있는 경우가 많습니다. important, essential, difficult, easy, hard처럼 "어떤 행동을 하는 것이 어떠하다"는 의미의 형용사는 주로 to부정사와 어울리고, a shame, likely, true, said처럼 "어떤 사실·상황이 어떠하다"는 의미를 나타낼 때는 that절과 자주 어울립니다.',
       },
+      {
+        type: 'sentence-diagram',
+        label: '가주어 it (It takes + 목적어 + to부정사)',
+        parts: [
+          { tag: 'S', text: 'It' },
+          { tag: 'V', text: 'takes' },
+          { tag: 'O', text: 'courage' },
+          { tag: 'M', text: 'to admit your mistakes' },
+        ],
+        translation: 'It takes courage to admit your mistakes. (가주어 it + takes + 목적어 + 진주어 to부정사)',
+      },
       { type: 'heading', text: '비인칭 주어 it' },
       {
         type: 'p',
         text: '비인칭 주어 it 역시 그 자체로 "그것"이라는 뜻을 가지지 않습니다. 인칭이란 "누구의 관점(시점)에서 말하느냐"를 말합니다. 내가 말하면 1인칭, 네가 말하면 2인칭, 나와 너를 제외한 제3자가 말하면 3인칭이라고 합니다. 그런데 날씨, 날짜, 요일, 거리, 시간, 계절, 밝기 등과 같은 내용은 누구나 말할 수 있는 내용으로 주어의 인칭을 따지기가 애매합니다. 따라서 **이런 내용을 표현할 때는 인칭이 존재하지 않는 자리를 it으로 채워 문장의 형태를 갖춥니다.**',
+      },
+      {
+        type: 'icon-row',
+        caption: '비인칭 주어 it이 나타내는 것들',
+        items: [
+          { icon: '☀️', label: '날씨' },
+          { icon: '📅', label: '날짜·요일' },
+          { icon: '📏', label: '거리' },
+          { icon: '🕐', label: '시간' },
+          { icon: '🍂', label: '계절' },
+          { icon: '💡', label: '밝기' },
+        ],
       },
       {
         type: 'example',

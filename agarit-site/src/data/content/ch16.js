@@ -7,6 +7,15 @@ export const ch16 = {
         text: '‘수여’는 ‘누군가에게 어떤 것을 준다’는 뜻입니다. 수여동사는 말 그대로 ‘누군가에게 어떤 것을 준다’는 의미를 가진 동사들(give, send, bring, make, buy, show, tell 등)을 가리킵니다. 이 장에서는 수여동사가 왜 목적어를 두 개나 필요로 하는지, 그리고 그 문장이 전치사를 이용해 다른 모습으로도 바뀔 수 있다는 것을 원리부터 살펴보겠습니다.',
       },
       {
+        type: 'icon-row',
+        caption: '수여동사 한눈에 보기 — 주는 사람, 받는 사람, 건네지는 물건',
+        items: [
+          { icon: '🙋', label: '받는 사람', sub: '간접목적어(IO)' },
+          { icon: '➡️', label: 'give / send / show', sub: '수여 동작' },
+          { icon: '🎁', label: '주는 물건', sub: '직접목적어(DO)' },
+        ],
+      },
+      {
         type: 'example',
         items: [
           { en: 'He made the children dinner.', ko: '그는 그 아이들에게 저녁 식사를 만들어 주었다.' },
@@ -24,6 +33,17 @@ export const ch16 = {
           { tag: 'O2', text: 'dinner' },
         ],
         translation: '그는 그 아이들에게 저녁 식사를 만들어 주었다.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '4형식 (IO/DO 표기)',
+        parts: [
+          { tag: 'S', text: 'Tom' },
+          { tag: 'V', text: 'is sending' },
+          { tag: 'IO', text: 'Peter' },
+          { tag: 'DO', text: 'an email' },
+        ],
+        translation: 'Tom은 Peter에게 이메일을 보내는 중이다. (IO=간접목적어/받는 사람, DO=직접목적어/건네지는 물건)',
       },
       { type: 'heading', text: '수여동사의 두 목적어: 간접목적어와 직접목적어' },
       {
@@ -100,6 +120,14 @@ export const ch16 = {
       {
         type: 'note',
         text: '"She sent me a birthday card."와 "She sent a birthday card to me."는 같은 사실을 전달하지만 강조점이 다릅니다. 3형식으로 바꾼 문장은 받는 사람(me)을 문장 끝에 두어 ‘누가 받는지’를 강조합니다. 영어는 새롭고 강조하고 싶은 정보를 문장 뒤쪽에 두는 경향이 있기 때문입니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: '문장 끝 자리가 곧 강조 자리',
+        items: [
+          { icon: '📦', label: '4형식', sub: 'S+V+사람+물건 — 물건이 새 정보' },
+          { icon: '🙋', label: '3형식', sub: 'S+V+물건+to+사람 — 사람이 새 정보' },
+        ],
       },
       {
         type: 'example',
@@ -196,6 +224,15 @@ export const ch16 = {
           { en: 'Can I ask a favor of you?', ko: '부탁 하나만 해도 될까요?', note: 'ask a favor of + 사람: 굳어진 표현으로 자주 쓰임' },
         ],
       },
+      {
+        type: 'icon-row',
+        caption: '3형식 전환 전치사 — 동사에 따라 달라진다',
+        items: [
+          { icon: '🚚', label: 'to', sub: '전달 · give / send / show / tell' },
+          { icon: '🎁', label: 'for', sub: '마련해줌 · buy / make / cook' },
+          { icon: '❓', label: 'of', sub: '요청 · ask' },
+        ],
+      },
       { type: 'heading', text: '흔히 하는 실수 — 직접목적어가 대명사일 때' },
       {
         type: 'p',
@@ -207,6 +244,14 @@ export const ch16 = {
           { en: 'context: 친구가 빌려달라고 한 책을 건네주면서', note: '문맥' },
           { en: '*He gave her it.', ko: '(어색한 표현)', note: '대명사 it이 직접목적어인 4형식 — 원어민이 거의 쓰지 않는 어색한 배열' },
           { en: 'He gave it to her.', ko: '그는 그것을 그녀에게 주었다.', note: '대명사 it은 동사 뒤에, 사람은 to와 함께 뒤로 — 올바른 표현' },
+        ],
+      },
+      {
+        type: 'icon-row',
+        caption: '가벼운 정보는 동사 옆에, 무거운 정보는 문장 끝에',
+        items: [
+          { icon: '🪶', label: '대명사(it, them)', sub: '가벼운 정보 — 동사 바로 뒤' },
+          { icon: '🧱', label: '사람 + 전치사', sub: '무거운 정보 — 문장 끝' },
         ],
       },
       {
@@ -276,6 +321,14 @@ export const ch16 = {
           { en: 'He explained to me that he would be late.', ko: '그는 나에게 늦을 것이라고 설명했다.', note: 'explain 뒤에 that절이 올 때도 to me가 먼저 옴' },
           { en: 'I suggested a new plan to my team.', ko: '나는 팀에게 새로운 계획을 제안했다.' },
           { en: 'Can you describe the thief to the police?', ko: '경찰에게 그 도둑의 인상착의를 설명해 주시겠어요?' },
+        ],
+      },
+      {
+        type: 'icon-row',
+        caption: '통째로 건네기 vs 풀어서 전달하기',
+        items: [
+          { icon: '🎁', label: 'give / tell / teach', sub: '4형식 가능 — 그대로 건넴' },
+          { icon: '🗣️', label: 'explain / suggest / describe', sub: '3형식만 가능 — 말로 풀어서 전달' },
         ],
       },
       {

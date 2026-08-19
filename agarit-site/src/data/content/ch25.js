@@ -51,6 +51,14 @@ export const ch25 = {
         text: '현재분사는 동사에서 만들어졌기 때문에 동사의 기본 의미를 그대로 유지하면서 명사를 수식합니다. 그런데 현재분사가 다른 단어와 결합하여 길어지면, 영어의 "길고 복잡한 구조는 뒤로 보낸다"는 원칙에 따라 명사 뒤에 위치하게 됩니다.',
       },
       {
+        type: 'icon-row',
+        caption: '분사의 위치 - 짧으면 앞, 길면 뒤',
+        items: [
+          { icon: '👈', label: '분사 한 단어', sub: '명사 앞 (the running water)' },
+          { icon: '👉', label: '분사 + 다른 말', sub: '명사 뒤 (the man standing by the door)' },
+        ],
+      },
+      {
         type: 'example',
         items: [
           { en: 'The students studying in the library are very diligent.', ko: '도서관에서 공부하고 있는 학생들은 매우 성실하다.', note: 'studying in the library가 students를 뒤에서 꾸며줌' },
@@ -287,6 +295,15 @@ export const ch25 = {
       },
       { type: 'heading', text: '분사구문을 만드는 과정' },
       {
+        type: 'icon-row',
+        caption: '분사구문 만들기 3단계',
+        items: [
+          { icon: '1️⃣', label: '접속사 삭제' },
+          { icon: '2️⃣', label: '겹치는 주어 삭제' },
+          { icon: '3️⃣', label: '동사 → 분사로 전환' },
+        ],
+      },
+      {
         type: 'p',
         text: '**부사절을 분사구문으로 바꿀 때는 다음 순서를 따릅니다. ① 부사절의 접속사를 지운다. ② 부사절의 주어가 주절의 주어와 같으면 부사절의 주어도 지운다. ③ 남은 동사를 문맥(능동/진행이면 -ing, 수동/완료면 p.p.)에 맞게 분사 형태로 바꾼다.** 아래에서 "Because he was tired, he went to bed early."라는 문장이 어떻게 한 단계씩 "Being tired, he went to bed early."로 압축되는지 살펴봅니다.',
       },
@@ -371,6 +388,14 @@ export const ch25 = {
         translation: 'Having finished his work, he went home. (일을 끝낸 것이 집에 간 것보다 먼저 일어난 일)',
       },
       { type: 'heading', text: '단순분사(Ving) vs 완료분사(Having p.p.) 판별' },
+      {
+        type: 'icon-row',
+        caption: '단순분사 vs 완료분사 - 시간 관계',
+        items: [
+          { icon: '⏱️', label: 'Ving', sub: '주절과 거의 동시' },
+          { icon: '⏳', label: 'Having + p.p.', sub: '주절보다 먼저 끝난 일' },
+        ],
+      },
       {
         type: 'note',
         text: '단순분사(Ving)와 완료분사(Having p.p.)의 차이: 부사절과 주절의 동작이 거의 동시에 일어나거나 상태가 계속되는 경우에는 단순분사면 충분합니다("Being tired, he went to bed early." — 피곤한 상태와 잠자리에 든 것이 같은 시점). 하지만 부사절의 동작이 주절보다 먼저 끝난 별개의 사건이라면 having + p.p.를 써야 순서가 헷갈리지 않습니다. 이 구분을 무시하고 무조건 Ving만 쓰면, 두 사건이 동시에 일어난 것처럼 오해를 줄 수 있습니다.',

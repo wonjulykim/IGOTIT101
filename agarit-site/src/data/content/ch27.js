@@ -85,6 +85,16 @@ export const ch27 = {
         text: '실현 가능성이 높은 조건문이라고 해서 결과절이 항상 will로 끝나는 것은 아닙니다. 조건이 충족되었을 때의 결과가 단순한 미래의 사실이 아니라 허락(can), 의무(must/should), 조언이나 지시(명령문)일 때는 결과절의 형태가 그에 맞게 바뀝니다. 이때도 조건절에는 여전히 현재형 동사를 쓴다는 원칙은 그대로 유지됩니다.',
       },
       {
+        type: 'icon-row',
+        caption: '결과절의 형태 — 결과의 성격에 따라 달라진다',
+        items: [
+          { icon: '🔮', label: 'will', sub: '단순 미래의 사실' },
+          { icon: '🙆', label: 'can', sub: '허락' },
+          { icon: '💡', label: 'should/must', sub: '조언·의무' },
+          { icon: '👉', label: '명령문', sub: '지시' },
+        ],
+      },
+      {
         type: 'example',
         items: [
           { en: 'If you finish your homework, you can watch TV.', ko: '숙제를 끝내면 텔레비전을 볼 수 있다.', note: '결과절에 허락을 나타내는 can' },
@@ -136,6 +146,14 @@ export const ch27 = {
       {
         type: 'note',
         text: '조건절(if~/when~/unless~)과 결과절의 순서에 따라 쉼표를 찍는 방식이 달라집니다. **조건절이 문장 맨 앞에 나올 때는 결과절과 구분하기 위해 조건절 끝에 쉼표를 찍지만, 결과절이 먼저 나오고 조건절이 뒤따라올 때는 쉼표를 찍지 않습니다.** 예: If you freeze water, ice forms. (조건절이 앞 — 쉼표 O) / Ice forms if you freeze water. (조건절이 뒤 — 쉼표 X). 이 규칙은 이번 장에서 배우는 직설법 조건문뿐 아니라 다음 절의 가정법 문장에도 똑같이 적용됩니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: '쉼표 규칙 — 조건절의 위치',
+        items: [
+          { icon: '🔜', label: '조건절이 앞', sub: 'If ~, 결과절. (쉼표 O)' },
+          { icon: '🔚', label: '조건절이 뒤', sub: '결과절 if ~. (쉼표 X)' },
+        ],
       },
       {
         type: 'p',
@@ -215,6 +233,15 @@ export const ch27 = {
           { en: 'If I oversleep tomorrow, I will be late for the meeting.', ko: '내일 늦잠을 자면 회의에 늦을 것이다.', note: '직설법 조건문 — 내일 실제로 일어날 수 있는 일' },
           { en: 'If I overslept every day, I would lose my job.', ko: '매일 늦잠을 잔다면 직장을 잃을 텐데.', note: '가정법 과거 — 실제로 매일 늦잠을 자지는 않는다는 것을 전제로 한 상상' },
           { en: 'If I had overslept yesterday, I would have missed the meeting.', ko: '어제 늦잠을 잤더라면 회의를 놓쳤을 텐데.', note: '가정법 과거완료 — 실제로는 어제 늦잠을 자지 않아서 회의에 늦지 않았음' },
+        ],
+      },
+      {
+        type: 'icon-row',
+        caption: '현실과의 거리 — 발생 가능성 스펙트럼',
+        items: [
+          { icon: '💯', label: '직설법 조건문', sub: '실현 가능 — 현재형/will' },
+          { icon: '🌫️', label: '가정법 과거', sub: '가능성 낮음 — 과거형' },
+          { icon: '🔒', label: '가정법 과거완료', sub: '이미 끝난 과거 — 과거완료' },
         ],
       },
       {
@@ -308,6 +335,14 @@ export const ch27 = {
       {
         type: 'note',
         text: 'wish + would는 화자 자신의 행동을 바랄 때는 쓰지 않습니다("*I wish I would ~"는 어색한 문장입니다). 자기 자신에 대한 소망은 wish + could(능력)나 wish + 과거형(현재 사실과 반대되는 상태)으로 표현합니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: 'I wish + could vs I wish + would — 소망의 주체',
+        items: [
+          { icon: '🙋', label: 'wish + could', sub: '화자 자신의 능력' },
+          { icon: '👉', label: 'wish + would', sub: '다른 사람·사물이 다르게 행동하길' },
+        ],
       },
       { type: 'heading', text: 'if only — wish보다 더 강한 아쉬움' },
       {
@@ -442,6 +477,14 @@ export const ch27 = {
         ],
       },
       {
+        type: 'icon-row',
+        caption: 'should have p.p. vs 가정법 과거완료',
+        items: [
+          { icon: '💬', label: 'should have p.p.', sub: '조건 없이 후회만 간결하게' },
+          { icon: '🔀', label: '가정법 과거완료', sub: '조건+결과를 모두 상상' },
+        ],
+      },
+      {
         type: 'note',
         text: 'ought to have의 부정형인 "ought not to have"는 영국 영어에서도 드물게 쓰이고, 미국 영어에서는 거의 쓰이지 않습니다. 부정의 후회는 보통 shouldn\'t have로 표현하는 것이 자연스럽습니다.',
       },
@@ -479,6 +522,17 @@ export const ch27 = {
           { en: 'We should start organizing our project work, just in case they want to see it.', ko: '그들이 보고 싶어할 경우를 대비해서 프로젝트 작업을 미리 정리해 두는 게 좋겠다.' },
           { en: 'You should leave for the airport early, just in case the traffic is bad.', ko: '교통이 막힐 경우를 대비해서 공항에 일찍 출발하는 게 좋겠다.', note: 'just는 가능성이 낮은 상황에 대한 대비를 나타낼 때 in case 앞에 덧붙는다' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'in case - 미리 대비하기 (조건-결과가 아님)',
+        parts: [
+          { tag: 'S', text: 'You' },
+          { tag: 'V', text: 'should take' },
+          { tag: 'O', text: 'an umbrella' },
+          { tag: 'M', text: 'in case it rains later' },
+        ],
+        translation: '나중에 비가 올 경우를 대비해서 우산을 챙기는 게 좋겠다. (in case ≠ if — 조건이 아니라 대비)',
       },
       {
         type: 'p',

@@ -22,6 +22,15 @@ export const ch3 = {
         type: 'p',
         text: '이런 기본 문장에 요소를 더해가며 문장을 길게 만들어 갑니다. 그런데 주어와 동사는 그냥 나란히 놓인 두 단어가 아닙니다. **동사는 어떤 주어와 어울릴 수 있는지에 대한 조건(의미상의 자격)을 스스로 가지고 있고, 주어는 그 조건을 만족시킬 수 있는 대상이어야만 문장이 성립합니다.** 이를 언어학에서는 "선택 제약(selectional restriction)"이라고 부르는데, 용어를 외울 필요는 없지만 그 개념만은 꼭 이해해야 합니다.',
       },
+      {
+        type: 'icon-row',
+        caption: '주어의 종류에 따라 어울리는 동사가 다르다 — 선택 제약',
+        items: [
+          { icon: '🐕', label: '동물 주어', sub: '짖다·날다·질주하다 등' },
+          { icon: '📻', label: '사물 주어', sub: '소리·작동을 나타내는 동사' },
+          { icon: '🙋', label: '사람 주어', sub: '거의 모든 동사와 어울림' },
+        ],
+      },
       { type: 'heading', text: '동물 주어와 동사의 어울림' },
       {
         type: 'p',
@@ -154,6 +163,15 @@ export const ch3 = {
       },
       {
         type: 'icon-row',
+        caption: '형식을 가르는 기준 — 동사가 완결되기 위해 더 필요로 하는 요소의 개수',
+        items: [
+          { icon: '🧩', label: '0개 필요', sub: '1형식 · 동사만으로 완결' },
+          { icon: '🧩🧩', label: '1개 필요', sub: '2·3형식 · 보어 또는 목적어 1개' },
+          { icon: '🧩🧩🧩', label: '2개 필요', sub: '4·5형식 · 목적어 2개, 또는 목적어+목적격보어' },
+        ],
+      },
+      {
+        type: 'icon-row',
         caption: '5형식 한눈에 보기',
         items: [
           { icon: '🚶', label: '1형식', sub: 'S+V' },
@@ -209,6 +227,16 @@ export const ch3 = {
           { en: '*He arrived the station.', ko: '그는 역에 도착했다.', note: '비문 — arrive는 자동사라 목적어를 바로 취할 수 없음' },
           { en: 'He arrived at the station.', ko: '그는 역에 도착했다.', note: '전치사 at을 붙여야 올바른 문장' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '1형식 (전치사가 필요한 자동사)',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'arrived' },
+          { tag: 'M', text: 'at the station' },
+        ],
+        translation: '그는 역에 도착했다. (arrive는 자동사이므로 목적어 없이 전치사 at을 통해 station과 연결)',
       },
 
       { type: 'heading', text: '2형식: 주어 + 동사 + 보어' },

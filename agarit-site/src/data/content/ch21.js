@@ -224,6 +224,14 @@ export const ch21 = {
         ],
       },
       {
+        type: 'icon-row',
+        caption: 'have been to vs have gone to — 지금 어디에 있는가',
+        items: [
+          { icon: '🔙', label: 'have been to', sub: '갔다 옴 · 지금 여기' },
+          { icon: '📍', label: 'have gone to', sub: '가서 아직 그곳 · 지금 저기' },
+        ],
+      },
+      {
         type: 'example',
         items: [
           { en: 'She has gone to Florida.', ko: '그녀는 플로리다에 갔다. (지금도 거기 있음)', note: '결과 — 아직 돌아오지 않음' },

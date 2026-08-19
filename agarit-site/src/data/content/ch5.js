@@ -91,6 +91,15 @@ export const ch5 = {
         text: '일반동사는 다시 목적어(동작의 대상)를 필요로 하는지에 따라 나뉩니다. **목적어를 반드시 필요로 하는 동사를 타동사(transitive verb), 목적어 없이도 문장이 완성되는 동사를 자동사(intransitive verb)라고 부릅니다.** write, buy, give처럼 "누구에게 무엇을 하는지"의 대상이 있어야 의미가 완성되는 동사는 타동사이고, arrive, happen, sleep처럼 동작 자체로 의미가 끝나는 동사는 자동사입니다. read처럼 두 가지로 다 쓰이는 동사도 있습니다.',
       },
       {
+        type: 'icon-row',
+        caption: '자동사와 타동사 — 목적어가 필요한가',
+        items: [
+          { icon: '🎯', label: '타동사', sub: '목적어 필수 · write, buy, give' },
+          { icon: '🚫', label: '자동사', sub: '목적어 없이 완성 · arrive, sleep' },
+          { icon: '🔀', label: '둘 다 가능', sub: 'read, eat 등' },
+        ],
+      },
+      {
         type: 'example',
         items: [
           { en: 'Toni writes short stories.', ko: 'Toni는 단편소설을 쓴다.', note: '타동사 writes — short stories(목적어)가 없으면 "무엇을 쓰는지" 의미가 불완전함' },
@@ -98,6 +107,16 @@ export const ch5 = {
           { en: 'Jake was reading (a book).', ko: 'Jake는 (책을) 읽고 있었다.', note: 'read는 목적어를 넣어도 되고 생략해도 되는 동사 — 타동사·자동사 두 가지로 다 쓰임' },
           { en: 'Ronda gave her cat some food.', ko: 'Ronda는 자신의 고양이에게 먹이를 주었다.', note: '간접목적어(her cat)와 직접목적어(some food)를 둘 다 취하는 4형식 동사(give, send, show, tell 등)' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '타동사 — 목적어를 필요로 함',
+        parts: [
+          { tag: 'S', text: 'Toni' },
+          { tag: 'V', text: 'writes' },
+          { tag: 'O', text: 'short stories' },
+        ],
+        translation: 'Toni writes short stories. (목적어 short stories가 없으면 의미가 불완전함)',
       },
       {
         type: 'note',
@@ -147,6 +166,27 @@ export const ch5 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: '연결동사(linking verb) — 형용사 보어를 취함',
+        parts: [
+          { tag: 'S', text: 'Harry' },
+          { tag: 'V', text: 'looks' },
+          { tag: 'C', text: 'just like his father' },
+        ],
+        translation: 'Harry는 그의 아버지를 꼭 닮았다. (looks가 be동사처럼 주어-보어를 연결)',
+      },
+      {
+        type: 'icon-row',
+        caption: 'be동사만 연결하는 것이 아니다 — 대표 연결동사(linking verb)',
+        items: [
+          { icon: '🔗', label: 'be', sub: '~이다' },
+          { icon: '👀', label: 'look/seem', sub: '~해 보이다' },
+          { icon: '👃', label: 'smell/taste', sub: '~한 냄새·맛이 나다' },
+          { icon: '✋', label: 'feel', sub: '~하게 느껴지다' },
+          { icon: '🌱', label: 'become/get', sub: '~이 되다' },
+        ],
+      },
+      {
         type: 'note',
         text: '연결동사 뒤에 형용사 대신 부사를 쓰는 것은 매우 흔한 실수입니다. *You look nicely today.(×) → You look nice today.(○) — nicely는 look이라는 "동작"을 꾸미는 것이 아니라, You의 상태를 설명해야 하므로 형용사 nice가 와야 합니다. 반면 같은 동사라도 일반동사(동작)로 쓰이면 부사가 옵니다: He looked at me angrily.(그는 화난 듯이 나를 쳐다보았다 — 이때 looked at은 "보다"라는 동작이므로 부사 angrily가 자연스럽습니다.)',
       },
@@ -185,6 +225,15 @@ export const ch5 = {
           ['taste', 'The chef was tasting his soup. (맛을 보는 동작)', 'This soup tasted disgusting. (~한 맛이 나다, 상태)'],
           ['see', 'I\'m seeing some friends for lunch tomorrow. (만나기로 하다)', 'I saw some birds at the park yesterday. (눈에 보이다)'],
           ['have', 'We are having dinner now. (먹는 중, 동작)', 'She has two cats and a dog. (소유, 상태)'],
+        ],
+      },
+      {
+        type: 'icon-row',
+        caption: '동작동사 vs 상태동사 — 진행형이 가능한가',
+        items: [
+          { icon: '🏃', label: '동작동사', sub: 'run, eat, write · 진행형 가능' },
+          { icon: '🧊', label: '상태동사', sub: 'know, love, belong · 진행형 불가' },
+          { icon: '🔀', label: '둘 다 가능', sub: 'think, taste, see, have 등' },
         ],
       },
       {

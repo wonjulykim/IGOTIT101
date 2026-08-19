@@ -330,6 +330,14 @@ export const ch15 = {
         ],
       },
       {
+        type: 'icon-row',
+        caption: '같은 태그, 억양이 다르면 의도도 다르다',
+        items: [
+          { icon: '↗️', label: '끝을 올리는 억양', sub: '순수한 정보 확인' },
+          { icon: '↘️', label: '끝을 내리는 억양', sub: '이미 아는 사실에 동의 요청' },
+        ],
+      },
+      {
         type: 'note',
         text: '같은 문장, 같은 부가의문문이라도 억양에 따라 상대에게 전달되는 뉘앙스가 완전히 달라집니다. Amy의 나이를 모르는 사람이 올림조로 물으면 순수한 질문이 되지만, Amy의 나이를 이미 알고 있는 사람이 내림조로 말하면 "내가 알던 대로 맞지?"라는 확인·동의 요청이 됩니다.',
       },
@@ -371,6 +379,14 @@ export const ch15 = {
         type: 'note',
         text: '결국 부가의문문을 만들 때 가장 먼저 확인해야 할 것은 "이 문장에 이미 조동사(be, 조동사, have/has/had완료형)가 있는가"입니다. 있다면 그것을 그대로 재사용하고, 없다면(즉 일반동사 혼자 쓰였다면) 그때만 do/does/did를 새로 빌려옵니다.',
       },
+      {
+        type: 'icon-row',
+        caption: '부가의문문 동사 고르기 — 있으면 재사용, 없으면 빌려온다',
+        items: [
+          { icon: '✅', label: 'be / 조동사 / 완료형 have', sub: '문장 안의 동사를 그대로 재사용' },
+          { icon: '🙋', label: '일반동사만 있을 때', sub: 'do/does/did를 새로 빌려옴' },
+        ],
+      },
       { type: 'heading', text: 'There is/are 구문과 부정대명사 주어의 부가의문문' },
       {
         type: 'p',
@@ -395,6 +411,26 @@ export const ch15 = {
           { en: "Somebody left the window open, didn't they?", ko: '누군가 창문을 열어뒀지, 그렇지?', note: 'somebody도 they로 받음' },
           { en: "Nobody answered the phone, did they?", ko: '아무도 전화를 받지 않았지, 그렇지?', note: 'nobody는 이미 부정 의미이므로 긍정 부가의문문' },
         ],
+      },
+      {
+        type: 'icon-row',
+        caption: '주어를 부가의문문에서 어떻게 받을까',
+        items: [
+          { icon: '📍', label: 'There is/are', sub: 'there를 그대로 재사용' },
+          { icon: '👥', label: 'everyone / somebody', sub: '단수 취급이어도 they로' },
+          { icon: '🚫👥', label: 'no one / nobody', sub: 'they + 이미 부정 → 긍정 태그' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '부가의문문 구조 (There is/are — there를 그대로 재사용)',
+        parts: [
+          { tag: 'M', text: 'There' },
+          { tag: 'V', text: 'is' },
+          { tag: 'S', text: 'a problem' },
+          { tag: 'Tag', text: "isn't there?" },
+        ],
+        translation: "There is a problem, isn't there? (there가 의미상 주어 자리를 대신하며 태그에서도 그대로 재사용됨)",
       },
       { type: 'heading', text: 'I think/believe/suppose로 시작하는 문장의 부가의문문' },
       {
@@ -421,6 +457,14 @@ export const ch15 = {
         ],
       },
       {
+        type: 'icon-row',
+        caption: 'I think류 문장 — 태그는 종속절 기준',
+        items: [
+          { icon: '🗯️', label: 'I think + 긍정 that절', sub: 'that절 동사 기준으로 반전' },
+          { icon: '↔️', label: "I don't think", sub: '부정이 that절로 전이 → 긍정 태그' },
+        ],
+      },
+      {
         type: 'sentence-diagram',
         label: '부가의문문 구조 (I think + that절, 종속절 기준)',
         parts: [
@@ -430,6 +474,17 @@ export const ch15 = {
           { tag: 'Tag', text: "won't it?" },
         ],
         translation: "I think it will rain tomorrow, won't it? (주절 think가 아니라 종속절 it will rain 기준)",
+      },
+      {
+        type: 'sentence-diagram',
+        label: '부가의문문 구조 (부정 전이 — 주절이 부정이면 태그는 긍정)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: "don't think" },
+          { tag: 'M', text: 'he is coming' },
+          { tag: 'Tag', text: 'is he?' },
+        ],
+        translation: "I don't think he is coming, is he? (주절의 부정이 종속절 he is coming에 전이되어 태그는 긍정)",
       },
       { type: 'heading', text: '부정 의미를 가진 다양한 단어와 부가의문문' },
       {
@@ -449,9 +504,18 @@ export const ch15 = {
         ],
       },
       {
+        type: 'icon-row',
+        caption: 'not 없이도 부정문 — 동사는 긍정형인데 태그는 긍정',
+        items: [
+          { icon: '➕', label: '동사는 긍정형', sub: 'has / does / is 등' },
+          { icon: '🚫', label: 'never·hardly·seldom·no 등', sub: '문장 전체를 의미상 부정으로' },
+          { icon: '➕', label: '→ 부가의문문도 긍정', sub: 'has she? / does he?' },
+        ],
+      },
+      {
         type: 'example',
         items: [
-          { en: "She has never been abroad, has she?", ko: '그녀는 한 번도 해외에 나가본 적이 없지, 그렇지?', note: '동사 has는 긍정형이지만 never 때문에 의미상 부정문 → 긍정 태그' },
+          { en: "She has never been abroad, has she?",ko: '그녀는 한 번도 해외에 나가본 적이 없지, 그렇지?', note: '동사 has는 긍정형이지만 never 때문에 의미상 부정문 → 긍정 태그' },
           { en: "He hardly ever exercises, does he?", ko: '그는 운동을 거의 안 하지, 그렇지?', note: 'hardly ever도 부정 의미이므로 긍정 태그' },
           { en: "They seldom visit their grandparents, do they?", ko: '그들은 조부모님을 거의 찾아뵙지 않지, 그렇지?' },
           { en: "There is little time left, is there?", ko: '남은 시간이 거의 없지, 그렇지?', note: 'little(거의 없는)이 부정 의미이므로 긍정 태그' },

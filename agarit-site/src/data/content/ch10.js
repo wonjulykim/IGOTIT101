@@ -212,6 +212,16 @@ export const ch10 = {
         text: '현재진행형을 만들려면 일반동사를 ing형으로 바꾸어야 합니다. ing형을 만드는 규칙은 동사의 끝 형태에 따라 다음과 같이 나뉩니다.',
       },
       {
+        type: 'icon-row',
+        caption: 'ing형 만드는 네 가지 규칙',
+        items: [
+          { icon: '➕', label: '기본', sub: 'play → playing' },
+          { icon: '✂️', label: '-e 제거', sub: 'make → making' },
+          { icon: '🔀', label: '-ie → y', sub: 'lie → lying' },
+          { icon: '🎯', label: '자음 반복', sub: 'run → running' },
+        ],
+      },
+      {
         type: 'table',
         caption: 'ing형 만드는 규칙',
         headers: ['규칙', '설명', '예시'],
@@ -274,6 +284,16 @@ export const ch10 = {
           { en: 'I am wanting a new phone.', ko: '(오류) 나는 새 폰을 원하고 있는 중이다.', note: '✗ want는 상태동사 — 진행형 불가' },
           { en: 'I want a new phone.', ko: '나는 새 폰을 원한다.', note: '✓ 올바른 표현' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '같은 동사, 동작의 의미일 때는 진행형 가능',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'am having' },
+          { tag: 'O', text: 'lunch.' },
+        ],
+        translation: 'I am having lunch. (have가 "먹다"라는 동작의 의미일 때는 진행형이 가능하다 — "가지다"라는 상태의 의미일 때는 불가능)',
       },
       {
         type: 'note',

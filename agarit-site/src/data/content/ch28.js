@@ -94,6 +94,15 @@ export const ch28 = {
         ],
       },
       {
+        type: 'icon-row',
+        caption: 'very vs so vs too — 강조의 뉘앙스',
+        items: [
+          { icon: '📏', label: 'very', sub: '단순히 매우' },
+          { icon: '🤝', label: 'so', sub: '공감을 구함' },
+          { icon: '⚠️', label: 'too', sub: '기준 초과 (부정적)' },
+        ],
+      },
+      {
         type: 'p',
         text: '이 뉘앙스를 바탕으로 다시 보면 「so ~ that」 구문은 단순한 원인-결과 문장이 아닙니다. "She was so angry that her face turned red."는 \'그녀가 화가 날 수밖에 없었어. 그러니까 얼굴이 빨개졌지\'처럼, 상대방의 공감을 유도하는 뉘앙스를 담고 있습니다. 반면 "I was too young to watch the movie."는 \'너무 어렸다\'는 부정적 뉘앙스가 있고, "I was so young that I couldn\'t watch the movie."는 부정적 뉘앙스 없이 \'나이가 어려서 어쩔 수 없었다\'는 느낌을 전달합니다.',
       },
@@ -119,6 +128,17 @@ export const ch28 = {
           ['so + 형용사/부사 + that', '형용사·부사만 (명사 불가)', 'Medical research is so expensive that drugs are often costly.'],
           ['such + (a/an) + (형용사) + 명사 + that', '명사(구) — 형용사는 선택', 'This is such a strange injury that it is hard to diagnose.'],
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'such + a + 명사 + that',
+        parts: [
+          { tag: 'S', text: 'The disease' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'such a mystery' },
+          { tag: 'M', text: "that it doesn't even have a name yet" },
+        ],
+        translation: '그 질병은 너무 미스터리해서 아직 이름조차 없다. (such + a + 명사가 that 이하의 결과를 이끎)',
       },
       {
         type: 'note',
@@ -199,6 +219,14 @@ export const ch28 = {
           { en: 'Do we have enough food?', ko: '음식이 충분히 있나요?', note: 'enough + 불가산명사' },
           { en: "We only have two. That's not enough.", ko: '두 개밖에 없어. 그건 충분하지 않아.', note: 'enough가 명사 없이 단독으로 쓰임' },
           { en: "We have these snacks. That'll be enough.", ko: '이 간식들이 있어. 그거면 충분할 거야.' },
+        ],
+      },
+      {
+        type: 'icon-row',
+        caption: 'enough의 위치 — 무엇을 꾸미는가',
+        items: [
+          { icon: '➡️', label: '형용사/부사 + enough', sub: 'honest enough (뒤)' },
+          { icon: '⬅️', label: 'enough + 명사', sub: 'enough money (앞)' },
         ],
       },
       {
@@ -375,6 +403,14 @@ export const ch28 = {
         type: 'note',
         text: '「A as well as B」가 주어로 쓰이면 not only A but also B와 반대로, 앞에 있는 A에 동사의 수를 일치시킵니다. 예: The teacher as well as the students is excited about the trip. (학생들처럼 그 선생님도 그 여행을 재미있어한다 — 강조 대상인 The teacher가 단수이므로 is). as well as는 형태상 A가 문장의 진짜 주어이고 as well as B는 덧붙는 부가어이기 때문에, 핵심 주어인 A에 수를 맞춘다고 이해하면 됩니다.',
       },
+      {
+        type: 'icon-row',
+        caption: '주어 자리의 수 일치 — 동사에 가까운 쪽',
+        items: [
+          { icon: '👈', label: 'not only A but also B', sub: 'B에 수 일치' },
+          { icon: '👉', label: 'A as well as B', sub: 'A에 수 일치' },
+        ],
+      },
       { type: 'heading', text: '기타 병렬 구조: not A but B / both A and B / either A or B' },
       {
         type: 'table',
@@ -458,6 +494,16 @@ export const ch28 = {
         type: 'note',
         text: '흔한 실수 중 하나는 부정문에서 no one/nobody를 다시 부정어와 함께 쓰는 것입니다. "*There isn\'t no one here."는 이중 부정이 되어 틀린 문장입니다. 부정문에서는 반드시 anyone/anybody를 써서 "There isn\'t anyone here."라고 해야 합니다. no one/nobody는 그 자체가 부정의 의미를 담고 있으므로 앞에 다시 not이나 isn\'t를 붙이지 않습니다.',
       },
+      {
+        type: 'icon-row',
+        caption: 'some-/any-/no-/every- 계열 — 문장 종류에 따라',
+        items: [
+          { icon: '✅', label: 'some-', sub: '긍정문' },
+          { icon: '❓', label: 'any-', sub: '의문문·부정문' },
+          { icon: '🚫', label: 'no-', sub: '그 자체로 부정' },
+          { icon: '🌐', label: 'every-', sub: '전부 (긍정문)' },
+        ],
+      },
       { type: 'heading', text: '-thing, -one, -body + 형용사: 왜 형용사가 뒤로 가는가' },
       {
         type: 'p',
@@ -529,6 +575,17 @@ export const ch28 = {
           { en: 'These fruits are not fresh to eat.', ko: '이 과일들은 먹기에 신선하지 않다.' },
           { en: 'The exam is easy to pass.', ko: '그 시험은 합격하기 쉽다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '성질·평가 형용사 + to부정사',
+        parts: [
+          { tag: 'S', text: 'This book' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'hard' },
+          { tag: 'M', text: 'to understand' },
+        ],
+        translation: 'This book is hard to understand. (의미상 book이 understand의 목적어 — 이해하기에 어렵다)',
       },
       { type: 'heading', text: 'be동사 + worth + 동사원형-ing' },
       {
@@ -690,6 +747,15 @@ export const ch28 = {
           { en: 'The evening I remember most is my first concert.', ko: '내가 가장 기억하는 저녁은 나의 첫 콘서트이다.' },
         ],
       },
+      {
+        type: 'icon-row',
+        caption: '초점을 옮기는 주어 자리 — What 대신 구체적인 명사도 가능',
+        items: [
+          { icon: '❓', label: 'What', sub: '막연한 것을 강조' },
+          { icon: '📍', label: 'The place', sub: '장소를 구체적으로 강조' },
+          { icon: '💬', label: 'The reason', sub: '이유를 구체적으로 강조' },
+        ],
+      },
       { type: 'heading', text: '형용사·동사는 강조할 수 없다: What 유사분열문' },
       {
         type: 'p',
@@ -765,6 +831,15 @@ export const ch28 = {
           ['no sooner ~ than', '~하자마자', 'had (과거완료)'],
         ],
       },
+      {
+        type: 'icon-row',
+        caption: '도치란 — 부정어가 맨 앞을 차지한 대가',
+        items: [
+          { icon: '🔤', label: 'She is a singer.', sub: '평서문 (주어 → 동사)' },
+          { icon: '🔀', label: '어순 반전', sub: '부정어가 문장 맨 앞으로' },
+          { icon: '🔡', label: 'Not only is she...', sub: '도치문 (동사 → 주어)' },
+        ],
+      },
       { type: 'heading', text: '도치를 이용한 강조 — so와 neither로 맞장구치기' },
       {
         type: 'p',
@@ -777,6 +852,16 @@ export const ch28 = {
           { en: "I need to get some new clothes. — So do I.", ko: '나는 새 옷이 좀 필요해. — 나도 그래.', note: '일반동사 문장이라 do가 도치됨' },
           { en: "I've never been to China. — Neither have I.", ko: '나는 중국에 가본 적이 없어. — 나도 없어.', note: '부정문에 동의 — Neither + have + I' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'Neither + 동사 + 주어 (부정문에 동의)',
+        parts: [
+          { tag: 'M', text: 'Neither' },
+          { tag: 'V', text: 'have' },
+          { tag: 'S', text: 'I' },
+        ],
+        translation: "Neither have I. (= I've never been to China, either. — 부정문에 맞장구칠 때도 도치)",
       },
       {
         type: 'callout',

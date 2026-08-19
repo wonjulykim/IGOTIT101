@@ -66,6 +66,16 @@ export const ch14 = {
         type: 'note',
         text: '① stop처럼 모음이 하나(단모음)이고 그 뒤에 자음이 하나(단자음)인 동사는 마지막 자음을 한 번 더 써야 모음과 자음의 발음 균형이 맞습니다. ② make의 -e는 발음이 되지 않는 표기용 기호이므로 -ing를 붙일 때 삭제합니다. ③ lie에 그냥 -ing를 붙이면 lieing이 되어 표기와 발음이 모두 어색해지므로, -ie를 발음이 같은 y로 바꾸어 lying으로 씁니다.',
       },
+      {
+        type: 'icon-row',
+        caption: '동명사 만드는 법 한눈에 보기',
+        items: [
+          { icon: '➕', label: '일반적인 경우', sub: 'study → studying' },
+          { icon: '🔁', label: '자음 한 번 더', sub: 'stop → stopping' },
+          { icon: '✂️', label: '-e 삭제', sub: 'make → making' },
+          { icon: '🔄', label: '-ie → y', sub: 'lie → lying' },
+        ],
+      },
       { type: 'heading', text: '동명사의 역할 ① 주어' },
       {
         type: 'p',
@@ -343,6 +353,27 @@ export const ch14 = {
         ],
       },
       {
+        type: 'sentence-diagram',
+        label: 'try + to부정사 — 해내기 위한 노력',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'tried' },
+          { tag: 'O', text: 'to open the jar,' },
+          { tag: 'M', text: 'but it was too tight.' },
+        ],
+        translation: 'I tried to open the jar, but it was too tight. (병을 열어내기 위해 노력했다는 뜻 — to부정사 목적어)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'try + 동명사 — 시험적으로 한번 해봄',
+        parts: [
+          { tag: '(S)', text: '(You)' },
+          { tag: 'V', text: 'Try' },
+          { tag: 'O', text: 'turning the lid the other way.' },
+        ],
+        translation: 'Try turning the lid the other way. (해결책이 될지 가볍게 한번 시도해보라는 뜻 — 동명사 목적어)',
+      },
+      {
         type: 'p',
         text: 'stop은 두 형태의 의미가 완전히 다른 대표적인 동사입니다. stop to do는 **"~하기 위해 (하던 일을) 멈추다"**라는 뜻으로, to부정사가 멈추는 목적을 나타냅니다. stop doing은 **"~하던 것을 그만두다"**라는 뜻으로, 동명사가 멈춰지는 행동 그 자체를 나타냅니다.',
       },
@@ -402,6 +433,28 @@ export const ch14 = {
           { en: 'He went on talking for another hour without noticing anyone was bored.', ko: '그는 아무도 지루해하는 걸 눈치채지 못한 채 한 시간을 더 계속 말했다.', note: '말하기라는 같은 행동을 계속함 — go on + 동명사' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: 'regret + to부정사 — 지금부터 할 말이 유감스러움',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'regret' },
+          { tag: 'O', text: 'to tell you' },
+          { tag: 'M', text: 'that your flight has been delayed.' },
+        ],
+        translation: 'I regret to tell you that your flight has been delayed. (아직 하지 않은 말을 지금 꺼내는 시점 — to부정사 목적어)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'regret + 동명사 — 과거의 행동을 후회',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'regret' },
+          { tag: 'O', text: 'telling you the bad news;' },
+          { tag: 'M', text: 'I can see it upset you.' },
+        ],
+        translation: 'I regret telling you the bad news; I can see it upset you. (이미 했던 말을 후회 — 동명사 목적어)',
+      },
       { type: 'heading', text: '동명사와 to부정사 둘 다 가능하지만 의미 차이가 없는 동사' },
       {
         type: 'p',
@@ -434,6 +487,14 @@ export const ch14 = {
         ],
       },
       {
+        type: 'icon-row',
+        caption: '왜 이 동사들은 의미 차이가 거의 없을까: 뚜렷한 시점 경계가 없음',
+        items: [
+          { icon: '❤️', label: '감정·선호', sub: 'like, love, hate, prefer — 좋고 싫은 마음에는 앞뒤 구분이 없음' },
+          { icon: '🔄', label: '시작·계속', sub: 'begin, start, continue — 시작·지속에도 뚜렷한 전후 경계가 없음' },
+        ],
+      },
+      {
         type: 'note',
         text: '단, begin, start처럼 이 그룹에 속한 동사가 **진행형(be + -ing)으로 쓰일 때는 동명사를 목적어로 쓸 수 없습니다.** 같은 동사가 -ing를 두 번 겹쳐 쓰는 것이 어색하기 때문입니다. "I am starting to learn Korean."은 자연스럽지만, "I am starting learning Korean."처럼 -ing가 중복되는 문장은 쓰지 않고 반드시 to부정사를 씁니다.',
       },
@@ -460,6 +521,16 @@ export const ch14 = {
       {
         type: 'note',
         text: 'look forward to ~ing와 be used to ~ing의 to는 to부정사의 to가 아니라 전치사 to입니다. 전치사 뒤에는 동사원형이 올 수 없고 명사(동명사)가 와야 하므로 **이 표현들 뒤에는 항상 동명사가 옵니다**. "I look forward to see you."나 "He is used to take the subway."처럼 쓰면 틀린 문장이 되니 주의하세요.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'look forward to + 동명사 — 전치사 to 뒤에는 동명사',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'look forward to' },
+          { tag: 'O', text: 'seeing you at the party next Friday.' },
+        ],
+        translation: 'I look forward to seeing you at the party next Friday. (to는 전치사이므로 뒤에 동사원형이 아닌 동명사가 옴)',
       },
       {
         type: 'callout',

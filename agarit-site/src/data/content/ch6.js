@@ -205,6 +205,15 @@ export const ch6 = {
         ],
       },
       {
+        type: 'icon-row',
+        caption: '형태는 복수, 의미는 단수 — 겉모습에 속지 말 것',
+        items: [
+          { icon: '📖', label: '작품 제목', sub: 'Little Women · 책 한 권' },
+          { icon: '🔬', label: '학문 분야', sub: 'Mathematics, Physics · 과목 하나' },
+          { icon: '🌍', label: '국가 이름', sub: 'The Netherlands · 나라 하나' },
+        ],
+      },
+      {
         type: 'note',
         text: '이 명사들은 "복수 형태 = 복수 의미"라는 일반적인 규칙의 예외입니다. 판단 기준은 형태(철자)가 아니라 의미입니다 — 그 단어가 결국 가리키는 것이 "하나의 작품·하나의 학문 분야·하나의 나라"라면, 겉모습이 -s로 끝나더라도 단수로 취급합니다.',
       },
@@ -221,6 +230,16 @@ export const ch6 = {
           { en: 'The band has just released its new album.', ko: '그 밴드는 새 앨범을 막 발매했다.', note: '단수 취급 — its로 받음' },
           { en: 'The band have been on tour to promote their new album.', ko: '그 밴드는 새 앨범 홍보를 위해 투어 중이다.', note: '복수 취급 — their로 받음' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '집합명사 — 미국식(단수) vs 영국식(복수)',
+        parts: [
+          { tag: 'S', text: 'The team' },
+          { tag: 'V', text: 'is / are' },
+          { tag: 'C', text: 'getting a new manager / feeling excited' },
+        ],
+        translation: '미국식: is (팀을 하나의 단위로) · 영국식: are (팀 구성원 개개인으로)',
       },
       {
         type: 'note',

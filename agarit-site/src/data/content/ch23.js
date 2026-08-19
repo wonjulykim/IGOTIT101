@@ -116,6 +116,14 @@ export const ch23 = {
         note: '반복되는 the bag이 that으로 바뀌면서 선행사 the bag 바로 뒤로 이동해 두 문장이 하나로 합쳐진다.',
       },
       {
+        type: 'icon-row',
+        caption: '명사 반복 대신 관계대명사 하나로',
+        items: [
+          { icon: '🔁', label: '명사 반복', sub: 'the bag ... the bag' },
+          { icon: '➡️', label: '관계대명사로 압축', sub: 'the bag that ...' },
+        ],
+      },
+      {
         type: 'sentence-diagram',
         label: '관계대명사절이 선행사를 수식',
         parts: [
@@ -178,6 +186,15 @@ export const ch23 = {
       {
         type: 'note',
         text: '목적격 관계대명사(who(m), which, that)는 문장에서 흔히 생략됩니다. 다만 소유격 관계대명사(whose)와 주격 관계대명사는 생략할 수 없습니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: '관계대명사 생략 가능 여부',
+        items: [
+          { icon: '🙋', label: '주격', sub: '생략 불가' },
+          { icon: '👉', label: '목적격', sub: '생략 가능' },
+          { icon: '🏷️', label: '소유격 (whose)', sub: '생략 불가' },
+        ],
       },
       {
         type: 'icon-row',
@@ -480,6 +497,14 @@ export const ch23 = {
           ['문장 성분', '형용사절 (명사를 수식)', '명사절 (주어·목적어·보어 자리 자체를 채움)'],
         ],
       },
+      {
+        type: 'icon-row',
+        caption: 'that절 vs what절 - 문장에서 하는 역할',
+        items: [
+          { icon: '🖌️', label: 'that절', sub: '형용사절 - 명사를 수식' },
+          { icon: '📦', label: 'what절', sub: '명사절 - 주어·목적어·보어 자리를 채움' },
+        ],
+      },
       { type: 'heading', text: '흔히 하는 실수 (1) - what 앞에 선행사를 또 쓰기' },
       {
         type: 'p',
@@ -637,6 +662,14 @@ export const ch23 = {
           { tag: 'M', text: ', some of which are very difficult' },
         ],
         translation: 'I teach many classes, some of which are very difficult. (some of which = 그 수업들 중 일부)',
+      },
+      {
+        type: 'icon-row',
+        caption: '수량 표현 + of + whom/which - 계속적 용법 전용',
+        items: [
+          { icon: '👥', label: 'of whom', sub: '사람 - all/some/none of whom' },
+          { icon: '📚', label: 'of which', sub: '사물 - two/many/some of which' },
+        ],
       },
       {
         type: 'note',

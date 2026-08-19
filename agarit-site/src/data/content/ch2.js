@@ -82,6 +82,17 @@ export const ch2 = {
         text: 'much는 셀 수 없는 명사에만 쓸 수 있으며, 이때 동사는 항상 단수로 씁니다. *How many pasta are there?는 pasta가 셀 수 없는 명사이므로 many가 아니라 much를 써서 How much pasta is there?라고 해야 합니다. 이 실수는 많은 학습자가 "양이 많다"는 느낌만으로 many를 습관적으로 고를 때 자주 나타나므로, 반드시 명사가 셀 수 있는지부터 확인하는 습관을 들여야 합니다.',
       },
       { type: 'heading', text: '명사의 복수형 만드는 법' },
+      {
+        type: 'icon-row',
+        caption: '명사의 복수형, 왜 이렇게 갈릴까 — 발음을 편하게 하려는 변형',
+        items: [
+          { icon: '📦➕s', label: '대부분', sub: 'cars, trees' },
+          { icon: '📦➕es', label: '-s/-sh/-ch/-x/-o', sub: 'buses, heroes' },
+          { icon: '👶→i+es', label: '자음+y', sub: 'baby → babies' },
+          { icon: '🐺→ves', label: 'f/fe', sub: 'wolf → wolves' },
+          { icon: '🔄', label: '불규칙', sub: 'man → men' },
+        ],
+      },
       { type: 'p', text: '(1) 대부분의 명사: **명사 뒤에 -s를 붙인다.** 예) cars, trees, flowers' },
       {
         type: 'p',
@@ -238,6 +249,17 @@ export const ch2 = {
           { en: 'I organize my bookcases when they start to look messy.', ko: '나는 책장이 지저분해지면 정리한다.' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '복합명사가 목적어로 쓰일 때',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'organize' },
+          { tag: 'O', text: 'my bookcases' },
+          { tag: 'M', text: 'when they start to look messy' },
+        ],
+        translation: '나는 책장이 지저분해지면 정리한다. — bookcase(명사)+book(수식) 두 명사가 하나의 목적어처럼 쓰임',
+      },
       { type: 'heading', text: '문맥에 따라 경계를 넘나드는 명사' },
       {
         type: 'example',
@@ -372,6 +394,16 @@ export const ch2 = {
         text: '「the + 형용사」는 의미상 복수이지만 형태상으로는 -s가 붙지 않습니다. *the youngs, *the riches처럼 쓰는 것은 흔한 오류이므로 주의해야 합니다. 이 표현 뒤에 오는 동사도 복수로 씁니다 (The rich have ~, The young are ~).',
       },
       {
+        type: 'sentence-diagram',
+        label: 'the + 형용사 — 집단 전체를 가리키는 복수 표현',
+        parts: [
+          { tag: 'S', text: 'Almost all the houses here' },
+          { tag: 'V', text: 'are owned' },
+          { tag: 'M', text: 'by the rich' },
+        ],
+        translation: '여기 있는 거의 모든 집은 부자들이 소유하고 있다. — the rich = 부유한 사람들 전체(복수 의미, 형태는 그대로)',
+      },
+      {
         type: 'p',
         text: '한편 종류·부류 전체를 "일반적으로" 말할 때는 두 가지 방법이 있습니다. 하나는 앞서 배운 것처럼 관사 없이 복수형을 쓰는 것(Dogs are loyal animals.)이고, 다른 하나는 **「the + 단수명사」로 그 종류 전체를 대표하는 하나의 표본처럼 말하는 것**입니다. 발명품, 동물의 종, 악기 종류를 말할 때 이 두 방법이 자주 섞여 쓰입니다.',
       },
@@ -438,6 +470,16 @@ export const ch2 = {
           ['식사', 'have breakfast / lunch / dinner'],
           ['운동·게임', 'play soccer, play chess'],
           ['이동수단으로서의 도보', 'go to work on foot'],
+        ],
+      },
+      {
+        type: 'icon-row',
+        caption: '무관사가 쓰이는 관용적 상황',
+        items: [
+          { icon: '🚌', label: '교통수단', sub: 'by bus, by train' },
+          { icon: '🍽️', label: '식사', sub: 'have lunch' },
+          { icon: '⚽', label: '운동·게임', sub: 'play soccer' },
+          { icon: '🚶', label: '도보', sub: 'on foot' },
         ],
       },
       { type: 'heading', text: '학교·잠자리 등 기관·장소의 "목적"을 말할 때는 무관사' },
@@ -569,6 +611,16 @@ export const ch2 = {
           { en: 'Do we need a loaf of bread for breakfast?', ko: '아침 먹을 빵 한 덩어리 필요할까?' },
           { en: 'Yes, and grab a liter of milk too.', ko: '응, 그리고 우유 1리터도 챙겨.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '조수사가 목적어를 구체화',
+        parts: [
+          { tag: 'S', text: "I'd like" },
+          { tag: 'O', text: 'a loaf of bread' },
+          { tag: 'M', text: 'please' },
+        ],
+        translation: '빵 한 덩어리 주세요. — loaf라는 단위가 형태 없는 bread를 하나로 셀 수 있게 만든다.',
       },
       { type: 'heading', text: '흔한 실수: 조수사 없이 물질명사를 셀 수 있는 것처럼 쓰기' },
       {
@@ -735,6 +787,14 @@ export const ch2 = {
           { en: 'Between you and me, this plan will fail.', ko: '너와 나만 아는 건데, 이 계획은 실패할 거야. (올바른 표현)' },
         ],
       },
+      {
+        type: 'icon-row',
+        caption: '재귀대명사 vs 목적격 — 주어와 목적어가 같은가',
+        items: [
+          { icon: '🪞', label: '주어 = 목적어', sub: 'himself, myself (재귀대명사)' },
+          { icon: '🙋‍♂️➡️🙋', label: '주어 ≠ 목적어', sub: 'him, me (목적격)' },
+        ],
+      },
       { type: 'heading', text: '재귀대명사 — 주어와 목적어가 같은 사람일 때' },
       {
         type: 'p',
@@ -804,6 +864,15 @@ export const ch2 = {
           { en: 'Amy and Raj looked at themselves in the mirror.', ko: 'Amy와 Raj는 거울 속 자기 자신을 바라보았다.', note: '= 각자 거울 속 자기 모습을 봄 (완전히 다른 상황)' },
           { en: 'They gave each other presents.', ko: '그들은 서로에게 선물을 주었다.' },
           { en: "We're helping one another with our homework.", ko: '우리는 서로 숙제를 도와주고 있다.', note: 'one another는 each other와 뜻이 같음' },
+        ],
+      },
+      {
+        type: 'icon-row',
+        caption: '부정대명사 — 문장 종류에 따라 갈리는 선택',
+        items: [
+          { icon: '✅', label: '긍정문', sub: 'someone / something' },
+          { icon: '❓', label: '의문문', sub: 'anyone / anything' },
+          { icon: '🚫', label: '부정문', sub: 'anyone / anything' },
         ],
       },
       { type: 'heading', text: '부정대명사 — 누구/무엇인지 정해지지 않은 대상' },
@@ -1021,6 +1090,14 @@ export const ch2 = {
         to: { label: '형용사(+lic → -ly)', text: 'lovely' },
         note: '고대 영어의 명사+lic(lovelic)이 시간이 지나며 지금의 -ly 형태로 정착했습니다.',
       },
+      {
+        type: 'icon-row',
+        caption: '-ing vs -ed — 원인인가, 영향을 받은 쪽인가',
+        items: [
+          { icon: '🕷️➡️😱', label: '-ing', sub: '감정을 일으키는 원인 (frightening)' },
+          { icon: '😱⬅️🕷️', label: '-ed', sub: '감정을 느끼는 대상 (frightened)' },
+        ],
+      },
       { type: 'heading', text: '-ing 형용사 vs -ed 형용사 — 원인인가, 영향을 받은 쪽인가' },
       {
         type: 'p',
@@ -1039,6 +1116,14 @@ export const ch2 = {
       {
         type: 'note',
         text: '흔한 실수는 사람의 감정을 나타낼 때 -ing를 쓰는 것입니다. *I am boring.이라고 하면 "나는 (다른 사람을) 지루하게 만드는 사람이다"라는 전혀 다른 뜻이 되어 버립니다. "나는 지루함을 느낀다"라고 말하려면 반드시 I am bored.처럼 -ed를 써야 합니다. 판단 기준: 주어가 감정을 "일으키는 쪽"이면 -ing, 감정을 "느끼는 쪽"이면 -ed입니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: '등급 형용사 vs 절대 형용사 — very를 붙일 수 있는가',
+        items: [
+          { icon: '📏', label: '등급 형용사', sub: 'good, tasty — very로 조절 가능' },
+          { icon: '⛔📏', label: '절대 형용사', sub: 'perfect, unique — very 불가, absolutely만 가능' },
+        ],
       },
       { type: 'heading', text: '등급 형용사(gradable) vs 절대 형용사(non-gradable)' },
       {
@@ -1289,6 +1374,16 @@ export const ch2 = {
           { en: 'He did really well on the test.', ko: '그는 시험을 정말 잘 봤다. (올바른 표현)' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '부사가 동사를 수식',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'drives' },
+          { tag: 'M', text: 'carefully' },
+        ],
+        translation: '그는 조심스럽게 운전한다. — 동사 drives를 꾸미려면 형용사 careful이 아니라 부사 carefully가 필요하다.',
+      },
       { type: 'heading', text: '형태는 같지만 뜻이 달라지는 형용사/부사 짝' },
       {
         type: 'p',
@@ -1310,6 +1405,14 @@ export const ch2 = {
       {
         type: 'note',
         text: '이런 단어는 규칙으로 풀기보다 "이 뜻일 때는 이 형태"라고 짝을 지어 통째로 외워두는 것이 안전합니다. fine(작은/고운)의 부사는 finely, fine(좋은/괜찮은)의 부사는 그대로 fine입니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: '등급부사 vs 비등급부사 — 어떤 형용사와 짝짓는가',
+        items: [
+          { icon: '📏', label: '등급부사', sub: 'very, extremely + good/interesting' },
+          { icon: '⛔📏', label: '비등급부사', sub: 'absolutely, totally + perfect/unique' },
+        ],
       },
       { type: 'heading', text: '등급부사 vs 비등급부사 — 어떤 형용사와 짝을 이루는가' },
       {
@@ -1877,6 +1980,14 @@ export const ch2 = {
         ],
         translation: '숙제를 끝내면, TV를 볼 수 있어.',
       },
+      {
+        type: 'icon-row',
+        caption: 'so that vs in order to — 뒤에 오는 형태가 다르다',
+        items: [
+          { icon: '📝', label: 'so that', sub: '+ 주어 + 동사 (완전한 절)' },
+          { icon: '➡️🔧', label: 'in order to', sub: '+ 동사원형' },
+        ],
+      },
       { type: 'heading', text: '목적을 나타내는 종속접속사: so that, in order to' },
       {
         type: 'p',
@@ -1894,6 +2005,14 @@ export const ch2 = {
       {
         type: 'note',
         text: '구어체에서는 in order를 빼고 to만 남겨 목적을 나타내기도 합니다: The assistant took the receipt to process the refund. (환불을 처리하기 위해 영수증을 받았다.) 다만 이렇게 to만 쓰는 것은 격식이 조금 낮은 표현이라는 점을 알아두면 좋습니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: '시간·조건 종속절 속에서는 미래에도 현재시제',
+        items: [
+          { icon: '⏳', label: '종속절', sub: '현재시제로 미래 표현 (when it gets dark)' },
+          { icon: '🔮', label: '주절', sub: 'will로 미래 표현 (he will light the fire)' },
+        ],
       },
       { type: 'heading', text: '시간을 나타내는 종속접속사와 미래 시제의 함정' },
       {

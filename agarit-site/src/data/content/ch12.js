@@ -47,6 +47,16 @@ export const ch12 = {
         text: '이 네 단계를 정리하면, ① 문장을 그대로 크게 말해서 감탄을 표현할 수도 있고(예: "It is a nice car!"), ② 강조하려는 명사구를 문장 앞으로 옮기고, ③ 그 앞에 What을 붙여 감탄사로 명시하고, ④ 상황이 공유되어 있다면 주어-동사를 지우는 순서로 감탄문이 다듬어집니다.',
       },
       {
+        type: 'icon-row',
+        caption: '감탄문이 만들어지는 네 단계',
+        items: [
+          { icon: '1️⃣', label: '그대로 말하기', sub: 'It is a nice car!' },
+          { icon: '2️⃣', label: '강조어 이동', sub: 'A nice car, it is!' },
+          { icon: '3️⃣', label: '감탄사 추가', sub: 'What a nice car it is!' },
+          { icon: '4️⃣', label: '주어-동사 생략', sub: 'What a nice car!' },
+        ],
+      },
+      {
         type: 'note',
         text: '감탄문은 반드시 말하는 사람과 듣는 사람이 상황을 공유하는 맥락 안에서 쓰입니다. What은 단순한 감탄사가 아니라 그 공유된 상황 전체를 받는 역할을 합니다. 상대방이 나의 상황을 모르는데 나 혼자 "What a nice car it is!"를 말하면 상대방은 "갑자기 저 사람이 왜 저러지?"라고 밖에 생각하지 못합니다.',
       },
@@ -207,6 +217,14 @@ export const ch12 = {
       {
         type: 'note',
         text: 'What 뒤에는 명사가 오므로 명사가 단수 가산명사이면 a/an을 반드시 붙입니다(What a nice car!). 명사가 복수이거나 불가산명사이면 a/an을 붙이지 않습니다(What tall buildings!, What nice weather!). How 뒤에는 명사 없이 형용사나 부사만 옵니다.',
+      },
+      {
+        type: 'icon-row',
+        caption: 'What 감탄문의 a/an 규칙',
+        items: [
+          { icon: '1️⃣', label: '단수 가산명사', sub: 'a/an 필요 — a nice car' },
+          { icon: '♾️', label: '복수·불가산명사', sub: 'a/an 불필요 — tall buildings' },
+        ],
       },
 
       { type: 'heading', text: '학습자가 자주 틀리는 지점' },

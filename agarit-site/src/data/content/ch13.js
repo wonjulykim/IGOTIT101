@@ -176,6 +176,17 @@ export const ch13 = {
         text: 'to부정사의 to에는 어떤 목적지를 향해 다가간다는 방향성이 담겨 있습니다. 그런데 어떤 동사들은 목적어가 곧바로 그 동작을 하게 만드는 관계가 너무 직접적이고 확실해서, 굳이 “그 동작을 향해 간다”는 방향성을 표시할 필요가 없습니다. **이런 경우 to를 아예 생략하고 동사원형만 남기는데, 이를 원형부정사(bare infinitive)라고 부릅니다.**',
       },
       {
+        type: 'icon-row',
+        caption: '원형부정사(to 없이 동사원형)를 쓰는 다섯 경우',
+        items: [
+          { icon: '👉', label: '사역동사', sub: 'make, have, let' },
+          { icon: '👀', label: '지각동사', sub: 'see, watch, hear, feel' },
+          { icon: '🧩', label: '조동사 뒤', sub: 'can, will, must' },
+          { icon: '🤝', label: 'help', sub: 'to부정사도 가능' },
+          { icon: '❓', label: 'why (not)', sub: '제안·질문' },
+        ],
+      },
+      {
         type: 'table',
         caption: '원형부정사를 쓰는 대표적인 경우',
         headers: ['상황', '대표 동사', '예문'],
@@ -209,6 +220,17 @@ export const ch13 = {
           { tag: 'C', text: 'cross the street.' },
         ],
         translation: 'I saw him cross the street. (지각동사 saw의 목적격보어 자리에 원형부정사 cross)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '원형부정사 — 사역동사의 목적격보어',
+        parts: [
+          { tag: 'S', text: 'She' },
+          { tag: 'V', text: 'made' },
+          { tag: 'O', text: 'him' },
+          { tag: 'C', text: 'clean his room.' },
+        ],
+        translation: 'She made him clean his room. (사역동사 made의 목적격보어 자리에 원형부정사 clean)',
       },
       {
         type: 'note',
@@ -399,6 +421,18 @@ export const ch13 = {
         ],
       },
       {
+        type: 'icon-row',
+        caption: '의문사 + to부정사의 여섯 형태',
+        items: [
+          { icon: '🔧', label: 'how to', sub: '~하는 방법' },
+          { icon: '📦', label: 'what to', sub: '무엇을 ~할지' },
+          { icon: '⏰', label: 'when to', sub: '언제 ~할지' },
+          { icon: '📍', label: 'where to', sub: '어디서 ~할지' },
+          { icon: '🔀', label: 'which to', sub: '어느 것을 ~할지' },
+          { icon: '🤔', label: 'whether to', sub: '~할지 말지' },
+        ],
+      },
+      {
         type: 'example',
         items: [
           { en: "I don't know how to fix this printer.", ko: '나는 이 프린터를 고치는 방법을 모른다.', note: 'know의 목적어로 how to부정사구 전체가 쓰임' },
@@ -478,6 +512,17 @@ export const ch13 = {
           { tag: 'M', text: 'to go' },
         ],
         translation: 'I have no place to go. (to go가 place를 뒤에서 수식)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '명사를 뒤에서 수식 — 목적어를 그대로 데려오는 경우',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'has' },
+          { tag: 'O', text: 'a lot of books' },
+          { tag: 'M', text: 'to read.' },
+        ],
+        translation: 'He has a lot of books to read. (read는 전치사 없이 목적어를 바로 취하는 동사이므로 to read 뒤에 전치사가 필요 없음)',
       },
       {
         type: 'note',
@@ -675,6 +720,17 @@ export const ch13 = {
           { en: 'I was disappointed to learn that the concert was canceled.', ko: '나는 콘서트가 취소되었다는 것을 알고 실망했다.' },
         ],
       },
+      {
+        type: 'sentence-diagram',
+        label: '감정의 원인을 나타내는 부사적 용법',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'am' },
+          { tag: 'C', text: 'glad' },
+          { tag: 'M', text: 'to see you here.' },
+        ],
+        translation: 'I am glad to see you here. (glad라는 감정이 왜 생겼는지를 to see you here가 설명)',
+      },
       { type: 'heading', text: '④ 판단의 근거: ~하다니, ~하는 것을 보니' },
       {
         type: 'p',
@@ -688,6 +744,17 @@ export const ch13 = {
           { en: 'She must be tired to fall asleep so quickly.', ko: '그렇게 빨리 잠든 것을 보니 그녀는 피곤한 게 틀림없다.' },
           { en: 'He must be rich to own three houses.', ko: '집을 세 채나 소유한 걸 보니 그는 부자인 게 틀림없다.' },
         ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '판단의 근거를 나타내는 부사적 용법',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'foolish' },
+          { tag: 'M', text: 'to say so.' },
+        ],
+        translation: 'He is foolish to say so. (to say so라는 행동을 근거로 foolish라는 판단을 내림)',
       },
       { type: 'heading', text: '⑤ 원인과 결과: too ~ to / enough to' },
       {
@@ -714,6 +781,17 @@ export const ch13 = {
           { tag: 'M', text: 'to go outside.' },
         ],
         translation: 'It is too cold to go outside. (too cold라는 원인이 to go outside라는 결과(불가능)로 이어짐)',
+      },
+      {
+        type: 'sentence-diagram',
+        label: 'enough to 구문 — 원인과 결과',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'is' },
+          { tag: 'C', text: 'old enough' },
+          { tag: 'M', text: 'to drive a car.' },
+        ],
+        translation: 'He is old enough to drive a car. (old enough라는 충분한 정도가 to drive a car라는 결과(가능)로 이어짐)',
       },
       {
         type: 'table',
