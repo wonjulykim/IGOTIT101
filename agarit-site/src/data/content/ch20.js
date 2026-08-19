@@ -40,6 +40,12 @@ export const ch20 = {
         text: '**주어와 동사의 관계로 보면, 능동태는 주어가 동사의 행위를 스스로 직접 하는 문장이고, 수동태는 주어가 동사의 행위에 영향을 받는 문장입니다.** 능동태 문장의 목적어(a rabbit)가 수동태 문장에서는 주어로 자리를 옮겼고, 동사 자리에는 was hunted라는 「be동사 + 과거분사」가 쓰였습니다. 그리고 원래 주어였던 The hunter는 by the hunter라는 전치사구로 바뀌어 문장 끝으로 이동했으며, 필요하지 않으면 생략할 수 있습니다.',
       },
       {
+        type: 'image',
+        src: '/diagrams/passive-voice-process.svg',
+        alt: 'Tom wrote the letter가 The letter was written by Tom으로 바뀌는 과정을 목적어 이동, 동사 형태 변경, 행위자 이동의 3단계로 보여주는 프로세스 다이어그램',
+        caption: '능동태에서 수동태로 — 목적어 이동, 동사 형태 변경(be+p.p.), 행위자의 by 이동, 세 단계로 완성된다',
+      },
+      {
         type: 'sentence-diagram',
         label: '능동태',
         parts: [
