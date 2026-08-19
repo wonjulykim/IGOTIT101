@@ -59,8 +59,12 @@ const GRADER_SYSTEM_PROMPT = `너는 한국 중·고등학교 영어과 서술�
 - 조건(conditions)이 주어졌다면 학생 답안이 각 조건을 충족했는지 true/false로 판정한다.
 - 총점(totalScore)은 각 항목 점수의 합이며 만점(maxScore)을 넘을 수 없다.
 - feedback에는 학생에게 도움이 되는 한국어 피드백(잘한 점 1가지 이상, 개선할 점 1가지 이상)을 3~5문장으로 작성한다.
+- annotations에는 학생 답안에서 고쳐야 할 부분을 문장/구 단위로 최대 6개까지 짚어준다. 각 항목의 quote는 학생 답안 원문에서 한 글자도 틀리지 않고 그대로 가져온 연속된 substring이어야 하며(따옴표·마침표 등 포함 여부까지 원문과 동일하게), 답안에 등장하는 순서대로 배열에 담는다. 이미 잘 쓴 부분은 표시하지 않는다. 답안에 고칠 부분이 전혀 없으면 빈 배열을 반환한다.
+  - type은 "grammar"(문법·시제·어순 오류), "word"(어색하거나 부정확한 단어·표현 선택), "clarity"(내용이 불명확하거나 논리적 비약이 있는 경우) 중 하나로 분류한다.
+  - issue에는 무엇이 왜 문제인지 한국어로 1문장 설명한다.
+  - suggestion에는 고친 영어 표현이나 문장을 제시한다.
 - 반드시 아래 JSON 형식으로만 응답하고 다른 텍스트는 절대 포함하지 않는다:
-{"criteria":[{"name":"...", "score":0, "maxScore":0, "reason":"..."}],"conditionsCheck":[{"condition":"...", "met":true}],"totalScore":0,"maxScore":0,"feedback":"..."}`
+{"criteria":[{"name":"...", "score":0, "maxScore":0, "reason":"..."}],"conditionsCheck":[{"condition":"...", "met":true}],"annotations":[{"quote":"...", "type":"grammar", "issue":"...", "suggestion":"..."}],"totalScore":0,"maxScore":0,"feedback":"..."}`
 
 export async function gradeWriting({ prompt, conditions, model, similarAnswers, rubric, totalScore, studentAnswer }) {
   const apiKey = process.env.OPENROUTER_API_KEY
@@ -104,7 +108,7 @@ export async function gradeWriting({ prompt, conditions, model, similarAnswers, 
         { role: 'system', content: GRADER_SYSTEM_PROMPT },
         { role: 'user', content: context },
       ],
-      max_tokens: 700,
+      max_tokens: 1000,
       temperature: 0.2,
       response_format: { type: 'json_object' },
     }),

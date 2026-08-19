@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { gradeWriting } from '../utils/aiGrading'
 import { saveWritingResult, getWritingResult } from '../utils/progress'
+import EssayAnnotatedText from './EssayAnnotatedText'
 import './AiEssayGrader.css'
 
 export default function AiEssayGrader({ q, studentAnswer, unitId }) {
@@ -72,6 +73,12 @@ export default function AiEssayGrader({ q, studentAnswer, unitId }) {
           <div className="ai-grader-total">
             AI 채점 결과: <strong>{result.totalScore} / {result.maxScore ?? q.totalScore}</strong>점
           </div>
+          {result.annotations?.length > 0 && (
+            <div className="ai-annotated-block">
+              <strong>🔎 문장별 첨삭</strong>
+              <EssayAnnotatedText text={studentAnswer} annotations={result.annotations} />
+            </div>
+          )}
           {result.criteria?.map((c, i) => (
             <div className="ai-criterion" key={i}>
               <div className="ai-criterion-head">

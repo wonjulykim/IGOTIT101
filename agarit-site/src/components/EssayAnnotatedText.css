@@ -1,0 +1,78 @@
+.essay-annotated {
+  margin: 14px 0;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-panel);
+}
+
+.essay-annotated-text {
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.9;
+}
+
+.annot {
+  border-radius: 4px;
+  padding: 0 2px;
+  background: none;
+  color: inherit;
+  font-weight: 600;
+}
+.annot sup {
+  font-size: 0.65em;
+  font-weight: 700;
+  margin-left: 1px;
+}
+
+.annot-grammar { border-bottom: 2px solid var(--danger); background: var(--danger-bg); }
+.annot-word { border-bottom: 2px solid var(--warn); background: var(--warn-bg); }
+.annot-clarity { border-bottom: 2px solid var(--accent2); background: var(--accent2-bg); }
+
+.essay-annotated-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.annot-note {
+  border-left: 3px solid var(--border);
+  padding: 6px 0 6px 12px;
+}
+.annot-note-grammar { border-left-color: var(--danger); }
+.annot-note-word { border-left-color: var(--warn); }
+.annot-note-clarity { border-left-color: var(--accent2); }
+
+.annot-note-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.annot-note-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--border);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.annot-note-type {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.annot-note-quote {
+  margin: 0 0 4px;
+  font-style: italic;
+  color: var(--text-dim);
+}
+.annot-note-issue { margin: 0 0 4px; }
+.annot-note-suggestion { margin: 0; color: var(--success); }

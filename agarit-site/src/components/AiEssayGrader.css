@@ -26,6 +26,9 @@
 
 .ai-grader-result { margin-top: 10px; }
 
+.ai-annotated-block { margin-bottom: 16px; }
+.ai-annotated-block > strong { display: block; margin-bottom: 6px; }
+
 .ai-grader-total {
   font-size: 1rem;
   margin-bottom: 12px;
