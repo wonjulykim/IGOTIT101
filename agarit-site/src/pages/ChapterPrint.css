@@ -1,0 +1,88 @@
+.print-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+.print-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.print-toolbar-hint {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.print-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.print-brand {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+.print-header h1 { margin: 0; }
+
+.print-lesson {
+  margin-bottom: 36px;
+}
+
+.print-quiz,
+.print-answer-key {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 2px solid var(--border);
+}
+
+.print-quiz-group { margin-bottom: 28px; }
+
+.print-q { margin-bottom: 20px; }
+.print-q-text { font-weight: 600; margin-bottom: 8px; }
+.print-q-options {
+  list-style: decimal;
+  padding-left: 1.6em;
+  margin: 0;
+}
+.print-q-options li { margin-bottom: 4px; }
+.print-q-conditions {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin: 0 0 10px;
+}
+
+.print-answer-line {
+  border-bottom: 1px solid var(--border);
+  height: 1.9em;
+}
+.print-q-essay .print-answer-lines { margin-top: 6px; }
+
+.print-key-item { margin: 0 0 10px; }
+.print-key-explain { color: var(--text-dim); }
+
+.print-break { break-before: page; }
+
+@media print {
+  .no-print { display: none !important; }
+
+  .print-page {
+    max-width: none;
+    padding: 0;
+  }
+
+  .print-lesson,
+  .print-q,
+  .print-quiz-group h3 {
+    break-inside: avoid;
+  }
+
+  a { color: inherit; text-decoration: none; }
+}

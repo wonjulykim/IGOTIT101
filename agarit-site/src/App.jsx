@@ -3,12 +3,14 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import Lesson from './pages/Lesson'
 import ChapterQuiz from './pages/ChapterQuiz'
+import ChapterPrint from './pages/ChapterPrint'
 import AdminLogin from './pages/AdminLogin'
 import AdminEdit from './pages/AdminEdit'
 
 export default function App() {
   return (
     <Routes>
+      <Route path="/chapter/:chapterId/print" element={<ChapterPrint />} />
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/chapter/:chapterId/lesson/:lessonId" element={<Lesson />} />

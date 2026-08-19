@@ -25,6 +25,9 @@ export default function ChapterQuiz() {
     <div className="chapter-quiz-page">
       <div className="lesson-breadcrumb">
         <Link to="/">차례</Link> <span>›</span> <span>{chapter.num}{isReading ? '편' : '장'} {chapter.title}</span>
+        <Link to={`/chapter/${chapterId}/print`} target="_blank" rel="noopener" className="lesson-edit-link">
+          📄 PDF 다운로드
+        </Link>
       </div>
       <h1>{chapter.num}{isReading ? '편' : '장'} 퀴즈</h1>
       <p className="quiz-intro">

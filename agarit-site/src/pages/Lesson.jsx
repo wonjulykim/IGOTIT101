@@ -59,6 +59,9 @@ export default function Lesson() {
     <article className={`lesson-page${isReading ? ' lesson-page--reading' : ''}`}>
       <div className="lesson-breadcrumb">
         <Link to="/">차례</Link> <span>›</span> <span>{chapter.num}{unitLabel} {chapter.title}</span>
+        <Link to={`/chapter/${chapterId}/print`} target="_blank" rel="noopener" className="lesson-edit-link">
+          📄 PDF 다운로드
+        </Link>
         {isAdmin && (
           <Link to={`/admin/edit/${chapterId}/${lessonId}`} className="lesson-edit-link">
             ✏️ 이 레슨 편집
