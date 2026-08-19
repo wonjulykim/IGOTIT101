@@ -39,12 +39,8 @@
 }
 
 .annot-note {
-  border-left: 3px solid var(--border);
-  padding: 6px 0 6px 12px;
+  padding: 4px 0;
 }
-.annot-note-grammar { border-left-color: var(--danger); }
-.annot-note-word { border-left-color: var(--warn); }
-.annot-note-clarity { border-left-color: var(--accent2); }
 
 .annot-note-head {
   display: flex;
@@ -60,9 +56,13 @@
   height: 20px;
   border-radius: 50%;
   background: var(--border);
+  color: var(--text);
   font-size: 0.75rem;
   font-weight: 700;
 }
+.annot-note-grammar .annot-note-num { background: var(--danger-bg); color: var(--danger); }
+.annot-note-word .annot-note-num { background: var(--warn-bg); color: var(--warn); }
+.annot-note-clarity .annot-note-num { background: var(--accent2-bg); color: var(--accent2); }
 .annot-note-type {
   font-size: 0.78rem;
   font-weight: 600;
