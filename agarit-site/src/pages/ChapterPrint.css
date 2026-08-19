@@ -78,9 +78,26 @@
     padding: 0;
   }
 
-  .print-lesson,
   .print-q,
   .print-quiz-group h3 {
+    break-inside: avoid;
+  }
+
+  .print-lesson h2,
+  .block-heading {
+    break-after: avoid;
+  }
+
+  .block-note,
+  .block-callout,
+  .example-row,
+  .prep-diagram-row,
+  .block-image,
+  .sentence-diagram,
+  .wo-diagram,
+  .tl-diagram,
+  .tf-diagram,
+  .icon-row-wrap {
     break-inside: avoid;
   }
 
