@@ -135,6 +135,31 @@
 .xp-chip.xp-miss { background: var(--danger-bg); color: var(--danger); }
 .explain-text { margin-top: 8px; }
 
+.essay-draft-ko {
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  border: 1.5px dashed var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+}
+.essay-draft-ko-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.essay-draft-ko-input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+  background: var(--bg-panel);
+}
+
 .short-input, .essay-input {
   width: 100%;
   border: 1px solid var(--border);

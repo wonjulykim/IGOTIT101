@@ -52,6 +52,25 @@ export const ch19 = {
         ],
       },
       {
+        type: 'heading', text: '원급비교를 수식하는 표현 — 정도를 강조하거나 완화하기',
+      },
+      {
+        type: 'p',
+        text: '원급비교 앞에 특정 부사를 붙이면 “똑같다”는 의미를 강조하거나, 반대로 “거의 비슷하다/살짝 못 미친다” 정도로 완화할 수 있습니다. as ~ as 구문도 비교급처럼 정도를 조절하는 수식어를 취할 수 있다는 점을 함께 알아두면 표현의 폭이 넓어집니다.',
+      },
+      {
+        type: 'table',
+        caption: '원급비교를 수식하는 표현',
+        headers: ['표현', '의미', '예문'],
+        rows: [
+          ['just as ~ as', '동등함을 강조 (정확히 같다)', 'Bottled water is just as expensive as coffee. (생수는 커피만큼이나 비싸다.)'],
+          ['almost as ~ as', '거의 비슷하다 (아주 근소하게 못 미침)', 'The girls were almost as loud as the boys. (여자아이들은 남자아이들만큼이나 시끄러웠다.)'],
+          ['not quite as ~ as', '약간 못 미친다 (almost와 비슷하나 차이 쪽에 초점)', 'The movie is not quite as good as the book. (그 영화는 책만큼 좋지는 않다.)'],
+          ['half as ~ as', '절반 정도의 정도차 (배수사의 축소판)', 'The bike is half as long as the car. (그 자전거는 차의 절반 길이이다.)'],
+          ['nowhere near as ~ as', '전혀 못 미친다 (차이를 강하게 강조)', 'The mouse is nowhere near as big as the bird. (쥐는 새만큼 크지 전혀 않다.)'],
+        ],
+      },
+      {
         type: 'note',
         text: '두 번째 문장을 보면 as가 서로 다른 역할로 두 번 쓰였습니다. 첫 번째 as는 뒤에 나오는 형용사 bad를 꾸며주며 정도를 나타내고, 두 번째 as는 last year was bad라는 문장을 이끄는 접속사입니다. 의미가 중복되기 때문에 뒤의 was bad를 생략해도 문장을 이해하는 데 문제가 없습니다. 이처럼 as ~ as 뒤에는 단어(last year)만 오는 경우도 있고, 문장 전체(last year was bad)가 왔다가 중복되는 부분이 생략된 경우도 있다는 점을 함께 기억해두면 좋습니다.',
       },
@@ -210,6 +229,31 @@ export const ch19 = {
         type: 'note',
         text: '음절은 보통 모음의 개수로 판단하는데, 이때 모음은 철자가 아닌 발음상의 모음을 뜻합니다. 예를 들어 beautiful의 음절 수를 따질 때는 발음기호 [bjúːtɪfəl]을 보고 판단해야 합니다. 다만 모든 단어의 발음기호를 알기는 어려우므로, 편의상 철자상의 모음 개수로 판단해도 대체로 잘 들어맞습니다.',
       },
+      { type: 'heading', text: '두 형태 다 되는 2음절 형용사' },
+      {
+        type: 'p',
+        text: '일부 2음절 형용사는 -er을 붙인 형태와 more를 붙인 형태를 둘 다 자연스럽게 씁니다. 규칙이 애매하게 걸쳐 있는 경계선상의 단어들이라고 이해하면 됩니다. 다만 두 형태를 동시에 겹쳐 쓰는 것(예: *more friendlier)은 여전히 오류입니다.',
+      },
+      {
+        type: 'table',
+        caption: '두 형태가 모두 가능한 2음절 형용사',
+        headers: ['원급', '가능한 비교급 형태'],
+        rows: [
+          ['friendly', 'friendlier / more friendly'],
+          ['narrow', 'narrower / more narrow'],
+          ['simple', 'simpler / more simple'],
+          ['quiet', 'quieter / more quiet'],
+          ['lively', 'livelier / more lively'],
+          ['angry', 'angrier / more angry'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'My cat is friendlier than my dog.', ko: '내 고양이가 우리 개보다 더 친근하다.', note: '= more friendly than my dog' },
+          { en: 'The garage is narrower than the car.', ko: '그 차고는 그 차보다 폭이 좁다.', note: '= more narrow than the car' },
+        ],
+      },
       { type: 'heading', text: '불규칙 비교급·최상급' },
       {
         type: 'p',
@@ -254,11 +298,12 @@ export const ch19 = {
         caption: '자주 쓰이는 비교급 강조부사',
         headers: ['강조부사', '의미·용법'],
         rows: [
-          ['much', '비교급을 크게 강조'],
+          ['much', '비교급을 크게 강조 — 차이가 크다는 뜻'],
           ['far', '비교급을 크게 강조. much와 비슷한 의미'],
           ['a lot', '일상적인 대화에서 비교급을 강조'],
           ['even', '예상외의 상황에서 비교급을 강조. 놀라움·의외성을 표현'],
           ['still', '현재 상태에서도 여전히 비교 대상보다 더 나음을 강조'],
+          ['a bit / slightly', '반대로 차이가 작다는 것을 나타냄 — much/a lot과 정반대 방향의 수식어'],
         ],
       },
       {
@@ -269,6 +314,8 @@ export const ch19 = {
           { en: 'This movie is a lot more interesting than the one we watched yesterday.', ko: '이 영화는 우리가 어제 본 영화보다 훨씬 더 흥미롭다.', note: 'a lot이 more interesting을 강조하여 두 영화의 큰 차이를 나타냄' },
           { en: 'She is even more talented than we thought.', ko: '그녀는 우리가 생각했던 것보다 훨씬 더 재능이 있다.', note: 'even이 more talented를 강조하여 예상치 못한 재능의 차이를 나타냄' },
           { en: 'This model is still better than the newer version.', ko: '이 모델은 여전히 최신 버전보다 더 좋다.', note: 'still이 better를 강조하여 시간이 지나도 여전히 더 나음을 나타냄' },
+          { en: 'The tree is a bit taller than the building.', ko: '그 나무는 그 건물보다 조금 더 크다.', note: 'a bit이 taller를 완화하여 차이가 작음을 나타냄 (much/far와 반대 방향)' },
+          { en: 'The castle is slightly bigger than the hotel.', ko: '그 성은 그 호텔보다 살짝 더 크다.', note: 'slightly도 a bit과 같은 역할' },
         ],
       },
       {
@@ -422,6 +469,25 @@ export const ch19 = {
         ],
         translation: 'My house is the largest one in our neighborhood. (the + 최상급 + 비교 범위)',
       },
+      { type: 'heading', text: '최상급을 강조하는 표현' },
+      {
+        type: 'p',
+        text: '최상급 앞에 easily나 by far를 붙이면 “단연코, 압도적으로”라는 의미로 최상급의 정도를 더 강하게 만들 수 있습니다. 또한 the + 최상급 뒤에 복수명사를 붙이는 대신 「one of the + 최상급 + 복수명사」의 형태를 쓰면 “가장 ~한 것들 중 하나”라는 뜻이 되어, 그 대상이 유일한 1위가 아니라 상위 그룹에 속한다는 것을 나타냅니다. one of를 쓸 때는 반드시 뒤에 오는 명사가 복수형이 되어야 한다는 점에 주의해야 합니다.',
+      },
+      {
+        type: 'table',
+        caption: '최상급을 강조하는 표현',
+        headers: ['표현', '의미', '예문'],
+        rows: [
+          ['easily the + 최상급', '단연코 가장 ~한', 'Sally is easily the tallest person I know. (샐리는 단연코 내가 아는 사람 중 가장 키가 크다.)'],
+          ['by far the + 최상급', '단연코, 압도적으로 가장 ~한', 'This hostel is by far the cheapest place to stay. (이 호스텔은 단연 가장 저렴한 숙소이다.)'],
+          ['one of the + 최상급 + 복수명사', '가장 ~한 것들 중 하나', 'Physics is one of the most confusing subjects I study. (물리는 내가 공부하는 것 중 가장 헷갈리는 과목 중 하나이다.)'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '긴 최상급(most/least를 쓰는 경우)에서는 easily, by far, one of 같은 수식어가 the보다 앞에 위치합니다 (예: one of the most imposing buildings). 또한 best, worst처럼 이미 불규칙 최상급인 단어 앞에 most를 겹쳐 쓰는 것(*most best)도 이중 비교급과 같은 원리의 오류이므로 주의해야 합니다.',
+      },
       { type: 'heading', text: '자주 하는 실수 — the를 빠뜨리는 것' },
       {
         type: 'p',
@@ -562,7 +628,12 @@ export const ch19 = {
           ['the + 비교급 of the two', '둘 중 더 ~한 쪽', 'She is the taller of the two. (그녀가 둘 중 더 키가 크다.)'],
           ['비교급 and 비교급', '점점 더 ~해지는', 'The days are getting longer and longer. (날이 점점 더 길어지고 있다.)'],
           ['no more than / not more than', '겨우 ~밖에 / ~이하로', 'She has no more than 5 dollars. (그녀는 5달러밖에 없다.)'],
+          ['the + 비교급, the + 비교급 (뒷부분 생략)', '문맥상 뻔한 부분은 생략하는 관용 표현', 'The more, the merrier. (사람이 많을수록 더 즐겁다. = The more people come, the merrier the party will be.)'],
         ],
+      },
+      {
+        type: 'note',
+        text: '위 표의 마지막 항목처럼, the 비교급 구문은 관용적으로 굳어진 경우 뒷부분(주어+동사)을 통째로 생략하기도 합니다. “The sooner, the better.”(빠를수록 좋다), “The more, the merrier.”(많을수록 즐겁다) 같은 표현이 대표적이며, 대화 상대가 무엇을 말하는지 문맥상 명확할 때만 이렇게 줄여 씁니다.',
       },
       {
         type: 'note',

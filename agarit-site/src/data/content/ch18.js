@@ -135,6 +135,44 @@ export const ch18 = {
           ['예문', 'She feels tired.', 'I felt something touch my back.'],
         ],
       },
+      { type: 'heading', text: '지각동사 + 목적어 + 동사원형 vs -ing — 전체를 보았는가, 진행 중인 장면을 보았는가' },
+      {
+        type: 'p',
+        text: '지각동사의 목적격 보어 자리에는 동사원형뿐 아니라 현재분사(-ing)도 올 수 있습니다. 이 둘은 아무 때나 바꿔 쓸 수 있는 것이 아니라, **지각한 행위가 처음부터 끝까지 완결된 하나의 사건이었는지, 아니면 이미 진행되고 있던 도중의 한 장면이었는지**에 따라 갈립니다. 동사원형은 시작부터 끝까지 이어지는 사건 전체를 하나의 덩어리로 지각했다는 뜻이고, -ing는 그 사건이 이미 진행 중이던 순간을 목격했다는 뜻입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I saw him cross the street.', ko: '나는 그가 길을 건너는 것을 보았다.', note: '동사원형 — 그가 이쪽에서 저쪽까지 건너는 전체 과정을 처음부터 끝까지 지켜봄' },
+          { en: 'I saw him crossing the street.', ko: '나는 그가 길을 건너고 있는 것을 보았다.', note: '-ing — 이미 건너고 있던 도중의 한 장면만 목격. 건너기 시작한 순간이나 다 건넌 순간은 보지 못했을 수도 있음' },
+          { en: 'Hayley heard the boss interviewing the new secretary.', ko: 'Hayley는 상사가 새 비서를 면접하고 있는 것을 들었다.', note: '면접이 진행 중인 도중의 소리를 들은 것 — 면접 전체를 처음부터 끝까지 들었다는 뜻이 아님' },
+          { en: 'I remember Arnold leaving the house at around 10 o\'clock.', ko: '나는 Arnold가 10시쯤 집을 나서던 것이 기억난다.', note: '나가는 도중의 한 장면이 기억 속 이미지로 남아 있다는 뉘앙스' },
+        ],
+      },
+      {
+        type: 'table',
+        caption: '지각동사 + 목적어 + 동사원형 vs -ing',
+        headers: ['형태', '의미', '초점'],
+        rows: [
+          ['지각동사 + 목적어 + 동사원형', '처음부터 끝까지 이어진 사건 전체를 지각', '사건의 시작과 끝을 모두 포함한 완결된 하나의 동작'],
+          ['지각동사 + 목적어 + -ing', '이미 진행되고 있던 도중의 한 장면을 지각', '동작이 진행 중인 순간 — 시작이나 끝은 못 보았을 수도 있음'],
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '5형식 (지각동사 + 목적어 + -ing)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'saw' },
+          { tag: 'O', text: 'him' },
+          { tag: 'OC', text: 'crossing the street' },
+        ],
+        translation: '나는 그가 길을 건너고 있는 것을 보았다. (진행 중이던 도중의 장면)',
+      },
+      {
+        type: 'note',
+        text: '실제로는 두 형태의 의미 차이가 크지 않아 바꿔 써도 자연스러운 경우가 많지만, 사건이 아주 짧고 순간적이라면(예: 문이 닫히는 소리를 듣는 것) 동사원형을, 사건이 상당한 시간 동안 진행되는 중이었다면(예: 누군가 일하고 있는 모습) -ing를 쓰는 편이 더 자연스럽습니다.',
+      },
       {
         type: 'callout',
         title: '18장 핵심 정리',
@@ -143,6 +181,7 @@ export const ch18 = {
           '목적격 보어에 동사원형이 오는 이유는 지각한 행위와 목격된 행위가 동시에 일어나기 때문이다. 17장의 사역동사(make, have, let)가 동사원형을 취하는 이유와 같은 원리다.',
           '지각동사 뒤에는 to부정사를 쓰지 않는다. "I saw him to cross the street."는 틀린 문장이며, cross로 써야 한다.',
           '감각동사(feel, taste, smell, sound, look)는 「감각동사 + 형용사」 구조로 주어 자신의 상태·느낌을 표현하며, 목적어와 목적격 보어를 취하는 지각동사와는 구조와 의미가 다르다.',
+          '목적격 보어에 동사원형 대신 -ing를 쓰면, 사건 전체가 아니라 이미 진행 중이던 도중의 한 장면을 지각했다는 의미가 된다. (I saw him cross the street. vs I saw him crossing the street.)',
         ],
       },
     ],

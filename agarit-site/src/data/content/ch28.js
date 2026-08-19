@@ -97,6 +97,33 @@ export const ch28 = {
         type: 'p',
         text: '이 뉘앙스를 바탕으로 다시 보면 「so ~ that」 구문은 단순한 원인-결과 문장이 아닙니다. "She was so angry that her face turned red."는 \'그녀가 화가 날 수밖에 없었어. 그러니까 얼굴이 빨개졌지\'처럼, 상대방의 공감을 유도하는 뉘앙스를 담고 있습니다. 반면 "I was too young to watch the movie."는 \'너무 어렸다\'는 부정적 뉘앙스가 있고, "I was so young that I couldn\'t watch the movie."는 부정적 뉘앙스 없이 \'나이가 어려서 어쩔 수 없었다\'는 느낌을 전달합니다.',
       },
+      { type: 'heading', text: 'such + (a/an) + (형용사) + 명사: so와 무엇이 다른가' },
+      {
+        type: 'p',
+        text: 'so와 마찬가지로 such도 정도를 강조하는 말이지만, **so는 형용사·부사를 직접 꾸미는 반면 such는 반드시 명사(구) 앞에 옵니다.** 명사가 단수 가산명사이면 such 뒤에 a/an이 들어가고, 그 사이에 형용사가 끼어들 수도 있습니다(such + a/an + (형용사) + 명사). "so + 형용사"로 표현하고 싶은 문장에 명사를 함께 넣고 싶다면 so가 아니라 such를 골라야 한다는 점이 핵심입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The trial was such a success.', ko: '그 재판은 대단한 성공이었다.', note: 'such + a + 명사 (형용사 없이 명사만 강조)' },
+          { en: 'It was such an important experiment.', ko: '그것은 아주 중요한 실험이었다.', note: 'such + an + 형용사 + 명사' },
+          { en: 'The disease is such a mystery that it doesn\'t even have a name yet.', ko: '그 질병은 너무 미스터리해서 아직 이름조차 없다.', note: 'such + a + 명사 + that — such도 that과 함께 결과를 나타낼 수 있음' },
+          { en: 'This is such a strange injury that it is hard to diagnose.', ko: '이것은 너무 이상한 부상이라서 진단하기가 어렵다.', note: 'such + a + 형용사 + 명사 + that' },
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'so ~ that vs such ~ that',
+        headers: ['구문', '뒤에 오는 것', '예문'],
+        rows: [
+          ['so + 형용사/부사 + that', '형용사·부사만 (명사 불가)', 'Medical research is so expensive that drugs are often costly.'],
+          ['such + (a/an) + (형용사) + 명사 + that', '명사(구) — 형용사는 선택', 'This is such a strange injury that it is hard to diagnose.'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '학습자들이 자주 저지르는 실수는 명사 앞에 so를 쓰는 것입니다("*It was so a mystery that..."는 틀린 문장입니다). 명사(구)를 강조하고 싶다면 반드시 such를 써야 하고, such a/an은 neutral한 명사보다 success, mystery, disaster처럼 정도가 극단적인 명사와 더 자연스럽게 어울립니다.',
+      },
       { type: 'heading', text: 'too ~ to와 so ~ that의 관계: 같은 사건, 다른 표현' },
       {
         type: 'p',
@@ -159,6 +186,24 @@ export const ch28 = {
           { tag: 'M', text: 'to tell the truth' },
         ],
         translation: 'He is honest enough to tell the truth. (enough가 형용사 honest 뒤에 위치)',
+      },
+      { type: 'heading', text: '명사를 꾸미는 enough — 이때는 명사 앞으로' },
+      {
+        type: 'p',
+        text: '**enough가 형용사·부사가 아니라 명사를 꾸밀 때는 반대로 명사 앞에 옵니다(enough + 명사).** 가산명사·불가산명사 모두와 함께 쓸 수 있으며, 앞에 나온 명사를 반복하지 않고 enough만 단독으로 써서 "그거면 충분하다"는 뜻을 나타낼 수도 있습니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Do we have enough balloons?', ko: '풍선이 충분히 있나요?', note: 'enough + 가산명사(복수)' },
+          { en: 'Do we have enough food?', ko: '음식이 충분히 있나요?', note: 'enough + 불가산명사' },
+          { en: "We only have two. That's not enough.", ko: '두 개밖에 없어. 그건 충분하지 않아.', note: 'enough가 명사 없이 단독으로 쓰임' },
+          { en: "We have these snacks. That'll be enough.", ko: '이 간식들이 있어. 그거면 충분할 거야.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '결국 enough는 꾸미는 대상이 무엇이냐에 따라 위치가 정반대로 바뀝니다 — 형용사·부사를 꾸밀 때는 뒤(honest enough), 명사를 꾸밀 때는 앞(enough money)입니다. "enough to부정사"·"not enough to부정사"·"too ~ to부정사" 세 가지를 나란히 놓고 비교하면 정도의 차이를 한눈에 볼 수 있습니다: Yes, it\'s ripe enough to eat. / No, it\'s not ripe enough to eat. / No, it\'s too ripe to eat.',
       },
       {
         type: 'note',
@@ -394,6 +439,25 @@ export const ch28 = {
   'ch28-4': {
     title: '불특정 대명사+형용사, 형용사+to부정사, worth+동명사',
     blocks: [
+      { type: 'heading', text: 'some-/any-/no-/every- 계열, 언제 무엇을 쓰는가' },
+      {
+        type: 'p',
+        text: '불특정 대명사(-thing/-one/-body)를 고를 때 가장 먼저 확인해야 할 것은 문장이 긍정문·부정문·의문문 중 무엇인가입니다. **some- 계열(something, someone, somebody)은 긍정문에서 쓰고, any- 계열(anything, anyone, anybody)은 의문문과 부정문에서 씁니다.** no- 계열(nothing, no one, nobody)은 그 자체로 이미 부정의 의미를 담고 있어 긍정문의 동사와 함께 쓰이며, every- 계열(everything, everyone, everybody)은 "전부 다"라는 뜻으로 긍정문에 씁니다. 이 대명사들은 모두 단수 취급하여 동사도 단수형을 씁니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Did anyone call me this morning?', ko: '오늘 아침에 누가 나에게 전화했나요?', note: '의문문 — any 계열' },
+          { en: 'Yes, someone called you at 11 o\'clock.', ko: '네, 누군가 11시에 전화했어요.', note: '긍정문 — some 계열' },
+          { en: "I don't want to talk to anybody.", ko: '나는 아무와도 이야기하고 싶지 않다.', note: '부정문 — any 계열' },
+          { en: "There's nobody here.", ko: '여기에는 아무도 없다.', note: 'no 계열 — 동사(is)는 긍정형' },
+          { en: 'Everyone is at the big meeting.', ko: '모두 큰 회의에 참석 중이다.', note: 'every 계열 — 단수 동사 is' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '흔한 실수 중 하나는 부정문에서 no one/nobody를 다시 부정어와 함께 쓰는 것입니다. "*There isn\'t no one here."는 이중 부정이 되어 틀린 문장입니다. 부정문에서는 반드시 anyone/anybody를 써서 "There isn\'t anyone here."라고 해야 합니다. no one/nobody는 그 자체가 부정의 의미를 담고 있으므로 앞에 다시 not이나 isn\'t를 붙이지 않습니다.',
+      },
       { type: 'heading', text: '-thing, -one, -body + 형용사: 왜 형용사가 뒤로 가는가' },
       {
         type: 'p',
@@ -612,6 +676,20 @@ export const ch28 = {
         type: 'note',
         text: 'who/which/where/when으로 바꾼 문장은 관계대명사·관계부사를 쓴 문장과 겉모습이 비슷해 보이지만 목적이 다릅니다. 분열문(It was John who called me. — 전화한 사람은 바로 존이었다)은 특정 부분을 강조하는 것이 목적이고, 관계사 문장(The man who called me is John. — 나에게 전화한 사람은 존이다)은 명사에 대한 추가 정보를 설명하는 것이 목적입니다. 분열문의 It은 뒤에서 진짜 의미를 채워주는 가주어이지만, 관계사 문장의 The man은 그 자체로 문장의 실질적 주어입니다.',
       },
+      { type: 'heading', text: '일반 명사로 초점 옮기기 — The place/The reason + is ~' },
+      {
+        type: 'p',
+        text: 'What 유사분열문은 want, like, hate처럼 감정을 나타내는 동사와 잘 어울리지만, 강조하려는 대상이 사람·장소·시간·이유처럼 구체적인 개념일 때는 what 대신 그 의미를 담은 일반 명사(the place, the reason, the woman, the time 등)를 문장 맨 앞에 놓고 뒤에 관계절을 이어 강조할 수 있습니다. 형식은 What 유사분열문과 같지만 what 대신 더 구체적인 명사를 주어로 쓴다는 점이 다릅니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The place I most enjoyed visiting was Nepal.', ko: '내가 방문해서 가장 즐거웠던 곳은 네팔이었다.', note: 'The place가 what의 자리를 대신함' },
+          { en: 'The woman I respect the most is Marie Curie.', ko: '내가 가장 존경하는 여성은 마리 퀴리이다.' },
+          { en: 'The reason they gave was not good enough.', ko: '그들이 제시한 이유는 충분하지 않았다.' },
+          { en: 'The evening I remember most is my first concert.', ko: '내가 가장 기억하는 저녁은 나의 첫 콘서트이다.' },
+        ],
+      },
       { type: 'heading', text: '형용사·동사는 강조할 수 없다: What 유사분열문' },
       {
         type: 'p',
@@ -647,6 +725,59 @@ export const ch28 = {
         type: 'note',
         text: '학습자들이 자주 하는 실수는 형용사나 동사를 억지로 It ~ that 분열문에 넣으려는 것입니다("It was tired that she felt."와 같은 문장은 부자연스럽습니다). 형용사·동사를 강조하고 싶다면 반드시 What 유사분열문을 사용해야 합니다. 또한 사람을 강조할 때 which를 쓰거나(It was John which bought the book. — 틀림), 사물을 강조할 때 who를 쓰는(It was the movie who Mary saw. — 틀림) 것도 흔한 오류입니다. that을 대체할 때는 강조하는 대상의 종류(사람/사물/장소/시간)에 맞는 관계사를 골라야 합니다.',
       },
+      { type: 'heading', text: '도치를 이용한 강조 — 부정 부사가 문장 맨 앞에 오면' },
+      {
+        type: 'p',
+        text: 'not only, not since, only when, only if, little, never, rarely, hardly, no sooner처럼 부정적이거나 제한적인 의미를 가진 부사(구)를 강조하기 위해 문장 맨 앞으로 옮기면, 그 뒤에서 주어와 (조)동사의 자리가 뒤바뀝니다. **이것이 도치(inversion)입니다 — 부정어가 문장의 가장 눈에 띄는 자리(맨 앞)를 차지한 대가로, 그 뒤에 있던 주어와 동사가 의문문과 같은 어순으로 바뀌는 것입니다.** 일반동사만 있는 문장에서는 의문문을 만들 때처럼 do/does/did를 끌어와 도치시킵니다. 격식체나 문어체, 연설문에서 극적인 효과를 주기 위해 자주 쓰입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Not only is she a famous singer, but she\'s also a very good actor.', ko: '그녀는 유명한 가수일 뿐만 아니라 훌륭한 배우이기도 하다.', note: '평서문: She is a famous singer. → be동사 is가 주어 she 앞으로 도치' },
+          { en: 'Not since my childhood have I enjoyed a performance so much.', ko: '어린 시절 이후로 이렇게 공연을 즐긴 적이 없다.', note: '조동사 have가 주어 I 앞으로 도치' },
+          { en: 'Not until the performance was over did he look up at the audience.', ko: '공연이 끝나고 나서야 그는 관객을 올려다보았다.', note: '일반동사 문장이라 do가 끌려와 도치됨' },
+          { en: 'Only if it stops raining will the race go ahead this afternoon.', ko: '비가 그쳐야만 오늘 오후 경주가 진행될 것이다.' },
+          { en: 'Little did they know how lucky they were to be successful.', ko: '그들은 자신이 성공하기까지 얼마나 운이 좋았는지 거의 알지 못했다.', note: 'little(거의 ~않다)도 부정적 의미의 부사' },
+          { en: 'No sooner had Tina released an album than she starred in her first movie.', ko: 'Tina는 앨범을 발매하자마자 첫 영화에 출연했다.', note: 'no sooner ~ than — 시간 부사의 도치' },
+          { en: 'Rarely do you meet a celebrity with such talent and style.', ko: '그런 재능과 스타일을 가진 유명인은 좀처럼 만나기 어렵다.' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '부정 부사 도치',
+        parts: [
+          { tag: 'M', text: 'Not only' },
+          { tag: 'V', text: 'is' },
+          { tag: 'S', text: 'she' },
+          { tag: 'C', text: 'a famous singer' },
+        ],
+        translation: 'Not only is she a famous singer... (원문: She is a famous singer. — is와 she의 순서가 바뀜)',
+      },
+      {
+        type: 'table',
+        caption: '도치를 유발하는 대표적인 부정·제한 부사(구)',
+        headers: ['부사(구)', '의미', '함께 도치되는 것'],
+        rows: [
+          ['not only ~ (but also)', '~뿐만 아니라', 'be동사 또는 조동사'],
+          ['not since / not until', '~ 이후로 처음 / ~하고 나서야', '조동사 (없으면 do/does/did)'],
+          ['only if / only when / only after', '~해야만 / ~할 때만 / ~한 후에야', 'will, do/does/did 등'],
+          ['little / rarely / hardly / never (before)', '거의 ~않다 / 좀처럼 ~않다', 'do/does/did 또는 조동사'],
+          ['no sooner ~ than', '~하자마자', 'had (과거완료)'],
+        ],
+      },
+      { type: 'heading', text: '도치를 이용한 강조 — so와 neither로 맞장구치기' },
+      {
+        type: 'p',
+        text: '상대방의 말에 "나도 그래(긍정)" 또는 "나도 안 그래(부정)"라고 맞장구칠 때도 도치를 씁니다. **긍정문에 동의할 때는 「So + (조)동사 + 주어」, 부정문에 동의할 때는 「Neither/Nor + (조)동사 + 주어」의 어순을 씁니다.** 이때도 앞 문장에 조동사가 없으면 do/does/did를 끌어와 도치시킵니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: "I'm excited for the party tonight. — So am I!", ko: '오늘 밤 파티가 기대돼. — 나도 그래!', note: 'be동사 am이 주어 I 앞으로 도치' },
+          { en: "I need to get some new clothes. — So do I.", ko: '나는 새 옷이 좀 필요해. — 나도 그래.', note: '일반동사 문장이라 do가 도치됨' },
+          { en: "I've never been to China. — Neither have I.", ko: '나는 중국에 가본 적이 없어. — 나도 없어.', note: '부정문에 동의 — Neither + have + I' },
+        ],
+      },
       {
         type: 'callout',
         title: '28장 핵심 정리',
@@ -655,6 +786,17 @@ export const ch28 = {
           '「It is/was ~ that ...」 분열문은 강조하려는 요소를 It is/was와 that 사이에 두어 주어·목적어·부사구를 강조한다. that은 대상에 맞게 who/which/where/when으로 바꿔 쓸 수 있다.',
           '형용사나 동사는 It ~ that 분열문으로 강조할 수 없다 — 이때는 What으로 시작하는 유사분열문을 사용한다.',
           'too~to, so~that, enough to, so that, 의문사+to부정사, 병렬 구조, 불특정 대명사+형용사, 형용사+to부정사, worth+Ving 등 이 장에서 다룬 구문들은 모두 하나의 규칙으로 묶이지 않는 실용적인 표현들이지만, 각각이 전달하는 미묘한 뉘앙스 차이를 이해하면 훨씬 정교하게 영어를 구사할 수 있다.',
+        ],
+      },
+      {
+        type: 'callout',
+        title: '28장 보충 정리 — such, enough+명사, 대명사 기본 규칙, 도치',
+        items: [
+          'such + (a/an) + (형용사) + 명사(+ that)는 so와 달리 명사(구)를 직접 꾸민다 — so는 형용사·부사만 꾸밀 수 있다.',
+          'enough가 명사를 꾸밀 때는 명사 앞에 온다(enough money) — 형용사·부사를 꾸밀 때(honest enough)와 위치가 정반대이다.',
+          'some-은 긍정문, any-는 의문문·부정문, no-는 그 자체로 부정, every-는 "전부"를 나타내며 모두 단수 취급한다. no one/nobody가 있는 문장에 not을 또 넣는 이중 부정에 주의한다.',
+          'The place/The reason처럼 구체적 의미를 가진 명사를 문장 앞에 두는 것도 what 유사분열문과 같은 방식의 초점 이동이다.',
+          'not only, never, rarely, no sooner ~ than처럼 부정·제한 부사가 문장 맨 앞에 오면 주어와 (조)동사가 도치된다. So/Neither로 맞장구칠 때도 같은 원리로 도치가 일어난다.',
         ],
       },
       {

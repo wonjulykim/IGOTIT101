@@ -43,6 +43,78 @@ export const ch10 = {
         type: 'note',
         text: '**현재시제는 "지금 일어나고 있는 일"을 나타내지 않습니다.** 위 타임라인처럼 현재시제가 그리는 것은 과거부터 미래까지 죽 이어지는 반복의 점선이지, "지금" 표시 위의 한 사건이 아닙니다. 지금 이 순간에 진행 중인 일을 말하고 싶다면 현재진행형을 사용해야 합니다.',
       },
+      { type: 'heading', text: '주어가 he/she/it일 때 — 동사 끝에 -(e)s 붙이기' },
+      {
+        type: 'p',
+        text: '현재시제 문장에서 주어가 3인칭 단수(he, she, it, 또는 한 사람·한 사물의 이름)일 때는 동사 끝에 -(e)s를 붙입니다. **이 규칙은 나머지 주어(I, you, we, they)와 he/she/it을 형태로 구분해 주는 유일한 표시이므로, 3인칭 단수 주어 문장에서 절대 빠뜨려서는 안 됩니다.** 예를 들어 I eat lunch와 She eats lunch는 동사 끝의 -s 하나로만 주어의 인칭이 구분되는 셈입니다.',
+      },
+      {
+        type: 'table',
+        caption: '3인칭 단수 동사에 -(e)s 붙이는 규칙',
+        headers: ['형태', '규칙', '예시'],
+        rows: [
+          ['대부분의 동사', '끝에 -s만 붙인다', 'eat → eats, drink → drinks, start → starts, leave → leaves'],
+          ['-sh, -ch, -s, -ss, -x, -z, -o로 끝나는 동사', '발음을 위해 -es를 붙인다', 'watch → watches, wash → washes, cross → crosses, fix → fixes, buzz → buzzes, go → goes, do → does'],
+          ['자음 + y로 끝나는 동사', 'y를 i로 바꾸고 -es를 붙인다', 'study → studies, worry → worries, cry → cries, carry → carries'],
+          ['모음 + y로 끝나는 동사', 'y를 바꾸지 않고 그대로 -s만 붙인다', 'play → plays, enjoy → enjoys, buy → buys'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '두 번째 규칙에서 -es를 붙이는 이유는 발음의 편의 때문입니다. watch처럼 이미 마찰음·파찰음으로 끝나는 동사에 -s만 붙이면(watchs) 발음이 뭉개져 소리 내기 어렵기 때문에, 모음 e를 하나 끼워 넣어(watches) 하나의 음절로 또렷하게 발음할 수 있게 만드는 것입니다. 세 번째와 네 번째 규칙은 y 앞의 글자가 자음이냐 모음이냐로 갈립니다 — study의 y 앞은 자음 d이므로 studies가 되지만, play의 y 앞은 모음 a이므로 그대로 plays가 됩니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'He goes to bed at ten.', ko: '그는 10시에 잠자리에 든다.', note: '-o로 끝나는 동사 go → goes' },
+          { en: 'She teaches English to six students.', ko: '그녀는 여섯 명의 학생에게 영어를 가르친다.', note: '-ch로 끝나는 동사 teach → teaches' },
+          { en: 'Tom does the dishes every evening.', ko: 'Tom은 매일 저녁 설거지를 한다.', note: '-o로 끝나는 동사 do → does' },
+          { en: 'My sister worries about everything.', ko: '내 여동생은 모든 것을 걱정한다.', note: '자음+y로 끝나는 worry → worries' },
+          { en: 'He always plays computer games after school.', ko: '그는 방과 후에 항상 컴퓨터 게임을 한다.', note: '모음+y로 끝나는 play는 y를 바꾸지 않고 plays' },
+        ],
+      },
+      { type: 'heading', text: 'be동사와 have — 불규칙하게 변하는 동사' },
+      {
+        type: 'p',
+        text: '일반동사는 -(e)s만 붙이면 되지만, be동사와 have는 규칙을 따르지 않고 형태 자체가 완전히 바뀌는 불규칙 동사입니다. **be동사는 주어에 따라 am/are/is 세 가지 형태로 갈라지고, have는 3인칭 단수일 때 haves가 아니라 has로 바뀝니다.** 두 동사 모두 매우 자주 쓰이는 만큼, 규칙 동사와 헷갈리지 않도록 따로 외워두어야 합니다.',
+      },
+      {
+        type: 'table',
+        caption: 'be동사와 have의 현재시제 변화',
+        headers: ['주어', 'be동사', 'have'],
+        rows: [
+          ['I', 'am', 'have'],
+          ['You / We / They', 'are', 'have'],
+          ['He / She / It', 'is', 'has'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I am 25 years old.', ko: '나는 25살이다.' },
+          { en: 'You are a chef.', ko: '너는 요리사이다.' },
+          { en: 'He is happy.', ko: '그는 행복하다.' },
+          { en: 'I have a car.', ko: '나는 차가 있다.' },
+          { en: 'She has a yard.', ko: '그녀는 마당이 있다.', note: 'have의 3인칭 단수형은 haves가 아니라 has' },
+          { en: 'Sarah has coffee with Tom every Tuesday.', ko: 'Sarah는 매주 화요일에 Tom과 커피를 마신다.', note: 'have가 "가지다"가 아니라 "먹다/마시다"의 뜻으로 쓰인 경우도 3인칭 단수는 has' },
+        ],
+      },
+      { type: 'heading', text: '자주 하는 실수 — do를 불필요하게 넣는 것' },
+      {
+        type: 'p',
+        text: '현재시제 긍정문을 만들 때 흔히 저지르는 실수는 조동사 do를 불필요하게 집어넣는 것입니다. **do/does는 오직 부정문과 의문문을 만들 때만 필요한 조동사이며, 긍정문에서는 절대 쓰지 않습니다.** 반대로 3인칭 단수 주어 문장에서 동사에 -(e)s 붙이는 것을 빠뜨리는 실수도 이만큼 흔하므로 함께 짚어둡니다.',
+      },
+      {
+        type: 'table',
+        caption: '3인칭 단수·do 사용에서 흔한 실수',
+        headers: ['잘못된 표현', '바른 표현', '설명'],
+        rows: [
+          ['*I do eat lunch at noon every day.', 'I eat lunch at noon every day.', '긍정문에는 do가 필요 없다. do는 부정문(don\'t)·의문문(Do you ~?)에만 쓴다.'],
+          ['*He start work at 11am.', 'He starts work at 11am.', '주어가 3인칭 단수(he)이므로 동사에 -s를 반드시 붙여야 한다.'],
+          ['*She go to bed early.', 'She goes to bed early.', '-o로 끝나는 동사는 -es를 붙여야 한다(goes).'],
+          ['*He haves a cold.', 'He has a cold.', 'have의 3인칭 단수형은 규칙(-s)이 아니라 불규칙 형태 has이다.'],
+        ],
+      },
       { type: 'heading', text: '현재진행형: 지금 이 순간에만 일어나는 일' },
       {
         type: 'p',
@@ -157,6 +229,18 @@ export const ch10 = {
       {
         type: 'note',
         text: '단모음이란 짧고 간단하게 발음되는 모음(sit의 i, run의 u, get의 e 등)을 말하고, 단자음이란 단어 끝에 오는 하나의 자음 발음(sit의 t, run의 r, hop의 p 등)을 말합니다. 이 규칙은 ing형으로 바뀔 때 발음이 원래 단어와 다르게 변하는 것을 막기 위한 것입니다. 예를 들어 sit에 그대로 -ing를 붙이면 siting이 되어 발음이 /saɪtɪŋ/으로 바뀌므로, **t를 한 번 더 써서 sitting(/sɪtɪŋ/)으로 만들어 원래 발음을 지킵니다.**',
+      },
+      {
+        type: 'note',
+        text: '④번 규칙은 2음절 이상의 단어에도 똑같이 적용되지만, 한 가지 조건이 더 붙습니다. **마지막 음절에 강세(stress)가 있을 때만 자음을 겹쳐 쓰고, 강세가 없으면 그대로 -ing만 붙입니다.** 예를 들어 shop은 1음절이라 강세가 당연히 마지막 음절에 있으므로 shopping이 되지만, open처럼 2음절이면서 강세가 앞쪽(ó·pen)에 있는 단어는 자음을 겹치지 않고 opening으로 씁니다. 같은 이유로 visit(ví·sit)도 visiting이지 visitting이 아닙니다. 즉 “단모음+단자음” 규칙의 진짜 조건은 자음의 개수가 아니라 그 음절에 강세가 실리는가입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'They are opening a store next week.', ko: '그들은 다음 주에 가게를 연다.', note: 'open은 강세가 앞 음절에 있어 자음을 겹치지 않음 → opening' },
+          { en: 'I am visiting my grandmother this weekend.', ko: '나는 이번 주말에 할머니 댁을 방문하는 중이다.', note: 'visit도 강세가 앞 음절이라 visitting이 아닌 visiting' },
+          { en: 'Terry is mopping the floor.', ko: 'Terry는 바닥을 닦고 있다.', note: '1음절 mop은 강세가 그 음절에 있으므로 mopping' },
+        ],
       },
       { type: 'heading', text: '왜 어떤 동사는 진행형으로 쓰지 않을까: 상태동사의 원리' },
       {

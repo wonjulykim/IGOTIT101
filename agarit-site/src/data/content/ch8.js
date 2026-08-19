@@ -174,6 +174,99 @@ export const ch8 = {
           { en: 'She has studied English for five years.', ko: '그녀는 5년째 영어를 공부해 오고 있다.', note: '현재 완료형 – 과거에 시작되어 지금까지 이어짐' },
         ],
       },
+      { type: 'heading', text: '영어 시제 전체 지도 — 3(시간) × 4(관점) = 12개의 형태' },
+      {
+        type: 'p',
+        text: '지금까지는 현재·과거라는 "시간"과, 단순형·진행형·완료형이라는 "바라보는 시각"을 하나씩 따로 살펴보았습니다. 그런데 이 두 가지 기준을 곱하면 영어 시제 전체의 구조가 훨씬 선명하게 드러납니다. **영어의 모든 시제는 "언제(현재/과거/미래)"라는 시간 축 하나와, "어떻게 바라보는가(단순/진행/완료/완료진행)"라는 관점 축 하나, 이 두 축이 교차하며 만들어집니다.** 시간이 3가지, 관점이 4가지이므로 이론적으로는 3×4=12개의 형태가 만들어지는 셈입니다. 아래 표는 그 12칸을 모두 채운 전체 지도이며, 각 형태를 자세히 배우는 것은 이후 여러 장(9장·10장·20장·21장·22장 등)에 걸쳐 진행되지만, 지금은 "내가 지금 배우는 시제가 이 12칸 지도에서 어디에 해당하는가"를 아는 것만으로도 충분합니다.',
+      },
+      {
+        type: 'table',
+        caption: '① 현재를 기준으로 한 네 가지 형태',
+        headers: ['관점', '형태', '핵심 의미', '예문'],
+        rows: [
+          ['단순형 (사건을 점으로)', 'play / plays', '습관·반복·일반적 사실', 'I play the piano.'],
+          ['진행형 (특정 시점에 펼쳐진 동작으로)', 'am/is/are playing', '지금 이 순간 진행 중인 동작', 'I am playing the piano.'],
+          ['완료형 (기준 시점 이전에 일어나 영향이 남은 일로)', 'have/has played', '과거~현재까지의 경험·영향', 'I have played the piano.'],
+          ['완료진행형 (기준 시점 직전까지 계속된 지속으로)', 'have/has been playing', '과거부터 지금까지 계속되어 온 동작', 'I have been playing the piano.'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: '② 과거를 기준으로 한 네 가지 형태',
+        headers: ['관점', '형태', '핵심 의미', '예문'],
+        rows: [
+          ['단순형 (사건을 점으로)', 'played', '과거에 끝난 하나의 사건', 'I played the piano.'],
+          ['진행형 (특정 시점에 펼쳐진 동작으로)', 'was/were playing', '과거 특정 시점에 진행 중이던 동작', 'I was playing the piano when she called.'],
+          ['완료형 (기준 시점 이전에 일어나 영향이 남은 일로)', 'had played', '그 과거보다 더 이전에 일어난 일', 'I had played the piano before she arrived.'],
+          ['완료진행형 (기준 시점 직전까지 계속된 지속으로)', 'had been playing', '과거의 기준 시점 직전까지 계속되던 동작', 'I had been playing the piano for an hour before she arrived.'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: '③ 미래를 기준으로 한 네 가지 형태',
+        headers: ['관점', '형태', '핵심 의미', '예문'],
+        rows: [
+          ['단순형 (사건을 점으로)', 'will play', '미래에 일어날 일 (예측·의지·계획)', 'I will play the piano tomorrow.'],
+          ['진행형 (특정 시점에 펼쳐진 동작으로)', 'will be playing', '미래 특정 시점에 진행 중일 동작', 'I will be playing the piano at 7 tomorrow.'],
+          ['완료형 (기준 시점 이전에 일어나 영향이 남은 일로)', 'will have played', '미래의 그 시점까지는 이미 끝나 있을 일', 'I will have played the piano by 7 tomorrow.'],
+          ['완료진행형 (기준 시점 직전까지 계속된 지속으로)', 'will have been playing', '미래의 그 시점까지 계속되어 있을 동작의 지속 기간', 'I will have been playing the piano for two hours by 7 tomorrow.'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '이 표에서 "미래" 칸에 들어가는 will/be going to는 동사 자체의 형태가 변하는 것이 아니라 조동사 will이나 be going to가 앞에 붙는 방식이라는 점에서, 엄밀히 말하면 현재·과거처럼 "동사 형태 변화로 만드는 시제"는 아닙니다. 그래서 이 책에서는 미래 표현을 조동사(7장)에서 따로 다루지만, "미래의 사건을 바라보는 네 가지 관점(단순/진행/완료/완료진행)"이 현재·과거와 정확히 같은 틀로 짜여 있다는 것을 보여주기 위해 이 지도 안에 함께 넣었습니다. 즉 관점(단순·진행·완료·완료진행)의 논리는 시간이 바뀌어도 그대로 유지됩니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I have been playing the piano for an hour.', ko: '나는 한 시간째 피아노를 치고 있다.', note: '현재완료진행 – 과거부터 지금까지 계속된 동작이며, 지금도 진행 중이거나 방금 끝났음을 강조' },
+          { en: 'I had been playing the piano for an hour before she arrived.', ko: '그녀가 도착하기 전까지 나는 한 시간째 피아노를 치고 있었다.', note: '과거완료진행 – 과거의 기준 시점(그녀가 도착한 때) 직전까지 계속된 동작' },
+          { en: 'I will have played the piano for three years by next spring.', ko: '내년 봄이면 나는 피아노를 친 지 3년이 된다.', note: '미래완료 – 미래의 기준 시점(내년 봄)까지는 이미 이루어져 있을 일' },
+          { en: 'By 7 tomorrow, I will have been playing the piano for two hours.', ko: '내일 7시가 되면 나는 두 시간째 피아노를 치고 있는 셈이 된다.', note: '미래완료진행 – 미래의 기준 시점까지 계속되어 있을 동작의 지속 기간을 강조' },
+        ],
+      },
+      {
+        type: 'timeline',
+        label: '과거완료: had + p.p. (기준 시점보다 한 걸음 더 앞선 과거)',
+        now: 50,
+        range: { from: 5, to: 25, text: 'had played' },
+        translation: '과거의 어느 기준 시점(예: she arrived)보다도 더 이전에 이미 일어난 일을 화살표로 나타냅니다. 즉 "과거 속의 과거"를 표시하는 형태입니다. 자세한 용법은 22장(과거완료)에서 다룹니다.',
+      },
+      { type: 'heading', text: '시제를 고를 때 스스로에게 던지는 세 가지 질문' },
+      {
+        type: 'p',
+        text: '12칸이나 되는 형태를 한꺼번에 외우려고 하면 오히려 헷갈리기 쉽습니다. 그 대신 문장을 만들기 전에 아래 세 가지 질문을 순서대로 스스로에게 던져보면, 어떤 형태를 골라야 할지가 자연스럽게 정해집니다. **이 세 질문에 대한 답을 조합하면 12칸 지도 중 정확히 한 칸이 결정된다는 것**이 이 장에서 반드시 기억해야 할 핵심입니다.',
+      },
+      {
+        type: 'table',
+        caption: '시제 선택을 위한 세 가지 질문',
+        headers: ['질문', '"예"일 때', '"아니오"일 때'],
+        rows: [
+          ['① 기준으로 삼는 시점이 현재·과거·미래 중 언제인가?', '표의 세로줄(시간)을 먼저 정한다', '—'],
+          ['② 그 사건을 하나의 사실/점으로 말하는가, 아니면 그 시점에 한창 펼쳐지고 있는 동작으로 말하는가?', '동작이 펼쳐지는 중이면 진행형', '점(사실)이면 단순형 또는 완료형 쪽으로'],
+          ['③ 그 사건이 기준 시점보다 앞서 일어나 그 결과·영향·지속이 기준 시점까지 남아 있는가?', '완료형(또는 완료진행형)', '단순형(또는 진행형)'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '예를 들어 "그녀가 전화했을 때 나는 피아노를 치고 있었다"라는 문장을 만든다고 해봅시다. ① 기준 시점은 과거(그녀가 전화한 그 순간)입니다. ② 그 순간에 "피아노를 치는 동작이 한창 펼쳐지고 있었다"는 것이므로 진행형입니다. ③ 그 사건이 기준 시점보다 앞서 일어나 영향이 남은 것은 아니므로 완료형은 아닙니다. 세 질문을 조합하면 "과거+진행형" 즉 과거 진행형(was/were playing)이 정답으로 결정됩니다.',
+      },
+      { type: 'heading', text: '자주 하는 실수 — 시제와 시간을 혼동하는 것' },
+      {
+        type: 'p',
+        text: '이 장에서 배운 "시간(time)과 시제(tense)는 다르다"는 원리를 놓치면 아래와 같은 실수가 생깁니다. **가장 흔한 실수는 "지금 진행 중인 동작"을 표현하려다가 현재 진행형 대신 현재 시제를 그대로 쓰는 것, 그리고 미래를 나타내려고 동사 자체의 형태를 바꾸려 하는 것입니다.**',
+      },
+      {
+        type: 'table',
+        caption: '시제 개관 단계에서 흔한 실수',
+        headers: ['잘못된 표현', '바른 표현', '설명'],
+        rows: [
+          ['*Look, it rains now!', 'Look, it is raining now!', '"지금 이 순간"을 나타낼 때는 현재 시제가 아니라 현재 진행형을 써야 한다.'],
+          ['*She will studies tomorrow.', 'She will study tomorrow.', '조동사 will은 형태를 바꾸는 시제가 아니라 동사원형과 함께 쓰는 조동사이므로, will 뒤의 동사에는 -s를 붙이지 않는다.'],
+          ['*I played the piano since last week.', 'I have played the piano since last week.', 'since(~부터 지금까지)처럼 현재까지 이어지는 기간을 나타내는 표현은 과거 시제가 아니라 현재 완료형과 함께 쓴다.'],
+          ['*I have played the piano yesterday.', 'I played the piano yesterday.', 'yesterday처럼 완전히 끝난 특정 과거 시점을 가리키는 부사는 현재 완료형이 아니라 과거 시제와 함께 쓴다.'],
+        ],
+      },
       {
         type: 'callout',
         title: '8장 핵심 정리',

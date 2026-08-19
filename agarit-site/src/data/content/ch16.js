@@ -154,6 +154,48 @@ export const ch16 = {
         type: 'note',
         text: 'to는 물건이 단순히 사람에게 옮겨가는 것만을 나타내지만, for는 그 물건을 준비하는 데 들어간 정성·노력·시간·돈까지 함께 나타냅니다. 그래서 **make, cook, buy처럼 무언가를 만들거나 마련해서 주는 동사들은 for를 사용**합니다.',
       },
+      { type: 'heading', text: '수여동사 정리 — to를 쓰는 동사 vs for를 쓰는 동사' },
+      {
+        type: 'p',
+        text: '실제로 자주 쓰이는 수여동사들을 to그룹과 for그룹으로 나누어 정리하면 다음과 같습니다. **동사 하나하나를 따로 외우기보다, 앞서 배운 원리(이동이면 to, 마련이면 for)에 비추어 “이 동사가 이동을 말하는가, 마련을 말하는가”를 스스로 판단해보면 처음 보는 동사를 만나도 전치사를 추론할 수 있습니다.**',
+      },
+      {
+        type: 'table',
+        caption: '수여동사별 3형식 전환 전치사 정리',
+        headers: ['전치사', '동사', '3형식 전환 예문'],
+        rows: [
+          ['to', 'give', 'She gave a ring to him.'],
+          ['to', 'send', 'He sent an email to his manager.'],
+          ['to', 'show', 'David showed his photos to us.'],
+          ['to', 'tell', 'I told the truth to my parents.'],
+          ['to', 'offer', 'The company offered a new position to her.'],
+          ['to', 'teach', 'She teaches English to middle school students.'],
+          ['to', 'lend', 'She lent some money to her son.'],
+          ['to', 'bring', 'He brought some snacks to the party.'],
+          ['to', 'pass', 'Please pass the salt to me.'],
+          ['to', 'sell', 'Carolina sold her house to her younger brother.'],
+          ['to', 'promise', 'He promised a surprise to his girlfriend.'],
+          ['to', 'read', 'My mom read a bedtime story to me.'],
+          ['for', 'make', 'He made dinner for the children.'],
+          ['for', 'buy', 'Federico bought a car for his parents.'],
+          ['for', 'cook', 'She cooked a wonderful meal for her guests.'],
+          ['for', 'get', 'Could you get a coffee for me?'],
+          ['for', 'find', 'He found a good seat for his grandmother.'],
+          ['for', 'build', 'They built a house for the homeless family.'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '동사가 두 개의 목적어를 취하기는 하지만 to도 for도 아닌 of를 쓰는 예외적인 동사도 있습니다. **ask(묻다·요청하다)가 대표적인데, “~에게 ~을 요청하다”라는 뜻의 4형식 문장을 3형식으로 바꿀 때는 ask + 사물 + of + 사람의 형태를 씁니다.** ask는 물건이 이동하는 것도, 무언가를 마련해주는 것도 아니라 “상대방으로부터 무언가를 얻어내려는” 방향이므로 to·for와는 다른 of가 쓰인다고 이해하면 됩니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I asked him a question.', ko: '나는 그에게 질문을 하나 했다.', note: '4형식 (ask + 사람 + 사물)' },
+          { en: 'I asked a question of him.', ko: '나는 그에게 질문을 하나 했다.', note: '3형식 전환 — ask는 to/for가 아니라 of를 사용' },
+          { en: 'Can I ask a favor of you?', ko: '부탁 하나만 해도 될까요?', note: 'ask a favor of + 사람: 굳어진 표현으로 자주 쓰임' },
+        ],
+      },
       { type: 'heading', text: '흔히 하는 실수 — 직접목적어가 대명사일 때' },
       {
         type: 'p',
@@ -181,6 +223,64 @@ export const ch16 = {
       {
         type: 'note',
         text: '정리하면, 직접목적어가 명사(a book, a present 등)일 때는 "S+V+사람+사물" 4형식과 "S+V+사물+전치사+사람" 3형식이 모두 자연스럽지만, **직접목적어가 대명사(it, them)일 때는 3형식(S+V+it/them+전치사+사람)만 쓰는 것이 원칙**입니다. 대명사처럼 가볍고 이미 알려진 정보는 문장 뒤쪽 무거운 자리로 보내지 않는다는 영어의 일반적인 정보 배치 습성과 같은 원리입니다.',
+      },
+      { type: 'heading', text: '대명사가 간접목적어(사람)일 때는 어순이 비교적 자유롭다' },
+      {
+        type: 'p',
+        text: '방금 살펴본 규칙은 **직접목적어(사물)가 대명사일 때**의 이야기였습니다. 그런데 반대로 **간접목적어(사람)가 대명사이고 직접목적어(사물)는 보통의 명사인 경우**는 사정이 다릅니다. 이때는 4형식(S+V+사람 대명사+사물)과 3형식(S+V+사물+전치사+사람 대명사) 두 가지 어순이 모두 자연스럽습니다. 즉 어순 제약이 걸리는 것은 오직 “사물 자리에 대명사가 올 때”뿐이며, “사람 자리에 대명사가 올 때”는 원래의 4형식 어순을 그대로 써도 전혀 문제가 없습니다.',
+      },
+      {
+        type: 'table',
+        caption: '대명사의 위치에 따른 어순 제약 정리',
+        headers: ['대명사의 자리', '허용되는 어순', '예문'],
+        rows: [
+          ['직접목적어(사물)가 대명사', '3형식만 가능 (4형식 불가)', 'She lent it to her son. (○) / *She lent her son it. (✕)'],
+          ['간접목적어(사람)가 대명사', '4형식·3형식 모두 가능', 'She lent him some money. (○) / She lent some money to him. (○)'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Carolina sold it to her younger brother.', ko: 'Carolina는 그것을 남동생에게 팔았다.', note: '사물(it)이 대명사이므로 반드시 3형식' },
+          { en: 'Carolina sold him her house.', ko: 'Carolina는 그에게 자신의 집을 팔았다.', note: '사람(him)이 대명사여도 4형식 어순 그대로 가능' },
+          { en: 'Carolina sold her house to him.', ko: 'Carolina는 자신의 집을 그에게 팔았다.', note: '같은 뜻을 3형식으로 표현해도 자연스러움' },
+          { en: 'Federico bought it for them.', ko: 'Federico는 그것을 그들을 위해 샀다.', note: '사물(it)이 대명사이므로 for와 함께 3형식만 가능' },
+          { en: 'Federico bought them a car.', ko: 'Federico는 그들에게 차를 사 주었다.', note: '사람(them)이 대명사여도 4형식 어순 그대로 가능' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '결국 규칙은 하나로 요약됩니다. **대명사는 가벼운 정보이므로 문장에서 무거운 자리(맨 끝)로 보내지 않는다.** 사물이 대명사이면 그 가벼운 대명사가 동사 바로 뒤(가벼운 자리)에 남아야 하므로 사람이 대신 전치사와 함께 뒤로 밀려나 3형식이 되고, 사람이 대명사이면 애초에 사람이 이미 동사 바로 뒤(가벼운 자리)에 있으므로 굳이 어순을 바꿀 필요가 없어 4형식·3형식 모두 가능한 것입니다.',
+      },
+      { type: 'heading', text: '4형식을 쓸 수 없는 동사 — explain, suggest, describe 등' },
+      {
+        type: 'p',
+        text: '겉보기에는 “~에게 ~을 설명하다/제안하다”처럼 수여동사와 비슷한 뜻으로 보이지만, **애초에 이중목적어(4형식) 구조 자체를 쓸 수 없는 동사들**이 있습니다. explain, suggest, describe, admit, announce, mention, introduce, propose 같은 동사가 대표적입니다. 이 동사들은 “사람에게 무엇을 그대로 건네준다”는 개념이 아니라 “정보를 말로 풀어내어 전달한다”는 개념에 가깝기 때문에, 반드시 to를 사람 앞에 붙여서 「동사 + 목적어(사물/that절) + to + 사람」의 3형식으로만 써야 합니다.',
+      },
+      {
+        type: 'table',
+        caption: '4형식(이중목적어)을 쓸 수 없는 동사',
+        headers: ['잘못된 4형식', '올바른 3형식', '설명'],
+        rows: [
+          ['*He explained me the problem.', 'He explained the problem to me.', 'explain은 항상 explain + 사물 + to + 사람의 순서로만 쓴다.'],
+          ['*She suggested me a good idea.', 'She suggested a good idea to me.', 'suggest도 사람 앞에 반드시 to가 필요하다.'],
+          ['*He described us the accident.', 'He described the accident to us.', 'describe 역시 이중목적어를 취하지 않는다.'],
+          ['*She admitted him her mistake.', 'She admitted her mistake to him.', 'admit도 to 없이 사람을 바로 뒤에 둘 수 없다.'],
+          ['*The government announced the public the new policy.', 'The government announced the new policy to the public.', 'announce도 마찬가지로 3형식으로만 쓴다.'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The teacher explained the grammar rule to the students.', ko: '선생님은 학생들에게 그 문법 규칙을 설명해 주었다.', note: 'explain + 목적어 + to + 사람' },
+          { en: 'He explained to me that he would be late.', ko: '그는 나에게 늦을 것이라고 설명했다.', note: 'explain 뒤에 that절이 올 때도 to me가 먼저 옴' },
+          { en: 'I suggested a new plan to my team.', ko: '나는 팀에게 새로운 계획을 제안했다.' },
+          { en: 'Can you describe the thief to the police?', ko: '경찰에게 그 도둑의 인상착의를 설명해 주시겠어요?' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '이 동사들과 give, tell, teach 같은 진짜 수여동사를 구별하는 좋은 방법은, “물건이나 지식을 상대방에게 통째로 건네는 느낌인가”를 따져보는 것입니다. tell은 사람에게 정보 자체를 직접 건네는 동작(4형식 가능: tell me the truth)이지만, explain은 정보를 “풀어서” 전달하는 동작이라 대상(사람)이 동사 바로 뒤에 오지 못합니다. 뜻이 비슷해 보여도 tell과 explain을 서로 바꾸어 4형식/3형식 구조를 섞어 쓰면 흔한 오류가 되므로 주의해야 합니다.',
       },
       {
         type: 'callout',

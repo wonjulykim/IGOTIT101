@@ -28,6 +28,23 @@ export const ch9 = {
         ],
         translation: 'I worked at a bank last year. (work → worked, 동사원형 끝에 -ed를 붙인 기본 규칙)',
       },
+      { type: 'heading', text: '과거형은 인칭·수와 상관없이 형태가 하나뿐이다' },
+      {
+        type: 'p',
+        text: '현재 시제를 배울 때, 주어가 3인칭 단수(he, she, it)이면 동사 끝에 -s를 붙여야 한다고 배웠던 것을 떠올려 보세요. **과거 시제는 이와 다르게, 주어가 무엇이든 동사의 형태가 항상 하나로 고정됩니다.** I worked, you worked, he worked, she worked, we worked, they worked처럼 인칭과 수에 관계없이 모두 같은 형태(worked)를 씁니다. 즉 과거형을 쓸 때는 "이 주어에는 -s를 붙여야 하나?" 같은 고민을 할 필요가 전혀 없습니다 — 동사원형에 -ed를 붙인 형태 하나만 기억하면 모든 주어에 그대로 사용할 수 있습니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'She plays the piano every day.', ko: '그녀는 매일 피아노를 친다.', note: '현재형에서는 3인칭 단수 주어 she에 맞춰 동사에 -s를 붙임(plays)' },
+          { en: 'She played the piano yesterday.', ko: '그녀는 어제 피아노를 쳤다.', note: '과거형에서는 주어가 3인칭 단수여도 -s를 붙이지 않고 played로 동일' },
+          { en: 'I played tennis. He played tennis. They played tennis.', ko: '나도, 그도, 그들도 모두 played를 쓴다.', note: '주어가 바뀌어도 과거형의 형태는 절대 바뀌지 않는다' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '단, 이 규칙에는 딱 하나의 예외가 있습니다. **be동사(am/is/are)만은 과거형에서도 주어에 따라 was와 were로 형태가 달라집니다.** 이 예외는 뒤에 나오는 9-2 불규칙 동사 부분에서 자세히 다룹니다.',
+      },
       { type: 'heading', text: '발음의 편의를 위한 추가 규칙' },
       {
         type: 'p',

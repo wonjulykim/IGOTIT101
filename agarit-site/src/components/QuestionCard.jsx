@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { isShortAnswerCorrect, essayKeywordHits } from '../utils/grading'
 import { XP_RULES } from '../utils/gamification'
 import { getChapter } from '../data/chapters'
+import { saveKoreanDraft, getKoreanDraft } from '../utils/progress'
 import AiEssayGrader from './AiEssayGrader'
 import './QuestionCard.css'
 
@@ -107,8 +109,29 @@ function countWords(text) {
 function EssayBody({ q, value, onChange, submitted, unitId }) {
   const result = submitted && q.keywords ? essayKeywordHits(value, q.keywords) : null
   const wordCount = countWords(value)
+  const [draftKo, setDraftKo] = useState(() => getKoreanDraft(unitId, q.id))
+
+  function handleDraftChange(text) {
+    setDraftKo(text)
+    saveKoreanDraft(unitId, q.id, text)
+  }
+
   return (
     <div>
+      <div className="essay-draft-ko">
+        <label className="essay-draft-ko-label" htmlFor={`draft-ko-${q.id}`}>
+          💡 한글로 먼저 생각을 정리해보세요 (채점에는 반영되지 않아요)
+        </label>
+        <textarea
+          id={`draft-ko-${q.id}`}
+          className="essay-draft-ko-input"
+          rows={4}
+          placeholder="영어로 쓰기 전에, 무슨 내용을 쓸지 한글로 먼저 메모해보세요."
+          value={draftKo}
+          disabled={submitted}
+          onChange={(e) => handleDraftChange(e.target.value)}
+        />
+      </div>
       <textarea
         className="essay-input"
         rows={q.rubric ? 8 : 5}

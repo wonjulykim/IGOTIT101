@@ -61,6 +61,26 @@ export const ch2 = {
           { en: 'Sure, there is some paper on the shelf.', ko: '그럼, 선반에 종이 있어.', note: 'some paper — 재료로서의 종이(형태 없는 물질)' },
         ],
       },
+      { type: 'heading', text: 'some/any, many/much — 셀 수 있음/없음에 따라 갈리는 수량 표현' },
+      {
+        type: 'p',
+        text: '명사가 셀 수 있는지 없는지는 그 명사와 짝을 이루는 수량 표현에도 그대로 영향을 미칩니다. **긍정문에서는 셀 수 있는 명사·없는 명사 모두에 some을 쓸 수 있지만, 부정문·의문문에서는 any를 씁니다.** 또한 "얼마나 많은가"를 물을 때 셀 수 있는 명사에는 many, 셀 수 없는 명사에는 much를 씁니다 — 이 구분은 뒤에 오는 동사의 단수·복수와도 그대로 연결됩니다.',
+      },
+      {
+        type: 'table',
+        caption: 'some/any, many/much의 쓰임',
+        headers: ['구분', '셀 수 있는 명사', '셀 수 없는 명사'],
+        rows: [
+          ['긍정문', 'There are some eggs.', 'There is some rice.'],
+          ['부정문', "There aren't any eggs.", "There isn't any rice."],
+          ['의문문', 'Are there any eggs?', 'Is there any rice?'],
+          ['수량을 묻는 의문사', 'How many eggs are there? (동사는 복수 are)', 'How much rice is there? (동사는 단수 is)'],
+        ],
+      },
+      {
+        type: 'note',
+        text: 'much는 셀 수 없는 명사에만 쓸 수 있으며, 이때 동사는 항상 단수로 씁니다. *How many pasta are there?는 pasta가 셀 수 없는 명사이므로 many가 아니라 much를 써서 How much pasta is there?라고 해야 합니다. 이 실수는 많은 학습자가 "양이 많다"는 느낌만으로 many를 습관적으로 고를 때 자주 나타나므로, 반드시 명사가 셀 수 있는지부터 확인하는 습관을 들여야 합니다.',
+      },
       { type: 'heading', text: '명사의 복수형 만드는 법' },
       { type: 'p', text: '(1) 대부분의 명사: **명사 뒤에 -s를 붙인다.** 예) cars, trees, flowers' },
       {
@@ -163,6 +183,59 @@ export const ch2 = {
           { en: 'I need some paper to wrap this gift.', ko: '이 선물을 포장할 종이가 필요해.', note: 'paper — 포장용 재료(셀 수 없음)' },
           { en: 'Could you turn on a light? It’s dark in here.', ko: '조명 좀 켜줄래? 여기 어둡다.', note: 'a light — 전등 하나(셀 수 있음)' },
           { en: 'The room was filled with soft light.', ko: '방은 부드러운 빛으로 가득했다.', note: 'light — 빛 자체(셀 수 없음)' },
+        ],
+      },
+      { type: 'heading', text: '추상명사가 구체적인 사례를 가리키며 셀 수 있게 되는 경우' },
+      {
+        type: 'p',
+        text: '대부분의 추상명사는 셀 수 없지만, **같은 추상명사라도 "일반적인 개념·성질 전체"를 가리킬 때는 셀 수 없고, "구체적인 하나의 사례·경험"을 가리킬 때는 셀 수 있는 명사로 바뀌는 경우가 많습니다.** 이때 단수형과 복수형(또는 a를 붙인 형태)은 의미가 조금 더 구체적으로 좁혀진다는 공통점이 있습니다.',
+      },
+      {
+        type: 'table',
+        caption: '셀 수 없는 추상명사 vs 셀 수 있는 추상명사 (구체적 사례)',
+        headers: ['단어', '셀 수 없음 (일반적 개념)', '셀 수 있음 (구체적 사례)'],
+        rows: [
+          ['time', 'There\'s plenty of time left. (시간이라는 개념 전체)', "I've been there a few times. (구체적인 횟수)"],
+          ['success', 'Hard work leads to success. (성공이라는 개념 전체)', 'He has had many successes. (구체적인 성취들)'],
+          ['quality', 'It has a reputation for quality. (품질이라는 기준 전체)', 'It has some great qualities. (구체적인 특징들)'],
+          ['skill', 'It takes skill to do that job. (능력 자체)', 'We learned several new skills. (구체적으로 배운 기술들)'],
+          ['thought', 'The task requires thought. (사고 과정 전체)', "I've had some thoughts about it. (구체적인 생각들)"],
+        ],
+      },
+      {
+        type: 'note',
+        text: '이 표의 패턴을 요약하면, 셀 수 없는 형태는 "그 개념 자체"를 말하고, 셀 수 있는 형태(복수형 또는 a+단수)는 "그 개념이 구체적으로 실현된 하나하나의 사례"를 말합니다. 앞서 배운 paper(종이/논문), light(빛/전등)의 구분과 원리는 같지만, 여기서는 완전히 다른 단어로 바뀌는 것이 아니라 같은 추상명사가 일반성↔구체성을 오간다는 점이 다릅니다.',
+      },
+      { type: 'heading', text: '복합명사(compound noun) — 명사 두 개가 하나처럼 쓰일 때' },
+      {
+        type: 'p',
+        text: '**명사 두 개(또는 그 이상)가 나란히 붙어 하나의 개념을 나타내는 것을 복합명사라고 합니다.** 이때 앞에 오는 명사는 뒤에 오는 명사를 형용사처럼 꾸며주는 역할을 하며, 전체 복합명사의 의미와 문법적 성질(셀 수 있는지, 단수/복수)은 항상 맨 뒤의 명사를 기준으로 결정됩니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'On Tuesdays I play table tennis.', ko: '나는 화요일마다 탁구를 친다.', note: 'table(탁자) + tennis(테니스) = 탁자 위에서 하는 테니스' },
+          { en: 'My baby sister loves her picture book.', ko: '내 여동생은 자기 그림책을 좋아한다.', note: '앞의 명사(picture)는 뒤의 명사가 복수 의미여도 보통 단수 형태를 유지함' },
+          { en: 'My brother always plays on his games console.', ko: '내 형(오빠)은 항상 자기 게임기를 가지고 논다.', note: '예외적으로 첫 명사가 games처럼 복수형으로 굳어진 경우도 있음' },
+          { en: 'The meeting is in the town hall.', ko: '회의는 시청에서 열린다.' },
+          { en: 'I buy tickets at the ticket office.', ko: '나는 매표소에서 표를 산다.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '복합명사는 toothbrush(칫솔)처럼 한 단어로 붙여 쓰기도 하고, bus stop(버스 정류장)처럼 띄어 쓰기도 하며, six-pack(여섯 개들이)처럼 하이픈으로 잇기도 합니다. 셋 중 어느 형태로 쓰는지에 대한 명확한 규칙은 없으므로, 헷갈릴 때는 사전에서 확인하는 것이 가장 정확합니다.',
+      },
+      {
+        type: 'p',
+        text: '복합명사를 복수형으로 만들 때는 **맨 뒤에 있는 명사에만 -s를 붙입니다.** 앞의 명사에 -s를 붙이는 것은 흔한 실수이므로 주의해야 합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The summer party was fun.', ko: '여름 파티는 재미있었다.' },
+          { en: 'Summer parties are always fun.', ko: '여름 파티들은 항상 재미있다.', note: '마지막 명사 party만 parties로 복수형이 됨' },
+          { en: 'I have a collection of teapots.', ko: '나는 찻주전자 컬렉션을 가지고 있다.' },
+          { en: 'I organize my bookcases when they start to look messy.', ko: '나는 책장이 지저분해지면 정리한다.' },
         ],
       },
       { type: 'heading', text: '문맥에 따라 경계를 넘나드는 명사' },
@@ -279,6 +352,38 @@ export const ch2 = {
         ],
         translation: '나 어제 자전거 하나 샀어.',
       },
+      { type: 'heading', text: 'the + 형용사, the + 단수명사 — the가 만드는 특수한 총칭 표현' },
+      {
+        type: 'p',
+        text: 'the는 특정한 하나를 가리킬 뿐 아니라, **「the + 형용사」의 형태로 그 형용사에 해당하는 사람들 전체(하나의 집단)를 가리키는 복수 표현**으로도 쓰입니다. 이때 형용사는 형태가 전혀 바뀌지 않으며, "the +형용사+s"처럼 -s를 붙이는 것은 틀린 표현입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Almost all the houses here are owned by the rich.', ko: '여기 있는 거의 모든 집은 부자들이 소유하고 있다.', note: 'the rich = 부유한 사람들 (전체, 복수 의미)' },
+          { en: 'Emergency treatment for the injured is essential.', ko: '부상자들을 위한 응급 치료는 필수적이다.' },
+          { en: 'The media sometimes portrays the young as lazy.', ko: '언론은 때때로 젊은이들을 게으르다고 묘사한다.' },
+          { en: 'Many charities try to protect the poor.', ko: '많은 자선단체가 가난한 사람들을 보호하려 한다.' },
+          { en: 'The elderly often need the support of their families.', ko: '노인들은 종종 가족의 도움이 필요하다.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '「the + 형용사」는 의미상 복수이지만 형태상으로는 -s가 붙지 않습니다. *the youngs, *the riches처럼 쓰는 것은 흔한 오류이므로 주의해야 합니다. 이 표현 뒤에 오는 동사도 복수로 씁니다 (The rich have ~, The young are ~).',
+      },
+      {
+        type: 'p',
+        text: '한편 종류·부류 전체를 "일반적으로" 말할 때는 두 가지 방법이 있습니다. 하나는 앞서 배운 것처럼 관사 없이 복수형을 쓰는 것(Dogs are loyal animals.)이고, 다른 하나는 **「the + 단수명사」로 그 종류 전체를 대표하는 하나의 표본처럼 말하는 것**입니다. 발명품, 동물의 종, 악기 종류를 말할 때 이 두 방법이 자주 섞여 쓰입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Telescopes changed the way we see the night sky.', ko: '망원경은 우리가 밤하늘을 보는 방식을 바꾸었다.', note: '무관사+복수 — 발명품으로서의 망원경 전체' },
+          { en: 'The telescope changed the way we see the night sky.', ko: '망원경은 우리가 밤하늘을 보는 방식을 바꾸었다.', note: 'the+단수 — 망원경이라는 발명품을 대표 표본처럼 지칭 (의미는 위와 동일)' },
+          { en: 'Cheetahs can run faster than any other land animal.', ko: '치타는 다른 어떤 육상 동물보다 빨리 달릴 수 있다.', note: '무관사+복수 — 치타라는 종 전체' },
+          { en: 'The violin is often the key instrument in an orchestra.', ko: '바이올린은 종종 오케스트라의 핵심 악기이다.', note: 'the+단수 — 바이올린이라는 악기 종류 전체' },
+        ],
+      },
       { type: 'heading', text: '부정관사 a / an — 처음 등장하는 대상' },
       {
         type: 'p',
@@ -333,6 +438,33 @@ export const ch2 = {
           ['식사', 'have breakfast / lunch / dinner'],
           ['운동·게임', 'play soccer, play chess'],
           ['이동수단으로서의 도보', 'go to work on foot'],
+        ],
+      },
+      { type: 'heading', text: '학교·잠자리 등 기관·장소의 "목적"을 말할 때는 무관사' },
+      {
+        type: 'p',
+        text: 'school, bed, church, prison, college, hospital처럼 사람들이 특정한 목적을 위해 가는 장소는, **그 장소를 본래의 목적(공부·수면·예배·수감 등)으로 언급할 때는 관사를 쓰지 않고, 그 건물 자체(특정 건물)를 가리킬 때는 the를 붙입니다.** 같은 단어가 문맥에 따라 관사 유무가 갈리므로 주의해야 합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Liz is seven. She goes to school now.', ko: '리즈는 일곱 살이다. 그녀는 이제 학교에 다닌다.', note: '무관사 school — "공부하러 다닌다"는 본래 목적' },
+          { en: 'Larry works at the school in Park Street.', ko: 'Larry는 Park Street에 있는 그 학교에서 일한다.', note: 'the school — 특정한 건물(직장으로서의 학교)을 가리킴' },
+          { en: 'Go to bed, Tom!', ko: 'Tom, 자러 가!', note: '무관사 bed — "잠을 잔다"는 목적' },
+          { en: 'Please don\'t jump on the bed.', ko: '침대 위에서 뛰지 마세요.', note: 'the bed — 특정한 가구(침대라는 물건)를 가리킴' },
+        ],
+      },
+      { type: 'heading', text: '고유명사와 관사 — 이름 앞에서도 갈리는 the / a / 무관사' },
+      {
+        type: 'p',
+        text: '사람 이름 같은 고유명사는 원칙적으로 무관사로 쓰지만, 상황에 따라 the나 a가 붙어 뜻이 달라지기도 합니다. **the가 붙으면 "그 이름으로 유명한 바로 그 사람"이라는 뜻이 되어 동명이인과 구별해 주고, a가 붙으면 그 이름을 "특정한 사람"이 아니라 하나의 이름표처럼 취급합니다.**',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'This is my uncle, Neil Armstrong.', ko: '이쪽은 제 삼촌, Neil Armstrong입니다.', note: '무관사 — 평범하게 이름을 소개' },
+          { en: 'He\'s not the Neil Armstrong, is he?', ko: '설마 그 (유명한) Neil Armstrong은 아니겠죠?', note: 'the Neil Armstrong — 달 착륙으로 유명한 바로 그 사람과 구별' },
+          { en: 'I\'m afraid there isn\'t a "Joseph Bloggs" on the list.', ko: '죄송하지만 명단에 "Joseph Bloggs"라는 이름은 없네요.', note: 'a "Joseph Bloggs" — 사람이 아니라 그 이름 자체에 초점' },
         ],
       },
       { type: 'heading', text: '흔한 실수: 관사의 생략과 오용' },
@@ -603,6 +735,113 @@ export const ch2 = {
           { en: 'Between you and me, this plan will fail.', ko: '너와 나만 아는 건데, 이 계획은 실패할 거야. (올바른 표현)' },
         ],
       },
+      { type: 'heading', text: '재귀대명사 — 주어와 목적어가 같은 사람일 때' },
+      {
+        type: 'p',
+        text: '**재귀대명사(reflexive pronoun)는 문장의 주어와 목적어가 동일한 대상을 가리킬 때 사용하는 대명사입니다.** 목적격 대명사(me, you, him...)에 -self(단수)나 -selves(복수)를 붙여 만듭니다. "그가 그를 베었다"라고 하면 다른 두 사람처럼 들리지만, 다치게 한 사람과 다친 사람이 같은 사람이라는 것을 분명히 하려면 재귀대명사가 필요합니다.',
+      },
+      {
+        type: 'table',
+        caption: '목적격 대명사 → 재귀대명사',
+        headers: ['목적격', '재귀대명사', '목적격', '재귀대명사'],
+        rows: [
+          ['me', 'myself', 'us', 'ourselves'],
+          ['you (단수)', 'yourself', 'you (복수)', 'yourselves'],
+          ['him', 'himself', 'them', 'themselves'],
+          ['her', 'herself', 'it', 'itself'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'He cut himself while chopping vegetables.', ko: '그는 야채를 썰다가 자신을 베었다.', note: '벤 사람과 다친 사람이 같으므로 재귀대명사 himself' },
+          { en: 'I left myself a reminder about the meeting.', ko: '나는 나 자신에게 회의 알림을 남겼다.' },
+          { en: 'You must prepare yourselves for this exam.', ko: '너희는 이 시험을 위해 준비해야 한다.', note: '상대가 여러 명(복수)이므로 yourselves' },
+          { en: 'The door locks itself when you close it.', ko: '문은 닫으면 저절로 잠긴다.', note: '주어(문)와 목적어(문)가 같으므로 itself' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '**재귀대명사는 주어와 목적어가 다르면 절대로 쓸 수 없습니다.** My boss invited myself and Joe to the meeting.(×)처럼 문장의 진짜 주어가 my boss인데 목적어 자리에 myself를 쓰면 틀립니다. 이 경우 목적어는 주어(my boss)와 다른 대상(Joe와 me)을 가리키므로 그냥 목적격 me를 써야 합니다: My boss invited Joe and me to the meeting.(○)',
+      },
+      {
+        type: 'p',
+        text: '또한 relax, concentrate, meet, feel, get up, hurry처럼 **한국어로는 "~을 쉬게 하다, ~을 집중시키다"처럼 재귀적으로 느껴져도 영어에서는 원래부터 재귀대명사 없이 쓰이는 동사**들이 있습니다. 이런 동사에 재귀대명사를 붙이면 어색한 문장이 됩니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: "*I'm really stressed. I can't relax myself.", ko: '나는 정말 스트레스받아. 쉴 수가 없어. (오류)', note: 'relax는 재귀대명사 없이 그 자체로 "쉬다"라는 뜻' },
+          { en: "I'm really stressed. I can't relax.", ko: '나는 정말 스트레스받아. 쉴 수가 없어. (올바른 표현)' },
+          { en: 'I get up early every day.', ko: '나는 매일 일찍 일어난다.', note: 'get up도 재귀대명사 없이 쓰임' },
+        ],
+      },
+      {
+        type: 'p',
+        text: '재귀대명사는 문법상 필수가 아니어도 **의미를 강조하기 위해 덧붙이는 경우**가 있습니다. 문장 끝에 붙이면 "다른 사람이 아니라 직접"이라는 뜻을, 주어 바로 뒤에 붙이면 "다른 사람도 아니고 바로 그 사람이"라는 뜻을 강조합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The company director gave the talk herself.', ko: '그 회사 대표는 직접 강연을 했다.', note: '문장 끝 강조 — 남에게 시키지 않고 직접 했음을 강조' },
+          { en: 'The company director herself gave the talk.', ko: '다름 아닌 그 회사 대표가 강연을 했다.', note: '주어 바로 뒤 강조 — 그 사람의 중요성을 강조' },
+          { en: "She's fixing her car herself.", ko: '그녀는 직접 자기 차를 고치고 있다.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '재귀대명사는 「동사 + 재귀대명사 + 전치사」 형태의 관용 표현(familiarize yourself with, enjoy yourself, behave yourself, sit by himself(=혼자))으로도 자주 쓰이므로, 이런 표현은 하나의 덩어리로 외워두는 것이 좋습니다. 명령문에서는 주어 You가 생략되어도 yourself가 남아 그 문장의 숨은 주어가 you임을 알려줍니다: Enjoy yourself!',
+      },
+      { type: 'heading', text: '재귀대명사 vs each other/one another — 둘 다 서로 다른 대상일 때' },
+      {
+        type: 'p',
+        text: '**둘 이상의 사람이 서로에게 같은 행동을 주고받을 때는 재귀대명사가 아니라 each other(또는 one another)를 씁니다.** 재귀대명사는 "자기 자신"에게 하는 행동이고, each other는 "서로에게" 하는 행동이라는 점에서 뜻이 완전히 다릅니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Amy and Raj looked at each other.', ko: 'Amy와 Raj는 서로를 바라보았다.', note: '= Amy가 Raj를 보고, Raj가 Amy를 봄' },
+          { en: 'Amy and Raj looked at themselves in the mirror.', ko: 'Amy와 Raj는 거울 속 자기 자신을 바라보았다.', note: '= 각자 거울 속 자기 모습을 봄 (완전히 다른 상황)' },
+          { en: 'They gave each other presents.', ko: '그들은 서로에게 선물을 주었다.' },
+          { en: "We're helping one another with our homework.", ko: '우리는 서로 숙제를 도와주고 있다.', note: 'one another는 each other와 뜻이 같음' },
+        ],
+      },
+      { type: 'heading', text: '부정대명사 — 누구/무엇인지 정해지지 않은 대상' },
+      {
+        type: 'p',
+        text: '**부정대명사(indefinite pronoun)는 사람이나 사물을 정확히 특정하지 않고 막연하게 가리킬 때 쓰는 대명사입니다.** some-, any-, every-, no- 뒤에 -one/-body(사람)나 -thing(사물)을 붙여 만듭니다. 이 대명사들이 어떤 문장 종류(긍정문·부정문·의문문)에서 쓰이는지가 핵심 규칙입니다.',
+      },
+      {
+        type: 'table',
+        caption: '부정대명사 — 문장 종류에 따른 선택',
+        headers: ['의미', '긍정문', '부정문·의문문'],
+        rows: [
+          ['사람 (누군가/아무도)', 'someone / somebody', 'anyone / anybody'],
+          ['사물 (무언가/아무것도)', 'something', 'anything'],
+        ],
+      },
+      {
+        type: 'p',
+        text: '반면 everyone/everybody(모든 사람)와 nothing(아무것도 ~않다), everything(모든 것)은 문장 종류와 상관없이 그 자체의 의미대로 쓰이며, no one/nobody(아무도 ~않다)은 **동사가 긍정형일 때** 부정의 의미를 나타냅니다 — 이미 no 자체에 부정의 뜻이 담겨 있기 때문입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Did anyone call me this morning?', ko: '오늘 아침에 누가 전화했었니?', note: '의문문 → anyone' },
+          { en: 'Yes, someone called you at 11 o\'clock.', ko: '응, 11시에 누가 전화했어.', note: '긍정문 → someone' },
+          { en: "No, I don't want to talk to anybody.", ko: '아니, 나 아무하고도 얘기하고 싶지 않아.', note: '부정문 → anybody' },
+          { en: 'Everyone is at the big meeting.', ko: '모두가 큰 회의에 가 있다.', note: 'everyone/everybody는 단수 동사와 함께 씀' },
+          { en: "Why is there no one in the office?", ko: '왜 사무실에 아무도 없지?', note: 'no one — 뒤에 오는 동사 is는 긍정형' },
+          { en: "I don't know anyone in this town.", ko: '나는 이 동네에서 아무도 몰라.', note: '부정문 → anyone (no one을 부정문에 또 쓰면 이중부정 오류)' },
+          { en: "There isn't anything I can do.", ko: '내가 할 수 있는 게 아무것도 없어.', note: '부정문 → anything' },
+          { en: 'Tim and James have nothing in common.', ko: 'Tim과 James는 공통점이 하나도 없다.', note: 'nothing — 동사 have는 긍정형' },
+          { en: 'I want to see everything at the museum.', ko: '나는 박물관에서 모든 것을 보고 싶다.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '흔한 실수: *There isn\'t no one here.처럼 부정문에서 no one을 또 쓰면 이중부정이 되어 틀립니다. 부정문에는 anyone/anybody/anything을 써야 합니다: There isn\'t anyone here.(○) 마찬가지로 *I don\'t have no money.도 이중부정 오류이며, I don\'t have any money.가 올바른 표현입니다.',
+      },
       {
         type: 'callout',
         title: '대명사 핵심 정리',
@@ -612,6 +851,9 @@ export const ch2 = {
           'you는 단수·복수 형태가 같아서 문맥으로만 구분된다는 점을 기억해두자.',
           '인칭(1·2·3)과 수(단수·복수)는 이후 주어-동사 일치에서 핵심 역할을 한다.',
           '두 대상이 함께 나올 때도, 심지어 전치사 뒤에서도, 각 대명사의 격은 그 대명사가 맡은 역할에 따라 개별적으로 정해진다.',
+          '재귀대명사는 주어와 목적어가 같은 대상을 가리킬 때 쓰며, relax·concentrate처럼 원래 재귀대명사 없이 쓰는 동사도 있고, 강조를 위해 문법적으로 불필요해도 덧붙이는 용법도 있다.',
+          '둘 이상이 서로에게 행동을 주고받을 때는 재귀대명사가 아니라 each other/one another를 쓴다.',
+          'some-/any-는 문장 종류(긍정·부정·의문)에 따라 갈리지만, everyone·nothing·everything은 의미 그 자체로 쓰이며, no one/nobody은 뒤에 긍정형 동사가 온다.',
         ],
       },
     ],
@@ -779,6 +1021,61 @@ export const ch2 = {
         to: { label: '형용사(+lic → -ly)', text: 'lovely' },
         note: '고대 영어의 명사+lic(lovelic)이 시간이 지나며 지금의 -ly 형태로 정착했습니다.',
       },
+      { type: 'heading', text: '-ing 형용사 vs -ed 형용사 — 원인인가, 영향을 받은 쪽인가' },
+      {
+        type: 'p',
+        text: '동사에서 만들어진 형용사 중에는 -ing로 끝나는 것과 -ed로 끝나는 것이 한 쌍을 이루는 경우가 많습니다(boring/bored, interesting/interested, exciting/excited). **-ing 형용사는 "그것이 어떤 효과·감정을 일으키는가"를 설명하고, -ed 형용사는 "그 효과를 받은 사람이 어떤 감정을 느끼는가"를 설명합니다.** 즉 -ing는 원인, -ed는 그로 인한 결과(사람의 반응)라고 정리할 수 있습니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The spider is frightening.', ko: '그 거미는 무서움을 준다.', note: '거미가 무서움이라는 효과를 일으키는 원인 → -ing' },
+          { en: 'The man is frightened.', ko: '그 남자는 무서움을 느낀다.', note: '남자는 무서움을 느끼는 쪽(영향을 받음) → -ed' },
+          { en: 'The fireworks are amazing. She is amazed.', ko: '불꽃놀이는 놀랍다. 그녀는 놀랐다.', note: '불꽃놀이(원인)-ing / 그녀(영향받는 사람)-ed' },
+          { en: 'I found the book too confusing. I was confused the whole time.', ko: '나는 그 책이 너무 헷갈린다고 느꼈다. 나는 내내 헷갈렸다.' },
+          { en: 'Your lecture was interesting. I was interested by your lecture.', ko: '네 강의는 흥미로웠다. 나는 네 강의에 흥미를 느꼈다.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '흔한 실수는 사람의 감정을 나타낼 때 -ing를 쓰는 것입니다. *I am boring.이라고 하면 "나는 (다른 사람을) 지루하게 만드는 사람이다"라는 전혀 다른 뜻이 되어 버립니다. "나는 지루함을 느낀다"라고 말하려면 반드시 I am bored.처럼 -ed를 써야 합니다. 판단 기준: 주어가 감정을 "일으키는 쪽"이면 -ing, 감정을 "느끼는 쪽"이면 -ed입니다.',
+      },
+      { type: 'heading', text: '등급 형용사(gradable) vs 절대 형용사(non-gradable)' },
+      {
+        type: 'p',
+        text: '형용사는 정도를 더 세게도, 더 약하게도 표현할 수 있는지에 따라 두 부류로 나뉩니다. **등급 형용사(gradable adjective)는 good, tasty, talented처럼 정도의 차이가 있는 성질이라서 very, fairly, extremely, not particularly 같은 부사로 그 강도를 조절할 수 있습니다.** 반면 **절대 형용사(non-gradable adjective)는 fantastic, perfect, unique, American처럼 이미 그 자체로 최고이거나 고정된 상태·분류를 나타내므로, very로 정도를 더할 수 없습니다.**',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'This book is very good! / This book is fairly good.', ko: '이 책은 정말 좋다! / 이 책은 꽤 좋다.', note: 'good은 등급 형용사 — 정도를 조절 가능' },
+          { en: 'Edmund is extremely talented. / Edmund is not particularly talented.', ko: 'Edmund는 대단히 재능이 있다. / Edmund는 그다지 재능이 있지 않다.' },
+        ],
+      },
+      {
+        type: 'table',
+        caption: '절대 형용사(non-gradable)의 세 유형',
+        headers: ['유형', '설명', '예시'],
+        rows: [
+          ['극단 형용사 (extreme)', '등급 형용사를 이미 최고 수준으로 강화한 단어 — awful은 이미 "extremely bad"라는 뜻을 담고 있음', 'awful, hilarious, fantastic, terrifying, boiling'],
+          ['절대 형용사 (absolute)', '더 이상 나눌 수 없는 고정된 상태·성질 — 무언가가 "더 unique하다"는 말은 성립하지 않음', 'unique, perfect, impossible, certain'],
+          ['분류 형용사 (classifying)', '어떤 대상이 속하는 종류·범주를 나타냄 — 미국적인 정도가 있는 게 아니라 미국인이거나 아니거나임', 'American, nuclear, medical'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: "Her arguments were fantastic!", ko: '그녀의 주장은 환상적이었다!', note: 'fantastic(극단 형용사) — very fantastic(×)' },
+          { en: 'Her presentation was awful.', ko: '그녀의 발표는 끔찍했다.', note: 'awful은 이미 "극단적으로 나쁜"이라는 뜻을 담고 있어 very를 붙이지 않음' },
+          { en: 'She has a unique presenting style.', ko: '그녀는 독특한 발표 스타일을 가지고 있다.', note: 'unique(절대 형용사) — more unique, very unique(×)' },
+          { en: 'The weather outside is perfect.', ko: '바깥 날씨가 완벽하다.', note: 'perfect도 절대 형용사 — very perfect(×)' },
+          { en: 'The audience was American.', ko: '청중은 미국인이었다.', note: 'American(분류 형용사) — very American은 "미국적인 특징이 강하다"는 비유적 의미로만 가능' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '절대 형용사의 정도를 그래도 강조하고 싶을 때는 very 대신 absolutely, completely, totally 같은 부사를 씁니다: absolutely perfect(○), absolutely unique(○). 반면 very perfect, very unique는 원어민에게 어색하게 들리는 흔한 오류입니다.',
+      },
       {
         type: 'callout',
         title: '형용사 핵심 정리',
@@ -787,6 +1084,8 @@ export const ch2 = {
           'be동사 뒤에서 서술하면 서술적 용법, 명사 앞에서 꾸미면 한정적 용법이며 일부 단어는 용법에 따라 뜻이 달라진다.',
           '형용사를 여러 개 나열할 때는 의견 → 크기 → 연령 → 모양 → 색깔 → 출신 → 재료 → 용도 순서를 따른다.',
           '-ly로 끝나는 형용사는 고대 영어의 -lic 접미사에서 유래했다(부사의 -ly와는 기원이 다름).',
+          '-ing 형용사는 감정을 일으키는 원인, -ed 형용사는 그 감정을 느끼는 대상을 나타낸다 (boring 사람 ×, bored 사람 ○).',
+          'good, tasty처럼 정도가 있는 등급 형용사는 very로 강도를 조절할 수 있지만, fantastic·perfect·unique·American 같은 절대 형용사는 very를 쓰지 않고 absolutely/completely 등을 쓴다.',
         ],
       },
     ],
@@ -990,6 +1289,85 @@ export const ch2 = {
           { en: 'He did really well on the test.', ko: '그는 시험을 정말 잘 봤다. (올바른 표현)' },
         ],
       },
+      { type: 'heading', text: '형태는 같지만 뜻이 달라지는 형용사/부사 짝' },
+      {
+        type: 'p',
+        text: 'fast, hard처럼 형용사와 부사의 형태가 완전히 같은 단어와 달리, 어떤 단어는 **-ly를 붙인 형태와 붙이지 않은 형태가 둘 다 부사로 쓰이지만 서로 뜻이 다릅니다.** 이런 단어는 "형용사와 형태가 같은 부사"와 헷갈리기 쉬우므로 따로 구별해야 합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Chop the onion into fine pieces.', ko: '양파를 잘게(고운) 조각으로 썰어라.', note: 'fine(형용사) — 작은, 고운' },
+          { en: 'Chop it finely.', ko: '그것을 잘게 썰어라.', note: 'finely(부사) — 잘게, -ly를 붙인 일반적인 방법' },
+          { en: "I'm fine.", ko: '나는 괜찮다.', note: 'fine(형용사) — 좋은, 괜찮은' },
+          { en: "I'm doing fine.", ko: '나는 잘 지내고 있다.', note: '이 의미의 부사는 finely가 아니라 형용사와 같은 형태 fine을 그대로 씀' },
+          { en: "It's free for children.", ko: '아이들에게는 무료이다.', note: 'free(형용사) — 무료의' },
+          { en: 'Children are admitted free.', ko: '아이들은 무료로 입장한다.', note: 'free(부사) — 무료로 (freely 아님)' },
+          { en: 'We advocate free speech.', ko: '우리는 표현의 자유를 지지한다.', note: 'free(형용사) — 자유로운' },
+          { en: 'You can speak freely.', ko: '너는 자유롭게 말할 수 있다.', note: 'freely(부사) — 자유롭게' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '이런 단어는 규칙으로 풀기보다 "이 뜻일 때는 이 형태"라고 짝을 지어 통째로 외워두는 것이 안전합니다. fine(작은/고운)의 부사는 finely, fine(좋은/괜찮은)의 부사는 그대로 fine입니다.',
+      },
+      { type: 'heading', text: '등급부사 vs 비등급부사 — 어떤 형용사와 짝을 이루는가' },
+      {
+        type: 'p',
+        text: '19장에서 배운 등급/절대 형용사의 구분은 정도부사에도 그대로 적용됩니다. **등급 형용사(good, interesting처럼 정도가 있는 것)를 꾸미는 부사를 등급부사(grading adverb)라 하고, 절대 형용사(fantastic, perfect, unique처럼 이미 최고이거나 고정된 것)를 꾸미는 부사를 비등급부사(non-grading adverb)라고 합니다.** 두 그룹은 서로 바꿔 쓸 수 없다는 점이 중요합니다.',
+      },
+      {
+        type: 'table',
+        caption: '등급부사 vs 비등급부사',
+        headers: ['구분', '짝을 이루는 형용사', '대표 부사'],
+        rows: [
+          ['등급부사', '등급 형용사 (good, interesting, talented)', 'very, extremely, really, remarkably, fairly, quite, slightly, not very, not particularly, barely'],
+          ['비등급부사', '절대 형용사 (awful, fantastic, unique, perfect, American)', 'absolutely, completely, totally, entirely, utterly, perfectly, wholly / (거의 다 됨) nearly, almost, virtually, practically'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'This book is very good. / This TV show is not very exciting.', ko: '이 책은 매우 좋다. / 이 TV쇼는 별로 재미없다.', note: 'good, exciting은 등급 형용사 → 등급부사와 짝' },
+          { en: "Her presentation was absolutely awful.", ko: '그녀의 발표는 정말이지 끔찍했다.', note: 'awful은 절대 형용사(극단) → absolutely와 짝' },
+          { en: 'She has a totally unique presenting style.', ko: '그녀는 완전히 독특한 발표 스타일을 가지고 있다.', note: 'unique는 절대 형용사 → totally와 짝' },
+          { en: "I've virtually finished my work.", ko: '나는 거의 일을 끝냈다.', note: 'virtually는 "거의 완전히"라는 뜻의 비등급부사' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '흔한 실수: This book is absolutely good.(×)처럼 등급 형용사에 비등급부사를 쓰거나, The plot is very great.(×)처럼 절대 형용사에 등급부사 very를 쓰는 것은 모두 어색합니다. good은 정도가 있으므로 very good(○), great은 이미 최고를 뜻하므로 absolutely great(○)이 자연스럽습니다.',
+      },
+      {
+        type: 'p',
+        text: '다만 **really, fairly, pretty, quite는 예외적으로 등급·절대 형용사 모두와 함께 쓸 수 있는 부사**입니다. 특히 quite는 미국식 영어에서는 "매우"라는 뜻으로 등급 형용사를 강하게 꾸미지만, 영국식 영어에서는 등급 형용사를 "그런대로, 아주는 아니고"로 약하게, 절대 형용사는 "완전히"로 강하게 꾸민다는 차이가 있습니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'What you need is a really good idea. / What you need is a really great idea.', ko: '네게 필요한 건 정말 좋은 아이디어야. / 네게 필요한 건 정말 훌륭한 아이디어야.', note: 'really는 good(등급)과 great(절대) 둘 다와 어울림' },
+          { en: 'Her idea was quite good.', ko: '그녀의 아이디어는 꽤 좋았다(하지만 아주 훌륭하진 않았다 — 영국식) / 정말 좋았다(미국식).', note: '같은 문장이 영/미에 따라 강도가 다르게 해석됨' },
+          { en: 'Her invention is quite incredible.', ko: '그녀의 발명품은 정말 놀랍다.', note: 'incredible(절대 형용사) 앞의 quite는 "완전히"라는 강한 의미' },
+        ],
+      },
+      { type: 'heading', text: 'quite, really, absolutely로 동사를 꾸미기' },
+      {
+        type: 'p',
+        text: '정도부사 중 quite, really, absolutely는 형용사뿐 아니라 **좋아함·싫어함을 나타내는 동사(like, love, enjoy, hate 등) 앞에서 동사를 직접 꾸미기도 합니다.** 이때도 강도의 차이가 있어, quite < really < absolutely 순으로 강해집니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I quite enjoy cycling.', ko: '나는 자전거 타는 것을 꽤 즐긴다.' },
+          { en: 'I really like cycling.', ko: '나는 자전거 타는 것을 정말 좋아한다.' },
+          { en: 'I absolutely love cycling.', ko: '나는 자전거 타는 것을 정말이지 매우 좋아한다.', note: 'absolutely는 love, hate처럼 극단적인 동사와 자연스럽게 어울림' },
+          { en: "They absolutely hate singing.", ko: '그들은 노래하는 것을 정말 싫어한다.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '이 정도부사들은 반드시 동사 앞에 위치해야 합니다. *I like really cycling.처럼 동사 뒤에 두면 어색합니다.',
+      },
       {
         type: 'callout',
         title: '부사 핵심 정리',
@@ -999,6 +1377,9 @@ export const ch2 = {
           '빈도부사는 be동사·조동사 뒤, 일반동사 앞에 위치한다.',
           '형용사 → 부사 변환은 대부분 -ly를 붙이지만 끝 철자에 따라 -ily, -ly(e 삭제), -ally로 달라진다.',
           'fast, hard, early, long, most, last, well처럼 형용사와 부사의 모양이 똑같은 단어도 있으니 문장에서의 역할로 구분해야 한다.',
+          'fine/finely, free처럼 -ly가 붙은 형태와 안 붙은 형태가 둘 다 부사이지만 뜻이 다른 경우는 짝으로 외워둔다.',
+          '등급 형용사는 very·extremely 같은 등급부사와, 절대 형용사는 absolutely·completely 같은 비등급부사와 짝을 이루며 서로 바꿔 쓸 수 없다. really·fairly·pretty·quite는 예외적으로 둘 다와 쓸 수 있다.',
+          'quite, really, absolutely는 like·love·enjoy·hate 같은 동사 앞에서 그 정도를 강조하는 데도 쓰인다.',
         ],
       },
     ],
@@ -1292,6 +1673,53 @@ export const ch2 = {
           { en: 'Her birthday party is on July 4th.', ko: '그녀의 생일 파티는 7월 4일에 있다.' },
         ],
       },
+      { type: 'heading', text: '더 정밀한 위치 전치사' },
+      {
+        type: 'table',
+        caption: '더 정밀한 위치를 나타내는 전치사',
+        headers: ['전치사', '핵심 이미지', '예문'],
+        rows: [
+          ['above', '기준점보다 위쪽(꼭 닿아 있지 않아도 됨)', 'The bird is flying above the cat.'],
+          ['on top of', '어떤 것의 맨 꼭대기에 얹혀 있음', 'The bird is sitting on top of the tree.'],
+          ['underneath / beneath / below', '기준점보다 아래(under와 거의 같은 뜻)', 'The cat is underneath the table.'],
+          ['next to / near', '바로 옆에 / 가까이에', 'Jack is next to the tree.'],
+          ['opposite', '마주 보는 위치에', 'Sally sits opposite Fred at work.'],
+        ],
+      },
+      {
+        type: 'note',
+        text: 'under, underneath, beneath, below는 모두 "아래"를 뜻하지만 미묘한 차이가 있습니다 — under는 가장 일반적으로 쓰이고, underneath와 beneath는 무언가에 덮이거나 가려진 느낌을 강조할 때, below는 기준선보다 낮은 위치(온도, 해수면 등)를 말할 때 자주 쓰입니다. 중학교 수준에서는 이 네 단어를 거의 같은 뜻으로 알아두어도 충분합니다.',
+      },
+      { type: 'heading', text: '전치사 뒤에 동사가 올 때는 반드시 동명사' },
+      {
+        type: 'p',
+        text: '**전치사 바로 뒤에 동사가 이어질 때는 그 동사를 반드시 동명사(동사원형+ing) 형태로 써야 합니다.** to부정사(to+동사원형)를 쓰지 않는다는 점이 특히 중요합니다. 전치사는 원래 명사(또는 명사 역할을 하는 것)를 목적어로 받는데, 동명사는 동사이면서도 명사 역할을 할 수 있기 때문입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'After graduating, I worked in a hospital.', ko: '졸업한 후, 나는 병원에서 일했다.', note: '전치사 After + 동명사 graduating' },
+          { en: 'Instead of applying for a job, I went to college.', ko: '취직하는 대신, 나는 대학에 갔다.', note: '전치사 Instead of + 동명사 applying' },
+          { en: "I'm looking forward to seeing them.", ko: '나는 그들을 만나기를 고대하고 있다.', note: 'look forward to의 to는 전치사이므로 뒤에 동명사 seeing이 옴(to see가 아님)' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '**to는 문장에서 두 가지 완전히 다른 역할을 할 수 있어 혼동하기 쉽습니다.** I\'m going to see my friends.의 to는 부정사를 만드는 to(뒤에 동사원형)이지만, look forward to, be used to, object to 같은 표현의 to는 전치사(뒤에 명사나 동명사)입니다. *I\'m looking forward to see them.은 흔한 오류이며, I\'m looking forward to seeing them.이 올바른 표현입니다.',
+      },
+      { type: 'heading', text: '전치사가 여러 목적어에 적용될 때' },
+      {
+        type: 'p',
+        text: '한 문장에서 같은 전치사가 나열된 여러 단어에 똑같이 적용된다면, 전치사를 한 번만 쓰면 됩니다. 하지만 각 단어가 서로 다른 전치사를 필요로 한다면, 전치사를 생략하지 말고 각각 따로 써주어야 합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I sent presents to Al and Ed.', ko: '나는 Al과 Ed에게 선물을 보냈다.', note: '두 사람 모두에게 같은 to가 적용되므로 to를 한 번만 씀' },
+          { en: 'Look at and listen to the teacher.', ko: '선생님을 보고 들어라.', note: 'look at과 listen to는 서로 다른 전치사이므로 각각 써야 함' },
+          { en: '*Look and listen to the teacher.', ko: '(오류)', note: 'look은 at 없이 쓰일 수 없는데 전치사가 하나 생략되어 틀림' },
+        ],
+      },
       { type: 'heading', text: '흔한 실수: 전치사 오용' },
       {
         type: 'example',
@@ -1370,6 +1798,33 @@ export const ch2 = {
           { en: 'It looked like rain, so we brought umbrellas.', ko: '비가 올 것 같아서 우산을 챙겼어.', note: 'so — 앞 내용의 결과' },
         ],
       },
+      { type: 'heading', text: '등위접속사 nor, yet과 쉼표 규칙' },
+      {
+        type: 'p',
+        text: 'and, but, or, so 외에도 nor(~도 아니다)와 yet(그런데도, ~이지만)이 있습니다. **nor는 앞 문장이 부정문일 때 "역시 그렇지 않다"는 뜻을 더하며, nor 뒤에서는 주어와 (조)동사의 순서가 의문문처럼 뒤바뀝니다(도치).** yet은 but과 비슷하게 대조를 나타내지만, "앞의 내용과 모순되는 듯 보이는데도 사실이다"라는 뉘앙스가 있습니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: "He can't play the guitar, nor can he sing.", ko: '그는 기타를 칠 줄 모르고, 노래도 못 부른다.', note: 'nor 뒤에서 can he처럼 주어-동사가 도치됨' },
+          { en: "Fiona didn't turn up to dinner, nor did she answer my calls.", ko: 'Fiona는 저녁 식사에 오지 않았고, 내 전화도 받지 않았다.', note: '앞 문장이 부정문(didn\'t)이라서 nor 사용' },
+          { en: "It's a warm day, yet Raymond is wearing a coat.", ko: '따뜻한 날인데도, Raymond는 코트를 입고 있다.', note: '따뜻한데 코트를 입는다는 것이 모순처럼 느껴지지만 사실임' },
+        ],
+      },
+      {
+        type: 'table',
+        caption: '등위접속사와 쉼표(comma) 규칙',
+        headers: ['상황', '규칙', '예문'],
+        rows: [
+          ['두 개의 완전한 절(주어+동사)을 연결', '접속사 앞에 쉼표를 찍는다', 'It was raining, and there was lightning.'],
+          ['두 개의 단어·구만 연결 (절이 아님)', '쉼표를 찍지 않는다', "I'm going to wear jeans and a shirt."],
+          ['세 개 이상을 나열', '항목 사이마다 쉼표, 마지막 and/or 앞에도 쉼표', 'I need eggs, flour, and milk.'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '한국인 학습자는 한국어에 쉼표 규칙이 뚜렷하지 않아 이 부분을 자주 놓칩니다. 판단 기준은 간단합니다 — 접속사 양쪽에 각각 "주어+동사"를 갖춘 완전한 절이 있으면 쉼표를 찍고, 단어나 구만 나열되어 있으면 쉼표를 찍지 않습니다.',
+      },
       { type: 'heading', text: '종속접속사 — 한 절을 다른 절에 종속시킨다' },
       {
         type: 'p',
@@ -1421,6 +1876,44 @@ export const ch2 = {
           { tag: 'O', text: 'TV' },
         ],
         translation: '숙제를 끝내면, TV를 볼 수 있어.',
+      },
+      { type: 'heading', text: '목적을 나타내는 종속접속사: so that, in order to' },
+      {
+        type: 'p',
+        text: '**"~하기 위해서"라는 목적을 나타낼 때는 so that과 in order to를 씁니다.** so that 뒤에는 주어+동사를 갖춘 완전한 절이 오며 can, could, would 같은 조동사와 자주 함께 쓰입니다. in order to 뒤에는 절이 아니라 동사원형이 바로 옵니다 — 이 둘은 뜻은 비슷하지만 뒤에 오는 형태가 다르다는 점이 핵심입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: "He complained so that he'd get a refund.", ko: '그는 환불받기 위해 항의했다.', note: 'so that + 주어(he) + 조동사(would)' },
+          { en: 'He called the company in order to complain.', ko: '그는 항의하기 위해 회사에 전화했다.', note: 'in order to + 동사원형(complain), 절이 아님' },
+          { en: 'She went back to the store in order to show them her receipt.', ko: '그녀는 영수증을 보여주기 위해 가게로 다시 갔다.' },
+          { en: "They check everything so that customers don't receive broken items.", ko: '그들은 고객이 파손된 물건을 받지 않도록 모든 것을 확인한다.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '구어체에서는 in order를 빼고 to만 남겨 목적을 나타내기도 합니다: The assistant took the receipt to process the refund. (환불을 처리하기 위해 영수증을 받았다.) 다만 이렇게 to만 쓰는 것은 격식이 조금 낮은 표현이라는 점을 알아두면 좋습니다.',
+      },
+      { type: 'heading', text: '시간을 나타내는 종속접속사와 미래 시제의 함정' },
+      {
+        type: 'p',
+        text: 'when(~할 때), as soon as(~하자마자), while(~하는 동안), until(~할 때까지) 같은 접속사는 두 사건의 시간 관계를 연결합니다. 이 중 **when과 as soon as가 미래에 일어날 일을 말할 때조차, 그 종속절 안에서는 will을 쓰지 않고 현재시제로 미래를 대신 나타낸다는 규칙이 매우 중요합니다.** 이는 조건을 나타내는 if절과 완전히 같은 원리입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'When it gets dark, he will light the fire.', ko: '어두워지면, 그는 불을 켤 것이다.', note: 'gets(현재시제)로 미래의 일을 나타냄' },
+          { en: '*When it will get dark, he will light the fire.', ko: '(오류)', note: 'when절 안에서는 will을 쓰지 않음' },
+          { en: 'When I finish my report, I will call you.', ko: '보고서를 끝내면, 너에게 전화할게.' },
+          { en: "I'll call you as soon as I leave work.", ko: '퇴근하자마자 너에게 전화할게.', note: 'as soon as — leave(현재)로 미래를 나타냄' },
+          { en: 'I watered the plants while my husband mowed the lawn.', ko: '남편이 잔디를 깎는 동안 나는 화초에 물을 주었다.', note: 'while — 두 동작이 동시에 일어남' },
+          { en: "We won't go outside until it stops raining.", ko: '비가 그칠 때까지 우리는 밖에 나가지 않을 것이다.', note: 'until절 안에서도 현재시제로 미래를 나타냄' },
+        ],
+      },
+      {
+        type: 'note',
+        text: 'when, as soon as, until, before, after, if처럼 시간·조건을 나타내는 종속접속사들은 모두 같은 규칙을 공유합니다 — **종속절이 미래를 의미하더라도, 종속절 안의 동사는 현재시제로 씁니다.** 이 규칙을 잊고 종속절에도 will을 넣는 것은 한국인 학습자에게 매우 흔한 실수입니다.',
       },
       { type: 'heading', text: '명사절 접속사 that' },
       {

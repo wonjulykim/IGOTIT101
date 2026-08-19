@@ -456,6 +456,171 @@ export const ch20 = {
         type: 'note',
         text: '이러한 표현은 「be + 과거분사 + 전치사」가 하나의 세트로 굳어진 관용구입니다. 전치사를 by로 바꾸면 의미가 어색해지거나 완전히 달라지므로, 동사(형용사화된 과거분사)마다 짝이 되는 전치사를 따로 외워두어야 합니다. 예를 들어 be interested by라고 쓰면 어색하고, 반드시 be interested in이어야 자연스러운 것처럼, 각 표현은 by가 아닌 고유한 전치사와 통째로 기억하는 것이 안전합니다.',
       },
+      { type: 'heading', text: '시제 확장 — 진행형과 완료형의 수동태' },
+      {
+        type: 'p',
+        text: '지금까지 살펴본 수동태 문장은 대부분 단순시제(현재·과거·미래)였습니다. 그런데 능동태에 진행형(be + -ing)이나 완료형(have + p.p.)이 쓰인 문장도 얼마든지 수동태로 바꿀 수 있습니다. **원리는 지금까지와 똑같습니다 — 능동태 동사의 시제·형태를 be동사가 그대로 넘겨받고, 본동사 자리에는 과거분사가 옵니다.** 다만 진행형·완료형이 수동태와 만나면 be동사 자리에 단어가 여러 개 겹쳐 나타나므로, 그 순서를 정확히 익혀두어야 합니다.',
+      },
+      {
+        type: 'table',
+        caption: '진행형·완료형 수동태의 형태',
+        headers: ['능동태 형태', '수동태 형태', '예시'],
+        rows: [
+          ['현재진행 (is/am/are + -ing)', 'is/am/are + being + p.p.', 'They are watching the movie. → The movie is being watched.'],
+          ['과거진행 (was/were + -ing)', 'was/were + being + p.p.', 'Secret agents were watching him. → He was being watched.'],
+          ['현재완료 (has/have + p.p.)', 'has/have + been + p.p.', 'She has fed the cats. → The cats have been fed.'],
+          ['과거완료 (had + p.p.)', 'had + been + p.p.', 'The organizer had canceled the party. → The party had been canceled.'],
+          ['미래완료 (will have + p.p.)', 'will have + been + p.p.', 'The mechanic will have fixed the car. → The car will have been fixed by 5pm.'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'He was being watched by secret agents.', ko: '그는 비밀 요원들에게 감시당하고 있었다.', note: '과거진행 수동태 — was being + p.p.' },
+          { en: 'The students were being taught how to write good essays.', ko: '학생들은 좋은 에세이를 쓰는 법을 배우고 있었다.' },
+          { en: 'The cats have already been fed.', ko: '고양이들은 이미 밥을 먹었다.', note: '현재완료 수동태 — 과거의 행동이 현재까지 영향을 미침' },
+          { en: 'All the smoke detectors have been replaced.', ko: '모든 화재경보기가 교체되었다.' },
+          { en: 'The party had already been canceled when we arrived.', ko: '우리가 도착했을 때 파티는 이미 취소되어 있었다.', note: '과거완료 수동태 — 과거의 한 시점보다 더 이전에 일어난 일' },
+          { en: 'The car will have been fixed by 5pm.', ko: '그 차는 5시까지는 수리가 완료되어 있을 것이다.', note: '미래완료 수동태 — will have been + p.p.' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '진행형 수동태',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'was being watched' },
+          { tag: 'M', text: 'by secret agents' },
+        ],
+        translation: '그는 비밀 요원들에게 감시당하고 있었다. (진행형 수동태: be + being + p.p.)',
+      },
+      {
+        type: 'note',
+        text: '진행형 수동태와 완료형 수동태를 구분하는 열쇠는 being과 been입니다. **진행 중임을 강조할 때는 being(~되고 있는 중), 이미 끝나 그 결과가 남아 있음을 강조할 때는 been(~된 상태)을 씁니다.** 두 단어의 형태가 비슷해 혼동하기 쉬우므로 뜻으로 구분하는 습관을 들이는 것이 좋습니다. 또한 know, belong, resemble처럼 상태를 나타내는 동사는 애초에 진행형을 만들지 않으므로 진행형 수동태로도 쓰이지 않습니다.',
+      },
+      { type: 'heading', text: '조동사와 함께 쓰는 수동태' },
+      {
+        type: 'p',
+        text: '조동사(can, should, must, may, will 등)가 있는 문장도 수동태로 만들 수 있습니다. **조동사 뒤에는 항상 동사원형이 온다는 원칙이 수동태에서도 그대로 유지되므로, 조동사 다음에는 be동사의 원형인 be가 오고 그 뒤에 과거분사가 이어집니다.** 즉 조동사 수동태의 형태는 「조동사 + be + p.p.」로 고정되며, 주어의 인칭이나 수와 관계없이 be의 형태가 절대 변하지 않는다는 점이 일반 수동태와 다릅니다.',
+      },
+      {
+        type: 'table',
+        caption: '조동사 수동태의 형태',
+        headers: ['능동태', '수동태', '의미'],
+        rows: [
+          ['You should tell Barbara.', 'Barbara should be told.', '~되어야 한다'],
+          ['You can open the chest with a key.', 'The chest can be opened with a key.', '~될 수 있다'],
+          ['You must show new employees what to do.', 'New employees must be shown what to do.', '~되어야만 한다'],
+          ['The managers should have given Daniel more time.', 'Daniel should have been given more time.', '완료형 조동사 수동태 — ~되었어야 했다(그러나 안 됨)'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The package should be delivered to your office.', ko: '그 소포는 당신의 사무실로 배달되어야 한다.' },
+          { en: 'The treasure chest can only be opened with a special key.', ko: '그 보물 상자는 특별한 열쇠로만 열릴 수 있다.' },
+          { en: 'All new employees must be shown what to do in a fire.', ko: '모든 신입 직원들은 화재 시 무엇을 해야 하는지 안내받아야 한다.' },
+          { en: 'We should have been told that the concert was canceled!', ko: '우리는 콘서트가 취소되었다는 것을 통보받았어야 했다!', note: '조동사 + have been + p.p. — 과거에 실현되지 않은 일에 대한 아쉬움' },
+          { en: 'The robber would have been arrested if he hadn’t been so quick.', ko: '그 강도는 그렇게 빠르지 않았다면 체포되었을 것이다.' },
+          { en: 'Lots of people think the fire could have been prevented.', ko: '많은 사람들은 그 화재가 예방될 수 있었다고 생각한다.' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '조동사 수동태',
+        parts: [
+          { tag: 'S', text: 'Barbara' },
+          { tag: 'V', text: 'should be told' },
+          { tag: 'O', text: 'the exciting news' },
+        ],
+        translation: 'Barbara should be told the exciting news. (조동사+be+p.p. — be는 항상 원형)',
+      },
+      {
+        type: 'note',
+        text: '완료형 조동사 수동태(조동사+have been+p.p.)는 「~되었어야 했는데 (실제로는 안 되었다)」처럼 과거 사실과 반대되는 아쉬움·후회·추측을 나타낼 때 특히 자주 쓰입니다. should have been + p.p.(되었어야 했다), could have been + p.p.(될 수도 있었다), must have been + p.p.(분명 되었을 것이다) 등이 대표적입니다.',
+      },
+      {
+        type: 'table',
+        caption: '조동사 수동태에서 흔한 실수',
+        headers: ['잘못된 표현', '바른 표현', '설명'],
+        rows: [
+          ['*Barbara should told the news.', 'Barbara should be told the news.', '조동사 다음에는 반드시 be가 와야 한다. 조동사 뒤에 be를 빠뜨리는 것은 매우 흔한 실수이다.'],
+          ['*He should has been told.', 'He should have been told.', '완료형 조동사 수동태는 have been이며 has been이 아니다 — 조동사 뒤에는 항상 원형(have)이 온다.'],
+        ],
+      },
+      { type: 'heading', text: '보고동사를 이용한 수동태 관용구문' },
+      {
+        type: 'p',
+        text: 'say, believe, think, know, report, consider, expect처럼 소문·의견·추측을 나타내는 동사(보고동사)는 능동태로 쓰면 「People say that ~」처럼 막연한 주어(people, they, someone)를 써야 해서 어색한 경우가 많습니다. 이때 영어는 수동태를 이용해 막연한 행위자를 아예 지우고, 사실이나 의견 자체를 문장의 중심에 놓는 세 가지 관용적인 구문을 사용합니다.',
+      },
+      {
+        type: 'table',
+        caption: '보고동사 수동태 구문 세 가지',
+        headers: ['구문', '형태', '예문'],
+        rows: [
+          ['가주어 It', 'It is/was + p.p. + that절', 'It is said that three sailors have disappeared. (선원 세 명이 실종되었다고 한다.)'],
+          ['주어 + be + p.p. + to부정사', 'S + is/was + p.p. + to부정사', 'The race is known to be extremely dangerous. (그 경주는 매우 위험한 것으로 알려져 있다.)'],
+          ['There + be + p.p. + to be', 'There is/are + p.p. + to be ~', 'There are said to be at least 20 boats in the search party. (수색대에 최소 20척의 배가 있다고 한다.)'],
+        ],
+      },
+      {
+        type: 'transform',
+        from: [{ label: 'It + 수동태 + that절', text: 'It is said that the race is dangerous.' }],
+        to: { label: 'that절의 주어 → 문장의 주어', text: 'The race is said to be dangerous.' },
+        note: 'that절의 주어(The race)를 문장 전체의 주어 자리로 끌어올리고, that절의 동사는 to부정사(to be dangerous)로 바꾼다.',
+      },
+      {
+        type: 'note',
+        text: '세 구문 모두 「사람들이 ~라고 말한다/생각한다/안다」는 의미를 문장 앞에 명시하지 않고 표현하는 방법입니다. that절을 쓰는 첫 번째 구문이 가장 기본이며, that절의 주어를 문장 전체의 주어 자리로 끌어올리면 두 번째(to부정사) 구문이 됩니다. that절이 「there is/are ~」 구문이었을 경우에는 there를 그대로 주어 자리로 끌어올려 세 번째 구문이 만들어집니다. 즉 두 번째·세 번째 구문은 첫 번째 구문에서 that절의 주어를 문장 앞으로 옮긴 결과이므로, 세 형태를 뿔뿔이 흩어진 표현으로 외우기보다 하나의 원리에서 나온 변형으로 이해하면 기억하기 쉽습니다. 참고로 that절이 문장의 시제보다 더 이전 시점을 나타낼 때는 to부정사 대신 「to have + p.p.」를 씁니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'It has been reported that three sailors have disappeared.', ko: '선원 세 명이 실종되었다고 보도되었다.' },
+          { en: 'It is rumored that wolves live in these woods.', ko: '이 숲에 늑대가 산다는 소문이 있다.' },
+          { en: 'The worksite is said to be unsafe for workers.', ko: '그 작업 현장은 근로자들에게 안전하지 않다고 한다.' },
+          { en: 'The new school is thought to have the best teachers in the country.', ko: '그 신설 학교는 전국에서 가장 훌륭한 교사진을 갖추고 있다고 여겨진다.', note: 'to have + p.p. — that절이 문장보다 더 이전 시점을 나타낼 때' },
+          { en: 'There is thought to be a problem with crime here.', ko: '이곳에는 범죄 문제가 있다고 여겨진다.' },
+          { en: 'There are said to be pros and cons to moving abroad.', ko: '해외 이주에는 장단점이 있다고들 한다.' },
+        ],
+      },
+      { type: 'heading', text: 'get 수동태 — 구어체의 수동태' },
+      {
+        type: 'p',
+        text: 'be동사 대신 get을 사용해도 수동태를 만들 수 있습니다. **get 수동태는 be 수동태보다 더 격식 없고 구어적인 표현으로, 특히 사고·변화처럼 갑작스럽거나 예상치 못한 일이 벌어졌음을 나타낼 때 즐겨 쓰입니다.** 원리는 be 수동태와 같아서, get 뒤에는 반드시 과거분사가 옵니다.',
+      },
+      {
+        type: 'table',
+        caption: 'get 수동태와 be 수동태 비교',
+        headers: ['형태', '예문', '뉘앙스'],
+        rows: [
+          ['be + p.p.', 'My bike was stolen.', '중립적 — 격식체에도 어울림'],
+          ['get + p.p.', 'My bike got stolen.', '구어체 — 갑작스러운 사건·변화의 느낌이 강함'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Bikes get stolen in this town every day.', ko: '이 동네에서는 매일 자전거를 도둑맞는다.' },
+          { en: 'My laptop gets updated every week by the IT team.', ko: '내 노트북은 매주 IT팀에 의해 업데이트된다.' },
+          { en: 'Did you know that the company was getting sold?', ko: '그 회사가 매각되고 있었다는 것을 알고 있었니?', note: 'get의 진행형(was getting)도 가능' },
+          { en: 'I hope the air conditioning will get fixed soon.', ko: '에어컨이 곧 고쳐지길 바란다.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: 'get 수동태는 get married(결혼하다), get hurt(다치다), get lost(길을 잃다), get stuck(꼼짝 못하게 되다)처럼 이미 굳어진 관용구로도 자주 쓰입니다. 다만 get 수동태는 회화체에 훨씬 잘 어울리므로, 학술문·공식 문서에서는 be 수동태를 쓰는 것이 안전합니다.',
+      },
+      {
+        type: 'table',
+        caption: '확장된 수동태 형태에서 흔한 실수',
+        headers: ['잘못된 표현', '바른 표현', '설명'],
+        rows: [
+          ['*He was being watch by them.', 'He was being watched by them.', '진행형 수동태에서도 동사는 반드시 과거분사여야 한다. 원형(watch)을 쓰면 안 된다.'],
+          ['*The cats has been fed.', 'The cats have been fed.', '완료형 수동태의 have/has는 주어의 인칭·수에 맞춘다. 복수 주어(the cats)에는 have.'],
+          ['*My bike got stole yesterday.', 'My bike got stolen yesterday.', 'get 수동태도 be 수동태와 마찬가지로 get 뒤에는 과거분사가 와야 한다.'],
+        ],
+      },
       { type: 'heading', text: '형식 전환에서 흔히 하는 실수' },
       {
         type: 'p',
@@ -503,6 +668,10 @@ export const ch20 = {
           '4형식은 사람·사물 목적어 중 하나를 주어로 선택할 수 있고, 사물을 주어로 세울 때는 남은 목적어 앞에 give형은 to, buy형은 for를 붙여야 한다. explain·say형 동사는 애초에 4형식이 성립하지 않아 사람을 주어로 세울 수 없다.',
           '5형식은 목적어만 주어로 옮기고 목적격 보어는 그대로 남기며, 목적격 보어가 동사원형이면 수동태에서 to부정사로 바뀌지만 형용사·명사 보어는 형태가 유지된다.',
           'be interested in, be surprised at처럼 by가 아닌 전치사와 짝을 이루는 수동태 관용표현은 세트로 외워야 한다.',
+          '진행형 수동태는 be+being+p.p., 완료형 수동태는 be+been+p.p.로 만든다 — being은 진행 중임을, been은 이미 끝난 상태임을 나타낸다.',
+          '조동사가 있는 문장의 수동태는 「조동사+be+p.p.」이며, 완료형이면 「조동사+have been+p.p.」이다. 조동사 뒤에는 항상 원형이 온다는 원칙이 수동태에도 그대로 적용된다.',
+          'It is said that ~, S+be known/said+to부정사, There is/are said+to be~는 소문·의견을 나타내는 보고동사의 대표적인 수동태 관용구문이며, 셋 다 같은 원리(that절 주어를 문장 주어로 끌어올림)에서 나온 변형이다.',
+          'get+p.p.는 be+p.p.보다 구어적이며, 갑작스러운 사고·변화를 나타낼 때 자주 쓰인다.',
         ],
       },
     ],

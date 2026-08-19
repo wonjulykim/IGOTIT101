@@ -504,6 +504,19 @@ export const ch23 = {
           { en: '(O) I saw what you posted on Instagram.', ko: '나 네가 인스타그램에 올린 것 봤어.', note: '올바른 문장: 선행사를 포함하는 what을 사용해야 함' },
         ],
       },
+      { type: 'heading', text: '흔히 하는 실수 (3) - what절 안에서 어순을 의문문처럼 바꾸기' },
+      {
+        type: 'p',
+        text: 'what은 겉모습이 의문사 what과 똑같이 생겼지만, 관계대명사 what이 이끄는 절은 의문문이 아니라 명사절입니다. **따라서 what 뒤에 오는 어순은 의문문처럼 "동사+주어"로 도치되지 않고, 평서문과 똑같이 "주어+동사" 순서를 그대로 지켜야 합니다.** 의문사 what에 익숙해진 학습자일수록 이 도치 실수를 자주 저지르므로 특히 주의해야 합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: '(X) This is just what were we looking for.', ko: '이것이 바로 우리가 찾던 것이다.', note: '틀린 문장: what 뒤에서 동사(were)와 주어(we)의 순서를 의문문처럼 뒤바꿈' },
+          { en: '(O) This is just what we were looking for.', ko: '이것이 바로 우리가 찾던 것이다.', note: '올바른 문장: what 뒤에도 "주어+동사" 어순을 그대로 유지' },
+          { en: '(O) I don’t know what it is.', ko: '나는 그것이 무엇인지 모른다.', note: '(X) I don’t know what is it.처럼 도치하지 않도록 주의' },
+        ],
+      },
       {
         type: 'callout',
         title: '23장 핵심 정리 (3) - that과 what',
@@ -598,6 +611,36 @@ export const ch23 = {
           { tag: 'M', text: ', which made her upset' },
         ],
         translation: 'He was pulling her legs, which made her upset. (which = He was pulling her legs라는 상황 전체)',
+      },
+      { type: 'heading', text: '수량 표현 + of + whom/which - 계속적 용법에서만 가능한 구조' },
+      {
+        type: 'p',
+        text: '계속적 용법에서는 all, both, some, many, none, two, three처럼 수량을 나타내는 표현 뒤에 "of whom"(사람) 또는 "of which"(사물)를 붙여서, 앞에 나온 여러 명(개) 중 얼마만큼이 뒤의 설명에 해당하는지를 나타낼 수 있습니다. **이 구조는 comma 뒤에서만, 즉 계속적 용법에서만 쓸 수 있습니다.** 선행사가 이미 콤마 앞에서 하나의 무리로 특정되어 있고, 그 무리 중 일부(또는 전부)에 대해 추가 설명을 덧붙이는 것이기 때문입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I teach many students, all of whom are very talented.', ko: '나는 많은 학생을 가르치는데, 그들 모두가 매우 재능 있다.', note: 'all of whom: 학생 전원(사람)에 대한 추가 설명' },
+          { en: 'I teach many classes, some of which are very difficult.', ko: '나는 많은 수업을 가르치는데, 그중 일부는 매우 어렵다.', note: 'some of which: 수업 일부(사물)에 대한 추가 설명' },
+          { en: 'My brother and sister, both of whom live in Ireland, are coming to visit.', ko: '내 남동생과 여동생은, 둘 다 아일랜드에 사는데, 방문하러 올 것이다.', note: 'both of whom: 남매 둘 다(사람)를 가리킴' },
+          { en: 'I have four essays due next week, none of which are ready.', ko: '나는 다음 주까지 제출할 에세이가 네 개 있는데, 그중 어느 것도 준비되지 않았다.', note: 'none of which: 에세이 중 하나도 없음(사물)' },
+          { en: 'Tommy has three pets, two of which are cats.', ko: 'Tommy는 반려동물이 세 마리 있는데, 그중 두 마리는 고양이이다.', note: 'two of which: 숫자로 구체적인 수량을 표현' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '수량 표현 + of + which - 계속적 용법',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'teach' },
+          { tag: 'O', text: 'many classes' },
+          { tag: 'M', text: ', some of which are very difficult' },
+        ],
+        translation: 'I teach many classes, some of which are very difficult. (some of which = 그 수업들 중 일부)',
+      },
+      {
+        type: 'note',
+        text: '이 구조는 콤마가 없는 제한적 용법에서는 쓸 수 없습니다. (X) I teach many students all of whom are talented.처럼 콤마 없이 쓰면 비문이 됩니다. 반드시 "선행사, 수량 표현 + of whom/which ~"의 형태로, 콤마를 앞세워 계속적 용법으로만 사용해야 합니다.',
       },
       { type: 'heading', text: '계속적 용법에서는 that을 쓸 수 없다' },
       {

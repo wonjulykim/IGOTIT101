@@ -4,9 +4,9 @@ function load() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
     const data = raw ? JSON.parse(raw) : {}
-    return { completedLessons: {}, quizScores: {}, writingScores: {}, ...data }
+    return { completedLessons: {}, quizScores: {}, writingScores: {}, koreanDrafts: {}, ...data }
   } catch {
-    return { completedLessons: {}, quizScores: {}, writingScores: {} }
+    return { completedLessons: {}, quizScores: {}, writingScores: {}, koreanDrafts: {} }
   }
 }
 
@@ -51,6 +51,18 @@ export function saveWritingResult(unitId, questionId, result) {
 export function getWritingResult(unitId, questionId) {
   const data = load()
   return data.writingScores?.[unitId]?.[questionId] || null
+}
+
+export function saveKoreanDraft(unitId, questionId, text) {
+  const data = load()
+  if (!data.koreanDrafts[unitId]) data.koreanDrafts[unitId] = {}
+  data.koreanDrafts[unitId][questionId] = text
+  save(data)
+}
+
+export function getKoreanDraft(unitId, questionId) {
+  const data = load()
+  return data.koreanDrafts?.[unitId]?.[questionId] || ''
 }
 
 export function resetProgress() {

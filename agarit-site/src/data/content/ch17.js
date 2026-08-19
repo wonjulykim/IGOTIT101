@@ -251,6 +251,35 @@ export const ch17 = {
           ['help', '동사원형 또는 to부정사', 'I helped him (to) fix the printer.'],
         ],
       },
+      { type: 'heading', text: '확장: to부정사를 쓰는 유사 의미 동사 — allow, force, permit, cause' },
+      {
+        type: 'p',
+        text: 'get이 사역의 의미를 가지면서도 to부정사를 취하는 것처럼, **허락·강제·원인이라는 뜻은 make/have/let과 비슷하지만 목적격 보어로 항상 to부정사를 쓰는 동사들**이 있습니다. 대표적으로 allow(허락하다), permit(허가하다), force(강제하다), cause(원인이 되다)가 있습니다. 이 동사들은 let이나 make처럼 즉각적인 지시·허락의 느낌보다, 어떤 조건이나 절차를 거쳐 그 결과에 이르게 된다는 느낌이 강해서 to가 만드는 거리감이 그대로 남습니다.',
+      },
+      {
+        type: 'table',
+        caption: '같은 의미, 다른 문법 — 동사원형 vs to부정사',
+        headers: ['의미', '동사원형(목적어 + 동사원형)', 'to부정사(목적어 + to부정사)'],
+        rows: [
+          ['허락하다', 'let', 'allow, permit'],
+          ['강제로 하게 하다 / 원인이 되다', 'make', 'force, cause'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I let my son use my laptop.', ko: '나는 아들이 내 노트북을 쓰도록 허락했다.', note: 'let + 목적어 + 동사원형' },
+          { en: 'My computer allows me to work on two screens at once.', ko: '내 컴퓨터는 내가 두 개의 화면에서 동시에 작업할 수 있게 해준다.', note: 'allow + 목적어 + to부정사' },
+          { en: 'The school doesn’t permit students to use their phones in class.', ko: '그 학교는 학생들이 수업 중에 휴대폰을 쓰는 것을 허가하지 않는다.', note: 'permit + 목적어 + to부정사' },
+          { en: 'The manager made him rewrite the report.', ko: '매니저는 그에게 보고서를 다시 쓰게 했다.', note: 'make + 목적어 + 동사원형' },
+          { en: 'The teacher forced the students to rewrite the report.', ko: '선생님은 학생들에게 보고서를 다시 쓰도록 강요했다.', note: 'force + 목적어 + to부정사' },
+          { en: 'Heavy rain caused the game to be canceled.', ko: '폭우로 인해 경기가 취소되었다.', note: 'cause + 목적어 + to부정사(수동 to be canceled)' },
+        ],
+      },
+      {
+        type: 'note',
+        text: 'let/make는 문법적으로 정해진 소수의 사역동사이기 때문에 예외적으로 동사원형을 취하지만, allow/permit/force/cause는 5형식을 취하는 수많은 일반동사들(want, tell, ask, expect 등)과 마찬가지로 목적어 뒤에 to부정사를 쓰는 규칙을 그대로 따릅니다. 즉 **to부정사를 쓰는 쪽이 원칙이고, make/have/let처럼 동사원형만 쓰는 쪽이 소수의 예외**라고 기억해 두면 헷갈리지 않습니다.',
+      },
       { type: 'heading', text: '목적어와 목적격 보어의 능동 관계: 목적어가 직접 한다' },
       {
         type: 'p',

@@ -246,6 +246,28 @@ export const ch4 = {
           { en: 'It doesn’t matter what other people think of you.', ko: '다른 사람들이 너를 어떻게 생각하는지는 중요하지 않다.', note: '진주어: 명사절 what other people think of you' },
         ],
       },
+      {
+        type: 'p',
+        text: '가주어 it 뒤에는 진주어(to부정사·명사절)가 아니라 아예 「형용사 + to부정사」, 「형용사 + that절」이 하나의 세트처럼 굳어져 자주 쓰이는 표현들이 있습니다. 이런 표현은 문장을 하나하나 분석하기보다 통째로 익혀두면 말하기·쓰기에서 훨씬 빠르게 활용할 수 있습니다.',
+      },
+      {
+        type: 'table',
+        caption: 'It is + 형용사 + to부정사/that절 관용표현',
+        headers: ['형태', '예문', '뜻'],
+        rows: [
+          ['It is important to ~', 'It is important to be relaxed about making mistakes.', '실수에 너무 예민해하지 않는 것이 중요하다.'],
+          ['It is essential to ~', 'It is essential to give yourself time to study regularly.', '규칙적으로 공부할 시간을 확보하는 것이 필수적이다.'],
+          ['It is difficult to ~', 'It is difficult to remember facts if you don\'t write them down.', '적어두지 않으면 사실을 기억하기 어렵다.'],
+          ['It is a shame that ~', 'It is a shame that so many people give up.', '그렇게 많은 사람이 포기한다는 것은 안타까운 일이다.'],
+          ['It is (un)likely that ~', 'It\'s unlikely that you will be comfortable speaking aloud at first.', '처음에는 소리 내어 말하는 게 편하지 않을 가능성이 크다.'],
+          ['It is true that ~', 'It\'s true that being able to speak a second language is useful.', '제2외국어를 할 수 있다는 것은 정말 유용하다.'],
+          ['It is often said that ~', 'It is often said that going to the country of the language helps.', '그 언어를 쓰는 나라에 가는 것이 도움이 된다고 흔히들 말한다.'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '형용사에 따라 뒤에 to부정사가 오는지, that절이 오는지가 정해져 있는 경우가 많습니다. important, essential, difficult, easy, hard처럼 "어떤 행동을 하는 것이 어떠하다"는 의미의 형용사는 주로 to부정사와 어울리고, a shame, likely, true, said처럼 "어떤 사실·상황이 어떠하다"는 의미를 나타낼 때는 that절과 자주 어울립니다.',
+      },
       { type: 'heading', text: '비인칭 주어 it' },
       {
         type: 'p',

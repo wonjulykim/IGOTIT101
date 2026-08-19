@@ -132,6 +132,11 @@ export const ch27 = {
         ],
         translation: 'Unless you hurry, you will miss the bus. (= If you do not hurry, you will miss the bus.)',
       },
+      { type: 'heading', text: '쉼표는 언제 찍을까 — 조건절과 결과절의 순서' },
+      {
+        type: 'note',
+        text: '조건절(if~/when~/unless~)과 결과절의 순서에 따라 쉼표를 찍는 방식이 달라집니다. **조건절이 문장 맨 앞에 나올 때는 결과절과 구분하기 위해 조건절 끝에 쉼표를 찍지만, 결과절이 먼저 나오고 조건절이 뒤따라올 때는 쉼표를 찍지 않습니다.** 예: If you freeze water, ice forms. (조건절이 앞 — 쉼표 O) / Ice forms if you freeze water. (조건절이 뒤 — 쉼표 X). 이 규칙은 이번 장에서 배우는 직설법 조건문뿐 아니라 다음 절의 가정법 문장에도 똑같이 적용됩니다.',
+      },
       {
         type: 'p',
         text: '①②③은 모두 "직설법 조건문"이라고 부를 수 있습니다. 직설법이란 실제로 일어날 수 있는 일, 혹은 실제로 늘 일어나는 일을 그대로 말하는 방식입니다. 이 점이 다음 장에서 배울 가정법과 가장 크게 다른 부분입니다. 가정법은 실제로 일어날 가능성이 거의 없거나 이미 정해진 결과를 알면서도, 그와 다른 상황을 상상하며 아쉬움·후회·소망을 표현하는 방식이기 때문입니다.',
@@ -287,6 +292,36 @@ export const ch27 = {
         ],
         translation: 'I wish I were taller. (지금 키가 크지 않은 것에 대한 소망 — wish절도 be동사는 were)',
       },
+      { type: 'heading', text: 'I wish 뒤에 could와 would를 구분해서 쓰는 이유' },
+      {
+        type: 'p',
+        text: 'I wish 뒤에 오는 조동사가 could냐 would냐에 따라 소망의 주체가 달라집니다. **wish + 화자 자신 + could는 화자 스스로 무언가를 할 수 있기를 바라는 것이고, wish + 다른 대상(주로 3인칭) + would는 다른 사람이나 사물이 지금과 다르게 행동해 주기를 바라는 것입니다.** 특히 wish + would는 반복되는 습관이나 행동에 대한 불만을 담아 "제발 좀 ~해줬으면" 하는 어감을 전달할 때 자주 쓰입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I wish I could speak French.', ko: '내가 프랑스어를 할 수 있으면 좋을 텐데.', note: '화자 자신의 능력에 대한 소망 — wish + could' },
+          { en: 'She wishes her teacher would give her less homework.', ko: '그녀는 선생님이 숙제를 덜 내주면 좋겠다고 생각한다.', note: '다른 사람(선생님)이 다르게 행동하기를 바람 — wish + would' },
+          { en: "I wish they wouldn't make it so hard to buy tickets online.", ko: '그들이 온라인 티켓 구매를 이렇게 어렵게 만들지 않았으면 좋겠다.', note: '반복되는 상황에 대한 불만 섞인 소망' },
+        ],
+      },
+      {
+        type: 'note',
+        text: 'wish + would는 화자 자신의 행동을 바랄 때는 쓰지 않습니다("*I wish I would ~"는 어색한 문장입니다). 자기 자신에 대한 소망은 wish + could(능력)나 wish + 과거형(현재 사실과 반대되는 상태)으로 표현합니다.',
+      },
+      { type: 'heading', text: 'if only — wish보다 더 강한 아쉬움' },
+      {
+        type: 'p',
+        text: 'if only는 wish와 문법 구조(과거형/과거완료)는 같지만, 훨씬 절실하고 감정적인 아쉬움이나 안타까움을 표현할 때 씁니다. **현재에 대한 강한 아쉬움은 「if only + 과거형」으로, 이미 지나가버린 과거에 대한 강한 후회는 「if only + 과거완료」로 나타냅니다.**',
+        },
+      {
+        type: 'example',
+        items: [
+          { en: 'If only I knew how to ski.', ko: '스키 타는 법을 알았더라면 좋았을 텐데.', note: '현재에 대한 강한 아쉬움 — if only + 과거형' },
+          { en: "If only I'd charged the battery.", ko: '배터리를 충전해뒀더라면 좋았을 텐데.', note: '과거에 대한 강한 후회 — if only + 과거완료' },
+          { en: 'If only I had trained harder.', ko: '더 열심히 훈련했더라면 좋았을 텐데.', note: '결승선을 통과하지 못한 것에 대한 후회 — if only + 과거완료' },
+        ],
+      },
       { type: 'heading', text: '가정법 과거완료 — 과거 사실과 반대되는 상상' },
       {
         type: 'p',
@@ -312,6 +347,25 @@ export const ch27 = {
           { tag: 'V', text: 'would have attended' },
         ],
         translation: 'If I had known about the meeting, I would have attended. (조건절: had+p.p. / 결과절: would have+p.p.)',
+      },
+      { type: 'heading', text: '결과절의 조동사 변형 — 확신의 정도를 조절한다' },
+      {
+        type: 'p',
+        text: '지금까지 본 결과절은 will이나 would로 고정되어 있었지만, 실제로는 다른 조동사로 바꾸어 그 결과에 대한 확신의 정도를 조절할 수 있습니다. **will/would 대신 can/could나 may/might를 쓰면 "반드시 그렇게 된다"가 아니라 "그럴 가능성이 있다" 또는 "그럴 능력이 된다"는 더 약한 뉘앙스로 바뀝니다.** 이 변형은 직설법 조건문, 가정법 과거, 가정법 과거완료 세 가지 모두에 똑같이 적용되는 원리입니다.',
+      },
+      {
+        type: 'table',
+        caption: '결과절에서 will/would 대신 쓰는 조동사',
+        headers: ['조건문 종류', '기본형', '대체 조동사', '예문'],
+        rows: [
+          ['직설법 조건문', 'will + 동사원형', 'can + 동사원형 (능력·허락)', 'If I save enough money, I can buy a new car.'],
+          ['가정법 과거', 'would + 동사원형', 'could/might + 동사원형 (가능성)', 'If I saved enough money, I could/might buy a new car.'],
+          ['가정법 과거완료', 'would have + p.p.', 'could have/might have + p.p.', 'If I had saved enough money, I could have bought a new car.'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '같은 조건문이라도 결과절에 어떤 조동사를 고르느냐에 따라 뉘앙스가 달라집니다. 결과에 대한 확신을 낮추고 싶을 때는 might를, 능력이나 가능성을 강조하고 싶을 때는 could를 선택하면 됩니다.',
       },
       { type: 'heading', text: '흔히 하는 실수 — 과거완료 자리에 단순 과거를 쓰는 경우' },
       {
@@ -365,6 +419,67 @@ export const ch27 = {
           ['가정법 과거완료', '항상 0% (과거 사실과 반대)', 'had + p.p.', '조동사 과거형 + have + p.p.', '이미 지나간 일을 반대로 상상 (후회)'],
         ],
       },
+      { type: 'heading', text: 'should have / ought to have + p.p. — 하지 않은 일에 대한 후회' },
+      {
+        type: 'p',
+        text: '**「should have + p.p.」 또는 「ought to have + p.p.」는 과거에 하지 않은 일을 후회하거나, 그때 그렇게 했어야 했는데 하지 않았다는 아쉬움을 나타낼 때 씁니다.** 가정법 과거완료가 "만약 ~했다면 …했을 텐데"처럼 조건과 결과를 모두 언급하는 것과 달리, should have는 조건 없이 "그때 그렇게 했어야 했다"는 화자의 판단만을 간결하게 표현합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'This bill is so big. I should have used less electricity.', ko: '청구서가 너무 많이 나왔어. 전기를 덜 썼어야 했는데.', note: '조건절 없이 과거 행동에 대한 후회만 표현' },
+          { en: 'Maybe I should have used energy-saving light bulbs.', ko: '에너지 절약형 전구를 썼어야 했을지도 모른다.' },
+          { en: "I shouldn't have fallen asleep with the TV on.", ko: 'TV를 켠 채로 잠들지 말았어야 했는데.', note: '부정형 shouldn\'t have — 하지 말았어야 했는데 해버린 일에 대한 후회' },
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'should have + p.p. vs 가정법 과거완료',
+        headers: ['표현', '구조', '초점'],
+        rows: [
+          ['should have + p.p.', '조건절 없이 단독으로 사용', '그때 그렇게 했어야 했다는 화자의 판단·후회'],
+          ['가정법 과거완료 (If ~ had p.p., would have p.p.)', '조건절 + 결과절이 모두 필요', '실제와 다른 과거를 가정했을 때 어떤 결과가 벌어졌을지'],
+        ],
+      },
+      {
+        type: 'note',
+        text: 'ought to have의 부정형인 "ought not to have"는 영국 영어에서도 드물게 쓰이고, 미국 영어에서는 거의 쓰이지 않습니다. 부정의 후회는 보통 shouldn\'t have로 표현하는 것이 자연스럽습니다.',
+      },
+      { type: 'heading', text: '같은 원리, 다른 옷 — What if / Suppose로 미래를 상상하기' },
+      {
+        type: 'p',
+        text: 'What if...?(~하면 어떡하지?)와 Suppose(~라고 가정해보자)는 if라는 접속사 없이도 조건문과 똑같은 원리로 시제를 선택합니다. **뒤에 오는 동사가 현재형이면 실제로 일어날 가능성이 있다고 여기는 것이고, 과거형이면 일어날 가능성이 낮다고 여기는 것이며, 과거완료형이면 이미 지나가버려 확인할 수 없는 과거의 가능성을 상상하는 것입니다.** 이는 이 장에서 배운 "현실과의 거리가 멀수록 시제를 뒤로 민다"는 원리가 if 없이도 그대로 적용되는 예입니다.',
+      },
+      {
+        type: 'table',
+        caption: 'What if / Suppose의 시제별 의미',
+        headers: ['시제', '의미', '예문'],
+        rows: [
+          ['현재형', '실제로 일어날 법한 미래', 'What if the computer crashes? I will lose all my work.'],
+          ['과거형', '일어날 가능성이 낮은 미래', 'What if we all got 100% on our exams?'],
+          ['과거완료형', '이미 지나가서 확인할 수 없는 과거의 가능성', 'What if you had broken your leg?'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Suppose I got caught cheating. My parents would be furious.', ko: '내가 부정행위를 하다 걸린다고 가정해보자. 부모님이 노발대발하실 것이다.', note: '과거형 — 가능하지만 일어날 가능성이 낮은 미래' },
+          { en: 'Suppose you had taken the job. We would have had to move.', ko: '네가 그 일을 맡았다고 가정해보자. 우리는 이사해야 했을 것이다.', note: '과거완료형 — 이미 지나간 과거의 가능성' },
+        ],
+      },
+      { type: 'heading', text: 'in case — 만약을 대비해서' },
+      {
+        type: 'p',
+        text: 'in case(또는 just in case)는 앞으로 일어날 수도 있는 상황에 미리 대비한다는 뜻으로, 뒤에는 현재형 동사를 씁니다. **if와 달리 in case는 "그 일이 일어나면 ~하겠다"는 조건-결과 관계가 아니라, "혹시 그 일이 일어날 경우를 대비해서 미리 ~해두겠다"는 뜻이라는 점에서 다릅니다.**',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'You should take an umbrella with you in case it rains later.', ko: '나중에 비가 올 경우를 대비해서 우산을 챙기는 게 좋겠다.' },
+          { en: 'We should start organizing our project work, just in case they want to see it.', ko: '그들이 보고 싶어할 경우를 대비해서 프로젝트 작업을 미리 정리해 두는 게 좋겠다.' },
+          { en: 'You should leave for the airport early, just in case the traffic is bad.', ko: '교통이 막힐 경우를 대비해서 공항에 일찍 출발하는 게 좋겠다.', note: 'just는 가능성이 낮은 상황에 대한 대비를 나타낼 때 in case 앞에 덧붙는다' },
+        ],
+      },
       {
         type: 'p',
         text: '결국 직설법 조건문과 가정법의 차이는 "그 일이 실제로 일어날 수 있는가"에 있습니다. 직설법 조건문은 조건이 충족되면 결과가 실제로 일어날 수 있는 문장이고, 가정법은 화자가 이미 결과를 알고 있으면서도(혹은 결과를 거의 확신하면서도) 그와 다른 상황을 상상하여 감정을 표현하는 문장입니다. 그리고 그 "다른 정도"가 클수록(현재와 다름 vs 과거와 다름) 시제를 더 멀리 물러나게 사용합니다. 이 원리 하나만 기억하면, 가정법의 형태를 외우지 않고도 왜 그런 시제가 쓰이는지 스스로 추론할 수 있습니다.',
@@ -383,6 +498,18 @@ export const ch27 = {
           '혼합 가정법: 조건절(과거완료)과 결과절(조동사 과거형+동사원형)의 시점이 다를 수도 있다 — now, today 같은 표현이 신호가 된다.',
           'were/had/should로 시작하는 조건절은 if를 생략하고 도치할 수 있다 (Were it not for / Had it not been for).',
           '직설법 조건문(실현 가능)과 가정법(현실과 반대)의 구분은 "일이 실제로 일어날 수 있는가"를 기준으로 한다.',
+        ],
+      },
+      {
+        type: 'callout',
+        title: '27장 보충 정리 — 조동사 변형, wish/if only, should have, What if',
+        items: [
+          '결과절의 will/would는 can/could, may/might로 바꾸어 결과에 대한 확신의 정도(가능성·능력)를 조절할 수 있다 — 세 가지 조건문 유형 모두에 적용된다.',
+          'wish + could는 화자 자신의 능력에 대한 소망, wish + would는 다른 사람·사물이 다르게 행동하기를 바라는 소망이다 (wish + would는 자기 자신에게는 쓰지 않는다).',
+          'if only는 wish와 같은 시제 구조(과거형/과거완료)를 쓰지만 훨씬 절실한 아쉬움·후회를 표현한다.',
+          'should have/ought to have + p.p.는 조건절 없이도 "그때 그렇게 했어야 했다"는 후회를 간결하게 표현한다. 부정은 shouldn\'t have가 자연스럽고, ought not to have는 거의 쓰이지 않는다.',
+          'What if / Suppose는 if 없이도 뒤따르는 동사의 시제(현재형/과거형/과거완료형)로 미래 가능성의 정도를 나타낸다 — 조건문과 같은 원리이다.',
+          'in case(현재형)는 "그 일이 일어날 경우를 대비해서 미리 ~해둔다"는 뜻으로, 조건-결과를 말하는 if와는 쓰임이 다르다.',
         ],
       },
     ],

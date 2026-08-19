@@ -254,6 +254,23 @@ export const ch24 = {
         ],
         translation: 'This is the house where he lives. (선행사 the house를 관계부사절이 수식)',
       },
+      { type: 'heading', text: '압축 과정 ⑤ 과정·절차: whereby' },
+      {
+        type: 'p',
+        text: 'where, when, why, how 외에 **whereby**라는 관계부사도 있습니다. whereby는 "by which"(그것에 의하여)가 압축된 형태로, the process, the system, the agreement처럼 **과정이나 절차, 제도를 나타내는 선행사**를 설명할 때 씁니다. how가 "구체적으로 어떤 방식으로 하는지"에 가깝다면, whereby는 "그 과정을 통해 어떤 일이 이루어지는지"를 설명하는 다소 격식 있는 표현이라는 차이가 있습니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'A trial is the process whereby a person is found guilty or innocent of a crime.', ko: '재판은 어떤 사람이 유죄인지 무죄인지가 가려지는 절차이다.', note: '= a process by which a person is found guilty or innocent' },
+          { en: 'They have an agreement whereby they share the company’s profits.', ko: '그들은 회사의 수익을 나누기로 하는 협약을 맺고 있다.', note: 'the agreement(협약)를 설명하는 whereby절' },
+          { en: 'There’s a new system whereby students submit their work online.', ko: '학생들이 과제를 온라인으로 제출하는 새로운 시스템이 있다.', note: 'the system(제도)을 설명하는 whereby절' },
+        ],
+      },
+      {
+        type: 'note',
+        text: 'whereby는 일상 대화보다는 공식적인 글이나 설명문에서 주로 쓰이는 다소 격식체 표현입니다. 선행사로 the process, the system, the agreement, the method처럼 "절차·제도·합의"를 나타내는 명사가 자주 온다는 점을 기억해두면 how와 헷갈리지 않습니다.',
+      },
       {
         type: 'callout',
         title: '24장 핵심 정리 (1)',
@@ -354,6 +371,20 @@ export const ch24 = {
           { tag: 'M', text: 'whom I met ___ at the party' },
         ],
         translation: 'He is the person whom I met at the party. (whom이 met의 목적어 자리를 비워두고 앞으로 나감)',
+      },
+      { type: 'heading', text: '흔히 하는 실수 ③ 관계부사절을 의문문 어순으로 쓰는 경우' },
+      {
+        type: 'p',
+        text: 'where, when, why, how는 "Where does he live?"처럼 의문문에서 의문사로도 자주 쓰이는 단어입니다. 그래서 학습자들은 이 단어들이 관계부사로 쓰일 때도 무의식적으로 의문문처럼 주어와 동사의 순서를 바꾸는 실수를 저지릅니다. 하지만 **관계부사절은 의문문이 아니라 선행사를 수식하는 절이므로, 안에서는 평서문과 똑같이 "주어 + 동사" 순서를 그대로 유지해야 합니다.**',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'This is the restaurant where does he work.', ko: '(비문법적) 이곳은 그가 일하는 식당이다.', note: '오류: where 뒤에서 의문문처럼 does he work로 도치했다.' },
+          { en: 'This is the restaurant where he works.', ko: '이곳은 그가 일하는 식당이다.', note: '수정: where 뒤에도 평서문 어순(주어+동사)인 he works를 그대로 쓴다.' },
+          { en: 'Tell me the reason why did you cry.', ko: '(비문법적) 왜 울었는지 이유를 말해줘.', note: '오류: why가 의문사처럼 보여도 관계부사절에서는 도치하지 않는다.' },
+          { en: 'Tell me the reason why you cried.', ko: '왜 울었는지 이유를 말해줘.', note: '수정: why 뒤에도 주어+동사 순서(you cried)를 그대로 쓴다.' },
+        ],
       },
       { type: 'heading', text: '관계부사 선행사의 생략 ① 생략이 가능한 경우' },
       {

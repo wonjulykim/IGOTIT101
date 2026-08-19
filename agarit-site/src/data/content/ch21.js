@@ -210,6 +210,32 @@ export const ch21 = {
         ],
         translation: '나는 파리에 두 번 가본 적이 있다.',
       },
+      {
+        type: 'note',
+        text: '여기서 have been to와 have gone to를 구별해야 합니다. **have been to는 “갔다가 이미 돌아왔다”는 경험을 나타내 지금은 여기에 있다는 뜻이고, have gone to는 “가서 아직 그곳에 있다”는 결과를 나타내 지금 여기에 없다는 뜻입니다.** 형태는 비슷하지만 의미는 정반대에 가깝습니다.',
+      },
+      {
+        type: 'table',
+        caption: 'have been to vs. have gone to',
+        headers: ['표현', '의미', '지금 있는 곳'],
+        rows: [
+          ['have gone to + 장소', '그곳에 가서 아직 그곳에 있음 (결과)', '그 장소'],
+          ['have been to + 장소', '그곳에 갔다가 이미 돌아옴 (경험)', '원래 있던 곳 (돌아온 상태)'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'She has gone to Florida.', ko: '그녀는 플로리다에 갔다. (지금도 거기 있음)', note: '결과 — 아직 돌아오지 않음' },
+          { en: 'She has been to Florida.', ko: '그녀는 플로리다에 갔다 온 적이 있다.', note: '경험 — 갔다가 이미 돌아와서 지금 여기 있음' },
+          { en: 'He has gone to the mall.', ko: '그는 쇼핑몰에 갔다. (지금 거기 있음)', note: '결과' },
+          { en: 'I have just been to the hair salon.', ko: '나는 방금 미용실에 다녀왔다.', note: '이미 돌아온 상태이므로 been' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '이 때문에 have gone to는 주로 3인칭 주어와 함께 쓰입니다. 말하는 사람 자신(I)이 “나는 그곳에 가서 아직 거기 있다”라고 말하면서 동시에 이 말을 하고 있을 수는 없기 때문입니다. 반면 have been to는 화자 자신의 경험을 말할 때 자연스럽게 I, we와 함께 쓰입니다.',
+      },
       { type: 'heading', text: '(3) 완료 — 방금 막 끝난 일' },
       {
         type: 'p',
@@ -297,12 +323,26 @@ export const ch21 = {
         ],
       },
       {
+        type: 'note',
+        text: '참고로 미국 영어(US)에서는 영국 영어(UK)라면 현재완료를 쓸 자리에 종종 단순 과거를 사용합니다. 특히 already, just, yet처럼 완료를 나타내는 부사와 함께 쓰일 때 이런 차이가 두드러집니다. 이것은 문법 오류가 아니라 지역적인 언어 습관의 차이이며, 학교 영어에서는 영국식 현재완료 사용을 기준으로 배우는 것이 일반적입니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I ate too much.', ko: '나 너무 많이 먹었어.', note: '미국 영어(US) — 단순 과거 사용' },
+          { en: 'I’ve eaten too much.', ko: '나 너무 많이 먹었어.', note: '영국 영어(UK) — 현재완료 사용 (already 생략)' },
+          { en: 'Did you see my passport?', ko: '내 여권 봤어?', note: '미국 영어(US) — 과거시제 의문문' },
+          { en: 'Have you seen my passport?', ko: '내 여권 봤어?', note: '영국 영어(UK) — 현재완료 의문문' },
+        ],
+      },
+      {
         type: 'callout',
         title: '21장 핵심 정리 (1) — 현재완료',
         items: [
           '현재완료(have/has + p.p.)는 과거의 일이 현재까지 영향을 미치고 있음을 나타낸다. 과거시제는 사건을 현재와 단절된 하나의 점으로 그리지만, 현재완료는 그 점에서 지금까지 뻗어 나온 화살표로 그린다.',
           '"I lost my key."는 지금 상태를 알려주지 않지만, "I have lost my key."는 지금도 열쇠가 없는 상태임을 함축한다.',
           '현재완료는 계속(for/since), 경험(ever/never/before), 완료(just/already/yet), 결과(부사 없이, "그래서 지금 ~하다") 네 가지 의미로 쓰인다.',
+          'have been to(갔다 옴 — 경험, 지금 여기 있음)와 have gone to(가서 아직 그곳에 있음 — 결과, 지금 여기 없음)는 형태는 비슷하지만 의미가 다르다.',
           'yesterday, last year, ~ago, in+과거연도처럼 구체적인 과거 시점을 못 박는 부사(구)는 현재완료와 함께 쓸 수 없다 — 이때는 반드시 과거시제를 쓴다.',
           '의문문은 Have/Has를 주어 앞으로, 부정문은 have/has 뒤에 not을 붙인다.',
         ],
@@ -573,6 +613,78 @@ export const ch21 = {
           { en: 'When I arrived, the train had left.', ko: '내가 도착했을 때, 기차는 떠나 있었다.', note: '올바른 문장 — 기준 사건(arrived)은 단순 과거, 더 앞선 사건(had left)만 과거완료' },
         ],
       },
+      { type: 'heading', text: '문장 안의 위치와 실제 사건 순서는 다르다' },
+      {
+        type: 'p',
+        text: '과거완료를 쓸 때 흔히 오해하는 부분이 있습니다. **문장에서 먼저 나오는 절이 실제로 먼저 일어난 사건이라고 단정할 수 없습니다.** 어느 사건이 더 먼저 일어났는지는 오직 시제(과거완료인지 단순 과거인지)로만 판단해야 하며, 문장에서 어느 쪽이 앞에 놓였는지로 판단해서는 안 됩니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The traffic was bad because a car had broken down on the road.', ko: '차가 고장 나서 교통이 혼잡했다.', note: '문장에서는 The traffic was bad(단순 과거)가 먼저 나오지만, 실제로 먼저 일어난 사건은 had broken down(과거완료) — 차 고장이 교통 혼잡보다 먼저 일어남' },
+          { en: 'She had already read the play by the time she went to see it.', ko: '그녀는 연극을 보러 가기 전에 이미 그 희곡을 읽어 두었다.', note: 'had read(과거완료)가 문장 뒤쪽에 있지만 시간상으로는 went(단순 과거)보다 앞선 사건' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '즉 "먼저 쓰인 절 = 먼저 일어난 사건"이 아니라, **"과거완료가 붙은 절 = 먼저 일어난 사건"**이라는 원칙을 기억해야 합니다. 문장 순서는 얼마든지 바뀔 수 있지만, had + p.p.가 어디에 붙어 있는지는 사건의 순서를 가리키는 유일하게 믿을 수 있는 단서입니다.',
+      },
+      { type: 'heading', text: '과거완료진행 — 기준 시점까지 계속되던 동작' },
+      {
+        type: 'p',
+        text: '**과거완료진행은 과거의 어느 시점보다 더 이전에 시작된 동작이, 그 기준 시점까지 계속 진행되고 있었음을 나타냅니다.** 21-2에서 배운 현재완료와 현재완료진행의 관계(결과·경험 vs 진행 과정)가 과거완료와 과거완료진행 사이에도 똑같이 적용됩니다. 과거완료(had + p.p.)가 "그 시점까지 끝나 있었음(완료·결과)"에 초점을 둔다면, 과거완료진행(had been + Ving)은 "그 시점까지 계속 진행 중이었음(지속 과정)"에 초점을 둡니다.',
+      },
+      {
+        type: 'note',
+        text: '과거완료진행 구조 : 주어 + had been + 동사-ing — had been은 주어가 무엇이든 형태가 바뀌지 않습니다.',
+      },
+      {
+        type: 'table',
+        caption: '과거완료 vs 과거완료진행',
+        headers: ['구분', '구조', '예문', '의미'],
+        rows: [
+          ['과거완료', '주어 + had + p.p.', 'He had studied English before he went to London.', '런던에 가기 전 영어 공부를 끝낸 상태였다 (완료·결과)'],
+          ['과거완료진행', '주어 + had been + Ving', 'He had been studying English for two years before he went to London.', '런던에 가기 전 2년째 영어를 계속 공부하고 있었다 (지속 과정)'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'He had been studying English for two years before he went to London.', ko: '그는 런던에 가기 전 2년 동안 계속 영어를 공부하고 있었다.', note: '기준 시점(went to London)보다 앞서 시작되어 그 시점까지 이어진 진행 과정' },
+          { en: 'By the time Katie arrived home, she had been driving for six hours.', ko: '케이티가 집에 도착했을 때쯤, 그녀는 6시간째 운전을 하고 있었다.', note: '도착이라는 기준 시점까지 계속된 운전(진행 과정)을 강조' },
+          { en: 'She decided to buy a new car because her old one hadn’t been working for weeks.', ko: '그녀는 예전 차가 몇 주째 작동하지 않고 있어서 새 차를 사기로 결심했다.', note: '과거완료진행의 부정형 (hadn’t been + Ving)' },
+          { en: 'I went to see the doctor after I’d been feeling unwell for a few days.', ko: '나는 며칠 동안 계속 몸이 안 좋아서 병원에 갔다.', note: 'I’d been = I had been (축약형)' },
+          { en: 'The band had been rehearsing every day, so they won the competition.', ko: '그 밴드는 매일 연습을 계속해왔고, 그래서 대회에서 우승했다.', note: '반복적으로 계속된 연습(과거완료진행)이 원인, 우승(단순 과거)이 결과' },
+          { en: 'I had been training to be a dancer until I broke my leg.', ko: '나는 다리가 부러지기 전까지 계속 무용수가 되려고 훈련하고 있었다.', note: 'until로 진행이 끝난 시점을 명시' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '과거완료진행',
+        parts: [
+          { tag: 'S', text: 'He' },
+          { tag: 'V', text: 'had been studying' },
+          { tag: 'O', text: 'English' },
+          { tag: 'M', text: 'for two years before he went to London' },
+        ],
+        translation: '그는 런던에 가기 전 2년 동안 계속 영어를 공부하고 있었다.',
+      },
+      { type: 'heading', text: '과거완료진행 vs 현재완료진행 — 기준 시점만 다르다' },
+      {
+        type: 'p',
+        text: '과거완료진행과 현재완료진행은 구조와 의미의 원리가 완전히 같습니다. **다른 것은 오직 기준 시점이 "지금"이냐 "과거의 어느 시점"이냐 뿐입니다.**',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I have been cycling for two hours. I’m really thirsty.', ko: '나는 2시간째 자전거를 타고 있다. 목이 너무 마르다.', note: '현재완료진행 — 기준 시점: 지금' },
+          { en: 'I had been cycling for two hours. I was really thirsty.', ko: '나는 2시간째 자전거를 타고 있었다. 목이 너무 말랐다.', note: '과거완료진행 — 기준 시점: 과거의 어느 순간' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '과거완료진행도 21-2에서 배운 상태 동사(know, believe, own, belong 등)와는 함께 쓰지 않는다는 점이 현재완료진행과 같습니다. 예를 들어 *"I had been knowing her for ten years."는 틀린 문장이며, "I had known her for ten years."로 써야 합니다.',
+      },
       { type: 'heading', text: '미래완료' },
       {
         type: 'p',
@@ -651,7 +763,8 @@ export const ch21 = {
         items: [
           '과거완료(had + p.p.)는 과거의 두 사건 중 더 먼저 일어난 사건을 나타낸다 — 기준이 되는(나중) 사건은 단순 과거로 그대로 둔다.',
           '두 사건 모두에 과거완료를 쓰면 어느 쪽이 기준 시점인지 알 수 없어지므로, 더 앞선 사건에만 had + p.p.를 쓴다.',
-          'before/after 같은 시간 부사절은 과거완료가 나타내는 사건의 순서를 더욱 명확하게 해준다.',
+          'before/after 같은 시간 부사절은 과거완료가 나타내는 사건의 순서를 더욱 명확하게 해준다. 단, 문장에서 어느 절이 먼저 쓰였는지는 사건의 순서와 무관하다 — 순서는 오직 시제(과거완료 vs 단순 과거)로만 판단한다.',
+          '과거완료진행(had been + Ving)은 과거의 기준 시점까지 계속 진행 중이던 동작을 강조한다 — 과거완료(완료·결과)와 대비되며, 현재완료와 현재완료진행의 관계가 과거 시제에도 그대로 적용된 것이다.',
           '미래완료(will have + p.p.)는 미래의 특정 시점까지 완료되어 있을 일을 나타내며, 흔히 by + 미래 시점과 함께 쓰인다.',
           '현재완료·과거완료·미래완료는 기준 시점이 각각 현재·과거·미래라는 점만 다르고, "그 시점까지 일이 끝나 있음(또는 이어져 있음)"을 나타내는 원리는 같다.',
         ],

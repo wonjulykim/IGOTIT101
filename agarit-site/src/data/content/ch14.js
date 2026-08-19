@@ -216,6 +216,43 @@ export const ch14 = {
           { icon: '⏩', label: 'to부정사 목적어', sub: '앞으로 할 일 (want, hope, plan...)' },
         ],
       },
+      { type: 'heading', text: '동명사만 목적어로 취하는 동사 더 알아보기' },
+      {
+        type: 'p',
+        text: 'mind, enjoy, give up, avoid, finish, suggest 외에도 같은 원리로 동명사만 목적어로 취하는 동사가 많이 있습니다. **모두 "이미 존재하거나 이미 일어나고 있는 행동"을 인정하거나, 논의하거나, 미루거나, 계속하는 뜻을 가진 동사라는 공통점**이 있습니다. 아직 일어나지 않은 미래의 일을 인정할 수도, 논의할 수도, 미룰 수도 없기 때문입니다.',
+      },
+      {
+        type: 'table',
+        caption: '동명사만 목적어로 취하는 주요 동사',
+        headers: ['동사', '의미'],
+        rows: [
+          ['admit', '인정하다'],
+          ['deny', '부인하다'],
+          ['consider', '고려하다'],
+          ['discuss', '논의하다'],
+          ['delay / postpone / put off', '미루다'],
+          ['risk', '위험을 무릅쓰다'],
+          ['keep (on)', '계속 ~하다'],
+          ['dislike', '싫어하다'],
+          ['miss', '그리워하다, 놓치다'],
+          ['appreciate', '고마워하다'],
+          ['allow (수동태로 자주 쓰임)', '허용하다'],
+          ['quit', '그만두다'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'He admitted stealing the money.', ko: '그는 돈을 훔쳤다는 것을 인정했다.', note: '이미 일어난 과거 행동을 인정 — admit + 동명사' },
+          { en: 'She denied breaking the vase.', ko: '그녀는 꽃병을 깼다는 것을 부인했다.', note: '이미 일어난 일에 대한 부인 — deny + 동명사' },
+          { en: 'Would you consider moving to Seoul?', ko: '서울로 이사하는 것을 고려해보시겠어요?', note: '아직 하지 않았지만 "이미 존재하는 선택지"를 저울질하는 것 — consider + 동명사' },
+          { en: "Let's discuss meeting next week instead.", ko: '대신 다음 주에 만나는 것에 대해 논의해보자.', note: 'discuss 뒤에는 전치사 about 없이 바로 동명사가 옴' },
+          { en: 'They keep asking the same question.', ko: '그들은 계속 같은 질문을 한다.', note: '이미 반복되고 있는 행동의 지속 — keep + 동명사' },
+          { en: 'I miss living in my hometown.', ko: '나는 고향에서 살던 것이 그립다.', note: '과거에 경험했던 일에 대한 그리움 — miss + 동명사' },
+          { en: 'We really appreciate you helping us move.', ko: '우리를 이사하는 것을 도와줘서 정말 고마워.', note: '이미 해준 도움에 대한 감사 — appreciate + 동명사' },
+          { en: 'Smoking is not allowed in this building.', ko: '이 건물에서는 흡연이 허용되지 않는다.', note: 'allow는 주로 수동태로 쓰여 뒤의 동명사가 주어 자리로 이동' },
+        ],
+      },
       { type: 'heading', text: '흔히 하는 실수: enjoy, mind, give up + to부정사' },
       {
         type: 'p',
@@ -341,6 +378,64 @@ export const ch14 = {
       {
         type: 'note',
         text: 'stop to do와 stop smoking을 혼동하면 "회의 가는 길에 담배를 끊었다"처럼 전혀 다른 뜻이 됩니다. **to부정사는 목적(~하기 위해), 동명사는 중단되는 행동(~하던 것을) 이라는 구조**를 기억하면 헷갈리지 않습니다.',
+      },
+      { type: 'heading', text: 'regret, go on: 의미가 달라지는 동사 두 가지 더' },
+      {
+        type: 'p',
+        text: 'remember, forget, try, stop과 같은 원리로 작동하는 동사가 두 개 더 있습니다. **regret**은 to부정사가 오면 "지금 이 순간부터 말하려는 내용이 유감스럽다"는 뜻이 되고, 동명사가 오면 "과거에 했던 행동을 후회한다"는 뜻이 됩니다. **go on**은 to부정사가 오면 "하던 일을 마치고 다른 행동으로 넘어간다"는 뜻이 되고, 동명사가 오면 "하던 행동을 그대로 계속한다"는 뜻이 됩니다.',
+      },
+      {
+        type: 'table',
+        caption: 'regret, go on: to부정사 목적어 vs 동명사 목적어',
+        headers: ['동사', 'to부정사 목적어', '동명사 목적어'],
+        rows: [
+          ['regret', 'regret to do: (지금부터) ~하게 되어 유감이다 (안 좋은 소식을 전할 때)', 'regret doing: (과거에) ~했던 것을 후회하다'],
+          ['go on', 'go on to do: 하던 일을 마치고 (다른 행동으로) 이어서 ~하다', 'go on doing: 하던 행동을 그대로 계속 ~하다'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I regret to tell you that your flight has been delayed.', ko: '유감스럽지만 비행기가 지연되었다는 것을 알려드립니다.', note: '지금 전하는 소식이 유감스럽다는 뜻 — 아직 하지 않은 말을 꺼내는 시점' },
+          { en: "I regret telling you the bad news; I can see it upset you.", ko: '너에게 그 나쁜 소식을 말한 것을 후회한다. 네가 속상해하는 게 보인다.', note: '이미 말했던 과거 행동을 후회함' },
+          { en: 'He finished the introduction and went on to explain the results.', ko: '그는 서론을 마치고 이어서 결과를 설명했다.', note: '서론이라는 행동을 마치고 다른 행동(설명)으로 전환 — go on + to부정사' },
+          { en: 'He went on talking for another hour without noticing anyone was bored.', ko: '그는 아무도 지루해하는 걸 눈치채지 못한 채 한 시간을 더 계속 말했다.', note: '말하기라는 같은 행동을 계속함 — go on + 동명사' },
+        ],
+      },
+      { type: 'heading', text: '동명사와 to부정사 둘 다 가능하지만 의미 차이가 없는 동사' },
+      {
+        type: 'p',
+        text: '지금까지 살펴본 remember, forget, try, stop, regret, go on은 형태에 따라 의미가 달라지는 동사였습니다. 하지만 **like, love, hate, prefer, begin, start, continue, propose, intend, neglect, can\'t bear, can\'t stand**처럼 동명사와 to부정사를 모두 목적어로 취하면서도 **의미 차이가 거의 없는 동사**들도 있습니다. 이 동사들은 좋아함·싫어함이나 시작·계속처럼 시점의 구분이 뚜렷하지 않은 감정·상태를 나타내기 때문에, 어떤 형태를 쓰든 큰 의미 차이 없이 자연스럽게 바꿔 쓸 수 있습니다.',
+      },
+      {
+        type: 'table',
+        caption: '동명사·to부정사 둘 다 가능 (의미 차이 거의 없음)',
+        headers: ['동사', '의미'],
+        rows: [
+          ['like / love / hate', '좋아하다 / 사랑하다·매우 좋아하다 / 싫어하다'],
+          ['prefer', '더 선호하다'],
+          ["can't bear / can't stand", '참을 수 없다'],
+          ['begin / start', '시작하다'],
+          ['continue', '계속하다'],
+          ['propose', '제안하다'],
+          ['intend', '의도하다'],
+          ['neglect', '소홀히 하다'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'I like to work in an open-plan office with a team.', ko: '나는 개방형 사무실에서 팀과 일하는 것을 좋아한다.' },
+          { en: 'I like working in an open-plan office with a team.', ko: '나는 개방형 사무실에서 팀과 일하는 것을 좋아한다.', note: '위 문장과 의미 차이가 거의 없음' },
+          { en: 'Emails are really awkward. I prefer to meet in person.', ko: '이메일은 정말 어색하다. 나는 직접 만나는 것을 더 선호한다.' },
+          { en: 'After a short stop, they continued to drive toward the campsite.', ko: '잠깐 멈춘 뒤, 그들은 야영지를 향해 계속 운전했다.' },
+          { en: 'Once she had found a seat, she began writing her essay.', ko: '자리를 찾자마자, 그녀는 에세이를 쓰기 시작했다.' },
+          { en: "Why isn't the bus here yet? I really can't stand waiting like this.", ko: '왜 버스가 아직 안 오지? 나는 이렇게 기다리는 것을 정말 참을 수가 없다.' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '단, begin, start처럼 이 그룹에 속한 동사가 **진행형(be + -ing)으로 쓰일 때는 동명사를 목적어로 쓸 수 없습니다.** 같은 동사가 -ing를 두 번 겹쳐 쓰는 것이 어색하기 때문입니다. "I am starting to learn Korean."은 자연스럽지만, "I am starting learning Korean."처럼 -ing가 중복되는 문장은 쓰지 않고 반드시 to부정사를 씁니다.',
       },
       { type: 'heading', text: '동명사를 포함한 관용표현' },
       {

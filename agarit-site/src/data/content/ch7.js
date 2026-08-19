@@ -409,6 +409,186 @@ export const ch7 = {
           ['may', '불확실한 가능성 (강제성 없는 선택)', '허락, 부탁, 불확실한 추측'],
         ],
       },
+      { type: 'heading', text: 'must와 have to - 의무를 나타내는 조동사' },
+      {
+        type: 'p',
+        text: 'must와 have to는 **"반드시 실현되어야 하는 가능성", 즉 의무나 필요를 나타내는 조동사**입니다. can·may·will이 가능성의 정도를 낮음-중간-높음으로 나타냈다면, must와 have to는 그 스펙트럼의 가장 끝, "선택의 여지 없이 반드시 그래야 하는" 지점을 나타낸다고 볼 수 있습니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'You must wear a seatbelt in this car.', ko: '이 차에서는 반드시 안전벨트를 매야 한다.', note: '의무 - 반드시 지켜야 함' },
+          { en: 'I have to submit this form by Friday.', ko: '나는 금요일까지 이 서류를 제출해야 한다.', note: '필요 - 반드시 해야 하는 일' },
+          { en: 'We must finish this project today.', ko: '우리는 오늘 이 프로젝트를 반드시 끝내야 한다.' },
+        ],
+      },
+      { type: 'heading', text: '왜 must와 have to를 구별해서 쓸까 - 의무의 출처' },
+      {
+        type: 'p',
+        text: 'must와 have to는 우리말로 옮기면 둘 다 "~해야 한다"로 똑같아 보이지만, 원어민은 이 둘을 분명히 구별해서 사용합니다. **그 기준은 "이 의무를 누가 정했는가"입니다.** must는 화자 자신의 판단이나 의지에서 나온 의무를 나타내고, have to는 화자와 상관없이 외부의 규칙·법·상황 때문에 생긴 의무를 나타냅니다.',
+      },
+      {
+        type: 'table',
+        caption: 'must와 have to의 차이 - 의무의 출처',
+        headers: ['조동사', '의무의 출처', '예문'],
+        rows: [
+          ['must', '화자 자신의 판단·의지 (주관적)', 'I must call my mom. (엄마한테 꼭 전화해야겠다는 내 생각)'],
+          ['have to', '외부의 규칙·법·상황 (객관적)', 'I have to wear a uniform at school. (학교 규칙이라 어쩔 수 없이)'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'You must be quiet. I’m trying to concentrate.', ko: '조용히 해줘. 나 집중하려는 중이야.', note: '화자 본인이 원해서 내리는 의무' },
+          { en: 'You have to be quiet in the library.', ko: '도서관에서는 조용히 해야 한다.', note: '도서관 규칙이라는 외부 요인' },
+          { en: 'I have to take medicine three times a day.', ko: '나는 하루에 세 번 약을 먹어야 한다.', note: '의사의 지시(외부 요인)' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '실생활에서는 이 구분이 점점 흐려져서 have to가 must의 자리를 대신하는 경우도 많습니다. 다만 시험이나 문법 문제에서는 "누가 정한 의무인가"라는 기준으로 must/have to를 구별하는 문제가 자주 나오므로 원리를 정확히 기억해두는 것이 좋습니다.',
+      },
+      { type: 'heading', text: 'must not vs don’t have to - 반대말이 아니다' },
+      {
+        type: 'p',
+        text: 'must와 have to는 뜻이 비슷하지만, **이 둘을 부정문으로 바꾸면 전혀 다른 의미가 됩니다.** must not은 "반드시 하지 말아야 한다"는 강한 금지를 나타내지만, don’t have to는 "안 해도 된다"는 불필요, 즉 의무 자체가 없어진다는 뜻입니다. must의 부정은 "반드시(must)"에 "않다(not)"가 붙어 금지가 되지만, have to의 부정은 애초에 있던 필요(have to)가 사라지는 것이므로 이렇게 방향이 갈리는 것입니다.',
+      },
+      {
+        type: 'table',
+        caption: 'must not과 don’t have to의 차이',
+        headers: ['형태', '의미', '예문'],
+        rows: [
+          ['must not', '강한 금지 - 절대 하면 안 됨', 'You must not be late for work. (지각하면 절대 안 된다)'],
+          ['don’t have to', '불필요 - 하지 않아도 됨', 'You don’t have to come to work today. (오늘은 출근 안 해도 된다)'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Students must not use their phones during the exam.', ko: '학생들은 시험 중에 휴대폰을 사용해서는 안 된다.', note: '강한 금지 - 사용하면 절대 안 됨' },
+          { en: 'You don’t have to bring your own lunch. It’s provided.', ko: '점심을 직접 가져올 필요는 없다. 제공되니까.', note: '불필요 - 가져오지 않아도 문제없음' },
+        ],
+      },
+      { type: 'heading', text: 'should와 ought to - 조언·제안' },
+      {
+        type: 'p',
+        text: 'should와 ought to는 **"그렇게 하는 것이 좋겠다"는 조언이나 제안**을 나타내며, must보다는 약하고 can보다는 강한 정도의 가능성을 표현합니다. 의미는 거의 같지만 ought to는 조금 더 격식 있는 표현이며, 형태상으로도 다른 조동사와 달리 뒤에 to를 붙여 동사원형과 연결한다는 점이 특이합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'You should see a doctor about that cough.', ko: '그 기침 때문에 병원에 가보는 게 좋겠다.' },
+          { en: 'You ought to learn how to drive.', ko: '운전하는 법을 배워두는 게 좋겠다.', note: 'should보다 격식 있는 표현, to가 반드시 필요' },
+        ],
+      },
+      {
+        type: 'note',
+        text: 'have to와 ought to는 다른 조동사(can, may, will, must)와 달리 뒤에 to가 붙는 예외적인 형태입니다. 그럼에도 뒤에 동사원형이 온다는 점, 주어의 인칭에 따라 형태가 바뀌지 않는다는 점(ought to)은 다른 조동사와 동일합니다.',
+      },
+      { type: 'heading', text: '추측을 나타내는 조동사 - 확신도의 스펙트럼' },
+      {
+        type: 'p',
+        text: '조동사는 능력·허락·의무뿐 아니라, **화자가 지금 벌어지고 있는 일을 보고 얼마나 확신하는지(추측)**를 나타낼 때도 쓰입니다. 이 역시 이 레슨 전체를 관통하는 원리, 즉 "조동사는 일이 사실일 가능성의 정도를 나타낸다"는 원리를 그대로 따릅니다. 다만 이번에는 미래에 일어날 일이 아니라, 지금 이 순간 일어나고 있는 일에 대한 화자의 판단이라는 점이 다릅니다.',
+      },
+      {
+        type: 'table',
+        caption: '현재 상황에 대한 추측 - 확신도 스펙트럼',
+        headers: ['조동사', '확신의 정도', '뉘앙스'],
+        rows: [
+          ['must', '매우 높은 확신 (거의 확실)', '여러 정황상 틀림없이 그렇다'],
+          ['will', '높은 확신', '아마 그럴 것이다'],
+          ['may / might / could', '반반, 불확실', '그럴 수도 있고 아닐 수도 있다'],
+          ['can’t / couldn’t', '매우 높은 확신 (거의 불가능)', '틀림없이 그렇지 않다'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '여기서 꼭 기억해야 할 것은 **can’t/couldn’t가 "확신이 없다"는 뜻이 아니라, must와 정반대 방향으로 "강하게 확신한다"는 뜻**이라는 점입니다. must가 "틀림없이 맞다"라면 can’t는 "틀림없이 아니다"이므로, 확신도 스펙트럼에서는 이 둘이 서로 반대쪽 끝에 나란히 놓입니다. 반면 may/might/could는 그 사이 어딘가, 잘 모르겠다는 지점에 위치합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'It must be Tom calling. He’s the only one who calls this late.', ko: '틀림없이 Tom이 전화하는 걸 거야. 이 시간에 전화하는 사람은 그밖에 없거든.', note: '강한 긍정 확신' },
+          { en: 'It could be Dave. I don’t know.', ko: 'Dave일 수도 있어. 잘 모르겠어.', note: '반반, 불확실한 추측' },
+          { en: 'It can’t be Jane, because she’s on vacation.', ko: 'Jane일 리가 없어, 그녀는 지금 휴가 중이니까.', note: '강한 부정 확신 - Jane일 가능성이 없다는 것을 확신' },
+          { en: 'Fay’s got a sore throat and isn’t feeling well. She might have a cold.', ko: 'Fay는 목이 아프고 몸 상태가 안 좋다. 감기에 걸린 것일 수도 있다.', note: '불확실한 추측' },
+          { en: 'John must be very bored at home. He’s usually so active.', ko: 'John은 집에서 틀림없이 매우 지루해하고 있을 것이다. 그는 원래 활동적이니까.', note: '정황을 근거로 한 강한 확신' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '추측의 조동사 - 확신도',
+        parts: [
+          { tag: 'S', text: 'It' },
+          { tag: 'V', text: 'can’t be' },
+          { tag: 'C', text: 'Jane' },
+          { tag: 'M', text: 'because she’s on vacation' },
+        ],
+        translation: 'Jane일 리가 없어, 그녀는 휴가 중이니까. (can’t가 강한 부정 확신을 나타냄)',
+      },
+      { type: 'heading', text: '과거 일에 대한 추측 - 조동사 + have + 과거분사' },
+      {
+        type: 'p',
+        text: '지금까지 본 추측은 모두 "지금" 벌어지고 있는 일에 대한 것이었습니다. 그런데 **이미 끝난 과거의 일을 추측할 때는 "조동사 + 동사원형" 대신 "조동사 + have + 과거분사"의 형태**를 씁니다. 조동사 뒤에 동사원형이 오면 그 조동사가 가리키는 시점이 지금·앞으로가 되지만, have + 과거분사가 오면 그 시점이 이미 지나간 과거로 넘어가기 때문입니다. 확신의 정도를 나타내는 원리는 현재 추측과 완전히 동일하게 적용됩니다.',
+      },
+      {
+        type: 'table',
+        caption: '과거에 대한 추측 - 형태와 확신의 정도',
+        headers: ['형태', '확신의 정도', '의미'],
+        rows: [
+          ['must have + p.p.', '매우 높은 확신 (긍정)', '틀림없이 ~했을 것이다'],
+          ['may / might / could have + p.p.', '반반, 불확실', '~했을 수도 있다'],
+          ['can’t / couldn’t have + p.p.', '매우 높은 확신 (부정)', '틀림없이 ~하지 않았을 것이다'],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'He just disappeared. Aliens must have taken him.', ko: '그는 그냥 사라져버렸다. 틀림없이 외계인이 그를 데려간 것이다.', note: '강한 긍정 확신 + 과거 시점(taken)' },
+          { en: 'They might have taken him to another planet.', ko: '외계인들이 그를 다른 행성으로 데려갔을 수도 있다.', note: '불확실한 과거 추측' },
+          { en: 'It can’t have been aliens, they don’t exist.', ko: '외계인이었을 리가 없다, 외계인은 존재하지 않으니까.', note: '강한 부정 확신 - 과거에 일어나지 않았음을 확신' },
+          { en: 'Bethan didn’t return my call yesterday. She must have been busy.', ko: 'Bethan은 어제 내 전화를 다시 걸지 않았다. 틀림없이 바빴을 것이다.' },
+          { en: 'She might not have written down my number correctly.', ko: '그녀가 내 번호를 정확히 적어두지 않았을 수도 있다.', note: '불확실한 부정 추측' },
+          { en: 'Paula can’t have been at the party last night, she was at work.', ko: 'Paula는 어젯밤 파티에 있었을 리가 없다, 그녀는 일하고 있었으니까.', note: '강한 부정 확신' },
+        ],
+      },
+      {
+        type: 'note',
+        text: 'couldn’t have는 can’t have와 마찬가지로 "그런 일이 절대 없었다"는 강한 확신을 나타낼 때 씁니다. 반면 might not have/may not have는 "그런 일이 없었을 수도 있다"는 불확실한 추측을 나타내므로 확신의 세기가 전혀 다릅니다. 즉 not이 붙었다고 해서 모두 같은 정도의 부정 추측이 되는 것이 아니라, 어떤 조동사에 not이 붙었는지에 따라 확신의 정도가 그대로 유지된다는 점을 기억해야 합니다.',
+      },
+      {
+        type: 'sentence-diagram',
+        label: '과거에 대한 추측',
+        parts: [
+          { tag: 'S', text: 'Aliens' },
+          { tag: 'V', text: 'must have taken' },
+          { tag: 'O', text: 'him' },
+        ],
+        translation: '틀림없이 외계인이 그를 데려간 것이다. (must have + 과거분사 - 과거 사실에 대한 강한 확신)',
+      },
+      { type: 'heading', text: '자주 하는 실수 - 의무·추측 조동사' },
+      {
+        type: 'table',
+        caption: '의무·추측 조동사에서 흔한 실수',
+        headers: ['잘못된 표현', '바른 표현', '설명'],
+        rows: [
+          ['*You must to wear a seatbelt.', 'You must wear a seatbelt.', 'must 뒤에는 to 없이 동사원형이 바로 온다. to가 필요한 것은 have to, ought to뿐이다.'],
+          ['*You mustn’t come to work today. (불필요를 의미하려던 경우)', 'You don’t have to come to work today.', 'must not(금지)과 don’t have to(불필요)를 혼동하면 정반대의 의미가 된다.'],
+          ['*Aliens must took him.', 'Aliens must have taken him.', '과거의 일을 추측할 때는 조동사 뒤에 동사원형이 아니라 have + 과거분사를 써야 한다.'],
+          ['*She can’t forgot to call me back. (불확실한 추측을 의미하려던 경우)', 'She might not have forgotten to call me back.', 'can’t/couldn’t have는 강한 확신을 나타내므로, 불확실한 추측에는 might/may not have를 써야 한다.'],
+        ],
+      },
+      {
+        type: 'callout',
+        title: '핵심 정리 - 의무와 추측을 나타내는 조동사',
+        items: [
+          'must와 have to는 둘 다 의무를 나타내지만, must는 화자 자신의 주관적 판단, have to는 규칙·상황 등 외부 요인에서 비롯된 의무를 나타낸다.',
+          'must not(강한 금지·절대 안 됨)과 don’t have to(불필요·안 해도 됨)는 뜻이 정반대이므로 혼동하지 않도록 주의한다.',
+          'should와 ought to는 조언·제안을 나타내며 뜻은 비슷하지만, ought to는 뒤에 to가 붙는 예외적 형태이다.',
+          '현재 상황에 대한 추측은 must(강한 긍정) - will(높은 확신) - may/might/could(불확실) - can’t/couldn’t(강한 부정) 순으로 확신도가 배열된다.',
+          '이미 끝난 일을 추측할 때는 "조동사 + have + 과거분사" 형태를 쓰며, 확신의 정도는 현재 추측과 동일한 원리를 따른다.',
+        ],
+      },
       { type: 'heading', text: '흔히 하는 실수 - 조동사의 형태' },
       {
         type: 'p',

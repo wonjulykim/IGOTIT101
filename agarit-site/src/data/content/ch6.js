@@ -189,6 +189,43 @@ export const ch6 = {
         type: 'note',
         text: 'family, team처럼 사람들로 이루어진 집합명사는 구성원 개개인의 다른 행동을 강조할 때 복수로 쓰이는 경우도 있지만, 중학교 수준에서는 "하나의 팀/가족으로서" 단수로 취급하는 것이 기본 원칙이라고 알아두면 충분합니다.',
       },
+      { type: 'heading', text: '형태는 복수인데 단수로 취급하는 명사' },
+      {
+        type: 'p',
+        text: '반대로 **형태(철자)는 복수처럼 -s로 끝나거나 복수처럼 보이지만, 의미상 하나의 대상을 가리키기 때문에 단수로 취급되는 명사들도 있습니다.** 대표적으로 책·영화 등 작품의 제목이 복수형 단어를 포함하더라도 그 작품 자체는 "하나"이므로 단수 동사를 쓰고, Mathematics, Politics, Physics, Economics, Athletics, Gymnastics 같은 학문·스포츠 분야 이름도 -s로 끝나지만 하나의 과목·분야를 가리키므로 단수 동사를 씁니다. The Netherlands, The Philippines처럼 -s로 끝나는 나라 이름도 마찬가지로 단수 취급합니다.',
+      },
+      {
+        type: 'table',
+        caption: '형태는 복수, 의미는 단수인 명사',
+        headers: ['유형', '예', '예문'],
+        rows: [
+          ['작품 제목(복수형 단어 포함)', 'The Canterbury Tales, Little Women', 'The Canterbury Tales was first published in the 1400s.'],
+          ['학문·분야 이름 (-ics)', 'Mathematics, Politics, Physics, Athletics, Gymnastics', 'Mathematics is becoming a more popular subject. / Gymnastics was the most enjoyable sport at school.'],
+          ['국가 이름 (-s로 끝남)', 'The Netherlands, The Philippines', 'The Netherlands is famous for its tulip industry.'],
+        ],
+      },
+      {
+        type: 'note',
+        text: '이 명사들은 "복수 형태 = 복수 의미"라는 일반적인 규칙의 예외입니다. 판단 기준은 형태(철자)가 아니라 의미입니다 — 그 단어가 결국 가리키는 것이 "하나의 작품·하나의 학문 분야·하나의 나라"라면, 겉모습이 -s로 끝나더라도 단수로 취급합니다.',
+      },
+      { type: 'heading', text: '집합명사 — 하나의 단위인가, 구성원 개개인인가' },
+      {
+        type: 'p',
+        text: 'family, team, class, group처럼 여러 사람을 하나로 묶어 부르는 집합명사는, 그 무리를 "하나의 단위"로 볼 때는 단수 동사를, 무리 "안의 개별 구성원들"을 강조할 때는 복수 동사를 쓸 수 있습니다. 다만 이 차이는 미국식 영어와 영국식 영어에서 다르게 나타납니다 — **미국식 영어는 집합명사를 거의 항상 단수로 취급하지만, 영국식 영어는 문맥에 따라 단수·복수를 모두 자연스럽게 씁니다.**',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The team is getting a new manager next year.', ko: '그 팀은 내년에 새 감독을 맞이한다.', note: '팀을 하나의 단위로 볼 때 → 단수 (미국식 기본)' },
+          { en: 'The team are feeling excited about the news.', ko: '그 팀 (선수들 각자)은 그 소식에 들떠 있다.', note: '팀 구성원 개개인을 가리킬 때 → 복수 (영국식 표현)' },
+          { en: 'The band has just released its new album.', ko: '그 밴드는 새 앨범을 막 발매했다.', note: '단수 취급 — its로 받음' },
+          { en: 'The band have been on tour to promote their new album.', ko: '그 밴드는 새 앨범 홍보를 위해 투어 중이다.', note: '복수 취급 — their로 받음' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '중학교 영어에서는 미국식 기준(집합명사는 단수 취급)을 원칙으로 익히는 것이 안전합니다. family, team 뒤에 is/has, its를 쓰는 것이 가장 무난한 선택이며, are/have/their를 쓴 문장을 보더라도 "영국식 표현이며 구성원 개개인을 강조하는 것"이라고 이해하면 충분합니다.',
+      },
       {
         type: 'callout',
         title: '6장 핵심 정리',

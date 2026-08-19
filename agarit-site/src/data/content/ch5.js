@@ -85,6 +85,24 @@ export const ch5 = {
           { icon: '☁️', label: '조동사·추측', sub: 'may/might' },
         ],
       },
+      { type: 'heading', text: '자동사와 타동사 — 일반동사가 목적어를 요구하는가' },
+      {
+        type: 'p',
+        text: '일반동사는 다시 목적어(동작의 대상)를 필요로 하는지에 따라 나뉩니다. **목적어를 반드시 필요로 하는 동사를 타동사(transitive verb), 목적어 없이도 문장이 완성되는 동사를 자동사(intransitive verb)라고 부릅니다.** write, buy, give처럼 "누구에게 무엇을 하는지"의 대상이 있어야 의미가 완성되는 동사는 타동사이고, arrive, happen, sleep처럼 동작 자체로 의미가 끝나는 동사는 자동사입니다. read처럼 두 가지로 다 쓰이는 동사도 있습니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'Toni writes short stories.', ko: 'Toni는 단편소설을 쓴다.', note: '타동사 writes — short stories(목적어)가 없으면 "무엇을 쓰는지" 의미가 불완전함' },
+          { en: 'The bus arrived.', ko: '버스가 도착했다.', note: '자동사 arrived — 목적어 없이 동작만으로 문장이 완성됨 (*The bus arrived the station.처럼 뒤에 목적어를 바로 붙일 수 없음)' },
+          { en: 'Jake was reading (a book).', ko: 'Jake는 (책을) 읽고 있었다.', note: 'read는 목적어를 넣어도 되고 생략해도 되는 동사 — 타동사·자동사 두 가지로 다 쓰임' },
+          { en: 'Ronda gave her cat some food.', ko: 'Ronda는 자신의 고양이에게 먹이를 주었다.', note: '간접목적어(her cat)와 직접목적어(some food)를 둘 다 취하는 4형식 동사(give, send, show, tell 등)' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '타동사·자동사의 구분은 "뒤에 전치사 없이 명사를 바로 붙일 수 있는가"로 간단히 확인할 수 있습니다. 특히 한국어로는 "~에 도착하다", "~와 결혼하다"처럼 조사 "에/와"가 붙어서 목적어처럼 느껴지지만 영어에서는 전치사 없이 목적어를 바로 취하는 동사들(discuss, marry, resemble, enter, reach, attend, contact 등)에 학습자들이 실수로 전치사를 넣는 경우가 많습니다. *She married with him.(×) → She married him.(○) / *He discussed about the plan.(×) → He discussed the plan.(○)',
+      },
       { type: 'heading', text: 'be동사가 없으면 문장이 무너지는 이유' },
       {
         type: 'p',
@@ -113,6 +131,25 @@ export const ch5 = {
         type: 'note',
         text: '한국어는 "그녀는 의사이다"처럼 "-이다"라는 서술격 조사만으로도 문장이 완성되지만, 영어는 명사·형용사가 단독으로 서술어 자리에 올 수 없습니다. 그래서 한국어를 그대로 영어로 옮기려는 학습자는 be동사를 자주 빠뜨립니다. "그녀는 예쁘다"를 *She pretty.라고 쓰는 실수가 대표적입니다. 반드시 She is pretty.처럼 연결하는 동사를 넣어야 합니다.',
       },
+      { type: 'heading', text: 'be동사 말고도 연결동사가 있다 — linking verbs' },
+      {
+        type: 'p',
+        text: '"연결"이라는 역할을 하는 동사가 be동사 하나뿐인 것은 아닙니다. **seem, look, become, get, smell, taste, sound, feel 같은 동사도 주어와 보어(명사·형용사)를 이어주는 연결동사(linking verb)로 쓰입니다.** 이 동사들 뒤에는 동작의 대상(목적어)이 아니라 주어를 설명하는 말(보어)이 오기 때문에, be동사와 마찬가지로 부사가 아닌 형용사가 와야 한다는 점이 중요합니다.',
+      },
+      {
+        type: 'example',
+        items: [
+          { en: 'The children are happy.', ko: '아이들은 행복하다.', note: 'be동사의 기본적인 연결' },
+          { en: 'Harry looks just like his father.', ko: 'Harry는 그의 아버지를 꼭 닮았다.', note: 'looks가 Harry와 like his father를 연결' },
+          { en: 'This soup tasted disgusting.', ko: '이 수프는 역겨운 맛이 났다.', note: 'taste는 형용사 disgusting을 보어로 취함 (disgustingly로 쓰면 틀림)' },
+          { en: 'After leaving school, she became a teacher.', ko: '학교를 졸업한 후, 그녀는 교사가 되었다.', note: 'became이 she와 a teacher를 연결' },
+          { en: 'Whatever you\'re cooking smells delicious.', ko: '네가 요리하고 있는 게 뭐든 냄새가 좋다.', note: 'smells + 형용사(delicious)' },
+        ],
+      },
+      {
+        type: 'note',
+        text: '연결동사 뒤에 형용사 대신 부사를 쓰는 것은 매우 흔한 실수입니다. *You look nicely today.(×) → You look nice today.(○) — nicely는 look이라는 "동작"을 꾸미는 것이 아니라, You의 상태를 설명해야 하므로 형용사 nice가 와야 합니다. 반면 같은 동사라도 일반동사(동작)로 쓰이면 부사가 옵니다: He looked at me angrily.(그는 화난 듯이 나를 쳐다보았다 — 이때 looked at은 "보다"라는 동작이므로 부사 angrily가 자연스럽습니다.)',
+      },
       { type: 'heading', text: 'be동사와 일반동사를 동시에 쓸 때 생기는 실수' },
       {
         type: 'p',
@@ -133,6 +170,26 @@ export const ch5 = {
       {
         type: 'note',
         text: '판단 기준: 뒤에 오는 말이 "동작·발생을 나타내는 일반동사"라면 be동사를 붙이지 않습니다. 뒤에 오는 말이 "명사나 형용사(보어)"라면 be동사가 반드시 필요합니다. She is study.(×) / She studies.(○) / She is a student.(○)',
+      },
+      { type: 'heading', text: '동작동사와 상태동사 — 같은 동사가 뜻에 따라 갈린다' },
+      {
+        type: 'p',
+        text: '일반동사는 동작을 나타내는 동사(action verb)와 상태를 나타내는 동사(state verb)로도 나눌 수 있습니다. **동작동사(run, eat, write 등)는 진행형(be + -ing)으로 쓸 수 있지만, 상태동사(know, love, believe, belong 등)는 이미 지속되는 상태를 나타내므로 보통 진행형으로 쓰지 않습니다.** 그런데 think, taste, see, smell, weigh처럼 하나의 동사가 문맥에 따라 동작동사도 되고 상태동사도 되는 경우가 있어 주의가 필요합니다.',
+      },
+      {
+        type: 'table',
+        caption: '한 동사가 동작과 상태로 갈리는 경우',
+        headers: ['동사', '동작(진행형 가능)', '상태(진행형 불가)'],
+        rows: [
+          ['think', 'I am thinking about taking up fencing. (~을 고려하고 있다)', 'I think fencing is a great sport. (~라고 생각한다, 의견)'],
+          ['taste', 'The chef was tasting his soup. (맛을 보는 동작)', 'This soup tasted disgusting. (~한 맛이 나다, 상태)'],
+          ['see', 'I\'m seeing some friends for lunch tomorrow. (만나기로 하다)', 'I saw some birds at the park yesterday. (눈에 보이다)'],
+          ['have', 'We are having dinner now. (먹는 중, 동작)', 'She has two cats and a dog. (소유, 상태)'],
+        ],
+      },
+      {
+        type: 'note',
+        text: 'feel, sound, hurt처럼 원래 상태동사로 분류되는 단어도, 변화나 일시적인 상황을 강조하고 싶을 때는 예외적으로 진행형을 쓰기도 합니다. Are you feeling better today?(오늘은 좀 나아지고 있어?)처럼 진행형을 쓰면 "상태가 변화하는 중"이라는 느낌을 주고, How do you feel about modern art?처럼 단순현재를 쓰면 "고정된 의견·상태"를 나타냅니다. My leg is really hurting this morning.도 마찬가지로 통증이 계속되는 상황을 생생하게 강조하는 표현입니다.',
       },
       { type: 'heading', text: '조동사: 동사의 의미에 태도를 더하는 동사' },
       {

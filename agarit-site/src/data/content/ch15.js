@@ -333,6 +333,140 @@ export const ch15 = {
         type: 'note',
         text: '같은 문장, 같은 부가의문문이라도 억양에 따라 상대에게 전달되는 뉘앙스가 완전히 달라집니다. Amy의 나이를 모르는 사람이 올림조로 물으면 순수한 질문이 되지만, Amy의 나이를 이미 알고 있는 사람이 내림조로 말하면 "내가 알던 대로 맞지?"라는 확인·동의 요청이 됩니다.',
       },
+      { type: 'heading', text: '완료형 문장의 부가의문문 — have가 스스로 조동사가 되는 경우' },
+      {
+        type: 'p',
+        text: '지금까지는 일반동사 문장의 부가의문문에 do/does/did를 "빌려온다"고 배웠습니다. 그런데 have동사가 **완료형(have/has/had + p.p.)의 조동사로 쓰인 경우에는 이미 그 문장 안에 조동사 역할을 하는 단어가 있으므로, do를 새로 빌려올 필요 없이 have/has/had를 그대로 가져와 극성만 반대로 바꾸면 됩니다.** 즉 be동사·조동사문과 똑같은 원리(문장 안에 이미 있는 조동사를 재사용)가 완료형에도 그대로 적용되는 것입니다.',
+      },
+      {
+        type: 'table',
+        caption: '완료형 have와 일반동사 have의 구분',
+        headers: ['have의 역할', '판별법', '부가의문문 만드는 법', '예문'],
+        rows: [
+          ['완료형 조동사 (have/has/had + p.p.)', '뒤에 과거분사가 온다', 'have/has/had를 그대로 가져와 극성만 반전', "You haven't seen my keys, have you?"],
+          ['일반동사 (가지다, 먹다 등의 의미)', '뒤에 명사(목적어)가 온다', '일반동사이므로 do/does/did를 빌려와야 함', "She has a car, doesn't she?"],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: "You haven't seen my keys, have you?", ko: '내 열쇠 못 봤지, 그렇지?', note: '완료형 조동사 haven\'t를 그대로 가져와 긍정 태그 have you?를 만듦' },
+          { en: "Mel has finished her homework, hasn't she?", ko: 'Mel은 숙제를 끝냈어, 그렇지?', note: '완료형 has → 부정 태그 hasn\'t she?' },
+          { en: "They had already left before we arrived, hadn't they?", ko: '우리가 도착하기 전에 그들은 이미 떠났었지, 그렇지?', note: '과거완료 had → hadn\'t they?' },
+          { en: "She has a lot of homework tonight, doesn't she?", ko: '그녀는 오늘 밤 숙제가 많지, 그렇지?', note: '이때 has는 완료형이 아니라 "가지다"라는 뜻의 일반동사이므로 do를 빌려와야 함' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '부가의문문 구조 (완료형 조동사 have)',
+        parts: [
+          { tag: 'S', text: 'You' },
+          { tag: 'V', text: "haven't seen" },
+          { tag: 'O', text: 'my keys' },
+          { tag: 'Tag', text: 'have you?' },
+        ],
+        translation: "You haven't seen my keys, have you? (완료형 조동사 haven't를 그대로 재사용)",
+      },
+      {
+        type: 'note',
+        text: '결국 부가의문문을 만들 때 가장 먼저 확인해야 할 것은 "이 문장에 이미 조동사(be, 조동사, have/has/had완료형)가 있는가"입니다. 있다면 그것을 그대로 재사용하고, 없다면(즉 일반동사 혼자 쓰였다면) 그때만 do/does/did를 새로 빌려옵니다.',
+      },
+      { type: 'heading', text: 'There is/are 구문과 부정대명사 주어의 부가의문문' },
+      {
+        type: 'p',
+        text: '유도부사 there로 시작하는 존재문(There is/are ~)은 의미상 주어가 없어 보이지만, **부가의문문에서는 there 자체를 대명사처럼 취급하여 그대로 반복합니다.** 한편 everyone, someone, somebody, nobody처럼 사람을 가리키는 부정대명사가 주어일 때는, 이 단어들이 문법적으로는 단수 취급을 받아 동사는 단수형(is)을 쓰지만, **의미상으로는 "여러 사람"을 막연히 가리키므로 부가의문문의 주어는 단수 대명사(he/she)가 아니라 복수 대명사 they로 받습니다.**',
+      },
+      {
+        type: 'table',
+        caption: 'There is/are와 부정대명사 주어의 부가의문문',
+        headers: ['앞 문장의 주어', '부가의문문의 주어', '극성 규칙', '예문'],
+        rows: [
+          ['There (There is/are 구문)', 'there', '일반 규칙과 동일 (긍정↔부정)', "There is a problem, isn't there?"],
+          ['everyone / everybody / someone / somebody (긍정적 의미)', 'they', '일반 규칙과 동일', "Everyone is ready, aren't they?"],
+          ['no one / nobody / none (부정적 의미)', 'they', '이미 부정이므로 부가의문문은 긍정', "No one called, did they?"],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: "There are enough chairs for everyone, aren't there?", ko: '모두를 위한 의자가 충분히 있어, 그렇지?', note: 'there를 그대로 대명사처럼 다시 사용' },
+          { en: "There wasn't anyone in the room, was there?", ko: '방 안에 아무도 없었지, 그렇지?', note: '부정문(wasn\'t)이므로 긍정 태그' },
+          { en: "Everyone enjoyed the trip, didn't they?", ko: '모두가 여행을 즐겼어, 그렇지?', note: 'everyone(단수 취급, 사람 여럿을 의미)의 부가의문문 주어는 they' },
+          { en: "Somebody left the window open, didn't they?", ko: '누군가 창문을 열어뒀지, 그렇지?', note: 'somebody도 they로 받음' },
+          { en: "Nobody answered the phone, did they?", ko: '아무도 전화를 받지 않았지, 그렇지?', note: 'nobody는 이미 부정 의미이므로 긍정 부가의문문' },
+        ],
+      },
+      { type: 'heading', text: 'I think/believe/suppose로 시작하는 문장의 부가의문문' },
+      {
+        type: 'p',
+        text: 'I think, I believe, I suppose, I guess처럼 화자의 생각을 나타내는 동사가 이끄는 문장 뒤에 that절이 이어질 때는, **주절(I think)이 아니라 종속절(that절)의 동사를 기준으로 부가의문문을 만듭니다.** 이는 화자가 진짜로 궁금해하는 것이 "내가 생각하는지 아닌지"가 아니라 that절의 내용(그녀가 오는지)이기 때문입니다. 단, **주절이 부정문(I don\'t think ~)이면 그 부정의 의미가 실제로는 종속절에 걸리는 것으로 해석되어(부정 전이, negative transfer), 종속절이 의미상 부정이 되므로 부가의문문은 긍정이 됩니다.**',
+      },
+      {
+        type: 'table',
+        caption: 'I think류 문장의 부가의문문 규칙',
+        headers: ['문장 형태', '부가의문문 기준', '예문'],
+        rows: [
+          ['I think + 긍정 that절', 'that절의 동사, 극성은 that절 기준으로 반전', "I think she is honest, isn't she?"],
+          ['I don\'t think + 긍정 that절', '주절의 부정이 that절 의미에 전이되므로 긍정 태그', "I don't think she is honest, is she?"],
+          ['I am sure / I hope + that절', '주절 자체의 확신·소망이 핵심이므로 주절 동사 기준 (예외)', "I hope you can come, can't you? / I'm sure he'll win, won't he?"],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: "I think it will rain tomorrow, won't it?", ko: '내일 비가 올 것 같아, 그렇지 않을까?', note: '주절(I think)이 아니라 종속절(it will rain)의 조동사 will 기준' },
+          { en: "I believe he passed the exam, didn't he?", ko: '그가 시험에 합격했다고 생각해, 그렇지?', note: '종속절 he passed의 동사(일반동사, 과거) 기준으로 didn\'t he' },
+          { en: "I don't think he is coming, is he?", ko: '그가 올 것 같지 않아, 그렇지?', note: '주절의 부정(don\'t think)이 종속절 의미에 전이되어 긍정 태그 is he?를 사용' },
+          { en: "I don't believe she told the truth, did she?", ko: '그녀가 사실을 말했다고 생각하지 않아, 그렇지?', note: '역시 부정 전이로 긍정 태그' },
+        ],
+      },
+      {
+        type: 'sentence-diagram',
+        label: '부가의문문 구조 (I think + that절, 종속절 기준)',
+        parts: [
+          { tag: 'S', text: 'I' },
+          { tag: 'V', text: 'think' },
+          { tag: 'M', text: 'it will rain tomorrow' },
+          { tag: 'Tag', text: "won't it?" },
+        ],
+        translation: "I think it will rain tomorrow, won't it? (주절 think가 아니라 종속절 it will rain 기준)",
+      },
+      { type: 'heading', text: '부정 의미를 가진 다양한 단어와 부가의문문' },
+      {
+        type: 'p',
+        text: '문장에 not이나 조동사의 부정형이 없어도, **never, hardly, seldom, rarely, little, few, no, no one, none처럼 그 자체로 부정의 의미를 담고 있는 단어가 포함되면 문장 전체가 의미상 부정문으로 취급되어, 부가의문문은 긍정형을 사용합니다.**',
+      },
+      {
+        type: 'table',
+        caption: '부정 의미를 가진 단어와 부가의문문',
+        headers: ['부정 의미 단어', '예문 (긍정 형태의 동사 + 부정 의미 단어)', '부가의문문'],
+        rows: [
+          ['never', 'She has never been abroad', "has she?"],
+          ['hardly / hardly ever', 'He hardly speaks in class', "does he?"],
+          ['seldom / rarely', 'They rarely eat out', "do they?"],
+          ['little / few', 'There is little hope left', "is there?"],
+          ['no / no one / none', 'No students were late', "were they?"],
+        ],
+      },
+      {
+        type: 'example',
+        items: [
+          { en: "She has never been abroad, has she?", ko: '그녀는 한 번도 해외에 나가본 적이 없지, 그렇지?', note: '동사 has는 긍정형이지만 never 때문에 의미상 부정문 → 긍정 태그' },
+          { en: "He hardly ever exercises, does he?", ko: '그는 운동을 거의 안 하지, 그렇지?', note: 'hardly ever도 부정 의미이므로 긍정 태그' },
+          { en: "They seldom visit their grandparents, do they?", ko: '그들은 조부모님을 거의 찾아뵙지 않지, 그렇지?' },
+          { en: "There is little time left, is there?", ko: '남은 시간이 거의 없지, 그렇지?', note: 'little(거의 없는)이 부정 의미이므로 긍정 태그' },
+        ],
+      },
+      {
+        type: 'callout',
+        title: '15장 심화 정리 — DK 문법서에서 보강한 예외 규칙',
+        items: [
+          '완료형(have/has/had + p.p.)에서 have는 그 자체로 조동사이므로, do를 빌려오지 않고 have/has/had를 그대로 재사용해 부가의문문을 만든다. (다만 "가지다"라는 뜻의 일반동사 have는 do/does/did를 사용한다.)',
+          'There is/are 구문은 there를 대명사처럼 그대로 재사용하고, everyone/somebody 등 사람을 가리키는 부정대명사 주어는 (동사는 단수형이라도) 부가의문문에서 they로 받는다.',
+          'I think/believe/suppose + that절 구문은 종속절의 동사를 기준으로 부가의문문을 만들며, 주절이 부정(I don\'t think ~)이면 그 부정이 종속절에 전이되어 부가의문문은 긍정이 된다. (단, I hope/I\'m sure처럼 주절의 의미 자체가 핵심인 경우는 예외적으로 주절 기준.)',
+          'never, hardly, seldom, rarely, little, few, no(one) 등은 not 없이도 문장을 의미상 부정문으로 만들므로, 이런 단어가 있으면 동사가 긍정형이어도 부가의문문은 긍정형을 사용한다.',
+        ],
+      },
       {
         type: 'callout',
         title: '15장 핵심 정리',
