@@ -173,13 +173,27 @@
 
 .essay-input { resize: vertical; }
 
-.essay-word-count {
+.essay-word-count-row {
   margin-top: 6px;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.essay-word-count {
   font-size: 0.82rem;
   color: var(--text-dim);
   font-weight: 600;
 }
+
+.save-status {
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.save-status-saved { color: var(--success); }
+.save-status-pending { color: var(--text-dim); font-style: italic; }
+.essay-draft-ko .save-status { display: block; margin-top: 6px; }
 
 .essay-feedback { margin-top: 14px; }
 .essay-model {

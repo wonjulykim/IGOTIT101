@@ -3,6 +3,7 @@ import { isShortAnswerCorrect, essayKeywordHits } from '../utils/grading'
 import { XP_RULES } from '../utils/gamification'
 import { getChapter } from '../data/chapters'
 import { saveKoreanDraft, getKoreanDraft } from '../utils/progress'
+import { useSavedIndicator } from '../utils/useSavedIndicator'
 import { StepChecklist } from './StepItem'
 import AiEssayGrader from './AiEssayGrader'
 import './QuestionCard.css'
@@ -114,6 +115,14 @@ function ShortBody({ q, value, onChange, submitted }) {
   )
 }
 
+function SaveStatus({ saved }) {
+  return (
+    <span className={`save-status ${saved ? 'save-status-saved' : 'save-status-pending'}`}>
+      {saved ? '💾 저장됨' : '입력 중…'}
+    </span>
+  )
+}
+
 function countWords(text) {
   return String(text || '').trim().split(/\s+/).filter(Boolean).length
 }
@@ -127,6 +136,9 @@ function EssayBody({ q, value, onChange, submitted, unitId }) {
     setDraftKo(text)
     saveKoreanDraft(unitId, q.id, text)
   }
+
+  const draftSaved = useSavedIndicator(draftKo)
+  const essaySaved = useSavedIndicator(value)
 
   return (
     <div>
@@ -143,6 +155,7 @@ function EssayBody({ q, value, onChange, submitted, unitId }) {
           disabled={submitted}
           onChange={(e) => handleDraftChange(e.target.value)}
         />
+        {!submitted && draftKo && <SaveStatus saved={draftSaved} />}
       </div>
       <textarea
         className="essay-input"
@@ -152,7 +165,10 @@ function EssayBody({ q, value, onChange, submitted, unitId }) {
         disabled={submitted}
         onChange={(e) => onChange(e.target.value)}
       />
-      <div className="essay-word-count">✏️ {wordCount}단어</div>
+      <div className="essay-word-count-row">
+        <div className="essay-word-count">✏️ {wordCount}단어</div>
+        {!submitted && value && <SaveStatus saved={essaySaved} />}
+      </div>
       {submitted && q.rubric && (
         <AiEssayGrader q={q} studentAnswer={value} unitId={unitId} />
       )}

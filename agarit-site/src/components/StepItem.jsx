@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { saveStepDraft, getStepDraft } from '../utils/progress'
+import { useSavedIndicator } from '../utils/useSavedIndicator'
 import './StepItem.css'
 
 export function StepItem({ groupKey, index, step, unitId, qid }) {
   const draftKey = `${groupKey}-${index}`
   const [text, setText] = useState(() => getStepDraft(unitId, qid, draftKey))
+  const saved = useSavedIndicator(text)
 
   function handleChange(v) {
     setText(v)
@@ -25,6 +27,11 @@ export function StepItem({ groupKey, index, step, unitId, qid }) {
         value={text}
         onChange={(e) => handleChange(e.target.value)}
       />
+      {text.trim() && (
+        <span className={`save-status ${saved ? 'save-status-saved' : 'save-status-pending'}`}>
+          {saved ? '💾 저장됨' : '입력 중…'}
+        </span>
+      )}
     </li>
   )
 }

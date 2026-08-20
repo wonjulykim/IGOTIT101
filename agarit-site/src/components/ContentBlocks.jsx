@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import SentenceDiagram from './SentenceDiagram'
 import PrepositionDiagram from './PrepositionDiagram'
 import WordOrderDiagram from './WordOrderDiagram'
@@ -5,6 +6,7 @@ import TimelineDiagram from './TimelineDiagram'
 import TransformDiagram from './TransformDiagram'
 import IconRow from './IconRow'
 import VideoEmbed from './VideoEmbed'
+import { addVocabWord, removeVocabWord, isVocabSaved } from '../utils/progress'
 import { renderEmphasis as splitEmphasis } from '../utils/emphasis'
 import './ContentBlocks.css'
 
@@ -18,15 +20,15 @@ function renderEmphasis(text) {
   )
 }
 
-export default function ContentBlocks({ blocks }) {
+export default function ContentBlocks({ blocks, unitId }) {
   return (
     <div className="content-blocks">
-      {blocks.map((block, i) => <Block key={i} block={block} index={i} />)}
+      {blocks.map((block, i) => <Block key={i} block={block} index={i} unitId={unitId} />)}
     </div>
   )
 }
 
-function Block({ block, index }) {
+function Block({ block, index, unitId }) {
   switch (block.type) {
     case 'heading':
       return <h3 className="block-heading" id={`heading-${index}`}>{block.text}</h3>
@@ -40,6 +42,9 @@ function Block({ block, index }) {
         </div>
       )
     case 'callout':
+      if (block.title === '어휘 노트' && unitId) {
+        return <VocabCallout title={block.title} items={block.items} unitId={unitId} />
+      }
       return (
         <div className="block-callout">
           <h4>{block.title}</h4>
@@ -127,4 +132,48 @@ function Block({ block, index }) {
     default:
       return null
   }
+}
+
+function parseVocabItem(item) {
+  const idx = item.indexOf(':')
+  if (idx === -1) return { word: item.trim(), meaning: '' }
+  return { word: item.slice(0, idx).trim(), meaning: item.slice(idx + 1).trim() }
+}
+
+function VocabCallout({ title, items, unitId }) {
+  const [, bump] = useState(0)
+
+  function toggle(word, meaning) {
+    if (isVocabSaved(unitId, word)) {
+      removeVocabWord(unitId, word)
+    } else {
+      addVocabWord(unitId, word, meaning)
+    }
+    bump((n) => n + 1)
+  }
+
+  return (
+    <div className="block-callout block-callout-vocab">
+      <h4>{title}</h4>
+      <ul>
+        {items.map((item, i) => {
+          const { word, meaning } = parseVocabItem(item)
+          const saved = isVocabSaved(unitId, word)
+          return (
+            <li key={i} className="vocab-item">
+              <span className="vocab-item-text">{renderEmphasis(item)}</span>
+              <button
+                type="button"
+                className={`vocab-save-btn ${saved ? 'saved' : ''}`}
+                onClick={() => toggle(word, meaning)}
+                title={saved ? '단어장에서 빼기' : '단어장에 저장'}
+              >
+                {saved ? '★' : '☆'}
+              </button>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
+  )
 }

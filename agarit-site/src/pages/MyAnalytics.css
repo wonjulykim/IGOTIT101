@@ -63,3 +63,35 @@
 }
 .essay-entry-question { font-weight: 600; margin: 0 0 8px; color: var(--text-h); }
 .essay-entry-answer { margin: 0; white-space: pre-line; color: var(--text); }
+
+.vocab-list { display: flex; flex-direction: column; gap: 8px; }
+.vocab-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.vocab-list-text { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+.vocab-list-word { font-weight: 700; }
+.vocab-list-meaning { color: var(--text-dim); }
+.vocab-list-unit {
+  font-size: 0.74rem;
+  background: var(--border);
+  color: var(--text-dim);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+.vocab-list-remove {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+.vocab-list-remove:hover { color: var(--danger); }

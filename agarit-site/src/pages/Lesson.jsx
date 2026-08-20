@@ -77,7 +77,7 @@ export default function Lesson() {
         <div className="reading-split">
           <div className="reading-passage-col">
             {effectiveBlocks ? (
-              <ContentBlocks blocks={effectiveBlocks} />
+              <ContentBlocks blocks={effectiveBlocks} unitId={chapterId} />
             ) : (
               <p>이 레슨의 콘텐츠는 아직 준비 중입니다.</p>
             )}
@@ -129,7 +129,7 @@ export default function Lesson() {
       ) : (
         <div className="lesson-main">
           {effectiveBlocks ? (
-            <ContentBlocks blocks={effectiveBlocks} />
+            <ContentBlocks blocks={effectiveBlocks} unitId={chapterId} />
           ) : (
             <p>이 레슨의 콘텐츠는 아직 준비 중입니다.</p>
           )}

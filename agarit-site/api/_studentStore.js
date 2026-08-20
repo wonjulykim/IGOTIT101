@@ -111,6 +111,27 @@ const SYNC_HANDLERS = {
       })
     if (error) throw error
   },
+  vocabAdd: async (studentId, p) => {
+    const { error } = await db()
+      .from('vocab_words')
+      .upsert({
+        student_id: studentId,
+        unit_id: p.unitId,
+        word: p.word,
+        meaning: p.meaning ?? '',
+        added_at: new Date().toISOString(),
+      })
+    if (error) throw error
+  },
+  vocabRemove: async (studentId, p) => {
+    const { error } = await db()
+      .from('vocab_words')
+      .delete()
+      .eq('student_id', studentId)
+      .eq('unit_id', p.unitId)
+      .eq('word', p.word)
+    if (error) throw error
+  },
 }
 
 export async function applySync(studentId, kind, payload) {
@@ -120,15 +141,16 @@ export async function applySync(studentId, kind, payload) {
 }
 
 export async function fetchAllStudentData(studentId) {
-  const [lessons, scores, writing, essays, korean, steps] = await Promise.all([
+  const [lessons, scores, writing, essays, korean, steps, vocab] = await Promise.all([
     db().from('completed_lessons').select('chapter_id, lesson_id').eq('student_id', studentId),
     db().from('quiz_scores').select('chapter_id, quiz_type, score, total').eq('student_id', studentId),
     db().from('writing_results').select('unit_id, question_id, result').eq('student_id', studentId),
     db().from('essay_answers').select('unit_id, question_id, answer_text').eq('student_id', studentId),
     db().from('korean_drafts').select('unit_id, question_id, draft_text').eq('student_id', studentId),
     db().from('step_drafts').select('unit_id, question_id, step_key, draft_text').eq('student_id', studentId),
+    db().from('vocab_words').select('unit_id, word, meaning, added_at').eq('student_id', studentId),
   ])
-  for (const r of [lessons, scores, writing, essays, korean, steps]) {
+  for (const r of [lessons, scores, writing, essays, korean, steps, vocab]) {
     if (r.error) throw r.error
   }
 
@@ -168,5 +190,11 @@ export async function fetchAllStudentData(studentId) {
     stepDrafts[row.unit_id][row.question_id][row.step_key] = row.draft_text
   })
 
-  return { completedLessons, quizScores, writingScores, essayAnswers, koreanDrafts, stepDrafts }
+  const vocabWords = {}
+  ;(vocab.data || []).forEach((row) => {
+    vocabWords[row.unit_id] = vocabWords[row.unit_id] || {}
+    vocabWords[row.unit_id][row.word] = { meaning: row.meaning, addedAt: row.added_at }
+  })
+
+  return { completedLessons, quizScores, writingScores, essayAnswers, koreanDrafts, stepDrafts, vocabWords }
 }

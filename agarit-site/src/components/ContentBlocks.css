@@ -38,6 +38,29 @@
 .block-callout ul { margin: 0; padding-left: 1.3em; }
 .block-callout li { margin-bottom: 6px; }
 
+.block-callout-vocab ul { padding-left: 0; list-style: none; }
+.vocab-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.vocab-item-text { flex: 1; }
+.vocab-save-btn {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--accent-dark);
+  cursor: pointer;
+}
+.vocab-save-btn:hover { background: var(--bg-panel); }
+.vocab-save-btn.saved { background: var(--accent-dark); border-color: var(--accent-dark); color: white; }
+
 .block-example {
   background: var(--bg-panel);
   border: 1px solid var(--border);

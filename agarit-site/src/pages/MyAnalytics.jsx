@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { readyChapters } from '../data/chapters'
 import { readyReadings } from '../data/readings'
 import { getChapterQuiz } from '../data/quizzes'
-import { getProgress, getCurrentStudent } from '../utils/progress'
+import { getProgress, getCurrentStudent, removeVocabWord } from '../utils/progress'
 import './MyAnalytics.css'
 
 function completionStats(units, isDone) {
@@ -20,7 +20,8 @@ function completionStats(units, isDone) {
 
 export default function MyAnalytics() {
   const [student, setStudent] = useState(getCurrentStudent())
-  const progress = useMemo(() => getProgress(), [student])
+  const [refreshKey, setRefreshKey] = useState(0)
+  const progress = useMemo(() => getProgress(), [student, refreshKey])
 
   useEffect(() => {
     // 로그인 직후 이 페이지로 이동한 경우를 대비해 세션 캐시를 한 번 더 확인한다.
@@ -66,6 +67,30 @@ export default function MyAnalytics() {
     })
     return rows
   }, [progress])
+
+  const unitTitleMap = useMemo(() => {
+    const map = {}
+    ;[...readyChapters, ...readyReadings].forEach((u) => {
+      map[u.id] = u.title
+    })
+    return map
+  }, [])
+
+  const vocabRows = useMemo(() => {
+    const rows = []
+    Object.entries(progress.vocabWords || {}).forEach(([unitId, words]) => {
+      Object.entries(words).forEach(([word, info]) => {
+        rows.push({ unitId, word, meaning: info.meaning, addedAt: info.addedAt })
+      })
+    })
+    rows.sort((a, b) => new Date(b.addedAt) - new Date(a.addedAt))
+    return rows
+  }, [progress])
+
+  function handleRemoveVocab(unitId, word) {
+    removeVocabWord(unitId, word)
+    setRefreshKey((k) => k + 1)
+  }
 
   return (
     <div className="my-analytics-page">
@@ -143,6 +168,33 @@ export default function MyAnalytics() {
                 </div>
                 <p className="essay-entry-question">{e.question}</p>
                 <p className="essay-entry-answer">{e.answer}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+
+      <section className="my-analytics-section">
+        <h2>📚 내 단어장</h2>
+        {vocabRows.length === 0 ? (
+          <p className="my-analytics-empty">아직 저장한 단어가 없어요. 지문의 "어휘 노트"에서 ☆를 눌러 저장해보세요.</p>
+        ) : (
+          <div className="vocab-list">
+            {vocabRows.map((v) => (
+              <div className="vocab-list-item" key={`${v.unitId}-${v.word}`}>
+                <div className="vocab-list-text">
+                  <span className="vocab-list-word">{v.word}</span>
+                  <span className="vocab-list-meaning">{v.meaning}</span>
+                  <span className="vocab-list-unit">{unitTitleMap[v.unitId] || v.unitId}</span>
+                </div>
+                <button
+                  type="button"
+                  className="vocab-list-remove"
+                  onClick={() => handleRemoveVocab(v.unitId, v.word)}
+                  title="단어장에서 빼기"
+                >
+                  ✕
+                </button>
               </div>
             ))}
           </div>
