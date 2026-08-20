@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { isShortAnswerCorrect, essayKeywordHits } from '../utils/grading'
 import { XP_RULES } from '../utils/gamification'
 import { getChapter } from '../data/chapters'
-import { saveKoreanDraft, getKoreanDraft, saveStepDraft, getStepDraft } from '../utils/progress'
+import { saveKoreanDraft, getKoreanDraft } from '../utils/progress'
+import { StepChecklist } from './StepItem'
 import AiEssayGrader from './AiEssayGrader'
 import './QuestionCard.css'
 
@@ -41,67 +42,12 @@ export default function QuestionCard({ q, index, value, onChange, submitted, sho
   )
 }
 
-function StepItem({ groupKey, index, step, unitId, qid }) {
-  const draftKey = `${groupKey}-${index}`
-  const [text, setText] = useState(() => getStepDraft(unitId, qid, draftKey))
-
-  function handleChange(v) {
-    setText(v)
-    saveStepDraft(unitId, qid, draftKey, v)
-  }
-
-  return (
-    <li className={`qcard-step-item ${text.trim() ? 'step-answered' : ''}`}>
-      <div className="qcard-step-label">
-        <span className="qcard-step-num">{index + 1}</span>
-        {step.label}
-      </div>
-      <p className="qcard-step-prompt">{step.prompt}</p>
-      <textarea
-        className="qcard-step-input"
-        rows={2}
-        placeholder="여기에 적어보세요"
-        value={text}
-        onChange={(e) => handleChange(e.target.value)}
-      />
-    </li>
-  )
-}
-
-function StepChecklist({ heading, items, groupKey, unitId, qid }) {
-  return (
-    <div className="qcard-step-group">
-      <div className="qcard-step-heading">{heading}</div>
-      <ol>
-        {items.map((step, i) => (
-          <StepItem key={i} groupKey={groupKey} index={i} step={step} unitId={unitId} qid={qid} />
-        ))}
-      </ol>
-    </div>
-  )
-}
-
 function StepGuide({ steps, unitId, qid }) {
-  if (!steps?.summarize?.length) return null
+  if (!steps?.task?.items?.length) return null
   return (
     <div className="qcard-steps">
-      <strong>🧭 이 순서대로 직접 써보며 생각을 정리해보세요</strong>
-      <StepChecklist
-        heading="1단계. 먼저 지문을 요약해보세요"
-        items={steps.summarize}
-        groupKey="summarize"
-        unitId={unitId}
-        qid={qid}
-      />
-      {steps.task?.items?.length > 0 && (
-        <StepChecklist
-          heading={`2단계. 이제 ${steps.task.title}`}
-          items={steps.task.items}
-          groupKey="task"
-          unitId={unitId}
-          qid={qid}
-        />
-      )}
+      <strong>🧭 {steps.task.title}</strong>
+      <StepChecklist items={steps.task.items} groupKey="task" unitId={unitId} qid={qid} />
     </div>
   )
 }

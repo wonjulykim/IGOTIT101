@@ -39,27 +39,6 @@ export const r25Quiz = {
       difficulty: '하',
       score: 6,
       conditions: ['3~5문장으로 쓸 것', '지문에 나온 은유 표현 중 하나를 언급할 것'],
-      steps: {
-        summarize: [
-          { label: '핵심어 찾기', prompt: '지문에서 중요하게 다뤄지는 핵심 단어(또는 표현)를 2~3개 찾아 써보세요.' },
-          { label: '중심 문장 찾기', prompt: '지문에서 글쓴이의 주장이나 핵심 내용이 담긴 중심 문장을 찾아 그대로 옮겨 적어보세요.' },
-          { label: '근거 찾기', prompt: '위 중심 문장(주장)을 뒷받침하는 근거나 예시를 지문에서 찾아 적어보세요.' },
-          { label: '논리적으로 연결하기', prompt: '주장과 근거를 "therefore", "because", "for example" 같은 접속어를 사용해 한 문장으로 연결해 보세요.' },
-          { label: '단락별 요약', prompt: '지문을 문단별로 나누고, 각 문단의 내용을 한 문장씩 짧게 요약해 보세요.' },
-          { label: '중심 문장 엮기', prompt: '문단별 요약 문장들을 순서대로 엮어서 하나의 논리적인 글로 연결해 보세요.' },
-          { label: '자기 말로 표현하기', prompt: '위에서 정리한 내용 중 어려운 단어나 표현을 자신만의 쉬운 말로 바꾸어 다시 써보세요.' },
-        ],
-        task: {
-          title: '비교·대조하는 글을 완성해보세요',
-          items: [
-            { label: '대상 확인하기', prompt: '비교(대조)할 두 대상이 같은 범주·층위인지 확인하고 각각 한 단어로 적어보세요.' },
-            { label: '공통점 찾기', prompt: '두 대상의 공통점(유사점)을 한 문장으로 적어보세요. 예: "Both ~." "Similarly, ~."' },
-            { label: '차이점 찾기', prompt: '두 대상의 차이점을 한 문장으로 적어보세요. 예: "However, ~." "On the other hand, ~."' },
-            { label: '기준 정리하기', prompt: '비교 기준(무엇을 기준으로 비교했는지)을 표나 목록으로 정리해보세요.' },
-            { label: '균형 있게 서술하기', prompt: '공통점과 차이점을 균형 있게 문장으로 연결해 완성해보세요.' },
-          ],
-        },
-      },
       model:
         '"Life is a roller coaster" is a metaphor from the passage. It compares life to a roller coaster, which goes up and down again and again. This means that life also has many ups and downs, such as happy moments and hard moments. Understanding this metaphor helps me accept difficult times as just one part of a much bigger ride.',
       totalScore: 6,
@@ -91,27 +70,6 @@ export const r25Quiz = {
       difficulty: '중',
       score: 10,
       conditions: ['"A is B" 형태의 은유 문장을 포함할 것', '그 은유가 의미하는 바를 설명할 것'],
-      steps: {
-        summarize: [
-          { label: '핵심어 찾기', prompt: '지문에서 중요하게 다뤄지는 핵심 단어(또는 표현)를 2~3개 찾아 써보세요.' },
-          { label: '중심 문장 찾기', prompt: '지문에서 글쓴이의 주장이나 핵심 내용이 담긴 중심 문장을 찾아 그대로 옮겨 적어보세요.' },
-          { label: '근거 찾기', prompt: '위 중심 문장(주장)을 뒷받침하는 근거나 예시를 지문에서 찾아 적어보세요.' },
-          { label: '논리적으로 연결하기', prompt: '주장과 근거를 "therefore", "because", "for example" 같은 접속어를 사용해 한 문장으로 연결해 보세요.' },
-          { label: '단락별 요약', prompt: '지문을 문단별로 나누고, 각 문단의 내용을 한 문장씩 짧게 요약해 보세요.' },
-          { label: '중심 문장 엮기', prompt: '문단별 요약 문장들을 순서대로 엮어서 하나의 논리적인 글로 연결해 보세요.' },
-          { label: '자기 말로 표현하기', prompt: '위에서 정리한 내용 중 어려운 단어나 표현을 자신만의 쉬운 말로 바꾸어 다시 써보세요.' },
-        ],
-        task: {
-          title: '비교·대조하는 글을 완성해보세요',
-          items: [
-            { label: '대상 확인하기', prompt: '비교(대조)할 두 대상이 같은 범주·층위인지 확인하고 각각 한 단어로 적어보세요.' },
-            { label: '공통점 찾기', prompt: '두 대상의 공통점(유사점)을 한 문장으로 적어보세요. 예: "Both ~." "Similarly, ~."' },
-            { label: '차이점 찾기', prompt: '두 대상의 차이점을 한 문장으로 적어보세요. 예: "However, ~." "On the other hand, ~."' },
-            { label: '기준 정리하기', prompt: '비교 기준(무엇을 기준으로 비교했는지)을 표나 목록으로 정리해보세요.' },
-            { label: '균형 있게 서술하기', prompt: '공통점과 차이점을 균형 있게 문장으로 연결해 완성해보세요.' },
-          ],
-        },
-      },
       model:
         '"My mind is a garden." This metaphor compares the mind to a garden. Just as a garden needs regular care — watering, weeding, and sunlight — to grow beautiful flowers, the mind needs good habits like reading, rest, and positive thoughts to grow healthy ideas. If we neglect our mind, like an uncared-for garden, it can become filled with negative thoughts instead.',
       totalScore: 10,

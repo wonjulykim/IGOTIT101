@@ -5,6 +5,7 @@ import { getLessonContent } from '../data/content'
 import { getChapterQuiz } from '../data/quizzes'
 import ContentBlocks from '../components/ContentBlocks'
 import QuizSection from '../components/QuizSection'
+import SummaryGuide from '../components/SummaryGuide'
 import { isLessonComplete, markLessonComplete } from '../utils/progress'
 import { useGame } from '../context/GameContext'
 import { getOverride, getSession } from '../utils/adminApi'
@@ -94,6 +95,12 @@ export default function Lesson() {
               <div className="reading-quiz-col">
                 <h2>문제 풀기</h2>
                 <p className="quiz-intro">지문을 왼쪽에 두고 문제를 풀어보세요.</p>
+                {(quiz.essay?.length > 0) && (
+                  <section className="reading-quiz-section">
+                    <h3>🧭 요약하기 <span className="reading-quiz-subhead">서술형·논술형 풀기 전에 먼저 해보세요</span></h3>
+                    <SummaryGuide unitId={chapterId} />
+                  </section>
+                )}
                 {['mcq', 'short'].map(
                   (type) =>
                     quiz[type]?.length > 0 && (
