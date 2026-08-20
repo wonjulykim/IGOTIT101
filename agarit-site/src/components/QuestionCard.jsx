@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { isShortAnswerCorrect, essayKeywordHits } from '../utils/grading'
 import { XP_RULES } from '../utils/gamification'
 import { getChapter } from '../data/chapters'
-import { saveKoreanDraft, getKoreanDraft } from '../utils/progress'
+import { saveKoreanDraft, getKoreanDraft, saveStepDraft, getStepDraft } from '../utils/progress'
 import AiEssayGrader from './AiEssayGrader'
 import './QuestionCard.css'
 
@@ -20,7 +20,7 @@ export default function QuestionCard({ q, index, value, onChange, submitted, sho
         {q.score && <span className="qcard-badge">배점 {q.score}점</span>}
       </div>
       <p className="qcard-question">{q.q}</p>
-      {q.steps && <StepGuide steps={q.steps} />}
+      {q.steps && <StepGuide steps={q.steps} unitId={unitId} qid={q.id} />}
       {q.conditions?.length > 0 && (
         <div className="qcard-conditions">
           <strong>✍️ 이렇게 써보세요 (반드시 지킬 것)</strong>
@@ -41,38 +41,66 @@ export default function QuestionCard({ q, index, value, onChange, submitted, sho
   )
 }
 
-function StepChecklist({ heading, items }) {
-  const [checked, setChecked] = useState(() => items.map(() => false))
+function StepItem({ groupKey, index, step, unitId, qid }) {
+  const draftKey = `${groupKey}-${index}`
+  const [text, setText] = useState(() => getStepDraft(unitId, qid, draftKey))
 
-  function toggle(i) {
-    setChecked((prev) => prev.map((v, idx) => (idx === i ? !v : v)))
+  function handleChange(v) {
+    setText(v)
+    saveStepDraft(unitId, qid, draftKey, v)
   }
 
+  return (
+    <li className={`qcard-step-item ${text.trim() ? 'step-answered' : ''}`}>
+      <div className="qcard-step-label">
+        <span className="qcard-step-num">{index + 1}</span>
+        {step.label}
+      </div>
+      <p className="qcard-step-prompt">{step.prompt}</p>
+      <textarea
+        className="qcard-step-input"
+        rows={2}
+        placeholder="여기에 적어보세요"
+        value={text}
+        onChange={(e) => handleChange(e.target.value)}
+      />
+    </li>
+  )
+}
+
+function StepChecklist({ heading, items, groupKey, unitId, qid }) {
   return (
     <div className="qcard-step-group">
       <div className="qcard-step-heading">{heading}</div>
       <ol>
-        {items.map((s, i) => (
-          <li key={i} className={checked[i] ? 'step-done' : ''}>
-            <label>
-              <input type="checkbox" checked={checked[i]} onChange={() => toggle(i)} />
-              <span>{s.replace(/^\d+단계:\s*/, '')}</span>
-            </label>
-          </li>
+        {items.map((step, i) => (
+          <StepItem key={i} groupKey={groupKey} index={i} step={step} unitId={unitId} qid={qid} />
         ))}
       </ol>
     </div>
   )
 }
 
-function StepGuide({ steps }) {
+function StepGuide({ steps, unitId, qid }) {
   if (!steps?.summarize?.length) return null
   return (
     <div className="qcard-steps">
-      <strong>🧭 이 순서대로 생각을 정리해보세요</strong>
-      <StepChecklist heading="1단계. 먼저 지문을 요약해보세요" items={steps.summarize} />
+      <strong>🧭 이 순서대로 직접 써보며 생각을 정리해보세요</strong>
+      <StepChecklist
+        heading="1단계. 먼저 지문을 요약해보세요"
+        items={steps.summarize}
+        groupKey="summarize"
+        unitId={unitId}
+        qid={qid}
+      />
       {steps.task?.items?.length > 0 && (
-        <StepChecklist heading={`2단계. 이제 ${steps.task.title}`} items={steps.task.items} />
+        <StepChecklist
+          heading={`2단계. 이제 ${steps.task.title}`}
+          items={steps.task.items}
+          groupKey="task"
+          unitId={unitId}
+          qid={qid}
+        />
       )}
     </div>
   )

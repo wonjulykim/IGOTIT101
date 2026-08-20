@@ -61,36 +61,55 @@
 }
 .qcard-steps ol {
   margin: 0;
-  padding-left: 4px;
+  padding-left: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  counter-reset: step;
+  gap: 10px;
 }
-.qcard-steps li {
-  counter-increment: step;
+.qcard-step-item {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
 }
-.qcard-steps li label {
+.qcard-step-item.step-answered {
+  border-color: var(--success);
+}
+.qcard-step-label {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
-  cursor: pointer;
-}
-.qcard-steps li label::before {
-  content: counter(step) '.';
   font-weight: 700;
-  color: var(--success);
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+.qcard-step-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--success);
+  color: white;
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
-.qcard-steps li input[type='checkbox'] {
-  margin-top: 3px;
-  flex-shrink: 0;
-  accent-color: var(--success);
-}
-.qcard-steps li.step-done span {
-  text-decoration: line-through;
+.qcard-step-prompt {
+  margin: 0 0 8px;
+  font-size: 0.86rem;
   color: var(--text-dim);
+}
+.qcard-step-input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.88rem;
+  font-family: inherit;
+  resize: vertical;
+  background: var(--bg);
 }
 
 .qcard-conditions {
