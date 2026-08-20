@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import { chapters } from '../data/chapters'
 import { readings } from '../data/readings'
 import { getSession, logout } from '../utils/adminApi'
+import { studentLogout, getStudentSession } from '../utils/studentApi'
+import { setCurrentStudent } from '../utils/progress'
 import './Sidebar.css'
 
 export default function Sidebar({ open, onClose }) {
@@ -14,6 +16,7 @@ export default function Sidebar({ open, onClose }) {
     return initial
   })
   const [isAdmin, setIsAdmin] = useState(false)
+  const [student, setStudent] = useState(null)
   const location = useLocation()
   const navigate = useNavigate()
 
@@ -23,9 +26,22 @@ export default function Sidebar({ open, onClose }) {
       .catch(() => setIsAdmin(false))
   }, [location.pathname])
 
+  useEffect(() => {
+    getStudentSession()
+      .then((data) => setStudent(data?.loggedIn ? data.student : null))
+      .catch(() => setStudent(null))
+  }, [location.pathname])
+
   async function handleLogout() {
     await logout().catch(() => {})
     setIsAdmin(false)
+    navigate('/')
+  }
+
+  async function handleStudentLogout() {
+    await studentLogout().catch(() => {})
+    setCurrentStudent(null)
+    setStudent(null)
     navigate('/')
   }
 
@@ -45,6 +61,10 @@ export default function Sidebar({ open, onClose }) {
         </div>
 
         <nav className="sidebar-nav">
+          <NavLink to="/me" className="sidebar-mock-link" onClick={onClose}>
+            📊 내 분석
+          </NavLink>
+
           <div className="sidebar-toc-title">📘 문법</div>
           <UnitList units={chapters} unitLabel="장" expanded={expanded} toggle={toggle} onClose={onClose} />
 
@@ -53,6 +73,16 @@ export default function Sidebar({ open, onClose }) {
         </nav>
 
         <div className="sidebar-admin">
+          {student ? (
+            <div className="sidebar-student-row">
+              <span className="sidebar-student-name">👤 {student.name}</span>
+              <button className="sidebar-admin-link" onClick={handleStudentLogout}>로그아웃</button>
+            </div>
+          ) : (
+            <NavLink to="/student/login" className="sidebar-admin-link" onClick={onClose}>
+              👤 학생 로그인
+            </NavLink>
+          )}
           {isAdmin ? (
             <button className="sidebar-admin-link" onClick={handleLogout}>🔓 관리자 로그아웃</button>
           ) : (

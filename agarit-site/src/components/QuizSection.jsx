@@ -1,12 +1,19 @@
 import { useMemo, useState } from 'react'
 import { isShortAnswerCorrect } from '../utils/grading'
-import { saveQuizScore, getQuizScore } from '../utils/progress'
+import { saveQuizScore, getQuizScore, saveEssayAnswer, getEssayAnswer } from '../utils/progress'
 import { XP_RULES } from '../utils/gamification'
 import { useGame } from '../context/GameContext'
 import QuestionCard from './QuestionCard'
 
 export default function QuizSection({ chapterId, type, questions }) {
-  const [answers, setAnswers] = useState({})
+  const [answers, setAnswers] = useState(() => {
+    if (type !== 'essay') return {}
+    const init = {}
+    questions.forEach((q) => {
+      init[q.id] = getEssayAnswer(chapterId, q.id)
+    })
+    return init
+  })
   const [submitted, setSubmitted] = useState(false)
   const prevScore = getQuizScore(chapterId, type)
   const { registerAnswer, awardXp } = useGame()
@@ -51,7 +58,10 @@ export default function QuizSection({ chapterId, type, questions }) {
           q={{ ...q, type }}
           index={i}
           value={answers[q.id]}
-          onChange={(v) => setAnswers((a) => ({ ...a, [q.id]: v }))}
+          onChange={(v) => {
+            setAnswers((a) => ({ ...a, [q.id]: v }))
+            if (type === 'essay') saveEssayAnswer(chapterId, q.id, v)
+          }}
           submitted={submitted}
           unitId={chapterId}
         />

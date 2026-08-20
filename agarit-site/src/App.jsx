@@ -6,6 +6,8 @@ import ChapterQuiz from './pages/ChapterQuiz'
 import ChapterPrint from './pages/ChapterPrint'
 import AdminLogin from './pages/AdminLogin'
 import AdminEdit from './pages/AdminEdit'
+import StudentLogin from './pages/StudentLogin'
+import MyAnalytics from './pages/MyAnalytics'
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
         <Route path="/chapter/:chapterId/quiz" element={<ChapterQuiz />} />
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin/edit/:chapterId/:lessonId" element={<AdminEdit />} />
+        <Route path="/student/login" element={<StudentLogin />} />
+        <Route path="/me" element={<MyAnalytics />} />
         <Route path="*" element={<Home />} />
       </Route>
     </Routes>

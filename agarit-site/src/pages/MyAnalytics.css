@@ -1,0 +1,65 @@
+.my-analytics-page { max-width: 880px; }
+
+.my-analytics-guest {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+.my-analytics-welcome { color: var(--text-dim); margin-top: -6px; margin-bottom: 18px; }
+
+.my-analytics-section { margin-bottom: 32px; }
+.my-analytics-section h2 { font-size: 1.05rem; margin-bottom: 12px; }
+.my-analytics-empty { color: var(--text-dim); font-size: 0.9rem; }
+
+.progress-bars { display: flex; flex-direction: column; gap: 12px; }
+.progress-bar-row { display: flex; align-items: center; gap: 12px; }
+.progress-bar-label { width: 160px; flex-shrink: 0; font-size: 0.9rem; font-weight: 600; }
+.progress-bar-track {
+  flex: 1;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+.progress-bar-fill { height: 100%; background: var(--accent); border-radius: 999px; }
+.progress-bar-pct { width: 44px; text-align: right; font-size: 0.86rem; font-weight: 700; color: var(--accent-dark); flex-shrink: 0; }
+
+.score-table-wrap { overflow-x: auto; }
+.score-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.score-table th, .score-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  white-space: nowrap;
+}
+.score-table th { color: var(--text-dim); font-weight: 700; font-size: 0.8rem; }
+
+.essay-collection { display: flex; flex-direction: column; gap: 14px; }
+.essay-entry {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.essay-entry-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; }
+.essay-entry-unit { font-weight: 700; }
+.essay-entry-subtype {
+  font-size: 0.72rem;
+  background: var(--warn-bg);
+  color: var(--warn);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+.essay-entry-score {
+  font-size: 0.78rem;
+  background: var(--success-bg);
+  color: var(--success);
+  border-radius: 999px;
+  padding: 2px 9px;
+  margin-left: auto;
+}
+.essay-entry-question { font-weight: 600; margin: 0 0 8px; color: var(--text-h); }
+.essay-entry-answer { margin: 0; white-space: pre-line; color: var(--text); }

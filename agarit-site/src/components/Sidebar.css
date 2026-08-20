@@ -132,6 +132,23 @@
 }
 .sidebar-admin-link:hover { background: var(--accent-bg); color: var(--text); text-decoration: none; }
 
+.sidebar-student-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 0 10px;
+}
+.sidebar-student-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sidebar-student-row .sidebar-admin-link { width: auto; padding: 6px 8px; flex-shrink: 0; }
+
 .sidebar-overlay { display: none; }
 
 @media (max-width: 900px) {

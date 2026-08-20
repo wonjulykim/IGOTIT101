@@ -1,12 +1,17 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import Sidebar from './Sidebar'
 import GameToasts from './GameToasts'
 import ChatWidget from './ChatWidget'
+import { bootstrapStudentSession } from '../utils/progress'
 import './Layout.css'
 
 export default function Layout() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
+
+  useEffect(() => {
+    bootstrapStudentSession()
+  }, [])
 
   return (
     <div className="app-shell">
