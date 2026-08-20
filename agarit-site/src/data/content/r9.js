@@ -26,6 +26,14 @@ export const r9 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"by observing patterns in large amounts of data" → 「전치사 by + 동명사」는 "~함으로써"라는 수단을 나타내요.',
+          '"becoming more capable as they process more and more information" → becoming 이하는 분사구문으로 "그러면서 점점 더 유능해지며"라는 동시 상황을 나타냅니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'artificial intelligence (AI): 인공지능',

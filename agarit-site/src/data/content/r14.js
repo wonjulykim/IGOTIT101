@@ -26,6 +26,14 @@ export const r14 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"Zoos also teach visitors about animals and nature, which can make people care more about the environment." → which는 앞 절 전체를 받는 계속적 용법이고, 그 안에 「make + 목적어 + 동사원형(care)」 구조가 쓰였어요.',
+          '"Animals like dolphins or whales are sometimes forced to perform tricks" → 「be forced to + 동사원형」은 "~하도록 강요받다"라는 뜻의 수동태 표현입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['endangered animal: 멸종 위기 동물', 'mistreated: 학대받은', 'in the wild: 야생에서'],
       },

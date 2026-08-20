@@ -26,6 +26,14 @@ export const r30 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"asked me to help a student named Kumari, who had come from Nepal" → had come은 과거완료이고, 콤마 뒤 who는 앞의 사람(Kumari)에 대해 보충 설명하는 계속적 용법이에요.',
+          '"it had given her the confidence to write down her own feelings" → to write down은 명사(confidence)를 뒤에서 꾸며주는 to부정사의 형용사적 용법입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['welfare center: 복지 센터', 'enthusiastic: 열정적인', 'palms held together: 두 손바닥을 모은', 'come true: (꿈이) 이루어지다'],
       },

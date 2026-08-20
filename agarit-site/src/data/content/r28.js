@@ -26,6 +26,14 @@ export const r28 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"How can it be that we feel more positively toward people for whom we do favors?" → it은 가주어, that 이하가 진주어로 쓰인 구문이에요.',
+          '"his mind adjusted his feelings instead, deciding that he must not dislike Franklin as much as he thought" → deciding 이하는 분사구문이며, that절은 deciding의 목적어입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['opponent: 상대, 반대자', 'criticize: 비판하다', 'favor: 호의, 부탁', 'cognitive dissonance: 인지부조화'],
       },

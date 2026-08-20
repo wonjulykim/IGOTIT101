@@ -26,6 +26,14 @@ export const r25 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"A metaphor is a figure of speech in which a comparison is made between two different things." → 「전치사 + 관계대명사(in which)」는 「관계대명사 + 전치사」(which... in)를 문어체로 바꾼 형태예요.',
+          '"A night owl is someone..., whereas an early bird is someone who loves working in the morning." → whereas는 "~인 반면"이라는 뜻으로 두 대상을 대조하는 접속사입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['figure of speech: 비유적 표현', 'comparison: 비교', 'night owl: 올빼미형 인간(밤에 활동적인 사람)', 'early bird: 아침형 인간'],
       },

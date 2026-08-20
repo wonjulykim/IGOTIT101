@@ -38,6 +38,14 @@ export const r24 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"China was ranked highest, followed by the United States." → was ranked는 수동태이고, followed by는 "그 뒤를 ~가 이었다"는 뜻의 분사구문이에요.',
+          '"showing how unevenly CO2 emissions are distributed among these five countries" → showing 이하는 분사구문(결과)이며, 그 안의 how는 의문사절로 showing의 목적어 역할을 합니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['emission: 배출(량)', 'rank: 순위를 차지하다', 'gap: 차이, 격차', 'take action: 조치를 취하다'],
       },

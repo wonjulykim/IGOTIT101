@@ -22,6 +22,14 @@ export const r2 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"Research shows that this kind of expressive writing can lower stress" → that는 shows의 목적어가 되는 명사절을 이끌어요.',
+          '"which can lead to better study habits over time" → 콤마 뒤 which는 앞 문장 전체 내용을 받아 "그리고 그것은 ~"이라고 보충 설명합니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'stress-relief journaling: 스트레스 해소 저널링(글쓰기)',

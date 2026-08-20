@@ -26,6 +26,14 @@ export const r3 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"Speaking in class or performing never bothered me." → 동명사(Speaking)로 시작하는 구가 문장의 주어 역할을 해요.',
+          '"That moment changed how I saw confidence." → how I saw confidence는 의문사절로, changed의 목적어(간접의문문) 역할을 합니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'go blank: (머릿속이) 하얘지다',

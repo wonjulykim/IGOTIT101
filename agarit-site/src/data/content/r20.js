@@ -41,6 +41,14 @@ export const r20 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"It\'s been 3 months since my first day of high school." → 「현재완료(have/has + p.p.) + since」는 "~한 이후로 지금까지 (계속)"라는 뜻을 나타내요.',
+          '"Writing an encouraging reply is a simple way to support a friend who is going through a hard time" → Writing은 동명사 주어이고, who는 friend를 수식하는 주격 관계대명사입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['struggle: 어려움을 겪다, 힘겨워하다', 'frustrated: 좌절한, 답답한', 'encouraging: 격려하는', 'inner beauty: 내면의 아름다움'],
       },

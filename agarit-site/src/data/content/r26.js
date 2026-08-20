@@ -26,6 +26,14 @@ export const r26 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"a young fan who had recorded herself singing a part of his composition" → had recorded는 과거완료이고, 「recorded + 목적어(herself) + 현재분사(singing)」는 "~가 …하고 있는 것을 녹화하다"라는 뜻이에요.',
+          '"all of the individual videos were combined into a single, unified performance" → were combined는 「be동사 + 과거분사」로 이루어진 수동태입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['composer: 작곡가', 'compose: 작곡하다', 'conduct: 지휘하다', 'combine: 결합하다, 합치다'],
       },

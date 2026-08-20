@@ -26,6 +26,14 @@ export const r8 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"It was very tasty and fun to eat!" → to eat는 형용사(fun)를 뒤에서 꾸며주는 to부정사의 부사적 용법으로, "먹기에 재미있는"이라는 뜻이에요.',
+          '"I feel more curious about trying food from other countries" → about 같은 전치사 뒤에는 동사원형이 아니라 동명사(trying)가 옵니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'cultural diversity: 문화적 다양성',

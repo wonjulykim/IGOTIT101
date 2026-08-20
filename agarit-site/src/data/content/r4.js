@@ -26,6 +26,14 @@ export const r4 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"it is often unclear who truly \'arranged\' the final creation" → it은 가주어, who ~ creation이 의문사절로 이루어진 진주어예요.',
+          '"They compare using an AI art generator to using a camera" → 「compare A to B」는 "A를 B에 비교하다"라는 뜻으로, 여기서 A와 B에는 각각 동명사구가 쓰였어요.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'authorship: 저작자 자격, 원작자임',

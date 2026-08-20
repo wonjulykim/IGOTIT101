@@ -26,6 +26,14 @@ export const r17 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"the driver told her to give up her seat" → 「tell + 목적어 + to부정사」는 "~에게 …하라고 말하다"라는 뜻이에요.',
+          '"when the U.S. Supreme Court ruled that the segregation law was unconstitutional" → that절은 ruled(판결했다)의 목적어가 되는 명사절입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['boycott: 보이콧, 불매·이용 거부 운동', 'unconstitutional: 위헌의', 'injustice: 불의, 부당함', 'segregation: (인종) 분리, 차별'],
       },

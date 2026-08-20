@@ -41,6 +41,14 @@ export const r5 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"can shape not only our own actions but also the people and communities around us" → 「not only A but also B」는 "A뿐만 아니라 B도"라는 뜻이에요.',
+          '"Perseverance taught me that improvement often comes slowly" → 「teach + 목적어 + that절」의 구조로, that절이 가르쳐준 내용을 나타냅니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'value: 가치',

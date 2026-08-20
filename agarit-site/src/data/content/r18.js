@@ -40,6 +40,14 @@ export const r18 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"The fact that I can give them a whole new life thrills me." → 여기서 that절은 앞의 명사 the fact와 동격으로, "~라는 사실"이라는 뜻을 나타내요 (동격의 that).',
+          '"whether upcycling is viewed mainly as a business opportunity or an artistic outlet" → 「whether A or B」는 "A이든 B이든"이라는 뜻의 명사절로 문장의 주어 역할을 합니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['upcycle: 업사이클링하다(폐자원을 가치 있는 새 제품으로 재탄생시키다)', 'profitable: 수익성이 있는', 'transform: 변형시키다', 'thrill: 몹시 기쁘게 하다'],
       },

@@ -26,6 +26,14 @@ export const r27 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"I asked my father if he had really liked the burnt bread." → if는 "~인지 아닌지"라는 뜻으로 명사절(간접의문문)을 이끌어요.',
+          '"criticizing every little thing rarely makes a relationship better" → criticizing은 동명사 주어이고, 「make + 목적어(a relationship) + 형용사(better)」 구조가 쓰였습니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['burnt: 탄, 그을린', 'exhausted: 매우 지친', 'harsh: 가혹한, 냉정한', 'wrap someone in one\'s arms: ~를 품에 안다'],
       },

@@ -29,6 +29,14 @@ export const r1 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"trick people into giving away their personal details" → 「trick + 목적어 + into -ing」는 "~하도록 속이다"라는 뜻이에요.',
+          '"makes it harder for thieves to break in" → it은 가목적어, to break in이 진목적어, for thieves는 to부정사의 의미상 주어입니다 (make + 가목적어 it + 형용사 + for A + to부정사).',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'identity theft: 신분 도용',

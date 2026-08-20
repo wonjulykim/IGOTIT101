@@ -26,6 +26,14 @@ export const r29 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"gestures seem like an easy way to get your point across" → to get는 명사(way)를 뒤에서 꾸며주는 to부정사의 형용사적 용법이에요.',
+          '"people wave others over with the palm facing up" → 「with + 명사(palm) + 분사(facing)」는 "~가 …한 채로"라는 부대상황을 나타냅니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['language barrier: 언어 장벽', 'gesture: 몸짓, 제스처', 'nod: (고개를) 끄덕이다', 'universal: 보편적인'],
       },

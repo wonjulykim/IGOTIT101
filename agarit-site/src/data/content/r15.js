@@ -26,6 +26,14 @@ export const r15 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"His idea of linking these two devices led to the birth of the modern printing press." → 전치사 of 뒤에 동명사(linking)가 와서 "~을 연결하는 것이라는 아이디어"라는 뜻을 나타내요.',
+          '"people who never make mistakes never try anything new" → who는 주격 관계대명사로 사람(people)을 수식하며, never가 두 번 쓰여 "실수하지 않는 사람은 새로운 것을 시도하지도 않는다"라는 의미를 강조합니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['coin punch: 동전을 찍어내는 도구', 'printing press: 인쇄기', 'be afraid of: ~을 두려워하다'],
       },

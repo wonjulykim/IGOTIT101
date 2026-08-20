@@ -26,6 +26,14 @@ export const r13 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"predicting exactly when a volcano will erupt has remained difficult" → predicting은 동명사 주어이고, 그 안의 when a volcano will erupt는 의문사절로 predicting의 목적어 역할을 해요.',
+          '"volcanoes that are hard to reach or too dangerous to monitor" → to reach, to monitor는 형용사(hard, dangerous)를 뒤에서 꾸며주는 to부정사의 부사적 용법입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ["Earth's crust: 지각", 'magma: 마그마', 'carbon dioxide: 이산화탄소', 'vibrant: 생기 있는, 선명한'],
       },

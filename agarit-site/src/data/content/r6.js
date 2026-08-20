@@ -26,6 +26,14 @@ export const r6 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"sea animals such as whales are found with their bodies full of plastic bags... harming fish, birds, and other sea life" → harming 이하는 분사구문으로 "그 결과 ~에 해를 끼치며"라는 뜻을 더해줘요.',
+          '"beach clean-up events, where volunteers collect trash before it can wash back into the sea" → where는 장소를 나타내는 명사(events)를 보충 설명하는 관계부사입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'pollution: 오염',

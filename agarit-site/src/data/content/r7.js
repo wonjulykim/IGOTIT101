@@ -33,6 +33,14 @@ export const r7 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"Below is a sample proposal that follows a simple five-part format." → 장소 부사구(Below)가 문장 맨 앞에 나오면서 주어와 동사의 순서가 바뀐 도치 구문이에요.',
+          '"It also describes planned activities" → planned는 과거분사로 "계획된"이라는 뜻으로 명사(activities)를 앞에서 수식합니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'propose: 제안하다',

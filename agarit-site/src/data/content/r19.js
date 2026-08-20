@@ -26,6 +26,14 @@ export const r19 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"make sure you get enough dietary fiber" → make sure 뒤에는 (that이 생략된) 명사절이 이어져 "~을 확실히 하라"는 뜻을 나타내요.',
+          '"If you eat a whole bag of chips without checking this, you might take in far more calories" → without 뒤에는 동명사(checking)가 오며, "~하지 않고서는"이라는 뜻입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['nutrition facts label: 영양성분표', 'daily value (DV): 일일 권장량', 'dietary fiber: 식이섬유', 'sodium: 나트륨'],
       },

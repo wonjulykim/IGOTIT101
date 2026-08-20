@@ -22,6 +22,14 @@ export const r21 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"these are the habits that make life happier in the long run" → 「make + 목적어(life) + 형용사(happier)」는 "~을 …하게 만들다"라는 뜻이에요.',
+          '"Since I started sorting my own tasks this way each morning" → 여기서 since는 "~한 이후로"라는 뜻의 시간 접속사입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['urgency: 긴급함', 'importance: 중요함', 'in the long run: 장기적으로 보면', 'stress: 강조하다'],
       },

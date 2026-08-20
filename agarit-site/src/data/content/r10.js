@@ -22,6 +22,14 @@ export const r10 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"Australia has a diverse climate and many types of land, which makes it a great place for bushwalking" → 콤마 뒤 which는 앞 절 전체를 선행사로 받는 계속적 용법의 관계대명사예요.',
+          '"Walk at the pace of the slowest walker so that everyone in the group feels comfortable." → 「so that + 주어 + 동사」는 "~하기 위해서"라는 목적을 나타냅니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: [
           'bushwalking: 부시워킹(호주식 자연 속 걷기)',

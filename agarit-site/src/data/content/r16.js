@@ -34,6 +34,14 @@ export const r16 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"We don\'t need to decide what to wear every morning" → 「의문사(what) + to부정사」는 "무엇을 ~할지"라는 뜻의 명사구로, decide의 목적어예요.',
+          '"Some students think uniforms are unnecessary..., while others believe they have real benefits" → while은 "~인 반면"이라는 뜻으로 두 대상을 대조합니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['uncomfortable: 불편한', 'benefit: 이점, 혜택', 'judge: 판단하다, 평가하다', 'express oneself: 자신을 표현하다'],
       },

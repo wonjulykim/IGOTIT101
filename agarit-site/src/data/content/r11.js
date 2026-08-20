@@ -26,6 +26,14 @@ export const r11 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"Greek cities were governed much like ours are today" → were governed는 「be동사 + 과거분사」로 이루어진 수동태예요.',
+          '"Girls... were usually educated at home, where they learned skills to manage a household." → where는 장소(home)를 보충 설명하는 관계부사입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['exotic: 이국적인', 'shrine: 성지', 'city-state: 도시 국가', 'acropolis: 아크로폴리스(도시의 높은 지역)'],
       },

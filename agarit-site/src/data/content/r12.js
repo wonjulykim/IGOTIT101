@@ -37,6 +37,14 @@ export const r12 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"Notice how Student B breaks the directions into small, easy steps" → how 이하는 의문사절로, 동사 Notice의 목적어(간접의문문) 역할을 해요.',
+          '"Using a landmark... makes it much easier to picture the route." → Using은 동명사 주어, it은 가목적어, to picture 이하가 진목적어입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['registration office: 등록 사무실', 'lecture theatre: 강의실(대형)', 'next to: ~ 옆에'],
       },

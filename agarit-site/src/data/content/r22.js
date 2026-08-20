@@ -26,6 +26,14 @@ export const r22 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"Those who use the dabbawala service are mostly middle-class office workers" → who는 주격 관계대명사로, Those(사람들)를 수식해요.',
+          '"a simple code... that shows where it was picked up, which train it should travel on, and where it needs to be delivered" → shows 뒤에 의문사절(where, which)이 목적어로 연달아 이어지는 구조입니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['suburb: 교외, 근교', 'packed: 꽉 들어찬', 'dietary restriction: 식단 제한', 'suitable: 적합한'],
       },

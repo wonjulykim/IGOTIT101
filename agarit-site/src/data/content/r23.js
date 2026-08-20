@@ -26,6 +26,14 @@ export const r23 = {
       },
       {
         type: 'callout',
+        title: '🔑 필수 독해 구문',
+        items: [
+          '"it gives soda a sharp, refreshing flavor" → 「give + 간접목적어(soda) + 직접목적어(a flavor)」의 4형식(수여동사) 구문이에요.',
+          '"Drinking through a straw can help the liquid bypass your teeth" → Drinking은 동명사 주어이고, 「help + 목적어 + 동사원형(bypass)」 구조가 쓰였습니다.',
+        ],
+      },
+      {
+        type: 'callout',
         title: '어휘 노트',
         items: ['acid: 산(성분)', 'expiration date: 유통기한', 'absorb: 흡수하다', 'tooth enamel: 치아 에나멜(법랑질)'],
       },
