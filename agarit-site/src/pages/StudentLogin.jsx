@@ -4,9 +4,11 @@ import { studentLogin, fetchStudentData } from '../utils/studentApi'
 import { setCurrentStudent, hydrateFromServer } from '../utils/progress'
 import './StudentLogin.css'
 
+const DEFAULT_CLASS_CODE = '20263000'
+
 export default function StudentLogin() {
   const [name, setName] = useState('')
-  const [classCode, setClassCode] = useState('')
+  const [classCode, setClassCode] = useState(DEFAULT_CLASS_CODE)
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
@@ -35,7 +37,7 @@ export default function StudentLogin() {
       <form className="student-login-card" onSubmit={handleSubmit}>
         <h1>학생 로그인</h1>
         <p className="student-login-hint">
-          이름과 선생님께 받은 반 코드를 입력하면, 여러 기기에서도 내 학습 기록을 이어서 볼 수 있어요.
+          이름을 입력하면, 여러 기기에서도 내 학습 기록을 이어서 볼 수 있어요.
         </p>
         <input
           type="text"
@@ -46,7 +48,7 @@ export default function StudentLogin() {
         />
         <input
           type="text"
-          placeholder="반 코드 (예: 3-2-2026)"
+          placeholder="반 코드"
           value={classCode}
           onChange={(e) => setClassCode(e.target.value)}
         />
