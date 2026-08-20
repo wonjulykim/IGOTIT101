@@ -42,6 +42,27 @@ export const r4Quiz = {
         '3~5문장으로 쓸 것',
         '저작권을 누가 가져야 하는지에 대한 자신의 입장과 이유를 포함할 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '자신의 생각을 문장으로 완성해보세요',
+          items: [
+            '1단계: 무엇에 대해 쓸지 하나 고르기',
+            '2단계: 그것과 관련된 사실이나 경험을 지문(또는 자신의 경험)에서 찾기',
+            '3단계: 그렇게 생각하는 이유를 한 문장으로 쓰기',
+            '4단계: 이유를 뒷받침하는 구체적인 근거나 예시 덧붙이기',
+            '5단계: 문장들을 자연스럽게 연결하여 완성하기',
+          ],
+        },
+      },
       model:
         'In my opinion, the person who writes the prompt should hold the copyright for AI-generated art. Even though the AI produces the final image, the human still has to imagine the idea and choose the right words to describe it. Without a clear and creative prompt, the AI cannot create anything meaningful on its own. For this reason, I believe the prompt writer deserves to be treated as the true creator, similar to how a photographer is credited for a photo taken with a camera.',
       totalScore: 7,
@@ -79,6 +100,27 @@ export const r4Quiz = {
         '그 경험에서 인간 또는 AI가 창작 과정에 기여한 정도를 설명할 것',
         '150~200 단어로 쓸 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '주장하는 글(논술문)을 완성해보세요',
+          items: [
+            '1단계: 주제에 대한 자신의 입장(주장)을 한 문장으로 정하기',
+            '2단계: 주장을 뒷받침할 근거(사실·경험·지문 내용)를 두 가지 이상 찾기',
+            '3단계: 반대 의견이나 다른 입장도 떠올려보고 자신의 주장과 비교하기',
+            '4단계: 서론(문제 제기)-본론(근거 제시)-결론(주장 재확인) 구조로 개요 짜기',
+            '5단계: 개요에 따라 문단을 순서대로 작성하기',
+          ],
+        },
+      },
       model:
         "In my opinion, humans should hold the copyright to AI-generated art. I once used an AI image tool to create a picture for a school project. I wrote a detailed description of the scene I wanted, and the AI produced several images within seconds. I selected the one that best matched my vision and refined my wording several times to get a better result. Throughout this process, I directed every step: I chose the subject, the style, and the final image. The AI didn't make its own creative decisions — it followed my prompts closely. I was the one who imagined the idea, evaluated the results, and decided on the final version. The AI was simply a tool, like a camera, that helped me realize my idea more efficiently. Therefore, I believe the human who designs and refines the process should be recognized as the true author.",
       totalScore: 15,

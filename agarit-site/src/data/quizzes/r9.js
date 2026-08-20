@@ -46,6 +46,27 @@ export const r9Quiz = {
       difficulty: '하',
       score: 6,
       conditions: ['3~5문장으로 쓸 것', 'pattern recognition 또는 neuron 중 하나를 반드시 포함할 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '자신의 생각을 문장으로 완성해보세요',
+          items: [
+            '1단계: 무엇에 대해 쓸지 하나 고르기',
+            '2단계: 그것과 관련된 사실이나 경험을 지문(또는 자신의 경험)에서 찾기',
+            '3단계: 그렇게 생각하는 이유를 한 문장으로 쓰기',
+            '4단계: 이유를 뒷받침하는 구체적인 근거나 예시 덧붙이기',
+            '5단계: 문장들을 자연스럽게 연결하여 완성하기',
+          ],
+        },
+      },
       model:
         'I found it interesting that AI learns in a way similar to how the human brain works. The idea of pattern recognition surprised me the most, because it means AI can improve just by looking at large amounts of data. I still wonder, though, how AI decides which patterns are actually important. Overall, I think machine learning is a powerful tool, but it still has a lot in common with how humans naturally learn.',
       totalScore: 6,
@@ -77,6 +98,17 @@ export const r9Quiz = {
       difficulty: '중',
       score: 8,
       conditions: ['pattern recognition과 data라는 단어를 반드시 포함할 것', '3문장 이상으로 서술할 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+      },
       model:
         'AI programs are designed to teach themselves in various ways. One important way is pattern recognition, where the program observes patterns in large amounts of data. By continuously processing more data, the AI gradually becomes more intelligent and capable, similar to how a child learns more as they grow and experience new things.',
       totalScore: 8,

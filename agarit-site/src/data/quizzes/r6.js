@@ -42,6 +42,27 @@ export const r6Quiz = {
         '3~5문장으로 쓸 것',
         '실천 가능한 행동 한 가지와 그 이유를 포함할 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '자신의 생각을 문장으로 완성해보세요',
+          items: [
+            '1단계: 무엇에 대해 쓸지 하나 고르기',
+            '2단계: 그것과 관련된 사실이나 경험을 지문(또는 자신의 경험)에서 찾기',
+            '3단계: 그렇게 생각하는 이유를 한 문장으로 쓰기',
+            '4단계: 이유를 뒷받침하는 구체적인 근거나 예시 덧붙이기',
+            '5단계: 문장들을 자연스럽게 연결하여 완성하기',
+          ],
+        },
+      },
       model:
         "Starting today, I will carry a reusable water bottle instead of buying plastic bottles every day. This small change can reduce the amount of plastic waste that might end up in the ocean. I used to buy a new bottle almost every day without thinking about where it would go afterward. Now that I understand how harmful plastic can be to sea animals, I want to make better choices whenever I can.",
       totalScore: 7,
@@ -80,6 +101,27 @@ export const r6Quiz = {
         '친구들에게 함께 실천하자고 제안하는 문장을 포함할 것',
         '100~150 단어로 쓸 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '주장하는 글(논술문)을 완성해보세요',
+          items: [
+            '1단계: 주제에 대한 자신의 입장(주장)을 한 문장으로 정하기',
+            '2단계: 주장을 뒷받침할 근거(사실·경험·지문 내용)를 두 가지 이상 찾기',
+            '3단계: 반대 의견이나 다른 입장도 떠올려보고 자신의 주장과 비교하기',
+            '4단계: 서론(문제 제기)-본론(근거 제시)-결론(주장 재확인) 구조로 개요 짜기',
+            '5단계: 개요에 따라 문단을 순서대로 작성하기',
+          ],
+        },
+      },
       model:
         "These photos show ocean pollution caused by plastic waste. Many sea animals swallow plastic because they mistake it for food, and this is a serious problem. Before, I always bought drinks in plastic bottles and threw them away without thinking. I didn't know that my trash could end up in the ocean. After learning about this, I felt bad and wanted to change my habits. Now, I use my own reusable water bottle, and I also help clean up trash at school. These are small actions, but they can help the Earth. If many students try together, we can reduce pollution. Let's care for the ocean and protect the animals together!",
       totalScore: 20,

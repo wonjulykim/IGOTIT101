@@ -87,7 +87,7 @@ function UnitGrid({ units, unitLabel, isDone, nextUpId }) {
             className={`home-card ${!u.ready ? 'home-card-disabled' : ''} ${isNext ? 'home-card-next' : ''}`}
           >
             <div className="home-card-top">
-              <div className="home-card-num">{u.num}{unitLabel}</div>
+              <div className="home-card-num">{u.kind === 'guide' ? '가이드' : `${u.num}${unitLabel}`}</div>
               {chapterDone && <span className="home-card-done">✅ 완료</span>}
               {isNext && <span className="home-card-tag">다음 학습</span>}
             </div>
@@ -97,7 +97,7 @@ function UnitGrid({ units, unitLabel, isDone, nextUpId }) {
                 <Link to={`/chapter/${u.id}/lesson/${u.lessons[0].id}`}>
                   {u.kind === 'reading' ? '읽고 문제 풀기' : '학습하기'}
                 </Link>
-                {u.kind !== 'reading' && <Link to={`/chapter/${u.id}/quiz`}>퀴즈</Link>}
+                {u.kind !== 'reading' && u.kind !== 'guide' && <Link to={`/chapter/${u.id}/quiz`}>퀴즈</Link>}
               </div>
             ) : (
               <span className="home-card-soon">준비중</span>

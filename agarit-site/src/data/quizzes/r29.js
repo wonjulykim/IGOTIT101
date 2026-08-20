@@ -39,6 +39,27 @@ export const r29Quiz = {
       difficulty: '하',
       score: 6,
       conditions: ['3~5문장으로 쓸 것', '지문에 나온 제스처 예시 한 가지와 문화별 의미 차이를 포함할 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '자신의 생각을 문장으로 완성해보세요',
+          items: [
+            '1단계: 무엇에 대해 쓸지 하나 고르기',
+            '2단계: 그것과 관련된 사실이나 경험을 지문(또는 자신의 경험)에서 찾기',
+            '3단계: 그렇게 생각하는 이유를 한 문장으로 쓰기',
+            '4단계: 이유를 뒷받침하는 구체적인 근거나 예시 덧붙이기',
+            '5단계: 문장들을 자연스럽게 연결하여 완성하기',
+          ],
+        },
+      },
       model:
         'A head nod means "yes" in most cultures, but in Turkey, Greece, and Bulgaria, it actually means "no." This shows that the same gesture can carry completely opposite meanings depending on where you are. I think this is important to know before traveling, because misunderstanding a simple gesture could easily cause confusion or even offend someone without meaning to.',
       totalScore: 6,
@@ -70,6 +91,17 @@ export const r29Quiz = {
       difficulty: '중',
       score: 10,
       conditions: ['접속사를 사용한 한 문장 요약을 포함할 것', '제스처 사용 시 주의할 점을 서술할 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+      },
       model:
         "While a head nod means \"yes\" in most cultures, it means \"no\" in countries like Turkey, Greece, and Bulgaria. This shows that gestures are not always universal, so when traveling to a new country, it is important to learn about local gestures beforehand to avoid misunderstandings.",
       totalScore: 10,

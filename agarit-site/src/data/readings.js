@@ -2,6 +2,14 @@
 
 export const readings = [
   {
+    id: 'r0',
+    num: 0,
+    kind: 'guide',
+    title: '서·논술형 지시어 완전정복',
+    ready: true,
+    lessons: [{ id: 'r0-1', title: '서·논술형 지시어 완전정복' }],
+  },
+  {
     id: 'r1',
     num: 1,
     kind: 'reading',

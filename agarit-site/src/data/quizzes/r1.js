@@ -42,6 +42,27 @@ export const r1Quiz = {
         '3~5문장으로 쓸 것',
         '지문에 언급된 예방 방법(발신자 확인, 보안 소프트웨어 사용, 이중 인증 등) 중 최소 한 가지를 구체적으로 언급할 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '자신의 생각을 문장으로 완성해보세요',
+          items: [
+            '1단계: 무엇에 대해 쓸지 하나 고르기',
+            '2단계: 그것과 관련된 사실이나 경험을 지문(또는 자신의 경험)에서 찾기',
+            '3단계: 그렇게 생각하는 이유를 한 문장으로 쓰기',
+            '4단계: 이유를 뒷받침하는 구체적인 근거나 예시 덧붙이기',
+            '5단계: 문장들을 자연스럽게 연결하여 완성하기',
+          ],
+        },
+      },
       model:
         "One simple way to prevent identity theft is checking the sender's email address before clicking any link. Many phishing emails look real, but they often come from strange addresses that do not match the company they claim to be from. If people take just a few seconds to look carefully, they can avoid giving away their passwords or bank details. I think this habit is effective because it costs nothing and can be done by anyone, even without special technical knowledge.",
       totalScore: 8,
@@ -80,6 +101,27 @@ export const r1Quiz = {
         '결론: 독자에게 경각심을 주거나 행동을 촉구하는 문장으로 마무리할 것',
         '제목을 붙이고, 180~220 단어로 쓸 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '주장하는 글(논술문)을 완성해보세요',
+          items: [
+            '1단계: 주제에 대한 자신의 입장(주장)을 한 문장으로 정하기',
+            '2단계: 주장을 뒷받침할 근거(사실·경험·지문 내용)를 두 가지 이상 찾기',
+            '3단계: 반대 의견이나 다른 입장도 떠올려보고 자신의 주장과 비교하기',
+            '4단계: 서론(문제 제기)-본론(근거 제시)-결론(주장 재확인) 구조로 개요 짜기',
+            '5단계: 개요에 따라 문단을 순서대로 작성하기',
+          ],
+        },
+      },
       model:
         'Title: Protect Your Digital Self: Beware of Identity Theft\n\nLast month, a classmate discovered that someone used her email to buy games online, and news reports show identity theft is rising among teenagers. Identity theft is when a person secretly takes your private details and uses them to act as if they are you. Two common types are phishing and malware. Phishing uses fake emails or texts to trick you into giving away personal details, while malware is harmful software that quietly collects data such as passwords. Recent statistics show these attacks have become far more common and far more costly than before.\n\nTo prevent identity theft, everyone can take simple action. First, check the sender\'s email address carefully before clicking any link. Second, keep your devices updated with security software so it can block malware automatically. Both steps are simple but effective.\n\nPlease stay alert and protect your information. Together, we can keep our digital lives safe!',
       totalScore: 25,

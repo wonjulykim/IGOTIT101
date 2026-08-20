@@ -42,6 +42,26 @@ export const r28Quiz = {
       difficulty: '하',
       score: 6,
       conditions: ['3~5문장으로 쓸 것', 'Franklin의 행동과 그것이 효과가 있었던 이유를 포함할 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '평가·비판하는 글을 완성해보세요',
+          items: [
+            '1단계: 평가(비판)할 대상과 판단 기준을 명확히 하기',
+            '2단계: 대상의 장점(지지할 근거)과 단점(반박할 근거)을 각각 찾기',
+            '3단계: 근거들이 타당하고 관련성이 있는지 점검하기',
+            '4단계: 근거를 바탕으로 합당한 결론(판단)을 이끌어내기',
+          ],
+        },
+      },
       model:
         "Franklin asked his enemy to lend him a rare book, even though the man had criticized him harshly before. This worked because once the man had done Franklin a favor, it became uncomfortable for his mind to still see Franklin as an enemy. To reduce this discomfort, he started to feel more positively toward Franklin instead. This shows that helping someone can sometimes change our feelings about them more than words ever could.",
       totalScore: 6,
@@ -73,6 +93,27 @@ export const r28Quiz = {
       difficulty: '상',
       score: 10,
       conditions: ['인지부조화 개념을 정확히 언급할 것', '구체적인 경험이나 사례를 포함할 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '설명하는 글을 완성해보세요',
+          items: [
+            '1단계: 설명할 대상이나 사건이 무엇인지 지문에서 확인하기',
+            '2단계: 관련된 사실 정보나 근거를 지문에서 찾아 정리하기',
+            '3단계: 아래 조건에 제시된 항목 순서대로 정보를 배열하기',
+            '4단계: 사실에 근거하여 객관적이고 간결한 문장으로 쓰기',
+            '5단계: 조건에 맞는 형식(제목, 문단 구성 등)을 갖추어 완성하기',
+          ],
+        },
+      },
       model:
         "I once helped a classmate I didn't really like with a group project, even though I didn't want to. After spending time helping him, I noticed that I actually started to see him more positively. This is a good example of cognitive dissonance: since I couldn't easily undo the effort I had already put in, my mind adjusted my feelings toward him instead, just like what happened between Franklin and his opponent.",
       totalScore: 10,

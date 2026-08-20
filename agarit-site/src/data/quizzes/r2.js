@@ -42,6 +42,27 @@ export const r2Quiz = {
         '3~5문장으로 쓸 것',
         '저널링 방법이 자신에게 도움이 될지 여부와 그 이유를 포함할 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '자신의 생각을 문장으로 완성해보세요',
+          items: [
+            '1단계: 무엇에 대해 쓸지 하나 고르기',
+            '2단계: 그것과 관련된 사실이나 경험을 지문(또는 자신의 경험)에서 찾기',
+            '3단계: 그렇게 생각하는 이유를 한 문장으로 쓰기',
+            '4단계: 이유를 뒷받침하는 구체적인 근거나 예시 덧붙이기',
+            '5단계: 문장들을 자연스럽게 연결하여 완성하기',
+          ],
+        },
+      },
       model:
         'I think stress-relief journaling could help me manage my exam stress. Writing down my worries for just five minutes might make my mind feel less crowded before I start studying. I especially like the idea of writing a positive thought afterward, because I usually forget to think about solutions when I am anxious. I plan to try this method during my next exam period to see if it really works for me.',
       totalScore: 7,
@@ -80,6 +101,27 @@ export const r2Quiz = {
         '서론-본론-결론 구조를 갖추어 작성할 것',
         '200~250단어로 쓸 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '주장하는 글(논술문)을 완성해보세요',
+          items: [
+            '1단계: 주제에 대한 자신의 입장(주장)을 한 문장으로 정하기',
+            '2단계: 주장을 뒷받침할 근거(사실·경험·지문 내용)를 두 가지 이상 찾기',
+            '3단계: 반대 의견이나 다른 입장도 떠올려보고 자신의 주장과 비교하기',
+            '4단계: 서론(문제 제기)-본론(근거 제시)-결론(주장 재확인) 구조로 개요 짜기',
+            '5단계: 개요에 따라 문단을 순서대로 작성하기',
+          ],
+        },
+      },
       model:
         'A Creative Way to Reduce Exam Stress\n\nMany high school students feel stressed mainly because of exams. The pressure to perform well can cause anxiety and worry about their future. To help students manage this stress, I suggest a creative and proven method: "Stress-Relief Journaling."\n\nThis method involves students writing down their feelings and worries about exams for just five minutes each day. Then, they write positive thoughts or solutions to their problems. Studies show that this kind of expressive writing can lower stress and improve mental health. This practice helps students understand their feelings, reduce anxiety, and develop a positive mindset.\n\nIn conclusion, exam stress is a common problem, but "Stress-Relief Journaling" offers a creative and effective solution. I encourage everyone to try this method regularly.',
       totalScore: 17,

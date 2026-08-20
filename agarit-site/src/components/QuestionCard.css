@@ -41,6 +41,58 @@
   padding: 2px 9px;
 }
 
+.qcard-steps {
+  background: var(--success-bg);
+  border: 1.5px dashed var(--success);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  font-size: 0.92rem;
+}
+.qcard-steps strong { color: var(--success); }
+.qcard-step-group { margin-top: 12px; }
+.qcard-step-group:first-of-type { margin-top: 8px; }
+.qcard-step-heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--success);
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+.qcard-steps ol {
+  margin: 0;
+  padding-left: 4px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  counter-reset: step;
+}
+.qcard-steps li {
+  counter-increment: step;
+}
+.qcard-steps li label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+.qcard-steps li label::before {
+  content: counter(step) '.';
+  font-weight: 700;
+  color: var(--success);
+  flex-shrink: 0;
+}
+.qcard-steps li input[type='checkbox'] {
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: var(--success);
+}
+.qcard-steps li.step-done span {
+  text-decoration: line-through;
+  color: var(--text-dim);
+}
+
 .qcard-conditions {
   background: var(--accent-bg);
   border: 1.5px solid var(--accent-border);

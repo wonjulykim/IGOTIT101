@@ -41,6 +41,27 @@ export const r16Quiz = {
       difficulty: '하',
       score: 6,
       conditions: ['3~5문장으로 쓸 것', '찬성 또는 반대 입장을 한 문장으로 밝힐 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '자신의 생각을 문장으로 완성해보세요',
+          items: [
+            '1단계: 무엇에 대해 쓸지 하나 고르기',
+            '2단계: 그것과 관련된 사실이나 경험을 지문(또는 자신의 경험)에서 찾기',
+            '3단계: 그렇게 생각하는 이유를 한 문장으로 쓰기',
+            '4단계: 이유를 뒷받침하는 구체적인 근거나 예시 덧붙이기',
+            '5단계: 문장들을 자연스럽게 연결하여 완성하기',
+          ],
+        },
+      },
       model:
         "I think school uniforms are helpful for students. They save time in the morning because I don't have to choose what to wear. Uniforms also make it harder for students to judge each other based on clothing brands. For these reasons, I support wearing school uniforms.",
       totalScore: 6,
@@ -73,6 +94,27 @@ export const r16Quiz = {
       difficulty: '중',
       score: 12,
       conditions: ['찬성 또는 반대 입장을 분명히 밝힐 것', '대화에 나오지 않은 새로운 근거를 최소 한 가지 포함할 것', '80단어 이상으로 쓸 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '주장하는 글(논술문)을 완성해보세요',
+          items: [
+            '1단계: 주제에 대한 자신의 입장(주장)을 한 문장으로 정하기',
+            '2단계: 주장을 뒷받침할 근거(사실·경험·지문 내용)를 두 가지 이상 찾기',
+            '3단계: 반대 의견이나 다른 입장도 떠올려보고 자신의 주장과 비교하기',
+            '4단계: 서론(문제 제기)-본론(근거 제시)-결론(주장 재확인) 구조로 개요 짜기',
+            '5단계: 개요에 따라 문단을 순서대로 작성하기',
+          ],
+        },
+      },
       model:
         "I think school uniforms are a good idea. Uniforms create a sense of equality among students, since no one is judged by how expensive or fashionable their clothes are. This can reduce bullying related to appearance and help students focus more on their studies instead of worrying about what to wear. For these reasons, I support wearing school uniforms.",
       totalScore: 12,

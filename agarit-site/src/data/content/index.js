@@ -26,6 +26,7 @@ import { ch25 } from './ch25'
 import { ch26 } from './ch26'
 import { ch27 } from './ch27'
 import { ch28 } from './ch28'
+import { r0 } from './r0'
 import { r1 } from './r1'
 import { r2 } from './r2'
 import { r3 } from './r3'
@@ -61,6 +62,7 @@ const contentByChapter = {
   ch1, ch2, ch3, ch4, ch5, ch6, ch7, ch8, ch9, ch10,
   ch11, ch12, ch13, ch14, ch15, ch16, ch17, ch18, ch19, ch20,
   ch21, ch22, ch23, ch24, ch25, ch26, ch27, ch28,
+  r0,
   r1, r2, r3, r4, r5, r6, r7, r8, r9, r10,
   r11, r12, r13, r14, r15, r16, r17, r18, r19, r20,
   r21, r22, r23, r24, r25, r26, r27, r28, r29, r30,

@@ -39,6 +39,27 @@ export const r13Quiz = {
       difficulty: '하',
       score: 6,
       conditions: ['3~5문장으로 쓸 것', 'carbon dioxide 또는 absorb 중 하나를 반드시 포함할 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '자신의 생각을 문장으로 완성해보세요',
+          items: [
+            '1단계: 무엇에 대해 쓸지 하나 고르기',
+            '2단계: 그것과 관련된 사실이나 경험을 지문(또는 자신의 경험)에서 찾기',
+            '3단계: 그렇게 생각하는 이유를 한 문장으로 쓰기',
+            '4단계: 이유를 뒷받침하는 구체적인 근거나 예시 덧붙이기',
+            '5단계: 문장들을 자연스럽게 연결하여 완성하기',
+          ],
+        },
+      },
       model:
         'I think it is fascinating that scientists can predict volcanic eruptions just by studying the color of tree leaves. It makes sense that trees absorb the carbon dioxide released by rising magma and turn a brighter green as a result. This method seems especially helpful for volcanoes located in remote areas that are hard to monitor directly. I hope researchers continue improving this technique so that more communities can be warned before a dangerous eruption happens.',
       totalScore: 6,
@@ -70,6 +91,17 @@ export const r13Quiz = {
       difficulty: '상',
       score: 5,
       conditions: ['change / before / because / absorb 단어를 반드시 활용할 것', "Scientists found that the colour of tree leaves 로 문장을 시작할 것"],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+      },
       model:
         'Scientists found that the colour of tree leaves changes before a volcanic eruption because they absorb carbon dioxide emitted by volcanoes.',
       totalScore: 5,

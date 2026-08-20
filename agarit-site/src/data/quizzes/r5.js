@@ -36,6 +36,27 @@ export const r5Quiz = {
         '3~5문장으로 쓸 것',
         '표에 제시된 가치 중 하나를 선택하여 그것이 중요한 이유를 포함할 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '자신의 생각을 문장으로 완성해보세요',
+          items: [
+            '1단계: 무엇에 대해 쓸지 하나 고르기',
+            '2단계: 그것과 관련된 사실이나 경험을 지문(또는 자신의 경험)에서 찾기',
+            '3단계: 그렇게 생각하는 이유를 한 문장으로 쓰기',
+            '4단계: 이유를 뒷받침하는 구체적인 근거나 예시 덧붙이기',
+            '5단계: 문장들을 자연스럽게 연결하여 완성하기',
+          ],
+        },
+      },
       model:
         'I think honesty is the most important value. When people tell the truth, others can trust them and feel safe around them. If someone lies even one time, it becomes harder for people to believe them again in the future. That is why I always try to tell the truth, even when it is difficult or embarrassing.',
       totalScore: 6,
@@ -73,6 +94,27 @@ export const r5Quiz = {
         '그 가치가 주변 사람이나 사회에 미칠 긍정적 영향을 설득력 있게 제시할 것',
         '100~120 단어로 쓸 것',
       ],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '주장하는 글(논술문)을 완성해보세요',
+          items: [
+            '1단계: 주제에 대한 자신의 입장(주장)을 한 문장으로 정하기',
+            '2단계: 주장을 뒷받침할 근거(사실·경험·지문 내용)를 두 가지 이상 찾기',
+            '3단계: 반대 의견이나 다른 입장도 떠올려보고 자신의 주장과 비교하기',
+            '4단계: 서론(문제 제기)-본론(근거 제시)-결론(주장 재확인) 구조로 개요 짜기',
+            '5단계: 개요에 따라 문단을 순서대로 작성하기',
+          ],
+        },
+      },
       model:
         'I believe in the power of kindness. Kindness means being nice, helping others, and thinking about their feelings. Every day, I try to smile at my classmates and help them when they have problems. One day, I saw a new student sitting alone during lunch. I felt sad, so I walked over and invited her to sit with me. She smiled and looked much happier. I believe small acts of kindness can change someone\'s day. If more people practice kindness, the world will be more peaceful, with less conflict and more understanding between people.',
       totalScore: 15,

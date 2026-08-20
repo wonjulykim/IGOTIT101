@@ -39,6 +39,27 @@ export const r25Quiz = {
       difficulty: '하',
       score: 6,
       conditions: ['3~5문장으로 쓸 것', '지문에 나온 은유 표현 중 하나를 언급할 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '비교·대조하는 글을 완성해보세요',
+          items: [
+            '1단계: 비교(또는 대조) 대상이 같은 범주·층위인지 확인하기',
+            '2단계: 두 대상의 공통점(또는 유사점) 찾아 쓰기',
+            '3단계: 두 대상의 차이점 찾아 쓰기',
+            '4단계: 비교 기준을 정하고 표나 벤 다이어그램으로 정리해보기',
+            '5단계: 기준별로 균형 있게 문장으로 서술하기',
+          ],
+        },
+      },
       model:
         '"Life is a roller coaster" is a metaphor from the passage. It compares life to a roller coaster, which goes up and down again and again. This means that life also has many ups and downs, such as happy moments and hard moments. Understanding this metaphor helps me accept difficult times as just one part of a much bigger ride.',
       totalScore: 6,
@@ -70,6 +91,27 @@ export const r25Quiz = {
       difficulty: '중',
       score: 10,
       conditions: ['"A is B" 형태의 은유 문장을 포함할 것', '그 은유가 의미하는 바를 설명할 것'],
+      steps: {
+        summarize: [
+          '1단계: 제시된 글에서 핵심어 찾아내기',
+          '2단계: 중심 문장 / 핵심 주장 찾기',
+          '3단계: 주장을 뒷받침하는 근거 찾기',
+          '4단계: 주장과 근거를 논리적으로 연결해 보기',
+          '5단계: 단락별로 나누어 짧게 요약해 보기',
+          '6단계: 여러 중심 문장을 엮어서 논리적·체계적으로 연결해 보기',
+          '7단계: 주요 어휘를 자기의 말로 바꾸어서 표현해 보기',
+        ],
+        task: {
+          title: '비교·대조하는 글을 완성해보세요',
+          items: [
+            '1단계: 비교(또는 대조) 대상이 같은 범주·층위인지 확인하기',
+            '2단계: 두 대상의 공통점(또는 유사점) 찾아 쓰기',
+            '3단계: 두 대상의 차이점 찾아 쓰기',
+            '4단계: 비교 기준을 정하고 표나 벤 다이어그램으로 정리해보기',
+            '5단계: 기준별로 균형 있게 문장으로 서술하기',
+          ],
+        },
+      },
       model:
         '"My mind is a garden." This metaphor compares the mind to a garden. Just as a garden needs regular care — watering, weeding, and sunlight — to grow beautiful flowers, the mind needs good habits like reading, rest, and positive thoughts to grow healthy ideas. If we neglect our mind, like an uncared-for garden, it can become filled with negative thoughts instead.',
       totalScore: 10,

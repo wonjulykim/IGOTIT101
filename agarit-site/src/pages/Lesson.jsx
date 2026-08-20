@@ -45,7 +45,9 @@ export default function Lesson() {
   const effectiveBlocks = override?.blocks || content?.blocks
   const effectiveTitle = override?.title || lesson.title
   const isReading = chapter.kind === 'reading'
+  const isGuide = chapter.kind === 'guide'
   const unitLabel = isReading ? '편' : '장'
+  const unitBadge = isGuide ? '가이드' : `${chapter.num}${unitLabel}`
   const quiz = isReading ? getChapterQuiz(chapterId) : null
 
   function handleComplete() {
@@ -58,7 +60,7 @@ export default function Lesson() {
   return (
     <article className={`lesson-page${isReading ? ' lesson-page--reading' : ''}`}>
       <div className="lesson-breadcrumb">
-        <Link to="/">차례</Link> <span>›</span> <span>{chapter.num}{unitLabel} {chapter.title}</span>
+        <Link to="/">차례</Link> <span>›</span> <span>{unitBadge} {chapter.title}</span>
         <Link to={`/chapter/${chapterId}/print`} target="_blank" rel="noopener" className="lesson-edit-link">
           📄 PDF 다운로드
         </Link>
@@ -143,9 +145,13 @@ export default function Lesson() {
                 <Link to={`/chapter/${chapterId}/lesson/${next.id}`} className="lesson-nav-link">
                   {next.title} →
                 </Link>
+              ) : isGuide ? (
+                <Link to="/chapter/r1/lesson/r1-1" className="lesson-nav-link quiz">
+                  1편 독해 시작하기 →
+                </Link>
               ) : (
                 <Link to={`/chapter/${chapterId}/quiz`} className="lesson-nav-link quiz">
-                  {chapter.num}{unitLabel} 퀴즈 풀기 →
+                  {unitBadge} 퀴즈 풀기 →
                 </Link>
               )}
             </div>

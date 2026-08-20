@@ -20,6 +20,7 @@ export default function QuestionCard({ q, index, value, onChange, submitted, sho
         {q.score && <span className="qcard-badge">배점 {q.score}점</span>}
       </div>
       <p className="qcard-question">{q.q}</p>
+      {q.steps && <StepGuide steps={q.steps} />}
       {q.conditions?.length > 0 && (
         <div className="qcard-conditions">
           <strong>✍️ 이렇게 써보세요 (반드시 지킬 것)</strong>
@@ -35,6 +36,43 @@ export default function QuestionCard({ q, index, value, onChange, submitted, sho
       {q.type === 'short' && <ShortBody q={q} value={value} onChange={onChange} submitted={submitted} />}
       {q.type === 'essay' && (
         <EssayBody q={q} value={value} onChange={onChange} submitted={submitted} unitId={unitId} />
+      )}
+    </div>
+  )
+}
+
+function StepChecklist({ heading, items }) {
+  const [checked, setChecked] = useState(() => items.map(() => false))
+
+  function toggle(i) {
+    setChecked((prev) => prev.map((v, idx) => (idx === i ? !v : v)))
+  }
+
+  return (
+    <div className="qcard-step-group">
+      <div className="qcard-step-heading">{heading}</div>
+      <ol>
+        {items.map((s, i) => (
+          <li key={i} className={checked[i] ? 'step-done' : ''}>
+            <label>
+              <input type="checkbox" checked={checked[i]} onChange={() => toggle(i)} />
+              <span>{s.replace(/^\d+단계:\s*/, '')}</span>
+            </label>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )
+}
+
+function StepGuide({ steps }) {
+  if (!steps?.summarize?.length) return null
+  return (
+    <div className="qcard-steps">
+      <strong>🧭 이 순서대로 생각을 정리해보세요</strong>
+      <StepChecklist heading="1단계. 먼저 지문을 요약해보세요" items={steps.summarize} />
+      {steps.task?.items?.length > 0 && (
+        <StepChecklist heading={`2단계. 이제 ${steps.task.title}`} items={steps.task.items} />
       )}
     </div>
   )
