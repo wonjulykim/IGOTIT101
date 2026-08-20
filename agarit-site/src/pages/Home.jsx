@@ -42,9 +42,9 @@ export default function Home() {
   const heroCta = nextUp
     ? {
         to: `/chapter/${nextUp.chapterId}/lesson/${nextUp.lessonId}`,
-        label: `이어서 학습하기: ${nextUp.chapterNum}장 ${nextUp.lessonTitle} →`,
+        label: `이어서 학습하기: ${nextUp.chapterNum}장 ${nextUp.lessonTitle} →`,
       }
-    : { to: '/chapter/ch1/lesson/ch1-1', label: '1장부터 시작하기 →' }
+    : { to: '/chapter/ch1/lesson/ch1-1', label: '1장부터 시작하기 →' }
 
   return (
     <div className="home-page">

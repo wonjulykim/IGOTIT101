@@ -143,22 +143,22 @@ export default function Lesson() {
             <div className="lesson-nav-side">
               {prev ? (
                 <Link to={`/chapter/${chapterId}/lesson/${prev.id}`} className="lesson-nav-link">
-                  ← {prev.title}
+                  ←&nbsp;{prev.title}
                 </Link>
               ) : <span />}
             </div>
             <div className="lesson-nav-side lesson-nav-right">
               {next ? (
                 <Link to={`/chapter/${chapterId}/lesson/${next.id}`} className="lesson-nav-link">
-                  {next.title} →
+                  {next.title}&nbsp;→
                 </Link>
               ) : isGuide ? (
                 <Link to="/chapter/r1/lesson/r1-1" className="lesson-nav-link quiz">
-                  1편 독해 시작하기 →
+                  1편 독해 시작하기&nbsp;→
                 </Link>
               ) : (
                 <Link to={`/chapter/${chapterId}/quiz`} className="lesson-nav-link quiz">
-                  {unitBadge} 퀴즈 풀기 →
+                  {unitBadge} 퀴즈 풀기&nbsp;→
                 </Link>
               )}
             </div>
